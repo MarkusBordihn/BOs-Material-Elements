@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:coal"
+  },
+  "result": "material_elements:coke",
+  "experience": 0.2,
+  "cookingtime": 250
+}

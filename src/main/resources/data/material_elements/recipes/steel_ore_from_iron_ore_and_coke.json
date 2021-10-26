@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ooo",
+    "oXo",
+    "ooo"
+  ],
+  "key": {
+    "o": {
+      "item": "material_elements:coke"
+    },
+    "X": {
+      "item": "minecraft:iron_ore"
+    }
+  },
+  "result": {
+    "item": "material_elements:steel_ore",
+    "count": 1
+  }
+}
