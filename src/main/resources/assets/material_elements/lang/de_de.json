@@ -1,5 +1,6 @@
 {
   "block.material_elements.steel_ore": "Stahlerz",
+  "block.material_elements.steel_block": "Stahlblock",
   "block.placeholder.text": "Template placeholder do not remove!",
   "item.material_elements.coke": "Koks",
   "item.material_elements.copper_nugget": "Kupfernugget",

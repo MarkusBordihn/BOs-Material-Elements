@@ -21,8 +21,10 @@ package de.markusbordihn.materialelements.block;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.OreBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -40,6 +42,9 @@ public class ModBlocks {
       DeferredRegister.create(ForgeRegistries.BLOCKS, Constants.MOD_ID);
 
   @TemplateEntryPoint("Register Blocks")
+  public static final RegistryObject<Block> STEEL_BLOCK = BLOCKS.register("steel_block",
+      () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
   public static final RegistryObject<Block> STEEL_ORE =
       BLOCKS.register("steel_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
           .requiresCorrectToolForDrops().strength(3.0F, 3.0F)));

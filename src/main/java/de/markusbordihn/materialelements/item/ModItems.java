@@ -50,6 +50,9 @@ public class ModItems {
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
   @TemplateEntryPoint("Register Block Items")
+  public static final RegistryObject<Item> STEEL_BLOCK =
+      ITEMS.register("steel_block", () -> new BlockItem(ModBlocks.STEEL_BLOCK.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
   public static final RegistryObject<Item> STEEL_ORE =
       ITEMS.register("steel_ore", () -> new BlockItem(ModBlocks.STEEL_ORE.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
