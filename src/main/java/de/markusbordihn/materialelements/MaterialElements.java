@@ -37,12 +37,6 @@ public class MaterialElements {
   public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   public MaterialElements() {
-    // Make sure the mod being absent on the other network side does not cause the
-    // client to display the server as incompatible
-    ModLoadingContext.get().registerExtensionPoint(IExtensionPoint.DisplayTest.class,
-        () -> new IExtensionPoint.DisplayTest(() -> FMLNetworkConstants.IGNORESERVERONLY,
-            (a, b) -> true));
-
     log.info("Register Items ...");
     ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
