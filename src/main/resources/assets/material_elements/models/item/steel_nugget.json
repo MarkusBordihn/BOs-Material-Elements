@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "material_elements:item/coke"
+    "layer0": "material_elements:item/steel_nugget"
   }
 }
