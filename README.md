@@ -78,7 +78,7 @@ dependencies {
     ...
 
     // Required: Bo's Material Elements (dev dependency)
-    implementation fg.deobf("curse.maven:material_elements-541620:3507507")
+    implementation fg.deobf("curse.maven:material_elements-541620:3514413")
 }
 ```
 
