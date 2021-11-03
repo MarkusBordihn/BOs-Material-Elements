@@ -1,10 +1,21 @@
 {
   "block.material_elements.steel_ore": "Steel Ore",
   "block.material_elements.steel_block": "Steel Block",
+  "block.material_elements.copper_rod": "Copper Rod",
+  "block.material_elements.gold_rod": "Gold Rod",
+  "block.material_elements.iron_rod": "Iron Rod",
+  "block.material_elements.steel_rod": "Steel Rod",
+  "block.material_elements.netherite_rod": "Netherite Rod",
+  "block.material_elements.copper_rod_half_size": "Copper Rod (half size)",
+  "block.material_elements.gold_rod_half_size": "Gold Rod (half size)",
+  "block.material_elements.iron_rod_half_size": "Iron Rod (half size)",
+  "block.material_elements.steel_rod_half_size": "Steel Rod (half size)",
+  "block.material_elements.netherite_rod_half_size": "Netherite Rod (half size)",
   "block.placeholder.text": "Template placeholder do not remove!",
   "item.material_elements.coke": "Coke",
   "item.material_elements.copper_nugget": "Copper Nugget",
   "item.material_elements.steel_ingot": "Steel Ingot",
   "item.material_elements.steel_nugget": "Steel Nugget",
+  "item.material_elements.netherite_nugget": "Netherite Nugget",
   "item.placeholder.text": "Template placeholder do not remove!"
 }

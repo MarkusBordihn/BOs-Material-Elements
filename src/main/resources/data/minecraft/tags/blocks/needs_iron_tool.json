@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements:copper_rod",
+    "material_elements:copper_rod_half_size",
+    "material_elements:gold_rod",
+    "material_elements:gold_rod_half_size",
+    "material_elements:iron_rod",
+    "material_elements:iron_rod_half_size",
+    "material_elements:steel_rod",
+    "material_elements:steel_rod_half_size",
+    "material_elements:netherite_rod",
+    "material_elements:netherite_rod_half_size",
+    "material_elements:steel_ore",
+    "material_elements:steel_block"
+  ]
+}

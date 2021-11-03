@@ -6,6 +6,7 @@
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "cSpell.words": [
+    "AABB",
     "advancementstracker",
     "amphithere",
     "autosave",
@@ -30,12 +31,14 @@
     "minecraftforge",
     "MOJANG",
     "myfirstmod",
+    "NETHERITE",
     "server",
     "serverworld",
     "smallships",
     "STRG",
     "Tessellator",
-    "untrack"
+    "untrack",
+    "Voxel"
   ],
   "cSpell.ignorePaths" : [
     "*.yml",

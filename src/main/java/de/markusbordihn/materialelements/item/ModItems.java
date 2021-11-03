@@ -40,19 +40,65 @@ public class ModItems {
       DeferredRegister.create(ForgeRegistries.ITEMS, Constants.MOD_ID);
 
   @TemplateEntryPoint("Register Items")
+
+  // Nugget
+  public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
   public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget",
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+  public static final RegistryObject<Item> NETHERITE_NUGGET = ITEMS.register("netherite_nugget",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
+  // Ingot
   public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
+  // Other
   public static final RegistryObject<Item> COKE = ITEMS.register("coke",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-  public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
   @TemplateEntryPoint("Register Block Items")
+
+  // Rods (half size)
+  public static final RegistryObject<Item> COPPER_ROD_HALF_SIZE = ITEMS
+      .register("copper_rod_half_size", () -> new BlockItem(ModBlocks.COPPER_ROD_HALF_SIZE.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> GOLD_ROD_HALF_SIZE =
+      ITEMS.register("gold_rod_half_size", () -> new BlockItem(ModBlocks.GOLD_ROD_HALF_SIZE.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> IRON_ROD_HALF_SIZE =
+      ITEMS.register("iron_rod_half_size", () -> new BlockItem(ModBlocks.IRON_ROD_HALF_SIZE.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> STEEL_ROD_HALF_SIZE =
+      ITEMS.register("steel_rod_half_size", () -> new BlockItem(ModBlocks.STEEL_ROD_HALF_SIZE.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> NETHERITE_ROD_HALF_SIZE = ITEMS.register(
+      "netherite_rod_half_size", () -> new BlockItem(ModBlocks.NETHERITE_ROD_HALF_SIZE.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+
+  // Rods (full-size)
+  public static final RegistryObject<Item> COPPER_ROD =
+      ITEMS.register("copper_rod", () -> new BlockItem(ModBlocks.COPPER_ROD.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> GOLD_ROD =
+      ITEMS.register("gold_rod", () -> new BlockItem(ModBlocks.GOLD_ROD.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> IRON_ROD =
+      ITEMS.register("iron_rod", () -> new BlockItem(ModBlocks.IRON_ROD.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> STEEL_ROD =
+      ITEMS.register("steel_rod", () -> new BlockItem(ModBlocks.STEEL_ROD.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> NETHERITE_ROD =
+      ITEMS.register("netherite_rod", () -> new BlockItem(ModBlocks.NETHERITE_ROD.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+
+  // Blocks
   public static final RegistryObject<Item> STEEL_BLOCK =
       ITEMS.register("steel_block", () -> new BlockItem(ModBlocks.STEEL_BLOCK.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+
+  // Ore
   public static final RegistryObject<Item> STEEL_ORE =
       ITEMS.register("steel_ore", () -> new BlockItem(ModBlocks.STEEL_ORE.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));

@@ -42,9 +42,54 @@ public class ModBlocks {
       DeferredRegister.create(ForgeRegistries.BLOCKS, Constants.MOD_ID);
 
   @TemplateEntryPoint("Register Blocks")
+
+  // Rods (half size)
+  public static final RegistryObject<Block> COPPER_ROD_HALF_SIZE =
+      BLOCKS.register("copper_rod_half_size",
+          () -> new RodHalfSize(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
+              .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
+  public static final RegistryObject<Block> GOLD_ROD_HALF_SIZE =
+      BLOCKS.register("gold_rod_half_size",
+          () -> new RodHalfSize(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD)
+              .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> IRON_ROD_HALF_SIZE =
+      BLOCKS.register("iron_rod_half_size",
+          () -> new RodHalfSize(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+              .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> STEEL_ROD_HALF_SIZE =
+      BLOCKS.register("steel_rod_half_size",
+          () -> new RodHalfSize(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+              .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> NETHERITE_ROD_HALF_SIZE =
+      BLOCKS.register("netherite_rod_half_size",
+          () -> new RodHalfSize(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
+              .requiresCorrectToolForDrops().strength(50.0F, 1200.0F)
+              .sound(SoundType.NETHERITE_BLOCK)));
+
+  // Rods (full-size)
+  public static final RegistryObject<Block> COPPER_ROD = BLOCKS.register("copper_rod",
+      () -> new Rod(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
+          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
+  public static final RegistryObject<Block> GOLD_ROD = BLOCKS.register("gold_rod",
+      () -> new Rod(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD)
+          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> IRON_ROD = BLOCKS.register("iron_rod",
+      () -> new Rod(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> STEEL_ROD = BLOCKS.register("steel_rod",
+      () -> new Rod(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> NETHERITE_ROD = BLOCKS.register("netherite_rod",
+      () -> new Rod(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
+          .requiresCorrectToolForDrops().strength(50.0F, 1200.0F)
+          .sound(SoundType.NETHERITE_BLOCK)));
+
+  // Blocks
   public static final RegistryObject<Block> STEEL_BLOCK = BLOCKS.register("steel_block",
       () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
           .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
+  // Ore
   public static final RegistryObject<Block> STEEL_ORE =
       BLOCKS.register("steel_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
           .requiresCorrectToolForDrops().strength(3.0F, 3.0F)));

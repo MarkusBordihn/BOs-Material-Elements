@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "material_elements:block/netherite_rod"
+    },
+    "facing=down": {
+      "model": "material_elements:block/netherite_rod",
+      "x": 180
+    },
+    "facing=north": {
+      "model": "material_elements:block/netherite_rod",
+      "x": 90
+    },
+    "facing=east": {
+      "model": "material_elements:block/netherite_rod",
+      "x": 90,
+      "y": 90
+    },
+    "facing=south": {
+      "model": "material_elements:block/netherite_rod",
+      "x": 90,
+      "y": 180
+    },
+    "facing=west": {
+      "model": "material_elements:block/netherite_rod",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

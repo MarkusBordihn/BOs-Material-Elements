@@ -1,10 +1,12 @@
 {
   "block.material_elements.steel_ore": "Stahlerz",
   "block.material_elements.steel_block": "Stahlblock",
+  "block.material_elements.iron_rod": "Eisenstab",
   "block.placeholder.text": "Template placeholder do not remove!",
   "item.material_elements.coke": "Koks",
   "item.material_elements.copper_nugget": "Kupfernugget",
   "item.material_elements.steel_ingot": "Stahlbarren",
   "item.material_elements.steel_nugget": "Stahlnugget",
+  "item.material_elements.netherite_nugget": "Netherite Nugget",
   "item.placeholder.text": "Template placeholder do not remove!"
 }
