@@ -27,8 +27,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import de.markusbordihn.materialelements.Constants;
-import de.markusbordihn.materialelements.block.ModBlocks;
 import de.markusbordihn.materialelements.Annotations.TemplateEntryPoint;
+import de.markusbordihn.materialelements.block.ModBlocks;
 
 public class ModItems {
 
@@ -58,6 +58,26 @@ public class ModItems {
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
   @TemplateEntryPoint("Register Block Items")
+
+  // Plates
+  public static final RegistryObject<Item> OAK_PLATE =
+      ITEMS.register("ork_plate", () -> new BlockItem(ModBlocks.OAK_PLATE.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+
+  // Rods (tee)
+  public static final RegistryObject<Item> COPPER_ROD_TEE =
+      ITEMS.register("copper_rod_tee", () -> new BlockItem(ModBlocks.COPPER_ROD_TEE.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+
+  // Rods (star)
+  public static final RegistryObject<Item> COPPER_ROD_STAR =
+      ITEMS.register("copper_rod_star", () -> new BlockItem(ModBlocks.COPPER_ROD_STAR.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+
+  // Rods (cross)
+  public static final RegistryObject<Item> COPPER_ROD_CROSS =
+      ITEMS.register("copper_rod_cross", () -> new BlockItem(ModBlocks.COPPER_ROD_CROSS.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
   // Rods (half size)
   public static final RegistryObject<Item> COPPER_ROD_HALF_SIZE = ITEMS

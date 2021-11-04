@@ -11,34 +11,40 @@ This mod is mostly useful for other mods which requires specific materials or el
 ### Block Overview 👁️‍🗨️
 
 ### ➖ Rods
-* Copper Rod (full and halfsize)
-* Gold Rod (full and halfsize)
-* Iron Rod (full and halfsize)
-* Steel Rod (full and halfsize)
-* Netherite Rod (full and halfsize)
+
+- Copper Rod (full, half-size, cross, star)
+- Gold Rod (full, half-size, cross, star)
+- Iron Rod (full, half-size, cross, star)
+- Steel Rod (full, half-size, cross, star)
+- Netherite Rod (full, half-size, cross, star)
 
 #### 📦 Blocks
-* Steel Block
+
+- Steel Block
 
 #### ✨ Ore
-* Steel Ore
+
+- Steel Ore
 
 ### Item Overview 👁️‍🗨️
 
 #### 🪨 Nuggets
-* Copper Nugget
-* Steel Nugget
-* Netherite Nugget
+
+- Copper Nugget
+- Steel Nugget
+- Netherite Nugget
 
 #### 🪙 Ingot
-* Steel Ingot
+
+- Steel Ingot
 
 #### 🔭 Other Material
-* Coke
+
+- Coke
 
 ### Recipe Overview 👁️‍🗨️
 
-Please take a look a the screenshots for an overview of the crafting recipes.
+This mods adds a lot of additional crafting recipes to allow the crafting of the added elements or to simplify crafting of existing items like wood cutting.
 
 ## Mod Integration 🚀
 

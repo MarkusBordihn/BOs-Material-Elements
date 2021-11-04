@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i",
+    "+",
+    "i"
+  ],
+  "key": {
+    "i": {
+      "item": "material_elements:copper_rod_half_size"
+    },
+    "+": {
+      "item": "material_elements:copper_rod_cross"
+    }
+  },
+  "result": {
+    "item": "material_elements:copper_rod_star",
+    "count": 1
+  }
+}

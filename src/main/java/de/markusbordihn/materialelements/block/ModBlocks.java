@@ -20,6 +20,7 @@
 package de.markusbordihn.materialelements.block;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.OreBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -31,6 +32,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import de.markusbordihn.materialelements.Constants;
 import de.markusbordihn.materialelements.Annotations.TemplateEntryPoint;
+import de.markusbordihn.materialelements.block.rod.*;
 
 public class ModBlocks {
 
@@ -43,11 +45,34 @@ public class ModBlocks {
 
   @TemplateEntryPoint("Register Blocks")
 
+  // Plates
+  public static final RegistryObject<Block> OAK_PLATE =
+      BLOCKS
+          .register("oak_plate",
+              () -> new PlateBlock(BlockBehaviour.Properties
+                  .of(Material.WOOD, Blocks.OAK_PLANKS.defaultMaterialColor()).noCollission()
+                  .strength(0.5F).sound(SoundType.WOOD)));
+
+  // Rods (tee)
+  public static final RegistryObject<Block> COPPER_ROD_TEE = BLOCKS.register("copper_rod_tee",
+      () -> new RodTee(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
+          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
+
+  // Rods (star)
+  public static final RegistryObject<Block> COPPER_ROD_STAR = BLOCKS.register("copper_rod_star",
+      () -> new RodStar(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
+          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
+
+  // Rods (cross)
+  public static final RegistryObject<Block> COPPER_ROD_CROSS = BLOCKS.register("copper_rod_cross",
+      () -> new RodCross(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
+          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
+
   // Rods (half size)
-  public static final RegistryObject<Block> COPPER_ROD_HALF_SIZE =
-      BLOCKS.register("copper_rod_half_size",
-          () -> new RodHalfSize(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
-              .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
+  public static final RegistryObject<Block> COPPER_ROD_HALF_SIZE = BLOCKS.register(
+      "copper_rod_half_size",
+      () -> new RodHalfSize(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
+          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
   public static final RegistryObject<Block> GOLD_ROD_HALF_SIZE =
       BLOCKS.register("gold_rod_half_size",
           () -> new RodHalfSize(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD)
@@ -62,9 +87,9 @@ public class ModBlocks {
               .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
   public static final RegistryObject<Block> NETHERITE_ROD_HALF_SIZE =
       BLOCKS.register("netherite_rod_half_size",
-          () -> new RodHalfSize(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
-              .requiresCorrectToolForDrops().strength(50.0F, 1200.0F)
-              .sound(SoundType.NETHERITE_BLOCK)));
+          () -> new RodHalfSize(BlockBehaviour.Properties
+              .of(Material.METAL, MaterialColor.COLOR_BLACK).requiresCorrectToolForDrops()
+              .strength(50.0F, 1200.0F).sound(SoundType.NETHERITE_BLOCK)));
 
   // Rods (full-size)
   public static final RegistryObject<Block> COPPER_ROD = BLOCKS.register("copper_rod",
