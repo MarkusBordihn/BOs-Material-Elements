@@ -68,15 +68,53 @@ public class ModItems {
   public static final RegistryObject<Item> COPPER_ROD_TEE =
       ITEMS.register("copper_rod_tee", () -> new BlockItem(ModBlocks.COPPER_ROD_TEE.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> GOLD_ROD_TEE =
+      ITEMS.register("gold_rod_tee", () -> new BlockItem(ModBlocks.GOLD_ROD_TEE.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> IRON_ROD_TEE =
+      ITEMS.register("iron_rod_tee", () -> new BlockItem(ModBlocks.IRON_ROD_TEE.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> STEEL_ROD_TEE =
+      ITEMS.register("steel_rod_tee", () -> new BlockItem(ModBlocks.STEEL_ROD_TEE.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> NETHERITE_ROD_TEE =
+      ITEMS.register("netherite_rod_tee", () -> new BlockItem(ModBlocks.NETHERITE_ROD_TEE.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+
 
   // Rods (star)
   public static final RegistryObject<Item> COPPER_ROD_STAR =
       ITEMS.register("copper_rod_star", () -> new BlockItem(ModBlocks.COPPER_ROD_STAR.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> GOLD_ROD_STAR =
+      ITEMS.register("gold_rod_star", () -> new BlockItem(ModBlocks.GOLD_ROD_STAR.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> IRON_ROD_STAR =
+      ITEMS.register("iron_rod_star", () -> new BlockItem(ModBlocks.IRON_ROD_STAR.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> STEEL_ROD_STAR =
+      ITEMS.register("steel_rod_star", () -> new BlockItem(ModBlocks.STEEL_ROD_STAR.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> NETHERIRE_ROD_STAR =
+      ITEMS.register("netherite_rod_star", () -> new BlockItem(ModBlocks.NETHERITE_ROD_STAR.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+
 
   // Rods (cross)
   public static final RegistryObject<Item> COPPER_ROD_CROSS =
       ITEMS.register("copper_rod_cross", () -> new BlockItem(ModBlocks.COPPER_ROD_CROSS.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> GOLD_ROD_CROSS =
+      ITEMS.register("gold_rod_cross", () -> new BlockItem(ModBlocks.GOLD_ROD_CROSS.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> IRON_ROD_CROSS =
+      ITEMS.register("iron_rod_cross", () -> new BlockItem(ModBlocks.IRON_ROD_CROSS.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> STEEL_ROD_CROSS =
+      ITEMS.register("steel_rod_cross", () -> new BlockItem(ModBlocks.STEEL_ROD_CROSS.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> NETHERITE_ROD_CROSS =
+      ITEMS.register("netherite_rod_cross", () -> new BlockItem(ModBlocks.NETHERITE_ROD_CROSS.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
   // Rods (half size)

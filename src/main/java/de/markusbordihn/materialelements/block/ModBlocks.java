@@ -57,16 +57,56 @@ public class ModBlocks {
   public static final RegistryObject<Block> COPPER_ROD_TEE = BLOCKS.register("copper_rod_tee",
       () -> new RodTee(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
           .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
+  public static final RegistryObject<Block> GOLD_ROD_TEE = BLOCKS.register("gold_rod_tee",
+      () -> new RodTee(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD)
+          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> IRON_ROD_TEE = BLOCKS.register("iron_rod_tee",
+      () -> new RodTee(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> STEEL_ROD_TEE = BLOCKS.register("steel_rod_tee",
+      () -> new RodTee(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> NETHERITE_ROD_TEE = BLOCKS.register("netherite_rod_tee",
+      () -> new RodTee(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
+          .requiresCorrectToolForDrops().strength(50.0F, 1200.0F)));
 
   // Rods (star)
   public static final RegistryObject<Block> COPPER_ROD_STAR = BLOCKS.register("copper_rod_star",
       () -> new RodStar(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
           .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
+  public static final RegistryObject<Block> GOLD_ROD_STAR = BLOCKS.register("gold_rod_star",
+      () -> new RodStar(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD)
+          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> IRON_ROD_STAR = BLOCKS.register("iron_rod_star",
+      () -> new RodStar(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> STEEL_ROD_STAR = BLOCKS.register("steel_rod_star",
+      () -> new RodStar(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> NETHERITE_ROD_STAR =
+      BLOCKS.register("netherite_rod_star",
+          () -> new RodStar(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
+              .requiresCorrectToolForDrops().strength(50.0F, 1200.0F)
+              .sound(SoundType.NETHERITE_BLOCK)));
 
   // Rods (cross)
   public static final RegistryObject<Block> COPPER_ROD_CROSS = BLOCKS.register("copper_rod_cross",
       () -> new RodCross(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
           .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
+  public static final RegistryObject<Block> GOLD_ROD_CROSS = BLOCKS.register("gold_rod_cross",
+      () -> new RodCross(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD)
+          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> IRON_ROD_CROSS = BLOCKS.register("iron_rod_cross",
+      () -> new RodCross(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> STEEL_ROD_CROSS = BLOCKS.register("steel_rod_cross",
+      () -> new RodCross(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> NETHERITE_ROD_CROSS =
+      BLOCKS.register("netherite_rod_cross",
+          () -> new RodCross(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
+              .requiresCorrectToolForDrops().strength(50.0F, 1200.0F)
+              .sound(SoundType.NETHERITE_BLOCK)));
 
   // Rods (half size)
   public static final RegistryObject<Block> COPPER_ROD_HALF_SIZE = BLOCKS.register(
