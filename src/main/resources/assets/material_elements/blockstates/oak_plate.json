@@ -1,5 +1,6 @@
 {
   "variants": {
-    "": { "model": "material_elements:block/oak_plate" }
+    "inverted=false": { "model": "material_elements:block/oak_plate" },
+    "inverted=true": { "model": "material_elements:block/oak_plate", "x": 180 }
   }
 }

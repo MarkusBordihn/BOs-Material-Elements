@@ -61,7 +61,7 @@ public class ModItems {
 
   // Plates
   public static final RegistryObject<Item> OAK_PLATE =
-      ITEMS.register("ork_plate", () -> new BlockItem(ModBlocks.OAK_PLATE.get(),
+      ITEMS.register("oak_plate", () -> new BlockItem(ModBlocks.OAK_PLATE.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
   // Rods (tee)

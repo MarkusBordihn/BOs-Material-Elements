@@ -19,39 +19,55 @@
 
 package de.markusbordihn.materialelements.block;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
+import de.markusbordihn.materialelements.Constants;
+
 public class PlateBlock extends Block {
 
-  protected static final VoxelShape AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 0.0D, 16.0D);
+  public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+
+  protected static final VoxelShape AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 1.0D, 16.0D);
+  protected static final VoxelShape AABB_INVERTED =
+      Block.box(0.0D, 15.0D, 0.0D, 16.0D, 16.0D, 16.0D);
+
+  // Defines if we need to rotate the Object based on the player view.
+  public static final BooleanProperty INVERTED = BlockStateProperties.INVERTED;
 
   public PlateBlock(Properties properties) {
     super(properties);
+    this.registerDefaultState(
+        this.stateDefinition.any().setValue(INVERTED, Boolean.valueOf(false)));
   }
 
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {
-    return AABB;
+    return blockState.getValue(INVERTED) ? AABB_INVERTED : AABB;
   }
 
   @Override
-  public boolean isPossibleToRespawnInThis() {
-    return true;
+  public BlockState getStateForPlacement(BlockPlaceContext context) {
+    return this.defaultBlockState().setValue(INVERTED,
+        Boolean.valueOf(context.getClickLocation().y % 1 > 0.5));
   }
 
   @Override
-  public boolean canSurvive(BlockState blockState, LevelReader levelReader, BlockPos blockPos) {
-    return canSupportRigidBlock(levelReader, blockPos.below())
-        || canSupportCenter(levelReader, blockPos.below(), Direction.UP);
+  protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> blockState) {
+    blockState.add(INVERTED);
   }
 
   @Override

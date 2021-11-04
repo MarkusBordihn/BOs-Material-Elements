@@ -50,8 +50,8 @@ public class ModBlocks {
       BLOCKS
           .register("oak_plate",
               () -> new PlateBlock(BlockBehaviour.Properties
-                  .of(Material.WOOD, Blocks.OAK_PLANKS.defaultMaterialColor()).noCollission()
-                  .strength(0.5F).sound(SoundType.WOOD)));
+                  .of(Material.WOOD, Blocks.OAK_PLANKS.defaultMaterialColor()).strength(0.5F)
+                  .sound(SoundType.WOOD)));
 
   // Rods (tee)
   public static final RegistryObject<Block> COPPER_ROD_TEE = BLOCKS.register("copper_rod_tee",

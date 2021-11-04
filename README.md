@@ -22,6 +22,10 @@ This mod is mostly useful for other mods which requires specific materials or el
 
 - Steel Block
 
+#### 🪵 Plates
+
+- Ork Plate
+
 #### ✨ Ore
 
 - Steel Ore
@@ -59,7 +63,7 @@ Add the following lines to your **main/resources/META-INF/mods.toml** file:
     modId="material_elements"
     mandatory=true
     # This version range declares a minimum of the current version up to but not including the next major version
-    versionRange="[0.2.0,)"
+    versionRange="[0.2.1,)"
     ordering="NONE"
     side="BOTH"
 ```
@@ -84,7 +88,7 @@ dependencies {
     ...
 
     // Required: Bo's Material Elements (dev dependency)
-    implementation fg.deobf("curse.maven:material_elements-541620:3514413")
+    implementation fg.deobf("curse.maven:material_elements-541620:3515486")
 }
 ```
 

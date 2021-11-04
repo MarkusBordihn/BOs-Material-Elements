@@ -113,8 +113,6 @@ public class RodTee extends RodBlock {
         || (faceDirection == Direction.UP && lookingDirection == Direction.DOWN)) {
       faceDirection = lookingDirection;
     }
-    log.info("{} {} {}", context.getNearestLookingDirection().getOpposite(), faceDirection,
-        context.getHorizontalDirection());
     return this.defaultBlockState().setValue(FACING, faceDirection).setValue(INVERTED,
         context.getHorizontalDirection() == Direction.EAST
             || context.getHorizontalDirection() == Direction.WEST);
