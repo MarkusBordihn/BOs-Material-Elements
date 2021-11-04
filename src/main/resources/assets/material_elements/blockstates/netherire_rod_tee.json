@@ -1,0 +1,58 @@
+{
+  "variants": {
+    "facing=up,inverted=false": {
+      "model": "material_elements:block/netherite_rod_tee"
+    },
+    "facing=down,inverted=false": {
+      "model": "material_elements:block/netherite_rod_tee",
+      "x": 180
+    },
+    "facing=north,inverted=false": {
+      "model": "material_elements:block/netherite_rod_tee",
+      "x": 90
+    },
+    "facing=east,inverted=false": {
+      "model": "material_elements:block/netherite_rod_tee",
+      "x": 90,
+      "y": 90
+    },
+    "facing=south,inverted=false": {
+      "model": "material_elements:block/netherite_rod_tee",
+      "x": 90,
+      "y": 180
+    },
+    "facing=west,inverted=false": {
+      "model": "material_elements:block/netherite_rod_tee",
+      "x": 90,
+      "y": 270
+    },
+    "facing=up,inverted=true": {
+      "model": "material_elements:block/netherite_rod_tee",
+      "y": 90
+    },
+    "facing=down,inverted=true": {
+      "model": "material_elements:block/netherite_rod_tee",
+      "x": 180,
+      "y": 90
+    },
+    "facing=north,inverted=true": {
+      "model": "material_elements:block/netherite_rod_tee",
+      "x": 90
+    },
+    "facing=east,inverted=true": {
+      "model": "material_elements:block/netherite_rod_tee",
+      "x": 90,
+      "y": 90
+    },
+    "facing=south,inverted=true": {
+      "model": "material_elements:block/netherite_rod_tee",
+      "x": 90,
+      "y": 180
+    },
+    "facing=west,inverted=true": {
+      "model": "material_elements:block/netherite_rod_tee",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "###",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "material_elements:netherite_rod_half_size"
+    }
+  },
+  "result": {
+    "item": "material_elements:netherite_rod_cross",
+    "count": 1
+  }
+}
