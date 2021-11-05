@@ -29,7 +29,7 @@ license="MIT"
     logoFile="logo.png"
     credits=""
     authors="Markus Bordihn"
-    description='''This is the description for a new Forge mod'''
+    description='''Bo's Material Elements is a Minecraft Forge Mod which adds additional materials and elements (like copper nuggets, steel, coke) for other related mods.'''
 
 [[dependencies.forge]] #optional
     # the modid of the dependency

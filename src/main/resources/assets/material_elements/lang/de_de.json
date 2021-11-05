@@ -1,24 +1,37 @@
 {
-  "block.material_elements.steel_ore": "Stahlerz",
-  "block.material_elements.steel_block": "Stahlblock",
-  "block.material_elements.iron_rod": "Eisenstab",
   "block.material_elements.copper_rod": "Kupferstab",
   "block.material_elements.copper_rod_cross": "Kupferkreuz",
   "block.material_elements.copper_rod_half_size": "Halber Kupferstab",
   "block.material_elements.copper_rod_star": "Kupferstern",
+  "block.material_elements.copper_rod_tee": "Kupfer T-Stück",
+
   "block.material_elements.gold_rod": "Goldstarb",
   "block.material_elements.gold_rod_cross": "Goldkreuz",
   "block.material_elements.gold_rod_half_size": "Halber Goldstab",
   "block.material_elements.gold_rod_star": "Goldstern",
+  "block.material_elements.gold_rod_tee": "Gold T-Stück",
+
+  "block.material_elements.iron_rod": "Eisenstab",
   "block.material_elements.iron_rod_cross": "Eisenkreuz",
   "block.material_elements.iron_rod_half_size": "Halber Eisenstarb",
   "block.material_elements.iron_rod_star": "Eisenstern",
+  "block.material_elements.iron_rod_tee": "Eisen T-Stück",
+
+  "block.material_elements.steel_block": "Stahlblock",
+  "block.material_elements.steel_ore": "Stahlerz",
+  "block.material_elements.steel_rod": "Stahlstab",
+  "block.material_elements.steel_rod_cross": "Stahlkreuz",
+  "block.material_elements.steel_rod_half_size": "Halber Stahlstab",
+  "block.material_elements.steel_rod_star": "Stahlstern",
+  "block.material_elements.steel_rod_tee": "Stahl T-Stück",
+
   "block.material_elements.netherite_rod": "Netheritestab",
   "block.material_elements.netherite_rod_cross": "Netheritekreuz",
   "block.material_elements.netherite_rod_half_size": "Halber Netheritestab",
-  "block.material_elements.netherite_rod_star": "Netherite stern",
+  "block.material_elements.netherite_rod_star": "Netheritestern",
 
   "block.placeholder.text": "Template placeholder do not remove!",
+
   "item.material_elements.coke": "Koks",
   "item.material_elements.copper_nugget": "Kupfernugget",
   "item.material_elements.steel_ingot": "Stahlbarren",

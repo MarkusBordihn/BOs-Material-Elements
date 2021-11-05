@@ -125,7 +125,7 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.17.1-37.0.104'
 
     // JEI Integration (dev depenedency)
-    implementation fg.deobf("curse.maven:spark-238222:3502663")
+    implementation fg.deobf("curse.maven:jei-238222:3502663")
 
     // Additional helpful Mods for development (dev depenedency)
     implementation fg.deobf("curse.maven:spark-361579:3485140")

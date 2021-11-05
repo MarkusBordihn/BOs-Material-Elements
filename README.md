@@ -1,8 +1,8 @@
 # Bo's Material Elements
 
-![Bo's Material Elements][logo]{height=300px}
+![Bo's Material Elements][logo]
 
-Bo's Material Elements is a Minecraft Forge Mod which adds additional materials and elements (like copper nuggets, steel, coke) for other related mods.
+Material Elements is a Minecraft Forge Mod which adds additional materials and elements (like copper nuggets, steel, coke) for other related mods.
 
 This mod is mostly useful for other mods which requires specific materials or elements and don't want to implement them self.
 
@@ -63,7 +63,7 @@ Add the following lines to your **main/resources/META-INF/mods.toml** file:
     modId="material_elements"
     mandatory=true
     # This version range declares a minimum of the current version up to but not including the next major version
-    versionRange="[0.3.0,)"
+    versionRange="[0.3.1,)"
     ordering="NONE"
     side="BOTH"
 ```
@@ -88,7 +88,7 @@ dependencies {
     ...
 
     // Required: Bo's Material Elements (dev dependency)
-    implementation fg.deobf("curse.maven:material_elements-541620:3515857")
+    implementation fg.deobf("curse.maven:material_elements-541620:3516582")
 }
 ```
 
