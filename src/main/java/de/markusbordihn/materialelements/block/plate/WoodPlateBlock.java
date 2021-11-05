@@ -17,28 +17,36 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package de.markusbordihn.materialelements;
+package de.markusbordihn.materialelements.block.plate;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import de.markusbordihn.materialelements.block.ModBlocks;
-import de.markusbordihn.materialelements.item.ModItems;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.state.BlockState;
 
-@Mod(Constants.MOD_ID)
-public class MaterialElements {
+import de.markusbordihn.materialelements.Constants;
+
+public class WoodPlateBlock extends PlateBlock {
 
   public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
-  public MaterialElements() {
-
-    log.info("Register Material Elements Blocks ...");
-    ModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-
-    log.info("Register Material Elements Items ...");
-    ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-
+  public WoodPlateBlock(Properties properties) {
+    super(properties);
   }
+
+  @Override
+  // Called when fire is updating, checks if a block face can catch fire.
+  public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+    return true;
+  }
+
+  @Override
+  // Chance that fire will spread and consume this block. 300 being a 100% chance
+  public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+    return 100;
+  }
+
 }

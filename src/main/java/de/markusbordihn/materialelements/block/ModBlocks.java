@@ -32,6 +32,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import de.markusbordihn.materialelements.Constants;
 import de.markusbordihn.materialelements.Annotations.TemplateEntryPoint;
+import de.markusbordihn.materialelements.block.plate.*;
 import de.markusbordihn.materialelements.block.rod.*;
 
 public class ModBlocks {
@@ -49,8 +50,8 @@ public class ModBlocks {
   public static final RegistryObject<Block> OAK_PLATE =
       BLOCKS
           .register("oak_plate",
-              () -> new PlateBlock(BlockBehaviour.Properties
-                  .of(Material.WOOD, Blocks.OAK_PLANKS.defaultMaterialColor()).strength(0.5F)
+              () -> new WoodPlateBlock(BlockBehaviour.Properties
+                  .of(Material.WOOD, Blocks.OAK_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
                   .sound(SoundType.WOOD)));
 
   // Rods (tee)
