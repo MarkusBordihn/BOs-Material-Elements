@@ -63,7 +63,7 @@ Add the following lines to your **main/resources/META-INF/mods.toml** file:
     modId="material_elements"
     mandatory=true
     # This version range declares a minimum of the current version up to but not including the next major version
-    versionRange="[0.3.1,)"
+    versionRange="[0.3.2,)"
     ordering="NONE"
     side="BOTH"
 ```
@@ -88,7 +88,7 @@ dependencies {
     ...
 
     // Required: Bo's Material Elements (dev dependency)
-    implementation fg.deobf("curse.maven:material_elements-541620:3516582")
+    implementation fg.deobf("curse.maven:material_elements-541620:3517260")
 }
 ```
 

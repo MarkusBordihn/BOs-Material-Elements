@@ -10,7 +10,7 @@
       "item": "material_elements:coke"
     },
     "X": {
-      "item": "minecraft:iron_ore"
+      "tag": "minecraft:iron_ores"
     }
   },
   "result": {

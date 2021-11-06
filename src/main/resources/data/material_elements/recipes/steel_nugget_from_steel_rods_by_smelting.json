@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "material_elements:steel_rods"
+  },
+  "result": "material_elements:steel_nugget",
+  "experience": 0.1,
+  "cookingtime": 500
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements:gold_rod",
+    "material_elements:gold_rod_cross",
+    "material_elements:gold_rod_half_size",
+    "material_elements:gold_rod_star",
+    "material_elements:gold_rod_tee"
+  ]
+}
