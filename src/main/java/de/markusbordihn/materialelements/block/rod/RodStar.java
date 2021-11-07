@@ -23,14 +23,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RodBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -49,34 +45,12 @@ public class RodStar extends RodBlock {
 
   public RodStar(Properties properties) {
     super(properties);
-    this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.UP));
   }
 
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {
     return SHAPE_AABB;
-  }
-
-  @Override
-  public BlockState getStateForPlacement(BlockPlaceContext context) {
-    Direction direction = context.getClickedFace();
-    BlockState blockState =
-        context.getLevel().getBlockState(context.getClickedPos().relative(direction.getOpposite()));
-    Direction faceDirection =
-        blockState.is(this) && blockState.getValue(FACING) == direction ? direction.getOpposite()
-            : direction;
-    return this.defaultBlockState().setValue(FACING, faceDirection);
-  }
-
-  @Override
-  protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> blockState) {
-    blockState.add(FACING);
-  }
-
-  @Override
-  public PushReaction getPistonPushReaction(BlockState blockState) {
-    return PushReaction.NORMAL;
   }
 
 }

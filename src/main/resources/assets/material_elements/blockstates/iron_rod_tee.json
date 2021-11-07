@@ -1,58 +1,55 @@
 {
   "variants": {
-    "facing=up,inverted=false": {
+    "face=floor,facing=north": {
       "model": "material_elements:block/iron_rod_tee"
     },
-    "facing=down,inverted=false": {
+    "face=floor,facing=east": {
       "model": "material_elements:block/iron_rod_tee",
-      "x": 180
+      "y": 90
     },
-    "facing=north,inverted=false": {
+    "face=floor,facing=south": {
+      "model": "material_elements:block/iron_rod_tee"
+    },
+    "face=floor,facing=west": {
+      "model": "material_elements:block/iron_rod_tee",
+      "y": 90
+    },
+    "face=wall,facing=north": {
       "model": "material_elements:block/iron_rod_tee",
       "x": 90
     },
-    "facing=east,inverted=false": {
+    "face=wall,facing=east": {
       "model": "material_elements:block/iron_rod_tee",
       "x": 90,
       "y": 90
     },
-    "facing=south,inverted=false": {
+    "face=wall,facing=south": {
       "model": "material_elements:block/iron_rod_tee",
       "x": 90,
       "y": 180
     },
-    "facing=west,inverted=false": {
+    "face=wall,facing=west": {
       "model": "material_elements:block/iron_rod_tee",
       "x": 90,
       "y": 270
     },
-    "facing=up,inverted=true": {
+    "face=ceiling,facing=north": {
       "model": "material_elements:block/iron_rod_tee",
-      "y": 90
+      "x": 180
     },
-    "facing=down,inverted=true": {
+    "face=ceiling,facing=east": {
       "model": "material_elements:block/iron_rod_tee",
       "x": 180,
       "y": 90
     },
-    "facing=north,inverted=true": {
+    "face=ceiling,facing=south": {
       "model": "material_elements:block/iron_rod_tee",
-      "x": 90
+      "x": 180
     },
-    "facing=east,inverted=true": {
+    "face=ceiling,facing=west": {
       "model": "material_elements:block/iron_rod_tee",
-      "x": 90,
+      "x": 180,
       "y": 90
-    },
-    "facing=south,inverted=true": {
-      "model": "material_elements:block/iron_rod_tee",
-      "x": 90,
-      "y": 180
-    },
-    "facing=west,inverted=true": {
-      "model": "material_elements:block/iron_rod_tee",
-      "x": 90,
-      "y": 270
     }
   }
 }

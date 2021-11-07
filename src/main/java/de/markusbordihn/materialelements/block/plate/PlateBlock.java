@@ -52,13 +52,13 @@ public class PlateBlock extends Block {
   protected static final VoxelShape FACING_WEST_AABB = Block.box(15.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
 
   // Defines if we need to rotate the Object based on the click position and player pov
-  public static final DirectionProperty FACING = BlockStateProperties.FACING;
+  public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
   public static final EnumProperty<AttachFace> ATTACH_FACE = BlockStateProperties.ATTACH_FACE;
 
   public PlateBlock(Properties properties) {
     super(properties);
     this.registerDefaultState(this.stateDefinition.any().setValue(ATTACH_FACE, AttachFace.FLOOR)
-        .setValue(FACING, Direction.UP));
+        .setValue(FACING, Direction.NORTH));
   }
 
   @Override
@@ -112,8 +112,8 @@ public class PlateBlock extends Block {
       }
     }
 
-    return this.defaultBlockState().setValue(FACING, faceDirection).setValue(ATTACH_FACE,
-        attachFace);
+    return this.defaultBlockState().setValue(ATTACH_FACE, attachFace).setValue(FACING,
+        context.getHorizontalDirection().getOpposite());
   }
 
   @Override

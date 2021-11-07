@@ -34,7 +34,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class RodHalfSize extends RodBlock {
 
   // Shapes for the different faces like UP, DOWN, NORTH, EAST, SOUTH and WEST
-  protected static final VoxelShape UP_DOWN_AABB = Block.box(6.0D, 0.0D, 6.0D, 10.0D, 8.0D, 10.0D);
+  protected static final VoxelShape DEFAULT_AABB = Block.box(6.0D, 0.0D, 6.0D, 10.0D, 8.0D, 10.0D);
   protected static final VoxelShape NORTH_AABB = Block.box(6.0D, 6.0D, 8.0D, 10.0D, 10.0D, 16.0D);
   protected static final VoxelShape EAST_AABB = Block.box(0.0D, 6.0D, 6.0D, 8.0D, 10.0D, 10.0D);
   protected static final VoxelShape SOUTH_AABB = Block.box(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 8.0D);
@@ -50,8 +50,6 @@ public class RodHalfSize extends RodBlock {
       CollisionContext collisionContext) {
     // Shapes needs to be returned per FACING because of the different kind of rotations.
     switch (blockState.getValue(FACING)) {
-      case UP, DOWN:
-        return UP_DOWN_AABB;
       case NORTH:
         return NORTH_AABB;
       case EAST:
@@ -60,8 +58,9 @@ public class RodHalfSize extends RodBlock {
         return SOUTH_AABB;
       case WEST:
         return WEST_AABB;
+      case UP, DOWN:
       default:
-        return UP_DOWN_AABB;
+        return DEFAULT_AABB;
     }
   }
 

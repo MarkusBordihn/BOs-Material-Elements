@@ -19,42 +19,30 @@
 
 package de.markusbordihn.materialelements.block.rod;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RodBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-import de.markusbordihn.materialelements.Constants;
+public class RodTee extends RodComplexBlock {
 
-public class RodTee extends RodBlock {
-
-  public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
-
-  // Shapes for the different faces like UP, DOWN, NORTH, EAST, SOUTH and WEST
+  // Shapes for the different faces like NORTH, EAST, SOUTH and WEST
   // Shapes are automatically optimized by the Shapes.or functions.
   protected static final VoxelShape UP_AABB =
       Shapes.or(Block.box(6.0D, 0.0D, 6.0D, 10.0D, 8.0D, 10.0D),
           Block.box(0.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D));
-  protected static final VoxelShape UP_INVERTED_AABB =
+  protected static final VoxelShape UP_EAST_WEST_AABB =
       Shapes.or(Block.box(6.0D, 0.0D, 6.0D, 10.0D, 8.0D, 10.0D),
           Block.box(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 16.0D));
   protected static final VoxelShape DOWN_AABB =
       Shapes.or(Block.box(6.0D, 10.0D, 6.0D, 10.0D, 16.0D, 10.0D),
           Block.box(0.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D));
-  protected static final VoxelShape DOWN_INVERTED_AABB =
+  protected static final VoxelShape DOWN_EAST_WEST_AABB =
       Shapes.or(Block.box(6.0D, 10.0D, 6.0D, 10.0D, 16.0D, 10.0D),
           Block.box(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 16.0D));
   protected static final VoxelShape NORTH_AABB =
@@ -70,19 +58,26 @@ public class RodTee extends RodBlock {
       Shapes.or(Block.box(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 16.0D),
           Block.box(8.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D));
 
-  // Defines if we need to rotate the Object based on the player view.
-  public static final BooleanProperty INVERTED = BlockStateProperties.INVERTED;
-
   public RodTee(Properties properties) {
     super(properties);
-    this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.UP)
-        .setValue(INVERTED, Boolean.valueOf(false)));
   }
 
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {
-    switch (blockState.getValue(FACING)) {
+    AttachFace attachFace = blockState.getValue(ATTACH_FACE);
+    Direction facing = blockState.getValue(FACING);
+
+    // Handle floor and ceiling placement
+    if (attachFace == AttachFace.FLOOR) {
+      return (facing == Direction.EAST || facing == Direction.WEST) ? UP_EAST_WEST_AABB : UP_AABB;
+    } else if (attachFace == AttachFace.CEILING) {
+      return (facing == Direction.EAST || facing == Direction.WEST) ? DOWN_EAST_WEST_AABB
+          : DOWN_AABB;
+    }
+
+    // Handle wall placements
+    switch (facing) {
       case NORTH:
         return NORTH_AABB;
       case EAST:
@@ -91,41 +86,9 @@ public class RodTee extends RodBlock {
         return SOUTH_AABB;
       case WEST:
         return WEST_AABB;
-      case DOWN:
-        return Boolean.TRUE.equals(blockState.getValue(INVERTED)) ? DOWN_INVERTED_AABB : DOWN_AABB;
-      case UP:
       default:
-        return Boolean.TRUE.equals(blockState.getValue(INVERTED)) ? UP_INVERTED_AABB : UP_AABB;
+        return UP_AABB;
     }
-  }
-
-  @Override
-  public BlockState getStateForPlacement(BlockPlaceContext context) {
-    Direction direction = context.getClickedFace();
-    BlockState blockState =
-        context.getLevel().getBlockState(context.getClickedPos().relative(direction.getOpposite()));
-    Direction lookingDirection = context.getNearestLookingDirection().getOpposite();
-    Direction faceDirection =
-        blockState.is(this) && blockState.getValue(FACING) == direction ? direction.getOpposite()
-            : direction;
-    // Fixing Model direction for placing the block on itself.
-    if ((faceDirection == Direction.DOWN && lookingDirection == Direction.UP)
-        || (faceDirection == Direction.UP && lookingDirection == Direction.DOWN)) {
-      faceDirection = lookingDirection;
-    }
-    return this.defaultBlockState().setValue(FACING, faceDirection).setValue(INVERTED,
-        context.getHorizontalDirection() == Direction.EAST
-            || context.getHorizontalDirection() == Direction.WEST);
-  }
-
-  @Override
-  protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> blockState) {
-    blockState.add(FACING, INVERTED);
-  }
-
-  @Override
-  public PushReaction getPistonPushReaction(BlockState blockState) {
-    return PushReaction.NORMAL;
   }
 
 }

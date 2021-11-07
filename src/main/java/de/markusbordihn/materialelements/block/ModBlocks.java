@@ -53,6 +53,42 @@ public class ModBlocks {
               () -> new WoodPlateBlock(BlockBehaviour.Properties
                   .of(Material.WOOD, Blocks.OAK_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
                   .sound(SoundType.WOOD)));
+  public static final RegistryObject<Block> SPRUCE_PLATE =
+      BLOCKS.register("spruce_plate",
+          () -> new WoodPlateBlock(BlockBehaviour.Properties
+              .of(Material.WOOD, Blocks.SPRUCE_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+              .sound(SoundType.WOOD)));
+  public static final RegistryObject<Block> BIRCH_PLATE =
+      BLOCKS.register("birch_plate",
+          () -> new WoodPlateBlock(BlockBehaviour.Properties
+              .of(Material.WOOD, Blocks.BIRCH_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+              .sound(SoundType.WOOD)));
+  public static final RegistryObject<Block> JUNGLE_PLATE =
+      BLOCKS.register("jungle_plate",
+          () -> new WoodPlateBlock(BlockBehaviour.Properties
+              .of(Material.WOOD, Blocks.JUNGLE_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+              .sound(SoundType.WOOD)));
+  public static final RegistryObject<Block> ACACIA_PLATE =
+      BLOCKS.register("acacia_plate",
+          () -> new WoodPlateBlock(BlockBehaviour.Properties
+              .of(Material.WOOD, Blocks.ACACIA_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+              .sound(SoundType.WOOD)));
+  public static final RegistryObject<Block> DARK_OAK_PLATE =
+      BLOCKS.register("dark_oak_plate",
+          () -> new WoodPlateBlock(BlockBehaviour.Properties
+              .of(Material.WOOD, Blocks.DARK_OAK_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+              .sound(SoundType.WOOD)));
+  public static final RegistryObject<Block> CRIMSON_PLATE =
+      BLOCKS.register("crimson_plate",
+          () -> new WoodPlateBlock(BlockBehaviour.Properties
+              .of(Material.WOOD, Blocks.CRIMSON_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+              .sound(SoundType.WOOD)));
+  public static final RegistryObject<Block> WARPED_PLATE =
+      BLOCKS.register("warped_plate",
+          () -> new WoodPlateBlock(BlockBehaviour.Properties
+              .of(Material.WOOD, Blocks.WARPED_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+              .sound(SoundType.WOOD)));
+
 
   // Rods (tee)
   public static final RegistryObject<Block> COPPER_ROD_TEE = BLOCKS.register("copper_rod_tee",

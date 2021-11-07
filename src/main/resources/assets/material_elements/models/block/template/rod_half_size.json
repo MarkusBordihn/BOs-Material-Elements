@@ -3,8 +3,8 @@
 	"ambientocclusion": false,
 	"texture_size": [32, 32],
 	"textures": {
-		"particle": "material_elements:block/rod_half_size",
-		"texture": "material_elements:block/rod_half_size"
+		"particle": "material_elements:block/copper_rod",
+		"texture": "material_elements:block/copper_rod"
 	},
 	"elements": [
 		{
@@ -12,12 +12,12 @@
 			"from": [7, 0, 7],
 			"to": [9, 8, 9],
 			"faces": {
-				"north": {"uv": [1, 1, 2, 9], "texture": "#texture"},
-				"east": {"uv": [0, 1, 1, 9], "texture": "#texture"},
-				"south": {"uv": [3, 1, 4, 9], "texture": "#texture"},
-				"west": {"uv": [2, 1, 3, 9], "texture": "#texture"},
-				"up": {"uv": [2, 1, 1, 0], "texture": "#texture", "cullface": "up"},
-				"down": {"uv": [3, 0, 2, 1], "texture": "#texture"}
+				"north": {"uv": [1, 5, 2, 9], "texture": "#texture"},
+				"east": {"uv": [0, 5, 1, 9], "texture": "#texture"},
+				"south": {"uv": [3, 5, 4, 9], "texture": "#texture"},
+				"west": {"uv": [2, 5, 3, 9], "texture": "#texture"},
+				"up": {"uv": [2, 1, 1, 0], "texture": "#texture"},
+				"down": {"uv": [3, 0, 2, 1], "texture": "#texture", "cullface": "down"}
 			}
 		}
 	],

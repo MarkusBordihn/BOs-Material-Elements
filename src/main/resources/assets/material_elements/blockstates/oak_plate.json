@@ -1,75 +1,59 @@
 {
   "variants": {
-    "facing=up,face=floor": {
+    "face=floor,facing=north": {
       "model": "material_elements:block/oak_plate",
       "y": 180
     },
-    "facing=up,face=wall": {
+    "face=floor,facing=east": {
       "model": "material_elements:block/oak_plate",
-      "x": 90
-    },
-    "facing=up,face=ceiling": {
-      "model": "material_elements:block/oak_plate",
-      "x": 180
-    },
-    "facing=down,face=floor": {
-      "model": "material_elements:block/oak_plate"
-    },
-    "facing=down,face=wall": {
-      "model": "material_elements:block/oak_plate",
-      "x": 90
-    },
-    "facing=down,face=ceiling": {
-      "model": "material_elements:block/oak_plate",
-      "x": 180,
       "y": 180
     },
-    "facing=north,face=floor": {
-      "model": "material_elements:block/oak_plate"
+    "face=floor,facing=south": {
+      "model": "material_elements:block/oak_plate",
+      "y": 180
     },
-    "facing=north,face=wall": {
+    "face=floor,facing=west": {
+      "model": "material_elements:block/oak_plate",
+      "y": 180
+    },
+    "face=wall,facing=north": {
       "model": "material_elements:block/oak_plate",
       "x": 90
     },
-    "facing=north,face=ceiling": {
-      "model": "material_elements:block/oak_plate",
-      "x": 180
-    },
-    "facing=east,face=floor": {
-      "model": "material_elements:block/oak_plate"
-    },
-    "facing=east,face=wall": {
+    "face=wall,facing=east": {
       "model": "material_elements:block/oak_plate",
       "x": 90,
       "y": 90
     },
-    "facing=east,face=ceiling": {
-      "model": "material_elements:block/oak_plate",
-      "x": 180
-    },
-    "facing=south,face=floor": {
-      "model": "material_elements:block/oak_plate"
-    },
-    "facing=south,face=wall": {
+    "face=wall,facing=south": {
       "model": "material_elements:block/oak_plate",
       "x": 90,
       "y": 180
     },
-    "facing=south,face=ceiling": {
-      "model": "material_elements:block/oak_plate",
-      "x": 180
-    },
-    "facing=west,face=floor": {
-      "model": "material_elements:block/oak_plate"
-    },
-    "facing=west,face=wall": {
+    "face=wall,facing=west": {
       "model": "material_elements:block/oak_plate",
       "x": 90,
       "y": 270
     },
-    "facing=west,face=ceiling": {
+    "face=ceiling,facing=north": {
       "model": "material_elements:block/oak_plate",
-      "x": 180
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=east": {
+      "model": "material_elements:block/oak_plate",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=south": {
+      "model": "material_elements:block/oak_plate",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=west": {
+      "model": "material_elements:block/oak_plate",
+      "x": 180,
+      "y": 180
     }
   }
 }

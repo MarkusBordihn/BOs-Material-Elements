@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:jungle_slab"
+  },
+  "result": "material_elements:jungle_plate",
+  "count": 2
+}
