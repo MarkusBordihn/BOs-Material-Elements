@@ -51,11 +51,11 @@ public class RodCross extends RodComplexBlock {
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {
-    AttachFace attachFace = blockState.getValue(ATTACH_FACE);
+    AttachFace attachFace = blockState.getValue(RodComplexBlock.ATTACH_FACE);
     if (attachFace == AttachFace.WALL) {
       return  WALL_AABB;
     }
-    Direction facing = blockState.getValue(FACING);
+    Direction facing = blockState.getValue(RodComplexBlock.FACING);
     if (facing == Direction.EAST || facing == Direction.WEST) {
       return EAST_WEST_AABB;
     }

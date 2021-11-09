@@ -65,8 +65,8 @@ public class RodTee extends RodComplexBlock {
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {
-    AttachFace attachFace = blockState.getValue(ATTACH_FACE);
-    Direction facing = blockState.getValue(FACING);
+    AttachFace attachFace = blockState.getValue(RodComplexBlock.ATTACH_FACE);
+    Direction facing = blockState.getValue(RodComplexBlock.FACING);
 
     // Handle floor and ceiling placement
     if (attachFace == AttachFace.FLOOR) {
