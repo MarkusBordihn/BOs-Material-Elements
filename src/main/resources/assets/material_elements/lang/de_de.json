@@ -37,5 +37,7 @@
   "item.material_elements.steel_ingot": "Stahlbarren",
   "item.material_elements.steel_nugget": "Stahlnugget",
   "item.material_elements.netherite_nugget": "Netherite Nugget",
-  "item.placeholder.text": "Template placeholder do not remove!"
+  "item.placeholder.text": "Template placeholder do not remove!",
+
+  "itemGroup.rods": "Material & Elements: Stangen"
 }

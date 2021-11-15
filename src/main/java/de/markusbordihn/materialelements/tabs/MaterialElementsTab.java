@@ -17,23 +17,21 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package de.markusbordihn.materialelements;
+package de.markusbordihn.materialelements.tabs;
 
-import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.Tag;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 
-public final class Constants {
+import de.markusbordihn.materialelements.item.ModItems;
 
-  protected Constants() {}
+public class MaterialElementsTab {
 
-  // General Mod definitions
-  public static final String LOG_NAME = "Bo's Material Elements";
-  public static final String MOD_COMMAND = "material_elements";
-  public static final String MOD_ID = "material_elements";
-  public static final String MOD_NAME = "Bo's Material Elements";
+  protected MaterialElementsTab() {}
 
-  // Tag definitions
-  public static final Tag.Named<Block> NEEDS_STEEL_TOOL =
-      BlockTags.bind(MOD_ID + "needs_steel_tool");
+  public static final CreativeModeTab RODS = new CreativeModeTab("rods") {
+    public ItemStack makeIcon() {
+      return new ItemStack(ModItems.IRON_ROD.get());
+    }
+  };
+
 }

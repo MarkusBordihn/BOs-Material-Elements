@@ -48,5 +48,7 @@
   "item.material_elements.steel_ingot": "Steel Ingot",
   "item.material_elements.steel_nugget": "Steel Nugget",
   "item.material_elements.netherite_nugget": "Netherite Nugget",
-  "item.placeholder.text": "Template placeholder do not remove!"
+  "item.placeholder.text": "Template placeholder do not remove!",
+
+  "itemGroup.rods": "Material & Elements: Rods"
 }
