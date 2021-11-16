@@ -26,7 +26,6 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
 public enum ModTiers implements Tier {
-
   STEEL(2, 500, 7.0F, 2.5F, 14, () -> {
     return Ingredient.of(ModItems.STEEL_INGOT.get());
   });

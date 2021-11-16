@@ -29,7 +29,7 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-  IRON("steel", 20, new int[] {2, 5, 7, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
+  STEEL("steel", 20, new int[] {2, 5, 7, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
     return Ingredient.of(ModItems.STEEL_INGOT.get());
   });
 

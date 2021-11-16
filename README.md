@@ -1,4 +1,4 @@
-# Bo's Material Elements
+# Bo's Material and Elements
 
 ![Bo's Material Elements][logo]
 
@@ -53,6 +53,10 @@ This mod is mostly useful for other mods which requires specific materials or el
 
 - Coke
 
+### Recipe Overview 👁️‍🗨️
+
+This mods adds a lot of additional crafting recipes to allow the crafting of the added elements or to simplify crafting of existing items like wood cutting.
+
 ## Materials
 
 ### Steel
@@ -75,10 +79,6 @@ It is classified between Iron and Diamond with the following stats.
 | Protection - Slot 1   | _5_    | 5     | _6_     |
 | Protection - Slot 2   | _6_    | 7     | _8_     |
 | Protection - Slot 3   | _2_    | 2     | _3_     |
-
-### Recipe Overview 👁️‍🗨️
-
-This mods adds a lot of additional crafting recipes to allow the crafting of the added elements or to simplify crafting of existing items like wood cutting.
 
 ## Mod Integration 🚀
 
