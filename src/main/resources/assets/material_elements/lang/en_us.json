@@ -45,10 +45,36 @@
 
   "item.material_elements.coke": "Coke",
   "item.material_elements.copper_nugget": "Copper Nugget",
+  "item.material_elements.netherite_nugget": "Netherite Nugget",
   "item.material_elements.steel_ingot": "Steel Ingot",
   "item.material_elements.steel_nugget": "Steel Nugget",
-  "item.material_elements.netherite_nugget": "Netherite Nugget",
+
+  "item.material_elements.test_tube": "Test Tube",
+  "item.material_elements.test_tube_filled.effect.empty": "Uncraftable test tube",
+  "item.material_elements.test_tube_filled.effect.water": "Water test tube",
+  "item.material_elements.test_tube_filled.effect.mundane": "Mundane test tube",
+  "item.material_elements.test_tube_filled.effect.thick": "Thick test tube",
+  "item.material_elements.test_tube_filled.effect.awkward": "Awkward test tube",
+  "item.material_elements.test_tube_filled.effect.night_vision": "Test tube with Night Vision",
+  "item.material_elements.test_tube_filled.effect.invisibility": "Test tube with Invisibility",
+  "item.material_elements.test_tube_filled.effect.leaping": "Test tube with Leaping",
+  "item.material_elements.test_tube_filled.effect.fire_resistance": "Test tube with Fire Resistance",
+  "item.material_elements.test_tube_filled.effect.swiftness": "Test tube with Swiftness",
+  "item.material_elements.test_tube_filled.effect.slowness": "Test tube with Slowness",
+  "item.material_elements.test_tube_filled.effect.water_breathing": "Test tube with Water Breathing",
+  "item.material_elements.test_tube_filled.effect.healing": "Test tube with Healing",
+  "item.material_elements.test_tube_filled.effect.harming": "Test tube with Harming",
+  "item.material_elements.test_tube_filled.effect.poison": "Test tube with Poison",
+  "item.material_elements.test_tube_filled.effect.regeneration": "Test tube with Regeneration",
+  "item.material_elements.test_tube_filled.effect.strength": "Test tube with Strength",
+  "item.material_elements.test_tube_filled.effect.weakness": "Test tube with Weakness",
+  "item.material_elements.test_tube_filled.effect.levitation": "Test tube with Levitation",
+  "item.material_elements.test_tube_filled.effect.luck": "Test tube with Luck",
+  "item.material_elements.test_tube_filled.effect.turtle_master": "Test tube with the Turtle Master",
+  "item.material_elements.test_tube_filled.effect.slow_falling": "Test tube with Slow Falling",
+
   "item.placeholder.text": "Template placeholder do not remove!",
 
-  "itemGroup.rods": "Material & Elements: Rods"
+  "itemGroup.rods": "Material & Elements: Rods",
+  "itemGroup.test_tubes": "Material & Elements: Test Tubes"
 }

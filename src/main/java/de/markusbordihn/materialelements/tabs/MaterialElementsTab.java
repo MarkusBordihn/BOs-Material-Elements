@@ -28,9 +28,15 @@ public class MaterialElementsTab {
 
   protected MaterialElementsTab() {}
 
-  public static final CreativeModeTab RODS = new CreativeModeTab("rods") {
+  public static final CreativeModeTab TAB_RODS = new CreativeModeTab("rods") {
     public ItemStack makeIcon() {
       return new ItemStack(ModItems.IRON_ROD.get());
+    }
+  };
+
+  public static final CreativeModeTab TAB_TEST_TUBES = new CreativeModeTab("test_tubes") {
+    public ItemStack makeIcon() {
+      return new ItemStack(ModItems.TEST_TUBE.get());
     }
   };
 

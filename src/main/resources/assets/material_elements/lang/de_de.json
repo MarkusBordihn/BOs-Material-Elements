@@ -17,8 +17,6 @@
   "block.material_elements.iron_rod_star": "Eisenstern",
   "block.material_elements.iron_rod_tee": "Eisen T-Stück",
 
-  "block.material_elements.steel_block": "Stahlblock",
-  "block.material_elements.steel_ore": "Stahlerz",
   "block.material_elements.steel_rod": "Stahlstab",
   "block.material_elements.steel_rod_cross": "Stahlkreuz",
   "block.material_elements.steel_rod_half_size": "Halber Stahlstab",
@@ -30,14 +28,52 @@
   "block.material_elements.netherite_rod_half_size": "Halber Netheritestab",
   "block.material_elements.netherite_rod_star": "Netheritestern",
 
+  "block.material_elements.steel_block": "Stahlblock",
+  "block.material_elements.steel_ore": "Stahlerz",
+
+  "block.material_elements.oak_plate": "Eichenplatte",
+  "block.material_elements.spruce_plate": "Fichtenplatte",
+  "block.material_elements.birch_plate": "Birkenplatte",
+  "block.material_elements.jungle_plate": "Dschungelplatte",
+  "block.material_elements.acacia_plate": "Akazie-Platte",
+  "block.material_elements.dark_oak_plate": "Dunkle Platte",
+  "block.material_elements.crimson_plate": "Crimson Plate",
+  "block.material_elements.warped_plate": "Verzogene Platte",
+
   "block.placeholder.text": "Template placeholder do not remove!",
 
   "item.material_elements.coke": "Koks",
   "item.material_elements.copper_nugget": "Kupfernugget",
+  "item.material_elements.netherite_nugget": "Netherite Nugget",
   "item.material_elements.steel_ingot": "Stahlbarren",
   "item.material_elements.steel_nugget": "Stahlnugget",
-  "item.material_elements.netherite_nugget": "Netherite Nugget",
+
+  "item.material_elements.test_tube": "Reagenzglas",
+  "item.material_elements.test_tube_filled.effect.empty": "Unherstellbares Reagenzglas",
+  "item.material_elements.test_tube_filled.effect.water": "Wasserteströhrchen",
+  "item.material_elements.test_tube_filled.effect.mundane": "Mundane Reagenzglas",
+  "item.material_elements.test_tube_filled.effect.thick": "Dickes Reagenzglas",
+  "item.material_elements.test_tube_filled.effect.awkward": "Komisches Reagenzglas",
+  "item.material_elements.test_tube_filled.effect.night_vision": "Reagenzglas mit Nachtsicht",
+  "item.material_elements.test_tube_filled.effect.invisibility": "Reagenzglas mit Unsichtbarkeit",
+  "item.material_elements.test_tube_filled.effect.leaping": "Reagenzglas mit Sprung",
+  "item.material_elements.test_tube_filled.effect.fire_resistance": "Reagenzglas mit Feuerwiderstand",
+  "item.material_elements.test_tube_filled.effect.swiftness": "Reagenzglas mit Swiftness",
+  "item.material_elements.test_tube_filled.effect.slowness": "Reagenzglas mit Langsamkeit",
+  "item.material_elements.test_tube_filled.effect.water_breathing": "Reagenzglas mit Wasseratmung",
+  "item.material_elements.test_tube_filled.effect.healing": "Reagenzglas mit Heilung",
+  "item.material_elements.test_tube_filled.effect.harming": "Reagenzglas mit Harming",
+  "item.material_elements.test_tube_filled.effect.poison": "Reagenzglas mit Gift",
+  "item.material_elements.test_tube_filled.effect.regeneration": "Reagenzglas mit Regeneration",
+  "item.material_elements.test_tube_filled.effect.strength": "Reagenzglas mit Stärke",
+  "item.material_elements.test_tube_filled.effect.weakness": "Reagenzglas mit Schwäche",
+  "item.material_elements.test_tube_filled.effect.levitation": "Reagenzglas mit Levitation",
+  "item.material_elements.test_tube_filled.effect.luck": "Reagenzglas mit Glück",
+  "item.material_elements.test_tube_filled.effect.turtle_master": "Reagenzglas mit Schildkrötenmeister",
+  "item.material_elements.test_tube_filled.effect.slow_falling": "Reagenzglas mit langsamem Fallen",
+
   "item.placeholder.text": "Template placeholder do not remove!",
 
-  "itemGroup.rods": "Material & Elements: Stangen"
+  "itemGroup.rods": "Material & Elemente: Stangen",
+  "itemGroup.test_tubes": "Material & Elemente: Reagenzgläser"
 }

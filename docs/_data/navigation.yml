@@ -1,0 +1,15 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Steel"
+    url: /steel/
+  - title: "Rods"
+    url: /rods/
+  - title: "Plates"
+    url: /plates/
+  - title: "Nuggets"
+    url: /nugget/
+  - title: "Test Tube"
+    url: /test_tube/
+  - title: "Download"
+    url: /download/

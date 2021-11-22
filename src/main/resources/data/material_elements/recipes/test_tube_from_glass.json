@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "material_elements:test_tube",
+    "count": 3
+  }
+}

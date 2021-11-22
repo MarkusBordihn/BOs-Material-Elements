@@ -17,31 +17,38 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package de.markusbordihn.materialelements;
+package de.markusbordihn.materialelements.client.color;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraft.client.color.item.ItemColors;
+import net.minecraft.world.item.alchemy.PotionUtils;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.ColorHandlerEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-import de.markusbordihn.materialelements.block.ModBlocks;
+import de.markusbordihn.materialelements.Constants;
 import de.markusbordihn.materialelements.item.ModItems;
 
-@Mod(Constants.MOD_ID)
-public class MaterialElements {
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+public class ModItemColors {
 
   public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
-  public MaterialElements() {
-    final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+  protected ModItemColors() {}
 
-    log.info("🪨 Register Material Elements Blocks ...");
-    ModBlocks.BLOCKS.register(modEventBus);
+  @SubscribeEvent
+  public static void registerItemColors(ColorHandlerEvent.Item itemColorEvent) {
 
-    log.info("🪨 Register Material Elements Items ...");
-    ModItems.ITEMS.register(modEventBus);
+    ItemColors itemColors = itemColorEvent.getItemColors();
 
+    log.info("🪨 Register Material Elements Item Colors ... {}", itemColors);
+
+    // Using the existing potion color system for the test tubes.
+    itemColors.register((itemStack, color) -> {
+      return color > 0 ? -1 : PotionUtils.getColor(itemStack);
+    }, ModItems.TEST_TUBE_FILLED.get());
   }
+
 }
