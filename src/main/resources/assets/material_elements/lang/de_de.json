@@ -49,8 +49,25 @@
   "item.material_elements.steel_nugget": "Stahlnugget",
 
   "item.material_elements.test_tube": "Reagenzglas",
+
+  "item.material_elements.test_tube_color_white.effect.empty": "Reagenzglas mit Farbe (weiß)",
+  "item.material_elements.test_tube_color_orange.effect.empty": "Reagenzglas mit Farbe (orange)",
+  "item.material_elements.test_tube_color_magenta.effect.empty": "Reagenzglas mit Farbe (magenta)",
+  "item.material_elements.test_tube_color_light_blue.effect.empty": "Reagenzglas mit Farbe (hellblau)",
+  "item.material_elements.test_tube_color_yellow.effect.empty": "Reagenzglas mit Farbe (gelb)",
+  "item.material_elements.test_tube_color_lime.effect.empty": "Reagenzglas mit Farbe (Kalk)",
+  "item.material_elements.test_tube_color_pink.effect.empty": "Reagenzglas mit Farbe (rosa)",
+  "item.material_elements.test_tube_color_gray.effect.empty": "Reagenzglas mit Farbe (grau)",
+  "item.material_elements.test_tube_color_light_gray.effect.empty": "Reagenzglas mit Farbe (hellgrau)",
+  "item.material_elements.test_tube_color_cyan.effect.empty": "Reagenzglas mit Farbe (cyan)",
+  "item.material_elements.test_tube_color_purple.effect.empty": "Reagenzglas mit Farbe (violett)",
+  "item.material_elements.test_tube_color_blue.effect.empty": "Reagenzglas mit Farbe (blau)",
+  "item.material_elements.test_tube_color_brown.effect.empty": "Reagenzglas mit Farbe (braun)",
+  "item.material_elements.test_tube_color_green.effect.empty": "Reagenzglas mit Farbe (grün)",
+  "item.material_elements.test_tube_color_red.effect.empty": "Reagenzglas mit Farbe (rot)",
+  "item.material_elements.test_tube_color_black.effect.empty": "Reagenzglas mit Farbe (schwarz)",
+
   "item.material_elements.test_tube_filled.effect.empty": "Unherstellbares Reagenzglas",
-  "item.material_elements.test_tube_filled.effect.water": "Wasserteströhrchen",
   "item.material_elements.test_tube_filled.effect.mundane": "Mundane Reagenzglas",
   "item.material_elements.test_tube_filled.effect.thick": "Dickes Reagenzglas",
   "item.material_elements.test_tube_filled.effect.awkward": "Komisches Reagenzglas",
@@ -71,6 +88,11 @@
   "item.material_elements.test_tube_filled.effect.luck": "Reagenzglas mit Glück",
   "item.material_elements.test_tube_filled.effect.turtle_master": "Reagenzglas mit Schildkrötenmeister",
   "item.material_elements.test_tube_filled.effect.slow_falling": "Reagenzglas mit langsamem Fallen",
+
+  "item.material_elements.test_tube_water.effect.empty": "Reagenzglas mit Wasser",
+  "item.material_elements.test_tube_water.effect.water": "Reagenzglas mit Wasser",
+  "item.material_elements.test_tube_glow.effect.empty": "Reagenzglas mit Glühstoff",
+  "item.material_elements.test_tube_glow.effect.water": "Reagenzglas mit Glühstoff",
 
   "item.placeholder.text": "Template placeholder do not remove!",
 

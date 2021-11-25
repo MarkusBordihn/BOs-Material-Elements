@@ -17,34 +17,42 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package de.markusbordihn.materialelements;
+package de.markusbordihn.materialelements.item.testtube;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import net.minecraft.core.NonNullList;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+public class TestTubeColorItem extends TestTubeFilledItem {
 
-import de.markusbordihn.materialelements.block.ModBlocks;
-import de.markusbordihn.materialelements.item.ModItems;
-import de.markusbordihn.materialelements.item.ModPotions;
+  public DyeColor color;
 
-@Mod(Constants.MOD_ID)
-public class MaterialElements {
+  public TestTubeColorItem(Item.Properties properties) {
+    super(properties);
+  }
 
-  public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+  public TestTubeColorItem(Item.Properties properties, DyeColor dyeColor) {
+    super(properties);
+    this.color = dyeColor;
+  }
 
-  public MaterialElements() {
-    final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+  public DyeColor getColor() {
+    return this.color;
+  }
 
-    log.info("🪨 Register Material Elements Potions ...");
-    ModPotions.POTIONS.register(modEventBus);
+  @Override
+  public Component getDescription() {
+    return new TranslatableComponent(this.getDescriptionId());
+  }
 
-    log.info("🪨 Register Material Elements Blocks ...");
-    ModBlocks.BLOCKS.register(modEventBus);
-
-    log.info("🪨 Register Material Elements Items ...");
-    ModItems.ITEMS.register(modEventBus);
+  @Override
+  public void fillItemCategory(CreativeModeTab tab, NonNullList<ItemStack> itemStack) {
+    if (this.allowdedIn(tab)) {
+      itemStack.add(new ItemStack(this));
+    }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["#", "U"],
+  "key": {
+    "#": {
+      "item": "minecraft:glow_lichen"
+    },
+    "U": {
+      "item": "material_elements:test_tube_water"
+    }
+  },
+  "result": {
+    "item": "material_elements:test_tube_glow",
+    "count": 1
+  }
+}

@@ -51,10 +51,31 @@ This mod is mostly useful for other mods which requires specific materials or el
 
 - Steel Ingot
 
+#### Test Tubes
+
+- Water
+- Glow
+- Colored
+  - White
+  - Orange
+  - Magenta
+  - Light Blue
+  - Yellow
+  - Lime
+  - Pink
+  - Gray
+  - Light Gray
+  - Cyan
+  - Purple
+  - Blue
+  - Brown
+  - Green
+  - Red
+  - Black
+
 #### 🔭 Other Material
 
 - Coke
-- Test Tubes
 
 ### Recipe Overview 👁️‍🗨️
 
@@ -82,7 +103,6 @@ It is classified between Iron and Diamond with the following stats.
 | Protection - Slot 1   | _5_    | 5     | _6_     |
 | Protection - Slot 2   | _6_    | 7     | _8_     |
 | Protection - Slot 3   | _2_    | 2     | _3_     |
-
 
 ## Mod Integration 🚀
 

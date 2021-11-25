@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements:test_tube_color_white",
+    "material_elements:test_tube_color_orange",
+    "material_elements:test_tube_color_magenta",
+    "material_elements:test_tube_color_light_blue",
+    "material_elements:test_tube_color_yellow",
+    "material_elements:test_tube_color_lime",
+    "material_elements:test_tube_color_pink",
+    "material_elements:test_tube_color_gray",
+    "material_elements:test_tube_color_light_gray",
+    "material_elements:test_tube_color_cyan",
+    "material_elements:test_tube_color_purple",
+    "material_elements:test_tube_color_blue",
+    "material_elements:test_tube_color_brown",
+    "material_elements:test_tube_color_green",
+    "material_elements:test_tube_color_red",
+    "material_elements:test_tube_color_black"
+  ]
+}

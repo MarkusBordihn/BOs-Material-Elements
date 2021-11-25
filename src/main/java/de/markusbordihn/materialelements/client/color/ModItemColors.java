@@ -22,6 +22,7 @@ package de.markusbordihn.materialelements.client.color;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import net.minecraft.client.color.item.ItemColors;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
@@ -30,6 +31,8 @@ import net.minecraftforge.fml.common.Mod;
 
 import de.markusbordihn.materialelements.Constants;
 import de.markusbordihn.materialelements.item.ModItems;
+import de.markusbordihn.materialelements.item.testtube.TestTubeColorItem;
+import de.markusbordihn.materialelements.item.testtube.TestTubeCustomItem;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModItemColors {
@@ -45,10 +48,42 @@ public class ModItemColors {
 
     log.info("🪨 Register Material Elements Item Colors ... {}", itemColors);
 
-    // Using the existing potion color system for the test tubes.
+    // Use the existing potion color system for the filled test tubes.
     itemColors.register((itemStack, color) -> {
       return color > 0 ? -1 : PotionUtils.getColor(itemStack);
     }, ModItems.TEST_TUBE_FILLED.get());
+
+    // Use dye color for the colored test tubes.
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_WHITE.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_ORANGE.get());
+    itemColors.register(ModItemColors::getColorFromTestTube,
+        ModItems.TEST_TUBE_COLOR_MAGENTA.get());
+    itemColors.register(ModItemColors::getColorFromTestTube,
+        ModItems.TEST_TUBE_COLOR_LIGHT_BLUE.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_YELLOW.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_LIME.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_PINK.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_GRAY.get());
+    itemColors.register(ModItemColors::getColorFromTestTube,
+        ModItems.TEST_TUBE_COLOR_LIGHT_GRAY.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_CYAN.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_PURPLE.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_BLUE.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_BROWN.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_GREEN.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_RED.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_BLACK.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_WATER.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_GLOW.get());
+  }
+
+  public static int getColorFromTestTube(ItemStack itemStack, int color) {
+    if (color <= 0 && itemStack.getItem() instanceof TestTubeColorItem testTubeColorItem) {
+      return testTubeColorItem.getColor().getMaterialColor().col;
+    } else if (color <= 0 && itemStack.getItem() instanceof TestTubeCustomItem testTubeCustomItem) {
+      return testTubeCustomItem.getColor().getMaterialColor().col;
+    }
+    return -1;
   }
 
 }

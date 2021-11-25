@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "material_elements:test_tube_color_gray"
+    },
+    {
+      "item": "material_elements:test_tube_color_white"
+    }
+  ],
+  "result": {
+    "item": "material_elements:test_tube_color_light_gray",
+    "count": 2
+  }
+}

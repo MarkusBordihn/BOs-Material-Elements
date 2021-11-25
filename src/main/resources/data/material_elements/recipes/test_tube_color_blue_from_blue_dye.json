@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["#", "U"],
+  "key": {
+    "#": {
+      "item": "minecraft:blue_dye"
+    },
+    "U": {
+      "item": "material_elements:test_tube_water"
+    }
+  },
+  "result": {
+    "item": "material_elements:test_tube_color_blue",
+    "count": 1
+  }
+}

@@ -50,6 +50,24 @@
   "item.material_elements.steel_nugget": "Steel Nugget",
 
   "item.material_elements.test_tube": "Test Tube",
+
+  "item.material_elements.test_tube_color_white.effect.empty": "Color test tube (white)",
+  "item.material_elements.test_tube_color_orange.effect.empty": "Color test tube (orange)",
+  "item.material_elements.test_tube_color_magenta.effect.empty": "Color test tube (magenta)",
+  "item.material_elements.test_tube_color_light_blue.effect.empty": "Color test tube (light blue)",
+  "item.material_elements.test_tube_color_yellow.effect.empty": "Color test tube (yellow)",
+  "item.material_elements.test_tube_color_lime.effect.empty": "Color test tube (lime)",
+  "item.material_elements.test_tube_color_pink.effect.empty": "Color test tube (pink)",
+  "item.material_elements.test_tube_color_gray.effect.empty": "Color test tube (gray)",
+  "item.material_elements.test_tube_color_light_gray.effect.empty": "Color test tube (light gray)",
+  "item.material_elements.test_tube_color_cyan.effect.empty": "Color test tube (cyan)",
+  "item.material_elements.test_tube_color_purple.effect.empty": "Color test tube (purple)",
+  "item.material_elements.test_tube_color_blue.effect.empty": "Color test tube (blue)",
+  "item.material_elements.test_tube_color_brown.effect.empty": "Color test tube (brown)",
+  "item.material_elements.test_tube_color_green.effect.empty": "Color test tube (green)",
+  "item.material_elements.test_tube_color_red.effect.empty": "Color test tube (red)",
+  "item.material_elements.test_tube_color_black.effect.empty": "Color test tube (black)",
+
   "item.material_elements.test_tube_filled.effect.empty": "Uncraftable test tube",
   "item.material_elements.test_tube_filled.effect.water": "Water test tube",
   "item.material_elements.test_tube_filled.effect.mundane": "Mundane test tube",
@@ -72,6 +90,11 @@
   "item.material_elements.test_tube_filled.effect.luck": "Test tube with Luck",
   "item.material_elements.test_tube_filled.effect.turtle_master": "Test tube with the Turtle Master",
   "item.material_elements.test_tube_filled.effect.slow_falling": "Test tube with Slow Falling",
+
+  "item.material_elements.test_tube_water.effect.empty": "Water test tube",
+  "item.material_elements.test_tube_water.effect.water": "Water test tube",
+  "item.material_elements.test_tube_glow.effect.empty": "Glow test tube",
+  "item.material_elements.test_tube_glow.effect.water": "Glow test tube",
 
   "item.placeholder.text": "Template placeholder do not remove!",
 

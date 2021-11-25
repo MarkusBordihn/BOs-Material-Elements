@@ -84,7 +84,7 @@ public class TestTubeItem extends BottleItem {
             level.gameEvent(player, GameEvent.FLUID_PICKUP, blockPos);
             return InteractionResultHolder.sidedSuccess(
                 this.turnBottleIntoItem(itemStack, player, PotionUtils
-                    .setPotion(new ItemStack(ModItems.TEST_TUBE_FILLED.get()), Potions.WATER)),
+                    .setPotion(new ItemStack(ModItems.TEST_TUBE_WATER.get()), Potions.WATER)),
                 level.isClientSide());
           }
         }

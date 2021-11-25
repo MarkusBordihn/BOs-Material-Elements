@@ -17,34 +17,19 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package de.markusbordihn.materialelements;
+package de.markusbordihn.materialelements.item;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import net.minecraft.world.item.alchemy.Potion;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import de.markusbordihn.materialelements.Constants;
 
-import de.markusbordihn.materialelements.block.ModBlocks;
-import de.markusbordihn.materialelements.item.ModItems;
-import de.markusbordihn.materialelements.item.ModPotions;
+public class ModPotions {
 
-@Mod(Constants.MOD_ID)
-public class MaterialElements {
+  protected ModPotions() {}
 
-  public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+  public static final DeferredRegister<Potion> POTIONS =
+      DeferredRegister.create(ForgeRegistries.POTIONS, Constants.MOD_ID);
 
-  public MaterialElements() {
-    final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-    log.info("🪨 Register Material Elements Potions ...");
-    ModPotions.POTIONS.register(modEventBus);
-
-    log.info("🪨 Register Material Elements Blocks ...");
-    ModBlocks.BLOCKS.register(modEventBus);
-
-    log.info("🪨 Register Material Elements Items ...");
-    ModItems.ITEMS.register(modEventBus);
-  }
 }
