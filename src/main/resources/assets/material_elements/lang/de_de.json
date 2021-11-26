@@ -91,8 +91,8 @@
 
   "item.material_elements.test_tube_water.effect.empty": "Reagenzglas mit Wasser",
   "item.material_elements.test_tube_water.effect.water": "Reagenzglas mit Wasser",
-  "item.material_elements.test_tube_glow.effect.empty": "Reagenzglas mit Glühstoff",
-  "item.material_elements.test_tube_glow.effect.water": "Reagenzglas mit Glühstoff",
+  "item.material_elements.test_tube_glow.effect.empty": "Reagenzglas mit leuchtender Flüssigkeit",
+  "item.material_elements.test_tube_glow.effect.water": "Reagenzglas mit leuchtender Flüssigkeit",
 
   "item.placeholder.text": "Template placeholder do not remove!",
 

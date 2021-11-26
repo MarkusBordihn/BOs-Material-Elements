@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "item": "material_elements:copper_rod_half_size"
+    }
+  },
+  "result": {
+    "item": "material_elements:copper_rod_elbow",
+    "count": 1
+  }
+}

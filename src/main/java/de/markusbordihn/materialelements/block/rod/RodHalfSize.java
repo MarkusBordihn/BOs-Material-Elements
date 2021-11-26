@@ -34,11 +34,11 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class RodHalfSize extends RodBlock {
 
   // Shapes for the different faces like UP, DOWN, NORTH, EAST, SOUTH and WEST
-  protected static final VoxelShape DEFAULT_AABB = Block.box(6.0D, 0.0D, 6.0D, 10.0D, 8.0D, 10.0D);
-  protected static final VoxelShape NORTH_AABB = Block.box(6.0D, 6.0D, 8.0D, 10.0D, 10.0D, 16.0D);
-  protected static final VoxelShape EAST_AABB = Block.box(0.0D, 6.0D, 6.0D, 8.0D, 10.0D, 10.0D);
-  protected static final VoxelShape SOUTH_AABB = Block.box(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 8.0D);
-  protected static final VoxelShape WEST_AABB = Block.box(8.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D);
+  protected static final VoxelShape DEFAULT_AABB = Block.box(6.0, 0.0, 6.0, 10.0, 8.0, 10.0);
+  protected static final VoxelShape NORTH_AABB = Block.box(6.0, 6.0, 8.0, 10.0, 10.0, 16.0);
+  protected static final VoxelShape EAST_AABB = Block.box(0.0, 6.0, 6.0, 8.0, 10.0, 10.0);
+  protected static final VoxelShape SOUTH_AABB = Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 8.0);
+  protected static final VoxelShape WEST_AABB = Block.box(8.0, 6.0, 6.0, 16.0, 10.0, 10.0);
 
   public RodHalfSize(Properties properties) {
     super(properties);

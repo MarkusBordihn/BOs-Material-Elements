@@ -39,9 +39,8 @@ public class RodStar extends RodBlock {
 
   // Shape
   protected static final VoxelShape SHAPE_AABB =
-      Shapes.or(Block.box(6.0D, 0.0D, 6.0D, 10.0D, 16.0D, 10.0D),
-          Block.box(0.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D),
-          Block.box(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 16.0D));
+      Shapes.or(Block.box(6.0, 0.0, 6.0, 10.0, 16.0, 10.0),
+          Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0), Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0));
 
   public RodStar(Properties properties) {
     super(properties);

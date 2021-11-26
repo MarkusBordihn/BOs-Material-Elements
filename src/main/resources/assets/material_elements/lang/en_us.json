@@ -4,30 +4,35 @@
   "block.material_elements.copper_rod_half_size": "Copper Rod (half size)",
   "block.material_elements.copper_rod_star": "Copper Rod Star",
   "block.material_elements.copper_rod_tee": "Copper Rod Tee",
+  "block.material_elements.copper_rod_elbow": "Copper Rod Elbow",
 
   "block.material_elements.gold_rod": "Gold Rod",
   "block.material_elements.gold_rod_cross": "Gold Rod Cross",
   "block.material_elements.gold_rod_half_size": "Gold Rod (half size)",
   "block.material_elements.gold_rod_star": "Gold Rod Star",
   "block.material_elements.gold_rod_tee": "Gold Rod Tee",
+  "block.material_elements.gold_rod_elbow": "Gold Rod Elbow",
 
   "block.material_elements.iron_rod": "Iron Rod",
   "block.material_elements.iron_rod_cross": "Iron Rod Cross",
   "block.material_elements.iron_rod_half_size": "Iron Rod (half size)",
   "block.material_elements.iron_rod_star": "Iron Rod Star",
   "block.material_elements.iron_rod_tee": "Iron Rod Tee",
+  "block.material_elements.iron_rod_elbow": "Iron Rod Elbow",
 
   "block.material_elements.steel_rod": "Steel Rod",
   "block.material_elements.steel_rod_cross": "Steel Rod Cross",
   "block.material_elements.steel_rod_half_size": "Steel Rod (half size)",
   "block.material_elements.steel_rod_star": "Steel Rod Star",
   "block.material_elements.steel_rod_tee": "Steel Rod Tee",
+  "block.material_elements.steel_rod_elbow": "Steel Rod Elbow",
 
   "block.material_elements.netherite_rod": "Netherite Rod",
   "block.material_elements.netherite_rod_cross": "Netherite Rod Cross",
   "block.material_elements.netherite_rod_half_size": "Netherite Rod (half size)",
   "block.material_elements.netherite_rod_star": "Netherite Rod Star",
   "block.material_elements.netherite_rod_tee": "Netherite Rod Tee",
+  "block.material_elements.netherite_rod_elbow": "Netherite Rod Elbow",
 
   "block.material_elements.steel_block": "Steel Block",
   "block.material_elements.steel_ore": "Steel Ore",
@@ -69,7 +74,7 @@
   "item.material_elements.test_tube_color_black.effect.empty": "Color test tube (black)",
 
   "item.material_elements.test_tube_filled.effect.empty": "Uncraftable test tube",
-  "item.material_elements.test_tube_filled.effect.water": "Water test tube",
+  "item.material_elements.test_tube_filled.effect.water": "Test tube with Water",
   "item.material_elements.test_tube_filled.effect.mundane": "Mundane test tube",
   "item.material_elements.test_tube_filled.effect.thick": "Thick test tube",
   "item.material_elements.test_tube_filled.effect.awkward": "Awkward test tube",
@@ -91,10 +96,10 @@
   "item.material_elements.test_tube_filled.effect.turtle_master": "Test tube with the Turtle Master",
   "item.material_elements.test_tube_filled.effect.slow_falling": "Test tube with Slow Falling",
 
-  "item.material_elements.test_tube_water.effect.empty": "Water test tube",
-  "item.material_elements.test_tube_water.effect.water": "Water test tube",
-  "item.material_elements.test_tube_glow.effect.empty": "Glow test tube",
-  "item.material_elements.test_tube_glow.effect.water": "Glow test tube",
+  "item.material_elements.test_tube_water.effect.empty": "Test tube with Water",
+  "item.material_elements.test_tube_water.effect.water": "Test tube with Water",
+  "item.material_elements.test_tube_glow.effect.empty": "Test tube with glowing fluid",
+  "item.material_elements.test_tube_glow.effect.water": "Test tube with glowing fluid",
 
   "item.placeholder.text": "Template placeholder do not remove!",
 

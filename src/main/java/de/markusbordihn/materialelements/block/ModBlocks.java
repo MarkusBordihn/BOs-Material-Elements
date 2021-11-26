@@ -89,6 +89,22 @@ public class ModBlocks {
               .of(Material.WOOD, Blocks.WARPED_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
               .sound(SoundType.WOOD)));
 
+  // Rods (elbow)
+  public static final RegistryObject<Block> COPPER_ROD_ELBOW = BLOCKS.register("copper_rod_elbow",
+      () -> new RodElbow(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
+          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
+  public static final RegistryObject<Block> GOLD_ROD_ELBOW = BLOCKS.register("gold_rod_elbow",
+      () -> new RodElbow(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD)
+          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> IRON_ROD_ELBOW = BLOCKS.register("iron_rod_elbow",
+      () -> new RodElbow(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> STEEL_ROD_ELBOW = BLOCKS.register("steel_rod_elbow",
+      () -> new RodElbow(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> NETHERITE_ROD_ELBOW = BLOCKS.register("netherite_rod_elbow",
+      () -> new RodElbow(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
+          .requiresCorrectToolForDrops().strength(50.0F, 1200.0F)));
 
   // Rods (tee)
   public static final RegistryObject<Block> COPPER_ROD_TEE = BLOCKS.register("copper_rod_tee",

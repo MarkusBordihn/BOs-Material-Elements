@@ -51,7 +51,7 @@ This mod is mostly useful for other mods which requires specific materials or el
 
 - Steel Ingot
 
-#### Test Tubes
+#### 🧪 Test Tubes
 
 - Water
 - Glow
@@ -110,4 +110,4 @@ If you want to use the mod blocks and items for your own mod just add it as depe
 Please check [Developer Wiki][dev-wiki] for the details steps.
 
 [dev-wiki]: https://github.com/MarkusBordihn/BOs-Material-Elements/wiki
-[logo]: logo.png
+[logo]: src/main/resources/logo.png

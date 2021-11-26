@@ -44,12 +44,12 @@ public class PlateBlock extends Block {
   public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   // We need a VoxelShape for each side to cover all faces and possibilities
-  protected static final VoxelShape FLOOR_AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 1.0D, 16.0D);
-  protected static final VoxelShape CEILING_AABB = Block.box(0.0D, 15.0D, 0.0D, 16.0D, 16.0D, 16.0D);
-  protected static final VoxelShape FACING_EAST_AABB = Block.box(0.0D, 0.0D, 0.0D, 1.0D, 16.0D, 16.0D);
-  protected static final VoxelShape FACING_SOUTH_AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 1.0D);
-  protected static final VoxelShape FACING_NORTH_AABB = Block.box(0.0D, 0.0D, 15.0D, 16.0D, 16.0D, 16.0D);
-  protected static final VoxelShape FACING_WEST_AABB = Block.box(15.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
+  protected static final VoxelShape FLOOR_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 1.0, 16.0);
+  protected static final VoxelShape CEILING_AABB = Block.box(0.0, 15.0, 0.0, 16.0, 16.0, 16.0);
+  protected static final VoxelShape FACING_EAST_AABB = Block.box(0.0, 0.0, 0.0, 1.0, 16.0, 16.0);
+  protected static final VoxelShape FACING_SOUTH_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 1.0);
+  protected static final VoxelShape FACING_NORTH_AABB = Block.box(0.0, 0.0, 15.0, 16.0, 16.0, 16.0);
+  protected static final VoxelShape FACING_WEST_AABB = Block.box(15.0, 0.0, 0.0, 16.0, 16.0, 16.0);
 
   // Defines if we need to rotate the Object based on the click position and player pov
   public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
@@ -68,7 +68,7 @@ public class PlateBlock extends Block {
     // Early return for simple face like ceiling and floor
     if (attachFace == AttachFace.CEILING) {
       return CEILING_AABB;
-    } else if ( attachFace == AttachFace.FLOOR) {
+    } else if (attachFace == AttachFace.FLOOR) {
       return FLOOR_AABB;
     }
 

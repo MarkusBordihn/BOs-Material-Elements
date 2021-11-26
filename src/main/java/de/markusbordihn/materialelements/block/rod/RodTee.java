@@ -33,30 +33,22 @@ public class RodTee extends RodComplexBlock {
 
   // Shapes for the different faces like NORTH, EAST, SOUTH and WEST
   // Shapes are automatically optimized by the Shapes.or functions.
-  protected static final VoxelShape UP_AABB =
-      Shapes.or(Block.box(6.0D, 0.0D, 6.0D, 10.0D, 8.0D, 10.0D),
-          Block.box(0.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D));
-  protected static final VoxelShape UP_EAST_WEST_AABB =
-      Shapes.or(Block.box(6.0D, 0.0D, 6.0D, 10.0D, 8.0D, 10.0D),
-          Block.box(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 16.0D));
-  protected static final VoxelShape DOWN_AABB =
-      Shapes.or(Block.box(6.0D, 10.0D, 6.0D, 10.0D, 16.0D, 10.0D),
-          Block.box(0.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D));
-  protected static final VoxelShape DOWN_EAST_WEST_AABB =
-      Shapes.or(Block.box(6.0D, 10.0D, 6.0D, 10.0D, 16.0D, 10.0D),
-          Block.box(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 16.0D));
-  protected static final VoxelShape NORTH_AABB =
-      Shapes.or(Block.box(0.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D),
-          Block.box(6.0D, 6.0D, 8.0D, 10.0D, 10.0D, 16.0D));
-  protected static final VoxelShape EAST_AABB =
-      Shapes.or(Block.box(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 16.0D),
-          Block.box(0.0D, 6.0D, 6.0D, 8.0D, 10.0D, 10.0D));
-  protected static final VoxelShape SOUTH_AABB =
-      Shapes.or(Block.box(0.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D),
-          Block.box(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 8.0D));
-  protected static final VoxelShape WEST_AABB =
-      Shapes.or(Block.box(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 16.0D),
-          Block.box(8.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D));
+  protected static final VoxelShape UP_AABB = Shapes.or(Block.box(6.0, 0.0, 6.0, 10.0, 8.0, 10.0),
+      Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0));
+  protected static final VoxelShape UP_EAST_WEST_AABB = Shapes
+      .or(Block.box(6.0, 0.0, 6.0, 10.0, 8.0, 10.0), Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0));
+  protected static final VoxelShape DOWN_AABB = Shapes
+      .or(Block.box(6.0, 10.0, 6.0, 10.0, 16.0, 10.0), Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0));
+  protected static final VoxelShape DOWN_EAST_WEST_AABB = Shapes
+      .or(Block.box(6.0, 10.0, 6.0, 10.0, 16.0, 10.0), Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0));
+  protected static final VoxelShape NORTH_AABB = Shapes
+      .or(Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0), Block.box(6.0, 6.0, 8.0, 10.0, 10.0, 16.0));
+  protected static final VoxelShape EAST_AABB = Shapes
+      .or(Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0), Block.box(0.0, 6.0, 6.0, 8.0, 10.0, 10.0));
+  protected static final VoxelShape SOUTH_AABB = Shapes
+      .or(Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0), Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 8.0));
+  protected static final VoxelShape WEST_AABB = Shapes
+      .or(Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0), Block.box(8.0, 6.0, 6.0, 16.0, 10.0, 10.0));
 
   public RodTee(Properties properties) {
     super(properties);

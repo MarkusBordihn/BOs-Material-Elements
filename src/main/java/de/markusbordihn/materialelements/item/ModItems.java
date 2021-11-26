@@ -159,6 +159,23 @@ public class ModItems {
       ITEMS.register("warped_plate", () -> new BlockItem(ModBlocks.WARPED_PLATE.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
+  // Rods (elbow)
+  public static final RegistryObject<Item> COPPER_ROD_ELBOW =
+      ITEMS.register("copper_rod_elbow", () -> new BlockItem(ModBlocks.COPPER_ROD_ELBOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> GOLD_ROD_ELBOW =
+      ITEMS.register("gold_rod_elbow", () -> new BlockItem(ModBlocks.GOLD_ROD_ELBOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> IRON_ROD_ELBOW =
+      ITEMS.register("iron_rod_elbow", () -> new BlockItem(ModBlocks.IRON_ROD_ELBOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> STEEL_ROD_ELBOW =
+      ITEMS.register("steel_rod_elbow", () -> new BlockItem(ModBlocks.STEEL_ROD_ELBOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> NETHERITE_ROD_ELBOW =
+      ITEMS.register("netherite_rod_elbow", () -> new BlockItem(ModBlocks.NETHERITE_ROD_ELBOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+
   // Rods (tee)
   public static final RegistryObject<Item> COPPER_ROD_TEE =
       ITEMS.register("copper_rod_tee", () -> new BlockItem(ModBlocks.COPPER_ROD_TEE.get(),

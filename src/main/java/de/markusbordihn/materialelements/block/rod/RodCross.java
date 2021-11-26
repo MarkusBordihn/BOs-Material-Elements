@@ -32,17 +32,14 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class RodCross extends RodComplexBlock {
 
   // Shapes for floor and ceiling
-  protected static final VoxelShape NORTH_SOUTH_AABB =
-      Shapes.or(Block.box(6.0D, 0.0D, 6.0D, 10.0D, 16.0D, 10.0D),
-          Block.box(0.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D));
-  protected static final VoxelShape EAST_WEST_AABB =
-      Shapes.or(Block.box(6.0D, 0.0D, 6.0D, 10.0D, 16.0D, 10.0D),
-          Block.box(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 16.0D));
+  protected static final VoxelShape NORTH_SOUTH_AABB = Shapes
+      .or(Block.box(6.0, 0.0, 6.0, 10.0, 16.0, 10.0), Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0));
+  protected static final VoxelShape EAST_WEST_AABB = Shapes
+      .or(Block.box(6.0, 0.0, 6.0, 10.0, 16.0, 10.0), Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0));
 
   // Shape for all wall positions
-  protected static final VoxelShape WALL_AABB =
-      Shapes.or(Block.box(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 16.0D),
-          Block.box(0.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D));
+  protected static final VoxelShape WALL_AABB = Shapes
+      .or(Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0), Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0));
 
   public RodCross(Properties properties) {
     super(properties);
@@ -53,7 +50,7 @@ public class RodCross extends RodComplexBlock {
       CollisionContext collisionContext) {
     AttachFace attachFace = blockState.getValue(RodComplexBlock.ATTACH_FACE);
     if (attachFace == AttachFace.WALL) {
-      return  WALL_AABB;
+      return WALL_AABB;
     }
     Direction facing = blockState.getValue(RodComplexBlock.FACING);
     if (facing == Direction.EAST || facing == Direction.WEST) {

@@ -53,9 +53,9 @@ public class TestTubeItem extends BottleItem {
   @Override
   public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
     List<AreaEffectCloud> list = level.getEntitiesOfClass(AreaEffectCloud.class,
-        player.getBoundingBox().inflate(2.0D), (p_40650_) -> {
-          return p_40650_ != null && p_40650_.isAlive()
-              && p_40650_.getOwner() instanceof EnderDragon;
+        player.getBoundingBox().inflate(2.0D), (areaEffectCloud) -> {
+          return areaEffectCloud != null && areaEffectCloud.isAlive()
+              && areaEffectCloud.getOwner() instanceof EnderDragon;
         });
     ItemStack itemStack = player.getItemInHand(hand);
     if (!list.isEmpty()) {

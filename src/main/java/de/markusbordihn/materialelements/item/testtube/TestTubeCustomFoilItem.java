@@ -35,7 +35,7 @@ public class TestTubeCustomFoilItem extends TestTubeCustomItem {
   }
 
   @Override
-  public boolean isFoil(ItemStack p_42999_) {
+  public boolean isFoil(ItemStack itemStack) {
     return true;
   }
 
