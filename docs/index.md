@@ -1,7 +1,6 @@
 ---
-layout: single
-author_profile: false
 layout: splash
+author_profile: false
 
 feature_row:
   - image_path: /assets/steel.png

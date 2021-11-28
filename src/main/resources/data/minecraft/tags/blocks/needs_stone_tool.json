@@ -5,6 +5,7 @@
     "material_elements:copper_rod_cross",
     "material_elements:copper_rod_half_size",
     "material_elements:copper_rod_star",
-    "material_elements:copper_rod_tee"
+    "material_elements:copper_rod_tee",
+    "material_elements:copper_rod_elbow"
   ]
 }

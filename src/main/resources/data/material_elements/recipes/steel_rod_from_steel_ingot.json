@@ -6,7 +6,7 @@
   ],
   "key": {
     "#": {
-      "item": "material_elements:steel_ingot"
+      "tag": "forge:ingots/steel"
     }
   },
   "result": {

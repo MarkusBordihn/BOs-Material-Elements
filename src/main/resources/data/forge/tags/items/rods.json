@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:rods/copper",
+    "#forge:rods/gold",
+    "#forge:rods/iron",
+    "#forge:rods/steel",
+    "#forge:rods/netherite"
+  ]
+}

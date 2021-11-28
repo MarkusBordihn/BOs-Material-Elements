@@ -6,10 +6,12 @@
     "material_elements:gold_rod_half_size",
     "material_elements:gold_rod_star",
     "material_elements:gold_rod_tee",
+    "material_elements:gold_rod_elbow",
     "material_elements:iron_rod",
     "material_elements:iron_rod_cross",
     "material_elements:iron_rod_half_size",
     "material_elements:iron_rod_star",
-    "material_elements:iron_rod_tee"
+    "material_elements:iron_rod_tee",
+    "material_elements:iron_rod_elbow"
   ]
 }

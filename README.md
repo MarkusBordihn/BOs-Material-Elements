@@ -22,7 +22,7 @@ This mod is mostly useful for other mods which requires specific materials or el
 
 #### 🪵 Plates
 
-- Ork Plate
+- Oak Plate
 - Spruce Plate
 - Birch Plate
 - Jungle Plate

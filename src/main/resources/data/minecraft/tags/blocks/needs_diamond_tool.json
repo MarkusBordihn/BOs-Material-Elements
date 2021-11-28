@@ -6,12 +6,14 @@
     "material_elements:netherite_rod_half_size",
     "material_elements:netherite_rod_star",
     "material_elements:netherite_rod_tee",
+    "material_elements:netherite_rod_elbow",
     "material_elements:steel_block",
     "material_elements:steel_ore",
     "material_elements:steel_rod",
     "material_elements:steel_rod_cross",
     "material_elements:steel_rod_half_size",
     "material_elements:steel_rod_star",
-    "material_elements:steel_rod_tee"
+    "material_elements:steel_rod_tee",
+    "material_elements:steel_rod_elbow"
   ]
 }
