@@ -27,8 +27,8 @@ npm-debug.log
 # Files from Forge MDK
 forge*changelog.txt
 
-# Minecraft Forge Utils
-.minecraft-forge-utils
+# VSCode
+.vscode/launch.json
 
 # Other
 .DS_Store

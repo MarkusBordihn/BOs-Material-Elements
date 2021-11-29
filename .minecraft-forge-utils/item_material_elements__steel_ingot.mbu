@@ -1,0 +1,31 @@
+{
+  "attributes": {
+    "foil": false
+  },
+  "bedrock": {
+    "formatVersion": "1.16.1"
+  },
+  "category": "items",
+  "component": "item",
+  "configVersion": "0.0.1",
+  "description": "",
+  "events": {},
+  "forge": {
+    "className": "SteelIngot"
+  },
+  "icon": "steel_ingot",
+  "id": "material_elements:steel_ingot",
+  "itemName": "steel_ingot",
+  "misc": {},
+  "name": "Steel Ingot",
+  "namespace": "material_elements",
+  "placeholder": {
+    "CreativeTab": "TAB_MISC",
+    "ItemName": "Steel Ingot",
+    "ITEM_NAME": "STEEL_INGOT",
+    "item_name": "steel_ingot",
+    "ItemClassName": "SteelIngot"
+  },
+  "type": "simple",
+  "variation": ""
+}

@@ -38,13 +38,13 @@ public class MaterialElements {
   public MaterialElements() {
     final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-    log.info("🪨 Register Material Elements Potions ...");
+    log.info("{} Potions ...", Constants.LOG_REGISTER_PREFIX);
     ModPotions.POTIONS.register(modEventBus);
 
-    log.info("🪨 Register Material Elements Blocks ...");
+    log.info("{} Blocks ...", Constants.LOG_REGISTER_PREFIX);
     ModBlocks.BLOCKS.register(modEventBus);
 
-    log.info("🪨 Register Material Elements Items ...");
+    log.info("{} Items ...", Constants.LOG_REGISTER_PREFIX);
     ModItems.ITEMS.register(modEventBus);
   }
 }

@@ -1,0 +1,31 @@
+{
+  "attributes": {
+    "foil": false
+  },
+  "bedrock": {
+    "formatVersion": "1.16.1"
+  },
+  "category": "items",
+  "component": "item",
+  "configVersion": "0.0.1",
+  "description": "",
+  "events": {},
+  "forge": {
+    "className": "Coke"
+  },
+  "icon": "coke",
+  "id": "material_elements:coke",
+  "itemName": "coke",
+  "misc": {},
+  "name": "Coke",
+  "namespace": "material_elements",
+  "placeholder": {
+    "CreativeTab": "TAB_MISC",
+    "ItemName": "Coke",
+    "ITEM_NAME": "COKE",
+    "item_name": "coke",
+    "ItemClassName": "Coke"
+  },
+  "type": "simple",
+  "variation": ""
+}

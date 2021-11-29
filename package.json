@@ -7,7 +7,7 @@
   },
   "version": "0.0.0",
   "dependencies": {
-    "minecraft-forge-utils": "file:../minecraft-forge-utils"
+    "minecraft-forge-utils": "^1.4.1"
   },
   "scripts": {},
   "config": {

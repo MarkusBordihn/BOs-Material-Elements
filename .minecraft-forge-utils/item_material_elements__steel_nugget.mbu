@@ -1,0 +1,31 @@
+{
+  "attributes": {
+    "foil": false
+  },
+  "bedrock": {
+    "formatVersion": "1.16.1"
+  },
+  "category": "items",
+  "component": "item",
+  "configVersion": "0.0.1",
+  "description": "",
+  "events": {},
+  "forge": {
+    "className": "SteelNugget"
+  },
+  "icon": "steel_nugget",
+  "id": "material_elements:steel_nugget",
+  "itemName": "steel_nugget",
+  "misc": {},
+  "name": "Steel Nugget",
+  "namespace": "material_elements",
+  "placeholder": {
+    "CreativeTab": "TAB_MISC",
+    "ItemName": "Steel Nugget",
+    "ITEM_NAME": "STEEL_NUGGET",
+    "item_name": "steel_nugget",
+    "ItemClassName": "SteelNugget"
+  },
+  "type": "simple",
+  "variation": ""
+}

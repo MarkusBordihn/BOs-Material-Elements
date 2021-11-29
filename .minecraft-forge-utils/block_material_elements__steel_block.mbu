@@ -1,0 +1,31 @@
+{
+  "attributes": {
+    "soundType": "SoundType.METAL"
+  },
+  "bedrock": {
+    "formatVersion": "1.16.1"
+  },
+  "blockName": "steel_block",
+  "component": "block",
+  "configVersion": "0.0.1",
+  "description": "",
+  "events": {},
+  "forge": {
+    "className": "SteelBlock"
+  },
+  "icon": "steel_block",
+  "id": "material_elements:steel_block",
+  "misc": {},
+  "name": "Steel Block",
+  "namespace": "material_elements",
+  "placeholder": {
+    "CreativeTab": "TAB_MISC",
+    "BlockName": "Steel Block",
+    "BLOCK_NAME": "STEEL_BLOCK",
+    "block_name": "steel_block",
+    "BlockClassName": "SteelBlock",
+    "SoundType": "SoundType.METAL"
+  },
+  "type": "simple",
+  "variation": ""
+}

@@ -1,0 +1,31 @@
+{
+  "attributes": {
+    "foil": false
+  },
+  "bedrock": {
+    "formatVersion": "1.16.1"
+  },
+  "category": "items",
+  "component": "item",
+  "configVersion": "0.0.1",
+  "description": "",
+  "events": {},
+  "forge": {
+    "className": "NetheriteNugget"
+  },
+  "icon": "netherite_nugget",
+  "id": "material_elements:netherite_nugget",
+  "itemName": "netherite_nugget",
+  "misc": {},
+  "name": "Netherite Nugget",
+  "namespace": "material_elements",
+  "placeholder": {
+    "CreativeTab": "TAB_MISC",
+    "ItemName": "Netherite Nugget",
+    "ITEM_NAME": "NETHERITE_NUGGET",
+    "item_name": "netherite_nugget",
+    "ItemClassName": "NetheriteNugget"
+  },
+  "type": "simple",
+  "variation": ""
+}

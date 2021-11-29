@@ -46,7 +46,7 @@ public class ModItemColors {
 
     ItemColors itemColors = itemColorEvent.getItemColors();
 
-    log.info("🪨 Register Material Elements Item Colors ... {}", itemColors);
+    log.info("{} Item Colors ...", Constants.LOG_REGISTER_PREFIX);
 
     // Use the existing potion color system for the filled test tubes.
     itemColors.register((itemStack, color) -> {
