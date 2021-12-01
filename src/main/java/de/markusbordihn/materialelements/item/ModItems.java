@@ -133,31 +133,57 @@ public class ModItems {
 
   @TemplateEntryPoint("Register Block Items")
 
-  // Plates
+  // Wooden Panels
+  public static final RegistryObject<Item> OAK_PANEL =
+      ITEMS.register("oak_panel", () -> new BlockItem(ModBlocks.OAK_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> SPRUCE_PANEL =
+      ITEMS.register("spruce_panel", () -> new BlockItem(ModBlocks.SPRUCE_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> BIRCH_PANEL =
+      ITEMS.register("birch_panel", () -> new BlockItem(ModBlocks.BIRCH_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> JUNGLE_PANEL =
+      ITEMS.register("jungle_panel", () -> new BlockItem(ModBlocks.JUNGLE_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> ACACIA_PANEL =
+      ITEMS.register("acacia_panel", () -> new BlockItem(ModBlocks.ACACIA_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> DARK_OAK_PANEL =
+      ITEMS.register("dark_oak_panel", () -> new BlockItem(ModBlocks.DARK_OAK_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> CRIMSON_PANEL =
+      ITEMS.register("crimson_panel", () -> new BlockItem(ModBlocks.CRIMSON_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> WARPED_PANEL =
+      ITEMS.register("warped_panel", () -> new BlockItem(ModBlocks.WARPED_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Wooden Plates
   public static final RegistryObject<Item> OAK_PLATE =
       ITEMS.register("oak_plate", () -> new BlockItem(ModBlocks.OAK_PLATE.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
   public static final RegistryObject<Item> SPRUCE_PLATE =
       ITEMS.register("spruce_plate", () -> new BlockItem(ModBlocks.SPRUCE_PLATE.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
   public static final RegistryObject<Item> BIRCH_PLATE =
       ITEMS.register("birch_plate", () -> new BlockItem(ModBlocks.BIRCH_PLATE.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
   public static final RegistryObject<Item> JUNGLE_PLATE =
       ITEMS.register("jungle_plate", () -> new BlockItem(ModBlocks.JUNGLE_PLATE.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
   public static final RegistryObject<Item> ACACIA_PLATE =
       ITEMS.register("acacia_plate", () -> new BlockItem(ModBlocks.ACACIA_PLATE.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
   public static final RegistryObject<Item> DARK_OAK_PLATE =
       ITEMS.register("dark_oak_plate", () -> new BlockItem(ModBlocks.DARK_OAK_PLATE.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
   public static final RegistryObject<Item> CRIMSON_PLATE =
       ITEMS.register("crimson_plate", () -> new BlockItem(ModBlocks.CRIMSON_PLATE.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
   public static final RegistryObject<Item> WARPED_PLATE =
       ITEMS.register("warped_plate", () -> new BlockItem(ModBlocks.WARPED_PLATE.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
 
   // Rods (elbow)
   public static final RegistryObject<Item> COPPER_ROD_ELBOW =

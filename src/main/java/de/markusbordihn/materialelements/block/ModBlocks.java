@@ -32,7 +32,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import de.markusbordihn.materialelements.Constants;
 import de.markusbordihn.materialelements.Annotations.TemplateEntryPoint;
-import de.markusbordihn.materialelements.block.plate.*;
+import de.markusbordihn.materialelements.block.panel.WoodPanelBlock;
+import de.markusbordihn.materialelements.block.plate.WoodPlateBlock;
 import de.markusbordihn.materialelements.block.rod.*;
 
 public class ModBlocks {
@@ -45,6 +46,49 @@ public class ModBlocks {
       DeferredRegister.create(ForgeRegistries.BLOCKS, Constants.MOD_ID);
 
   @TemplateEntryPoint("Register Blocks")
+
+  // Panels
+  public static final RegistryObject<Block> OAK_PANEL =
+      BLOCKS
+          .register("oak_panel",
+              () -> new WoodPanelBlock(BlockBehaviour.Properties
+                  .of(Material.WOOD, Blocks.OAK_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+                  .sound(SoundType.WOOD)));
+  public static final RegistryObject<Block> SPRUCE_PANEL =
+      BLOCKS.register("spruce_panel",
+          () -> new WoodPanelBlock(BlockBehaviour.Properties
+              .of(Material.WOOD, Blocks.SPRUCE_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+              .sound(SoundType.WOOD)));
+  public static final RegistryObject<Block> BIRCH_PANEL =
+      BLOCKS.register("birch_panel",
+          () -> new WoodPanelBlock(BlockBehaviour.Properties
+              .of(Material.WOOD, Blocks.BIRCH_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+              .sound(SoundType.WOOD)));
+  public static final RegistryObject<Block> JUNGLE_PANEL =
+      BLOCKS.register("jungle_panel",
+          () -> new WoodPanelBlock(BlockBehaviour.Properties
+              .of(Material.WOOD, Blocks.JUNGLE_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+              .sound(SoundType.WOOD)));
+  public static final RegistryObject<Block> ACACIA_PANEL =
+      BLOCKS.register("acacia_panel",
+          () -> new WoodPanelBlock(BlockBehaviour.Properties
+              .of(Material.WOOD, Blocks.ACACIA_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+              .sound(SoundType.WOOD)));
+  public static final RegistryObject<Block> DARK_OAK_PANEL =
+      BLOCKS.register("dark_oak_panel",
+          () -> new WoodPanelBlock(BlockBehaviour.Properties
+              .of(Material.WOOD, Blocks.DARK_OAK_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+              .sound(SoundType.WOOD)));
+  public static final RegistryObject<Block> CRIMSON_PANEL =
+      BLOCKS.register("crimson_panel",
+          () -> new WoodPanelBlock(BlockBehaviour.Properties
+              .of(Material.WOOD, Blocks.CRIMSON_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+              .sound(SoundType.WOOD)));
+  public static final RegistryObject<Block> WARPED_PANEL =
+      BLOCKS.register("warped_panel",
+          () -> new WoodPanelBlock(BlockBehaviour.Properties
+              .of(Material.WOOD, Blocks.WARPED_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
+              .sound(SoundType.WOOD)));
 
   // Plates
   public static final RegistryObject<Block> OAK_PLATE =
@@ -102,9 +146,10 @@ public class ModBlocks {
   public static final RegistryObject<Block> STEEL_ROD_ELBOW = BLOCKS.register("steel_rod_elbow",
       () -> new RodElbow(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
           .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
-  public static final RegistryObject<Block> NETHERITE_ROD_ELBOW = BLOCKS.register("netherite_rod_elbow",
-      () -> new RodElbow(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
-          .requiresCorrectToolForDrops().strength(50.0F, 1200.0F)));
+  public static final RegistryObject<Block> NETHERITE_ROD_ELBOW =
+      BLOCKS.register("netherite_rod_elbow",
+          () -> new RodElbow(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
+              .requiresCorrectToolForDrops().strength(50.0F, 1200.0F)));
 
   // Rods (tee)
   public static final RegistryObject<Block> COPPER_ROD_TEE = BLOCKS.register("copper_rod_tee",

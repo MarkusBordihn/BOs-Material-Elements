@@ -37,12 +37,21 @@
   "block.material_elements.steel_block": "Steel Block",
   "block.material_elements.steel_ore": "Steel Ore",
 
+  "block.material_elements.oak_panel": "Oak Panel",
+  "block.material_elements.spruce_panel": "Spruce Panel",
+  "block.material_elements.birch_panel": "Birch Panel",
+  "block.material_elements.jungle_panel": "Jungle Panel",
+  "block.material_elements.acacia_panel": "Acacia Panel",
+  "block.material_elements.dark_oak_panel": "Dark Oak Panel",
+  "block.material_elements.crimson_panel": "Crimson Panel",
+  "block.material_elements.warped_panel": "Warped Panel",
+
   "block.material_elements.oak_plate": "Oak Plate",
   "block.material_elements.spruce_plate": "Spruce Plate",
   "block.material_elements.birch_plate": "Birch Plate",
   "block.material_elements.jungle_plate": "Jungle Plate",
   "block.material_elements.acacia_plate": "Acacia Plate",
-  "block.material_elements.dark_oak_plate": "Dark Plate",
+  "block.material_elements.dark_oak_plate": "Dark Oak Plate",
   "block.material_elements.crimson_plate": "Crimson Plate",
   "block.material_elements.warped_plate": "Warped Plate",
 
@@ -104,5 +113,6 @@
   "item.placeholder.text": "Template placeholder do not remove!",
 
   "itemGroup.rods": "Material & Elements: Rods",
-  "itemGroup.test_tubes": "Material & Elements: Test Tubes"
+  "itemGroup.test_tubes": "Material & Elements: Test Tubes",
+  "itemGroup.panel_plates": "Material & Elements: Panel & Plates"
 }

@@ -20,16 +20,16 @@ This mod is mostly useful for other mods which requires specific materials or el
 - Steel Rod (full, half-size, cross, star)
 - Netherite Rod (full, half-size, cross, star)
 
-#### 🪵 Plates
+#### 🪵 Wood Panels and Plates
 
-- Oak Plate
-- Spruce Plate
-- Birch Plate
-- Jungle Plate
-- Acacia Plate
-- Dark Oak Plate
-- Crimson Plate
-- Warped Plate
+- Oak Panel / Plate
+- Spruce Panel / Plate
+- Birch Panel / Plate
+- Jungle Panel / Plate
+- Acacia Panel / Plate
+- Dark Oak Panel / Plate
+- Crimson Panel / Plate
+- Warped Panel / Plate
 
 #### 📦 Blocks
 

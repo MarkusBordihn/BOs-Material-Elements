@@ -31,13 +31,22 @@
   "block.material_elements.steel_block": "Stahlblock",
   "block.material_elements.steel_ore": "Stahlerz",
 
+  "block.material_elements.oak_panel": "Eichenpaneel",
+  "block.material_elements.spruce_panel": "Fichtenpaneel",
+  "block.material_elements.birch_panel": "Birkenpaneel",
+  "block.material_elements.jungle_panel": "Dschungelpaneel",
+  "block.material_elements.acacia_panel": "Akaziepaneel",
+  "block.material_elements.dark_oak_panel": "Dunkles Eichenpaneel",
+  "block.material_elements.crimson_panel": "Karmesinpaneel",
+  "block.material_elements.warped_panel": "Verzogenes Paneel",
+
   "block.material_elements.oak_plate": "Eichenplatte",
   "block.material_elements.spruce_plate": "Fichtenplatte",
   "block.material_elements.birch_plate": "Birkenplatte",
   "block.material_elements.jungle_plate": "Dschungelplatte",
-  "block.material_elements.acacia_plate": "Akazie-Platte",
-  "block.material_elements.dark_oak_plate": "Dunkle Platte",
-  "block.material_elements.crimson_plate": "Crimson Plate",
+  "block.material_elements.acacia_plate": "Akazieplatte",
+  "block.material_elements.dark_oak_plate": "Dunkle Eichenplatte",
+  "block.material_elements.crimson_plate": "Karmesinplatte",
   "block.material_elements.warped_plate": "Verzogene Platte",
 
   "block.placeholder.text": "Template placeholder do not remove!",
@@ -97,5 +106,6 @@
   "item.placeholder.text": "Template placeholder do not remove!",
 
   "itemGroup.rods": "Material & Elemente: Stangen",
-  "itemGroup.test_tubes": "Material & Elemente: Reagenzgläser"
+  "itemGroup.test_tubes": "Material & Elemente: Reagenzgläser",
+  "itemGroup.panel_plates": "Material & Elemente: Paneele & Platten"
 }

@@ -16,7 +16,6 @@
       "model": "material_elements:block/gold_rod_elbow",
       "y": 90
     },
-
     "face=wall,facing=north": {
       "model": "material_elements:block/gold_rod_elbow",
       "x": 90,
@@ -37,7 +36,6 @@
       "x": 90,
       "y": 180
     },
-
     "face=ceiling,facing=north": {
       "model": "material_elements:block/gold_rod_elbow",
       "x": 180,

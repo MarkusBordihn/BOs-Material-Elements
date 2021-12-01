@@ -17,33 +17,36 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package de.markusbordihn.materialelements.tabs;
+package de.markusbordihn.materialelements.block.panel;
 
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-import de.markusbordihn.materialelements.item.ModItems;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.state.BlockState;
 
-public class MaterialElementsTab {
+import de.markusbordihn.materialelements.Constants;
 
-  protected MaterialElementsTab() {}
+public class WoodPanelBlock extends PanelBlock {
 
-  public static final CreativeModeTab TAB_RODS = new CreativeModeTab("rods") {
-    public ItemStack makeIcon() {
-      return new ItemStack(ModItems.IRON_ROD.get());
-    }
-  };
+  public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
-  public static final CreativeModeTab TAB_TEST_TUBES = new CreativeModeTab("test_tubes") {
-    public ItemStack makeIcon() {
-      return new ItemStack(ModItems.TEST_TUBE.get());
-    }
-  };
+  public WoodPanelBlock(Properties properties) {
+    super(properties);
+  }
 
-  public static final CreativeModeTab TAB_PANEL_PLATES = new CreativeModeTab("panel_plates") {
-    public ItemStack makeIcon() {
-      return new ItemStack(ModItems.OAK_PLATE.get());
-    }
-  };
+  @Override
+  // Called when fire is updating, checks if a block face can catch fire.
+  public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+    return true;
+  }
+
+  @Override
+  // Chance that fire will spread and consume this block. 300 being a 100% chance
+  public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+    return 100;
+  }
 
 }
