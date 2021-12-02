@@ -25,7 +25,11 @@ import org.apache.logging.log4j.Logger;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 
 import de.markusbordihn.materialelements.Constants;
 
@@ -33,8 +37,9 @@ public class WoodPanelBlock extends PanelBlock {
 
   public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
-  public WoodPanelBlock(Properties properties) {
-    super(properties);
+  public WoodPanelBlock(MaterialColor materialColor) {
+    super(BlockBehaviour.Properties.of(Material.WOOD, materialColor).strength(1.5F, 3.0F)
+        .sound(SoundType.WOOD));
   }
 
   @Override

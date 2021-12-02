@@ -1,3 +1,6 @@
+[![Material and Elements Downloads](http://cf.way2muchnoise.eu/full_material-elements_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements)
+[![Material and Elements MC Versions](http://cf.way2muchnoise.eu/versions/Minecraft_material-elements_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements)
+
 # Bo's Material and Elements
 
 ![Bo's Material Elements][logo]
@@ -20,7 +23,7 @@ This mod is mostly useful for other mods which requires specific materials or el
 - Steel Rod (full, half-size, cross, star)
 - Netherite Rod (full, half-size, cross, star)
 
-#### 🪵 Wood Panels and Plates
+#### 🪵 Wood Panels, Plates and half-size Slabs
 
 - Oak Panel / Plate
 - Spruce Panel / Plate

@@ -49,6 +49,15 @@
   "block.material_elements.crimson_plate": "Karmesinplatte",
   "block.material_elements.warped_plate": "Verzogene Platte",
 
+  "block.material_elements.oak_half_slab": "Eiche halbgroße Platte",
+  "block.material_elements.spruce_half_slab": "Fichte halbgroße Platte",
+  "block.material_elements.birch_half_slab": "Birke halbgroße Platte",
+  "block.material_elements.jungle_half_slab": "Dschungel halbgroße Platte",
+  "block.material_elements.acacia_half_slab": "Akazie halbgroße Platte",
+  "block.material_elements.dark_oak_half_slab": "Dunkle Eiche halbgroße Platte",
+  "block.material_elements.crimson_half_slab": "Crimson halbgroße Platte",
+  "block.material_elements.warped_half_slab": "Verzogene halbgroße Platte",
+
   "block.placeholder.text": "Template placeholder do not remove!",
 
   "item.material_elements.coke": "Koks",

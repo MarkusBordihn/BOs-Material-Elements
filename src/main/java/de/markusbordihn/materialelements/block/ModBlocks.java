@@ -22,16 +22,16 @@ package de.markusbordihn.materialelements.block;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.OreBlock;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import de.markusbordihn.materialelements.Constants;
 import de.markusbordihn.materialelements.Annotations.TemplateEntryPoint;
+import de.markusbordihn.materialelements.block.halfslab.WoodHalfSlabBlock;
 import de.markusbordihn.materialelements.block.panel.WoodPanelBlock;
 import de.markusbordihn.materialelements.block.plate.WoodPlateBlock;
 import de.markusbordihn.materialelements.block.rod.*;
@@ -47,210 +47,136 @@ public class ModBlocks {
 
   @TemplateEntryPoint("Register Blocks")
 
-  // Panels
-  public static final RegistryObject<Block> OAK_PANEL =
-      BLOCKS
-          .register("oak_panel",
-              () -> new WoodPanelBlock(BlockBehaviour.Properties
-                  .of(Material.WOOD, Blocks.OAK_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-                  .sound(SoundType.WOOD)));
-  public static final RegistryObject<Block> SPRUCE_PANEL =
-      BLOCKS.register("spruce_panel",
-          () -> new WoodPanelBlock(BlockBehaviour.Properties
-              .of(Material.WOOD, Blocks.SPRUCE_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-              .sound(SoundType.WOOD)));
-  public static final RegistryObject<Block> BIRCH_PANEL =
-      BLOCKS.register("birch_panel",
-          () -> new WoodPanelBlock(BlockBehaviour.Properties
-              .of(Material.WOOD, Blocks.BIRCH_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-              .sound(SoundType.WOOD)));
-  public static final RegistryObject<Block> JUNGLE_PANEL =
-      BLOCKS.register("jungle_panel",
-          () -> new WoodPanelBlock(BlockBehaviour.Properties
-              .of(Material.WOOD, Blocks.JUNGLE_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-              .sound(SoundType.WOOD)));
-  public static final RegistryObject<Block> ACACIA_PANEL =
-      BLOCKS.register("acacia_panel",
-          () -> new WoodPanelBlock(BlockBehaviour.Properties
-              .of(Material.WOOD, Blocks.ACACIA_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-              .sound(SoundType.WOOD)));
-  public static final RegistryObject<Block> DARK_OAK_PANEL =
-      BLOCKS.register("dark_oak_panel",
-          () -> new WoodPanelBlock(BlockBehaviour.Properties
-              .of(Material.WOOD, Blocks.DARK_OAK_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-              .sound(SoundType.WOOD)));
-  public static final RegistryObject<Block> CRIMSON_PANEL =
-      BLOCKS.register("crimson_panel",
-          () -> new WoodPanelBlock(BlockBehaviour.Properties
-              .of(Material.WOOD, Blocks.CRIMSON_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-              .sound(SoundType.WOOD)));
-  public static final RegistryObject<Block> WARPED_PANEL =
-      BLOCKS.register("warped_panel",
-          () -> new WoodPanelBlock(BlockBehaviour.Properties
-              .of(Material.WOOD, Blocks.WARPED_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-              .sound(SoundType.WOOD)));
+  // Wooden Panels
+  public static final RegistryObject<Block> OAK_PANEL = BLOCKS.register("oak_panel",
+      () -> new WoodPanelBlock(Blocks.OAK_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> SPRUCE_PANEL = BLOCKS.register("spruce_panel",
+      () -> new WoodPanelBlock(Blocks.SPRUCE_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> BIRCH_PANEL = BLOCKS.register("birch_panel",
+      () -> new WoodPanelBlock(Blocks.BIRCH_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> JUNGLE_PANEL = BLOCKS.register("jungle_panel",
+      () -> new WoodPanelBlock(Blocks.JUNGLE_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> ACACIA_PANEL = BLOCKS.register("acacia_panel",
+      () -> new WoodPanelBlock(Blocks.ACACIA_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> DARK_OAK_PANEL = BLOCKS.register("dark_oak_panel",
+      () -> new WoodPanelBlock(Blocks.DARK_OAK_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> CRIMSON_PANEL = BLOCKS.register("crimson_panel",
+      () -> new WoodPanelBlock(Blocks.CRIMSON_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> WARPED_PANEL = BLOCKS.register("warped_panel",
+      () -> new WoodPanelBlock(Blocks.WARPED_PLANKS.defaultMaterialColor()));
 
-  // Plates
-  public static final RegistryObject<Block> OAK_PLATE =
-      BLOCKS
-          .register("oak_plate",
-              () -> new WoodPlateBlock(BlockBehaviour.Properties
-                  .of(Material.WOOD, Blocks.OAK_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-                  .sound(SoundType.WOOD)));
-  public static final RegistryObject<Block> SPRUCE_PLATE =
-      BLOCKS.register("spruce_plate",
-          () -> new WoodPlateBlock(BlockBehaviour.Properties
-              .of(Material.WOOD, Blocks.SPRUCE_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-              .sound(SoundType.WOOD)));
-  public static final RegistryObject<Block> BIRCH_PLATE =
-      BLOCKS.register("birch_plate",
-          () -> new WoodPlateBlock(BlockBehaviour.Properties
-              .of(Material.WOOD, Blocks.BIRCH_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-              .sound(SoundType.WOOD)));
-  public static final RegistryObject<Block> JUNGLE_PLATE =
-      BLOCKS.register("jungle_plate",
-          () -> new WoodPlateBlock(BlockBehaviour.Properties
-              .of(Material.WOOD, Blocks.JUNGLE_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-              .sound(SoundType.WOOD)));
-  public static final RegistryObject<Block> ACACIA_PLATE =
-      BLOCKS.register("acacia_plate",
-          () -> new WoodPlateBlock(BlockBehaviour.Properties
-              .of(Material.WOOD, Blocks.ACACIA_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-              .sound(SoundType.WOOD)));
-  public static final RegistryObject<Block> DARK_OAK_PLATE =
-      BLOCKS.register("dark_oak_plate",
-          () -> new WoodPlateBlock(BlockBehaviour.Properties
-              .of(Material.WOOD, Blocks.DARK_OAK_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-              .sound(SoundType.WOOD)));
-  public static final RegistryObject<Block> CRIMSON_PLATE =
-      BLOCKS.register("crimson_plate",
-          () -> new WoodPlateBlock(BlockBehaviour.Properties
-              .of(Material.WOOD, Blocks.CRIMSON_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-              .sound(SoundType.WOOD)));
-  public static final RegistryObject<Block> WARPED_PLATE =
-      BLOCKS.register("warped_plate",
-          () -> new WoodPlateBlock(BlockBehaviour.Properties
-              .of(Material.WOOD, Blocks.WARPED_PLANKS.defaultMaterialColor()).strength(1.5F, 3.0F)
-              .sound(SoundType.WOOD)));
+  // Wooden Plates
+  public static final RegistryObject<Block> OAK_PLATE = BLOCKS.register("oak_plate",
+      () -> new WoodPlateBlock(Blocks.OAK_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> SPRUCE_PLATE = BLOCKS.register("spruce_plate",
+      () -> new WoodPlateBlock(Blocks.SPRUCE_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> BIRCH_PLATE = BLOCKS.register("birch_plate",
+      () -> new WoodPlateBlock(Blocks.BIRCH_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> JUNGLE_PLATE = BLOCKS.register("jungle_plate",
+      () -> new WoodPlateBlock(Blocks.JUNGLE_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> ACACIA_PLATE = BLOCKS.register("acacia_plate",
+      () -> new WoodPlateBlock(Blocks.ACACIA_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> DARK_OAK_PLATE = BLOCKS.register("dark_oak_plate",
+      () -> new WoodPlateBlock(Blocks.DARK_OAK_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> CRIMSON_PLATE = BLOCKS.register("crimson_plate",
+      () -> new WoodPlateBlock(Blocks.CRIMSON_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> WARPED_PLATE = BLOCKS.register("warped_plate",
+      () -> new WoodPlateBlock(Blocks.WARPED_PLANKS.defaultMaterialColor()));
+
+  // Wooden Half-Slab
+  public static final RegistryObject<Block> OAK_HALF_SLAB = BLOCKS.register("oak_half_slab",
+      () -> new WoodHalfSlabBlock(Blocks.OAK_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> SPRUCE_HALF_SLAB = BLOCKS.register("spruce_half_slab",
+      () -> new WoodHalfSlabBlock(Blocks.SPRUCE_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> BIRCH_HALF_SLAB = BLOCKS.register("birch_half_slab",
+      () -> new WoodHalfSlabBlock(Blocks.BIRCH_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> JUNGLE_HALF_SLAB = BLOCKS.register("jungle_half_slab",
+      () -> new WoodHalfSlabBlock(Blocks.JUNGLE_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> ACACIA_HALF_SLAB = BLOCKS.register("acacia_half_slab",
+      () -> new WoodHalfSlabBlock(Blocks.ACACIA_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> DARK_OAK_HALF_SLAB =
+      BLOCKS.register("dark_oak_half_slab",
+          () -> new WoodHalfSlabBlock(Blocks.DARK_OAK_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> CRIMSON_HALF_SLAB = BLOCKS.register("crimson_half_slab",
+      () -> new WoodHalfSlabBlock(Blocks.CRIMSON_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> WARPED_HALF_SLAB = BLOCKS.register("warped_half_slab",
+      () -> new WoodHalfSlabBlock(Blocks.WARPED_PLANKS.defaultMaterialColor()));
 
   // Rods (elbow)
-  public static final RegistryObject<Block> COPPER_ROD_ELBOW = BLOCKS.register("copper_rod_elbow",
-      () -> new RodElbow(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
-          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
-  public static final RegistryObject<Block> GOLD_ROD_ELBOW = BLOCKS.register("gold_rod_elbow",
-      () -> new RodElbow(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD)
-          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.METAL)));
-  public static final RegistryObject<Block> IRON_ROD_ELBOW = BLOCKS.register("iron_rod_elbow",
-      () -> new RodElbow(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
-  public static final RegistryObject<Block> STEEL_ROD_ELBOW = BLOCKS.register("steel_rod_elbow",
-      () -> new RodElbow(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> COPPER_ROD_ELBOW =
+      BLOCKS.register("copper_rod_elbow", () -> new RodElbow(BlockType.COPPER));
+  public static final RegistryObject<Block> GOLD_ROD_ELBOW =
+      BLOCKS.register("gold_rod_elbow", () -> new RodElbow(BlockType.GOLD));
+  public static final RegistryObject<Block> IRON_ROD_ELBOW =
+      BLOCKS.register("iron_rod_elbow", () -> new RodElbow(BlockType.IRON));
+  public static final RegistryObject<Block> STEEL_ROD_ELBOW =
+      BLOCKS.register("steel_rod_elbow", () -> new RodElbow(BlockType.STEEL));
   public static final RegistryObject<Block> NETHERITE_ROD_ELBOW =
-      BLOCKS.register("netherite_rod_elbow",
-          () -> new RodElbow(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
-              .requiresCorrectToolForDrops().strength(50.0F, 1200.0F)));
+      BLOCKS.register("netherite_rod_elbow", () -> new RodElbow(BlockType.NETHERITE));
 
   // Rods (tee)
-  public static final RegistryObject<Block> COPPER_ROD_TEE = BLOCKS.register("copper_rod_tee",
-      () -> new RodTee(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
-          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
-  public static final RegistryObject<Block> GOLD_ROD_TEE = BLOCKS.register("gold_rod_tee",
-      () -> new RodTee(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD)
-          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.METAL)));
-  public static final RegistryObject<Block> IRON_ROD_TEE = BLOCKS.register("iron_rod_tee",
-      () -> new RodTee(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
-  public static final RegistryObject<Block> STEEL_ROD_TEE = BLOCKS.register("steel_rod_tee",
-      () -> new RodTee(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
-  public static final RegistryObject<Block> NETHERITE_ROD_TEE = BLOCKS.register("netherite_rod_tee",
-      () -> new RodTee(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
-          .requiresCorrectToolForDrops().strength(50.0F, 1200.0F)));
+  public static final RegistryObject<Block> COPPER_ROD_TEE =
+      BLOCKS.register("copper_rod_tee", () -> new RodTee(BlockType.COPPER));
+  public static final RegistryObject<Block> GOLD_ROD_TEE =
+      BLOCKS.register("gold_rod_tee", () -> new RodTee(BlockType.GOLD));
+  public static final RegistryObject<Block> IRON_ROD_TEE =
+      BLOCKS.register("iron_rod_tee", () -> new RodTee(BlockType.IRON));
+  public static final RegistryObject<Block> STEEL_ROD_TEE =
+      BLOCKS.register("steel_rod_tee", () -> new RodTee(BlockType.STEEL));
+  public static final RegistryObject<Block> NETHERITE_ROD_TEE =
+      BLOCKS.register("netherite_rod_tee", () -> new RodTee(BlockType.NETHERITE));
 
   // Rods (star)
-  public static final RegistryObject<Block> COPPER_ROD_STAR = BLOCKS.register("copper_rod_star",
-      () -> new RodStar(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
-          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
-  public static final RegistryObject<Block> GOLD_ROD_STAR = BLOCKS.register("gold_rod_star",
-      () -> new RodStar(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD)
-          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.METAL)));
-  public static final RegistryObject<Block> IRON_ROD_STAR = BLOCKS.register("iron_rod_star",
-      () -> new RodStar(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
-  public static final RegistryObject<Block> STEEL_ROD_STAR = BLOCKS.register("steel_rod_star",
-      () -> new RodStar(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> COPPER_ROD_STAR =
+      BLOCKS.register("copper_rod_star", () -> new RodStar(BlockType.COPPER));
+  public static final RegistryObject<Block> GOLD_ROD_STAR =
+      BLOCKS.register("gold_rod_star", () -> new RodStar(BlockType.GOLD));
+  public static final RegistryObject<Block> IRON_ROD_STAR =
+      BLOCKS.register("iron_rod_star", () -> new RodStar(BlockType.IRON));
+  public static final RegistryObject<Block> STEEL_ROD_STAR =
+      BLOCKS.register("steel_rod_star", () -> new RodStar(BlockType.STEEL));
   public static final RegistryObject<Block> NETHERITE_ROD_STAR =
-      BLOCKS.register("netherite_rod_star",
-          () -> new RodStar(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
-              .requiresCorrectToolForDrops().strength(50.0F, 1200.0F)
-              .sound(SoundType.NETHERITE_BLOCK)));
+      BLOCKS.register("netherite_rod_star", () -> new RodStar(BlockType.NETHERITE));
 
   // Rods (cross)
-  public static final RegistryObject<Block> COPPER_ROD_CROSS = BLOCKS.register("copper_rod_cross",
-      () -> new RodCross(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
-          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
-  public static final RegistryObject<Block> GOLD_ROD_CROSS = BLOCKS.register("gold_rod_cross",
-      () -> new RodCross(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD)
-          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.METAL)));
-  public static final RegistryObject<Block> IRON_ROD_CROSS = BLOCKS.register("iron_rod_cross",
-      () -> new RodCross(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
-  public static final RegistryObject<Block> STEEL_ROD_CROSS = BLOCKS.register("steel_rod_cross",
-      () -> new RodCross(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> COPPER_ROD_CROSS =
+      BLOCKS.register("copper_rod_cross", () -> new RodCross(BlockType.COPPER));
+  public static final RegistryObject<Block> GOLD_ROD_CROSS =
+      BLOCKS.register("gold_rod_cross", () -> new RodCross(BlockType.GOLD));
+  public static final RegistryObject<Block> IRON_ROD_CROSS =
+      BLOCKS.register("iron_rod_cross", () -> new RodCross(BlockType.IRON));
+  public static final RegistryObject<Block> STEEL_ROD_CROSS =
+      BLOCKS.register("steel_rod_cross", () -> new RodCross(BlockType.STEEL));
   public static final RegistryObject<Block> NETHERITE_ROD_CROSS =
-      BLOCKS.register("netherite_rod_cross",
-          () -> new RodCross(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
-              .requiresCorrectToolForDrops().strength(50.0F, 1200.0F)
-              .sound(SoundType.NETHERITE_BLOCK)));
+      BLOCKS.register("netherite_rod_cross", () -> new RodCross(BlockType.NETHERITE));
 
   // Rods (half size)
-  public static final RegistryObject<Block> COPPER_ROD_HALF_SIZE = BLOCKS.register(
-      "copper_rod_half_size",
-      () -> new RodHalfSize(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
-          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
+  public static final RegistryObject<Block> COPPER_ROD_HALF_SIZE =
+      BLOCKS.register("copper_rod_half_size", () -> new RodHalfSize(BlockType.COPPER));
   public static final RegistryObject<Block> GOLD_ROD_HALF_SIZE =
-      BLOCKS.register("gold_rod_half_size",
-          () -> new RodHalfSize(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD)
-              .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.METAL)));
+      BLOCKS.register("gold_rod_half_size", () -> new RodHalfSize(BlockType.GOLD));
   public static final RegistryObject<Block> IRON_ROD_HALF_SIZE =
-      BLOCKS.register("iron_rod_half_size",
-          () -> new RodHalfSize(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-              .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+      BLOCKS.register("iron_rod_half_size", () -> new RodHalfSize(BlockType.IRON));
   public static final RegistryObject<Block> STEEL_ROD_HALF_SIZE =
-      BLOCKS.register("steel_rod_half_size",
-          () -> new RodHalfSize(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-              .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+      BLOCKS.register("steel_rod_half_size", () -> new RodHalfSize(BlockType.STEEL));
   public static final RegistryObject<Block> NETHERITE_ROD_HALF_SIZE =
-      BLOCKS.register("netherite_rod_half_size",
-          () -> new RodHalfSize(BlockBehaviour.Properties
-              .of(Material.METAL, MaterialColor.COLOR_BLACK).requiresCorrectToolForDrops()
-              .strength(50.0F, 1200.0F).sound(SoundType.NETHERITE_BLOCK)));
+      BLOCKS.register("netherite_rod_half_size", () -> new RodHalfSize(BlockType.NETHERITE));
 
   // Rods (full-size)
-  public static final RegistryObject<Block> COPPER_ROD = BLOCKS.register("copper_rod",
-      () -> new Rod(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
-          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER)));
-  public static final RegistryObject<Block> GOLD_ROD = BLOCKS.register("gold_rod",
-      () -> new Rod(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD)
-          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.METAL)));
-  public static final RegistryObject<Block> IRON_ROD = BLOCKS.register("iron_rod",
-      () -> new Rod(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
-  public static final RegistryObject<Block> STEEL_ROD = BLOCKS.register("steel_rod",
-      () -> new Rod(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
-  public static final RegistryObject<Block> NETHERITE_ROD = BLOCKS.register("netherite_rod",
-      () -> new Rod(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
-          .requiresCorrectToolForDrops().strength(50.0F, 1200.0F)
-          .sound(SoundType.NETHERITE_BLOCK)));
+  public static final RegistryObject<Block> COPPER_ROD =
+      BLOCKS.register("copper_rod", () -> new Rod(BlockType.COPPER));
+  public static final RegistryObject<Block> GOLD_ROD =
+      BLOCKS.register("gold_rod", () -> new Rod(BlockType.GOLD));
+  public static final RegistryObject<Block> IRON_ROD =
+      BLOCKS.register("iron_rod", () -> new Rod(BlockType.IRON));
+  public static final RegistryObject<Block> STEEL_ROD =
+      BLOCKS.register("steel_rod", () -> new Rod(BlockType.STEEL));
+  public static final RegistryObject<Block> NETHERITE_ROD =
+      BLOCKS.register("netherite_rod", () -> new Rod(BlockType.NETHERITE));
 
   // Blocks
-  public static final RegistryObject<Block> STEEL_BLOCK = BLOCKS.register("steel_block",
-      () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+  public static final RegistryObject<Block> STEEL_BLOCK =
+      BLOCKS.register("steel_block", () -> new Block(BlockType.STEEL));
 
   // Ore
   public static final RegistryObject<Block> STEEL_ORE =

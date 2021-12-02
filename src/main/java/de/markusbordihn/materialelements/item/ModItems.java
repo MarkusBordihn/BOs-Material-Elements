@@ -23,6 +23,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
+
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -115,10 +116,9 @@ public class ModItems {
   public static final RegistryObject<Item> TEST_TUBE_WATER =
       ITEMS.register("test_tube_water", () -> new TestTubeCustomItem(
           (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES)));
-  public static final RegistryObject<Item> TEST_TUBE_GLOW = ITEMS.register("test_tube_glow",
-      () -> new TestTubeCustomFoilItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES),
-          DyeColor.CYAN));
+  public static final RegistryObject<Item> TEST_TUBE_GLOW =
+      ITEMS.register("test_tube_glow", () -> new TestTubeCustomFoilItem(
+          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.CYAN));
 
   // Test Tube
   public static final RegistryObject<Item> TEST_TUBE = ITEMS.register("test_tube",
@@ -183,6 +183,32 @@ public class ModItems {
           new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
   public static final RegistryObject<Item> WARPED_PLATE =
       ITEMS.register("warped_plate", () -> new BlockItem(ModBlocks.WARPED_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Wooden Half-Slab
+  public static final RegistryObject<Item> OAK_HALF_SLAB =
+      ITEMS.register("oak_half_slab", () -> new BlockItem(ModBlocks.OAK_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> SPRUCE_HALF_SLAB =
+      ITEMS.register("spruce_half_slab", () -> new BlockItem(ModBlocks.SPRUCE_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> BIRCH_HALF_SLAB =
+      ITEMS.register("birch_half_slab", () -> new BlockItem(ModBlocks.BIRCH_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> JUNGLE_HALF_SLAB =
+      ITEMS.register("jungle_half_slab", () -> new BlockItem(ModBlocks.JUNGLE_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> ACACIA_HALF_SLAB =
+      ITEMS.register("acacia_half_slab", () -> new BlockItem(ModBlocks.ACACIA_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> DARK_OAK_HALF_SLAB =
+      ITEMS.register("dark_oak_half_slab", () -> new BlockItem(ModBlocks.DARK_OAK_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> CRIMSON_HALF_SLAB =
+      ITEMS.register("crimson_half_slab", () -> new BlockItem(ModBlocks.CRIMSON_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> WARPED_HALF_SLAB =
+      ITEMS.register("warped_half_slab", () -> new BlockItem(ModBlocks.WARPED_HALF_SLAB.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
 
   // Rods (elbow)

@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "face=floor": {
+      "model": "material_elements:block/birch_half_slab"
+    },
+    "face=wall": {
+      "model": "material_elements:block/birch_half_slab"
+    },
+    "face=ceiling": {
+      "model": "material_elements:block/birch_half_slab",
+      "x": 180,
+      "y": 180
+    }
+  }
+}

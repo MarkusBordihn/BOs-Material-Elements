@@ -23,23 +23,19 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.AttachFace;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import de.markusbordihn.materialelements.Constants;
+import de.markusbordihn.materialelements.block.PanelPlateBlock;
 
-public class PanelBlock extends Block {
+public class PanelBlock extends PanelPlateBlock {
 
   public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
@@ -51,20 +47,14 @@ public class PanelBlock extends Block {
   protected static final VoxelShape FACING_NORTH_AABB = Block.box(0.0, 0.0, 15.0, 16.0, 16.0, 16.0);
   protected static final VoxelShape FACING_WEST_AABB = Block.box(15.0, 0.0, 0.0, 16.0, 16.0, 16.0);
 
-  // Defines if we need to rotate the Object based on the click position and player pov
-  public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-  public static final EnumProperty<AttachFace> ATTACH_FACE = BlockStateProperties.ATTACH_FACE;
-
   public PanelBlock(Properties properties) {
     super(properties);
-    this.registerDefaultState(this.stateDefinition.any().setValue(ATTACH_FACE, AttachFace.FLOOR)
-        .setValue(FACING, Direction.NORTH));
   }
 
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {
-    AttachFace attachFace = blockState.getValue(ATTACH_FACE);
+    AttachFace attachFace = blockState.getValue(PanelPlateBlock.ATTACH_FACE);
     // Early return for simple face like ceiling and floor
     if (attachFace == AttachFace.CEILING) {
       return CEILING_AABB;
@@ -73,7 +63,7 @@ public class PanelBlock extends Block {
     }
 
     // Handle the Wall faces for each direction
-    switch (blockState.getValue(FACING)) {
+    switch (blockState.getValue(PanelPlateBlock.FACING)) {
       case NORTH:
         return FACING_NORTH_AABB;
       case EAST:
@@ -88,42 +78,13 @@ public class PanelBlock extends Block {
   }
 
   @Override
-  public BlockState getStateForPlacement(BlockPlaceContext context) {
-    Direction direction = context.getClickedFace();
-    BlockState blockState =
-        context.getLevel().getBlockState(context.getClickedPos().relative(direction.getOpposite()));
-    Direction faceDirection =
-        blockState.is(this) && blockState.getValue(FACING) == direction ? direction.getOpposite()
-            : direction;
-
-    // Calculate attach face based on clicked face and relative click location.
-    AttachFace attachFace = AttachFace.FLOOR;
-    if (faceDirection == Direction.DOWN) {
-      attachFace = AttachFace.CEILING;
-    } else if (faceDirection != Direction.UP) {
-      // Get the relative click position like 0.1..0.9
-      Double relativeClickLocation = context.getClickLocation().y % 1;
-      if (relativeClickLocation < 0.3) {
-        attachFace = AttachFace.FLOOR;
-      } else if (relativeClickLocation > 0.7) {
-        attachFace = AttachFace.CEILING;
-      } else {
-        attachFace = AttachFace.WALL;
-      }
+  public boolean canBeReplaced(BlockState blockState, BlockPlaceContext context) {
+    ItemStack itemStack = context.getItemInHand();
+    if (itemStack.is(this.asItem())) {
+      log.info("What we are doing next ?");
+      return true;
     }
-
-    return this.defaultBlockState().setValue(ATTACH_FACE, attachFace).setValue(FACING,
-        context.getHorizontalDirection().getOpposite());
-  }
-
-  @Override
-  protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> blockState) {
-    blockState.add(ATTACH_FACE, FACING);
-  }
-
-  @Override
-  public PushReaction getPistonPushReaction(BlockState blockState) {
-    return PushReaction.DESTROY;
+    return false;
   }
 
 }

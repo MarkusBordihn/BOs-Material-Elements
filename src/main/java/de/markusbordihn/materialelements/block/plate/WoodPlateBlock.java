@@ -19,22 +19,20 @@
 
 package de.markusbordihn.materialelements.block.plate;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-
-import de.markusbordihn.materialelements.Constants;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 
 public class WoodPlateBlock extends PlateBlock {
 
-  public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
-
-  public WoodPlateBlock(Properties properties) {
-    super(properties);
+  public WoodPlateBlock(MaterialColor materialColor) {
+    super(BlockBehaviour.Properties.of(Material.WOOD, materialColor).strength(1.5F, 3.0F)
+        .sound(SoundType.WOOD));
   }
 
   @Override

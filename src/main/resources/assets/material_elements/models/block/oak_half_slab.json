@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/template/half_slab",
+  "textures": {
+    "texture": "minecraft:block/oak_planks",
+    "particle": "minecraft:block/oak_planks"
+  }
+}

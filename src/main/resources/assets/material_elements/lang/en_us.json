@@ -55,6 +55,15 @@
   "block.material_elements.crimson_plate": "Crimson Plate",
   "block.material_elements.warped_plate": "Warped Plate",
 
+  "block.material_elements.oak_half_slab": "Oak half-size Slab",
+  "block.material_elements.spruce_half_slab": "Spruce half-size Slab",
+  "block.material_elements.birch_half_slab": "Birch half-size Slab",
+  "block.material_elements.jungle_half_slab": "Jungle half-size Slab",
+  "block.material_elements.acacia_half_slab": "Acacia half-size Slab",
+  "block.material_elements.dark_oak_half_slab": "Dark Oak half-size Slab",
+  "block.material_elements.crimson_half_slab": "Crimson half-size Slab",
+  "block.material_elements.warped_half_slab": "Warped half-size Slab",
+
   "block.placeholder.text": "Template placeholder do not remove!",
 
   "item.material_elements.coke": "Coke",

@@ -1,18 +1,6 @@
 {
   "variants": {
-    "face=floor,facing=north": {
-      "model": "material_elements:block/crimson_panel",
-      "y": 180
-    },
-    "face=floor,facing=east": {
-      "model": "material_elements:block/crimson_panel",
-      "y": 180
-    },
-    "face=floor,facing=south": {
-      "model": "material_elements:block/crimson_panel",
-      "y": 180
-    },
-    "face=floor,facing=west": {
+    "face=floor": {
       "model": "material_elements:block/crimson_panel",
       "y": 180
     },
@@ -35,22 +23,7 @@
       "x": 90,
       "y": 270
     },
-    "face=ceiling,facing=north": {
-      "model": "material_elements:block/crimson_panel",
-      "x": 180,
-      "y": 180
-    },
-    "face=ceiling,facing=east": {
-      "model": "material_elements:block/crimson_panel",
-      "x": 180,
-      "y": 180
-    },
-    "face=ceiling,facing=south": {
-      "model": "material_elements:block/crimson_panel",
-      "x": 180,
-      "y": 180
-    },
-    "face=ceiling,facing=west": {
+    "face=ceiling": {
       "model": "material_elements:block/crimson_panel",
       "x": 180,
       "y": 180
