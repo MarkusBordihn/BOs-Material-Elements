@@ -1,3 +1,6 @@
+[![Material and Elements Downloads](http://cf.way2muchnoise.eu/full_material-elements_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements)
+[![Material and Elements MC Versions](http://cf.way2muchnoise.eu/versions/Minecraft_material-elements_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements)
+
 # Bo's Material and Elements
 
 ![Bo's Material Elements][logo]
