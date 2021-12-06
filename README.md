@@ -15,7 +15,7 @@ This mod is mostly useful for other mods which requires specific materials or el
 
 ### Block Overview 👁️‍🗨️
 
-### ➖ Rods
+#### ➖ Rods
 
 - Copper Rod (full, half-size, cross, star)
 - Gold Rod (full, half-size, cross, star)
@@ -106,6 +106,14 @@ It is classified between Iron and Diamond with the following stats.
 | Protection - Slot 1   | _5_    | 5     | _6_     |
 | Protection - Slot 2   | _6_    | 7     | _8_     |
 | Protection - Slot 3   | _2_    | 2     | _3_     |
+
+## Version Status Overview 🛠️
+
+| Version        | Status                |
+| -------------- | --------------------- |
+| Fabric Version | ❌ Not planned        |
+| Forge 1.17.1   | ⚠️ Maintenance only   |
+| Forge 1.18     | ✔️ Active development |
 
 ## Mod Integration 🚀
 
