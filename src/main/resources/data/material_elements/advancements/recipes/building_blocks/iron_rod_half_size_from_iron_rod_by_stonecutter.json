@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "material_elements:iron_rod_half_size_from_iron_rod_by_stonecutter"
+    ]
+  },
+  "criteria": {
+    "has_iron_rod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["material_elements:iron_rod"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "material_elements:iron_rod_half_size_from_iron_rod_by_stonecutter"
+      }
+    }
+  },
+  "requirements": [["has_iron_rod", "has_the_recipe"]]
+}

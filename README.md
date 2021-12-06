@@ -112,5 +112,13 @@ It is classified between Iron and Diamond with the following stats.
 If you want to use the mod blocks and items for your own mod just add it as dependency and all elements are automatically available for your mod.
 Please check [Developer Wiki][dev-wiki] for the details steps.
 
+## Version Status Overview 🛠️
+
+| Version        | Status                |
+| -------------- | --------------------- |
+| Fabric Version | ❌ Not planned        |
+| Forge 1.17.1   | ⚠️ Maintenance only   |
+| Forge 1.18     | ✔️ Active development |
+
 [dev-wiki]: https://github.com/MarkusBordihn/BOs-Material-Elements/wiki
 [logo]: src/main/resources/logo.png

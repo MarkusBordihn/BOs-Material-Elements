@@ -1,4 +1,7 @@
 {
+  "advancements.material_elements.adventure.root.title": "Material Elements",
+  "advancements.material_elements.adventure.root.description": "Material Elements Advancements",
+
   "block.material_elements.copper_rod": "Copper Rod",
   "block.material_elements.copper_rod_cross": "Copper Rod Cross",
   "block.material_elements.copper_rod_half_size": "Copper Rod (half size)",

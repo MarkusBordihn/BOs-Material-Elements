@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "material_elements:gold_rod_half_size_from_gold_rod_by_stonecutter"
+    ]
+  },
+  "criteria": {
+    "has_gold_rod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["material_elements:gold_rod"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "material_elements:gold_rod_half_size_from_gold_rod_by_stonecutter"
+      }
+    }
+  },
+  "requirements": [["has_gold_rod", "has_the_recipe"]]
+}

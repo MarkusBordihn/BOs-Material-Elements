@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": ["material_elements:coke_from_charcoal_by_smelting"]
+  },
+  "criteria": {
+    "has_charcoal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:charcoal"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "material_elements:coke_from_charcoal_by_smelting"
+      }
+    }
+  },
+  "requirements": [["has_charcoal", "has_the_recipe"]]
+}

@@ -21,6 +21,7 @@ package de.markusbordihn.materialelements.client.color;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.alchemy.PotionUtils;
@@ -42,9 +43,9 @@ public class ModItemColors {
   protected ModItemColors() {}
 
   @SubscribeEvent
-  public static void registerItemColors(ColorHandlerEvent.Item itemColorEvent) {
+  public static void registerItemColors(ColorHandlerEvent.Item event) {
 
-    ItemColors itemColors = itemColorEvent.getItemColors();
+    ItemColors itemColors = event.getItemColors();
 
     log.info("{} Item Colors ...", Constants.LOG_REGISTER_PREFIX);
 

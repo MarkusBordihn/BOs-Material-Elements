@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "material_elements:test_tube_glow_from_glowing_item"
+    ]
+  },
+  "criteria": {
+    "has_test_tube_water": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "material_elements:test_tube_water"
+            ]
+          }
+        ]
+      }
+    },
+    "has_glowing_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "material_elements:glowing_item"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "material_elements:test_tube_glow_from_glowing_item"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_test_tube_water",
+      "has_glowing_item",
+      "has_the_recipe"
+    ]
+  ]
+}
