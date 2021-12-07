@@ -1,0 +1,31 @@
+{
+  "parent": "material_elements:crafting/obtain_stonecutter",
+  "display": {
+    "icon": {
+      "item": "material_elements:oak_half_slab"
+    },
+    "title": {
+      "translate": "advancements.material_elements.crafting.cut_half_slab.title"
+    },
+    "description": {
+      "translate": "advancements.material_elements.crafting.cut_half_slab.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "half_slab": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+           "tag": "material_elements:half_slabs"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["half_slab"]]
+}

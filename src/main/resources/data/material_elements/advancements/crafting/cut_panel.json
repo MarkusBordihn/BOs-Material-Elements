@@ -1,0 +1,31 @@
+{
+  "parent": "material_elements:crafting/cut_plate",
+  "display": {
+    "icon": {
+      "item": "material_elements:oak_panel"
+    },
+    "title": {
+      "translate": "advancements.material_elements.crafting.cut_panel.title"
+    },
+    "description": {
+      "translate": "advancements.material_elements.crafting.cut_panel.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "panel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "material_elements:panels"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["panel"]]
+}

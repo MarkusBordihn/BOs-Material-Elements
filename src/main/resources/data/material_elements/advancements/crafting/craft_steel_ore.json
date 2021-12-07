@@ -1,0 +1,31 @@
+{
+  "parent": "material_elements:crafting/obtain_coke",
+  "display": {
+    "icon": {
+      "item": "material_elements:steel_ore"
+    },
+    "title": {
+      "translate": "advancements.material_elements.crafting.craft_steel_ore.title"
+    },
+    "description": {
+      "translate": "advancements.material_elements.crafting.craft_steel_ore.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "steel_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["material_elements:steel_ore"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["steel_ore"]]
+}

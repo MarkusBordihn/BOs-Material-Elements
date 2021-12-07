@@ -1,0 +1,31 @@
+{
+  "parent": "material_elements:crafting/fill_water_in_test_tube",
+  "display": {
+    "icon": {
+      "item": "material_elements:test_tube_glow"
+    },
+    "title": {
+      "translate": "advancements.material_elements.crafting.craft_test_tube_glow.title"
+    },
+    "description": {
+      "translate": "advancements.material_elements.crafting.craft_test_tube_glow.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "test_tube_glow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["material_elements:test_tube_glow"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["test_tube_glow"]]
+}
