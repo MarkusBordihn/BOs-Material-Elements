@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": ["material_elements:steel_ingot_from_steel_ore_by_blasting"]
+  },
+  "criteria": {
+    "has_steel_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["material_elements:steel_ore"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "material_elements:steel_ingot_from_steel_ore_by_blasting"
+      }
+    }
+  },
+  "requirements": [["has_steel_ore", "has_the_recipe"]]
+}

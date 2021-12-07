@@ -3,7 +3,7 @@
   "pattern": ["#", "U"],
   "key": {
     "#": {
-      "item": "minecraft:glowstone_dust"
+      "tag": "material_elements:glowing_item"
     },
     "U": {
       "item": "material_elements:test_tube_water"
