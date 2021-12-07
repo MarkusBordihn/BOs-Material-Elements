@@ -11,6 +11,10 @@ This mod is mostly useful for other mods which requires specific materials or el
 
 🚀 Visit https://markusbordihn.github.io/BOs-Material-Elements/ for a detailed overview.
 
+## 🛡️⛏️⚔️ Steel Armor, Tools and Weapons
+
+Please use the [Steel Armor, Tools and Weapon Mod][steel-armor-tools-and-weapons] to get the corresponding steel versions.
+
 ## Features ⭐
 
 ### Block Overview 👁️‍🗨️
@@ -120,5 +124,7 @@ It is classified between Iron and Diamond with the following stats.
 If you want to use the mod blocks and items for your own mod just add it as dependency and all elements are automatically available for your mod.
 Please check [Developer Wiki][dev-wiki] for the details steps.
 
-[dev-wiki]: https://github.com/MarkusBordihn/BOs-Material-Elements/wiki
 [logo]: src/main/resources/logo.png
+
+[steel-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/steel-armor-tools-and-weapons
+[dev-wiki]: https://github.com/MarkusBordihn/BOs-Material-Elements/wiki
