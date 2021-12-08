@@ -35,6 +35,9 @@ public class BlockType {
   public static final Properties GOLD =
       BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD).requiresCorrectToolForDrops()
           .strength(3.0F, 6.0F).sound(SoundType.METAL);
+  public static final Properties SILVER = BlockBehaviour.Properties
+      .of(Material.METAL, MaterialColor.METAL).requiresCorrectToolForDrops().strength(4.0F, 6.0F)
+      .sound(SoundType.METAL).lightLevel(blockState -> 1);
   public static final Properties IRON =
       BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
           .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL);

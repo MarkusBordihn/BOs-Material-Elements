@@ -20,10 +20,12 @@
 package de.markusbordihn.materialelements.item;
 
 import java.util.function.Supplier;
-import de.markusbordihn.materialelements.Constants;
+
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
+
+import de.markusbordihn.materialelements.Constants;
 
 public enum ModTiers implements Tier {
   STEEL(2, 500, 7.0F, 2.5F, 14, () -> {

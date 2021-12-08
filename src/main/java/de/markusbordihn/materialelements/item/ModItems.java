@@ -48,12 +48,16 @@ public class ModItems {
   // Nugget
   public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> SILVER_NUGGET = ITEMS.register("silver_nugget",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
   public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget",
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
   public static final RegistryObject<Item> NETHERITE_NUGGET = ITEMS.register("netherite_nugget",
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
   // Ingot
+  public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
   public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
@@ -218,6 +222,9 @@ public class ModItems {
   public static final RegistryObject<Item> GOLD_ROD_ELBOW =
       ITEMS.register("gold_rod_elbow", () -> new BlockItem(ModBlocks.GOLD_ROD_ELBOW.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> SILVER_ROD_ELBOW =
+      ITEMS.register("silver_rod_elbow", () -> new BlockItem(ModBlocks.SILVER_ROD_ELBOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> IRON_ROD_ELBOW =
       ITEMS.register("iron_rod_elbow", () -> new BlockItem(ModBlocks.IRON_ROD_ELBOW.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
@@ -234,6 +241,9 @@ public class ModItems {
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> GOLD_ROD_TEE =
       ITEMS.register("gold_rod_tee", () -> new BlockItem(ModBlocks.GOLD_ROD_TEE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> SILVER_ROD_TEE =
+      ITEMS.register("silver_rod_tee", () -> new BlockItem(ModBlocks.SILVER_ROD_TEE.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> IRON_ROD_TEE =
       ITEMS.register("iron_rod_tee", () -> new BlockItem(ModBlocks.IRON_ROD_TEE.get(),
@@ -252,6 +262,9 @@ public class ModItems {
   public static final RegistryObject<Item> GOLD_ROD_STAR =
       ITEMS.register("gold_rod_star", () -> new BlockItem(ModBlocks.GOLD_ROD_STAR.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> SILVER_ROD_STAR =
+      ITEMS.register("silver_rod_star", () -> new BlockItem(ModBlocks.SILVER_ROD_STAR.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> IRON_ROD_STAR =
       ITEMS.register("iron_rod_star", () -> new BlockItem(ModBlocks.IRON_ROD_STAR.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
@@ -268,6 +281,9 @@ public class ModItems {
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> GOLD_ROD_CROSS =
       ITEMS.register("gold_rod_cross", () -> new BlockItem(ModBlocks.GOLD_ROD_CROSS.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> SILVER_ROD_CROSS =
+      ITEMS.register("silver_rod_cross", () -> new BlockItem(ModBlocks.SILVER_ROD_CROSS.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> IRON_ROD_CROSS =
       ITEMS.register("iron_rod_cross", () -> new BlockItem(ModBlocks.IRON_ROD_CROSS.get(),
@@ -286,6 +302,9 @@ public class ModItems {
   public static final RegistryObject<Item> GOLD_ROD_HALF_SIZE =
       ITEMS.register("gold_rod_half_size", () -> new BlockItem(ModBlocks.GOLD_ROD_HALF_SIZE.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> SILVER_ROD_HALF_SIZE = ITEMS
+      .register("silver_rod_half_size", () -> new BlockItem(ModBlocks.SILVER_ROD_HALF_SIZE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> IRON_ROD_HALF_SIZE =
       ITEMS.register("iron_rod_half_size", () -> new BlockItem(ModBlocks.IRON_ROD_HALF_SIZE.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
@@ -303,6 +322,9 @@ public class ModItems {
   public static final RegistryObject<Item> GOLD_ROD =
       ITEMS.register("gold_rod", () -> new BlockItem(ModBlocks.GOLD_ROD.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> SILVER_ROD =
+      ITEMS.register("silver_rod", () -> new BlockItem(ModBlocks.SILVER_ROD.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> IRON_ROD =
       ITEMS.register("iron_rod", () -> new BlockItem(ModBlocks.IRON_ROD.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
@@ -314,11 +336,17 @@ public class ModItems {
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
 
   // Blocks
+  public static final RegistryObject<Item> SILVER_BLOCK =
+      ITEMS.register("silver_block", () -> new BlockItem(ModBlocks.SILVER_BLOCK.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
   public static final RegistryObject<Item> STEEL_BLOCK =
       ITEMS.register("steel_block", () -> new BlockItem(ModBlocks.STEEL_BLOCK.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
   // Ore
+  public static final RegistryObject<Item> SILVER_ORE =
+      ITEMS.register("silver_ore", () -> new BlockItem(ModBlocks.SILVER_ORE.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
   public static final RegistryObject<Item> STEEL_ORE =
       ITEMS.register("steel_ore", () -> new BlockItem(ModBlocks.STEEL_ORE.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));

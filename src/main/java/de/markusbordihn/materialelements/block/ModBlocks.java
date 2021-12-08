@@ -107,6 +107,8 @@ public class ModBlocks {
       BLOCKS.register("copper_rod_elbow", () -> new RodElbow(BlockType.COPPER));
   public static final RegistryObject<Block> GOLD_ROD_ELBOW =
       BLOCKS.register("gold_rod_elbow", () -> new RodElbow(BlockType.GOLD));
+  public static final RegistryObject<Block> SILVER_ROD_ELBOW =
+      BLOCKS.register("silver_rod_elbow", () -> new RodElbow(BlockType.SILVER));
   public static final RegistryObject<Block> IRON_ROD_ELBOW =
       BLOCKS.register("iron_rod_elbow", () -> new RodElbow(BlockType.IRON));
   public static final RegistryObject<Block> STEEL_ROD_ELBOW =
@@ -119,6 +121,8 @@ public class ModBlocks {
       BLOCKS.register("copper_rod_tee", () -> new RodTee(BlockType.COPPER));
   public static final RegistryObject<Block> GOLD_ROD_TEE =
       BLOCKS.register("gold_rod_tee", () -> new RodTee(BlockType.GOLD));
+  public static final RegistryObject<Block> SILVER_ROD_TEE =
+      BLOCKS.register("silver_rod_tee", () -> new RodTee(BlockType.SILVER));
   public static final RegistryObject<Block> IRON_ROD_TEE =
       BLOCKS.register("iron_rod_tee", () -> new RodTee(BlockType.IRON));
   public static final RegistryObject<Block> STEEL_ROD_TEE =
@@ -131,6 +135,8 @@ public class ModBlocks {
       BLOCKS.register("copper_rod_star", () -> new RodStar(BlockType.COPPER));
   public static final RegistryObject<Block> GOLD_ROD_STAR =
       BLOCKS.register("gold_rod_star", () -> new RodStar(BlockType.GOLD));
+  public static final RegistryObject<Block> SILVER_ROD_STAR =
+      BLOCKS.register("silver_rod_star", () -> new RodStar(BlockType.SILVER));
   public static final RegistryObject<Block> IRON_ROD_STAR =
       BLOCKS.register("iron_rod_star", () -> new RodStar(BlockType.IRON));
   public static final RegistryObject<Block> STEEL_ROD_STAR =
@@ -143,6 +149,8 @@ public class ModBlocks {
       BLOCKS.register("copper_rod_cross", () -> new RodCross(BlockType.COPPER));
   public static final RegistryObject<Block> GOLD_ROD_CROSS =
       BLOCKS.register("gold_rod_cross", () -> new RodCross(BlockType.GOLD));
+  public static final RegistryObject<Block> SILVER_ROD_CROSS =
+      BLOCKS.register("silver_rod_cross", () -> new RodCross(BlockType.SILVER));
   public static final RegistryObject<Block> IRON_ROD_CROSS =
       BLOCKS.register("iron_rod_cross", () -> new RodCross(BlockType.IRON));
   public static final RegistryObject<Block> STEEL_ROD_CROSS =
@@ -155,6 +163,8 @@ public class ModBlocks {
       BLOCKS.register("copper_rod_half_size", () -> new RodHalfSize(BlockType.COPPER));
   public static final RegistryObject<Block> GOLD_ROD_HALF_SIZE =
       BLOCKS.register("gold_rod_half_size", () -> new RodHalfSize(BlockType.GOLD));
+  public static final RegistryObject<Block> SILVER_ROD_HALF_SIZE =
+      BLOCKS.register("silver_rod_half_size", () -> new RodHalfSize(BlockType.SILVER));
   public static final RegistryObject<Block> IRON_ROD_HALF_SIZE =
       BLOCKS.register("iron_rod_half_size", () -> new RodHalfSize(BlockType.IRON));
   public static final RegistryObject<Block> STEEL_ROD_HALF_SIZE =
@@ -167,6 +177,8 @@ public class ModBlocks {
       BLOCKS.register("copper_rod", () -> new Rod(BlockType.COPPER));
   public static final RegistryObject<Block> GOLD_ROD =
       BLOCKS.register("gold_rod", () -> new Rod(BlockType.GOLD));
+  public static final RegistryObject<Block> SILVER_ROD =
+      BLOCKS.register("silver_rod", () -> new Rod(BlockType.SILVER));
   public static final RegistryObject<Block> IRON_ROD =
       BLOCKS.register("iron_rod", () -> new Rod(BlockType.IRON));
   public static final RegistryObject<Block> STEEL_ROD =
@@ -175,10 +187,15 @@ public class ModBlocks {
       BLOCKS.register("netherite_rod", () -> new Rod(BlockType.NETHERITE));
 
   // Blocks
+  public static final RegistryObject<Block> SILVER_BLOCK =
+      BLOCKS.register("silver_block", () -> new Block(BlockType.SILVER));
   public static final RegistryObject<Block> STEEL_BLOCK =
       BLOCKS.register("steel_block", () -> new Block(BlockType.STEEL));
 
   // Ore
+  public static final RegistryObject<Block> SILVER_ORE =
+      BLOCKS.register("silver_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
+          .requiresCorrectToolForDrops().strength(2.0F, 2.0F)));
   public static final RegistryObject<Block> STEEL_ORE =
       BLOCKS.register("steel_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
           .requiresCorrectToolForDrops().strength(3.0F, 3.0F)));

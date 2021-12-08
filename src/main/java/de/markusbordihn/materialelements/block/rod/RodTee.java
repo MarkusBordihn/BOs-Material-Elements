@@ -22,7 +22,6 @@ package de.markusbordihn.materialelements.block.rod;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -32,23 +31,24 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class RodTee extends RodComplexBlock {
 
   // Shapes for the different faces like NORTH, EAST, SOUTH and WEST
-  // Shapes are automatically optimized by the Shapes.or functions.
-  protected static final VoxelShape UP_AABB = Shapes.or(Block.box(6.0, 0.0, 6.0, 10.0, 8.0, 10.0),
-      Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0));
-  protected static final VoxelShape UP_EAST_WEST_AABB = Shapes
-      .or(Block.box(6.0, 0.0, 6.0, 10.0, 8.0, 10.0), Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0));
-  protected static final VoxelShape DOWN_AABB = Shapes
-      .or(Block.box(6.0, 10.0, 6.0, 10.0, 16.0, 10.0), Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0));
-  protected static final VoxelShape DOWN_EAST_WEST_AABB = Shapes
-      .or(Block.box(6.0, 10.0, 6.0, 10.0, 16.0, 10.0), Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0));
-  protected static final VoxelShape NORTH_AABB = Shapes
-      .or(Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0), Block.box(6.0, 6.0, 8.0, 10.0, 10.0, 16.0));
-  protected static final VoxelShape EAST_AABB = Shapes
-      .or(Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0), Block.box(0.0, 6.0, 6.0, 8.0, 10.0, 10.0));
-  protected static final VoxelShape SOUTH_AABB = Shapes
-      .or(Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0), Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 8.0));
-  protected static final VoxelShape WEST_AABB = Shapes
-      .or(Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0), Block.box(8.0, 6.0, 6.0, 16.0, 10.0, 10.0));
+  // Shapes are automatically optimized by the VoxelShapes.or functions.
+  // Rod Shapes need to be rotated, for this reason we are using the opposite side.
+  protected static final VoxelShape FLOOR_AABB =
+      Shapes.or(RodHalfSize.FLOOR_AABB, Rod.WALL_EAST_WEST_AABB);
+  protected static final VoxelShape FLOOR_EAST_WEST_AABB =
+      Shapes.or(RodHalfSize.FLOOR_AABB, Rod.WALL_NORTH_SOUTH_AABB);
+  protected static final VoxelShape CEILING_AABB =
+      Shapes.or(RodHalfSize.CEILING_AABB, Rod.WALL_EAST_WEST_AABB);
+  protected static final VoxelShape CEILING_EAST_WEST_AABB =
+      Shapes.or(RodHalfSize.CEILING_AABB, Rod.WALL_NORTH_SOUTH_AABB);
+  protected static final VoxelShape WALL_NORTH_AABB =
+      Shapes.or(RodHalfSize.WALL_NORTH_AABB, Rod.WALL_EAST_WEST_AABB);
+  protected static final VoxelShape WALL_EAST_AABB =
+      Shapes.or(RodHalfSize.WALL_EAST_AABB, Rod.WALL_NORTH_SOUTH_AABB);
+  protected static final VoxelShape WALL_SOUTH_AABB =
+      Shapes.or(RodHalfSize.WALL_SOUTH_AABB, Rod.WALL_EAST_WEST_AABB);
+  protected static final VoxelShape WALL_WEST_AABB =
+      Shapes.or(RodHalfSize.WALL_WEST_AABB, Rod.WALL_NORTH_SOUTH_AABB);
 
   public RodTee(Properties properties) {
     super(properties);
@@ -62,24 +62,26 @@ public class RodTee extends RodComplexBlock {
 
     // Handle floor and ceiling placement
     if (attachFace == AttachFace.FLOOR) {
-      return (facing == Direction.EAST || facing == Direction.WEST) ? UP_EAST_WEST_AABB : UP_AABB;
-    } else if (attachFace == AttachFace.CEILING) {
-      return (facing == Direction.EAST || facing == Direction.WEST) ? DOWN_EAST_WEST_AABB
-          : DOWN_AABB;
+      return (facing == Direction.EAST || facing == Direction.WEST) ? FLOOR_EAST_WEST_AABB
+          : FLOOR_AABB;
+    }
+    if (attachFace == AttachFace.CEILING) {
+      return (facing == Direction.EAST || facing == Direction.WEST) ? CEILING_EAST_WEST_AABB
+          : CEILING_AABB;
     }
 
     // Handle wall placements
     switch (facing) {
       case NORTH:
-        return NORTH_AABB;
+        return WALL_NORTH_AABB;
       case EAST:
-        return EAST_AABB;
+        return WALL_EAST_AABB;
       case SOUTH:
-        return SOUTH_AABB;
+        return WALL_SOUTH_AABB;
       case WEST:
-        return WEST_AABB;
+        return WALL_WEST_AABB;
       default:
-        return UP_AABB;
+        return FLOOR_AABB;
     }
   }
 

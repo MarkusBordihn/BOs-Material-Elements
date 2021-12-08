@@ -24,8 +24,6 @@ import org.apache.logging.log4j.Logger;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RodBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -33,14 +31,13 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 import de.markusbordihn.materialelements.Constants;
 
-public class RodStar extends RodBlock {
+public class RodStar extends RodComplexBlock {
 
   public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
-  // Shape
+  // Shape is the same for all combinations.
   protected static final VoxelShape SHAPE_AABB =
-      Shapes.or(Block.box(6.0, 0.0, 6.0, 10.0, 16.0, 10.0),
-          Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0), Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0));
+      Shapes.or(Rod.FLOOR_CEILING_AABB, Rod.WALL_EAST_WEST_AABB, Rod.WALL_NORTH_SOUTH_AABB);
 
   public RodStar(Properties properties) {
     super(properties);

@@ -3,6 +3,7 @@
   "values": [
     "material_elements:steel_rod",
     "material_elements:steel_rod_cross",
+    "material_elements:steel_rod_elbow",
     "material_elements:steel_rod_half_size",
     "material_elements:steel_rod_star",
     "material_elements:steel_rod_tee"

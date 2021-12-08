@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I",
+    "+"
+  ],
+  "key": {
+    "I": {
+      "item": "material_elements:silver_rod"
+    },
+    "+": {
+      "item": "material_elements:silver_rod_cross"
+    }
+  },
+  "result": {
+    "item": "material_elements:silver_rod_star",
+    "count": 1
+  }
+}

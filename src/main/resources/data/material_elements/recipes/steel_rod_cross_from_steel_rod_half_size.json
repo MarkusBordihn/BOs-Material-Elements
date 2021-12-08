@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "material_elements:copper_rod_half_size"
+      "item": "material_elements:steel_rod_half_size"
     }
   },
   "result": {
-    "item": "material_elements:copper_rod_cross",
+    "item": "material_elements:steel_rod_cross",
     "count": 1
   }
 }

@@ -23,6 +23,7 @@ Please use the [Steel Armor, Tools and Weapon Mod][steel-armor-tools-and-weapons
 
 - Copper Rod (full, half-size, cross, star)
 - Gold Rod (full, half-size, cross, star)
+- Silver Rod (full, half-size, cross, star)
 - Iron Rod (full, half-size, cross, star)
 - Steel Rod (full, half-size, cross, star)
 - Netherite Rod (full, half-size, cross, star)
@@ -40,10 +41,12 @@ Please use the [Steel Armor, Tools and Weapon Mod][steel-armor-tools-and-weapons
 
 #### 📦 Blocks
 
+- Silver Block
 - Steel Block
 
 #### ✨ Ore
 
+- Silver Ore
 - Steel Ore
 
 ### Item Overview 👁️‍🗨️
@@ -51,11 +54,13 @@ Please use the [Steel Armor, Tools and Weapon Mod][steel-armor-tools-and-weapons
 #### 🪨 Nuggets
 
 - Copper Nugget
+- Silver Nugget
 - Steel Nugget
 - Netherite Nugget
 
 #### 🪙 Ingot
 
+- Silver Ingot
 - Steel Ingot
 
 #### 🧪 Test Tubes
@@ -90,6 +95,11 @@ This mods adds a lot of additional crafting recipes to allow the crafting of the
 
 ## Materials
 
+### Silver
+
+Silver is a new elements and can not be crafted.
+It is classified between Gold and Iron.
+
 ### Steel
 
 Steel is a new element and can be crafted with coke and raw iron ore in a blast furnace.
@@ -116,6 +126,7 @@ It is classified between Iron and Diamond with the following stats.
 | Version        | Status                |
 | -------------- | --------------------- |
 | Fabric Version | ❌ Not planned        |
+| Forge 1.16.5   | ⚠️ Maintenance only   |
 | Forge 1.17.1   | ⚠️ Maintenance only   |
 | Forge 1.18     | ✔️ Active development |
 

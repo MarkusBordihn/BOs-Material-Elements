@@ -2,7 +2,8 @@
   "replace": false,
   "values": [
     "#forge:nuggets/copper",
-    "#forge:nuggets/steel",
-    "#forge:nuggets/netherite"
+    "#forge:nuggets/netherite",
+    "#forge:nuggets/silver",
+    "#forge:nuggets/steel"
   ]
 }

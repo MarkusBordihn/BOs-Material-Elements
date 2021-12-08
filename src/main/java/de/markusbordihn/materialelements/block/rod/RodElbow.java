@@ -32,37 +32,35 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class RodElbow extends RodComplexBlock {
 
-  protected static final VoxelShape NORTH_SOUTH_AABB = Shapes
-      .or(Block.box(6.0, 0.0, 6.0, 10.0, 16.0, 10.0), Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0));
+  // Center block to fix gap between vertical and horizontal rod.
+  protected static final VoxelShape CENTER_AABB = Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 9.0);
 
-  protected static final VoxelShape FLOOR_BASE_AABB = Block.box(7.0, 0.0, 7.0, 9.0, 9.0, 9.0);
   protected static final VoxelShape FLOOR_NORTH_AABB =
-      Shapes.or(FLOOR_BASE_AABB, Block.box(7.0, 7.0, 7.0, 16.0, 9.0, 9.0));
+      Shapes.or(RodHalfSize.FLOOR_AABB, RodHalfSize.WALL_WEST_AABB, RodElbow.CENTER_AABB);
   protected static final VoxelShape FLOOR_EAST_AABB =
-      Shapes.or(FLOOR_BASE_AABB, Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 16.0));
+      Shapes.or(RodHalfSize.FLOOR_AABB, RodHalfSize.WALL_NORTH_AABB, RodElbow.CENTER_AABB);
   protected static final VoxelShape FLOOR_SOUTH_AABB =
-      Shapes.or(FLOOR_BASE_AABB, Block.box(0.0, 7.0, 7.0, 9.0, 9.0, 9.0));
+      Shapes.or(RodHalfSize.FLOOR_AABB, RodHalfSize.WALL_EAST_AABB, RodElbow.CENTER_AABB);
   protected static final VoxelShape FLOOR_WEST_AABB =
-      Shapes.or(FLOOR_BASE_AABB, Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 9.0));
+      Shapes.or(RodHalfSize.FLOOR_AABB, RodHalfSize.WALL_SOUTH_AABB, RodElbow.CENTER_AABB);
 
-  protected static final VoxelShape WALL_NORTH_AABB =
-      Shapes.or(Block.box(7.0, 7.0, 7.0, 16.0, 9.0, 9.0), Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 16.0));
-  protected static final VoxelShape WALL_EAST_AABB =
-      Shapes.or(Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 16.0), Block.box(0.0, 7.0, 7.0, 9.0, 9.0, 9.0));
-  protected static final VoxelShape WALL_SOUTH_AABB =
-      Shapes.or(Block.box(0.0, 7.0, 7.0, 9.0, 9.0, 9.0), Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 9.0));
-  protected static final VoxelShape WALL_WEST_AABB =
-      Shapes.or(Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 9.0), Block.box(7.0, 7.0, 7.0, 16.0, 9.0, 9.0));
+  protected static final VoxelShape WALL_NORTH_AABB = Shapes.or(RodHalfSize.WALL_WEST_AABB,
+      RodHalfSize.WALL_NORTH_AABB, RodElbow.CENTER_AABB);
+  protected static final VoxelShape WALL_EAST_AABB = Shapes.or(RodHalfSize.WALL_NORTH_AABB,
+      RodHalfSize.WALL_EAST_AABB, RodElbow.CENTER_AABB);
+  protected static final VoxelShape WALL_SOUTH_AABB = Shapes.or(RodHalfSize.WALL_EAST_AABB,
+      RodHalfSize.WALL_SOUTH_AABB, RodElbow.CENTER_AABB);
+  protected static final VoxelShape WALL_WEST_AABB = Shapes.or(RodHalfSize.WALL_SOUTH_AABB,
+      RodHalfSize.WALL_WEST_AABB, RodElbow.CENTER_AABB);
 
-  protected static final VoxelShape CEILING_BASE_AABB = Block.box(7.0, 7.0, 7.0, 9.0, 16.0, 9.0);
   protected static final VoxelShape CEILING_NORTH_AABB =
-      Shapes.or(CEILING_BASE_AABB, Block.box(7.0, 7.0, 7.0, 16.0, 9.0, 9.0));
+      Shapes.or(RodHalfSize.CEILING_AABB, RodHalfSize.WALL_WEST_AABB, RodElbow.CENTER_AABB);
   protected static final VoxelShape CEILING_EAST_AABB =
-      Shapes.or(CEILING_BASE_AABB, Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 16.0));
+      Shapes.or(RodHalfSize.CEILING_AABB, RodHalfSize.WALL_NORTH_AABB, RodElbow.CENTER_AABB);
   protected static final VoxelShape CEILING_SOUTH_AABB =
-      Shapes.or(CEILING_BASE_AABB, Block.box(0.0, 7.0, 7.0, 9.0, 9.0, 9.0));
+      Shapes.or(RodHalfSize.CEILING_AABB, RodHalfSize.WALL_EAST_AABB, RodElbow.CENTER_AABB);
   protected static final VoxelShape CEILING_WEST_AABB =
-      Shapes.or(CEILING_BASE_AABB, Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 9.0));
+      Shapes.or(RodHalfSize.CEILING_AABB, RodHalfSize.WALL_SOUTH_AABB, RodElbow.CENTER_AABB);
 
   public RodElbow(Properties properties) {
     super(properties);

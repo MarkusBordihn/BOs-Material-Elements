@@ -19,39 +19,45 @@
 
 package de.markusbordihn.materialelements.block.rod;
 
-import net.minecraft.core.Direction;
-import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RodBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.block.state.properties.AttachFace;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class Rod extends RodBlock {
+public class Rod extends RodComplexBlock {
+
+  protected static final VoxelShape FLOOR_CEILING_AABB = Block.box(7.0, 0.0, 7.0, 9.0, 16.0, 9.0);
+  protected static final VoxelShape WALL_NORTH_SOUTH_AABB =
+      Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 16.0);
+  protected static final VoxelShape WALL_EAST_WEST_AABB = Block.box(0.0, 7.0, 7.0, 16.0, 9.0, 9.0);
 
   public Rod(Properties properties) {
     super(properties);
-    this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.UP));
   }
 
   @Override
-  public BlockState getStateForPlacement(BlockPlaceContext context) {
-    Direction direction = context.getClickedFace();
-    BlockState blockState =
-        context.getLevel().getBlockState(context.getClickedPos().relative(direction.getOpposite()));
-    return blockState.is(this) && blockState.getValue(FACING) == direction
-        ? this.defaultBlockState().setValue(FACING, direction.getOpposite())
-        : this.defaultBlockState().setValue(FACING, direction);
-  }
+  public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
+      CollisionContext collisionContext) {
+    // Handle floor and ceiling placement
+    AttachFace attachFace = blockState.getValue(RodComplexBlock.ATTACH_FACE);
+    if (attachFace == AttachFace.FLOOR || attachFace == AttachFace.CEILING) {
+      return FLOOR_CEILING_AABB;
+    }
 
-  @Override
-  protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> blockState) {
-    blockState.add(FACING);
-  }
-
-  @Override
-  public PushReaction getPistonPushReaction(BlockState blockState) {
-    return PushReaction.NORMAL;
+    // Handle wall placements
+    switch (blockState.getValue(RodComplexBlock.FACING)) {
+      case NORTH:
+      case SOUTH:
+        return WALL_NORTH_SOUTH_AABB;
+      case EAST:
+      case WEST:
+        return WALL_EAST_WEST_AABB;
+      default:
+        return FLOOR_CEILING_AABB;
+    }
   }
 
 }

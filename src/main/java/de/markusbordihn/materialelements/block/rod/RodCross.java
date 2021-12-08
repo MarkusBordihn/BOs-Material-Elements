@@ -20,9 +20,7 @@
 package de.markusbordihn.materialelements.block.rod;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -31,15 +29,15 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class RodCross extends RodComplexBlock {
 
-  // Shapes for floor and ceiling
-  protected static final VoxelShape NORTH_SOUTH_AABB = Shapes
-      .or(Block.box(6.0, 0.0, 6.0, 10.0, 16.0, 10.0), Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0));
-  protected static final VoxelShape EAST_WEST_AABB = Shapes
-      .or(Block.box(6.0, 0.0, 6.0, 10.0, 16.0, 10.0), Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0));
+  // Shapes for floor and ceiling positions
+  protected static final VoxelShape FLOOR_CEILING_NORTH_SOUTH_AABB =
+      Shapes.or(Rod.FLOOR_CEILING_AABB, Rod.WALL_EAST_WEST_AABB);
+  protected static final VoxelShape FLOOR_CEILING_EAST_WEST_AABB =
+      Shapes.or(Rod.FLOOR_CEILING_AABB, Rod.WALL_NORTH_SOUTH_AABB);
 
-  // Shape for all wall positions
-  protected static final VoxelShape WALL_AABB = Shapes
-      .or(Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0), Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0));
+  // Shape for wall position
+  protected static final VoxelShape WALL_AABB =
+      Shapes.or(Rod.WALL_NORTH_SOUTH_AABB, Rod.WALL_EAST_WEST_AABB);
 
   public RodCross(Properties properties) {
     super(properties);
@@ -48,15 +46,20 @@ public class RodCross extends RodComplexBlock {
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {
-    AttachFace attachFace = blockState.getValue(RodComplexBlock.ATTACH_FACE);
-    if (attachFace == AttachFace.WALL) {
+    // Handle wall placement
+    if (blockState.getValue(RodComplexBlock.ATTACH_FACE) == AttachFace.WALL) {
       return WALL_AABB;
     }
-    Direction facing = blockState.getValue(RodComplexBlock.FACING);
-    if (facing == Direction.EAST || facing == Direction.WEST) {
-      return EAST_WEST_AABB;
+
+    // Handle floor and ceiling placements
+    switch (blockState.getValue(RodComplexBlock.FACING)) {
+      case NORTH, SOUTH:
+        return FLOOR_CEILING_NORTH_SOUTH_AABB;
+      case EAST, WEST:
+        return FLOOR_CEILING_EAST_WEST_AABB;
+      default:
+        return WALL_AABB;
     }
-    return NORTH_SOUTH_AABB;
   }
 
 }
