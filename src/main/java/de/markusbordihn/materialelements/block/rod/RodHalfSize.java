@@ -19,69 +19,50 @@
 
 package de.markusbordihn.materialelements.block.rod;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
-import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RodBlock;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.state.properties.AttachFace;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.world.IBlockReader;
 
 public class RodHalfSize extends RodBlock {
 
   // Shapes for the different faces like UP, DOWN, NORTH, EAST, SOUTH and WEST
-  protected static final VoxelShape DEFAULT_AABB = Block.box(6.0, 0.0, 6.0, 10.0, 8.0, 10.0);
-  protected static final VoxelShape NORTH_AABB = Block.box(6.0, 6.0, 8.0, 10.0, 10.0, 16.0);
-  protected static final VoxelShape EAST_AABB = Block.box(0.0, 6.0, 6.0, 8.0, 10.0, 10.0);
-  protected static final VoxelShape SOUTH_AABB = Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 8.0);
-  protected static final VoxelShape WEST_AABB = Block.box(8.0, 6.0, 6.0, 16.0, 10.0, 10.0);
+  protected static final VoxelShape FLOOR_AABB = Block.box(7.0, 0.0, 7.0, 9.0, 8.0, 9.0);
+  protected static final VoxelShape CEILING_AABB = Block.box(7.0, 8.0, 7.0, 9.0, 16.0, 9.0);
+  protected static final VoxelShape WALL_NORTH_AABB = Block.box(7.0, 7.0, 8.0, 9.0, 9.0, 16.0);
+  protected static final VoxelShape WALL_EAST_AABB = Block.box(0.0, 7.0, 7.0, 8.0, 9.0, 9.0);
+  protected static final VoxelShape WALL_SOUTH_AABB = Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 8.0);
+  protected static final VoxelShape WALL_WEST_AABB = Block.box(8.0, 7.0, 7.0, 16.0, 9.0, 9.0);
 
   public RodHalfSize(Properties properties) {
     super(properties);
-    this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.UP));
   }
 
   @Override
-  public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
-      CollisionContext collisionContext) {
+  public VoxelShape getShape(BlockState blockState, IBlockReader worldIn, BlockPos blockPos,
+      ISelectionContext collisionContext) {
     // Shapes needs to be returned per FACING because of the different kind of rotations.
-    switch (blockState.getValue(FACING)) {
-      case NORTH:
-        return NORTH_AABB;
-      case EAST:
-        return EAST_AABB;
-      case SOUTH:
-        return SOUTH_AABB;
-      case WEST:
-        return WEST_AABB;
-      case UP, DOWN:
-      default:
-        return DEFAULT_AABB;
+    AttachFace attachFace = blockState.getValue(RodBlock.ATTACH_FACE);
+    if (attachFace == AttachFace.FLOOR) {
+      return FLOOR_AABB;
     }
-  }
-
-  @Override
-  public BlockState getStateForPlacement(BlockPlaceContext context) {
-    Direction direction = context.getClickedFace();
-    BlockState blockState =
-        context.getLevel().getBlockState(context.getClickedPos().relative(direction.getOpposite()));
-    return blockState.is(this) && blockState.getValue(FACING) == direction
-        ? this.defaultBlockState().setValue(FACING, direction.getOpposite())
-        : this.defaultBlockState().setValue(FACING, direction);
-  }
-
-  @Override
-  protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> blockState) {
-    blockState.add(FACING);
-  }
-
-  @Override
-  public PushReaction getPistonPushReaction(BlockState blockState) {
-    return PushReaction.NORMAL;
+    if (attachFace == AttachFace.CEILING) {
+      return CEILING_AABB;
+    }
+    switch (blockState.getValue(RodBlock.FACING)) {
+      case NORTH:
+        return WALL_NORTH_AABB;
+      case EAST:
+        return WALL_EAST_AABB;
+      case SOUTH:
+        return WALL_SOUTH_AABB;
+      case WEST:
+        return WALL_WEST_AABB;
+    }
+    return FLOOR_AABB;
   }
 
 }

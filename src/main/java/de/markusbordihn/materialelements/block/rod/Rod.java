@@ -19,39 +19,39 @@
 
 package de.markusbordihn.materialelements.block.rod;
 
-import net.minecraft.core.Direction;
-import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RodBlock;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.state.properties.AttachFace;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.world.IBlockReader;
 
 public class Rod extends RodBlock {
 
+  protected static final VoxelShape UP_DOWN_AABB = Block.box(7.0, 0.0, 7.0, 9.0, 16.0, 9.0);
+  protected static final VoxelShape NORTH_SOUTH_AABB = Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 16.0);
+  protected static final VoxelShape EAST_WEST_AABB = Block.box(0.0, 7.0, 7.0, 16.0, 9.0, 9.0);
+
   public Rod(Properties properties) {
     super(properties);
-    this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.UP));
   }
 
   @Override
-  public BlockState getStateForPlacement(BlockPlaceContext context) {
-    Direction direction = context.getClickedFace();
-    BlockState blockState =
-        context.getLevel().getBlockState(context.getClickedPos().relative(direction.getOpposite()));
-    return blockState.is(this) && blockState.getValue(FACING) == direction
-        ? this.defaultBlockState().setValue(FACING, direction.getOpposite())
-        : this.defaultBlockState().setValue(FACING, direction);
-  }
-
-  @Override
-  protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> blockState) {
-    blockState.add(FACING);
-  }
-
-  @Override
-  public PushReaction getPistonPushReaction(BlockState blockState) {
-    return PushReaction.NORMAL;
+  public VoxelShape getShape(BlockState blockState, IBlockReader worldIn, BlockPos blockPos,
+      ISelectionContext collisionContext) {
+    AttachFace attachFace = blockState.getValue(RodBlock.ATTACH_FACE);
+    if (attachFace == AttachFace.WALL) {
+      switch (blockState.getValue(RodBlock.FACING)) {
+        case NORTH:
+        case SOUTH:
+          return NORTH_SOUTH_AABB;
+        case EAST:
+        case WEST:
+          return EAST_WEST_AABB;
+      }
+    }
+    return UP_DOWN_AABB;
   }
 
 }

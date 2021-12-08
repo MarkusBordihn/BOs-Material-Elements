@@ -22,14 +22,13 @@ package de.markusbordihn.materialelements.block.rod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RodBlock;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.Shapes;
-import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.world.IBlockReader;
 
 import de.markusbordihn.materialelements.Constants;
 
@@ -39,7 +38,7 @@ public class RodStar extends RodBlock {
 
   // Shape
   protected static final VoxelShape SHAPE_AABB =
-      Shapes.or(Block.box(6.0, 0.0, 6.0, 10.0, 16.0, 10.0),
+      VoxelShapes.or(Block.box(6.0, 0.0, 6.0, 10.0, 16.0, 10.0),
           Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0), Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0));
 
   public RodStar(Properties properties) {
@@ -47,8 +46,8 @@ public class RodStar extends RodBlock {
   }
 
   @Override
-  public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
-      CollisionContext collisionContext) {
+  public VoxelShape getShape(BlockState blockState, IBlockReader worldIn, BlockPos blockPos,
+      ISelectionContext collisionContext) {
     return SHAPE_AABB;
   }
 

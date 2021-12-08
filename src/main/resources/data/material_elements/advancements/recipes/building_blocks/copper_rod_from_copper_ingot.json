@@ -9,7 +9,7 @@
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:copper_ingot"]
+            "items": ["material_elements:copper_ingot"]
           }
         ]
       }

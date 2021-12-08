@@ -19,9 +19,9 @@
 
 package de.markusbordihn.materialelements.item.testtube;
 
-import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.item.DyeColor;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 public class TestTubeCustomFoilItem extends TestTubeCustomItem {
 

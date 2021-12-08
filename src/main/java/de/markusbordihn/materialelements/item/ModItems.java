@@ -19,12 +19,12 @@
 
 package de.markusbordihn.materialelements.item;
 
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.item.Item;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.DyeColor;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 
-import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -47,15 +47,17 @@ public class ModItems {
 
   // Nugget
   public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+      () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
   public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+      () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
   public static final RegistryObject<Item> NETHERITE_NUGGET = ITEMS.register("netherite_nugget",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+      () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
 
   // Ingot
+  public static final RegistryObject<Item> COPPER_INGOT = ITEMS.register("copper_ingot",
+      () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
   public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+      () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
 
   // Test Tube Color (DyeColor)
   private static final String TEST_TUBE_COLOR = "test_tube_color_";
@@ -129,7 +131,7 @@ public class ModItems {
 
   // Other
   public static final RegistryObject<Item> COKE = ITEMS.register("coke",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+      () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
 
   @TemplateEntryPoint("Register Block Items")
 
@@ -316,10 +318,10 @@ public class ModItems {
   // Blocks
   public static final RegistryObject<Item> STEEL_BLOCK =
       ITEMS.register("steel_block", () -> new BlockItem(ModBlocks.STEEL_BLOCK.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+          new Item.Properties().tab(ItemGroup.TAB_BUILDING_BLOCKS)));
 
   // Ore
   public static final RegistryObject<Item> STEEL_ORE =
       ITEMS.register("steel_ore", () -> new BlockItem(ModBlocks.STEEL_ORE.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+          new Item.Properties().tab(ItemGroup.TAB_BUILDING_BLOCKS)));
 }

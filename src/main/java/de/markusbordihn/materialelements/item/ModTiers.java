@@ -20,12 +20,12 @@
 package de.markusbordihn.materialelements.item;
 
 import java.util.function.Supplier;
-import de.markusbordihn.materialelements.Constants;
-import net.minecraft.util.LazyLoadedValue;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.crafting.Ingredient;
 
-public enum ModTiers implements Tier {
+import net.minecraft.item.IItemTier;
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.util.LazyValue;
+
+public enum ModTiers implements IItemTier {
   STEEL(2, 500, 7.0F, 2.5F, 14, () -> {
     return Ingredient.of(ModItems.STEEL_INGOT.get());
   });
@@ -35,16 +35,16 @@ public enum ModTiers implements Tier {
   private final float speed;
   private final float damage;
   private final int enchantmentValue;
-  private final LazyLoadedValue<Ingredient> repairIngredient;
+  private final LazyValue<Ingredient> repairIngredient;
 
-  private ModTiers(int tierLevel, int maxUses, float speedValue, float attackDamageBonus, int p_43336_,
-      Supplier<Ingredient> p_43337_) {
-    this.level = tierLevel;
-    this.uses = maxUses;
-    this.speed = speedValue;
-    this.damage = attackDamageBonus;
-    this.enchantmentValue = p_43336_;
-    this.repairIngredient = new LazyLoadedValue<>(p_43337_);
+  private ModTiers(int harvestLevelIn, int maxUsesIn, float efficiencyIn, float attackDamageIn,
+      int enchantabilityIn, Supplier<Ingredient> repairMaterialIn) {
+    this.level = harvestLevelIn;
+    this.uses = maxUsesIn;
+    this.speed = efficiencyIn;
+    this.damage = attackDamageIn;
+    this.enchantmentValue = enchantabilityIn;
+    this.repairIngredient = new LazyValue<>(repairMaterialIn);
   }
 
   public int getUses() {
@@ -69,10 +69,5 @@ public enum ModTiers implements Tier {
 
   public Ingredient getRepairIngredient() {
     return this.repairIngredient.get();
-  }
-
-  @javax.annotation.Nullable
-  public net.minecraft.tags.Tag<net.minecraft.world.level.block.Block> getTag() {
-    return Constants.NEEDS_STEEL_TOOL;
   }
 }

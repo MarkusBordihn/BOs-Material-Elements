@@ -21,74 +21,71 @@ package de.markusbordihn.materialelements.item.testtube;
 
 import java.util.List;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
+import net.minecraft.entity.AreaEffectCloudEntity;
+import net.minecraft.entity.boss.dragon.EnderDragonEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.GlassBottleItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.potion.PotionUtils;
+import net.minecraft.potion.Potions;
 import net.minecraft.tags.FluidTags;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.entity.AreaEffectCloud;
-import net.minecraft.world.entity.boss.enderdragon.EnderDragon;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.BottleItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.alchemy.PotionUtils;
-import net.minecraft.world.item.alchemy.Potions;
-import net.minecraft.world.level.ClipContext;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.gameevent.GameEvent;
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.HitResult;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.SoundEvents;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.BlockRayTraceResult;
+import net.minecraft.util.math.RayTraceContext;
+import net.minecraft.util.math.RayTraceResult;
+import net.minecraft.world.World;
 
 import de.markusbordihn.materialelements.item.ModItems;
 
-public class TestTubeItem extends BottleItem {
+public class TestTubeItem extends GlassBottleItem {
 
   public TestTubeItem(Item.Properties properties) {
     super(properties);
   }
 
   @Override
-  public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-    List<AreaEffectCloud> list = level.getEntitiesOfClass(AreaEffectCloud.class,
+  public ActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
+    List<AreaEffectCloudEntity> list = world.getEntitiesOfClass(AreaEffectCloudEntity.class,
         player.getBoundingBox().inflate(2.0D), (areaEffectCloud) -> {
           return areaEffectCloud != null && areaEffectCloud.isAlive()
-              && areaEffectCloud.getOwner() instanceof EnderDragon;
+              && areaEffectCloud.getOwner() instanceof EnderDragonEntity;
         });
     ItemStack itemStack = player.getItemInHand(hand);
     if (!list.isEmpty()) {
-      AreaEffectCloud areaEffectCloud = list.get(0);
+      AreaEffectCloudEntity areaEffectCloud = list.get(0);
       areaEffectCloud.setRadius(areaEffectCloud.getRadius() - 0.5F);
-      level.playSound((Player) null, player.getX(), player.getY(), player.getZ(),
-          SoundEvents.BOTTLE_FILL_DRAGONBREATH, SoundSource.NEUTRAL, 1.0F, 1.0F);
-      level.gameEvent(player, GameEvent.FLUID_PICKUP, player.blockPosition());
-      return InteractionResultHolder.sidedSuccess(
+      world.playSound((PlayerEntity) null, player.getX(), player.getY(), player.getZ(),
+          SoundEvents.BOTTLE_FILL_DRAGONBREATH, SoundCategory.NEUTRAL, 1.0F, 1.0F);
+      return ActionResult.sidedSuccess(
           this.turnBottleIntoItem(itemStack, player, new ItemStack(Items.DRAGON_BREATH)),
-          level.isClientSide());
+          world.isClientSide());
     } else {
-      HitResult hitResult = getPlayerPOVHitResult(level, player, ClipContext.Fluid.SOURCE_ONLY);
-      if (hitResult.getType() == HitResult.Type.MISS) {
-        return InteractionResultHolder.pass(itemStack);
+      RayTraceResult hitResult = getPlayerPOVHitResult(world, player,
+          RayTraceContext.FluidMode.SOURCE_ONLY);
+      if (hitResult.getType() == RayTraceResult.Type.MISS) {
+        return ActionResult.pass(itemStack);
       } else {
-        if (hitResult.getType() == HitResult.Type.BLOCK) {
-          BlockPos blockPos = ((BlockHitResult) hitResult).getBlockPos();
-          if (!level.mayInteract(player, blockPos)) {
-            return InteractionResultHolder.pass(itemStack);
+        if (hitResult.getType() == RayTraceResult.Type.BLOCK) {
+          BlockPos blockPos = ((BlockRayTraceResult) hitResult).getBlockPos();
+          if (!world.mayInteract(player, blockPos)) {
+            return ActionResult.pass(itemStack);
           }
-
-          if (level.getFluidState(blockPos).is(FluidTags.WATER)) {
-            level.playSound(player, player.getX(), player.getY(), player.getZ(),
-                SoundEvents.BOTTLE_FILL, SoundSource.NEUTRAL, 1.0F, 1.0F);
-            level.gameEvent(player, GameEvent.FLUID_PICKUP, blockPos);
-            return InteractionResultHolder.sidedSuccess(
+          if (world.getFluidState(blockPos).is(FluidTags.WATER)) {
+            world.playSound(player, player.getX(), player.getY(), player.getZ(),
+                SoundEvents.BOTTLE_FILL, SoundCategory.NEUTRAL, 1.0F, 1.0F);
+            return ActionResult.sidedSuccess(
                 this.turnBottleIntoItem(itemStack, player, PotionUtils
                     .setPotion(new ItemStack(ModItems.TEST_TUBE_WATER.get()), Potions.WATER)),
-                level.isClientSide());
+                world.isClientSide());
           }
         }
-        return InteractionResultHolder.pass(itemStack);
+        return ActionResult.pass(itemStack);
       }
     }
   }

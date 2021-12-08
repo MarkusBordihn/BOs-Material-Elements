@@ -22,15 +22,13 @@ package de.markusbordihn.materialelements.block.panel;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.AttachFace;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.state.properties.AttachFace;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.world.IBlockReader;
 
 import de.markusbordihn.materialelements.Constants;
 import de.markusbordihn.materialelements.block.PanelPlateBlock;
@@ -52,8 +50,8 @@ public class PanelBlock extends PanelPlateBlock {
   }
 
   @Override
-  public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
-      CollisionContext collisionContext) {
+  public VoxelShape getShape(BlockState blockState, IBlockReader worldIn, BlockPos blockPos,
+      ISelectionContext collisionContext) {
     AttachFace attachFace = blockState.getValue(PanelPlateBlock.ATTACH_FACE);
     // Early return for simple face like ceiling and floor
     if (attachFace == AttachFace.CEILING) {
@@ -75,16 +73,6 @@ public class PanelBlock extends PanelPlateBlock {
       default:
         return FLOOR_AABB;
     }
-  }
-
-  @Override
-  public boolean canBeReplaced(BlockState blockState, BlockPlaceContext context) {
-    ItemStack itemStack = context.getItemInHand();
-    if (itemStack.is(this.asItem())) {
-      log.info("What we are doing next ?");
-      return true;
-    }
-    return false;
   }
 
 }

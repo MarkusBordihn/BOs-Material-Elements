@@ -19,8 +19,11 @@
 
 package de.markusbordihn.materialelements.tabs;
 
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 import de.markusbordihn.materialelements.item.ModItems;
 
@@ -28,19 +31,22 @@ public class MaterialElementsTab {
 
   protected MaterialElementsTab() {}
 
-  public static final CreativeModeTab TAB_RODS = new CreativeModeTab("rods") {
+  public static final ItemGroup TAB_RODS = new ItemGroup("rods") {
+    @OnlyIn(Dist.CLIENT)
     public ItemStack makeIcon() {
       return new ItemStack(ModItems.IRON_ROD.get());
     }
   };
 
-  public static final CreativeModeTab TAB_TEST_TUBES = new CreativeModeTab("test_tubes") {
+  public static final ItemGroup TAB_TEST_TUBES = new ItemGroup("test_tubes") {
+    @OnlyIn(Dist.CLIENT)
     public ItemStack makeIcon() {
       return new ItemStack(ModItems.TEST_TUBE.get());
     }
   };
 
-  public static final CreativeModeTab TAB_PANEL_PLATES = new CreativeModeTab("panel_plates") {
+  public static final ItemGroup TAB_PANEL_PLATES = new ItemGroup("panel_plates") {
+    @OnlyIn(Dist.CLIENT)
     public ItemStack makeIcon() {
       return new ItemStack(ModItems.OAK_PLATE.get());
     }

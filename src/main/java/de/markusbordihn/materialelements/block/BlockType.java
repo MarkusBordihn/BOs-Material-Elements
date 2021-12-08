@@ -19,29 +19,29 @@
 
 package de.markusbordihn.materialelements.block;
 
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.AbstractBlock.Properties;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 
 public class BlockType {
 
   protected BlockType() {}
 
   public static final Properties COPPER =
-      BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
-          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER);
+      AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
+          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.METAL);
   public static final Properties GOLD =
-      BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD).requiresCorrectToolForDrops()
+      AbstractBlock.Properties.of(Material.METAL, MaterialColor.GOLD).requiresCorrectToolForDrops()
           .strength(3.0F, 6.0F).sound(SoundType.METAL);
   public static final Properties IRON =
-      BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+      AbstractBlock.Properties.of(Material.METAL, MaterialColor.METAL)
           .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL);
   public static final Properties STEEL =
-      BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
+      AbstractBlock.Properties.of(Material.METAL, MaterialColor.METAL)
           .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL);
   public static final Properties NETHERITE =
-      BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
+      AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
           .requiresCorrectToolForDrops().strength(50.0F, 1200.0F);
 }

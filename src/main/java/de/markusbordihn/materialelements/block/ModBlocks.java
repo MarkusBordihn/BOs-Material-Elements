@@ -19,13 +19,12 @@
 
 package de.markusbordihn.materialelements.block;
 
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.OreBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
-
-import net.minecraftforge.registries.RegistryObject;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.OreBlock;
+import net.minecraft.block.material.Material;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -180,6 +179,6 @@ public class ModBlocks {
 
   // Ore
   public static final RegistryObject<Block> STEEL_ORE =
-      BLOCKS.register("steel_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
+      BLOCKS.register("steel_ore", () -> new OreBlock(AbstractBlock.Properties.of(Material.STONE)
           .requiresCorrectToolForDrops().strength(3.0F, 3.0F)));
 }

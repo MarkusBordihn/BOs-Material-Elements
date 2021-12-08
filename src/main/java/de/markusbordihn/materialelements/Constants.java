@@ -20,8 +20,8 @@
 package de.markusbordihn.materialelements;
 
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.Tag;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.tags.ITag.INamedTag;
+import net.minecraft.block.Block;
 
 public final class Constants {
 
@@ -35,6 +35,6 @@ public final class Constants {
   public static final String MOD_NAME = "Bo's Material Elements";
 
   // Tag definitions
-  public static final Tag.Named<Block> NEEDS_STEEL_TOOL =
+  public static final INamedTag<Block> NEEDS_STEEL_TOOL =
       BlockTags.bind(MOD_ID + "needs_steel_tool");
 }

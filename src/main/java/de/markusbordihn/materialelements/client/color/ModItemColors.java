@@ -22,9 +22,9 @@ package de.markusbordihn.materialelements.client.color;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import net.minecraft.client.color.item.ItemColors;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.alchemy.PotionUtils;
+import net.minecraft.client.renderer.color.ItemColors;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.PotionUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -79,10 +79,10 @@ public class ModItemColors {
   }
 
   public static int getColorFromTestTube(ItemStack itemStack, int color) {
-    if (color <= 0 && itemStack.getItem() instanceof TestTubeColorItem testTubeColorItem) {
-      return testTubeColorItem.getColor().getMaterialColor().col;
-    } else if (color <= 0 && itemStack.getItem() instanceof TestTubeCustomItem testTubeCustomItem) {
-      return testTubeCustomItem.getColor().getMaterialColor().col;
+    if (color <= 0 && itemStack.getItem() instanceof TestTubeColorItem) {
+      return ((TestTubeColorItem) itemStack.getItem()).getColor().getMaterialColor().col;
+    } else if (color <= 0 && itemStack.getItem() instanceof TestTubeCustomItem) {
+      return ((TestTubeCustomItem) itemStack.getItem()).getColor().getMaterialColor().col;
     }
     return -1;
   }

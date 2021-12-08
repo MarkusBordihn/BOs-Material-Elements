@@ -1,4 +1,4 @@
 {
   "replace": false,
-  "values": ["minecraft:copper_ingot"]
+  "values": ["material_elements:copper_ingot"]
 }

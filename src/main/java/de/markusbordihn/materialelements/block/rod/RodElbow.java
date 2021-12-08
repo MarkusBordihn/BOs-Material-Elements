@@ -19,65 +19,65 @@
 
 package de.markusbordihn.materialelements.block.rod;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.AttachFace;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.Shapes;
-import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.state.properties.AttachFace;
+import net.minecraft.util.Direction;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.world.IBlockReader;
+import net.minecraft.world.World;
 
-public class RodElbow extends RodComplexBlock {
+public class RodElbow extends RodBlock {
 
-  protected static final VoxelShape NORTH_SOUTH_AABB = Shapes
+  protected static final VoxelShape NORTH_SOUTH_AABB = VoxelShapes
       .or(Block.box(6.0, 0.0, 6.0, 10.0, 16.0, 10.0), Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0));
 
   protected static final VoxelShape FLOOR_BASE_AABB = Block.box(7.0, 0.0, 7.0, 9.0, 9.0, 9.0);
   protected static final VoxelShape FLOOR_NORTH_AABB =
-      Shapes.or(FLOOR_BASE_AABB, Block.box(7.0, 7.0, 7.0, 16.0, 9.0, 9.0));
+      VoxelShapes.or(FLOOR_BASE_AABB, Block.box(7.0, 7.0, 7.0, 16.0, 9.0, 9.0));
   protected static final VoxelShape FLOOR_EAST_AABB =
-      Shapes.or(FLOOR_BASE_AABB, Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 16.0));
+      VoxelShapes.or(FLOOR_BASE_AABB, Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 16.0));
   protected static final VoxelShape FLOOR_SOUTH_AABB =
-      Shapes.or(FLOOR_BASE_AABB, Block.box(0.0, 7.0, 7.0, 9.0, 9.0, 9.0));
+      VoxelShapes.or(FLOOR_BASE_AABB, Block.box(0.0, 7.0, 7.0, 9.0, 9.0, 9.0));
   protected static final VoxelShape FLOOR_WEST_AABB =
-      Shapes.or(FLOOR_BASE_AABB, Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 9.0));
+      VoxelShapes.or(FLOOR_BASE_AABB, Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 9.0));
 
   protected static final VoxelShape WALL_NORTH_AABB =
-      Shapes.or(Block.box(7.0, 7.0, 7.0, 16.0, 9.0, 9.0), Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 16.0));
+      VoxelShapes.or(Block.box(7.0, 7.0, 7.0, 16.0, 9.0, 9.0), Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 16.0));
   protected static final VoxelShape WALL_EAST_AABB =
-      Shapes.or(Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 16.0), Block.box(0.0, 7.0, 7.0, 9.0, 9.0, 9.0));
+      VoxelShapes.or(Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 16.0), Block.box(0.0, 7.0, 7.0, 9.0, 9.0, 9.0));
   protected static final VoxelShape WALL_SOUTH_AABB =
-      Shapes.or(Block.box(0.0, 7.0, 7.0, 9.0, 9.0, 9.0), Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 9.0));
+      VoxelShapes.or(Block.box(0.0, 7.0, 7.0, 9.0, 9.0, 9.0), Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 9.0));
   protected static final VoxelShape WALL_WEST_AABB =
-      Shapes.or(Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 9.0), Block.box(7.0, 7.0, 7.0, 16.0, 9.0, 9.0));
+      VoxelShapes.or(Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 9.0), Block.box(7.0, 7.0, 7.0, 16.0, 9.0, 9.0));
 
   protected static final VoxelShape CEILING_BASE_AABB = Block.box(7.0, 7.0, 7.0, 9.0, 16.0, 9.0);
   protected static final VoxelShape CEILING_NORTH_AABB =
-      Shapes.or(CEILING_BASE_AABB, Block.box(7.0, 7.0, 7.0, 16.0, 9.0, 9.0));
+      VoxelShapes.or(CEILING_BASE_AABB, Block.box(7.0, 7.0, 7.0, 16.0, 9.0, 9.0));
   protected static final VoxelShape CEILING_EAST_AABB =
-      Shapes.or(CEILING_BASE_AABB, Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 16.0));
+      VoxelShapes.or(CEILING_BASE_AABB, Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 16.0));
   protected static final VoxelShape CEILING_SOUTH_AABB =
-      Shapes.or(CEILING_BASE_AABB, Block.box(0.0, 7.0, 7.0, 9.0, 9.0, 9.0));
+      VoxelShapes.or(CEILING_BASE_AABB, Block.box(0.0, 7.0, 7.0, 9.0, 9.0, 9.0));
   protected static final VoxelShape CEILING_WEST_AABB =
-      Shapes.or(CEILING_BASE_AABB, Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 9.0));
+      VoxelShapes.or(CEILING_BASE_AABB, Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 9.0));
 
   public RodElbow(Properties properties) {
     super(properties);
   }
 
-  public static boolean hasUnwantedBuilds(Level level, BlockPos blockPos) {
+  public static boolean hasUnwantedBuilds(World world, BlockPos blockPos) {
     // Get surrounding positions and blocks.
     BlockPos blockPosNorth = blockPos.north();
     BlockPos blockPosEast = blockPos.east();
     BlockPos blockPosSouth = blockPos.south();
     BlockPos blockPosWest = blockPos.west();
-    BlockState blockStateNorth = level.getBlockState(blockPosNorth);
-    BlockState blockStateEast = level.getBlockState(blockPosEast);
-    BlockState blockStateSouth = level.getBlockState(blockPosSouth);
-    BlockState blockStateWest = level.getBlockState(blockPosWest);
+    BlockState blockStateNorth = world.getBlockState(blockPosNorth);
+    BlockState blockStateEast = world.getBlockState(blockPosEast);
+    BlockState blockStateSouth = world.getBlockState(blockPosSouth);
+    BlockState blockStateWest = world.getBlockState(blockPosWest);
 
     // We will only check elbow blocks
     if (!(blockStateNorth.getBlock() instanceof RodElbow)
@@ -88,29 +88,29 @@ public class RodElbow extends RodComplexBlock {
     }
 
     // Perform basic check and destroy unwanted builds with the elbow block.
-    return (blockStateNorth.getValue(RodComplexBlock.FACING) == Direction.NORTH
-        && blockStateEast.getValue(RodComplexBlock.FACING) == Direction.EAST
-        && blockStateSouth.getValue(RodComplexBlock.FACING) == Direction.SOUTH
-        && blockStateWest.getValue(RodComplexBlock.FACING) == Direction.WEST)
-        || (blockStateNorth.getValue(RodComplexBlock.FACING) == Direction.EAST
-            && blockStateEast.getValue(RodComplexBlock.FACING) == Direction.SOUTH
-            && blockStateSouth.getValue(RodComplexBlock.FACING) == Direction.WEST
-            && blockStateWest.getValue(RodComplexBlock.FACING) == Direction.NORTH)
-        || (blockStateNorth.getValue(RodComplexBlock.FACING) == Direction.SOUTH
-            && blockStateEast.getValue(RodComplexBlock.FACING) == Direction.WEST
-            && blockStateSouth.getValue(RodComplexBlock.FACING) == Direction.NORTH
-            && blockStateWest.getValue(RodComplexBlock.FACING) == Direction.EAST)
-        || (blockStateNorth.getValue(RodComplexBlock.FACING) == Direction.WEST
-            && blockStateEast.getValue(RodComplexBlock.FACING) == Direction.NORTH
-            && blockStateSouth.getValue(RodComplexBlock.FACING) == Direction.EAST
-            && blockStateWest.getValue(RodComplexBlock.FACING) == Direction.SOUTH);
+    return (blockStateNorth.getValue(RodBlock.FACING) == Direction.NORTH
+        && blockStateEast.getValue(RodBlock.FACING) == Direction.EAST
+        && blockStateSouth.getValue(RodBlock.FACING) == Direction.SOUTH
+        && blockStateWest.getValue(RodBlock.FACING) == Direction.WEST)
+        || (blockStateNorth.getValue(RodBlock.FACING) == Direction.EAST
+            && blockStateEast.getValue(RodBlock.FACING) == Direction.SOUTH
+            && blockStateSouth.getValue(RodBlock.FACING) == Direction.WEST
+            && blockStateWest.getValue(RodBlock.FACING) == Direction.NORTH)
+        || (blockStateNorth.getValue(RodBlock.FACING) == Direction.SOUTH
+            && blockStateEast.getValue(RodBlock.FACING) == Direction.WEST
+            && blockStateSouth.getValue(RodBlock.FACING) == Direction.NORTH
+            && blockStateWest.getValue(RodBlock.FACING) == Direction.EAST)
+        || (blockStateNorth.getValue(RodBlock.FACING) == Direction.WEST
+            && blockStateEast.getValue(RodBlock.FACING) == Direction.NORTH
+            && blockStateSouth.getValue(RodBlock.FACING) == Direction.EAST
+            && blockStateWest.getValue(RodBlock.FACING) == Direction.SOUTH);
   }
 
   @Override
-  public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
-      CollisionContext collisionContext) {
-    AttachFace attachFace = blockState.getValue(RodComplexBlock.ATTACH_FACE);
-    Direction facing = blockState.getValue(RodComplexBlock.FACING);
+  public VoxelShape getShape(BlockState blockState, IBlockReader worldIn, BlockPos blockPos,
+      ISelectionContext collisionContext) {
+    AttachFace attachFace = blockState.getValue(RodBlock.ATTACH_FACE);
+    Direction facing = blockState.getValue(RodBlock.FACING);
 
     if (attachFace == AttachFace.FLOOR) {
       switch (facing) {
@@ -154,22 +154,22 @@ public class RodElbow extends RodComplexBlock {
       }
     }
 
-    return RodComplexBlock.DEFAULT_SHAPE_AABB;
+    return super.getShape(blockState, worldIn, blockPos, collisionContext);
   }
 
   @Override
-  public void onPlace(BlockState blockState, Level level, BlockPos blockPos, BlockState blockState2,
+  public void onPlace(BlockState blockState, World world, BlockPos blockPos, BlockState blockState2,
       boolean status) {
     // Ignore all blocks which are not attached to a wall.
-    if (blockState.getValue(RodComplexBlock.ATTACH_FACE) != AttachFace.WALL) {
+    if (blockState.getValue(RodBlock.ATTACH_FACE) != AttachFace.WALL) {
       return;
     }
 
     // Make sure we check for unwanted builds in each direction.
-    if (hasUnwantedBuilds(level, blockPos.north()) || hasUnwantedBuilds(level, blockPos.east())
-        || hasUnwantedBuilds(level, blockPos.south())
-        || hasUnwantedBuilds(level, blockPos.west())) {
-      level.destroyBlock(blockPos, true);
+    if (hasUnwantedBuilds(world, blockPos.north()) || hasUnwantedBuilds(world, blockPos.east())
+        || hasUnwantedBuilds(world, blockPos.south())
+        || hasUnwantedBuilds(world, blockPos.west())) {
+      world.destroyBlock(blockPos, true);
       log.warn("Found unwanted builds at {} which was destroyed", blockPos);
     }
   }

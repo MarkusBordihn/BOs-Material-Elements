@@ -19,26 +19,26 @@
 
 package de.markusbordihn.materialelements.block.rod;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.AttachFace;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.Shapes;
-import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.state.properties.AttachFace;
+import net.minecraft.util.Direction;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.world.IBlockReader;
 
-public class RodCross extends RodComplexBlock {
+public class RodCross extends RodBlock {
 
   // Shapes for floor and ceiling
-  protected static final VoxelShape NORTH_SOUTH_AABB = Shapes
+  protected static final VoxelShape NORTH_SOUTH_AABB = VoxelShapes
       .or(Block.box(6.0, 0.0, 6.0, 10.0, 16.0, 10.0), Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0));
-  protected static final VoxelShape EAST_WEST_AABB = Shapes
+  protected static final VoxelShape EAST_WEST_AABB = VoxelShapes
       .or(Block.box(6.0, 0.0, 6.0, 10.0, 16.0, 10.0), Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0));
 
   // Shape for all wall positions
-  protected static final VoxelShape WALL_AABB = Shapes
+  protected static final VoxelShape WALL_AABB = VoxelShapes
       .or(Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0), Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0));
 
   public RodCross(Properties properties) {
@@ -46,13 +46,13 @@ public class RodCross extends RodComplexBlock {
   }
 
   @Override
-  public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
-      CollisionContext collisionContext) {
-    AttachFace attachFace = blockState.getValue(RodComplexBlock.ATTACH_FACE);
+  public VoxelShape getShape(BlockState blockState, IBlockReader worldIn, BlockPos blockPos,
+      ISelectionContext collisionContext) {
+    AttachFace attachFace = blockState.getValue(RodBlock.ATTACH_FACE);
     if (attachFace == AttachFace.WALL) {
       return WALL_AABB;
     }
-    Direction facing = blockState.getValue(RodComplexBlock.FACING);
+    Direction facing = blockState.getValue(RodBlock.FACING);
     if (facing == Direction.EAST || facing == Direction.WEST) {
       return EAST_WEST_AABB;
     }

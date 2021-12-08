@@ -22,57 +22,58 @@ package de.markusbordihn.materialelements.block.rod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
-import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RodBlock;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.AttachFace;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.DirectionalBlock;
+import net.minecraft.block.material.PushReaction;
+import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.state.DirectionProperty;
+import net.minecraft.state.EnumProperty;
+import net.minecraft.state.StateContainer;
+import net.minecraft.state.properties.AttachFace;
+import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.util.Direction;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.world.IBlockReader;
 
 import de.markusbordihn.materialelements.Constants;
 
-public class RodComplexBlock extends RodBlock {
+public class RodBlock extends DirectionalBlock {
 
   public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
-
-  // Default Shape
-  protected static final VoxelShape DEFAULT_SHAPE_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
 
   // Defines if we need to rotate the Object based on the click position and player pov
   public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
   public static final EnumProperty<AttachFace> ATTACH_FACE = BlockStateProperties.ATTACH_FACE;
 
-  public RodComplexBlock(Properties properties) {
-    super(properties);
-    this.registerDefaultState(
-        this.stateDefinition.any().setValue(RodComplexBlock.ATTACH_FACE, AttachFace.FLOOR)
-            .setValue(RodComplexBlock.FACING, Direction.NORTH));
+  // Default Shape
+  protected static final VoxelShape DEFAULT_SHAPE_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+
+  protected RodBlock(AbstractBlock.Properties builder) {
+      super(builder);
+      this.registerDefaultState(
+          this.stateDefinition.any().setValue(RodBlock.ATTACH_FACE, AttachFace.FLOOR)
+              .setValue(RodBlock.FACING, Direction.NORTH));
   }
 
   @Override
-  public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
-      CollisionContext collisionContext) {
-    return RodComplexBlock.DEFAULT_SHAPE_AABB;
+  public VoxelShape getShape(BlockState blockState, IBlockReader worldIn, BlockPos blockPos,
+      ISelectionContext collisionContext) {
+    return RodBlock.DEFAULT_SHAPE_AABB;
   }
 
   @Override
-  public BlockState getStateForPlacement(BlockPlaceContext context) {
+  public BlockState getStateForPlacement(BlockItemUseContext context) {
 
     // Clicked facing direction
     Direction direction = context.getClickedFace();
     BlockState blockState =
         context.getLevel().getBlockState(context.getClickedPos().relative(direction.getOpposite()));
     Direction faceDirection =
-        blockState.is(this) && blockState.getValue(RodComplexBlock.FACING) == direction
+        blockState.is(this) && blockState.getValue(RodBlock.FACING) == direction
             ? direction.getOpposite()
             : direction;
 
@@ -84,17 +85,17 @@ public class RodComplexBlock extends RodBlock {
       attachFace = AttachFace.WALL;
     }
 
-    return this.defaultBlockState().setValue(RodComplexBlock.ATTACH_FACE, attachFace)
-        .setValue(RodComplexBlock.FACING, context.getHorizontalDirection().getOpposite());
+    return this.defaultBlockState().setValue(RodBlock.ATTACH_FACE, attachFace)
+        .setValue(RodBlock.FACING, context.getHorizontalDirection().getOpposite());
   }
 
   @Override
-  protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> blockState) {
-    blockState.add(RodComplexBlock.ATTACH_FACE, RodComplexBlock.FACING);
+  protected void createBlockStateDefinition(StateContainer.Builder<Block, BlockState> builder) {
+    builder.add(RodBlock.ATTACH_FACE, RodBlock.FACING);
   }
 
-  @Override
-  public PushReaction getPistonPushReaction(BlockState blockState) {
-    return PushReaction.DESTROY;
+  public PushReaction getPushReaction(BlockState state) {
+    return PushReaction.NORMAL;
   }
+
 }
