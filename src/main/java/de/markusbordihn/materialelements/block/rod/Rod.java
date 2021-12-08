@@ -29,9 +29,10 @@ import net.minecraft.world.IBlockReader;
 
 public class Rod extends RodBlock {
 
-  protected static final VoxelShape UP_DOWN_AABB = Block.box(7.0, 0.0, 7.0, 9.0, 16.0, 9.0);
-  protected static final VoxelShape NORTH_SOUTH_AABB = Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 16.0);
-  protected static final VoxelShape EAST_WEST_AABB = Block.box(0.0, 7.0, 7.0, 16.0, 9.0, 9.0);
+  protected static final VoxelShape FLOOR_CEILING_AABB = Block.box(7.0, 0.0, 7.0, 9.0, 16.0, 9.0);
+  protected static final VoxelShape WALL_NORTH_SOUTH_AABB =
+      Block.box(7.0, 7.0, 0.0, 9.0, 9.0, 16.0);
+  protected static final VoxelShape WALL_EAST_WEST_AABB = Block.box(0.0, 7.0, 7.0, 16.0, 9.0, 9.0);
 
   public Rod(Properties properties) {
     super(properties);
@@ -40,18 +41,23 @@ public class Rod extends RodBlock {
   @Override
   public VoxelShape getShape(BlockState blockState, IBlockReader worldIn, BlockPos blockPos,
       ISelectionContext collisionContext) {
+    // Handle floor and ceiling placement
     AttachFace attachFace = blockState.getValue(RodBlock.ATTACH_FACE);
-    if (attachFace == AttachFace.WALL) {
-      switch (blockState.getValue(RodBlock.FACING)) {
-        case NORTH:
-        case SOUTH:
-          return NORTH_SOUTH_AABB;
-        case EAST:
-        case WEST:
-          return EAST_WEST_AABB;
-      }
+    if (attachFace == AttachFace.FLOOR || attachFace == AttachFace.CEILING) {
+      return FLOOR_CEILING_AABB;
     }
-    return UP_DOWN_AABB;
+
+    // Handle wall placements
+    switch (blockState.getValue(RodBlock.FACING)) {
+      case NORTH:
+      case SOUTH:
+        return WALL_NORTH_SOUTH_AABB;
+      case EAST:
+      case WEST:
+        return WALL_EAST_WEST_AABB;
+      default:
+        return FLOOR_CEILING_AABB;
+    }
   }
 
 }

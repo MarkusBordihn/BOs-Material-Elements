@@ -168,7 +168,7 @@ curseforge {
   project {
     id = "${curseforge_project_id}"
     changelog = 'https://github.com/MarkusBordihn/BOs-Material-Elements/commits/main'
-    releaseType = 'beta'
+    releaseType = 'release'
     addGameVersion("1.16.5")
     addGameVersion("Forge")
   }

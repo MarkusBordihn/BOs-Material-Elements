@@ -44,7 +44,7 @@ public class RodHalfSize extends RodBlock {
   @Override
   public VoxelShape getShape(BlockState blockState, IBlockReader worldIn, BlockPos blockPos,
       ISelectionContext collisionContext) {
-    // Shapes needs to be returned per FACING because of the different kind of rotations.
+    // Handle floor and ceiling placement
     AttachFace attachFace = blockState.getValue(RodBlock.ATTACH_FACE);
     if (attachFace == AttachFace.FLOOR) {
       return FLOOR_AABB;
@@ -52,6 +52,8 @@ public class RodHalfSize extends RodBlock {
     if (attachFace == AttachFace.CEILING) {
       return CEILING_AABB;
     }
+
+    // Handle wall placements
     switch (blockState.getValue(RodBlock.FACING)) {
       case NORTH:
         return WALL_NORTH_AABB;
@@ -61,8 +63,9 @@ public class RodHalfSize extends RodBlock {
         return WALL_SOUTH_AABB;
       case WEST:
         return WALL_WEST_AABB;
+      default:
+        return FLOOR_AABB;
     }
-    return FLOOR_AABB;
   }
 
 }

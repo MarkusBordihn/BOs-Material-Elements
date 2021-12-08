@@ -22,7 +22,6 @@ package de.markusbordihn.materialelements.block.rod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
@@ -36,10 +35,9 @@ public class RodStar extends RodBlock {
 
   public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
-  // Shape
+  // Shape is the same for all combinations.
   protected static final VoxelShape SHAPE_AABB =
-      VoxelShapes.or(Block.box(6.0, 0.0, 6.0, 10.0, 16.0, 10.0),
-          Block.box(0.0, 6.0, 6.0, 16.0, 10.0, 10.0), Block.box(6.0, 6.0, 0.0, 10.0, 10.0, 16.0));
+      VoxelShapes.or(Rod.FLOOR_CEILING_AABB, Rod.WALL_EAST_WEST_AABB, Rod.WALL_NORTH_SOUTH_AABB);
 
   public RodStar(Properties properties) {
     super(properties);
