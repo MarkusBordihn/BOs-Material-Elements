@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["#", "#"],
+  "key": {
+    "#": {
+      "item": "minecraft:oak_slab"
+    }
+  },
+  "result": {
+    "item": "material_elements:oak_stick",
+    "count": 2
+  }
+}

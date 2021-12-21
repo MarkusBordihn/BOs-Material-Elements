@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["#", "#"],
+  "key": {
+    "#": {
+      "item": "minecraft:spruce_slab"
+    }
+  },
+  "result": {
+    "item": "material_elements:spruce_stick",
+    "count": 2
+  }
+}

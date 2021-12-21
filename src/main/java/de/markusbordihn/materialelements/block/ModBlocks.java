@@ -102,6 +102,20 @@ public class ModBlocks {
   public static final RegistryObject<Block> WARPED_HALF_SLAB = BLOCKS.register("warped_half_slab",
       () -> new WoodHalfSlabBlock(Blocks.WARPED_PLANKS.defaultMaterialColor()));
 
+  // Rods (tee elbow)
+  public static final RegistryObject<Block> COPPER_ROD_TEE_ELBOW =
+      BLOCKS.register("copper_rod_tee_elbow", () -> new RodTeeElbow(BlockType.COPPER));
+  public static final RegistryObject<Block> GOLD_ROD_TEE_ELBOW =
+      BLOCKS.register("gold_rod_tee_elbow", () -> new RodTeeElbow(BlockType.GOLD));
+  public static final RegistryObject<Block> SILVER_ROD_TEE_ELBOW =
+      BLOCKS.register("silver_rod_tee_elbow", () -> new RodTeeElbow(BlockType.SILVER));
+  public static final RegistryObject<Block> IRON_ROD_TEE_ELBOW =
+      BLOCKS.register("iron_rod_tee_elbow", () -> new RodTeeElbow(BlockType.IRON));
+  public static final RegistryObject<Block> STEEL_ROD_TEE_ELBOW =
+      BLOCKS.register("steel_rod_tee_elbow", () -> new RodTeeElbow(BlockType.STEEL));
+  public static final RegistryObject<Block> NETHERITE_ROD_TEE_ELBOW =
+      BLOCKS.register("netherite_rod_tee_elbow", () -> new RodTeeElbow(BlockType.NETHERITE));
+
   // Rods (elbow)
   public static final RegistryObject<Block> COPPER_ROD_ELBOW =
       BLOCKS.register("copper_rod_elbow", () -> new RodElbow(BlockType.COPPER));

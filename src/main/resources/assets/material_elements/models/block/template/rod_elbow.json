@@ -11,7 +11,7 @@
 		{
 			"name": "rod",
 			"from": [7.001, 0, 7],
-			"to": [9.001, 9, 9],
+			"to": [9.001, 8.998, 9],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
 				"north": {"uv": [1.008, 4.5, 1.992, 8.992], "texture": "#texture"},
@@ -24,8 +24,8 @@
 		},
 		{
 			"name": "rod",
-			"from": [0, 7.001, 7.001],
-			"to": [9, 9.001, 9.001],
+			"from": [0, 7.001, 7.003],
+			"to": [8.998, 9.001, 9.003],
 			"rotation": {"angle": 0, "axis": "z", "origin": [8, 8, 8]},
 			"faces": {
 				"north": {"uv": [1.008, 1.008, 1.992, 5.492], "rotation": 90, "texture": "#texture"},

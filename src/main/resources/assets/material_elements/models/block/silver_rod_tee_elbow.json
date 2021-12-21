@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/template/rod_tee_elbow",
+  "textures": {
+    "texture": "material_elements:block/silver_rod",
+    "particle": "material_elements:block/silver_rod"
+  }
+}

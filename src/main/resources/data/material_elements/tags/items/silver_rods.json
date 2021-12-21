@@ -6,6 +6,7 @@
     "material_elements:silver_rod_elbow",
     "material_elements:silver_rod_half_size",
     "material_elements:silver_rod_star",
-    "material_elements:silver_rod_tee"
+    "material_elements:silver_rod_tee",
+    "material_elements:silver_rod_tee_elbow"
   ]
 }

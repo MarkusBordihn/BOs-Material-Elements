@@ -135,6 +135,24 @@ public class ModItems {
   public static final RegistryObject<Item> COKE = ITEMS.register("coke",
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
+  // Wooden Sticks
+  public static final RegistryObject<Item> OAK_STICK = ITEMS.register("oak_stick",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> SPRUCE_STICK = ITEMS.register("spruce_stick",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> BIRCH_STICK = ITEMS.register("birch_stick",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> JUNGLE_STICK = ITEMS.register("jungle_stick",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> ACACIA_STICK = ITEMS.register("acacia_stick",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> DARK_OAK_STICK = ITEMS.register("dark_oak_stick",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> CRIMSON_STICK = ITEMS.register("crimson_stick",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> WARPED_STICK = ITEMS.register("warped_stick",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+
   @TemplateEntryPoint("Register Block Items")
 
   // Wooden Panels
@@ -214,6 +232,26 @@ public class ModItems {
   public static final RegistryObject<Item> WARPED_HALF_SLAB =
       ITEMS.register("warped_half_slab", () -> new BlockItem(ModBlocks.WARPED_HALF_SLAB.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Rods (tee elbow)
+  public static final RegistryObject<Item> COPPER_ROD_TEE_ELBOW =
+      ITEMS.register("copper_rod_tee_elbow", () -> new BlockItem(ModBlocks.COPPER_ROD_TEE_ELBOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> GOLD_ROD_TEE_ELBOW =
+      ITEMS.register("gold_rod_tee_elbow", () -> new BlockItem(ModBlocks.GOLD_ROD_TEE_ELBOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> SILVER_ROD_TEE_ELBOW =
+      ITEMS.register("silver_rod_tee_elbow", () -> new BlockItem(ModBlocks.SILVER_ROD_TEE_ELBOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> IRON_ROD_TEE_ELBOW =
+      ITEMS.register("iron_rod_tee_elbow", () -> new BlockItem(ModBlocks.IRON_ROD_TEE_ELBOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> STEEL_ROD_TEE_ELBOW =
+      ITEMS.register("steel_rod_tee_elbow", () -> new BlockItem(ModBlocks.STEEL_ROD_TEE_ELBOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> NETHERITE_ROD_TEE_ELBOW =
+      ITEMS.register("netherite_rod_tee_elbow", () -> new BlockItem(ModBlocks.NETHERITE_ROD_TEE_ELBOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
 
   // Rods (elbow)
   public static final RegistryObject<Item> COPPER_ROD_ELBOW =

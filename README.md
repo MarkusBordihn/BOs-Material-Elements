@@ -21,12 +21,12 @@ Please use the [Steel Armor, Tools and Weapon Mod][steel-armor-tools-and-weapons
 
 #### ➖ Rods
 
-- Copper Rod (full, half-size, cross, star)
-- Gold Rod (full, half-size, cross, star)
-- Silver Rod (full, half-size, cross, star)
-- Iron Rod (full, half-size, cross, star)
-- Steel Rod (full, half-size, cross, star)
-- Netherite Rod (full, half-size, cross, star)
+- Copper Rod (full, half-size, cross, star, elbow)
+- Gold Rod (full, half-size, cross, star, elbow)
+- Silver Rod (full, half-size, cross, star, elbow)
+- Iron Rod (full, half-size, cross, star, elbow)
+- Steel Rod (full, half-size, cross, star, elbow)
+- Netherite Rod (full, half-size, cross, star, elbow)
 
 #### 🪵 Wood Panels, Plates and half-size Slabs
 
@@ -89,6 +89,17 @@ Please use the [Steel Armor, Tools and Weapon Mod][steel-armor-tools-and-weapons
 
 - Coke
 
+#### 🪵 Wooden Sticks
+
+- Oak Stick
+- Spruce Stick
+- Birch Stick
+- Jungle Stick
+- Acacia Stick
+- Dark Oak Stick
+- Crimson Stick
+- Warped Stick
+
 ### Recipe Overview 👁️‍🗨️
 
 This mods adds a lot of additional crafting recipes to allow the crafting of the added elements or to simplify crafting of existing items like wood cutting.
@@ -128,7 +139,7 @@ It is classified between Iron and Diamond with the following stats.
 | Fabric Version | ❌ Not planned        |
 | Forge 1.16.5   | ⚠️ Maintenance only   |
 | Forge 1.17.1   | ⚠️ Maintenance only   |
-| Forge 1.18     | ✔️ Active development |
+| Forge 1.18.1   | ✔️ Active development |
 
 ## Mod Integration 🚀
 
@@ -136,6 +147,5 @@ If you want to use the mod blocks and items for your own mod just add it as depe
 Please check [Developer Wiki][dev-wiki] for the details steps.
 
 [logo]: src/main/resources/logo.png
-
 [steel-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/steel-armor-tools-and-weapons
 [dev-wiki]: https://github.com/MarkusBordihn/BOs-Material-Elements/wiki

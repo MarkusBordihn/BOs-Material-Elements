@@ -6,6 +6,7 @@
     "material_elements:steel_rod_elbow",
     "material_elements:steel_rod_half_size",
     "material_elements:steel_rod_star",
-    "material_elements:steel_rod_tee"
+    "material_elements:steel_rod_tee",
+    "material_elements:steel_rod_tee_elbow"
   ]
 }
