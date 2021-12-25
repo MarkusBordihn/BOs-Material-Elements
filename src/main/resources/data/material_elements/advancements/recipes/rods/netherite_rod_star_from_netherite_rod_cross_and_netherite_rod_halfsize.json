@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": ["material_elements:netherite_rod_star_from_netherite_rod_cross_and_netherite_rod_halfsize"]
+  },
+  "criteria": {
+    "has_netherite_rod_half_size": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["material_elements:netherite_rod_half_size"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "material_elements:netherite_rod_star_from_netherite_rod_cross_and_netherite_rod_halfsize"
+      }
+    }
+  },
+  "requirements": [["has_netherite_rod_half_size", "has_the_recipe"]]
+}

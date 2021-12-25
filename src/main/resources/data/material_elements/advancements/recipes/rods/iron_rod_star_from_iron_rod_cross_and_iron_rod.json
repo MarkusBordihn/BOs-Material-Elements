@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": ["material_elements:iron_rod_star_from_iron_rod_cross_and_iron_rod"]
+  },
+  "criteria": {
+    "has_iron_rod_half_size": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["material_elements:iron_rod_half_size"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "material_elements:iron_rod_star_from_iron_rod_cross_and_iron_rod"
+      }
+    }
+  },
+  "requirements": [["has_iron_rod_half_size", "has_the_recipe"]]
+}

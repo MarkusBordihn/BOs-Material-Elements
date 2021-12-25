@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": ["material_elements:silver_rod_half_size_from_silver_rod_by_stonecutter"]
+  },
+  "criteria": {
+    "has_silver_rod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["material_elements:silver_rod"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "material_elements:silver_rod_half_size_from_silver_rod_by_stonecutter"
+      }
+    }
+  },
+  "requirements": [["has_silver_rod", "has_the_recipe"]]
+}

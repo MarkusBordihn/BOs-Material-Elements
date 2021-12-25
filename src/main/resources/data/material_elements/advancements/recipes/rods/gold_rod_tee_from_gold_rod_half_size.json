@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": ["material_elements:gold_rod_tee_from_gold_rod_half_size"]
+  },
+  "criteria": {
+    "has_gold_rod_half_size": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["material_elements:gold_rod_half_size"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "material_elements:gold_rod_tee_from_gold_rod_half_size"
+      }
+    }
+  },
+  "requirements": [["has_gold_rod_half_size", "has_the_recipe"]]
+}

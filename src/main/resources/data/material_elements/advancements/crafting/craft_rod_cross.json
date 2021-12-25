@@ -1,0 +1,31 @@
+{
+  "parent": "material_elements:crafting/craft_rod_half_size",
+  "display": {
+    "icon": {
+      "item": "material_elements:steel_rod_cross"
+    },
+    "title": {
+      "translate": "advancements.material_elements.crafting.craft_rod_cross.title"
+    },
+    "description": {
+      "translate": "advancements.material_elements.crafting.craft_rod_cross.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "rod_cross": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "material_elements:rods_cross"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["rod_cross"]]
+}

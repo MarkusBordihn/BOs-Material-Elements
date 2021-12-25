@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements:copper_rod_elbow",
+    "material_elements:gold_rod_elbow",
+    "material_elements:iron_rod_elbow",
+    "material_elements:netherite_rod_elbow",
+    "material_elements:silver_rod_elbow",
+    "material_elements:steel_rod_elbow"
+  ]
+}

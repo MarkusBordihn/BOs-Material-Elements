@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["L", "I"],
+  "key": {
+    "L": {
+      "item": "material_elements:steel_rod_elbow"
+    },
+    "I": {
+      "item": "material_elements:steel_rod_half_size"
+    }
+  },
+  "result": {
+    "item": "material_elements:steel_rod_tee_elbow",
+    "count": 1
+  }
+}

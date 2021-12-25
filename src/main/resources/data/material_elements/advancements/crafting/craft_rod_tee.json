@@ -1,0 +1,31 @@
+{
+  "parent": "material_elements:crafting/craft_rod_half_size",
+  "display": {
+    "icon": {
+      "item": "material_elements:steel_rod_tee"
+    },
+    "title": {
+      "translate": "advancements.material_elements.crafting.craft_rod_tee.title"
+    },
+    "description": {
+      "translate": "advancements.material_elements.crafting.craft_rod_tee.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "rod_tee": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "material_elements:rods_tee"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["rod_tee"]]
+}

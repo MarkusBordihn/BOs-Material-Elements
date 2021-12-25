@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": ["material_elements:netherite_rod_elbow_from_netherite_rod_half_size"]
+  },
+  "criteria": {
+    "has_netherite_rod_half_size": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["material_elements:netherite_rod_half_size"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "material_elements:netherite_rod_elbow_from_netherite_rod_half_size"
+      }
+    }
+  },
+  "requirements": [["has_netherite_rod_half_size", "has_the_recipe"]]
+}
