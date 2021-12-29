@@ -61,6 +61,10 @@ public class ModItems {
   public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
+  // Raw Material
+  public static final RegistryObject<Item> RAW_STEEL = ITEMS.register("raw_steel",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+
   // Test Tube Color (DyeColor)
   private static final String TEST_TUBE_COLOR = "test_tube_color_";
   public static final RegistryObject<Item> TEST_TUBE_COLOR_WHITE =

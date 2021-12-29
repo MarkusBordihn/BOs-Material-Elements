@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": ["material_elements:raw_steel_from_raw_iron_and_coke"]
+  },
+  "criteria": {
+    "has_coke": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["material_elements:coke"]
+          }
+        ]
+      }
+    },
+    "has_raw_iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:raw_iron"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "material_elements:raw_steel_from_raw_iron_and_coke"
+      }
+    }
+  },
+  "requirements": [["has_coke", "has_raw_iron", "has_the_recipe"]]
+}

@@ -17,6 +17,8 @@
   "advancements.material_elements.crafting.craft_rod_tee.description": "Use four small rods to create a tee rod.",
   "advancements.material_elements.crafting.craft_steel_ore.title": "Combine coke and iron ore.",
   "advancements.material_elements.crafting.craft_steel_ore.description": "Steel is an alloy made up of iron with some carbon to improve its strength and resistance.",
+  "advancements.material_elements.crafting.craft_raw_steel.title": "Combine coke and raw iron.",
+  "advancements.material_elements.crafting.craft_raw_steel.description": "Steel is an alloy made up of iron with some carbon to improve its strength and resistance.",
   "advancements.material_elements.crafting.craft_test_tube.title": "Test Tubes are fun.",
   "advancements.material_elements.crafting.craft_test_tube.description": "A test tube, culture tube or sample tube, is a common piece of laboratory equipment.",
   "advancements.material_elements.crafting.craft_test_tube_glow.title": "Glowing test tubes are even more fun.",
@@ -126,6 +128,7 @@
   "item.material_elements.netherite_nugget": "Netherite Nugget",
   "item.material_elements.steel_ingot": "Steel Ingot",
   "item.material_elements.steel_nugget": "Steel Nugget",
+  "item.material_elements.raw_steel": "Raw Steel",
 
   "item.material_elements.oak_stick": "Oak Stick",
   "item.material_elements.spruce_stick": "Spruce Stick",

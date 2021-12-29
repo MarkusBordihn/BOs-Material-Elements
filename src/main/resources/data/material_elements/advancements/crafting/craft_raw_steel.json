@@ -1,0 +1,31 @@
+{
+  "parent": "material_elements:crafting/obtain_coke",
+  "display": {
+    "icon": {
+      "item": "material_elements:raw_steel"
+    },
+    "title": {
+      "translate": "advancements.material_elements.crafting.craft_raw_steel.title"
+    },
+    "description": {
+      "translate": "advancements.material_elements.crafting.craft_raw_steel.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "raw_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["material_elements:raw_steel"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["raw_steel"]]
+}
