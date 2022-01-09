@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "material_elements:block/light_cube_glass_frame" }
+  }
+}

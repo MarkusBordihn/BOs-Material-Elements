@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "material_elements:copper_cube_frame",
+    "material_elements:copper_cube_glass_frame",
     "material_elements:copper_rod",
     "material_elements:copper_rod_cross",
     "material_elements:copper_rod_half_size",

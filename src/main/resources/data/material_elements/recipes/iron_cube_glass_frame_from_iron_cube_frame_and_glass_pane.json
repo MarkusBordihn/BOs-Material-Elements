@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " O ",
+    "O#O",
+    " O "],
+  "key": {
+    "O": {
+      "item": "minecraft:glass_pane"
+    },
+    "#": {
+      "item": "material_elements:iron_cube_frame"
+    }
+  },
+  "result": {
+    "item": "material_elements:iron_cube_glass_frame",
+    "count": 1
+  }
+}

@@ -31,23 +31,23 @@ public class BlockType {
 
   public static final Properties LIGHT = BlockBehaviour.Properties
       .of(Material.METAL, MaterialColor.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F)
-      .sound(SoundType.METAL).lightLevel(blockState -> 15);
+      .sound(SoundType.METAL).noOcclusion().lightLevel(blockState -> 15);
   public static final Properties COPPER =
       BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
-          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER);
+          .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER).noOcclusion();
   public static final Properties GOLD =
       BlockBehaviour.Properties.of(Material.METAL, MaterialColor.GOLD).requiresCorrectToolForDrops()
-          .strength(3.0F, 6.0F).sound(SoundType.METAL);
+          .strength(3.0F, 6.0F).sound(SoundType.METAL).noOcclusion();
   public static final Properties SILVER = BlockBehaviour.Properties
       .of(Material.METAL, MaterialColor.METAL).requiresCorrectToolForDrops().strength(4.0F, 6.0F)
-      .sound(SoundType.METAL).lightLevel(blockState -> 1);
+      .sound(SoundType.METAL).noOcclusion().lightLevel(blockState -> 2);
   public static final Properties IRON =
       BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL);
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion();
   public static final Properties STEEL =
       BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL)
-          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL);
-  public static final Properties NETHERITE =
-      BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK)
-          .requiresCorrectToolForDrops().strength(50.0F, 1200.0F);
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion();
+  public static final Properties NETHERITE = BlockBehaviour.Properties
+      .of(Material.METAL, MaterialColor.COLOR_BLACK).requiresCorrectToolForDrops()
+      .strength(50.0F, 1200.0F).sound(SoundType.NETHERITE_BLOCK).noOcclusion();
 }

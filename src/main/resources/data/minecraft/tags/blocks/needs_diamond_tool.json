@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "material_elements:netherite_cube_frame",
+    "material_elements:netherite_cube_glass_frame",
     "material_elements:netherite_rod",
     "material_elements:netherite_rod_cross",
     "material_elements:netherite_rod_half_size",
@@ -8,6 +10,8 @@
     "material_elements:netherite_rod_tee",
     "material_elements:netherite_rod_elbow",
     "material_elements:netherite_rod_tee_elbow",
+    "material_elements:steel_cube_frame",
+    "material_elements:steel_cube_glass_frame",
     "material_elements:steel_block",
     "material_elements:steel_ore",
     "material_elements:steel_rod",

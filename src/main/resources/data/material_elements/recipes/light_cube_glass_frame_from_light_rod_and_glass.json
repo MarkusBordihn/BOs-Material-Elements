@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["---", "|#|", "---"],
+  "key": {
+    "-": {
+      "item": "material_elements:light_rod"
+    },
+    "|": {
+      "item": "material_elements:light_rod"
+    },
+    "#": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "material_elements:light_cube_glass_frame",
+    "count": 1
+  }
+}

@@ -102,6 +102,38 @@ public class ModBlocks {
   public static final RegistryObject<Block> WARPED_HALF_SLAB = BLOCKS.register("warped_half_slab",
       () -> new WoodHalfSlabBlock(Blocks.WARPED_PLANKS.defaultMaterialColor()));
 
+  // Cube Frames
+  public static final RegistryObject<Block> LIGHT_CUBE_FRAME =
+      BLOCKS.register("light_cube_frame", () -> new Block(BlockType.LIGHT));
+  public static final RegistryObject<Block> COPPER_CUBE_FRAME =
+      BLOCKS.register("copper_cube_frame", () -> new Block(BlockType.COPPER));
+  public static final RegistryObject<Block> GOLD_CUBE_FRAME =
+      BLOCKS.register("gold_cube_frame", () -> new Block(BlockType.GOLD));
+  public static final RegistryObject<Block> SILVER_CUBE_FRAME =
+      BLOCKS.register("silver_cube_frame", () -> new Block(BlockType.SILVER));
+  public static final RegistryObject<Block> IRON_CUBE_FRAME =
+      BLOCKS.register("iron_cube_frame", () -> new Block(BlockType.IRON));
+  public static final RegistryObject<Block> STEEL_CUBE_FRAME =
+      BLOCKS.register("steel_cube_frame", () -> new Block(BlockType.STEEL));
+  public static final RegistryObject<Block> NETHERITE_CUBE_FRAME =
+      BLOCKS.register("netherite_cube_frame", () -> new Block(BlockType.NETHERITE));
+
+  // Cube Glass Frames
+  public static final RegistryObject<Block> LIGHT_CUBE_GLASS_FRAME =
+      BLOCKS.register("light_cube_glass_frame", () -> new Block(BlockType.LIGHT));
+  public static final RegistryObject<Block> COPPER_CUBE_GLASS_FRAME =
+      BLOCKS.register("copper_cube_glass_frame", () -> new Block(BlockType.COPPER));
+  public static final RegistryObject<Block> GOLD_CUBE_GLASS_FRAME =
+      BLOCKS.register("gold_cube_glass_frame", () -> new Block(BlockType.GOLD));
+  public static final RegistryObject<Block> SILVER_CUBE_GLASS_FRAME =
+      BLOCKS.register("silver_cube_glass_frame", () -> new Block(BlockType.SILVER));
+  public static final RegistryObject<Block> IRON_CUBE_GLASS_FRAME =
+      BLOCKS.register("iron_cube_glass_frame", () -> new Block(BlockType.IRON));
+  public static final RegistryObject<Block> STEEL_CUBE_GLASS_FRAME =
+      BLOCKS.register("steel_cube_glass_frame", () -> new Block(BlockType.STEEL));
+  public static final RegistryObject<Block> NETHERITE_CUBE_GLASS_FRAME =
+      BLOCKS.register("netherite_cube_glass_frame", () -> new Block(BlockType.NETHERITE));
+
   // Rods (tee elbow)
   public static final RegistryObject<Block> LIGHT_ROD_TEE_ELBOW =
       BLOCKS.register("light_rod_tee_elbow", () -> new RodTeeElbow(BlockType.LIGHT));

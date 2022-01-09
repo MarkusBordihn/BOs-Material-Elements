@@ -156,6 +156,7 @@
   "item.placeholder.text": "Template placeholder do not remove!",
 
   "itemGroup.rods": "Material & Elemente: Stangen",
+  "itemGroup.cube_frames": "Material & Elements: Würfelrahmen",
   "itemGroup.test_tubes": "Material & Elemente: Reagenzgläser",
   "itemGroup.panel_plates": "Material & Elemente: Paneele & Platten"
 }

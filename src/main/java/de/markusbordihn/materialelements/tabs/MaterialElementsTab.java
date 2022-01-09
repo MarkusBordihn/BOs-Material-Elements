@@ -28,6 +28,12 @@ public class MaterialElementsTab {
 
   protected MaterialElementsTab() {}
 
+  public static final CreativeModeTab TAB_CUBE_FRAMES = new CreativeModeTab("cube_frames") {
+    public ItemStack makeIcon() {
+      return new ItemStack(ModItems.LIGHT_CUBE_GLASS_FRAME.get());
+    }
+  };
+
   public static final CreativeModeTab TAB_RODS = new CreativeModeTab("rods") {
     public ItemStack makeIcon() {
       return new ItemStack(ModItems.IRON_ROD.get());
