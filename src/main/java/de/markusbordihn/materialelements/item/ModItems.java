@@ -238,6 +238,9 @@ public class ModItems {
           new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
 
   // Rods (tee elbow)
+  public static final RegistryObject<Item> LIGHT_ROD_TEE_ELBOW = ITEMS
+      .register("light_rod_tee_elbow", () -> new BlockItem(ModBlocks.LIGHT_ROD_TEE_ELBOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> COPPER_ROD_TEE_ELBOW =
       ITEMS.register("copper_rod_tee_elbow", () -> new BlockItem(ModBlocks.COPPER_ROD_TEE_ELBOW.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
@@ -258,6 +261,9 @@ public class ModItems {
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
 
   // Rods (elbow)
+  public static final RegistryObject<Item> LIGHT_ROD_ELBOW =
+      ITEMS.register("light_rod_elbow", () -> new BlockItem(ModBlocks.LIGHT_ROD_ELBOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> COPPER_ROD_ELBOW =
       ITEMS.register("copper_rod_elbow", () -> new BlockItem(ModBlocks.COPPER_ROD_ELBOW.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
@@ -278,6 +284,9 @@ public class ModItems {
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
 
   // Rods (tee)
+  public static final RegistryObject<Item> LIGHT_ROD_TEE =
+      ITEMS.register("light_rod_tee", () -> new BlockItem(ModBlocks.LIGHT_ROD_TEE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> COPPER_ROD_TEE =
       ITEMS.register("copper_rod_tee", () -> new BlockItem(ModBlocks.COPPER_ROD_TEE.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
@@ -298,6 +307,9 @@ public class ModItems {
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
 
   // Rods (star)
+  public static final RegistryObject<Item> LIGHT_ROD_STAR =
+      ITEMS.register("light_rod_star", () -> new BlockItem(ModBlocks.LIGHT_ROD_STAR.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> COPPER_ROD_STAR =
       ITEMS.register("copper_rod_star", () -> new BlockItem(ModBlocks.COPPER_ROD_STAR.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
@@ -318,6 +330,9 @@ public class ModItems {
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
 
   // Rods (cross)
+  public static final RegistryObject<Item> LIGHT_ROD_CROSS =
+      ITEMS.register("light_rod_cross", () -> new BlockItem(ModBlocks.LIGHT_ROD_CROSS.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> COPPER_ROD_CROSS =
       ITEMS.register("copper_rod_cross", () -> new BlockItem(ModBlocks.COPPER_ROD_CROSS.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
@@ -338,6 +353,9 @@ public class ModItems {
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
 
   // Rods (half size)
+  public static final RegistryObject<Item> LIGHT_ROD_HALF_SIZE = ITEMS
+      .register("light_rod_half_size", () -> new BlockItem(ModBlocks.LIGHT_ROD_HALF_SIZE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> COPPER_ROD_HALF_SIZE = ITEMS
       .register("copper_rod_half_size", () -> new BlockItem(ModBlocks.COPPER_ROD_HALF_SIZE.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
@@ -358,6 +376,9 @@ public class ModItems {
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
 
   // Rods (full-size)
+  public static final RegistryObject<Item> LIGHT_ROD =
+      ITEMS.register("light_rod", () -> new BlockItem(ModBlocks.LIGHT_ROD.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
   public static final RegistryObject<Item> COPPER_ROD =
       ITEMS.register("copper_rod", () -> new BlockItem(ModBlocks.COPPER_ROD.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));

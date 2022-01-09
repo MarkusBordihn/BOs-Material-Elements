@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["*", "|"],
+  "key": {
+    "*": {
+      "tag": "material_elements:glowing_item"
+    },
+    "|": {
+      "item": "material_elements:iron_rod"
+    }
+  },
+  "result": {
+    "item": "material_elements:light_rod",
+    "count": 1
+  }
+}

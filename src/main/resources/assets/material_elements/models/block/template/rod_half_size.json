@@ -1,7 +1,6 @@
 {
 	"credit": "Made with Blockbench by Markus Bordihn",
 	"ambientocclusion": false,
-	"texture_size": [32, 32],
 	"textures": {
 		"particle": "material_elements:block/copper_rod",
 		"texture": "material_elements:block/copper_rod"
@@ -12,12 +11,12 @@
 			"from": [7, 0, 7],
 			"to": [9, 8, 9],
 			"faces": {
-				"north": {"uv": [1, 5, 2, 9], "texture": "#texture"},
-				"east": {"uv": [0, 5, 1, 9], "texture": "#texture"},
-				"south": {"uv": [3, 5, 4, 9], "texture": "#texture"},
-				"west": {"uv": [2, 5, 3, 9], "texture": "#texture"},
-				"up": {"uv": [2, 1, 1, 0], "texture": "#texture"},
-				"down": {"uv": [3, 0, 2, 1], "texture": "#texture", "cullface": "down"}
+				"north": {"uv": [0, 4, 2, 12], "texture": "#texture"},
+				"east": {"uv": [2, 4, 4, 12], "texture": "#texture"},
+				"south": {"uv": [4, 4, 6, 12], "texture": "#texture"},
+				"west": {"uv": [6, 4, 8, 12], "texture": "#texture"},
+				"up": {"uv": [10, 2, 8, 0], "texture": "#texture"},
+				"down": {"uv": [10, 14, 8, 16], "texture": "#texture", "cullface": "down"}
 			}
 		}
 	],
@@ -31,22 +30,21 @@
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"firstperson_righthand": {
-			"translation": [0, 2, 0],
+			"translation": [0, 2, -0.5],
 			"scale": [0.5, 0.4, 0.4]
 		},
 		"firstperson_lefthand": {
-			"translation": [0, 2, 0],
+			"translation": [0, 2, -0.5],
 			"scale": [0.5, 0.4, 0.4]
 		},
 		"ground": {
-			"translation": [0, 2, 0],
-			"scale": [0.3, 0.3, 0.3]
+			"translation": [0, 1, 0],
+			"scale": [0.4, 0.4, 0.4]
 		},
 		"gui": {
-			"rotation": [22.5, 45, 0],
-			"translation": [0, 3, 0],
-			"scale": [0.7, 0.7, 0.7]
-		},
+      "rotation": [22.5, 45, 0],
+      "scale": [0.7, 0.7, 0.7]
+    },
 		"head": {
 			"rotation": [-60, 0, 0],
 			"translation": [0, 7, -10.5]

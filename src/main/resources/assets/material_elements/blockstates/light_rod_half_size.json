@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "face=floor": {
+      "model": "material_elements:block/light_rod_half_size"
+    },
+    "face=ceiling": {
+      "model": "material_elements:block/light_rod_half_size",
+      "x": 180
+    },
+    "face=wall,facing=north": {
+      "model": "material_elements:block/light_rod_half_size",
+      "x": 90
+    },
+    "face=wall,facing=east": {
+      "model": "material_elements:block/light_rod_half_size",
+      "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=south": {
+      "model": "material_elements:block/light_rod_half_size",
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west": {
+      "model": "material_elements:block/light_rod_half_size",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

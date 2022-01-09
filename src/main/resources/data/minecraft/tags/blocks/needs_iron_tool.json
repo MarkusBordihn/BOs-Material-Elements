@@ -1,6 +1,13 @@
 {
   "replace": false,
   "values": [
+    "material_elements:light_rod",
+    "material_elements:light_rod_cross",
+    "material_elements:light_rod_half_size",
+    "material_elements:light_rod_star",
+    "material_elements:light_rod_tee",
+    "material_elements:light_rod_elbow",
+    "material_elements:light_rod_tee_elbow",
     "material_elements:gold_rod",
     "material_elements:gold_rod_cross",
     "material_elements:gold_rod_half_size",

@@ -1,10 +1,19 @@
 {
+  "block.material_elements.light_rod": "Lichtstab",
+  "block.material_elements.light_rod_cross": "Lichtstabkreuz",
+  "block.material_elements.light_rod_half_size": "Halber Lichtstab",
+  "block.material_elements.light_rod_star": "Lichtstabstern",
+  "block.material_elements.light_rod_elbow": "Lichtstab L-Stück",
+  "block.material_elements.light_rod_tee": "Lichtstab T-Stück",
+  "block.material_elements.light_rod_tee_elbow": "Lichtstab TL-Stück",
+
   "block.material_elements.copper_rod": "Kupferstab",
   "block.material_elements.copper_rod_cross": "Kupferkreuz",
   "block.material_elements.copper_rod_half_size": "Halber Kupferstab",
   "block.material_elements.copper_rod_star": "Kupferstern",
-  "block.material_elements.copper_rod_tee": "Kupfer T-Stück",
   "block.material_elements.copper_rod_elbow": "Kupfer L-Stück",
+  "block.material_elements.copper_rod_tee": "Kupfer T-Stück",
+  "block.material_elements.copper_rod_tee_elbow": "Kupfer TL-Stück",
 
   "block.material_elements.gold_rod": "Goldstab",
   "block.material_elements.gold_rod_cross": "Goldkreuz",

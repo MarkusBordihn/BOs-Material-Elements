@@ -29,6 +29,9 @@ public class BlockType {
 
   protected BlockType() {}
 
+  public static final Properties LIGHT = BlockBehaviour.Properties
+      .of(Material.METAL, MaterialColor.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F)
+      .sound(SoundType.METAL).lightLevel(blockState -> 15);
   public static final Properties COPPER =
       BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
           .requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER);

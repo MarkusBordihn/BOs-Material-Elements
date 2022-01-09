@@ -103,6 +103,8 @@ public class ModBlocks {
       () -> new WoodHalfSlabBlock(Blocks.WARPED_PLANKS.defaultMaterialColor()));
 
   // Rods (tee elbow)
+  public static final RegistryObject<Block> LIGHT_ROD_TEE_ELBOW =
+      BLOCKS.register("light_rod_tee_elbow", () -> new RodTeeElbow(BlockType.LIGHT));
   public static final RegistryObject<Block> COPPER_ROD_TEE_ELBOW =
       BLOCKS.register("copper_rod_tee_elbow", () -> new RodTeeElbow(BlockType.COPPER));
   public static final RegistryObject<Block> GOLD_ROD_TEE_ELBOW =
@@ -117,6 +119,8 @@ public class ModBlocks {
       BLOCKS.register("netherite_rod_tee_elbow", () -> new RodTeeElbow(BlockType.NETHERITE));
 
   // Rods (elbow)
+  public static final RegistryObject<Block> LIGHT_ROD_ELBOW =
+      BLOCKS.register("light_rod_elbow", () -> new RodElbow(BlockType.LIGHT));
   public static final RegistryObject<Block> COPPER_ROD_ELBOW =
       BLOCKS.register("copper_rod_elbow", () -> new RodElbow(BlockType.COPPER));
   public static final RegistryObject<Block> GOLD_ROD_ELBOW =
@@ -131,6 +135,8 @@ public class ModBlocks {
       BLOCKS.register("netherite_rod_elbow", () -> new RodElbow(BlockType.NETHERITE));
 
   // Rods (tee)
+  public static final RegistryObject<Block> LIGHT_ROD_TEE =
+      BLOCKS.register("light_rod_tee", () -> new RodTee(BlockType.LIGHT));
   public static final RegistryObject<Block> COPPER_ROD_TEE =
       BLOCKS.register("copper_rod_tee", () -> new RodTee(BlockType.COPPER));
   public static final RegistryObject<Block> GOLD_ROD_TEE =
@@ -145,6 +151,8 @@ public class ModBlocks {
       BLOCKS.register("netherite_rod_tee", () -> new RodTee(BlockType.NETHERITE));
 
   // Rods (star)
+  public static final RegistryObject<Block> LIGHT_ROD_STAR =
+      BLOCKS.register("light_rod_star", () -> new RodStar(BlockType.LIGHT));
   public static final RegistryObject<Block> COPPER_ROD_STAR =
       BLOCKS.register("copper_rod_star", () -> new RodStar(BlockType.COPPER));
   public static final RegistryObject<Block> GOLD_ROD_STAR =
@@ -159,6 +167,8 @@ public class ModBlocks {
       BLOCKS.register("netherite_rod_star", () -> new RodStar(BlockType.NETHERITE));
 
   // Rods (cross)
+  public static final RegistryObject<Block> LIGHT_ROD_CROSS =
+      BLOCKS.register("light_rod_cross", () -> new RodCross(BlockType.LIGHT));
   public static final RegistryObject<Block> COPPER_ROD_CROSS =
       BLOCKS.register("copper_rod_cross", () -> new RodCross(BlockType.COPPER));
   public static final RegistryObject<Block> GOLD_ROD_CROSS =
@@ -173,6 +183,8 @@ public class ModBlocks {
       BLOCKS.register("netherite_rod_cross", () -> new RodCross(BlockType.NETHERITE));
 
   // Rods (half size)
+  public static final RegistryObject<Block> LIGHT_ROD_HALF_SIZE =
+      BLOCKS.register("light_rod_half_size", () -> new RodHalfSize(BlockType.LIGHT));
   public static final RegistryObject<Block> COPPER_ROD_HALF_SIZE =
       BLOCKS.register("copper_rod_half_size", () -> new RodHalfSize(BlockType.COPPER));
   public static final RegistryObject<Block> GOLD_ROD_HALF_SIZE =
@@ -187,6 +199,8 @@ public class ModBlocks {
       BLOCKS.register("netherite_rod_half_size", () -> new RodHalfSize(BlockType.NETHERITE));
 
   // Rods (full-size)
+  public static final RegistryObject<Block> LIGHT_ROD =
+      BLOCKS.register("light_rod", () -> new Rod(BlockType.LIGHT));
   public static final RegistryObject<Block> COPPER_ROD =
       BLOCKS.register("copper_rod", () -> new Rod(BlockType.COPPER));
   public static final RegistryObject<Block> GOLD_ROD =

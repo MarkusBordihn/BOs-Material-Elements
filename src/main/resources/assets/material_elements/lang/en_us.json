@@ -38,6 +38,14 @@
   "advancements.material_elements.crafting.smelt_steel.title": "Next level of Iron",
   "advancements.material_elements.crafting.smelt_steel.description": "Get some steel ingot's for new armor, tools and weapons.",
 
+  "block.material_elements.light_rod": "Light Rod",
+  "block.material_elements.light_rod_cross": "Light Rod Cross",
+  "block.material_elements.light_rod_half_size": "Light Rod (half size)",
+  "block.material_elements.light_rod_star": "Light Rod Star",
+  "block.material_elements.light_rod_elbow": "Light Rod Elbow",
+  "block.material_elements.light_rod_tee": "Light Rod Tee",
+  "block.material_elements.light_rod_tee_elbow": "Light Rod Tee Elbow",
+
   "block.material_elements.copper_rod": "Copper Rod",
   "block.material_elements.copper_rod_cross": "Copper Rod Cross",
   "block.material_elements.copper_rod_half_size": "Copper Rod (half size)",

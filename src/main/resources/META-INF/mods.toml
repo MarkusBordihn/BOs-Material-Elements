@@ -20,33 +20,22 @@ license="MIT"
 [[mods]] #mandatory
     modId="material_elements"
     version="${file.jarVersion}"
-    displayName="Bo's Material Elements"
-    # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
-    #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
-    # A URL for the "homepage" for this mod, displayed in the mod UI
-    #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
-    # A file name (in the root of the mod JAR) containing a logo for display
+    displayName="Material Elements"
     logoFile="logo.png"
     credits=""
     authors="Markus Bordihn"
-    description='''Bo's Material Elements is a Minecraft Forge Mod which adds additional materials and elements (like copper nuggets, steel, coke) for other related mods.'''
+    description='''Material Elements is a Minecraft Forge Mod which adds additional materials and elements (like copper nuggets, steel, coke) for other related mods.'''
 
-[[dependencies.forge]] #optional
-    # the modid of the dependency
-    modId="forge" #mandatory
-    # Does this dependency have to exist - if not, ordering below must be specified
-    mandatory=true #mandatory
-    # The version range of the dependency
-    versionRange="[39,)" #mandatory
-    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+[[dependencies.forge]]
+    modId="forge"
+    mandatory=true
+    versionRange="[39,)"
     ordering="NONE"
-    # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 
 [[dependencies.minecraft]]
     modId="minecraft"
     mandatory=true
-    # This version range declares a minimum of the current minecraft version up to but not including the next major version
     versionRange="[1.18.1,1.19)"
     ordering="NONE"
     side="BOTH"
