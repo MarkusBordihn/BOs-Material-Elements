@@ -21,12 +21,13 @@ Please use the [Steel Armor, Tools and Weapon Mod][steel-armor-tools-and-weapons
 
 #### ➖ Rods
 
-- Copper Rod (full, half-size, cross, star, elbow)
-- Gold Rod (full, half-size, cross, star, elbow)
-- Silver Rod (full, half-size, cross, star, elbow)
-- Iron Rod (full, half-size, cross, star, elbow)
-- Steel Rod (full, half-size, cross, star, elbow)
-- Netherite Rod (full, half-size, cross, star, elbow)
+- Light Rod (full, half-size, cross, star, elbow, ...)
+- Copper Rod (full, half-size, cross, star, elbow, ...)
+- Gold Rod (full, half-size, cross, star, elbow, ...)
+- Silver Rod (full, half-size, cross, star, elbow, ...)
+- Iron Rod (full, half-size, cross, star, elbow, ...)
+- Steel Rod (full, half-size, cross, star, elbow, ...)
+- Netherite Rod (full, half-size, cross, star, elbow, ...)
 
 #### 🪵 Wood Panels, Plates and half-size Slabs
 
@@ -84,6 +85,23 @@ Please use the [Steel Armor, Tools and Weapon Mod][steel-armor-tools-and-weapons
   - Green
   - Red
   - Black
+
+#### 🖾 Cube Frames
+
+- Light Cube Frame (with and without glass)
+- Copper Cube Frame (with and without glass)
+- Gold Cube Frame (with and without glass)
+- Silver Cube Frame (with and without glass)
+- Iron Cube Frame (with and without glass)
+- Steel Cube Frame (with and without glass)
+- Netherite Cube Frame (with and without glass)
+
+#### ✂️ Leather
+
+- Leather Strip
+- Leather Strip (red)
+- Leather Strip (black)
+- Leather Sheet
 
 #### 🔭 Other Material
 

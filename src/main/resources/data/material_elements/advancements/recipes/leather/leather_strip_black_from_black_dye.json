@@ -1,0 +1,52 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": ["material_elements:leather_strip_black_from_black_dye"]
+  },
+  "criteria": {
+    "has_leather_strip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["material_elements:leather_strip"]
+          }
+        ]
+      }
+    },
+    "has_leather_strip_black": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["material_elements:leather_strip_black"]
+          }
+        ]
+      }
+    },
+    "has_black_dye": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:black_dye"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "material_elements:leather_strip_black_from_black_dye"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_leather_strip",
+      "has_leather_strip_black",
+      "has_black_dye",
+      "has_the_recipe"
+    ]
+  ]
+}

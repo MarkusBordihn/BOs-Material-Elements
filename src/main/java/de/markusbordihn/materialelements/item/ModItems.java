@@ -45,6 +45,16 @@ public class ModItems {
 
   @TemplateEntryPoint("Register Items")
 
+  // Leather
+  public static final RegistryObject<Item> LEATHER_STRIP_BLACK = ITEMS.register("leather_strip_black",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+  public static final RegistryObject<Item> LEATHER_STRIP_RED = ITEMS.register("leather_strip_red",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+  public static final RegistryObject<Item> LEATHER_SHEET = ITEMS.register("leather_sheet",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+  public static final RegistryObject<Item> LEATHER_STRIP = ITEMS.register("leather_strip",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
   // Nugget
   public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));

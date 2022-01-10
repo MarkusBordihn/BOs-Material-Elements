@@ -208,6 +208,11 @@
   "item.material_elements.test_tube_glow.effect.empty": "Test tube with glowing fluid",
   "item.material_elements.test_tube_glow.effect.water": "Test tube with glowing fluid",
 
+  "item.material_elements.leather_sheet": "Leather Sheet",
+  "item.material_elements.leather_strip": "Leather Strip",
+  "item.material_elements.leather_strip_red": "Leather Strip (red)",
+  "item.material_elements.leather_stripe_black": "Leather Stripe (black)",
+
   "item.placeholder.text": "Template placeholder do not remove!",
 
   "itemGroup.rods": "Material & Elements: Rods",

@@ -153,6 +153,11 @@
   "item.material_elements.test_tube_glow.effect.empty": "Reagenzglas mit leuchtender Flüssigkeit",
   "item.material_elements.test_tube_glow.effect.water": "Reagenzglas mit leuchtender Flüssigkeit",
 
+  "item.material_elements.leather_sheet": "Lederblatt",
+  "item.material_elements.leather_strip": "Lederstreifen",
+  "item.material_elements.leather_strip_black": "Lederstreifen (schwarz)",
+  "item.material_elements.leather_strip_red": "Lederstreifen (rot)",
+
   "item.placeholder.text": "Template placeholder do not remove!",
 
   "itemGroup.rods": "Material & Elemente: Stangen",

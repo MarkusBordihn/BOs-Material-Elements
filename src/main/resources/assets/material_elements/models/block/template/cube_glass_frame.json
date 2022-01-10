@@ -120,7 +120,6 @@
 			"to": [1, 16, 15],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0.5, 15.5, 8]},
 			"faces": {
-				"north": {"uv": [0, 0, 0, 0], "texture": "#missing"},
 				"east": {"uv": [1, 1, 2, 15], "rotation": 90, "texture": "#texture"},
 				"west": {"uv": [3, 1, 4, 15], "rotation": 90, "texture": "#texture", "cullface": "west"},
 				"up": {"uv": [4, 1, 5, 15], "rotation": 180, "texture": "#texture", "cullface": "up"},
