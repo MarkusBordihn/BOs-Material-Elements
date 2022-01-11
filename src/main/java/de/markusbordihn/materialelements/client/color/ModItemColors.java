@@ -31,6 +31,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 import de.markusbordihn.materialelements.Constants;
+import de.markusbordihn.materialelements.item.ColoredItem;
 import de.markusbordihn.materialelements.item.ModItems;
 import de.markusbordihn.materialelements.item.testtube.TestTubeColorItem;
 import de.markusbordihn.materialelements.item.testtube.TestTubeCustomItem;
@@ -38,7 +39,7 @@ import de.markusbordihn.materialelements.item.testtube.TestTubeCustomItem;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModItemColors {
 
-  public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   protected ModItemColors() {}
 
@@ -76,6 +77,13 @@ public class ModItemColors {
     itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_BLACK.get());
     itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_WATER.get());
     itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_GLOW.get());
+  }
+
+  public static int getColorFromColoredItem(ItemStack itemStack, int color) {
+    if (color <= 0 && itemStack.getItem() instanceof ColoredItem coloredItem) {
+      return coloredItem.getMaterialColor();
+    }
+    return -1;
   }
 
   public static int getColorFromTestTube(ItemStack itemStack, int color) {

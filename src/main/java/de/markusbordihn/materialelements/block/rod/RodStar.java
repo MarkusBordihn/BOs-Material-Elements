@@ -33,7 +33,7 @@ import de.markusbordihn.materialelements.Constants;
 
 public class RodStar extends RodComplexBlock {
 
-  public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   // Shape is the same for all combinations.
   protected static final VoxelShape SHAPE_AABB =

@@ -46,6 +46,12 @@ public class MaterialElementsTab {
     }
   };
 
+  public static final CreativeModeTab TAB_LEATHER = new CreativeModeTab("leather") {
+    public ItemStack makeIcon() {
+      return new ItemStack(ModItems.LEATHER_SHEET.get());
+    }
+  };
+
   public static final CreativeModeTab TAB_PANEL_PLATES = new CreativeModeTab("panel_plates") {
     public ItemStack makeIcon() {
       return new ItemStack(ModItems.OAK_PLATE.get());

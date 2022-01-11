@@ -46,14 +46,44 @@ public class ModItems {
   @TemplateEntryPoint("Register Items")
 
   // Leather
-  public static final RegistryObject<Item> LEATHER_STRIP_BLACK = ITEMS.register("leather_strip_black",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-  public static final RegistryObject<Item> LEATHER_STRIP_RED = ITEMS.register("leather_strip_red",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-  public static final RegistryObject<Item> LEATHER_SHEET = ITEMS.register("leather_sheet",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-  public static final RegistryObject<Item> LEATHER_STRIP = ITEMS.register("leather_strip",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+  public static final RegistryObject<Item> LEATHER_SHEET =
+      ITEMS.register("leather_sheet", LeatherSheetItem::new);
+
+  // Leather Strips
+  public static final RegistryObject<Item> LEATHER_STRIP =
+      ITEMS.register("leather_strip", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_WHITE =
+      ITEMS.register("leather_strip_white", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_ORANGE =
+      ITEMS.register("leather_strip_orange", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_MAGENTA =
+      ITEMS.register("leather_strip_magenta", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_LIGHT_BLUE =
+      ITEMS.register("leather_strip_light_blue", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_LIGHT_GRAY =
+      ITEMS.register("leather_strip_light_gray", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_YELLOW =
+      ITEMS.register("leather_strip_yellow", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_LIME =
+      ITEMS.register("leather_strip_lime", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_PINK =
+      ITEMS.register("leather_strip_pink", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_GRAY =
+      ITEMS.register("leather_strip_gray", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_CYAN =
+      ITEMS.register("leather_strip_cyan", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_PURPLE =
+      ITEMS.register("leather_strip_purple", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_BLUE =
+      ITEMS.register("leather_strip_blue", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_BROWN =
+      ITEMS.register("leather_strip_brown", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_GREEN =
+      ITEMS.register("leather_strip_green", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_RED =
+      ITEMS.register("leather_strip_red", LeatherStripItem::new);
+  public static final RegistryObject<Item> LEATHER_STRIP_BLACK =
+      ITEMS.register("leather_strip_black", LeatherStripItem::new);
 
   // Nugget
   public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
@@ -249,49 +279,40 @@ public class ModItems {
 
   // Cube Frames
   public static final RegistryObject<Item> LIGHT_CUBE_FRAME =
-      ITEMS.register("light_cube_frame", () -> new BlockItem(ModBlocks.LIGHT_CUBE_FRAME.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_CUBE_FRAMES)));
-  public static final RegistryObject<Item> COPPER_CUBE_FRAME =
-      ITEMS.register("copper_cube_frame", () -> new BlockItem(ModBlocks.COPPER_CUBE_FRAME.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_CUBE_FRAMES)));
+      ITEMS.register("light_cube_frame", () -> new CubeFrameItem(ModBlocks.LIGHT_CUBE_FRAME.get()));
+  public static final RegistryObject<Item> COPPER_CUBE_FRAME = ITEMS.register("copper_cube_frame",
+      () -> new CubeFrameItem(ModBlocks.COPPER_CUBE_FRAME.get()));
   public static final RegistryObject<Item> GOLD_CUBE_FRAME =
-      ITEMS.register("gold_cube_frame", () -> new BlockItem(ModBlocks.GOLD_CUBE_FRAME.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_CUBE_FRAMES)));
-  public static final RegistryObject<Item> SILVER_CUBE_FRAME =
-      ITEMS.register("silver_cube_frame", () -> new BlockItem(ModBlocks.SILVER_CUBE_FRAME.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_CUBE_FRAMES)));
+      ITEMS.register("gold_cube_frame", () -> new CubeFrameItem(ModBlocks.GOLD_CUBE_FRAME.get()));
+  public static final RegistryObject<Item> SILVER_CUBE_FRAME = ITEMS.register("silver_cube_frame",
+      () -> new CubeFrameItem(ModBlocks.SILVER_CUBE_FRAME.get()));
   public static final RegistryObject<Item> IRON_CUBE_FRAME =
-      ITEMS.register("iron_cube_frame", () -> new BlockItem(ModBlocks.IRON_CUBE_FRAME.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_CUBE_FRAMES)));
+      ITEMS.register("iron_cube_frame", () -> new CubeFrameItem(ModBlocks.IRON_CUBE_FRAME.get()));
   public static final RegistryObject<Item> STEEL_CUBE_FRAME =
-      ITEMS.register("steel_cube_frame", () -> new BlockItem(ModBlocks.STEEL_CUBE_FRAME.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_CUBE_FRAMES)));
-  public static final RegistryObject<Item> NETHERITE_CUBE_FRAME = ITEMS
-      .register("netherite_cube_frame", () -> new BlockItem(ModBlocks.NETHERITE_CUBE_FRAME.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_CUBE_FRAMES)));
+      ITEMS.register("steel_cube_frame", () -> new CubeFrameItem(ModBlocks.STEEL_CUBE_FRAME.get()));
+  public static final RegistryObject<Item> NETHERITE_CUBE_FRAME = ITEMS.register(
+      "netherite_cube_frame", () -> new CubeFrameItem(ModBlocks.NETHERITE_CUBE_FRAME.get()));
 
   // Cube Glass Frames
-  public static final RegistryObject<Item> LIGHT_CUBE_GLASS_FRAME = ITEMS.register(
-      "light_cube_glass_frame", () -> new BlockItem(ModBlocks.LIGHT_CUBE_GLASS_FRAME.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_CUBE_FRAMES)));
-  public static final RegistryObject<Item> COPPER_CUBE_GLASS_FRAME = ITEMS.register(
-      "copper_cube_glass_frame", () -> new BlockItem(ModBlocks.COPPER_CUBE_GLASS_FRAME.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_CUBE_FRAMES)));
-  public static final RegistryObject<Item> GOLD_CUBE_GLASS_FRAME = ITEMS
-      .register("gold_cube_glass_frame", () -> new BlockItem(ModBlocks.GOLD_CUBE_GLASS_FRAME.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_CUBE_FRAMES)));
-  public static final RegistryObject<Item> SILVER_CUBE_GLASS_FRAME = ITEMS.register(
-      "silver_cube_glass_frame", () -> new BlockItem(ModBlocks.SILVER_CUBE_GLASS_FRAME.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_CUBE_FRAMES)));
-  public static final RegistryObject<Item> IRON_CUBE_GLASS_FRAME = ITEMS
-      .register("iron_cube_glass_frame", () -> new BlockItem(ModBlocks.IRON_CUBE_GLASS_FRAME.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_CUBE_FRAMES)));
-  public static final RegistryObject<Item> STEEL_CUBE_GLASS_FRAME = ITEMS.register(
-      "steel_cube_glass_frame", () -> new BlockItem(ModBlocks.STEEL_CUBE_GLASS_FRAME.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_CUBE_FRAMES)));
-  public static final RegistryObject<Item> NETHERITE_CUBE_GLASS_FRAME = ITEMS.register(
-      "netherite_cube_glass_frame", () -> new BlockItem(ModBlocks.NETHERITE_CUBE_GLASS_FRAME.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_CUBE_FRAMES)));
+  public static final RegistryObject<Item> LIGHT_CUBE_GLASS_FRAME =
+      ITEMS.register("light_cube_glass_frame",
+          () -> new CubeGlassFrameItem(ModBlocks.LIGHT_CUBE_GLASS_FRAME.get()));
+  public static final RegistryObject<Item> COPPER_CUBE_GLASS_FRAME =
+      ITEMS.register("copper_cube_glass_frame",
+          () -> new CubeGlassFrameItem(ModBlocks.COPPER_CUBE_GLASS_FRAME.get()));
+  public static final RegistryObject<Item> GOLD_CUBE_GLASS_FRAME = ITEMS.register(
+      "gold_cube_glass_frame", () -> new CubeGlassFrameItem(ModBlocks.GOLD_CUBE_GLASS_FRAME.get()));
+  public static final RegistryObject<Item> SILVER_CUBE_GLASS_FRAME =
+      ITEMS.register("silver_cube_glass_frame",
+          () -> new CubeGlassFrameItem(ModBlocks.SILVER_CUBE_GLASS_FRAME.get()));
+  public static final RegistryObject<Item> IRON_CUBE_GLASS_FRAME = ITEMS.register(
+      "iron_cube_glass_frame", () -> new CubeGlassFrameItem(ModBlocks.IRON_CUBE_GLASS_FRAME.get()));
+  public static final RegistryObject<Item> STEEL_CUBE_GLASS_FRAME =
+      ITEMS.register("steel_cube_glass_frame",
+          () -> new CubeGlassFrameItem(ModBlocks.STEEL_CUBE_GLASS_FRAME.get()));
+  public static final RegistryObject<Item> NETHERITE_CUBE_GLASS_FRAME =
+      ITEMS.register("netherite_cube_glass_frame",
+          () -> new CubeGlassFrameItem(ModBlocks.NETHERITE_CUBE_GLASS_FRAME.get()));
 
   // Rods (tee elbow)
   public static final RegistryObject<Item> LIGHT_ROD_TEE_ELBOW =

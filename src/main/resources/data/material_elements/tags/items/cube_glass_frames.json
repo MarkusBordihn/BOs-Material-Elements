@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements:light_cube_glass_frame",
+    "material_elements:copper_cube_glass_frame",
+    "material_elements:gold_cube_glass_frame",
+    "material_elements:iron_cube_glass_frame",
+    "material_elements:netherite_cube_glass_frame",
+    "material_elements:silver_cube_glass_frame",
+    "material_elements:steel_cube_glass_frame"
+  ]
+}

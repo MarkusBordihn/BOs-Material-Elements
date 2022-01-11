@@ -1,0 +1,31 @@
+{
+  "parent": "material_elements:crafting/craft_cube_frame",
+  "display": {
+    "icon": {
+      "item": "material_elements:light_cube_glass_frame"
+    },
+    "title": {
+      "translate": "advancements.material_elements.crafting.craft_cube_glass_frame.title"
+    },
+    "description": {
+      "translate": "advancements.material_elements.crafting.craft_cube_glass_frame.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cube_glass_frame": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "material_elements:cube_glass_frames"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["cube_glass_frame"]]
+}

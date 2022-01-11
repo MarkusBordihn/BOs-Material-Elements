@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "material_elements:item/leather/leather_strip_light_blue"
+  }
+}

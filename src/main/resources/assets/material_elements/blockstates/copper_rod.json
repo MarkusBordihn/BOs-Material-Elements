@@ -1,28 +1,55 @@
 {
   "variants": {
-    "face=floor": {
+    "face=floor,connected=false": {
       "model": "material_elements:block/copper_rod"
     },
-    "face=ceiling": {
+    "face=ceiling,connected=false": {
       "model": "material_elements:block/copper_rod",
       "x": 180
     },
-    "face=wall,facing=north": {
+    "face=wall,facing=north,connected=false": {
       "model": "material_elements:block/copper_rod",
       "x": 90
     },
-    "face=wall,facing=east": {
+    "face=wall,facing=east,connected=false": {
       "model": "material_elements:block/copper_rod",
       "x": 90,
       "y": 90
     },
-    "face=wall,facing=south": {
+    "face=wall,facing=south,connected=false": {
       "model": "material_elements:block/copper_rod",
       "x": 90,
       "y": 180
     },
-    "face=wall,facing=west": {
+    "face=wall,facing=west,connected=false": {
       "model": "material_elements:block/copper_rod",
+      "x": 90,
+      "y": 270
+    },
+
+    "face=floor,connected=true": {
+      "model": "material_elements:block/copper_rod_connected"
+    },
+    "face=ceiling,connected=true": {
+      "model": "material_elements:block/copper_rod_connected",
+      "x": 180
+    },
+    "face=wall,facing=north,connected=true": {
+      "model": "material_elements:block/copper_rod_connected",
+      "x": 90
+    },
+    "face=wall,facing=east,connected=true": {
+      "model": "material_elements:block/copper_rod_connected",
+      "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=south,connected=true": {
+      "model": "material_elements:block/copper_rod_connected",
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west,connected=true": {
+      "model": "material_elements:block/copper_rod_connected",
       "x": 90,
       "y": 270
     }

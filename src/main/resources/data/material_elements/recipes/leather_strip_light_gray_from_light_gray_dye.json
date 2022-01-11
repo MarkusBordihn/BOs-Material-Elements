@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:light_gray_dye"
+    },
+    {
+      "item": "material_elements:leather_strip"
+    }
+  ],
+  "result": {
+    "item": "material_elements:leather_strip_light_gray",
+    "count": 1
+  }
+}

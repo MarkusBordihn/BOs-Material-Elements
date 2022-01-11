@@ -1,0 +1,31 @@
+{
+  "parent": "material_elements:crafting/craft_rod",
+  "display": {
+    "icon": {
+      "item": "material_elements:light_cube_frame"
+    },
+    "title": {
+      "translate": "advancements.material_elements.crafting.craft_cube_frame.title"
+    },
+    "description": {
+      "translate": "advancements.material_elements.crafting.craft_cube_frame.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cube_frame": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "material_elements:cube_frames"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["cube_frame"]]
+}

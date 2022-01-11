@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "material_elements:light_rod_tee_elbow",
     "material_elements:copper_rod_tee_elbow",
     "material_elements:gold_rod_tee_elbow",
     "material_elements:iron_rod_tee_elbow",

@@ -34,6 +34,9 @@ public final class Constants {
   public static final String MOD_ID = "material_elements";
   public static final String MOD_NAME = "Bo's Material Elements";
 
+  // Prefixes
+  public static final String TEXT_PREFIX = "text.material_elements.";
+
   // Tag definitions
   public static final Tag.Named<Block> NEEDS_STEEL_TOOL =
       BlockTags.bind(MOD_ID + "needs_steel_tool");

@@ -19,6 +19,16 @@ Please use the [Steel Armor, Tools and Weapon Mod][steel-armor-tools-and-weapons
 
 ### Block Overview 👁️‍🗨️
 
+#### 🖾 Cube Frames
+
+- Light Cube Frame (with and without glass)
+- Copper Cube Frame (with and without glass)
+- Gold Cube Frame (with and without glass)
+- Silver Cube Frame (with and without glass)
+- Iron Cube Frame (with and without glass)
+- Steel Cube Frame (with and without glass)
+- Netherite Cube Frame (with and without glass)
+
 #### ➖ Rods
 
 - Light Rod (full, half-size, cross, star, elbow, ...)
@@ -86,21 +96,10 @@ Please use the [Steel Armor, Tools and Weapon Mod][steel-armor-tools-and-weapons
   - Red
   - Black
 
-#### 🖾 Cube Frames
-
-- Light Cube Frame (with and without glass)
-- Copper Cube Frame (with and without glass)
-- Gold Cube Frame (with and without glass)
-- Silver Cube Frame (with and without glass)
-- Iron Cube Frame (with and without glass)
-- Steel Cube Frame (with and without glass)
-- Netherite Cube Frame (with and without glass)
-
 #### ✂️ Leather
 
 - Leather Strip
-- Leather Strip (red)
-- Leather Strip (black)
+- Leather Strip (colored)
 - Leather Sheet
 
 #### 🔭 Other Material
