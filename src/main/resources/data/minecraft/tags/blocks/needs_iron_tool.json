@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
+    "material_elements:oak_framed_hopper",
+    "material_elements:spruce_framed_hopper",
+    "material_elements:birch_framed_hopper",
+    "material_elements:jungle_framed_hopper",
+    "material_elements:acacia_framed_hopper",
+    "material_elements:dark_oak_framed_hopper",
+    "material_elements:crimson_framed_hopper",
+    "material_elements:warped_framed_hopper",
     "material_elements:light_cube_frame",
     "material_elements:light_cube_glass_frame",
     "material_elements:light_rod",

@@ -22,6 +22,7 @@ package de.markusbordihn.materialelements.block;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.OreBlock;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 
@@ -31,6 +32,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import de.markusbordihn.materialelements.Constants;
 import de.markusbordihn.materialelements.Annotations.TemplateEntryPoint;
+import de.markusbordihn.materialelements.block.framedhopper.*;
+import de.markusbordihn.materialelements.block.framedhopper.entity.*;
 import de.markusbordihn.materialelements.block.halfslab.WoodHalfSlabBlock;
 import de.markusbordihn.materialelements.block.panel.WoodPanelBlock;
 import de.markusbordihn.materialelements.block.plate.WoodPlateBlock;
@@ -45,7 +48,28 @@ public class ModBlocks {
   public static final DeferredRegister<Block> BLOCKS =
       DeferredRegister.create(ForgeRegistries.BLOCKS, Constants.MOD_ID);
 
+  public static final DeferredRegister<BlockEntityType<?>> ENTITIES =
+      DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, Constants.MOD_ID);
+
   @TemplateEntryPoint("Register Blocks")
+
+  // Wooden framed Hoppers
+  public static final RegistryObject<Block> OAK_FRAMED_HOPPER =
+      BLOCKS.register(OakFramedHopper.NAME, OakFramedHopper::new);
+  public static final RegistryObject<Block> SPRUCE_FRAMED_HOPPER =
+      BLOCKS.register(SpruceFramedHopper.NAME, SpruceFramedHopper::new);
+  public static final RegistryObject<Block> BIRCH_FRAMED_HOPPER =
+      BLOCKS.register(BirchFramedHopper.NAME, BirchFramedHopper::new);
+  public static final RegistryObject<Block> JUNGLE_FRAMED_HOPPER =
+      BLOCKS.register(JungleFramedHopper.NAME, JungleFramedHopper::new);
+  public static final RegistryObject<Block> ACACIA_FRAMED_HOPPER =
+      BLOCKS.register(AcaciaFramedHopper.NAME, AcaciaFramedHopper::new);
+  public static final RegistryObject<Block> DARK_OAK_FRAMED_HOPPER =
+      BLOCKS.register(DarkOakFramedHopper.NAME, DarkOakFramedHopper::new);
+  public static final RegistryObject<Block> CRIMSON_FRAMED_HOPPER =
+      BLOCKS.register(CrimsonFramedHopper.NAME, CrimsonFramedHopper::new);
+  public static final RegistryObject<Block> WARPED_FRAMED_HOPPER =
+      BLOCKS.register(WarpedFramedHopper.NAME, WarpedFramedHopper::new);
 
   // Wooden Panels
   public static final RegistryObject<Block> OAK_PANEL = BLOCKS.register("oak_panel",
@@ -259,4 +283,33 @@ public class ModBlocks {
   public static final RegistryObject<Block> STEEL_ORE =
       BLOCKS.register("steel_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
           .requiresCorrectToolForDrops().strength(3.0F, 3.0F)));
+
+  @TemplateEntryPoint("Register Entity")
+
+  // Wooden framed Hoppers
+  public static final RegistryObject<BlockEntityType<OakFramedHopperEntity>> OAK_HOPPER_ENTITY =
+      ENTITIES.register(OakFramedHopper.NAME, () -> BlockEntityType.Builder
+          .of(OakFramedHopperEntity::new, OAK_FRAMED_HOPPER.get()).build(null));
+  public static final RegistryObject<BlockEntityType<SpruceFramedHopperEntity>> SPRUCE_HOPPER_ENTITY =
+      ENTITIES.register(SpruceFramedHopper.NAME, () -> BlockEntityType.Builder
+          .of(SpruceFramedHopperEntity::new, SPRUCE_FRAMED_HOPPER.get()).build(null));
+  public static final RegistryObject<BlockEntityType<BirchFramedHopperEntity>> BIRCH_HOPPER_ENTITY =
+      ENTITIES.register(BirchFramedHopper.NAME, () -> BlockEntityType.Builder
+          .of(BirchFramedHopperEntity::new, BIRCH_FRAMED_HOPPER.get()).build(null));
+  public static final RegistryObject<BlockEntityType<JungleFramedHopperEntity>> JUNGLE_HOPPER_ENTITY =
+      ENTITIES.register(JungleFramedHopper.NAME, () -> BlockEntityType.Builder
+          .of(JungleFramedHopperEntity::new, JUNGLE_FRAMED_HOPPER.get()).build(null));
+  public static final RegistryObject<BlockEntityType<AcaciaFramedHopperEntity>> ACACIA_HOPPER_ENTITY =
+      ENTITIES.register(AcaciaFramedHopper.NAME, () -> BlockEntityType.Builder
+          .of(AcaciaFramedHopperEntity::new, ACACIA_FRAMED_HOPPER.get()).build(null));
+  public static final RegistryObject<BlockEntityType<DarkOakFramedHopperEntity>> DARK_OAK_HOPPER_ENTITY =
+      ENTITIES.register(DarkOakFramedHopper.NAME, () -> BlockEntityType.Builder
+          .of(DarkOakFramedHopperEntity::new, DARK_OAK_FRAMED_HOPPER.get()).build(null));
+  public static final RegistryObject<BlockEntityType<CrimsonFramedHopperEntity>> CRIMSON_HOPPER_ENTITY =
+      ENTITIES.register(CrimsonFramedHopper.NAME, () -> BlockEntityType.Builder
+          .of(CrimsonFramedHopperEntity::new, CRIMSON_FRAMED_HOPPER.get()).build(null));
+  public static final RegistryObject<BlockEntityType<WarpedFramedHopperEntity>> WARPED_HOPPER_ENTITY =
+      ENTITIES.register(WarpedFramedHopper.NAME, () -> BlockEntityType.Builder
+          .of(WarpedFramedHopperEntity::new, WARPED_FRAMED_HOPPER.get()).build(null));
+
 }

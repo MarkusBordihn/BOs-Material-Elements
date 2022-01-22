@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/template/framed_hopper_side",
+  "textures": {
+    "texture": "minecraft:block/jungle_planks",
+    "particle": "minecraft:block/jungle_planks"
+  }
+}

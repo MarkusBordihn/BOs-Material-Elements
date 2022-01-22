@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" # ", "#H#", " # "],
+  "key": {
+    "H": {
+      "item": "minecraft:hopper"
+    },
+    "#": {
+      "item": "material_elements:jungle_panel"
+    }
+  },
+  "result": {
+    "item": "material_elements:jungle_framed_hopper",
+    "count": 1
+  }
+}

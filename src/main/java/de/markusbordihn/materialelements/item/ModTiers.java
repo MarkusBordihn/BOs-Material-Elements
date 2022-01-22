@@ -39,14 +39,14 @@ public enum ModTiers implements Tier {
   private final int enchantmentValue;
   private final LazyLoadedValue<Ingredient> repairIngredient;
 
-  private ModTiers(int tierLevel, int maxUses, float speedValue, float attackDamageBonus, int p_43336_,
-      Supplier<Ingredient> p_43337_) {
+  private ModTiers(int tierLevel, int maxUses, float speedValue, float attackDamageBonus,
+      int enchantmentValue, Supplier<Ingredient> ingredient) {
     this.level = tierLevel;
     this.uses = maxUses;
     this.speed = speedValue;
     this.damage = attackDamageBonus;
-    this.enchantmentValue = p_43336_;
-    this.repairIngredient = new LazyLoadedValue<>(p_43337_);
+    this.enchantmentValue = enchantmentValue;
+    this.repairIngredient = new LazyLoadedValue<>(ingredient);
   }
 
   public int getUses() {
@@ -73,6 +73,7 @@ public enum ModTiers implements Tier {
     return this.repairIngredient.get();
   }
 
+  @Override
   @javax.annotation.Nullable
   public net.minecraft.tags.Tag<net.minecraft.world.level.block.Block> getTag() {
     return Constants.NEEDS_STEEL_TOOL;

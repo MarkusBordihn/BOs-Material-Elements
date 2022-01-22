@@ -19,9 +19,6 @@
 
 package de.markusbordihn.materialelements.block.rod;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockState;
@@ -29,11 +26,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-import de.markusbordihn.materialelements.Constants;
-
 public class RodStar extends RodComplexBlock {
-
-  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   // Shape is the same for all combinations.
   protected static final VoxelShape SHAPE_AABB =

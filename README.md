@@ -29,6 +29,17 @@ Please use the [Steel Armor, Tools and Weapon Mod][steel-armor-tools-and-weapons
 - Steel Cube Frame (with and without glass)
 - Netherite Cube Frame (with and without glass)
 
+#### 🖾 Wooden Framed Hoppers
+
+- Oak wooden framed hoppers
+- Spruce wooden framed hoppers
+- Birch wooden framed hoppers
+- Jungle wooden framed hoppers
+- Acacia wooden framed hoppers
+- Dark Oak wooden framed hoppers
+- Crimson wooden framed hoppers
+- Warped wooden framed hoppers
+
 #### ➖ Rods
 
 - Light Rod (full, half-size, cross, star, elbow, ...)

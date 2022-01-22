@@ -43,6 +43,10 @@ public class PanelPlateBlock extends Block {
 
   private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
+  // Defines if we need to rotate the Object based on the click position and player pov
+  public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+  public static final EnumProperty<AttachFace> ATTACH_FACE = BlockStateProperties.ATTACH_FACE;
+
   // We need a VoxelShape for each side to cover all faces and possibilities
   protected static final VoxelShape FLOOR_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 1.0, 16.0);
   protected static final VoxelShape CEILING_AABB = Block.box(0.0, 15.0, 0.0, 16.0, 16.0, 16.0);
@@ -50,10 +54,6 @@ public class PanelPlateBlock extends Block {
   protected static final VoxelShape FACING_SOUTH_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 1.0);
   protected static final VoxelShape FACING_NORTH_AABB = Block.box(0.0, 0.0, 15.0, 16.0, 16.0, 16.0);
   protected static final VoxelShape FACING_WEST_AABB = Block.box(15.0, 0.0, 0.0, 16.0, 16.0, 16.0);
-
-  // Defines if we need to rotate the Object based on the click position and player pov
-  public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-  public static final EnumProperty<AttachFace> ATTACH_FACE = BlockStateProperties.ATTACH_FACE;
 
   public PanelPlateBlock(Properties properties) {
     super(properties);

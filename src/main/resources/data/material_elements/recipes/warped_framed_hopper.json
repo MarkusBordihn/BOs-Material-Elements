@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" # ", "#H#", " # "],
+  "key": {
+    "H": {
+      "item": "minecraft:hopper"
+    },
+    "#": {
+      "item": "material_elements:warped_panel"
+    }
+  },
+  "result": {
+    "item": "material_elements:warped_framed_hopper",
+    "count": 1
+  }
+}

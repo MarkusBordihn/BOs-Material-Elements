@@ -39,6 +39,26 @@ public class ClientRenderer {
 
     event.enqueueWork(() -> {
       // @TemplateEntryPoint("Register Render Layers")
+
+      // Wooden framed hopper
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.OAK_FRAMED_HOPPER.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPRUCE_FRAMED_HOPPER.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.BIRCH_FRAMED_HOPPER.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.JUNGLE_FRAMED_HOPPER.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.ACACIA_FRAMED_HOPPER.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.DARK_OAK_FRAMED_HOPPER.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CRIMSON_FRAMED_HOPPER.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.WARPED_FRAMED_HOPPER.get(),
+          RenderType.cutoutMipped());
+
+      // Glass Cube Frame
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_CUBE_GLASS_FRAME.get(),
           RenderType.cutoutMipped());
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.COPPER_CUBE_GLASS_FRAME.get(),

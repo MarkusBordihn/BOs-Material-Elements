@@ -19,9 +19,6 @@
 
 package de.markusbordihn.materialelements.block.rod;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -39,11 +36,7 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-import de.markusbordihn.materialelements.Constants;
-
 public class RodComplexBlock extends RodBlock {
-
-  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   // Default Shape
   protected static final VoxelShape DEFAULT_SHAPE_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);

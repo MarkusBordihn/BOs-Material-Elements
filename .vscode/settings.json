@@ -10,6 +10,7 @@
     "advancementstracker",
     "ambientocclusion",
     "amphithere",
+    "apng",
     "autosave",
     "Behaviour",
     "blastfurnace",
@@ -18,6 +19,7 @@
     "bufferbuilder",
     "Configurator",
     "cookingtime",
+    "Cooldown",
     "Critera",
     "cullface",
     "curseforge",
@@ -40,6 +42,7 @@
     "myfirstmod",
     "NETHERIRE",
     "NETHERITE",
+    "Randomizable",
     "righthand",
     "server",
     "serverworld",
@@ -49,7 +52,8 @@
     "thirdperson",
     "Uncraftable",
     "untrack",
-    "Voxel"
+    "Voxel",
+    "Voxelshapes"
   ],
   "cSpell.ignorePaths": ["*.yml", ".gradle", ".vscode", "build", "run"],
   "java.configuration.updateBuildConfiguration": "automatic",

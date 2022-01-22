@@ -43,6 +43,15 @@
   "advancements.material_elements.crafting.smelt_steel.description": "Get some steel ingot's for new armor, tools and weapons.",
   "advancements.material_elements.crafting.smelt_steel.title": "Next level of Iron",
 
+  "block.material_elements.oak_framed_hopper": "Oak framed Hopper",
+  "block.material_elements.spruce_framed_hopper": "Spruce framed Hopper",
+  "block.material_elements.birch_framed_hopper": "Birch framed Hopper",
+  "block.material_elements.jungle_framed_hopper": "Jungle framed Hopper",
+  "block.material_elements.acacia_framed_hopper": "Acacia framed Hopper",
+  "block.material_elements.dark_oak_framed_hopper": "Dark Oak framed Hopper",
+  "block.material_elements.crimson_framed_hopper": "Crimson framed Hopper",
+  "block.material_elements.warped_framed_hopper": "Warped framed Hopper",
+
   "block.material_elements.light_cube_frame": "Light Cube Frame",
   "block.material_elements.light_cube_glass_frame": "Light Cube Glass Frame",
   "block.material_elements.light_rod": "Light Rod",
@@ -148,6 +157,15 @@
 
   "block.placeholder.text": "Template placeholder do not remove!",
 
+  "item.material_elements.oak_framed_hopper": "Oak framed Hopper",
+  "item.material_elements.spruce_framed_hopper": "Spruce framed Hopper",
+  "item.material_elements.birch_framed_hopper": "Birch framed Hopper",
+  "item.material_elements.jungle_framed_hopper": "Jungle framed Hopper",
+  "item.material_elements.acacia_framed_hopper": "Acacia framed Hopper",
+  "item.material_elements.dark_oak_framed_hopper": "Dark Oak framed Hopper",
+  "item.material_elements.crimson_framed_hopper": "Crimson framed Hopper",
+  "item.material_elements.warped_framed_hopper": "Warped framed Hopper",
+
   "item.material_elements.coke": "Coke",
   "item.material_elements.copper_nugget": "Copper Nugget",
   "item.material_elements.silver_ingot": "Silver Ingot",
@@ -243,5 +261,6 @@
   "itemGroup.leather": "Material & Elements: Leather",
   "itemGroup.panel_plates": "Material & Elements: Panel & Plates",
   "itemGroup.rods": "Material & Elements: Rods",
-  "itemGroup.test_tubes": "Material & Elements: Test Tubes"
+  "itemGroup.test_tubes": "Material & Elements: Test Tubes",
+  "itemGroup.framed_hoppers": "Material & Elements: Framed Hoppers"
 }

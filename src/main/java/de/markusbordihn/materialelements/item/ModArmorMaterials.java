@@ -47,24 +47,25 @@ public enum ModArmorMaterials implements ArmorMaterial {
   private final float knockbackResistance;
   private final LazyLoadedValue<Ingredient> repairIngredient;
 
-  private ModArmorMaterials(String p_40474_, int p_40475_, int[] p_40476_, int p_40477_,
-      SoundEvent soundEvent, float p_40479_, float p_40480_, Supplier<Ingredient> p_40481_) {
-    this.name = p_40474_;
-    this.durabilityMultiplier = p_40475_;
-    this.slotProtections = p_40476_;
-    this.enchantmentValue = p_40477_;
+  private ModArmorMaterials(String name, int durability, int[] slotProtections,
+      int enchantmentValue, SoundEvent soundEvent, float toughness, float knockbackResistance,
+      Supplier<Ingredient> ingredient) {
+    this.name = name;
+    this.durabilityMultiplier = durability;
+    this.slotProtections = slotProtections;
+    this.enchantmentValue = enchantmentValue;
     this.sound = soundEvent;
-    this.toughness = p_40479_;
-    this.knockbackResistance = p_40480_;
-    this.repairIngredient = new LazyLoadedValue<>(p_40481_);
+    this.toughness = toughness;
+    this.knockbackResistance = knockbackResistance;
+    this.repairIngredient = new LazyLoadedValue<>(ingredient);
   }
 
   public int getDurabilityForSlot(EquipmentSlot equipmentSlot) {
     return HEALTH_PER_SLOT[equipmentSlot.getIndex()] * this.durabilityMultiplier;
   }
 
-  public int getDefenseForSlot(EquipmentSlot EquipmentSlot) {
-    return this.slotProtections[EquipmentSlot.getIndex()];
+  public int getDefenseForSlot(EquipmentSlot equipmentSlot) {
+    return this.slotProtections[equipmentSlot.getIndex()];
   }
 
   public int getEnchantmentValue() {

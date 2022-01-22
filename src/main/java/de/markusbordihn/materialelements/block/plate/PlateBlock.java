@@ -19,9 +19,6 @@
 
 package de.markusbordihn.materialelements.block.plate;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
@@ -30,12 +27,9 @@ import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-import de.markusbordihn.materialelements.Constants;
 import de.markusbordihn.materialelements.block.PanelPlateBlock;
 
 public class PlateBlock extends PanelPlateBlock {
-
-  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   // We need a VoxelShape for each side to cover all faces and possibilities
   protected static final VoxelShape FLOOR_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 2.0, 16.0);
