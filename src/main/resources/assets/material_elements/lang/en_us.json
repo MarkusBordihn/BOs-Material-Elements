@@ -2,6 +2,8 @@
   "advancements.material_elements.crafting.root.title": "Material Elements",
   "advancements.material_elements.crafting.root.description": "Explore the additional materials and elements.",
 
+  "advancements.material_elements.crafting.cover_a_hopper_with_wood.description": "Cover a hopper with plates that it look more elegant.",
+  "advancements.material_elements.crafting.cover_a_hopper_with_wood.title": "Hoppers looking ugly, aren't there?",
   "advancements.material_elements.crafting.craft_cube_frame.description": "The cube frame could be used for crafting new blocks.",
   "advancements.material_elements.crafting.craft_cube_frame.title": "Let make a cube frame with rods.",
   "advancements.material_elements.crafting.craft_cube_glass_frame.description": "Looks like a solid container which could be used for more advanced blocks.",

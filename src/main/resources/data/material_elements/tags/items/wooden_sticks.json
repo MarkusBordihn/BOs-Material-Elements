@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements:acacia_stick",
+    "material_elements:birch_stick",
+    "material_elements:crimson_stick",
+    "material_elements:dark_oak_stick",
+    "material_elements:jungle_stick",
+    "material_elements:oak_stick",
+    "material_elements:spruce_stick",
+    "material_elements:warped_stick"
+  ]
+}
