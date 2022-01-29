@@ -130,6 +130,9 @@
   "block.material_elements.steel_block": "Steel Block",
   "block.material_elements.steel_ore": "Steel Ore",
 
+  "block.material_elements.charcoal_block": "Charcoal Block",
+  "block.material_elements.coke_block": "Coke Block",
+
   "block.material_elements.oak_panel": "Oak Panel",
   "block.material_elements.spruce_panel": "Spruce Panel",
   "block.material_elements.birch_panel": "Birch Panel",

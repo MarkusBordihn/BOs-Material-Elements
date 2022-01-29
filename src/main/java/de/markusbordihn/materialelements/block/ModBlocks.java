@@ -25,6 +25,7 @@ import net.minecraft.world.level.block.OreBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -283,6 +284,14 @@ public class ModBlocks {
   public static final RegistryObject<Block> STEEL_ORE =
       BLOCKS.register("steel_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
           .requiresCorrectToolForDrops().strength(3.0F, 3.0F)));
+
+  // Coke and Charcoal Block
+  public static final RegistryObject<Block> CHARCOAL_BLOCK = BLOCKS.register("charcoal_block",
+      () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLACK)
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
+  public static final RegistryObject<Block> COKE_BLOCK = BLOCKS.register("coke_block",
+      () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLACK)
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
 
   @TemplateEntryPoint("Register Entity")
 

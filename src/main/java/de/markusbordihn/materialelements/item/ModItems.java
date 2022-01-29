@@ -484,6 +484,14 @@ public class ModItems {
       ITEMS.register("steel_block", () -> new BlockItem(ModBlocks.STEEL_BLOCK.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
+  // Cokes and Charcoal Block
+  public static final RegistryObject<Item> CHARCOAL_BLOCK =
+      ITEMS.register("charcoal_block", () -> new CharcoalBlockItem(ModBlocks.CHARCOAL_BLOCK.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> COKE_BLOCK =
+      ITEMS.register("coke_block", () -> new CokeBlockItem(ModBlocks.COKE_BLOCK.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+
   // Ore
   public static final RegistryObject<Item> SILVER_ORE =
       ITEMS.register("silver_ore", () -> new BlockItem(ModBlocks.SILVER_ORE.get(),

@@ -1,5 +1,5 @@
 /**
- * Copyright 2021 Markus Bordihn
+ * Copyright 2022 Markus Bordihn
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -21,19 +21,20 @@ package de.markusbordihn.materialelements.item;
 
 import javax.annotation.Nullable;
 
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.level.block.Block;
 
-public class CokeItem extends Item {
+public class CharcoalBlockItem extends BlockItem {
 
-  public CokeItem(Properties properties) {
-    super(properties);
+  public CharcoalBlockItem(Block block, Properties properties) {
+    super(block, properties);
   }
 
   @Override
   public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
-    return 1900;
+    return 16000;
   }
 
 }

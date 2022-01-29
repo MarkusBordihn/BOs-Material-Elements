@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": {
+    "#": {
+      "item": "material_elements:coke"
+    }
+  },
+  "result": {
+    "item": "material_elements:coke_block"
+  }
+}
