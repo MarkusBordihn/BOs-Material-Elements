@@ -81,7 +81,6 @@ public class PanelBlock extends PanelPlateBlock {
   public boolean canBeReplaced(BlockState blockState, BlockPlaceContext context) {
     ItemStack itemStack = context.getItemInHand();
     if (itemStack.is(this.asItem())) {
-      log.info("What we are doing next ?");
       return true;
     }
     return false;
