@@ -39,7 +39,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 import de.markusbordihn.materialelements.Constants;
 
-public class PanelPlateBlock extends Block {
+public class MultiPlaceBlock extends Block {
 
   private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
@@ -55,7 +55,7 @@ public class PanelPlateBlock extends Block {
   protected static final VoxelShape FACING_NORTH_AABB = Block.box(0.0, 0.0, 15.0, 16.0, 16.0, 16.0);
   protected static final VoxelShape FACING_WEST_AABB = Block.box(15.0, 0.0, 0.0, 16.0, 16.0, 16.0);
 
-  public PanelPlateBlock(Properties properties) {
+  public MultiPlaceBlock(Properties properties) {
     super(properties);
     this.registerDefaultState(this.stateDefinition.any().setValue(ATTACH_FACE, AttachFace.FLOOR)
         .setValue(FACING, Direction.NORTH));

@@ -51,7 +51,7 @@ public class WoodPanelBlock extends PanelBlock {
   @Override
   // Chance that fire will spread and consume this block. 300 being a 100% chance
   public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-    return 100;
+    return 20;
   }
 
 }

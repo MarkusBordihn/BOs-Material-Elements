@@ -33,9 +33,9 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import de.markusbordihn.materialelements.Constants;
-import de.markusbordihn.materialelements.block.PanelPlateBlock;
+import de.markusbordihn.materialelements.block.MultiPlaceBlock;
 
-public class PanelBlock extends PanelPlateBlock {
+public class PanelBlock extends MultiPlaceBlock {
 
   private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
@@ -54,7 +54,7 @@ public class PanelBlock extends PanelPlateBlock {
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {
-    AttachFace attachFace = blockState.getValue(PanelPlateBlock.ATTACH_FACE);
+    AttachFace attachFace = blockState.getValue(MultiPlaceBlock.ATTACH_FACE);
     // Early return for simple face like ceiling and floor
     if (attachFace == AttachFace.CEILING) {
       return CEILING_AABB;
@@ -63,7 +63,7 @@ public class PanelBlock extends PanelPlateBlock {
     }
 
     // Handle the Wall faces for each direction
-    switch (blockState.getValue(PanelPlateBlock.FACING)) {
+    switch (blockState.getValue(MultiPlaceBlock.FACING)) {
       case NORTH:
         return FACING_NORTH_AABB;
       case EAST:

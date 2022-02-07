@@ -58,6 +58,12 @@ public class MaterialElementsTab {
     }
   };
 
+  public static final CreativeModeTab TAB_SLABS = new CreativeModeTab("slabs") {
+    public ItemStack makeIcon() {
+      return new ItemStack(ModItems.WOOL_SLAB_RED.get());
+    }
+  };
+
   public static final CreativeModeTab TAB_FRAMED_HOPPERS = new CreativeModeTab("framed_hoppers") {
     public ItemStack makeIcon() {
       return new ItemStack(ModItems.OAK_FRAMED_HOPPER.get());

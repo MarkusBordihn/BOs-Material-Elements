@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/template/slab",
+  "textures": {
+    "texture": "minecraft:block/cyan_wool",
+    "particle": "minecraft:block/cyan_wool"
+  }
+}

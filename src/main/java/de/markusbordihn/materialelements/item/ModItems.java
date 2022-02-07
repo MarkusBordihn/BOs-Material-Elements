@@ -31,8 +31,19 @@ import net.minecraftforge.registries.ForgeRegistries;
 import de.markusbordihn.materialelements.Constants;
 import de.markusbordihn.materialelements.Annotations.TemplateEntryPoint;
 import de.markusbordihn.materialelements.block.ModBlocks;
-import de.markusbordihn.materialelements.block.framedhopper.*;
-import de.markusbordihn.materialelements.item.testtube.*;
+import de.markusbordihn.materialelements.block.framedhopper.AcaciaFramedHopper;
+import de.markusbordihn.materialelements.block.framedhopper.BirchFramedHopper;
+import de.markusbordihn.materialelements.block.framedhopper.CrimsonFramedHopper;
+import de.markusbordihn.materialelements.block.framedhopper.DarkOakFramedHopper;
+import de.markusbordihn.materialelements.block.framedhopper.JungleFramedHopper;
+import de.markusbordihn.materialelements.block.framedhopper.OakFramedHopper;
+import de.markusbordihn.materialelements.block.framedhopper.SpruceFramedHopper;
+import de.markusbordihn.materialelements.block.framedhopper.WarpedFramedHopper;
+import de.markusbordihn.materialelements.item.testtube.TestTubeColorItem;
+import de.markusbordihn.materialelements.item.testtube.TestTubeCustomFoilItem;
+import de.markusbordihn.materialelements.item.testtube.TestTubeCustomItem;
+import de.markusbordihn.materialelements.item.testtube.TestTubeFilledItem;
+import de.markusbordihn.materialelements.item.testtube.TestTubeItem;
 import de.markusbordihn.materialelements.tabs.MaterialElementsTab;
 
 public class ModItems {
@@ -107,59 +118,71 @@ public class ModItems {
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
   // Test Tube Color (DyeColor)
-  private static final String TEST_TUBE_COLOR = "test_tube_color_";
+  private static final String TEST_TUBE_PREFIX = "test_tube_color_";
   public static final RegistryObject<Item> TEST_TUBE_COLOR_WHITE =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.WHITE.getName(), () -> new TestTubeColorItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.WHITE));
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.WHITE.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
+              DyeColor.WHITE));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_ORANGE =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.ORANGE.getName(), () -> new TestTubeColorItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.ORANGE));
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.ORANGE.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
+              DyeColor.ORANGE));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_MAGENTA =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.MAGENTA.getName(), () -> new TestTubeColorItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.MAGENTA));
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.MAGENTA.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
+              DyeColor.MAGENTA));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_LIGHT_BLUE =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.LIGHT_BLUE.getName(),
-          () -> new TestTubeColorItem(
-              (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES),
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.LIGHT_BLUE.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
               DyeColor.LIGHT_BLUE));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_YELLOW =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.YELLOW.getName(), () -> new TestTubeColorItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.YELLOW));
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.YELLOW.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
+              DyeColor.YELLOW));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_LIME =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.LIME.getName(), () -> new TestTubeColorItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.LIME));
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.LIME.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
+              DyeColor.LIME));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_PINK =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.PINK.getName(), () -> new TestTubeColorItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.PINK));
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.PINK.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
+              DyeColor.PINK));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_GRAY =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.GRAY.getName(), () -> new TestTubeColorItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.GRAY));
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.GRAY.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
+              DyeColor.GRAY));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_LIGHT_GRAY =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.LIGHT_GRAY.getName(),
-          () -> new TestTubeColorItem(
-              (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES),
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.LIGHT_GRAY.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
               DyeColor.LIGHT_GRAY));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_CYAN =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.CYAN.getName(), () -> new TestTubeColorItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.CYAN));
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.CYAN.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
+              DyeColor.CYAN));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_PURPLE =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.PURPLE.getName(), () -> new TestTubeColorItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.PURPLE));
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.PURPLE.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
+              DyeColor.PURPLE));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_BLUE =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.BLUE.getName(), () -> new TestTubeColorItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.BLUE));
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.BLUE.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
+              DyeColor.BLUE));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_BROWN =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.BROWN.getName(), () -> new TestTubeColorItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.BROWN));
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.BROWN.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
+              DyeColor.BROWN));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_GREEN =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.GREEN.getName(), () -> new TestTubeColorItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.GREEN));
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.GREEN.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
+              DyeColor.GREEN));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_RED =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.RED.getName(), () -> new TestTubeColorItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.RED));
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.RED.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
+              DyeColor.RED));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_BLACK =
-      ITEMS.register(TEST_TUBE_COLOR + DyeColor.BLACK.getName(), () -> new TestTubeColorItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.BLACK));
+      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.BLACK.getName(),
+          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
+              DyeColor.BLACK));
 
   // Test Tube (custom)
   public static final RegistryObject<Item> TEST_TUBE_WATER =
@@ -199,6 +222,56 @@ public class ModItems {
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
   @TemplateEntryPoint("Register Block Items")
+
+  // Wool Slaps
+  public static final RegistryObject<Item> WOOL_SLAB_WHITE =
+      ITEMS.register("wool_slab_white", () -> new BlockItem(ModBlocks.WOOL_SLAB_WHITE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_ORANGE =
+      ITEMS.register("wool_slab_orange", () -> new BlockItem(ModBlocks.WOOL_SLAB_ORANGE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_MAGENTA =
+      ITEMS.register("wool_slab_magenta", () -> new BlockItem(ModBlocks.WOOL_SLAB_MAGENTA.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_LIGHT_BLUE = ITEMS
+      .register("wool_slab_light_blue", () -> new BlockItem(ModBlocks.WOOL_SLAB_LIGHT_BLUE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_YELLOW =
+      ITEMS.register("wool_slab_yellow", () -> new BlockItem(ModBlocks.WOOL_SLAB_YELLOW.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_LIME =
+      ITEMS.register("wool_slab_lime", () -> new BlockItem(ModBlocks.WOOL_SLAB_LIME.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_PINK =
+      ITEMS.register("wool_slab_pink", () -> new BlockItem(ModBlocks.WOOL_SLAB_PINK.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_GRAY =
+      ITEMS.register("wool_slab_gray", () -> new BlockItem(ModBlocks.WOOL_SLAB_GRAY.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_LIGHT_GRAY = ITEMS
+      .register("wool_slab_light_gray", () -> new BlockItem(ModBlocks.WOOL_SLAB_LIGHT_GRAY.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_CYAN =
+      ITEMS.register("wool_slab_cyan", () -> new BlockItem(ModBlocks.WOOL_SLAB_CYAN.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_PURPLE =
+      ITEMS.register("wool_slab_purple", () -> new BlockItem(ModBlocks.WOOL_SLAB_PURPLE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_BLUE =
+      ITEMS.register("wool_slab_blue", () -> new BlockItem(ModBlocks.WOOL_SLAB_BLUE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_BROWN =
+      ITEMS.register("wool_slab_brown", () -> new BlockItem(ModBlocks.WOOL_SLAB_BROWN.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_GREEN =
+      ITEMS.register("wool_slab_green", () -> new BlockItem(ModBlocks.WOOL_SLAB_GREEN.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_RED =
+      ITEMS.register("wool_slab_red", () -> new BlockItem(ModBlocks.WOOL_SLAB_RED.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+  public static final RegistryObject<Item> WOOL_SLAB_BLACK =
+      ITEMS.register("wool_slab_black", () -> new BlockItem(ModBlocks.WOOL_SLAB_BLACK.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
 
   // Wooden Panels
   public static final RegistryObject<Item> OAK_PANEL =
@@ -525,5 +598,4 @@ public class ModItems {
   public static final RegistryObject<Item> WARPED_FRAMED_HOPPER = ITEMS
       .register(WarpedFramedHopper.NAME, () -> new BlockItem(ModBlocks.WARPED_FRAMED_HOPPER.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_FRAMED_HOPPERS)));
-
 }

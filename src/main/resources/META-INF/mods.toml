@@ -21,10 +21,11 @@ license="MIT"
     modId="material_elements"
     version="${file.jarVersion}"
     displayName="Material Elements"
+    displayURL="https://www.curseforge.com/minecraft/mc-mods/material-elements"
     logoFile="logo.png"
     credits=""
     authors="Markus Bordihn"
-    description='''Material Elements is a Minecraft Forge Mod which adds additional materials and elements (like copper nuggets, steel, coke) for other related mods.'''
+    description='''Material Elements is a Minecraft Forge Mod which adds additional materials and elements (like copper nuggets, steel, coke).'''
 
 [[dependencies.forge]]
     modId="forge"

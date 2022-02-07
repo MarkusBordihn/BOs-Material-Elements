@@ -74,6 +74,12 @@ Plates and half-size slabs are used for other stuff.
 - Crimson Panel / Plate
 - Warped Panel / Plate
 
+### Wool Slabs
+
+Wool Slabs are used for decoration and could be placed vertical or horizontal.
+
+![Wool Slab][wool_slab]
+
 ### 📦 Blocks
 
 - Silver Block
@@ -193,32 +199,33 @@ It is classified between Iron and Diamond with the following stats.
 If you want to use the mod blocks and items for your own mod just add it as dependency and all elements are automatically available for your mod.
 Please check [Developer Wiki][dev-wiki] for the details steps.
 
-[acacia_stick]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/item/small/acacia_stick.png
-[birch_stick]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/item/small/birch_stick.png
-[crimson_stick]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/item/small/crimson_stick.png
-[cube_frame]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/block/small/cube_frame.png
-[cube_glass_frame]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/block/small/cube_glass_frame.png
-[dark_oak_stick]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/item/small/dark_oak_stick.png
+[acacia_stick]: examples/item/small/acacia_stick.png
+[birch_stick]: examples/item/small/birch_stick.png
+[crimson_stick]: examples/item/small/crimson_stick.png
+[cube_frame]: examples/block/small/cube_frame.png
+[cube_glass_frame]: examples/block/small/cube_glass_frame.png
+[dark_oak_stick]: examples/item/small/dark_oak_stick.png
 [dev-wiki]: https://github.com/MarkusBordihn/BOs-Material-Elements/wiki
 [easy-mob-farm]: https://www.curseforge.com/minecraft/mc-mods/easy-mob-farm
-[framed_hopper]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/block/small/framed_hopper.png
-[framed_hopper_side]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/block/small/framed_hopper_side.png
+[framed_hopper]: examples/block/small/framed_hopper.png
+[framed_hopper_side]: examples/block/small/framed_hopper_side.png
 [glow-sticks]: https://www.curseforge.com/minecraft/mc-mods/glow-sticks
-[half-slab]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/block/small/half_slab.png
-[jungle_stick]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/item/small/jungle_stick.png
-[logo]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/material-elements.gif
-[oak_stick]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/item/small/oak_stick.png
-[panel]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/block/small/panel.png
-[plate]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/block/small/plate.png
-[rod]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/block/small/rod.png
-[rod_cross]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/block/small/rod_cross.png
-[rod_elbow]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/block/small/rod_elbow.png
-[rod_half_size]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/block/small/rod_half_size.png
-[rod_star]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/block/small/rod_star.png
-[rod_tee]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/block/small/rod_tee.png
-[rod_tee_elbow]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/block/small/rod_tee_elbow.png
-[spruce_stick]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/item/small/spruce_stick.png
+[half-slab]: examples/block/small/half_slab.png
+[jungle_stick]: examples/item/small/jungle_stick.png
+[logo]: examples/material-elements.gif
+[oak_stick]: examples/item/small/oak_stick.png
+[panel]: examples/block/small/panel.png
+[plate]: examples/block/small/plate.png
+[rod]: examples/block/small/rod.png
+[rod_cross]: examples/block/small/rod_cross.png
+[rod_elbow]: examples/block/small/rod_elbow.png
+[rod_half_size]: examples/block/small/rod_half_size.png
+[rod_star]: examples/block/small/rod_star.png
+[rod_tee]: examples/block/small/rod_tee.png
+[rod_tee_elbow]: examples/block/small/rod_tee_elbow.png
+[spruce_stick]: examples/item/small/spruce_stick.png
 [steel-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/steel-armor-tools-and-weapons
-[test_tube]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/item/small/test_tube.png
-[test_tube_filled]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/item/small/test_tube_filled.png
-[warped_stick]: https://raw.githubusercontent.com/MarkusBordihn/BOs-Material-Elements/main/examples/item/small/warped_stick.png
+[test_tube]: examples/item/small/test_tube.png
+[test_tube_filled]: examples/item/small/test_tube_filled.png
+[warped_stick]: examples/item/small/warped_stick.png
+[wool_slab]: examples/screenshots/wool_slab.png

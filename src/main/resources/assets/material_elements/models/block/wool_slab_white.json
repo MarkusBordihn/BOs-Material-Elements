@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/template/slab",
+  "textures": {
+    "texture": "minecraft:block/white_wool",
+    "particle": "minecraft:block/white_wool"
+  }
+}

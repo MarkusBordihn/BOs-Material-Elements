@@ -160,6 +160,23 @@
   "block.material_elements.crimson_half_slab": "Crimson half-size Slab",
   "block.material_elements.warped_half_slab": "Warped half-size Slab",
 
+  "block.material_elements.wool_slab_white": "Wool Slab (white)",
+  "block.material_elements.wool_slab_orange": "Wool Slab (orange)",
+  "block.material_elements.wool_slab_magenta": "Wool Slab (magenta)",
+  "block.material_elements.wool_slab_light_blue": "Wool Slab (light blue)",
+  "block.material_elements.wool_slab_yellow": "Wool Slab (yellow)",
+  "block.material_elements.wool_slab_lime": "Wool Slab (lime)",
+  "block.material_elements.wool_slab_pink": "Wool Slab (pink)",
+  "block.material_elements.wool_slab_gray": "Wool Slab (gray)",
+  "block.material_elements.wool_slab_light_gray": "Wool Slab (light gray)",
+  "block.material_elements.wool_slab_cyan": "Wool Slab (cyan)",
+  "block.material_elements.wool_slab_purple": "Wool Slab (purple)",
+  "block.material_elements.wool_slab_blue": "Wool Slab (blue)",
+  "block.material_elements.wool_slab_brown": "Wool Slab (brown)",
+  "block.material_elements.wool_slab_green": "Wool Slab (green)",
+  "block.material_elements.wool_slab_red": "Wool Slab (red)",
+  "block.material_elements.wool_slab_black": "Wool Slab (black)",
+
   "block.placeholder.text": "Template placeholder do not remove!",
 
   "item.material_elements.oak_framed_hopper": "Oak framed Hopper",
@@ -263,9 +280,10 @@
   "text.material_elements.leather_strip": "A raw leather strip which is used for leather crafting or as ingredient for crafting recipes.",
 
   "itemGroup.cube_frames": "Material & Elements: Cube Frames",
+  "itemGroup.framed_hoppers": "Material & Elements: Framed Hoppers",
   "itemGroup.leather": "Material & Elements: Leather",
   "itemGroup.panel_plates": "Material & Elements: Panel & Plates",
   "itemGroup.rods": "Material & Elements: Rods",
-  "itemGroup.test_tubes": "Material & Elements: Test Tubes",
-  "itemGroup.framed_hoppers": "Material & Elements: Framed Hoppers"
+  "itemGroup.slabs": "Material & Elements: Slabs",
+  "itemGroup.test_tubes": "Material & Elements: Test Tubes"
 }

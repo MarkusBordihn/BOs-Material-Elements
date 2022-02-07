@@ -27,9 +27,9 @@ import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-import de.markusbordihn.materialelements.block.PanelPlateBlock;
+import de.markusbordihn.materialelements.block.MultiPlaceBlock;
 
-public class PlateBlock extends PanelPlateBlock {
+public class PlateBlock extends MultiPlaceBlock {
 
   // We need a VoxelShape for each side to cover all faces and possibilities
   protected static final VoxelShape FLOOR_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 2.0, 16.0);
@@ -46,7 +46,7 @@ public class PlateBlock extends PanelPlateBlock {
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {
-    AttachFace attachFace = blockState.getValue(PanelPlateBlock.ATTACH_FACE);
+    AttachFace attachFace = blockState.getValue(MultiPlaceBlock.ATTACH_FACE);
     // Early return for simple face like ceiling and floor
     if (attachFace == AttachFace.CEILING) {
       return CEILING_AABB;
@@ -55,7 +55,7 @@ public class PlateBlock extends PanelPlateBlock {
     }
 
     // Handle the Wall faces for each direction
-    switch (blockState.getValue(PanelPlateBlock.FACING)) {
+    switch (blockState.getValue(MultiPlaceBlock.FACING)) {
       case NORTH:
         return FACING_NORTH_AABB;
       case EAST:

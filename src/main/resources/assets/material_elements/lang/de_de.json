@@ -134,6 +134,23 @@
   "block.material_elements.crimson_half_slab": "Crimson halbgroße Platte",
   "block.material_elements.warped_half_slab": "Verzogene halbgroße Platte",
 
+  "block.material_elements.wool_slab_white": "Wollplatte (weiß)",
+  "block.material_elements.wool_slab_orange": "Wollplatte (orange)",
+  "block.material_elements.wool_slab_magenta": "Wollplatte (magenta)",
+  "block.material_elements.wool_slab_light_blue": "Wollplatte (hellblau)",
+  "block.material_elements.wool_slab_yellow": "Wollplatte (gelb)",
+  "block.material_elements.wool_slab_lime": "Wollplatte (Kalk)",
+  "block.material_elements.wool_slab_pink": "Wollplatte (rosa)",
+  "block.material_elements.wool_slab_gray": "Wollplatte (grau)",
+  "block.material_elements.wool_slab_light_gray": "Wollplatte (hellgrau)",
+  "block.material_elements.wool_slab_cyan": "Wollplatte (cyan)",
+  "block.material_elements.wool_slab_purple": "Wollplatte (lila)",
+  "block.material_elements.wool_slab_blue": "Wollplatte (blau)",
+  "block.material_elements.wool_slab_brown": "Wollplatte (braun)",
+  "block.material_elements.wool_slab_green": "Wollplatte (grün)",
+  "block.material_elements.wool_slab_red": "Wollplatte (rot)",
+  "block.material_elements.wool_slab_black": "Wollplatte (schwarz)",
+
   "block.placeholder.text": "Template placeholder do not remove!",
 
   "item.material_elements.coke": "Koks",
@@ -229,5 +246,6 @@
   "itemGroup.leather": "Material & Elements: Leder",
   "itemGroup.panel_plates": "Material & Elemente: Paneele & Platten",
   "itemGroup.rods": "Material & Elemente: Stangen",
+  "itemGroup.slabs": "Material & Elemente: Platten",
   "itemGroup.test_tubes": "Material & Elemente: Reagenzgläser"
 }
