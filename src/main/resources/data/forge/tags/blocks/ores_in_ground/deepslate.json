@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements:deepslate_silver_ore",
+    "material_elements:deepslate_steel_ore"
+  ]
+}

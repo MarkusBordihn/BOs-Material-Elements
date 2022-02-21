@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": {
+    "#": {
+      "item": "material_elements:raw_steel"
+    }
+  },
+  "result": {
+    "item": "material_elements:raw_steel_block"
+  }
+}

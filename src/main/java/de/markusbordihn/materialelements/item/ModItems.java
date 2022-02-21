@@ -114,6 +114,8 @@ public class ModItems {
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
   // Raw Material
+  public static final RegistryObject<Item> RAW_SILVER = ITEMS.register("raw_silver",
+      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
   public static final RegistryObject<Item> RAW_STEEL = ITEMS.register("raw_steel",
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
@@ -557,6 +559,14 @@ public class ModItems {
       ITEMS.register("steel_block", () -> new BlockItem(ModBlocks.STEEL_BLOCK.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
+  // Raw Blocks
+  public static final RegistryObject<Item> RAW_SILVER_BLOCK =
+      ITEMS.register("raw_silver_block", () -> new BlockItem(ModBlocks.RAW_SILVER_BLOCK.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> RAW_STEEL_BLOCK =
+      ITEMS.register("raw_steel_block", () -> new BlockItem(ModBlocks.RAW_STEEL_BLOCK.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+
   // Cokes and Charcoal Block
   public static final RegistryObject<Item> CHARCOAL_BLOCK =
       ITEMS.register("charcoal_block", () -> new CharcoalBlockItem(ModBlocks.CHARCOAL_BLOCK.get(),
@@ -565,12 +575,18 @@ public class ModItems {
       ITEMS.register("coke_block", () -> new CokeBlockItem(ModBlocks.COKE_BLOCK.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
-  // Ore
+  // Ores
   public static final RegistryObject<Item> SILVER_ORE =
       ITEMS.register("silver_ore", () -> new BlockItem(ModBlocks.SILVER_ORE.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> DEEPSLATE_SILVER_ORE =
+      ITEMS.register("deepslate_silver_ore", () -> new BlockItem(ModBlocks.DEEPSLATE_SILVER_ORE.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
   public static final RegistryObject<Item> STEEL_ORE =
       ITEMS.register("steel_ore", () -> new BlockItem(ModBlocks.STEEL_ORE.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> DEEPSLATE_STEEL_ORE =
+      ITEMS.register("deepslate_steel_ore", () -> new BlockItem(ModBlocks.DEEPSLATE_STEEL_ORE.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
   // Wooden framed Hoppers

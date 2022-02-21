@@ -126,9 +126,13 @@
 
   "block.material_elements.silver_block": "Silver Block",
   "block.material_elements.silver_ore": "Silver Ore",
+  "block.material_elements.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.material_elements.raw_silver_block": "Raw Silver Block",
 
   "block.material_elements.steel_block": "Steel Block",
   "block.material_elements.steel_ore": "Steel Ore",
+  "block.material_elements.deepslate_steel_ore": "Deepslate Steel Ore",
+  "block.material_elements.raw_steel_block": "Raw Steel Block",
 
   "block.material_elements.charcoal_block": "Charcoal Block",
   "block.material_elements.coke_block": "Coke Block",
@@ -190,12 +194,13 @@
 
   "item.material_elements.coke": "Coke",
   "item.material_elements.copper_nugget": "Copper Nugget",
+  "item.material_elements.netherite_nugget": "Netherite Nugget",
+  "item.material_elements.raw_silver": "Raw Silver",
+  "item.material_elements.raw_steel": "Raw Steel",
   "item.material_elements.silver_ingot": "Silver Ingot",
   "item.material_elements.silver_nugget": "Silver Nugget",
-  "item.material_elements.netherite_nugget": "Netherite Nugget",
   "item.material_elements.steel_ingot": "Steel Ingot",
   "item.material_elements.steel_nugget": "Steel Nugget",
-  "item.material_elements.raw_steel": "Raw Steel",
 
   "item.material_elements.oak_stick": "Oak Stick",
   "item.material_elements.spruce_stick": "Spruce Stick",

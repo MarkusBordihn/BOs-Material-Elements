@@ -1,4 +1,4 @@
 {
   "replace": false,
-  "values": ["material_elements:steel_ore"]
+  "values": ["#material_elements:steel_ores"]
 }

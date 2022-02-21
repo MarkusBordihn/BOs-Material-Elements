@@ -25,7 +25,7 @@
                   }
                 }
               ],
-              "name": "material_elements:silver_ore"
+              "name": "material_elements:deepslate_steel_ore"
             },
             {
               "type": "minecraft:item",
@@ -39,7 +39,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "material_elements:raw_silver"
+              "name": "material_elements:raw_steel"
             }
           ]
         }

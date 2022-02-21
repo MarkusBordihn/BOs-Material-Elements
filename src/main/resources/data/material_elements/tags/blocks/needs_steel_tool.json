@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "material_elements:deepslate_steel_ore",
     "material_elements:netherite_rod",
     "material_elements:netherite_rod_cross",
     "material_elements:netherite_rod_half_size",

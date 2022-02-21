@@ -22,6 +22,7 @@ package de.markusbordihn.materialelements.block;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.OreBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -319,13 +320,25 @@ public class ModBlocks {
   public static final RegistryObject<Block> STEEL_BLOCK =
       BLOCKS.register("steel_block", () -> new Block(BlockType.STEEL));
 
+  // Raw Blocks
+  public static final RegistryObject<Block> RAW_SILVER_BLOCK =
+      BLOCKS.register("raw_silver_block", () -> new Block(BlockType.SILVER));
+  public static final RegistryObject<Block> RAW_STEEL_BLOCK =
+      BLOCKS.register("raw_steel_block", () -> new Block(BlockType.STEEL));
+
   // Ore
   public static final RegistryObject<Block> SILVER_ORE =
       BLOCKS.register("silver_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
           .requiresCorrectToolForDrops().strength(2.0F, 2.0F)));
+  public static final RegistryObject<Block> DEEPSLATE_SILVER_ORE = BLOCKS.register(
+      "deepslate_silver_ore", () -> new OreBlock(BlockBehaviour.Properties.copy(SILVER_ORE.get())
+          .color(MaterialColor.DEEPSLATE).strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE)));
   public static final RegistryObject<Block> STEEL_ORE =
       BLOCKS.register("steel_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
           .requiresCorrectToolForDrops().strength(3.0F, 3.0F)));
+  public static final RegistryObject<Block> DEEPSLATE_STEEL_ORE = BLOCKS.register(
+      "deepslate_steel_ore", () -> new OreBlock(BlockBehaviour.Properties.copy(STEEL_ORE.get())
+          .color(MaterialColor.DEEPSLATE).strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE)));
 
   // Coke and Charcoal Block
   public static final RegistryObject<Block> CHARCOAL_BLOCK = BLOCKS.register("charcoal_block",

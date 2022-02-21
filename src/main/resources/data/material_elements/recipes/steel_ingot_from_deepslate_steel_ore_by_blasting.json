@@ -2,7 +2,7 @@
   "type": "minecraft:blasting",
   "group": "silver_ingot",
   "ingredient": {
-    "item": "material_elements:steel_ore"
+    "item": "material_elements:deepslate_steel_ore"
   },
   "result": "material_elements:steel_ingot",
   "experience": 0.3,

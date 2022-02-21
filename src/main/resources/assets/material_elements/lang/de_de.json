@@ -103,9 +103,11 @@
 
   "block.material_elements.silver_block": "Silberblock",
   "block.material_elements.silver_ore": "Silbererz",
+  "block.material_elements.deepslate_silver_ore": "Tiefschiefer Silbererz",
 
   "block.material_elements.steel_block": "Stahlblock",
   "block.material_elements.steel_ore": "Stahlerz",
+  "block.material_elements.deepslate_steel_ore": "Tiefschiefer Stahlerz",
 
   "block.material_elements.oak_panel": "Eichenpaneel",
   "block.material_elements.spruce_panel": "Fichtenpaneel",
