@@ -36,7 +36,7 @@ import de.markusbordihn.materialelements.Constants;
 
 public class Rod extends RodComplexBlock {
 
-  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+  protected static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   protected static final VoxelShape FLOOR_CEILING_AABB = Block.box(7.0, 0.0, 7.0, 9.0, 16.0, 9.0);
   protected static final VoxelShape WALL_NORTH_SOUTH_AABB =

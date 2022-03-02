@@ -192,7 +192,8 @@ It is classified between Iron and Diamond with the following stats.
 | Fabric Version | ❌ Not planned        |
 | Forge 1.16.5   | ⚠️ Maintenance only   |
 | Forge 1.17.1   | ⚠️ Maintenance only   |
-| Forge 1.18.1   | ✔️ Active development |
+| Forge 1.18.1   | ⚠️ Maintenance only   |
+| Forge 1.18.2   | ✔️ Active development |
 
 ## Mod Integration 🚀
 

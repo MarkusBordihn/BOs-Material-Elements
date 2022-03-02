@@ -40,7 +40,7 @@ import de.markusbordihn.materialelements.item.testtube.TestTubeCustomItem;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModItemColors {
 
-  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+  protected static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   protected ModItemColors() {}
 

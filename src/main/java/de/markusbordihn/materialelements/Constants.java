@@ -19,8 +19,9 @@
 
 package de.markusbordihn.materialelements;
 
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.Tag;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 
 public final class Constants {
@@ -38,6 +39,6 @@ public final class Constants {
   public static final String TEXT_PREFIX = "text.material_elements.";
 
   // Tag definitions
-  public static final Tag.Named<Block> NEEDS_STEEL_TOOL =
-      BlockTags.bind(MOD_ID + "needs_steel_tool");
+  public static final TagKey<Block> NEEDS_STEEL_TOOL =
+      BlockTags.create(new ResourceLocation(MOD_ID, "needs_steel_tool"));
 }

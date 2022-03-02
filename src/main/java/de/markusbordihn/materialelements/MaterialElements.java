@@ -36,7 +36,7 @@ import de.markusbordihn.materialelements.item.ModPotions;
 @Mod(Constants.MOD_ID)
 public class MaterialElements {
 
-  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+  protected static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   public MaterialElements() {
     final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();

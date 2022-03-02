@@ -37,7 +37,7 @@ import de.markusbordihn.materialelements.Constants;
 
 public class RodElbow extends RodComplexBlock {
 
-  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+  protected static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   // Center block to fix gap between vertical and horizontal rod.
   protected static final VoxelShape CENTER_AABB = Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 9.0);

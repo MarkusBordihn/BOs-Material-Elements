@@ -52,7 +52,7 @@ import de.markusbordihn.materialelements.Constants;
 
 public class FramedHopperBlockEntity extends RandomizableContainerBlockEntity implements Hopper {
 
-  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+  protected static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   private NonNullList<ItemStack> items = NonNullList.withSize(5, ItemStack.EMPTY);
   private int cooldownTime = -1;
@@ -69,9 +69,8 @@ public class FramedHopperBlockEntity extends RandomizableContainerBlockEntity im
     blockEntity.tickedGameTime = level.getGameTime();
     if (!blockEntity.isOnCooldown()) {
       blockEntity.setCooldown(0);
-      tryMoveItems(level, blockPos, blockState, blockEntity, () -> {
-        return HopperBlockEntity.suckInItems(level, blockEntity);
-      });
+      tryMoveItems(level, blockPos, blockState, blockEntity,
+          () -> HopperBlockEntity.suckInItems(level, blockEntity));
     }
   }
 

@@ -41,7 +41,7 @@ import de.markusbordihn.materialelements.Constants;
 
 public class MultiPlaceBlock extends Block {
 
-  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+  protected static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   // Defines if we need to rotate the Object based on the click position and player pov
   public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;

@@ -30,7 +30,7 @@ import de.markusbordihn.materialelements.Constants;
 import de.markusbordihn.materialelements.block.ModBlocks;
 
 public class ClientRenderer {
-  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+  protected static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   protected ClientRenderer() {}
 

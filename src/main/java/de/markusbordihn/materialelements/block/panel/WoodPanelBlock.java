@@ -35,7 +35,7 @@ import de.markusbordihn.materialelements.Constants;
 
 public class WoodPanelBlock extends PanelBlock {
 
-  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+  protected static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   public WoodPanelBlock(MaterialColor materialColor) {
     super(BlockBehaviour.Properties.of(Material.WOOD, materialColor).strength(1.5F, 3.0F)

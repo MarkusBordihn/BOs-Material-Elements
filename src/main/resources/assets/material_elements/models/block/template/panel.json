@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench by Markus Bordihn",
 	"textures": {
-    "texture": "material_elements:block/panel",
-    "particle": "material_elements:block/panel"
-  },
+		"particle": "block/jungle_planks",
+		"texture": "block/jungle_planks"
+	},
 	"elements": [
 		{
 			"from": [0, 0, 0],
@@ -15,7 +15,7 @@
 				"south": {"uv": [0, 0, 16, 1], "rotation": 180, "texture": "#texture", "cullface": "south"},
 				"west": {"uv": [15, 0, 16, 16], "rotation": 90, "texture": "#texture", "cullface": "west"},
 				"up": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#texture"},
-				"down": {"uv": [16, 0, 0, 16], "texture": "#texture", "cullface": "down"}
+				"down": {"uv": [16, 0, 0, 16], "rotation": 180, "texture": "#texture", "cullface": "down"}
 			}
 		}
 	],

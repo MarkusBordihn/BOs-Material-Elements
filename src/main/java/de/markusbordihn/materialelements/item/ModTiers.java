@@ -75,7 +75,7 @@ public enum ModTiers implements Tier {
 
   @Override
   @javax.annotation.Nullable
-  public net.minecraft.tags.Tag<net.minecraft.world.level.block.Block> getTag() {
+  public net.minecraft.tags.TagKey<net.minecraft.world.level.block.Block> getTag() {
     return Constants.NEEDS_STEEL_TOOL;
   }
 }

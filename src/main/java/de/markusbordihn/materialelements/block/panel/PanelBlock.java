@@ -37,7 +37,7 @@ import de.markusbordihn.materialelements.block.MultiPlaceBlock;
 
 public class PanelBlock extends MultiPlaceBlock {
 
-  private static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+  protected static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
   // We need a VoxelShape for each side to cover all faces and possibilities
   protected static final VoxelShape FLOOR_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 1.0, 16.0);
