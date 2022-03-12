@@ -1,11 +1,17 @@
 [![Material and Elements Decorative Downloads](http://cf.way2muchnoise.eu/full_material-elements-decorative_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
-[![Material and Elements  Decorative Versions](http://cf.way2muchnoise.eu/versions/Minecraft_material-elements-decorative_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
+[![Material and Elements Decorative Versions](http://cf.way2muchnoise.eu/versions/Minecraft_material-elements-decorative_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
 
-# Material Elements: Decorative
+# Material Elements: Decorative
 
 Material Elements Decorative adds new decorative blocks and items for your world based on Material Elements.
 
 This mod requires [Bo's Material Elements][material-elements] as basis.
+
+## Version 3.x notes
+
+The version 3.x and higher is separated by use-cases to allow any easier integration.
+
+**Before you upgrade from version 2.x please make sure to create a backup and install the additional mods like [Material Elements Steel Armor, Tools and Weapons][material-elements-armor-tools-and-weapons] before re-loading the world.**
 
 ### 💡 Steel Lantern in different colors
 
@@ -82,6 +88,7 @@ This mods adds a lot of additional crafting recipes to allow the crafting of the
 | Forge 1.18.2   | ✔️ Active development |
 
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
+[material-elements-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons
 [framed_hopper]: examples/block/small/framed_hopper.png
 [framed_hopper_side]: examples/block/small/framed_hopper_side.png
 [half-slab]: examples/block/small/half_slab.png

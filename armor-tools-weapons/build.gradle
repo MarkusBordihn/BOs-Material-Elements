@@ -179,12 +179,13 @@ curseforge {
   project {
     id = "${curseforge_project_id}"
     changelog = file("../CHANGELOG.md")
-    releaseType = 'alpha'
+    releaseType = 'beta'
     addGameVersion("1.18.1")
     addGameVersion("Forge")
     mainArtifact(jar) {
       relations {
         requiredDependency 'material-elements'
+        optionalDependency 'material-elements-decorative'
       }
     }
   }

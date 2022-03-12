@@ -1,5 +1,5 @@
 {
-  "parent": "material_elements:crafting/root",
+  "parent": "material_elements:root",
   "display": {
     "icon": {
       "item": "material_elements:steel_rod"

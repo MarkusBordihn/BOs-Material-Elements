@@ -1,9 +1,9 @@
 [![Material and Elements Downloads](http://cf.way2muchnoise.eu/full_material-elements_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements)
 [![Material and Elements Versions](http://cf.way2muchnoise.eu/versions/Minecraft_material-elements_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements)
 
-# Bo's Material and Elements
+# Material and Elements
 
-![Bo's Material Elements][logo]
+![Material Elements][logo]
 
 Material and Elements is a Minecraft Forge Mod which adds additional materials and elements (like copper nuggets, steel, coke) for other related mods.
 
@@ -12,8 +12,8 @@ This mod is mostly useful for other mods which requires specific materials or el
 ## Version 3.x notes
 
 The version 3.x and higher is separated by use-cases to allow any easier integration.
-An upgrade from version 2.x will very likely remove some of the decorative blocks (framed hoppers, slabs, plate, panel, ...) which are moved to an separate mod.
-Please make sure to create a backup before you upgrade to the 3.x version.
+
+**Before you upgrade from version 2.x please make sure to create a backup and install the additional mods like [Material Elements: Decorative][material-elements-decorative] and [Material Elements Steel Armor, Tools and Weapons][material-elements-armor-tools-and-weapons] before re-loading the world.**
 
 ## 🛡️⛏️⚔️ Steel Armor, Tools and Weapons
 
@@ -193,3 +193,6 @@ Please check [Developer Wiki][dev-wiki] for the details steps.
 [test_tube]: examples/item/small/test_tube.png
 [test_tube_filled]: examples/item/small/test_tube_filled.png
 [warped_stick]: examples/item/small/warped_stick.png
+[material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
+[material-elements-decorative]: https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative
+[material-elements-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons
