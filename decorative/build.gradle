@@ -1,12 +1,12 @@
 buildscript {
-    repositories {
-        maven { url = 'https://maven.minecraftforge.net' }
-        mavenCentral()
-        jcenter()
-    }
-    dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-    }
+  repositories {
+    maven { url = 'https://maven.minecraftforge.net' }
+    mavenCentral()
+    jcenter()
+  }
+  dependencies {
+    classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+  }
 }
 
 plugins {
@@ -185,5 +185,10 @@ curseforge {
     releaseType = 'beta'
     addGameVersion("1.18.1")
     addGameVersion("Forge")
+    mainArtifact(jar) {
+      relations {
+        requiredDependency 'material-elements'
+      }
+    }
   }
 }

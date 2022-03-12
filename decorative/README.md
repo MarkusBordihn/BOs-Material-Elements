@@ -1,11 +1,34 @@
-[![Material and Elements Downloads](http://cf.way2muchnoise.eu/full_material-elements-decorative_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
-[![Material and Elements MC Versions](http://cf.way2muchnoise.eu/versions/Minecraft_material-elements-decorative_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
+[![Material and Elements Decorative Downloads](http://cf.way2muchnoise.eu/full_material-elements-decorative_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
+[![Material and Elements  Decorative Versions](http://cf.way2muchnoise.eu/versions/Minecraft_material-elements-decorative_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
 
 # Material Elements: Decorative
 
 Material Elements Decorative adds new decorative blocks and items for your world based on Material Elements.
 
-This mod requires Material Elements as basis.
+This mod requires [Bo's Material Elements][material-elements] as basis.
+
+### 💡 Steel Lantern in different colors
+
+- White
+- Orange
+- Magenta
+- Light Blue
+- Yellow
+- Lime
+- Pink
+- Gray
+- Light Gray
+- Cyan
+- Purple
+- Blue
+- Brown
+- Green
+- Red
+- Black
+
+### ⛓️ Decorations
+
+- Steel Chain
 
 ### 🖾 Wooden Framed Hoppers
 
@@ -53,11 +76,12 @@ This mods adds a lot of additional crafting recipes to allow the crafting of the
 | Version        | Status                |
 | -------------- | --------------------- |
 | Fabric Version | ❌ Not planned        |
-| Forge 1.16.5   | ⚠️ Maintenance only   |
-| Forge 1.17.1   | ⚠️ Maintenance only   |
-| Forge 1.18.2   | ⚠️ Maintenance only   |
-| Forge 1.18.1   | ✔️ Active development |
+| Forge 1.16.5   | ❌ Not planned        |
+| Forge 1.17.1   | ❌ Not planned        |
+| Forge 1.18.1   | ⚠️ Maintenance only   |
+| Forge 1.18.2   | ✔️ Active development |
 
+[material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
 [framed_hopper]: examples/block/small/framed_hopper.png
 [framed_hopper_side]: examples/block/small/framed_hopper_side.png
 [half-slab]: examples/block/small/half_slab.png

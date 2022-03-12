@@ -20,6 +20,8 @@
 package de.markusbordihn.minecraft.materialelementsdecorative.item;
 
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -36,6 +38,7 @@ import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.
 import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.OakFramedHopper;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.SpruceFramedHopper;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.WarpedFramedHopper;
+import de.markusbordihn.minecraft.materialelementsdecorative.item.lantern.SteelLanternItem;
 import de.markusbordihn.minecraft.materialelementsdecorative.tabs.MaterialElementsTab;
 import de.markusbordihn.minecraft.materialelementsdecorative.Annotations.TemplateEntryPoint;
 
@@ -52,6 +55,54 @@ public class ModItems {
   String test = "Test";
 
   @TemplateEntryPoint("Register Block Items")
+
+  // Steel Chain
+  public static final RegistryObject<Item> STEEL_CHAIN =
+      ITEMS.register("steel_chain", () -> new BlockItem(ModBlocks.STEEL_CHAIN.get(),
+          new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+
+  // Steel Lantern
+  public static final RegistryObject<Item> STEEL_LANTERN =
+      ITEMS.register("steel_lantern", () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN.get()));
+  public static final RegistryObject<Item> STEEL_SOUL_LANTERN = ITEMS.register("steel_soul_lantern",
+      () -> new SteelLanternItem(ModBlocks.STEEL_SOUL_LANTERN.get()));
+
+  // Steel Lantern (colored)
+  public static final RegistryObject<Item> STEEL_LANTERN_WHITE = ITEMS.register(
+      "steel_lantern_white", () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_WHITE.get()));
+  public static final RegistryObject<Item> STEEL_LANTERN_ORANGE = ITEMS.register(
+      "steel_lantern_orange", () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_ORANGE.get()));
+  public static final RegistryObject<Item> STEEL_LANTERN_MAGENTA = ITEMS.register(
+      "steel_lantern_magenta", () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_MAGENTA.get()));
+  public static final RegistryObject<Item> STEEL_LANTERN_LIGHT_BLUE =
+      ITEMS.register("steel_lantern_light_blue",
+          () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_LIGHT_BLUE.get()));
+  public static final RegistryObject<Item> STEEL_LANTERN_YELLOW = ITEMS.register(
+      "steel_lantern_yellow", () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_YELLOW.get()));
+  public static final RegistryObject<Item> STEEL_LANTERN_LIME = ITEMS.register("steel_lantern_lime",
+      () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_LIME.get()));
+  public static final RegistryObject<Item> STEEL_LANTERN_PINK = ITEMS.register("steel_lantern_pink",
+      () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_PINK.get()));
+  public static final RegistryObject<Item> STEEL_LANTERN_GRAY = ITEMS.register("steel_lantern_gray",
+      () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_GRAY.get()));
+  public static final RegistryObject<Item> STEEL_LANTERN_LIGHT_GRAY =
+      ITEMS.register("steel_lantern_light_gray",
+          () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_LIGHT_GRAY.get()));
+  public static final RegistryObject<Item> STEEL_LANTERN_CYAN = ITEMS.register("steel_lantern_cyan",
+      () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_CYAN.get()));
+  public static final RegistryObject<Item> STEEL_LANTERN_PURPLE = ITEMS.register(
+      "steel_lantern_purple", () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_PURPLE.get()));
+  public static final RegistryObject<Item> STEEL_LANTERN_BROWN = ITEMS.register(
+      "steel_lantern_brown", () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_BROWN.get()));
+  public static final RegistryObject<Item> STEEL_LANTERN_BLUE = ITEMS.register("steel_lantern_blue",
+      () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_BLUE.get(), DyeColor.BLUE));
+  public static final RegistryObject<Item> STEEL_LANTERN_GREEN =
+      ITEMS.register("steel_lantern_green",
+          () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_GREEN.get(), DyeColor.GREEN));
+  public static final RegistryObject<Item> STEEL_LANTERN_RED = ITEMS.register("steel_lantern_red",
+      () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_RED.get()));
+  public static final RegistryObject<Item> STEEL_LANTERN_BLACK = ITEMS.register(
+      "steel_lantern_black", () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_BLACK.get()));
 
   // Wool Slaps
   public static final RegistryObject<Item> WOOL_SLAB_WHITE = ITEMS.register("wool_slab_white",

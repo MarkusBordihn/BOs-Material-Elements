@@ -21,7 +21,7 @@ package de.markusbordihn.minecraft.materialelementsdecorative.client.color;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
+import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.world.item.ItemStack;
 
 import net.minecraftforge.api.distmarker.Dist;
@@ -31,6 +31,8 @@ import net.minecraftforge.fml.common.Mod;
 
 import de.markusbordihn.minecraft.materialelementsdecorative.Constants;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.ColoredItem;
+import de.markusbordihn.minecraft.materialelementsdecorative.item.ModItems;
+import de.markusbordihn.minecraft.materialelementsdecorative.item.lantern.SteelLanternItem;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModItemColors {
@@ -41,14 +43,34 @@ public class ModItemColors {
 
   @SubscribeEvent
   public static void registerItemColors(ColorHandlerEvent.Item event) {
+    ItemColors itemColors = event.getItemColors();
 
     log.info("{} Item Colors ...", Constants.LOG_REGISTER_PREFIX);
+
+    // Use dye color for the colored lanterns.
+    itemColors.register(ModItemColors::getColorFromSteelLantern, ModItems.STEEL_LANTERN.get(),
+        ModItems.STEEL_SOUL_LANTERN.get(), ModItems.STEEL_LANTERN_WHITE.get(),
+        ModItems.STEEL_LANTERN_ORANGE.get(), ModItems.STEEL_LANTERN_MAGENTA.get(),
+        ModItems.STEEL_LANTERN_LIGHT_BLUE.get(), ModItems.STEEL_LANTERN_YELLOW.get(),
+        ModItems.STEEL_LANTERN_LIME.get(), ModItems.STEEL_LANTERN_PINK.get(),
+        ModItems.STEEL_LANTERN_GRAY.get(), ModItems.STEEL_LANTERN_LIGHT_GRAY.get(),
+        ModItems.STEEL_LANTERN_CYAN.get(), ModItems.STEEL_LANTERN_PURPLE.get(),
+        ModItems.STEEL_LANTERN_BLUE.get(), ModItems.STEEL_LANTERN_BROWN.get(),
+        ModItems.STEEL_LANTERN_GREEN.get(), ModItems.STEEL_LANTERN_RED.get(),
+        ModItems.STEEL_LANTERN_BLACK.get());
 
   }
 
   public static int getColorFromColoredItem(ItemStack itemStack, int color) {
     if (color <= 0 && itemStack.getItem() instanceof ColoredItem coloredItem) {
       return coloredItem.getMaterialColor();
+    }
+    return -1;
+  }
+
+  public static int getColorFromSteelLantern(ItemStack itemStack, int color) {
+    if (color <= 0 && itemStack.getItem() instanceof SteelLanternItem steelLanternItem) {
+      return steelLanternItem.getColor().getMaterialColor().col;
     }
     return -1;
   }

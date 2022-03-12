@@ -41,6 +41,48 @@ public class ClientRenderer {
     event.enqueueWork(() -> {
       // @TemplateEntryPoint("Register Render Layers")
 
+      // Steel Chain
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_CHAIN.get(), RenderType.cutoutMipped());
+
+      // Steel Lantern (default)
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN.get(), RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_SOUL_LANTERN.get(),
+          RenderType.cutoutMipped());
+
+      // Steel Lantern (colored)
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_WHITE.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_ORANGE.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_MAGENTA.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_LIGHT_BLUE.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_YELLOW.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_LIME.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_PINK.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_GRAY.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_LIGHT_GRAY.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_CYAN.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_PURPLE.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_BLUE.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_BROWN.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_GREEN.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_RED.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_BLACK.get(),
+          RenderType.translucent());
+
       // Wooden framed hopper
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.OAK_FRAMED_HOPPER.get(),
           RenderType.cutoutMipped());

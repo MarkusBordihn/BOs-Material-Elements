@@ -28,11 +28,10 @@ public final class Constants {
   protected Constants() {}
 
   // General Mod definitions
-  public static final String LOG_NAME = "Bo's Material Elements";
+  public static final String LOG_NAME = "Material Elements";
   public static final String LOG_REGISTER_PREFIX = "🪨 Register Material Elements";
-  public static final String MOD_COMMAND = "material_elements";
   public static final String MOD_ID = "material_elements";
-  public static final String MOD_NAME = "Bo's Material Elements";
+  public static final String MOD_NAME = "Material Elements";
 
   // Prefixes
   public static final String TEXT_PREFIX = "text.material_elements.";

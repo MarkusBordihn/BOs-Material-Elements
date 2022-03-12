@@ -1,5 +1,5 @@
 [![Material and Elements Downloads](http://cf.way2muchnoise.eu/full_material-elements_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements)
-[![Material and Elements MC Versions](http://cf.way2muchnoise.eu/versions/Minecraft_material-elements_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements)
+[![Material and Elements Versions](http://cf.way2muchnoise.eu/versions/Minecraft_material-elements_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements)
 
 # Bo's Material and Elements
 
@@ -161,8 +161,8 @@ It is classified between Iron and Diamond with the following stats.
 | Fabric Version | ❌ Not planned        |
 | Forge 1.16.5   | ⚠️ Maintenance only   |
 | Forge 1.17.1   | ⚠️ Maintenance only   |
-| Forge 1.18.2   | ⚠️ Maintenance only   |
-| Forge 1.18.1   | ✔️ Active development |
+| Forge 1.18.1   | ⚠️ Maintenance only   |
+| Forge 1.18.2   | ✔️ Active development |
 
 ## Mod Integration 🚀
 

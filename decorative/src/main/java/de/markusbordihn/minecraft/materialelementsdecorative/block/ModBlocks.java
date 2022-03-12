@@ -19,9 +19,14 @@
 
 package de.markusbordihn.minecraft.materialelementsdecorative.block;
 
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ChainBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -45,6 +50,7 @@ import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.
 import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.entity.SpruceFramedHopperEntity;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.entity.WarpedFramedHopperEntity;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.halfslab.WoodHalfSlabBlock;
+import de.markusbordihn.minecraft.materialelementsdecorative.block.lantern.SteelLanternBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.panel.WoodPanelBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.plate.WoodPlateBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.slab.WoolSlabBlock;
@@ -64,6 +70,58 @@ public class ModBlocks {
       .create(ForgeRegistries.BLOCK_ENTITIES, Constants.MOD_ID);
 
   @TemplateEntryPoint("Register Blocks")
+
+  // Steel Chain
+  public static final RegistryObject<Block> STEEL_CHAIN = BLOCKS.register("steel_chain",
+      () -> new ChainBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE)
+          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.CHAIN)
+          .noOcclusion()));
+
+  // Steel Lantern
+  public static final RegistryObject<Block> STEEL_LANTERN =
+      BLOCKS.register("steel_lantern", () -> new SteelLanternBlock(DyeColor.YELLOW));
+  public static final RegistryObject<Block> STEEL_SOUL_LANTERN =
+      BLOCKS.register("steel_soul_lantern",
+          () -> new SteelLanternBlock(
+              BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops()
+                  .strength(3.5F).sound(SoundType.LANTERN).lightLevel((blockState) -> {
+                    return 10;
+                  }).noOcclusion(),
+              DyeColor.LIGHT_BLUE));
+
+  // Steel Lantern (colored)
+  public static final RegistryObject<Block> STEEL_LANTERN_WHITE =
+      BLOCKS.register("steel_lantern_white", () -> new SteelLanternBlock(DyeColor.WHITE));
+  public static final RegistryObject<Block> STEEL_LANTERN_ORANGE =
+      BLOCKS.register("steel_lantern_orange", () -> new SteelLanternBlock(DyeColor.ORANGE));
+  public static final RegistryObject<Block> STEEL_LANTERN_MAGENTA =
+      BLOCKS.register("steel_lantern_magenta", () -> new SteelLanternBlock(DyeColor.MAGENTA));
+  public static final RegistryObject<Block> STEEL_LANTERN_LIGHT_BLUE =
+      BLOCKS.register("steel_lantern_light_blue", () -> new SteelLanternBlock(DyeColor.LIGHT_BLUE));
+  public static final RegistryObject<Block> STEEL_LANTERN_YELLOW =
+      BLOCKS.register("steel_lantern_yellow", () -> new SteelLanternBlock(DyeColor.YELLOW));
+  public static final RegistryObject<Block> STEEL_LANTERN_LIME =
+      BLOCKS.register("steel_lantern_lime", () -> new SteelLanternBlock(DyeColor.LIME));
+  public static final RegistryObject<Block> STEEL_LANTERN_PINK =
+      BLOCKS.register("steel_lantern_pink", () -> new SteelLanternBlock(DyeColor.PINK));
+  public static final RegistryObject<Block> STEEL_LANTERN_GRAY =
+      BLOCKS.register("steel_lantern_gray", () -> new SteelLanternBlock(DyeColor.GRAY));
+  public static final RegistryObject<Block> STEEL_LANTERN_LIGHT_GRAY =
+      BLOCKS.register("steel_lantern_light_gray", () -> new SteelLanternBlock(DyeColor.LIGHT_GRAY));
+  public static final RegistryObject<Block> STEEL_LANTERN_CYAN =
+      BLOCKS.register("steel_lantern_cyan", () -> new SteelLanternBlock(DyeColor.CYAN));
+  public static final RegistryObject<Block> STEEL_LANTERN_PURPLE =
+      BLOCKS.register("steel_lantern_purple", () -> new SteelLanternBlock(DyeColor.PURPLE));
+  public static final RegistryObject<Block> STEEL_LANTERN_BLUE =
+      BLOCKS.register("steel_lantern_blue", () -> new SteelLanternBlock(DyeColor.BLUE));
+  public static final RegistryObject<Block> STEEL_LANTERN_BROWN =
+      BLOCKS.register("steel_lantern_brown", () -> new SteelLanternBlock(DyeColor.BROWN));
+  public static final RegistryObject<Block> STEEL_LANTERN_GREEN =
+      BLOCKS.register("steel_lantern_green", () -> new SteelLanternBlock(DyeColor.GREEN));
+  public static final RegistryObject<Block> STEEL_LANTERN_RED =
+      BLOCKS.register("steel_lantern_red", () -> new SteelLanternBlock(DyeColor.RED));
+  public static final RegistryObject<Block> STEEL_LANTERN_BLACK =
+      BLOCKS.register("steel_lantern_black", () -> new SteelLanternBlock(DyeColor.BLACK));
 
   // Wool Slaps
   public static final RegistryObject<Block> WOOL_SLAB_WHITE = BLOCKS.register("wool_slab_white",
