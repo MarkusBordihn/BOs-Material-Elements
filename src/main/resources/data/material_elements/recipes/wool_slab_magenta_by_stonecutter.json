@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:magenta_wool"
-  },
-  "result": "material_elements:wool_slab_magenta",
-  "count": 2
-}

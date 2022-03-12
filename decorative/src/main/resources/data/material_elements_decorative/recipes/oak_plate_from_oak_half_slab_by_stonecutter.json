@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "material_elements_decorative:oak_half_slab"
+  },
+  "result": "material_elements_decorative:oak_plate",
+  "count": 2
+}

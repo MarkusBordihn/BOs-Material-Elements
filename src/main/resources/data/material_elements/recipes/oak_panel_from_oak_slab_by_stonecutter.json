@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:oak_slab"
-  },
-  "result": "material_elements:oak_panel",
-  "count": 4
-}

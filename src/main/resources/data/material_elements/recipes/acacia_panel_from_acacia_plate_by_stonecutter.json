@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "material_elements:acacia_plate"
-  },
-  "result": "material_elements:acacia_panel",
-  "count": 2
-}

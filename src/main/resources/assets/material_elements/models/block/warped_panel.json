@@ -1,7 +1,0 @@
-{
-  "parent": "material_elements:block/template/panel",
-  "textures": {
-    "texture": "minecraft:block/warped_planks",
-    "particle": "minecraft:block/warped_planks"
-  }
-}

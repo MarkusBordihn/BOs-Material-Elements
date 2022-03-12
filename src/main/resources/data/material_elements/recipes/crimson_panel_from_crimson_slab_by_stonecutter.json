@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:crimson_slab"
-  },
-  "result": "material_elements:crimson_panel",
-  "count": 4
-}
