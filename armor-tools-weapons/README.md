@@ -43,8 +43,8 @@ The version 3.x and higher is separated by use-cases to allow any easier integra
 | Fabric Version | ❌ Not planned        |
 | Forge 1.16.5   | ❌ Not planned        |
 | Forge 1.17.1   | ⚠️ Maintenance only   |
-| Forge 1.18.1   | ⚠️ Maintenance only   |
-| Forge 1.18.2   | ✔️ Active development |
+| Forge 1.18.1   | ✔️ Active development |
+| Forge 1.18.2   | ⚠️ Testing only       |
 
 [logo]: src/main/resources/logo.png
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements

@@ -22,6 +22,7 @@ package de.markusbordihn.minecraft.materialelementsdecorative.block.slab;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -38,6 +39,10 @@ public class SlabBlock extends MultiPlaceBlock {
   protected static final VoxelShape FACING_SOUTH_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 8.0);
   protected static final VoxelShape FACING_NORTH_AABB = Block.box(0.0, 0.0, 8.0, 16.0, 16.0, 16.0);
   protected static final VoxelShape FACING_WEST_AABB = Block.box(8.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+
+  public SlabBlock(Block block) {
+    super(BlockBehaviour.Properties.copy(block));
+  }
 
   public SlabBlock(Properties properties) {
     super(properties);

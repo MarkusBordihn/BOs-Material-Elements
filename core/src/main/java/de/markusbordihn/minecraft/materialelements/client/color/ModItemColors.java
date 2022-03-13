@@ -32,6 +32,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 import de.markusbordihn.minecraft.materialelements.Constants;
+import de.markusbordihn.minecraft.materialelements.item.ClothItem;
 import de.markusbordihn.minecraft.materialelements.item.ColoredItem;
 import de.markusbordihn.minecraft.materialelements.item.ModItems;
 import de.markusbordihn.minecraft.materialelements.item.testtube.TestTubeColorItem;
@@ -55,6 +56,27 @@ public class ModItemColors {
     itemColors.register((itemStack, color) -> {
       return color > 0 ? -1 : PotionUtils.getColor(itemStack);
     }, ModItems.TEST_TUBE_FILLED.get());
+
+    // Use dye color for the cloth
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_WHITE.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_ORANGE.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_MAGENTA.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_LIGHT_BLUE.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_YELLOW.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_LIME.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_PINK.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_GRAY.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_LIGHT_GRAY.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_CYAN.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_PURPLE.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_BLUE.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_BROWN.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_GREEN.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_RED.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_BLACK.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.TEST_TUBE_WATER.get());
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.TEST_TUBE_GLOW.get());
 
     // Use dye color for the colored test tubes.
     itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_WHITE.get());

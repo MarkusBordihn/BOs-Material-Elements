@@ -24,6 +24,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.AttachFace;
@@ -41,6 +42,10 @@ public class HalfSlabBlock extends Block {
 
   protected static final VoxelShape CEILING_AABB = Block.box(0.0, 12.0, 0.0, 16.0, 16.0, 16.0);
   protected static final VoxelShape FLOOR_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 4.0, 16.0);
+
+  public HalfSlabBlock(Block block) {
+    super(BlockBehaviour.Properties.copy(block));
+  }
 
   public HalfSlabBlock(Properties properties) {
     super(properties);

@@ -31,8 +31,6 @@
   "advancements.material_elements.crafting.fill_water_in_test_tube.title": "Just add water for the start.",
   "advancements.material_elements.crafting.obtain_coke.description": "The industrial production of coke from coal is called coking.",
   "advancements.material_elements.crafting.obtain_coke.title": "What happen's if you burn coal?",
-  "advancements.material_elements.crafting.obtain_stone_cutter.description": "Try to cut wood with the stone cutter.",
-  "advancements.material_elements.crafting.obtain_stone_cutter.title": "Mhhh will it cut wood?",
   "advancements.material_elements.crafting.smelt_steel.description": "Get some steel ingot's for new armor, tools and weapons.",
   "advancements.material_elements.crafting.smelt_steel.title": "Next level of Iron",
 
@@ -187,6 +185,24 @@
   "item.material_elements.test_tube_glow.effect.empty": "Test tube with glowing fluid",
   "item.material_elements.test_tube_glow.effect.water": "Test tube with glowing fluid",
 
+  "item.material_elements.cloth": "Cloth",
+  "item.material_elements.cloth_black": "Cloth (black)",
+  "item.material_elements.cloth_blue": "Cloth (blue)",
+  "item.material_elements.cloth_brown": "Cloth (brown)",
+  "item.material_elements.cloth_cyan": "Cloth (cyan)",
+  "item.material_elements.cloth_gray": "Cloth (gray)",
+  "item.material_elements.cloth_green": "Cloth (green)",
+  "item.material_elements.cloth_light_blue": "Cloth (light blue)",
+  "item.material_elements.cloth_light_gray": "Cloth (light gray)",
+  "item.material_elements.cloth_lime": "Cloth (lime)",
+  "item.material_elements.cloth_magenta": "Cloth (magenta)",
+  "item.material_elements.cloth_orange": "Cloth (orange)",
+  "item.material_elements.cloth_pink": "Cloth (pink)",
+  "item.material_elements.cloth_purple": "Cloth (purple)",
+  "item.material_elements.cloth_red": "Cloth (red)",
+  "item.material_elements.cloth_white": "Cloth (white)",
+  "item.material_elements.cloth_yellow": "Cloth (yellow)",
+
   "item.material_elements.leather_sheet": "Leather Sheet",
   "item.material_elements.leather_strip": "Leather Strip",
   "item.material_elements.leather_strip_black": "Leather Strip (black)",
@@ -208,11 +224,13 @@
 
   "item.placeholder.text": "Template placeholder do not remove!",
 
+  "text.material_elements.cloth": "A raw cloth which is used for tailoring crafting or as ingredient for crafting recipes.",
   "text.material_elements.cube_frame": "A cube frame which is used for advanced crafting or as ingredient for technical crafting recipes.",
   "text.material_elements.cube_glass_frame": "A enclosed glass cube frame which is used for advanced crafting, as a container or as ingredient for technical crafting recipes.",
   "text.material_elements.leather_sheet": "A big raw leather sheet which is used for more advanced leather crafting.",
   "text.material_elements.leather_strip": "A raw leather strip which is used for leather crafting or as ingredient for crafting recipes.",
 
+  "itemGroup.cloth": "Material & Elements: Cloth",
   "itemGroup.cube_frames": "Material & Elements: Cube Frames",
   "itemGroup.leather": "Material & Elements: Leather",
   "itemGroup.rods": "Material & Elements: Rods",

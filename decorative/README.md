@@ -84,8 +84,8 @@ This mods adds a lot of additional crafting recipes to allow the crafting of the
 | Fabric Version | ❌ Not planned        |
 | Forge 1.16.5   | ❌ Not planned        |
 | Forge 1.17.1   | ❌ Not planned        |
-| Forge 1.18.1   | ⚠️ Maintenance only   |
-| Forge 1.18.2   | ✔️ Active development |
+| Forge 1.18.1   | ✔️ Active development |
+| Forge 1.18.2   | ⚠️ Testing only       |
 
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
 [material-elements-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons

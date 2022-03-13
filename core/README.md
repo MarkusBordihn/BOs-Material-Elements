@@ -9,15 +9,19 @@ Material and Elements is a Minecraft Forge Mod which adds additional materials a
 
 This mod is mostly useful for other mods which requires specific materials or elements and don't want to implement them self.
 
+Example use cases of Material Elements:
+
+- [Material Elements: Armor, Tools and Weapons][material-elements-armor-tools-and-weapons]
+- [Material Elements: Decorative][material-elements-decorative]
+- [Easy Mob Farm][easy-mob-farm]
+- [Glow Sticks][glow-sticks]
+- [Token Coins][token-coins]
+
 ## Version 3.x notes
 
 The version 3.x and higher is separated by use-cases to allow any easier integration.
 
-**Before you upgrade from version 2.x please make sure to create a backup and install the additional mods like [Material Elements: Decorative][material-elements-decorative] and [Material Elements Steel Armor, Tools and Weapons][material-elements-armor-tools-and-weapons] before re-loading the world.**
-
-## 🛡️⛏️⚔️ Steel Armor, Tools and Weapons
-
-If you want to have steel armor, tools and weapons, please install the [Steel Armor, Tools and Weapon Mod][steel-armor-tools-and-weapons].
+**Before you upgrade from version 2.x please make sure to create a backup and install the additional mods like [Material Elements: Decorative][material-elements-decorative] and [Material Elements: Armor, Tools and Weapons][material-elements-armor-tools-and-weapons] before re-loading the world.**
 
 ## Block Overview 👁️
 
@@ -161,8 +165,8 @@ It is classified between Iron and Diamond with the following stats.
 | Fabric Version | ❌ Not planned        |
 | Forge 1.16.5   | ⚠️ Maintenance only   |
 | Forge 1.17.1   | ⚠️ Maintenance only   |
-| Forge 1.18.1   | ⚠️ Maintenance only   |
-| Forge 1.18.2   | ✔️ Active development |
+| Forge 1.18.1   | ✔️ Active development |
+| Forge 1.18.2   | ⚠️ Testing only       |
 
 ## Mod Integration 🚀
 
@@ -176,8 +180,6 @@ Please check [Developer Wiki][dev-wiki] for the details steps.
 [cube_glass_frame]: examples/block/small/cube_glass_frame.png
 [dark_oak_stick]: examples/item/small/dark_oak_stick.png
 [dev-wiki]: https://github.com/MarkusBordihn/BOs-Material-Elements/wiki
-[easy-mob-farm]: https://www.curseforge.com/minecraft/mc-mods/easy-mob-farm
-[glow-sticks]: https://www.curseforge.com/minecraft/mc-mods/glow-sticks
 [jungle_stick]: examples/item/small/jungle_stick.png
 [logo]: examples/material-elements.gif
 [oak_stick]: examples/item/small/oak_stick.png
@@ -189,10 +191,12 @@ Please check [Developer Wiki][dev-wiki] for the details steps.
 [rod_tee]: examples/block/small/rod_tee.png
 [rod_tee_elbow]: examples/block/small/rod_tee_elbow.png
 [spruce_stick]: examples/item/small/spruce_stick.png
-[steel-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/steel-armor-tools-and-weapons
 [test_tube]: examples/item/small/test_tube.png
 [test_tube_filled]: examples/item/small/test_tube_filled.png
 [warped_stick]: examples/item/small/warped_stick.png
-[material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
-[material-elements-decorative]: https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative
+[easy-mob-farm]: https://www.curseforge.com/minecraft/mc-mods/easy-mob-farm
+[glow-sticks]: https://www.curseforge.com/minecraft/mc-mods/glow-sticks
+[token-coins]: https://www.curseforge.com/minecraft/mc-mods/token-coins
 [material-elements-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons
+[material-elements-decorative]: https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative
+[material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements

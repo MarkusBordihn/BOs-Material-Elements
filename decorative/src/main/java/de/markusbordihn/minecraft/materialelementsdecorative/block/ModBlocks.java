@@ -49,9 +49,12 @@ import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.
 import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.entity.OakFramedHopperEntity;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.entity.SpruceFramedHopperEntity;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.entity.WarpedFramedHopperEntity;
+import de.markusbordihn.minecraft.materialelementsdecorative.block.halfslab.HalfSlabBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.halfslab.WoodHalfSlabBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.lantern.SteelLanternBlock;
+import de.markusbordihn.minecraft.materialelementsdecorative.block.panel.PanelBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.panel.WoodPanelBlock;
+import de.markusbordihn.minecraft.materialelementsdecorative.block.plate.PlateBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.plate.WoodPlateBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.slab.WoolSlabBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.Constants;
@@ -63,13 +66,21 @@ public class ModBlocks {
 
   }
 
-  public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,
-      Constants.MOD_ID);
+  public static final DeferredRegister<Block> BLOCKS =
+      DeferredRegister.create(ForgeRegistries.BLOCKS, Constants.MOD_ID);
 
-  public static final DeferredRegister<BlockEntityType<?>> ENTITIES = DeferredRegister
-      .create(ForgeRegistries.BLOCK_ENTITIES, Constants.MOD_ID);
+  public static final DeferredRegister<BlockEntityType<?>> ENTITIES =
+      DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, Constants.MOD_ID);
 
   @TemplateEntryPoint("Register Blocks")
+
+  // Quartz
+  public static final RegistryObject<Block> QUARTZ_PANEL =
+      BLOCKS.register("quartz_panel", () -> new PanelBlock(Blocks.QUARTZ_BLOCK));
+  public static final RegistryObject<Block> QUARTZ_PLATE =
+      BLOCKS.register("quartz_plate", () -> new PlateBlock(Blocks.QUARTZ_BLOCK));
+  public static final RegistryObject<Block> QUARTZ_HALF_SLAP =
+      BLOCKS.register("quartz_half_slab", () -> new HalfSlabBlock(Blocks.QUARTZ_BLOCK));
 
   // Steel Chain
   public static final RegistryObject<Block> STEEL_CHAIN = BLOCKS.register("steel_chain",
@@ -124,56 +135,56 @@ public class ModBlocks {
       BLOCKS.register("steel_lantern_black", () -> new SteelLanternBlock(DyeColor.BLACK));
 
   // Wool Slaps
-  public static final RegistryObject<Block> WOOL_SLAB_WHITE = BLOCKS.register("wool_slab_white",
-      () -> new WoolSlabBlock(MaterialColor.SNOW));
-  public static final RegistryObject<Block> WOOL_SLAB_ORANGE = BLOCKS.register("wool_slab_orange",
-      () -> new WoolSlabBlock(MaterialColor.COLOR_ORANGE));
-  public static final RegistryObject<Block> WOOL_SLAB_MAGENTA = BLOCKS.register("wool_slab_magenta",
-      () -> new WoolSlabBlock(MaterialColor.COLOR_MAGENTA));
+  public static final RegistryObject<Block> WOOL_SLAB_WHITE =
+      BLOCKS.register("wool_slab_white", () -> new WoolSlabBlock(MaterialColor.SNOW));
+  public static final RegistryObject<Block> WOOL_SLAB_ORANGE =
+      BLOCKS.register("wool_slab_orange", () -> new WoolSlabBlock(MaterialColor.COLOR_ORANGE));
+  public static final RegistryObject<Block> WOOL_SLAB_MAGENTA =
+      BLOCKS.register("wool_slab_magenta", () -> new WoolSlabBlock(MaterialColor.COLOR_MAGENTA));
   public static final RegistryObject<Block> WOOL_SLAB_LIGHT_BLUE = BLOCKS
       .register("wool_slab_light_blue", () -> new WoolSlabBlock(MaterialColor.COLOR_LIGHT_BLUE));
-  public static final RegistryObject<Block> WOOL_SLAB_YELLOW = BLOCKS.register("wool_slab_yellow",
-      () -> new WoolSlabBlock(MaterialColor.COLOR_YELLOW));
-  public static final RegistryObject<Block> WOOL_SLAB_LIME = BLOCKS.register("wool_slab_lime",
-      () -> new WoolSlabBlock(MaterialColor.COLOR_LIGHT_GREEN));
-  public static final RegistryObject<Block> WOOL_SLAB_PINK = BLOCKS.register("wool_slab_pink",
-      () -> new WoolSlabBlock(MaterialColor.COLOR_PINK));
-  public static final RegistryObject<Block> WOOL_SLAB_GRAY = BLOCKS.register("wool_slab_gray",
-      () -> new WoolSlabBlock(MaterialColor.COLOR_GRAY));
+  public static final RegistryObject<Block> WOOL_SLAB_YELLOW =
+      BLOCKS.register("wool_slab_yellow", () -> new WoolSlabBlock(MaterialColor.COLOR_YELLOW));
+  public static final RegistryObject<Block> WOOL_SLAB_LIME =
+      BLOCKS.register("wool_slab_lime", () -> new WoolSlabBlock(MaterialColor.COLOR_LIGHT_GREEN));
+  public static final RegistryObject<Block> WOOL_SLAB_PINK =
+      BLOCKS.register("wool_slab_pink", () -> new WoolSlabBlock(MaterialColor.COLOR_PINK));
+  public static final RegistryObject<Block> WOOL_SLAB_GRAY =
+      BLOCKS.register("wool_slab_gray", () -> new WoolSlabBlock(MaterialColor.COLOR_GRAY));
   public static final RegistryObject<Block> WOOL_SLAB_LIGHT_GRAY = BLOCKS
       .register("wool_slab_light_gray", () -> new WoolSlabBlock(MaterialColor.COLOR_LIGHT_GRAY));
-  public static final RegistryObject<Block> WOOL_SLAB_CYAN = BLOCKS.register("wool_slab_cyan",
-      () -> new WoolSlabBlock(MaterialColor.COLOR_CYAN));
-  public static final RegistryObject<Block> WOOL_SLAB_PURPLE = BLOCKS.register("wool_slab_purple",
-      () -> new WoolSlabBlock(MaterialColor.COLOR_PURPLE));
-  public static final RegistryObject<Block> WOOL_SLAB_BLUE = BLOCKS.register("wool_slab_blue",
-      () -> new WoolSlabBlock(MaterialColor.COLOR_BLUE));
-  public static final RegistryObject<Block> WOOL_SLAB_BROWN = BLOCKS.register("wool_slab_brown",
-      () -> new WoolSlabBlock(MaterialColor.COLOR_BROWN));
-  public static final RegistryObject<Block> WOOL_SLAB_GREEN = BLOCKS.register("wool_slab_green",
-      () -> new WoolSlabBlock(MaterialColor.COLOR_GREEN));
-  public static final RegistryObject<Block> WOOL_SLAB_RED = BLOCKS.register("wool_slab_red",
-      () -> new WoolSlabBlock(MaterialColor.COLOR_RED));
-  public static final RegistryObject<Block> WOOL_SLAB_BLACK = BLOCKS.register("wool_slab_black",
-      () -> new WoolSlabBlock(MaterialColor.COLOR_BLACK));
+  public static final RegistryObject<Block> WOOL_SLAB_CYAN =
+      BLOCKS.register("wool_slab_cyan", () -> new WoolSlabBlock(MaterialColor.COLOR_CYAN));
+  public static final RegistryObject<Block> WOOL_SLAB_PURPLE =
+      BLOCKS.register("wool_slab_purple", () -> new WoolSlabBlock(MaterialColor.COLOR_PURPLE));
+  public static final RegistryObject<Block> WOOL_SLAB_BLUE =
+      BLOCKS.register("wool_slab_blue", () -> new WoolSlabBlock(MaterialColor.COLOR_BLUE));
+  public static final RegistryObject<Block> WOOL_SLAB_BROWN =
+      BLOCKS.register("wool_slab_brown", () -> new WoolSlabBlock(MaterialColor.COLOR_BROWN));
+  public static final RegistryObject<Block> WOOL_SLAB_GREEN =
+      BLOCKS.register("wool_slab_green", () -> new WoolSlabBlock(MaterialColor.COLOR_GREEN));
+  public static final RegistryObject<Block> WOOL_SLAB_RED =
+      BLOCKS.register("wool_slab_red", () -> new WoolSlabBlock(MaterialColor.COLOR_RED));
+  public static final RegistryObject<Block> WOOL_SLAB_BLACK =
+      BLOCKS.register("wool_slab_black", () -> new WoolSlabBlock(MaterialColor.COLOR_BLACK));
 
   // Wooden framed Hoppers
-  public static final RegistryObject<Block> OAK_FRAMED_HOPPER = BLOCKS.register(OakFramedHopper.NAME,
-      OakFramedHopper::new);
-  public static final RegistryObject<Block> SPRUCE_FRAMED_HOPPER = BLOCKS.register(SpruceFramedHopper.NAME,
-      SpruceFramedHopper::new);
-  public static final RegistryObject<Block> BIRCH_FRAMED_HOPPER = BLOCKS.register(BirchFramedHopper.NAME,
-      BirchFramedHopper::new);
-  public static final RegistryObject<Block> JUNGLE_FRAMED_HOPPER = BLOCKS.register(JungleFramedHopper.NAME,
-      JungleFramedHopper::new);
-  public static final RegistryObject<Block> ACACIA_FRAMED_HOPPER = BLOCKS.register(AcaciaFramedHopper.NAME,
-      AcaciaFramedHopper::new);
-  public static final RegistryObject<Block> DARK_OAK_FRAMED_HOPPER = BLOCKS.register(DarkOakFramedHopper.NAME,
-      DarkOakFramedHopper::new);
-  public static final RegistryObject<Block> CRIMSON_FRAMED_HOPPER = BLOCKS.register(CrimsonFramedHopper.NAME,
-      CrimsonFramedHopper::new);
-  public static final RegistryObject<Block> WARPED_FRAMED_HOPPER = BLOCKS.register(WarpedFramedHopper.NAME,
-      WarpedFramedHopper::new);
+  public static final RegistryObject<Block> OAK_FRAMED_HOPPER =
+      BLOCKS.register(OakFramedHopper.NAME, OakFramedHopper::new);
+  public static final RegistryObject<Block> SPRUCE_FRAMED_HOPPER =
+      BLOCKS.register(SpruceFramedHopper.NAME, SpruceFramedHopper::new);
+  public static final RegistryObject<Block> BIRCH_FRAMED_HOPPER =
+      BLOCKS.register(BirchFramedHopper.NAME, BirchFramedHopper::new);
+  public static final RegistryObject<Block> JUNGLE_FRAMED_HOPPER =
+      BLOCKS.register(JungleFramedHopper.NAME, JungleFramedHopper::new);
+  public static final RegistryObject<Block> ACACIA_FRAMED_HOPPER =
+      BLOCKS.register(AcaciaFramedHopper.NAME, AcaciaFramedHopper::new);
+  public static final RegistryObject<Block> DARK_OAK_FRAMED_HOPPER =
+      BLOCKS.register(DarkOakFramedHopper.NAME, DarkOakFramedHopper::new);
+  public static final RegistryObject<Block> CRIMSON_FRAMED_HOPPER =
+      BLOCKS.register(CrimsonFramedHopper.NAME, CrimsonFramedHopper::new);
+  public static final RegistryObject<Block> WARPED_FRAMED_HOPPER =
+      BLOCKS.register(WarpedFramedHopper.NAME, WarpedFramedHopper::new);
 
   // Wooden Panels
   public static final RegistryObject<Block> OAK_PANEL = BLOCKS.register("oak_panel",
@@ -222,40 +233,40 @@ public class ModBlocks {
       () -> new WoodHalfSlabBlock(Blocks.JUNGLE_PLANKS.defaultMaterialColor()));
   public static final RegistryObject<Block> ACACIA_HALF_SLAB = BLOCKS.register("acacia_half_slab",
       () -> new WoodHalfSlabBlock(Blocks.ACACIA_PLANKS.defaultMaterialColor()));
-  public static final RegistryObject<Block> DARK_OAK_HALF_SLAB = BLOCKS.register("dark_oak_half_slab",
-      () -> new WoodHalfSlabBlock(Blocks.DARK_OAK_PLANKS.defaultMaterialColor()));
+  public static final RegistryObject<Block> DARK_OAK_HALF_SLAB =
+      BLOCKS.register("dark_oak_half_slab",
+          () -> new WoodHalfSlabBlock(Blocks.DARK_OAK_PLANKS.defaultMaterialColor()));
   public static final RegistryObject<Block> CRIMSON_HALF_SLAB = BLOCKS.register("crimson_half_slab",
       () -> new WoodHalfSlabBlock(Blocks.CRIMSON_PLANKS.defaultMaterialColor()));
   public static final RegistryObject<Block> WARPED_HALF_SLAB = BLOCKS.register("warped_half_slab",
       () -> new WoodHalfSlabBlock(Blocks.WARPED_PLANKS.defaultMaterialColor()));
 
-
   @TemplateEntryPoint("Register Entity")
 
   // Wooden framed Hoppers
-  public static final RegistryObject<BlockEntityType<OakFramedHopperEntity>> OAK_HOPPER_ENTITY = ENTITIES
-      .register(OakFramedHopper.NAME, () -> BlockEntityType.Builder
+  public static final RegistryObject<BlockEntityType<OakFramedHopperEntity>> OAK_HOPPER_ENTITY =
+      ENTITIES.register(OakFramedHopper.NAME, () -> BlockEntityType.Builder
           .of(OakFramedHopperEntity::new, OAK_FRAMED_HOPPER.get()).build(null));
-  public static final RegistryObject<BlockEntityType<SpruceFramedHopperEntity>> SPRUCE_HOPPER_ENTITY = ENTITIES
-      .register(SpruceFramedHopper.NAME, () -> BlockEntityType.Builder
+  public static final RegistryObject<BlockEntityType<SpruceFramedHopperEntity>> SPRUCE_HOPPER_ENTITY =
+      ENTITIES.register(SpruceFramedHopper.NAME, () -> BlockEntityType.Builder
           .of(SpruceFramedHopperEntity::new, SPRUCE_FRAMED_HOPPER.get()).build(null));
-  public static final RegistryObject<BlockEntityType<BirchFramedHopperEntity>> BIRCH_HOPPER_ENTITY = ENTITIES
-      .register(BirchFramedHopper.NAME, () -> BlockEntityType.Builder
+  public static final RegistryObject<BlockEntityType<BirchFramedHopperEntity>> BIRCH_HOPPER_ENTITY =
+      ENTITIES.register(BirchFramedHopper.NAME, () -> BlockEntityType.Builder
           .of(BirchFramedHopperEntity::new, BIRCH_FRAMED_HOPPER.get()).build(null));
-  public static final RegistryObject<BlockEntityType<JungleFramedHopperEntity>> JUNGLE_HOPPER_ENTITY = ENTITIES
-      .register(JungleFramedHopper.NAME, () -> BlockEntityType.Builder
+  public static final RegistryObject<BlockEntityType<JungleFramedHopperEntity>> JUNGLE_HOPPER_ENTITY =
+      ENTITIES.register(JungleFramedHopper.NAME, () -> BlockEntityType.Builder
           .of(JungleFramedHopperEntity::new, JUNGLE_FRAMED_HOPPER.get()).build(null));
-  public static final RegistryObject<BlockEntityType<AcaciaFramedHopperEntity>> ACACIA_HOPPER_ENTITY = ENTITIES
-      .register(AcaciaFramedHopper.NAME, () -> BlockEntityType.Builder
+  public static final RegistryObject<BlockEntityType<AcaciaFramedHopperEntity>> ACACIA_HOPPER_ENTITY =
+      ENTITIES.register(AcaciaFramedHopper.NAME, () -> BlockEntityType.Builder
           .of(AcaciaFramedHopperEntity::new, ACACIA_FRAMED_HOPPER.get()).build(null));
-  public static final RegistryObject<BlockEntityType<DarkOakFramedHopperEntity>> DARK_OAK_HOPPER_ENTITY = ENTITIES
-      .register(DarkOakFramedHopper.NAME, () -> BlockEntityType.Builder
+  public static final RegistryObject<BlockEntityType<DarkOakFramedHopperEntity>> DARK_OAK_HOPPER_ENTITY =
+      ENTITIES.register(DarkOakFramedHopper.NAME, () -> BlockEntityType.Builder
           .of(DarkOakFramedHopperEntity::new, DARK_OAK_FRAMED_HOPPER.get()).build(null));
-  public static final RegistryObject<BlockEntityType<CrimsonFramedHopperEntity>> CRIMSON_HOPPER_ENTITY = ENTITIES
-      .register(CrimsonFramedHopper.NAME, () -> BlockEntityType.Builder
+  public static final RegistryObject<BlockEntityType<CrimsonFramedHopperEntity>> CRIMSON_HOPPER_ENTITY =
+      ENTITIES.register(CrimsonFramedHopper.NAME, () -> BlockEntityType.Builder
           .of(CrimsonFramedHopperEntity::new, CRIMSON_FRAMED_HOPPER.get()).build(null));
-  public static final RegistryObject<BlockEntityType<WarpedFramedHopperEntity>> WARPED_HOPPER_ENTITY = ENTITIES
-      .register(WarpedFramedHopper.NAME, () -> BlockEntityType.Builder
+  public static final RegistryObject<BlockEntityType<WarpedFramedHopperEntity>> WARPED_HOPPER_ENTITY =
+      ENTITIES.register(WarpedFramedHopper.NAME, () -> BlockEntityType.Builder
           .of(WarpedFramedHopperEntity::new, WARPED_FRAMED_HOPPER.get()).build(null));
 
 }

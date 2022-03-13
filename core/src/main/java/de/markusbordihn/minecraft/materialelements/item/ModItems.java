@@ -49,6 +49,42 @@ public class ModItems {
 
   @TemplateEntryPoint("Register Items")
 
+  // Cloth
+  public static final RegistryObject<Item> CLOTH =
+      ITEMS.register("cloth", () -> new ClothItem(DyeColor.WHITE));
+  public static final RegistryObject<Item> CLOTH_WHITE =
+      ITEMS.register("cloth_white", () -> new ClothItem(DyeColor.WHITE));
+  public static final RegistryObject<Item> CLOTH_ORANGE =
+      ITEMS.register("cloth_orange", () -> new ClothItem(DyeColor.ORANGE));
+  public static final RegistryObject<Item> CLOTH_MAGENTA =
+      ITEMS.register("cloth_magenta", () -> new ClothItem(DyeColor.MAGENTA));
+  public static final RegistryObject<Item> CLOTH_LIGHT_BLUE =
+      ITEMS.register("cloth_light_blue", () -> new ClothItem(DyeColor.LIGHT_BLUE));
+  public static final RegistryObject<Item> CLOTH_LIGHT_GRAY =
+      ITEMS.register("cloth_light_gray", () -> new ClothItem(DyeColor.LIGHT_GRAY));
+  public static final RegistryObject<Item> CLOTH_YELLOW =
+      ITEMS.register("cloth_yellow", () -> new ClothItem(DyeColor.YELLOW));
+  public static final RegistryObject<Item> CLOTH_LIME =
+      ITEMS.register("cloth_lime", () -> new ClothItem(DyeColor.LIME));
+  public static final RegistryObject<Item> CLOTH_PINK =
+      ITEMS.register("cloth_pink", () -> new ClothItem(DyeColor.PINK));
+  public static final RegistryObject<Item> CLOTH_GRAY =
+      ITEMS.register("cloth_gray", () -> new ClothItem(DyeColor.GRAY));
+  public static final RegistryObject<Item> CLOTH_CYAN =
+      ITEMS.register("cloth_cyan", () -> new ClothItem(DyeColor.CYAN));
+  public static final RegistryObject<Item> CLOTH_PURPLE =
+      ITEMS.register("cloth_purple", () -> new ClothItem(DyeColor.PURPLE));
+  public static final RegistryObject<Item> CLOTH_BLUE =
+      ITEMS.register("cloth_blue", () -> new ClothItem(DyeColor.BLUE));
+  public static final RegistryObject<Item> CLOTH_BROWN =
+      ITEMS.register("cloth_brown", () -> new ClothItem(DyeColor.BROWN));
+  public static final RegistryObject<Item> CLOTH_GREEN =
+      ITEMS.register("cloth_green", () -> new ClothItem(DyeColor.GREEN));
+  public static final RegistryObject<Item> CLOTH_RED =
+      ITEMS.register("cloth_red", () -> new ClothItem(DyeColor.RED));
+  public static final RegistryObject<Item> CLOTH_BLACK =
+      ITEMS.register("cloth_black", () -> new ClothItem(DyeColor.BLACK));
+
   // Leather
   public static final RegistryObject<Item> LEATHER_SHEET =
       ITEMS.register("leather_sheet", LeatherSheetItem::new);
@@ -443,8 +479,8 @@ public class ModItems {
   public static final RegistryObject<Item> SILVER_ORE =
       ITEMS.register("silver_ore", () -> new BlockItem(ModBlocks.SILVER_ORE.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
-  public static final RegistryObject<Item> DEEPSLATE_SILVER_ORE =
-      ITEMS.register("deepslate_silver_ore", () -> new BlockItem(ModBlocks.DEEPSLATE_SILVER_ORE.get(),
+  public static final RegistryObject<Item> DEEPSLATE_SILVER_ORE = ITEMS
+      .register("deepslate_silver_ore", () -> new BlockItem(ModBlocks.DEEPSLATE_SILVER_ORE.get(),
           new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
   public static final RegistryObject<Item> STEEL_ORE =
       ITEMS.register("steel_ore", () -> new BlockItem(ModBlocks.STEEL_ORE.get(),

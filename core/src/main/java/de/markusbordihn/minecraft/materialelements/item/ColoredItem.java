@@ -27,12 +27,12 @@ public class ColoredItem extends Item {
   private DyeColor color = DyeColor.RED;
   private int materialColor = DyeColor.RED.getMaterialColor().col;
 
-  public ColoredItem(Item.Properties properties) {
-    super(properties);
+  public ColoredItem(DyeColor color) {
+    this(color, new Item.Properties());
   }
 
-  public ColoredItem(DyeColor color) {
-    super(new Item.Properties());
+  public ColoredItem(DyeColor color, Item.Properties properties) {
+    super(properties);
     this.color = color;
     this.materialColor = color.getMaterialColor().col;
   }

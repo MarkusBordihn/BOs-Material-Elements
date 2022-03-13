@@ -42,13 +42,19 @@ public class MaterialElementsTab {
 
   public static final CreativeModeTab TAB_TEST_TUBES = new CreativeModeTab("test_tubes") {
     public ItemStack makeIcon() {
-      return new ItemStack(ModItems.TEST_TUBE.get());
+      return new ItemStack(ModItems.TEST_TUBE_COLOR_WHITE.get());
     }
   };
 
   public static final CreativeModeTab TAB_LEATHER = new CreativeModeTab("leather") {
     public ItemStack makeIcon() {
       return new ItemStack(ModItems.LEATHER_SHEET.get());
+    }
+  };
+
+  public static final CreativeModeTab TAB_CLOTH = new CreativeModeTab("cloth") {
+    public ItemStack makeIcon() {
+      return new ItemStack(ModItems.CLOTH.get());
     }
   };
 
