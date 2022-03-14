@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "material_elements:block/construction_frames/oak_construction_cube_frame" }
+  }
+}

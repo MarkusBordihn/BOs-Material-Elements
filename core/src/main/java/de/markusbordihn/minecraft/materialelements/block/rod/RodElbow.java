@@ -21,7 +21,7 @@ package de.markusbordihn.minecraft.materialelements.block.rod;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import de.markusbordihn.minecraft.materialelements.Constants;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
@@ -32,6 +32,8 @@ import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+
+import de.markusbordihn.minecraft.materialelements.Constants;
 
 public class RodElbow extends RodComplexBlock {
 

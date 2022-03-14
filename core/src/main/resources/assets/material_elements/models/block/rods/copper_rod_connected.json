@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/rods/rod",
+  "textures": {
+    "texture": "material_elements:block/copper_rod_connected",
+    "particle": "material_elements:block/copper_rod_connected"
+  }
+}

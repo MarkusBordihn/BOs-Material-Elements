@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/rods/rod_half_size",
+  "textures": {
+    "texture": "material_elements:block/iron_rod",
+    "particle": "material_elements:block/iron_rod"
+  }
+}

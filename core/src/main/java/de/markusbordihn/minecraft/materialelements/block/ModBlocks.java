@@ -20,8 +20,11 @@
 package de.markusbordihn.minecraft.materialelements.block;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.OreBlock;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -86,6 +89,77 @@ public class ModBlocks {
       BLOCKS.register("steel_cube_glass_frame", () -> new Block(BlockType.STEEL));
   public static final RegistryObject<Block> NETHERITE_CUBE_GLASS_FRAME =
       BLOCKS.register("netherite_cube_glass_frame", () -> new Block(BlockType.NETHERITE));
+
+  // Slab Frames
+  public static final RegistryObject<Block> LIGHT_SLAB_FRAME =
+      BLOCKS.register("light_slab_frame", () -> new SlabBlock(BlockType.LIGHT));
+  public static final RegistryObject<Block> COPPER_SLAB_FRAME =
+      BLOCKS.register("copper_slab_frame", () -> new SlabBlock(BlockType.COPPER));
+  public static final RegistryObject<Block> GOLD_SLAB_FRAME =
+      BLOCKS.register("gold_slab_frame", () -> new SlabBlock(BlockType.GOLD));
+  public static final RegistryObject<Block> SILVER_SLAB_FRAME =
+      BLOCKS.register("silver_slab_frame", () -> new SlabBlock(BlockType.SILVER));
+  public static final RegistryObject<Block> IRON_SLAB_FRAME =
+      BLOCKS.register("iron_slab_frame", () -> new SlabBlock(BlockType.IRON));
+  public static final RegistryObject<Block> STEEL_SLAB_FRAME =
+      BLOCKS.register("steel_slab_frame", () -> new SlabBlock(BlockType.STEEL));
+  public static final RegistryObject<Block> NETHERITE_SLAB_FRAME =
+      BLOCKS.register("netherite_slab_frame", () -> new SlabBlock(BlockType.NETHERITE));
+
+  // Construction Cube Frames
+  public static final RegistryObject<Block> OAK_CONSTRUCTION_CUBE_FRAME =
+      BLOCKS.register("oak_construction_cube_frame", () -> new Block(BlockType.OAK));
+  public static final RegistryObject<Block> SPRUCE_CONSTRUCTION_CUBE_FRAME =
+      BLOCKS.register("spruce_construction_cube_frame", () -> new Block(BlockType.SPRUCE));
+  public static final RegistryObject<Block> BIRCH_CONSTRUCTION_CUBE_FRAME =
+      BLOCKS.register("birch_construction_cube_frame", () -> new Block(BlockType.BIRCH));
+  public static final RegistryObject<Block> JUNGLE_CONSTRUCTION_CUBE_FRAME =
+      BLOCKS.register("jungle_construction_cube_frame", () -> new Block(BlockType.JUNGLE));
+  public static final RegistryObject<Block> ACACIA_CONSTRUCTION_CUBE_FRAME =
+      BLOCKS.register("acacia_construction_cube_frame", () -> new Block(BlockType.ACACIA));
+  public static final RegistryObject<Block> DARK_OAK_CONSTRUCTION_CUBE_FRAME =
+      BLOCKS.register("dark_oak_construction_cube_frame", () -> new Block(BlockType.DARK_OAK));
+  public static final RegistryObject<Block> CRIMSON_CONSTRUCTION_CUBE_FRAME =
+      BLOCKS.register("crimson_construction_cube_frame", () -> new Block(BlockType.CRIMSON));
+  public static final RegistryObject<Block> WARPED_CONSTRUCTION_CUBE_FRAME =
+      BLOCKS.register("warped_construction_cube_frame", () -> new Block(BlockType.WARPED));
+
+  // Construction Slab Frames
+  public static final RegistryObject<Block> OAK_CONSTRUCTION_SLAB_FRAME =
+      BLOCKS.register("oak_construction_slab_frame", () -> new SlabBlock(BlockType.OAK));
+  public static final RegistryObject<Block> SPRUCE_CONSTRUCTION_SLAB_FRAME =
+      BLOCKS.register("spruce_construction_slab_frame", () -> new SlabBlock(BlockType.SPRUCE));
+  public static final RegistryObject<Block> BIRCH_CONSTRUCTION_SLAB_FRAME =
+      BLOCKS.register("birch_construction_slab_frame", () -> new SlabBlock(BlockType.BIRCH));
+  public static final RegistryObject<Block> JUNGLE_CONSTRUCTION_SLAB_FRAME =
+      BLOCKS.register("jungle_construction_slab_frame", () -> new SlabBlock(BlockType.JUNGLE));
+  public static final RegistryObject<Block> ACACIA_CONSTRUCTION_SLAB_FRAME =
+      BLOCKS.register("acacia_construction_slab_frame", () -> new SlabBlock(BlockType.ACACIA));
+  public static final RegistryObject<Block> DARK_OAK_CONSTRUCTION_SLAB_FRAME =
+      BLOCKS.register("dark_oak_construction_slab_frame", () -> new SlabBlock(BlockType.DARK_OAK));
+  public static final RegistryObject<Block> CRIMSON_CONSTRUCTION_SLAB_FRAME =
+      BLOCKS.register("crimson_construction_slab_frame", () -> new SlabBlock(BlockType.CRIMSON));
+  public static final RegistryObject<Block> WARPED_CONSTRUCTION_SLAB_FRAME =
+      BLOCKS.register("warped_construction_slab_frame", () -> new SlabBlock(BlockType.WARPED));
+
+  // Construction Triangular Frames
+  public static final RegistryObject<Block> OAK_CONSTRUCTION_TRIANGULAR_FRAME = BLOCKS
+      .register("oak_construction_triangular_frame", () -> new TriangularBlock(BlockType.OAK));
+  public static final RegistryObject<Block> SPRUCE_CONSTRUCTION_TRIANGULAR_FRAME = BLOCKS.register(
+      "spruce_construction_triangular_frame", () -> new TriangularBlock(BlockType.SPRUCE));
+  public static final RegistryObject<Block> BIRCH_CONSTRUCTION_TRIANGULAR_FRAME = BLOCKS
+      .register("birch_construction_triangular_frame", () -> new TriangularBlock(BlockType.BIRCH));
+  public static final RegistryObject<Block> JUNGLE_CONSTRUCTION_TRIANGULAR_FRAME = BLOCKS.register(
+      "jungle_construction_triangular_frame", () -> new TriangularBlock(BlockType.JUNGLE));
+  public static final RegistryObject<Block> ACACIA_CONSTRUCTION_TRIANGULAR_FRAME = BLOCKS.register(
+      "acacia_construction_triangular_frame", () -> new TriangularBlock(BlockType.ACACIA));
+  public static final RegistryObject<Block> DARK_OAK_CONSTRUCTION_TRIANGULAR_FRAME =
+      BLOCKS.register("dark_oak_construction_triangular_frame",
+          () -> new TriangularBlock(BlockType.DARK_OAK));
+  public static final RegistryObject<Block> CRIMSON_CONSTRUCTION_TRIANGULAR_FRAME = BLOCKS.register(
+      "crimson_construction_triangular_frame", () -> new TriangularBlock(BlockType.CRIMSON));
+  public static final RegistryObject<Block> WARPED_CONSTRUCTION_TRIANGULAR_FRAME = BLOCKS.register(
+      "warped_construction_triangular_frame", () -> new TriangularBlock(BlockType.WARPED));
 
   // Rods (tee elbow)
   public static final RegistryObject<Block> LIGHT_ROD_TEE_ELBOW =

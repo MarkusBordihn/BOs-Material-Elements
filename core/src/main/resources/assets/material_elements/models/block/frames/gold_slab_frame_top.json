@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/frames/slab_frame_top",
+  "textures": {
+    "texture": "material_elements:block/gold_rod",
+    "particle": "material_elements:block/gold_rod"
+  }
+}

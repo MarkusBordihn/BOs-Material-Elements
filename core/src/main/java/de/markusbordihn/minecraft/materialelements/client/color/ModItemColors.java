@@ -32,7 +32,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 import de.markusbordihn.minecraft.materialelements.Constants;
-import de.markusbordihn.minecraft.materialelements.item.ClothItem;
 import de.markusbordihn.minecraft.materialelements.item.ColoredItem;
 import de.markusbordihn.minecraft.materialelements.item.ModItems;
 import de.markusbordihn.minecraft.materialelements.item.testtube.TestTubeColorItem;

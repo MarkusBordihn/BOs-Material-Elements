@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "material_elements:item/stick/jungle_stick_half_size"
+  }
+}

@@ -1,55 +1,55 @@
 {
   "variants": {
     "face=floor,connected=false": {
-      "model": "material_elements:block/copper_rod"
+      "model": "material_elements:block/rods/copper_rod"
     },
     "face=ceiling,connected=false": {
-      "model": "material_elements:block/copper_rod",
+      "model": "material_elements:block/rods/copper_rod",
       "x": 180
     },
     "face=wall,facing=north,connected=false": {
-      "model": "material_elements:block/copper_rod",
+      "model": "material_elements:block/rods/copper_rod",
       "x": 90
     },
     "face=wall,facing=east,connected=false": {
-      "model": "material_elements:block/copper_rod",
+      "model": "material_elements:block/rods/copper_rod",
       "x": 90,
       "y": 90
     },
     "face=wall,facing=south,connected=false": {
-      "model": "material_elements:block/copper_rod",
+      "model": "material_elements:block/rods/copper_rod",
       "x": 90,
       "y": 180
     },
     "face=wall,facing=west,connected=false": {
-      "model": "material_elements:block/copper_rod",
+      "model": "material_elements:block/rods/copper_rod",
       "x": 90,
       "y": 270
     },
 
     "face=floor,connected=true": {
-      "model": "material_elements:block/copper_rod_connected"
+      "model": "material_elements:block/rods/copper_rod_connected"
     },
     "face=ceiling,connected=true": {
-      "model": "material_elements:block/copper_rod_connected",
+      "model": "material_elements:block/rods/copper_rod_connected",
       "x": 180
     },
     "face=wall,facing=north,connected=true": {
-      "model": "material_elements:block/copper_rod_connected",
+      "model": "material_elements:block/rods/copper_rod_connected",
       "x": 90
     },
     "face=wall,facing=east,connected=true": {
-      "model": "material_elements:block/copper_rod_connected",
+      "model": "material_elements:block/rods/copper_rod_connected",
       "x": 90,
       "y": 90
     },
     "face=wall,facing=south,connected=true": {
-      "model": "material_elements:block/copper_rod_connected",
+      "model": "material_elements:block/rods/copper_rod_connected",
       "x": 90,
       "y": 180
     },
     "face=wall,facing=west,connected=true": {
-      "model": "material_elements:block/copper_rod_connected",
+      "model": "material_elements:block/rods/copper_rod_connected",
       "x": 90,
       "y": 270
     }

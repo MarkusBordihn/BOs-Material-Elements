@@ -40,6 +40,8 @@ public class ClientRenderer {
     event.enqueueWork(() -> {
       // @TemplateEntryPoint("Register Render Layers")
 
+
+
       // Glass Cube Frame
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_CUBE_GLASS_FRAME.get(),
           RenderType.cutoutMipped());

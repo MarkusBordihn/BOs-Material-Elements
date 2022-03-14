@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/construction_frames/construction_triangular_frame",
+  "textures": {
+    "texture": "minecraft:block/birch_planks",
+    "particle": "minecraft:block/birch_planks"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "material_elements:block/steel_rod_star"
+      "model": "material_elements:block/rods/steel_rod_star"
     }
   }
 }

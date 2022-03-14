@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/construction_frames/construction_cube_frame",
+  "textures": {
+    "texture": "minecraft:block/spruce_planks",
+    "particle": "minecraft:block/spruce_planks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/frames/cube_glass_frame",
+  "textures": {
+    "texture": "material_elements:block/netherite_rod",
+    "particle": "material_elements:block/netherite_rod"
+  }
+}

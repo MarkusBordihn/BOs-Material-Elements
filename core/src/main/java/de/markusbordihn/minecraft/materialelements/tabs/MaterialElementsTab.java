@@ -28,11 +28,18 @@ public class MaterialElementsTab {
 
   protected MaterialElementsTab() {}
 
-  public static final CreativeModeTab TAB_CUBE_FRAMES = new CreativeModeTab("cube_frames") {
+  public static final CreativeModeTab TAB_FRAMES = new CreativeModeTab("frames") {
     public ItemStack makeIcon() {
       return new ItemStack(ModItems.LIGHT_CUBE_GLASS_FRAME.get());
     }
   };
+
+  public static final CreativeModeTab TAB_CONSTRUCTION_FRAMES =
+      new CreativeModeTab("construction_frames") {
+        public ItemStack makeIcon() {
+          return new ItemStack(ModItems.OAK_CONSTRUCTION_CUBE_FRAME.get());
+        }
+      };
 
   public static final CreativeModeTab TAB_RODS = new CreativeModeTab("rods") {
     public ItemStack makeIcon() {

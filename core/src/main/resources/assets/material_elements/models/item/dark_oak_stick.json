@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "material_elements:item/dark_oak_stick"
+    "layer0": "material_elements:item/stick/dark_oak_stick"
   }
 }

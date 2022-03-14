@@ -1,53 +1,53 @@
 {
   "variants": {
     "face=floor,facing=north": {
-      "model": "material_elements:block/copper_rod_tee"
+      "model": "material_elements:block/rods/copper_rod_tee"
     },
     "face=floor,facing=east": {
-      "model": "material_elements:block/copper_rod_tee",
+      "model": "material_elements:block/rods/copper_rod_tee",
       "y": 90
     },
     "face=floor,facing=south": {
-      "model": "material_elements:block/copper_rod_tee"
+      "model": "material_elements:block/rods/copper_rod_tee"
     },
     "face=floor,facing=west": {
-      "model": "material_elements:block/copper_rod_tee",
+      "model": "material_elements:block/rods/copper_rod_tee",
       "y": 90
     },
     "face=wall,facing=north": {
-      "model": "material_elements:block/copper_rod_tee",
+      "model": "material_elements:block/rods/copper_rod_tee",
       "x": 90
     },
     "face=wall,facing=east": {
-      "model": "material_elements:block/copper_rod_tee",
+      "model": "material_elements:block/rods/copper_rod_tee",
       "x": 90,
       "y": 90
     },
     "face=wall,facing=south": {
-      "model": "material_elements:block/copper_rod_tee",
+      "model": "material_elements:block/rods/copper_rod_tee",
       "x": 90,
       "y": 180
     },
     "face=wall,facing=west": {
-      "model": "material_elements:block/copper_rod_tee",
+      "model": "material_elements:block/rods/copper_rod_tee",
       "x": 90,
       "y": 270
     },
     "face=ceiling,facing=north": {
-      "model": "material_elements:block/copper_rod_tee",
+      "model": "material_elements:block/rods/copper_rod_tee",
       "x": 180
     },
     "face=ceiling,facing=east": {
-      "model": "material_elements:block/copper_rod_tee",
+      "model": "material_elements:block/rods/copper_rod_tee",
       "x": 180,
       "y": 90
     },
     "face=ceiling,facing=south": {
-      "model": "material_elements:block/copper_rod_tee",
+      "model": "material_elements:block/rods/copper_rod_tee",
       "x": 180
     },
     "face=ceiling,facing=west": {
-      "model": "material_elements:block/copper_rod_tee",
+      "model": "material_elements:block/rods/copper_rod_tee",
       "x": 180,
       "y": 90
     }

@@ -31,6 +31,14 @@ import net.minecraftforge.registries.ForgeRegistries;
 import de.markusbordihn.minecraft.materialelements.Constants;
 import de.markusbordihn.minecraft.materialelements.Annotations.TemplateEntryPoint;
 import de.markusbordihn.minecraft.materialelements.block.ModBlocks;
+import de.markusbordihn.minecraft.materialelements.item.constructionframes.ConstructionCubeFrameItem;
+import de.markusbordihn.minecraft.materialelements.item.constructionframes.ConstructionSlabFrameItem;
+import de.markusbordihn.minecraft.materialelements.item.constructionframes.ConstructionTriangularFrameItem;
+import de.markusbordihn.minecraft.materialelements.item.frames.CubeFrameItem;
+import de.markusbordihn.minecraft.materialelements.item.frames.CubeGlassFrameItem;
+import de.markusbordihn.minecraft.materialelements.item.frames.SlabFrameItem;
+import de.markusbordihn.minecraft.materialelements.item.leather.LeatherSheetItem;
+import de.markusbordihn.minecraft.materialelements.item.leather.LeatherStripItem;
 import de.markusbordihn.minecraft.materialelements.item.testtube.TestTubeColorItem;
 import de.markusbordihn.minecraft.materialelements.item.testtube.TestTubeCustomFoilItem;
 import de.markusbordihn.minecraft.materialelements.item.testtube.TestTubeCustomItem;
@@ -251,6 +259,32 @@ public class ModItems {
   public static final RegistryObject<Item> WARPED_STICK = ITEMS.register("warped_stick",
       () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
+  // Wooden Sticks (half-size)
+  public static final RegistryObject<Item> OAK_STICK_HALF_SIZE =
+      ITEMS.register("oak_stick_half_size",
+          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> SPRUCE_STICK_HALF_SIZE =
+      ITEMS.register("spruce_stick_half_size",
+          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> BIRCH_STICK_HALF_SIZE =
+      ITEMS.register("birch_stick_half_size",
+          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> JUNGLE_STICK_HALF_SIZE =
+      ITEMS.register("jungle_stick_half_size",
+          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> ACACIA_STICK_HALF_SIZE =
+      ITEMS.register("acacia_stick_half_size",
+          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> DARK_OAK_STICK_HALF_SIZE =
+      ITEMS.register("dark_oak_stick_half_size",
+          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> CRIMSON_STICK_HALF_SIZE =
+      ITEMS.register("crimson_stick_half_size",
+          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> WARPED_STICK_HALF_SIZE =
+      ITEMS.register("warped_stick_half_size",
+          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+
   @TemplateEntryPoint("Register Block Items")
 
   // Cube Frames
@@ -289,6 +323,100 @@ public class ModItems {
   public static final RegistryObject<Item> NETHERITE_CUBE_GLASS_FRAME =
       ITEMS.register("netherite_cube_glass_frame",
           () -> new CubeGlassFrameItem(ModBlocks.NETHERITE_CUBE_GLASS_FRAME.get()));
+
+  // Slab Frames
+  public static final RegistryObject<Item> LIGHT_SLAB_FRAME =
+      ITEMS.register("light_slab_frame", () -> new SlabFrameItem(ModBlocks.LIGHT_SLAB_FRAME.get()));
+  public static final RegistryObject<Item> COPPER_SLAB_FRAME = ITEMS.register("copper_slab_frame",
+      () -> new SlabFrameItem(ModBlocks.COPPER_SLAB_FRAME.get()));
+  public static final RegistryObject<Item> GOLD_SLAB_FRAME =
+      ITEMS.register("gold_slab_frame", () -> new SlabFrameItem(ModBlocks.GOLD_SLAB_FRAME.get()));
+  public static final RegistryObject<Item> SILVER_SLAB_FRAME = ITEMS.register("silver_slab_frame",
+      () -> new SlabFrameItem(ModBlocks.SILVER_SLAB_FRAME.get()));
+  public static final RegistryObject<Item> IRON_SLAB_FRAME =
+      ITEMS.register("iron_slab_frame", () -> new SlabFrameItem(ModBlocks.IRON_SLAB_FRAME.get()));
+  public static final RegistryObject<Item> STEEL_SLAB_FRAME =
+      ITEMS.register("steel_slab_frame", () -> new SlabFrameItem(ModBlocks.STEEL_SLAB_FRAME.get()));
+  public static final RegistryObject<Item> NETHERITE_SLAB_FRAME = ITEMS.register(
+      "netherite_slab_frame", () -> new SlabFrameItem(ModBlocks.NETHERITE_SLAB_FRAME.get()));
+
+  // Construction Cube Frames
+  public static final RegistryObject<Item> OAK_CONSTRUCTION_CUBE_FRAME =
+      ITEMS.register("oak_construction_cube_frame",
+          () -> new ConstructionCubeFrameItem(ModBlocks.OAK_CONSTRUCTION_CUBE_FRAME.get()));
+  public static final RegistryObject<Item> SPRUCE_CONSTRUCTION_CUBE_FRAME =
+      ITEMS.register("spruce_construction_cube_frame",
+          () -> new ConstructionCubeFrameItem(ModBlocks.SPRUCE_CONSTRUCTION_CUBE_FRAME.get()));
+  public static final RegistryObject<Item> BIRCH_CONSTRUCTION_CUBE_FRAME =
+      ITEMS.register("birch_construction_cube_frame",
+          () -> new ConstructionCubeFrameItem(ModBlocks.BIRCH_CONSTRUCTION_CUBE_FRAME.get()));
+  public static final RegistryObject<Item> JUNGLE_CONSTRUCTION_CUBE_FRAME =
+      ITEMS.register("jungle_construction_cube_frame",
+          () -> new ConstructionCubeFrameItem(ModBlocks.JUNGLE_CONSTRUCTION_CUBE_FRAME.get()));
+  public static final RegistryObject<Item> ACACIA_CONSTRUCTION_CUBE_FRAME =
+      ITEMS.register("acacia_construction_cube_frame",
+          () -> new ConstructionCubeFrameItem(ModBlocks.ACACIA_CONSTRUCTION_CUBE_FRAME.get()));
+  public static final RegistryObject<Item> DARK_OAK_CONSTRUCTION_CUBE_FRAME =
+      ITEMS.register("dark_oak_construction_cube_frame",
+          () -> new ConstructionCubeFrameItem(ModBlocks.DARK_OAK_CONSTRUCTION_CUBE_FRAME.get()));
+  public static final RegistryObject<Item> CRIMSON_CONSTRUCTION_CUBE_FRAME =
+      ITEMS.register("crimson_construction_cube_frame",
+          () -> new ConstructionCubeFrameItem(ModBlocks.CRIMSON_CONSTRUCTION_CUBE_FRAME.get()));
+  public static final RegistryObject<Item> WARPED_CONSTRUCTION_CUBE_FRAME =
+      ITEMS.register("warped_construction_cube_frame",
+          () -> new ConstructionCubeFrameItem(ModBlocks.WARPED_CONSTRUCTION_CUBE_FRAME.get()));
+
+  // Construction Slab Frames
+  public static final RegistryObject<Item> OAK_CONSTRUCTION_SLAB_FRAME =
+      ITEMS.register("oak_construction_slab_frame",
+          () -> new ConstructionSlabFrameItem(ModBlocks.OAK_CONSTRUCTION_SLAB_FRAME.get()));
+  public static final RegistryObject<Item> SPRUCE_CONSTRUCTION_SLAB_FRAME =
+      ITEMS.register("spruce_construction_slab_frame",
+          () -> new ConstructionSlabFrameItem(ModBlocks.SPRUCE_CONSTRUCTION_SLAB_FRAME.get()));
+  public static final RegistryObject<Item> BIRCH_CONSTRUCTION_SLAB_FRAME =
+      ITEMS.register("birch_construction_slab_frame",
+          () -> new ConstructionSlabFrameItem(ModBlocks.BIRCH_CONSTRUCTION_SLAB_FRAME.get()));
+  public static final RegistryObject<Item> JUNGLE_CONSTRUCTION_SLAB_FRAME =
+      ITEMS.register("jungle_construction_slab_frame",
+          () -> new ConstructionSlabFrameItem(ModBlocks.JUNGLE_CONSTRUCTION_SLAB_FRAME.get()));
+  public static final RegistryObject<Item> ACACIA_CONSTRUCTION_SLAB_FRAME =
+      ITEMS.register("acacia_construction_slab_frame",
+          () -> new ConstructionSlabFrameItem(ModBlocks.ACACIA_CONSTRUCTION_SLAB_FRAME.get()));
+  public static final RegistryObject<Item> DARK_OAK_CONSTRUCTION_SLAB_FRAME =
+      ITEMS.register("dark_oak_construction_slab_frame",
+          () -> new ConstructionSlabFrameItem(ModBlocks.DARK_OAK_CONSTRUCTION_SLAB_FRAME.get()));
+  public static final RegistryObject<Item> CRIMSON_CONSTRUCTION_SLAB_FRAME =
+      ITEMS.register("crimson_construction_slab_frame",
+          () -> new ConstructionSlabFrameItem(ModBlocks.CRIMSON_CONSTRUCTION_SLAB_FRAME.get()));
+  public static final RegistryObject<Item> WARPED_CONSTRUCTION_SLAB_FRAME =
+      ITEMS.register("warped_construction_slab_frame",
+          () -> new ConstructionSlabFrameItem(ModBlocks.WARPED_CONSTRUCTION_SLAB_FRAME.get()));
+
+  // Construction Triangular Frames
+  public static final RegistryObject<Item> OAK_CONSTRUCTION_TRIANGULAR_FRAME = ITEMS.register(
+      "oak_construction_triangular_frame",
+      () -> new ConstructionTriangularFrameItem(ModBlocks.OAK_CONSTRUCTION_TRIANGULAR_FRAME.get()));
+  public static final RegistryObject<Item> SPRUCE_CONSTRUCTION_TRIANGULAR_FRAME = ITEMS
+      .register("spruce_construction_triangular_frame", () -> new ConstructionTriangularFrameItem(
+          ModBlocks.SPRUCE_CONSTRUCTION_TRIANGULAR_FRAME.get()));
+  public static final RegistryObject<Item> BIRCH_CONSTRUCTION_TRIANGULAR_FRAME = ITEMS
+      .register("birch_construction_triangular_frame", () -> new ConstructionTriangularFrameItem(
+          ModBlocks.BIRCH_CONSTRUCTION_TRIANGULAR_FRAME.get()));
+  public static final RegistryObject<Item> JUNGLE_CONSTRUCTION_TRIANGULAR_FRAME = ITEMS
+      .register("jungle_construction_triangular_frame", () -> new ConstructionTriangularFrameItem(
+          ModBlocks.JUNGLE_CONSTRUCTION_TRIANGULAR_FRAME.get()));
+  public static final RegistryObject<Item> ACACIA_CONSTRUCTION_TRIANGULAR_FRAME = ITEMS
+      .register("acacia_construction_triangular_frame", () -> new ConstructionTriangularFrameItem(
+          ModBlocks.ACACIA_CONSTRUCTION_TRIANGULAR_FRAME.get()));
+  public static final RegistryObject<Item> DARK_OAK_CONSTRUCTION_TRIANGULAR_FRAME = ITEMS
+      .register("dark_oak_construction_triangular_frame", () -> new ConstructionTriangularFrameItem(
+          ModBlocks.DARK_OAK_CONSTRUCTION_TRIANGULAR_FRAME.get()));
+  public static final RegistryObject<Item> CRIMSON_CONSTRUCTION_TRIANGULAR_FRAME = ITEMS
+      .register("crimson_construction_triangular_frame", () -> new ConstructionTriangularFrameItem(
+          ModBlocks.CRIMSON_CONSTRUCTION_TRIANGULAR_FRAME.get()));
+  public static final RegistryObject<Item> WARPED_CONSTRUCTION_TRIANGULAR_FRAME = ITEMS
+      .register("warped_construction_triangular_frame", () -> new ConstructionTriangularFrameItem(
+          ModBlocks.WARPED_CONSTRUCTION_TRIANGULAR_FRAME.get()));
 
   // Rods (tee elbow)
   public static final RegistryObject<Item> LIGHT_ROD_TEE_ELBOW =

@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "material_elements:block/copper_cube_glass_frame" }
+    "": { "model": "material_elements:block/frames/copper_cube_glass_frame" }
   }
 }
