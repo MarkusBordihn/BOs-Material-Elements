@@ -1,15 +1,35 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": ["XXX", "X#X", "XXX"],
-  "key": {
-    "#": {
-      "item": "minecraft:soul_torch"
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": ["material_elements_decorative:steel_soul_lantern"]
+  },
+  "criteria": {
+    "has_steel_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:nuggets/steel"
+          }
+        ]
+      }
     },
-    "X": {
-      "tag": "forge:nuggets/steel"
+    "has_torch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:torch"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "material_elements_decorative:steel_soul_lantern"
+      }
     }
   },
-  "result": {
-    "item": "material_elements_armor_tools_weapons:steel_soul_lantern"
-  }
+  "requirements": [["has_steel_nugget", "has_torch", "has_the_recipe"]]
 }

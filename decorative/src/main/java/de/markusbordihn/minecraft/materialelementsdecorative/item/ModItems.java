@@ -38,6 +38,9 @@ import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.
 import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.OakFramedHopper;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.SpruceFramedHopper;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.WarpedFramedHopper;
+import de.markusbordihn.minecraft.materialelementsdecorative.item.cloth.ClothBlockItem;
+import de.markusbordihn.minecraft.materialelementsdecorative.item.cloth.ClothSlabItem;
+import de.markusbordihn.minecraft.materialelementsdecorative.item.cloth.FabricClothItem;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.lantern.SteelLanternItem;
 import de.markusbordihn.minecraft.materialelementsdecorative.tabs.MaterialElementsTab;
 import de.markusbordihn.minecraft.materialelementsdecorative.Annotations.TemplateEntryPoint;
@@ -56,6 +59,109 @@ public class ModItems {
   String test = "Test";
 
   @TemplateEntryPoint("Register Block Items")
+
+  // Fabric Cloth
+  public static final RegistryObject<Item> FABRIC_CLOTH_WHITE = ITEMS.register("fabric_cloth_white",
+      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_WHITE.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_ORANGE = ITEMS.register("fabric_cloth_orange",
+      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_ORANGE.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_MAGENTA = ITEMS.register(
+      "fabric_cloth_magenta", () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_MAGENTA.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_LIGHT_BLUE = ITEMS.register(
+      "fabric_cloth_light_blue", () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_LIGHT_BLUE.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_YELLOW = ITEMS.register("fabric_cloth_yellow",
+      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_YELLOW.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_LIME = ITEMS.register("fabric_cloth_lime",
+      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_LIME.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_PINK = ITEMS.register("fabric_cloth_pink",
+      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_PINK.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_GRAY = ITEMS.register("fabric_cloth_gray",
+      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_GRAY.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_LIGHT_GRAY = ITEMS.register(
+      "fabric_cloth_light_gray", () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_LIGHT_GRAY.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_CYAN = ITEMS.register("fabric_cloth_cyan",
+      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_CYAN.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_PURPLE = ITEMS.register("fabric_cloth_purple",
+      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_PURPLE.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_BROWN = ITEMS.register("fabric_cloth_brown",
+      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_BROWN.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_BLUE = ITEMS.register("fabric_cloth_blue",
+      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_BLUE.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_GREEN = ITEMS.register("fabric_cloth_green",
+      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_GREEN.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_RED =
+      ITEMS.register("fabric_cloth_red", () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_RED.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_BLACK = ITEMS.register("fabric_cloth_black",
+      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_BLACK.get()));
+
+
+  // Cloth Blocks
+  public static final RegistryObject<Item> CLOTH_BLOCK_WHITE = ITEMS.register("cloth_block_white",
+      () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_WHITE.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_ORANGE = ITEMS.register("cloth_block_orange",
+      () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_ORANGE.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_MAGENTA = ITEMS.register(
+      "cloth_block_magenta", () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_MAGENTA.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_LIGHT_BLUE = ITEMS.register(
+      "cloth_block_light_blue", () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_LIGHT_BLUE.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_YELLOW = ITEMS.register("cloth_block_yellow",
+      () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_YELLOW.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_LIME = ITEMS.register("cloth_block_lime",
+      () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_LIME.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_PINK = ITEMS.register("cloth_block_pink",
+      () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_PINK.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_GRAY = ITEMS.register("cloth_block_gray",
+      () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_GRAY.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_LIGHT_GRAY = ITEMS.register(
+      "cloth_block_light_gray", () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_LIGHT_GRAY.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_CYAN = ITEMS.register("cloth_block_cyan",
+      () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_CYAN.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_PURPLE = ITEMS.register("cloth_block_purple",
+      () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_PURPLE.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_BROWN = ITEMS.register("cloth_block_brown",
+      () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_BROWN.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_BLUE = ITEMS.register("cloth_block_blue",
+      () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_BLUE.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_GREEN = ITEMS.register("cloth_block_green",
+      () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_GREEN.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_RED =
+      ITEMS.register("cloth_block_red", () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_RED.get()));
+  public static final RegistryObject<Item> CLOTH_BLOCK_BLACK = ITEMS.register("cloth_block_black",
+      () -> new ClothBlockItem(ModBlocks.CLOTH_BLOCK_BLACK.get()));
+
+  // Cloth Slabs
+  public static final RegistryObject<Item> CLOTH_SLAB_WHITE =
+      ITEMS.register("cloth_slab_white", () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_WHITE.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_ORANGE = ITEMS.register("cloth_slab_orange",
+      () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_ORANGE.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_MAGENTA = ITEMS.register("cloth_slab_magenta",
+      () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_MAGENTA.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_LIGHT_BLUE = ITEMS.register(
+      "cloth_slab_light_blue", () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_LIGHT_BLUE.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_YELLOW = ITEMS.register("cloth_slab_yellow",
+      () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_YELLOW.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_LIME =
+      ITEMS.register("cloth_slab_lime", () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_LIME.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_PINK =
+      ITEMS.register("cloth_slab_pink", () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_PINK.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_GRAY =
+      ITEMS.register("cloth_slab_gray", () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_GRAY.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_LIGHT_GRAY = ITEMS.register(
+      "cloth_slab_light_gray", () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_LIGHT_GRAY.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_CYAN =
+      ITEMS.register("cloth_slab_cyan", () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_CYAN.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_PURPLE = ITEMS.register("cloth_slab_purple",
+      () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_PURPLE.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_BROWN =
+      ITEMS.register("cloth_slab_brown", () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_BROWN.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_BLUE =
+      ITEMS.register("cloth_slab_blue", () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_BLUE.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_GREEN =
+      ITEMS.register("cloth_slab_green", () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_GREEN.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_RED =
+      ITEMS.register("cloth_slab_red", () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_RED.get()));
+  public static final RegistryObject<Item> CLOTH_SLAB_BLACK =
+      ITEMS.register("cloth_slab_black", () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_BLACK.get()));
 
   // Quartz
   public static final RegistryObject<Item> QUARTZ_PANEL =

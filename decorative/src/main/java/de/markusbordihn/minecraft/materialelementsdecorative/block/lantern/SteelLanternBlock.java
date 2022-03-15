@@ -33,6 +33,7 @@ public class SteelLanternBlock extends LanternBlock {
             return 15;
           }).noOcclusion();
   private DyeColor color = DyeColor.YELLOW;
+  private int materialColor = DyeColor.YELLOW.getMaterialColor().col;
 
   public SteelLanternBlock(BlockBehaviour.Properties properties) {
     super(properties);
@@ -41,15 +42,21 @@ public class SteelLanternBlock extends LanternBlock {
   public SteelLanternBlock(BlockBehaviour.Properties properties, DyeColor dyeColor) {
     super(properties);
     this.color = dyeColor;
+    this.materialColor = dyeColor.getMaterialColor().col;
   }
 
   public SteelLanternBlock(DyeColor dyeColor) {
     super(DEFAULT_BLOCK_PROPERTIES);
     this.color = dyeColor;
+    this.materialColor = dyeColor.getMaterialColor().col;
   }
 
   public DyeColor getColor() {
     return this.color;
+  }
+
+  public int getMaterialColor() {
+    return this.materialColor;
   }
 
 }

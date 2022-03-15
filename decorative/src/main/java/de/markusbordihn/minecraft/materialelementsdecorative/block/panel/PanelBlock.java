@@ -19,12 +19,7 @@
 
 package de.markusbordihn.minecraft.materialelementsdecorative.block.panel;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -33,12 +28,10 @@ import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-import de.markusbordihn.minecraft.materialelementsdecorative.Constants;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.MultiPlaceBlock;
+import de.markusbordihn.minecraft.materialelements.block.multiplace.AdvancedMultiPlaceBlock;
+import de.markusbordihn.minecraft.materialelements.block.multiplace.MultiPlaceBlock;
 
-public class PanelBlock extends MultiPlaceBlock {
-
-  protected static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+public class PanelBlock extends AdvancedMultiPlaceBlock {
 
   // We need a VoxelShape for each side to cover all faces and possibilities
   protected static final VoxelShape FLOOR_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 1.0, 16.0);
@@ -80,15 +73,6 @@ public class PanelBlock extends MultiPlaceBlock {
       default:
         return FLOOR_AABB;
     }
-  }
-
-  @Override
-  public boolean canBeReplaced(BlockState blockState, BlockPlaceContext context) {
-    ItemStack itemStack = context.getItemInHand();
-    if (itemStack.is(this.asItem())) {
-      return true;
-    }
-    return false;
   }
 
 }

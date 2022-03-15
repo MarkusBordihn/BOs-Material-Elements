@@ -28,9 +28,10 @@ import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-import de.markusbordihn.minecraft.materialelementsdecorative.block.MultiPlaceBlock;
+import de.markusbordihn.minecraft.materialelements.block.multiplace.AdvancedMultiPlaceBlock;
+import de.markusbordihn.minecraft.materialelements.block.multiplace.MultiPlaceBlock;
 
-public class SlabBlock extends MultiPlaceBlock {
+public class SlabBlock extends AdvancedMultiPlaceBlock {
 
   // We need a VoxelShape for each side to cover all faces and possibilities
   protected static final VoxelShape FLOOR_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 8.0, 16.0);
