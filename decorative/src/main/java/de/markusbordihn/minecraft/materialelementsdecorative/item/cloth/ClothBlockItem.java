@@ -28,7 +28,7 @@ import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
 
 import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothBlock;
 
-public class ClothBlockItem extends BlockItem {
+public class ClothBlockItem extends BlockItem implements ClothColoredItem {
 
   private int blockColor = ClothColor.YELLOW.getBlockColor();
 

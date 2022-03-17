@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench by Markus Bordihn",
 	"ambientocclusion": false,
+	"texture_size": [32, 32],
 	"textures": {
 		"particle": "material_elements_decorative:block/cloth",
 		"texture": "material_elements_decorative:block/cloth"
@@ -11,12 +12,12 @@
 			"to": [16, 8, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, -10, 0]},
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#texture", "tintindex": 0},
-				"east": {"uv": [0, 0, 16, 16], "texture": "#texture", "tintindex": 0},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#texture", "tintindex": 0},
-				"west": {"uv": [0, 0, 16, 16], "texture": "#texture", "tintindex": 0},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#texture", "tintindex": 0},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#texture", "tintindex": 0}
+				"north": {"uv": [0, 4, 8, 8], "texture": "#texture", "tintindex": 0},
+				"east": {"uv": [0, 4, 8, 8], "texture": "#texture", "tintindex": 0},
+				"south": {"uv": [0, 4, 8, 8], "texture": "#texture", "tintindex": 0},
+				"west": {"uv": [0, 4, 8, 8], "texture": "#texture", "tintindex": 0},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#texture", "tintindex": 0},
+				"down": {"uv": [0, 0, 8, 8], "texture": "#texture", "tintindex": 0}
 			}
 		}
 	],

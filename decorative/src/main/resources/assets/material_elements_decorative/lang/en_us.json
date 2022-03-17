@@ -1,6 +1,4 @@
 {
-  "advancements.material_elements_decorative.crafting.root.title": "Material Elements: Decorative",
-  "advancements.material_elements_decorative.crafting.root.description": "Explore the additional materials and elements.",
   "advancements.material_elements_decorative.crafting.cover_a_hopper_with_wood.description": "Cover a hopper with plates that it look more elegant.",
   "advancements.material_elements_decorative.crafting.cover_a_hopper_with_wood.title": "Hoppers looking ugly, aren't there?",
   "advancements.material_elements_decorative.crafting.cut_half_slab.description": "Cutting wood is fun.",
@@ -9,6 +7,10 @@
   "advancements.material_elements_decorative.crafting.cut_panel.title": "Last cut, isn't it?",
   "advancements.material_elements_decorative.crafting.cut_plate.description": "Looks like a useful addition.",
   "advancements.material_elements_decorative.crafting.cut_plate.title": "Cut me one more time ...",
+  "advancements.material_elements_decorative.crafting.obtain_stone_cutter.description": "Try to cut wood with the stone cutter.",
+  "advancements.material_elements_decorative.crafting.obtain_stone_cutter.title": "Mhhh will it cut wood?",
+  "advancements.material_elements_decorative.crafting.root.description": "Explore the additional materials and elements.",
+  "advancements.material_elements_decorative.crafting.root.title": "Material Elements: Decorative",
 
   "block.material_elements_decorative.oak_framed_hopper": "Oak framed Hopper",
   "block.material_elements_decorative.spruce_framed_hopper": "Spruce framed Hopper",
@@ -136,8 +138,8 @@
   "block.material_elements_decorative.wool_slab_black": "Wool Slab (black)",
 
   "block.material_elements_decorative.quartz_half_slab": "Quartz half-size Slab",
-  "block.material_elements_decorative.quartz_Plate": "Quartz Plate",
-  "block.material_elements_decorative.quartz_Panel": "Quartz Panel",
+  "block.material_elements_decorative.quartz_plate": "Quartz Plate",
+  "block.material_elements_decorative.quartz_panel": "Quartz Panel",
 
   "block.placeholder.text": "Template placeholder do not remove!",
 

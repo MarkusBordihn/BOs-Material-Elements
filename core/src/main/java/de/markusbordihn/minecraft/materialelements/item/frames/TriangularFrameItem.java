@@ -1,5 +1,5 @@
 /**
- * Copyright 2021 Markus Bordihn
+ * Copyright 2022 Markus Bordihn
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -17,29 +17,37 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package de.markusbordihn.minecraft.materialelements.block;
+package de.markusbordihn.minecraft.materialelements.item.frames;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.BlockGetter;
+import java.util.List;
+import javax.annotation.Nullable;
+
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.VoxelShape;
 
-import de.markusbordihn.minecraft.materialelements.block.multiplace.AdvancedMultiPlaceBlock;
+import de.markusbordihn.minecraft.materialelements.Constants;
+import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
 
-public class TriangularBlock extends AdvancedMultiPlaceBlock {
+public class TriangularFrameItem extends BlockItem {
 
-  protected static final VoxelShape AABB = Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+  public TriangularFrameItem(Block block, Properties properties) {
+    super(block, properties);
+  }
 
-  public TriangularBlock(Properties properties) {
-    super(properties);
+  public TriangularFrameItem(Block block) {
+    super(block, new Item.Properties().tab(MaterialElementsTab.TAB_FRAMES));
   }
 
   @Override
-  public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
-      CollisionContext collisionContext) {
-    return AABB;
+  public void appendHoverText(ItemStack itemStack, @Nullable Level level,
+      List<Component> tooltipList, TooltipFlag tooltipFlag) {
+    tooltipList.add(new TranslatableComponent(Constants.TEXT_PREFIX + "triangular_frame"));
   }
 
 }

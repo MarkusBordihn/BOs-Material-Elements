@@ -37,6 +37,7 @@ import de.markusbordihn.minecraft.materialelements.item.constructionframes.Const
 import de.markusbordihn.minecraft.materialelements.item.frames.CubeFrameItem;
 import de.markusbordihn.minecraft.materialelements.item.frames.CubeGlassFrameItem;
 import de.markusbordihn.minecraft.materialelements.item.frames.SlabFrameItem;
+import de.markusbordihn.minecraft.materialelements.item.frames.TriangularFrameItem;
 import de.markusbordihn.minecraft.materialelements.item.leather.LeatherSheetItem;
 import de.markusbordihn.minecraft.materialelements.item.leather.LeatherStripItem;
 import de.markusbordihn.minecraft.materialelements.item.testtube.TestTubeColorItem;
@@ -339,6 +340,29 @@ public class ModItems {
       ITEMS.register("steel_slab_frame", () -> new SlabFrameItem(ModBlocks.STEEL_SLAB_FRAME.get()));
   public static final RegistryObject<Item> NETHERITE_SLAB_FRAME = ITEMS.register(
       "netherite_slab_frame", () -> new SlabFrameItem(ModBlocks.NETHERITE_SLAB_FRAME.get()));
+
+  // Triangular Frames
+  public static final RegistryObject<Item> LIGHT_TRIANGULAR_FRAME =
+      ITEMS.register("light_triangular_frame",
+          () -> new TriangularFrameItem(ModBlocks.LIGHT_TRIANGULAR_FRAME.get()));
+  public static final RegistryObject<Item> COPPER_TRIANGULAR_FRAME =
+      ITEMS.register("copper_triangular_frame",
+          () -> new TriangularFrameItem(ModBlocks.COPPER_TRIANGULAR_FRAME.get()));
+  public static final RegistryObject<Item> GOLD_TRIANGULAR_FRAME =
+      ITEMS.register("gold_triangular_frame",
+          () -> new TriangularFrameItem(ModBlocks.GOLD_TRIANGULAR_FRAME.get()));
+  public static final RegistryObject<Item> SILVER_TRIANGULAR_FRAME =
+      ITEMS.register("silver_triangular_frame",
+          () -> new TriangularFrameItem(ModBlocks.SILVER_TRIANGULAR_FRAME.get()));
+  public static final RegistryObject<Item> IRON_TRIANGULAR_FRAME =
+      ITEMS.register("iron_triangular_frame",
+          () -> new TriangularFrameItem(ModBlocks.IRON_TRIANGULAR_FRAME.get()));
+  public static final RegistryObject<Item> STEEL_TRIANGULAR_FRAME =
+      ITEMS.register("steel_triangular_frame",
+          () -> new TriangularFrameItem(ModBlocks.STEEL_TRIANGULAR_FRAME.get()));
+  public static final RegistryObject<Item> NETHERITE_TRIANGULAR_FRAME =
+      ITEMS.register("netherite_triangular_frame",
+          () -> new TriangularFrameItem(ModBlocks.NETHERITE_TRIANGULAR_FRAME.get()));
 
   // Construction Cube Frames
   public static final RegistryObject<Item> OAK_CONSTRUCTION_CUBE_FRAME =

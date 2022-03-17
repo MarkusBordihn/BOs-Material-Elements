@@ -41,10 +41,44 @@ public class ClientRenderer {
     event.enqueueWork(() -> {
       // @TemplateEntryPoint("Register Render Layers")
 
+      // Cloth triangular
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_WHITE.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_ORANGE.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_MAGENTA.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_LIGHT_BLUE.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_YELLOW.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_LIME.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_PINK.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_GRAY.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_LIGHT_GRAY.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_CYAN.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_PURPLE.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_BLUE.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_BROWN.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_GREEN.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_RED.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CLOTH_TRIANGULAR_BLACK.get(),
+          RenderType.cutoutMipped());
+
       // Steel Chain
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_CHAIN.get(), RenderType.cutoutMipped());
 
-      // Steel Lantern (default)
+      // Steel and Soul Lantern (default)
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN.get(), RenderType.cutoutMipped());
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_SOUL_LANTERN.get(),
           RenderType.cutoutMipped());

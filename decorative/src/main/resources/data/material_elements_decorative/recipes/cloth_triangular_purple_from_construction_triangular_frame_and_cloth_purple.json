@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "material_elements:construction_triangular_frames"
+    },
+    {
+      "item": "material_elements:cloth_purple"
+    },
+    {
+      "item": "material_elements:cloth_purple"
+    },
+    {
+      "item": "material_elements:cloth_purple"
+    },
+    {
+      "item": "material_elements:cloth_purple"
+    }
+  ],
+  "result": {
+    "item": "material_elements_decorative:cloth_triangular_purple",
+    "count": 1
+  }
+}

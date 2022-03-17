@@ -11,6 +11,8 @@
     "material_elements:netherite_rod_star",
     "material_elements:netherite_rod_tee",
     "material_elements:netherite_rod_tee_elbow",
+    "material_elements:netherite_slab_frame",
+    "material_elements:netherite_triangular_frame",
     "material_elements:steel_block",
     "material_elements:steel_cube_frame",
     "material_elements:steel_cube_glass_frame",
@@ -21,6 +23,8 @@
     "material_elements:steel_rod_half_size",
     "material_elements:steel_rod_star",
     "material_elements:steel_rod_tee",
-    "material_elements:steel_rod_tee_elbow"
+    "material_elements:steel_rod_tee_elbow",
+    "material_elements:steel_slab_frame",
+    "material_elements:steel_triangular_frame"
   ]
 }

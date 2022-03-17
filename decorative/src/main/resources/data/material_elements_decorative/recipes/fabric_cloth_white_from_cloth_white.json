@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "material_elements:cloth_white"
+    },
+    {
+      "item": "material_elements:cloth_white"
+    }
+  ],
+  "result": {
+    "item": "material_elements_decorative:fabric_cloth_white",
+    "count": 1
+  }
+}

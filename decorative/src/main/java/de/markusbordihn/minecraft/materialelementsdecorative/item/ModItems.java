@@ -40,6 +40,7 @@ import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.
 import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.WarpedFramedHopper;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.cloth.ClothBlockItem;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.cloth.ClothSlabItem;
+import de.markusbordihn.minecraft.materialelementsdecorative.item.cloth.ClothTriangularItem;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.cloth.FabricClothItem;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.lantern.SteelLanternItem;
 import de.markusbordihn.minecraft.materialelementsdecorative.tabs.MaterialElementsTab;
@@ -162,6 +163,40 @@ public class ModItems {
       ITEMS.register("cloth_slab_red", () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_RED.get()));
   public static final RegistryObject<Item> CLOTH_SLAB_BLACK =
       ITEMS.register("cloth_slab_black", () -> new ClothSlabItem(ModBlocks.CLOTH_SLAB_BLACK.get()));
+
+  // Cloth Triangular
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_WHITE =
+      ITEMS.register("cloth_triangular_white", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_WHITE.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_ORANGE = ITEMS.register("cloth_triangular_orange",
+      () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_ORANGE.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_MAGENTA = ITEMS.register("cloth_triangular_magenta",
+      () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_MAGENTA.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_LIGHT_BLUE = ITEMS.register(
+      "cloth_triangular_light_blue", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_LIGHT_BLUE.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_YELLOW = ITEMS.register("cloth_triangular_yellow",
+      () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_YELLOW.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_LIME =
+      ITEMS.register("cloth_triangular_lime", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_LIME.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_PINK =
+      ITEMS.register("cloth_triangular_pink", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_PINK.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_GRAY =
+      ITEMS.register("cloth_triangular_gray", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_GRAY.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_LIGHT_GRAY = ITEMS.register(
+      "cloth_triangular_light_gray", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_LIGHT_GRAY.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_CYAN =
+      ITEMS.register("cloth_triangular_cyan", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_CYAN.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_PURPLE = ITEMS.register("cloth_triangular_purple",
+      () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_PURPLE.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_BROWN =
+      ITEMS.register("cloth_triangular_brown", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_BROWN.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_BLUE =
+      ITEMS.register("cloth_triangular_blue", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_BLUE.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_GREEN =
+      ITEMS.register("cloth_triangular_green", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_GREEN.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_RED =
+      ITEMS.register("cloth_triangular_red", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_RED.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_BLACK =
+      ITEMS.register("cloth_triangular_black", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_BLACK.get()));
 
   // Quartz
   public static final RegistryObject<Item> QUARTZ_PANEL =

@@ -38,6 +38,7 @@ import de.markusbordihn.minecraft.materialelements.color.ClothColor;
 
 import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothSlabBlock;
+import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothTriangularBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.FabricClothBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.AcaciaFramedHopper;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.BirchFramedHopper;
@@ -181,6 +182,40 @@ public class ModBlocks {
       BLOCKS.register("cloth_slab_red", () -> new ClothSlabBlock(ClothColor.RED));
   public static final RegistryObject<Block> CLOTH_SLAB_BLACK =
       BLOCKS.register("cloth_slab_black", () -> new ClothSlabBlock(ClothColor.BLACK));
+
+  // Cloth Triangular
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_WHITE =
+      BLOCKS.register("cloth_triangular_white", () -> new ClothTriangularBlock(ClothColor.WHITE));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_ORANGE =
+      BLOCKS.register("cloth_triangular_orange", () -> new ClothTriangularBlock(ClothColor.ORANGE));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_MAGENTA = BLOCKS
+      .register("cloth_triangular_magenta", () -> new ClothTriangularBlock(ClothColor.MAGENTA));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_LIGHT_BLUE = BLOCKS.register(
+      "cloth_triangular_light_blue", () -> new ClothTriangularBlock(ClothColor.LIGHT_BLUE));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_YELLOW =
+      BLOCKS.register("cloth_triangular_yellow", () -> new ClothTriangularBlock(ClothColor.YELLOW));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_LIME =
+      BLOCKS.register("cloth_triangular_lime", () -> new ClothTriangularBlock(ClothColor.LIME));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_PINK =
+      BLOCKS.register("cloth_triangular_pink", () -> new ClothTriangularBlock(ClothColor.PINK));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_GRAY =
+      BLOCKS.register("cloth_triangular_gray", () -> new ClothTriangularBlock(ClothColor.GRAY));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_LIGHT_GRAY = BLOCKS.register(
+      "cloth_triangular_light_gray", () -> new ClothTriangularBlock(ClothColor.LIGHT_GRAY));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_CYAN =
+      BLOCKS.register("cloth_triangular_cyan", () -> new ClothTriangularBlock(ClothColor.CYAN));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_PURPLE =
+      BLOCKS.register("cloth_triangular_purple", () -> new ClothTriangularBlock(ClothColor.PURPLE));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_BLUE =
+      BLOCKS.register("cloth_triangular_blue", () -> new ClothTriangularBlock(ClothColor.BLUE));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_BROWN =
+      BLOCKS.register("cloth_triangular_brown", () -> new ClothTriangularBlock(ClothColor.BROWN));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_GREEN =
+      BLOCKS.register("cloth_triangular_green", () -> new ClothTriangularBlock(ClothColor.GREEN));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_RED =
+      BLOCKS.register("cloth_triangular_red", () -> new ClothTriangularBlock(ClothColor.RED));
+  public static final RegistryObject<Block> CLOTH_TRIANGULAR_BLACK =
+      BLOCKS.register("cloth_triangular_black", () -> new ClothTriangularBlock(ClothColor.BLACK));
 
   // Quartz
   public static final RegistryObject<Block> QUARTZ_PANEL =

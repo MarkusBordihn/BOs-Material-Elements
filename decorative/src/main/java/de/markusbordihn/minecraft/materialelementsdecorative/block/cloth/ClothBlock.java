@@ -25,7 +25,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import de.markusbordihn.minecraft.materialelements.color.ClothColor;
 
-public class ClothBlock extends Block {
+public class ClothBlock extends Block implements ClothColoredBlock {
 
   // Store Colors
   private ClothColor color = ClothColor.RED;

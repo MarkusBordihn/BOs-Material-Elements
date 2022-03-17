@@ -32,7 +32,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import de.markusbordihn.minecraft.materialelements.block.multiplace.MultiPlaceBlock;
 import de.markusbordihn.minecraft.materialelements.color.ClothColor;
 
-public class FabricClothBlock extends MultiPlaceBlock {
+public class FabricClothBlock extends MultiPlaceBlock implements ClothColoredBlock {
 
   // We need a VoxelShape for each side to cover all faces and possibilities
   protected static final VoxelShape FLOOR_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 1.0, 16.0);

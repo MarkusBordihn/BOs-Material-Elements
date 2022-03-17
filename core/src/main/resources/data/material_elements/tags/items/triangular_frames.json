@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements:light_triangular_frame",
+    "material_elements:copper_triangular_frame",
+    "material_elements:gold_triangular_frame",
+    "material_elements:iron_triangular_frame",
+    "material_elements:netherite_triangular_frame",
+    "material_elements:silver_triangular_frame",
+    "material_elements:steel_triangular_frame"
+  ]
+}

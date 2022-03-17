@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "material_elements:cloth_magenta"
+    },
+    {
+      "item": "material_elements:cloth_magenta"
+    }
+  ],
+  "result": {
+    "item": "material_elements_decorative:fabric_cloth_magenta",
+    "count": 1
+  }
+}

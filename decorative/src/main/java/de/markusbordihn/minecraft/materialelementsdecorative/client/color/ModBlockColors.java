@@ -35,6 +35,7 @@ import net.minecraftforge.fml.common.Mod;
 import de.markusbordihn.minecraft.materialelementsdecorative.Constants;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.ModBlocks;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothBlock;
+import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothColoredBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothSlabBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.FabricClothBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.lantern.SteelLanternBlock;
@@ -51,8 +52,8 @@ public class ModBlockColors {
 
     log.info("{} Block Colors ...", Constants.LOG_REGISTER_PREFIX);
 
-    // Use cloth color for fabric cloth.
-    blockColors.register(ModBlockColors::getColorFromFabricClothBlock,
+    // Fabric cloth
+    blockColors.register(ModBlockColors::getColorFromClothColoredBlock,
         ModBlocks.FABRIC_CLOTH_WHITE.get(), ModBlocks.FABRIC_CLOTH_ORANGE.get(),
         ModBlocks.FABRIC_CLOTH_MAGENTA.get(), ModBlocks.FABRIC_CLOTH_LIGHT_BLUE.get(),
         ModBlocks.FABRIC_CLOTH_YELLOW.get(), ModBlocks.FABRIC_CLOTH_LIME.get(),
@@ -62,8 +63,8 @@ public class ModBlockColors {
         ModBlocks.FABRIC_CLOTH_BROWN.get(), ModBlocks.FABRIC_CLOTH_GREEN.get(),
         ModBlocks.FABRIC_CLOTH_RED.get(), ModBlocks.FABRIC_CLOTH_BLACK.get());
 
-    // Use cloth color for cloth block.
-    blockColors.register(ModBlockColors::getColorFromClothBlock, ModBlocks.CLOTH_BLOCK_WHITE.get(),
+    // Cloth block
+    blockColors.register(ModBlockColors::getColorFromClothColoredBlock, ModBlocks.CLOTH_BLOCK_WHITE.get(),
         ModBlocks.CLOTH_BLOCK_ORANGE.get(), ModBlocks.CLOTH_BLOCK_MAGENTA.get(),
         ModBlocks.CLOTH_BLOCK_LIGHT_BLUE.get(), ModBlocks.CLOTH_BLOCK_YELLOW.get(),
         ModBlocks.CLOTH_BLOCK_LIME.get(), ModBlocks.CLOTH_BLOCK_PINK.get(),
@@ -73,8 +74,8 @@ public class ModBlockColors {
         ModBlocks.CLOTH_BLOCK_GREEN.get(), ModBlocks.CLOTH_BLOCK_RED.get(),
         ModBlocks.CLOTH_BLOCK_BLACK.get());
 
-    // Use cloth color for cloth slab.
-    blockColors.register(ModBlockColors::getColorFromClothSlabBlock,
+    // Cloth slab
+    blockColors.register(ModBlockColors::getColorFromClothColoredBlock,
         ModBlocks.CLOTH_SLAB_WHITE.get(), ModBlocks.CLOTH_SLAB_ORANGE.get(),
         ModBlocks.CLOTH_SLAB_MAGENTA.get(), ModBlocks.CLOTH_SLAB_LIGHT_BLUE.get(),
         ModBlocks.CLOTH_SLAB_YELLOW.get(), ModBlocks.CLOTH_SLAB_LIME.get(),
@@ -84,7 +85,18 @@ public class ModBlockColors {
         ModBlocks.CLOTH_SLAB_BROWN.get(), ModBlocks.CLOTH_SLAB_GREEN.get(),
         ModBlocks.CLOTH_SLAB_RED.get(), ModBlocks.CLOTH_SLAB_BLACK.get());
 
-    // Use dye color for the colored lanterns.
+    // Cloth triangular
+    blockColors.register(ModBlockColors::getColorFromClothColoredBlock,
+        ModBlocks.CLOTH_TRIANGULAR_WHITE.get(), ModBlocks.CLOTH_TRIANGULAR_ORANGE.get(),
+        ModBlocks.CLOTH_TRIANGULAR_MAGENTA.get(), ModBlocks.CLOTH_TRIANGULAR_LIGHT_BLUE.get(),
+        ModBlocks.CLOTH_TRIANGULAR_YELLOW.get(), ModBlocks.CLOTH_TRIANGULAR_LIME.get(),
+        ModBlocks.CLOTH_TRIANGULAR_PINK.get(), ModBlocks.CLOTH_TRIANGULAR_GRAY.get(),
+        ModBlocks.CLOTH_TRIANGULAR_LIGHT_GRAY.get(), ModBlocks.CLOTH_TRIANGULAR_CYAN.get(),
+        ModBlocks.CLOTH_TRIANGULAR_PURPLE.get(), ModBlocks.CLOTH_TRIANGULAR_BLUE.get(),
+        ModBlocks.CLOTH_TRIANGULAR_BROWN.get(), ModBlocks.CLOTH_TRIANGULAR_GREEN.get(),
+        ModBlocks.CLOTH_TRIANGULAR_RED.get(), ModBlocks.CLOTH_TRIANGULAR_BLACK.get());
+
+    // Colored lanterns
     blockColors.register(ModBlockColors::getColorFromSteelLantern, ModBlocks.STEEL_LANTERN.get(),
         ModBlocks.STEEL_SOUL_LANTERN.get(), ModBlocks.STEEL_LANTERN_WHITE.get(),
         ModBlocks.STEEL_LANTERN_ORANGE.get(), ModBlocks.STEEL_LANTERN_MAGENTA.get(),
@@ -97,27 +109,10 @@ public class ModBlockColors {
         ModBlocks.STEEL_LANTERN_BLACK.get());
   }
 
-  public static int getColorFromClothBlock(BlockState blockState,
+  public static int getColorFromClothColoredBlock(BlockState blockState,
       BlockAndTintGetter blockAndTintGetter, BlockPos blockPos, int color) {
-    if (color <= 0 && blockState.getBlock() instanceof ClothBlock clothBlock) {
-      return clothBlock.getBlockColor();
-    }
-    return -1;
-  }
-
-  public static int getColorFromClothSlabBlock(BlockState blockState,
-      BlockAndTintGetter blockAndTintGetter, BlockPos blockPos, int color) {
-    if (color <= 0 && blockState.getBlock() instanceof ClothSlabBlock clothSlabBlock) {
-      return clothSlabBlock.getBlockColor();
-    }
-    return -1;
-  }
-
-
-  public static int getColorFromFabricClothBlock(BlockState blockState,
-      BlockAndTintGetter blockAndTintGetter, BlockPos blockPos, int color) {
-    if (color <= 0 && blockState.getBlock() instanceof FabricClothBlock fabricClothBlock) {
-      return fabricClothBlock.getBlockColor();
+    if (color <= 0 && blockState.getBlock() instanceof ClothColoredBlock clothColoredBlock) {
+      return clothColoredBlock.getBlockColor();
     }
     return -1;
   }
