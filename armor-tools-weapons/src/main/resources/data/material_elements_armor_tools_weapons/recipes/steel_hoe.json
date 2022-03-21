@@ -3,7 +3,7 @@
   "pattern": ["XX", " #", " #"],
   "key": {
     "#": {
-      "item": "minecraft:stick"
+      "tag": "forge:rods/wooden"
     },
     "X": {
       "tag": "forge:ingots/steel"

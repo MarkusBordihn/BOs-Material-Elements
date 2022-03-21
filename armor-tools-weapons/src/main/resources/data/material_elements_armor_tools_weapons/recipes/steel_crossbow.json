@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["#\u0026#", "~$~", " # "],
+  "pattern": ["#X#", "~$~", " # "],
   "key": {
     "~": {
       "item": "minecraft:string"
     },
     "#": {
-      "item": "minecraft:stick"
+      "tag": "forge:rods/wooden"
     },
-    "\u0026": {
+    "X": {
       "tag": "forge:ingots/steel"
     },
     "$": {

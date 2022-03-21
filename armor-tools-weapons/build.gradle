@@ -131,8 +131,8 @@ dependencies {
   minecraft 'net.minecraftforge:forge:1.18.1-39.1.2'
 
   // Required: Bo's Material Elements (dev dependency)
-  compileOnly fg.deobf("de.markusbordihn.minecraft.materialelements:core:3.0.0")
-  runtimeOnly fg.deobf("de.markusbordihn.minecraft.materialelements:core:3.0.0")
+  compileOnly fg.deobf("de.markusbordihn.minecraft.materialelements:core:3.0.1")
+  runtimeOnly fg.deobf("de.markusbordihn.minecraft.materialelements:core:3.0.1")
 
   // Additional helpful Mods for development (runtime depenedency)
   runtimeOnly fg.deobf("curse.maven:item-zoom-261725:3574021")
@@ -179,7 +179,7 @@ curseforge {
   project {
     id = "${curseforge_project_id}"
     changelog = file("../CHANGELOG.md")
-    releaseType = 'beta'
+    releaseType = 'release'
     addGameVersion("1.18.1")
     addGameVersion("Forge")
     mainArtifact(jar) {

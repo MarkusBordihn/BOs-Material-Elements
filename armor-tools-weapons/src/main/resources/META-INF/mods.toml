@@ -20,14 +20,14 @@ license="MIT"
 [[mods]]
   modId="material_elements_armor_tools_weapons"
   version="${file.jarVersion}"
-  displayName="Steel Armor, Tools Weapons"
+  displayName="Material Elements Armor, Tools and Weapons"
   # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
   #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
   displayURL="https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons"
   logoFile="logo.png"
   credits=""
   authors="Markus Bordihn"
-  description='''Steel Armor, Tools and Weapons.'''
+  description='''Material Elements Armor, Tools and Weapons adds additional armor, tools and weapons to the game.'''
 
 [[dependencies.material_elements_armor_tools_weapons]]
   modId="forge"
@@ -46,6 +46,6 @@ license="MIT"
 [[dependencies.material_elements_armor_tools_weapons]]
   modId="material_elements"
   mandatory=true
-  versionRange="[3.0.0,4.0.0)"
+  versionRange="[3.0.1,4.0.0)"
   ordering="NONE"
   side="BOTH"
