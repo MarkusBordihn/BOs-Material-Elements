@@ -203,6 +203,57 @@ public class RegistryMapping {
         mapping.remap(ModBlocks.WARPED_HALF_SLAB.get());
       }
 
+      // Wool Half-Slab
+      if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_white"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_WHITE.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_orange"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_ORANGE.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_magenta"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_MAGENTA.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_light_blue"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_BLUE.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_yellow"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_YELLOW.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_lime"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_LIME.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_pink"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_PINK.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_gray"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_GRAY.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_light_gray"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_LIGHT_GRAY.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_cyan"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_CYAN.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_purple"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_PURPLE.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_blue"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_BLUE.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_brown"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_BROWN.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_green"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_GREEN.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_red"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_RED.get());
+      } else if (mapping.key
+          .equals(new ResourceLocation("material_elements:wool_slab_black"))) {
+        mapping.remap(ModBlocks.WOOL_SLAB_BLACK.get());
+      }
+
     }
   }
 
