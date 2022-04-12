@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "material_elements:construction_triangular_frames"
+    },
+    {
+      "item": "material_elements:cloth_magenta"
+    },
+    {
+      "item": "material_elements:cloth_magenta"
+    },
+    {
+      "item": "material_elements:cloth_magenta"
+    },
+    {
+      "item": "material_elements:cloth_magenta"
+    }
+  ],
+  "result": {
+    "item": "material_elements_decorative:cloth_triangular_magenta",
+    "count": 1
+  }
+}

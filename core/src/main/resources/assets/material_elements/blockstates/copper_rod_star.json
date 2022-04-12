@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "material_elements:block/rods/copper_rod_star"
+    }
+  }
+}

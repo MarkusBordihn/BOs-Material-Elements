@@ -1,7 +1,0 @@
-{
-  "parent": "material_elements:block/template/rod_star",
-  "textures": {
-    "texture": "material_elements:block/silver_rod",
-    "particle": "material_elements:block/silver_rod"
-  }
-}

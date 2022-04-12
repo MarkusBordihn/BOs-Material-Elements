@@ -1,7 +1,0 @@
-{
-  "parent": "material_elements:block/template/rod_tee",
-  "textures": {
-    "texture": "material_elements:block/gold_rod",
-    "particle": "material_elements:block/gold_rod"
-  }
-}

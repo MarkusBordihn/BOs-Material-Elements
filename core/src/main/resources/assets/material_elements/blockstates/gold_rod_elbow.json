@@ -1,0 +1,60 @@
+{
+  "variants": {
+    "face=floor,facing=north": {
+      "model": "material_elements:block/rods/gold_rod_elbow",
+      "y": 180
+    },
+    "face=floor,facing=east": {
+      "model": "material_elements:block/rods/gold_rod_elbow",
+      "y": 270
+    },
+    "face=floor,facing=south": {
+      "model": "material_elements:block/rods/gold_rod_elbow",
+      "y": 0
+    },
+    "face=floor,facing=west": {
+      "model": "material_elements:block/rods/gold_rod_elbow",
+      "y": 90
+    },
+    "face=wall,facing=north": {
+      "model": "material_elements:block/rods/gold_rod_elbow",
+      "x": 90,
+      "y": 270
+    },
+    "face=wall,facing=east": {
+      "model": "material_elements:block/rods/gold_rod_elbow",
+      "x": 90,
+      "y": 0
+    },
+    "face=wall,facing=south": {
+      "model": "material_elements:block/rods/gold_rod_elbow",
+      "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=west": {
+      "model": "material_elements:block/rods/gold_rod_elbow",
+      "x": 90,
+      "y": 180
+    },
+    "face=ceiling,facing=north": {
+      "model": "material_elements:block/rods/gold_rod_elbow",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=east": {
+      "model": "material_elements:block/rods/gold_rod_elbow",
+      "x": 180,
+      "y": 270
+    },
+    "face=ceiling,facing=south": {
+      "model": "material_elements:block/rods/gold_rod_elbow",
+      "x": 180,
+      "y": 0
+    },
+    "face=ceiling,facing=west": {
+      "model": "material_elements:block/rods/gold_rod_elbow",
+      "x": 180,
+      "y": 90
+    }
+  }
+}

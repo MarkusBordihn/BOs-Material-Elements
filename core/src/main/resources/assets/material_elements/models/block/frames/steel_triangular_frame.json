@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/templates/triangular_frame",
+  "textures": {
+    "texture": "material_elements:block/steel_rod",
+    "particle": "material_elements:block/steel_rod"
+  }
+}

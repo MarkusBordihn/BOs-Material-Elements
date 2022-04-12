@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "material_elements:block/rods/netherite_rod_star"
+    }
+  }
+}

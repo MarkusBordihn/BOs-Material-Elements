@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/templates/slab_frame_top",
+  "textures": {
+    "texture": "minecraft:block/oak_planks",
+    "particle": "minecraft:block/oak_planks"
+  }
+}

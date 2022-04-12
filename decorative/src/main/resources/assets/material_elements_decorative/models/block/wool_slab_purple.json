@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements_decorative:block/template/slab",
+  "textures": {
+    "texture": "minecraft:block/purple_wool",
+    "particle": "minecraft:block/purple_wool"
+  }
+}

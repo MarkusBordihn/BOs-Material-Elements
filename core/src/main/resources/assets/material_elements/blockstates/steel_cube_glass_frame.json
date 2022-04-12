@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "material_elements:block/frames/steel_cube_glass_frame" }
+  }
+}

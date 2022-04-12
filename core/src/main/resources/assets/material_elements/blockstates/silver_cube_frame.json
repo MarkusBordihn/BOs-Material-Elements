@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "material_elements:block/frames/silver_cube_frame" }
+  }
+}

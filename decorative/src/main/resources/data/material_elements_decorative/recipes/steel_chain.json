@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["N", "I", "N"],
+  "key": {
+    "I": {
+      "tag": "forge:ingots/steel"
+    },
+    "N": {
+      "item": "material_elements:steel_nugget"
+    }
+  },
+  "result": {
+    "item": "material_elements_decorative:steel_chain"
+  }
+}

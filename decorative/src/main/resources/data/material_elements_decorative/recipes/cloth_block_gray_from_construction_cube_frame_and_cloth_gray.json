@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "material_elements:construction_cube_frames"
+    },
+    {
+      "item": "material_elements:cloth_gray"
+    },
+    {
+      "item": "material_elements:cloth_gray"
+    },
+    {
+      "item": "material_elements:cloth_gray"
+    },
+    {
+      "item": "material_elements:cloth_gray"
+    },
+    {
+      "item": "material_elements:cloth_gray"
+    },
+    {
+      "item": "material_elements:cloth_gray"
+    }
+  ],
+  "result": {
+    "item": "material_elements_decorative:cloth_block_gray",
+    "count": 1
+  }
+}

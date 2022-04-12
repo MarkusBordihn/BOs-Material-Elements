@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["SSS", "S#S", "SSS"],
+  "key": {
+    "S": {
+      "item": "minecraft:string"
+    },
+    "#": {
+      "item": "minecraft:brown_dye"
+    }
+  },
+  "result": {
+    "item": "material_elements:cloth_brown",
+    "count": 6
+  }
+}

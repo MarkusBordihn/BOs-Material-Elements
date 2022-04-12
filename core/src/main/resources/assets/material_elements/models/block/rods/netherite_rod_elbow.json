@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/templates/rod_elbow",
+  "textures": {
+    "texture": "material_elements:block/netherite_rod",
+    "particle": "material_elements:block/netherite_rod"
+  }
+}

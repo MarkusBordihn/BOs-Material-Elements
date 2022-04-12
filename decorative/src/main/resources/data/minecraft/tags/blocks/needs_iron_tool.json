@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements_decorative:acacia_framed_hopper",
+    "material_elements_decorative:birch_framed_hopper",
+    "material_elements_decorative:crimson_framed_hopper",
+    "material_elements_decorative:dark_oak_framed_hopper",
+    "material_elements_decorative:jungle_framed_hopper",
+    "material_elements_decorative:oak_framed_hopper",
+    "material_elements_decorative:spruce_framed_hopper",
+    "material_elements_decorative:steel_lantern",
+    "material_elements_decorative:steel_lantern_black",
+    "material_elements_decorative:steel_lantern_blue",
+    "material_elements_decorative:steel_lantern_brown",
+    "material_elements_decorative:steel_lantern_cyan",
+    "material_elements_decorative:steel_lantern_gray",
+    "material_elements_decorative:steel_lantern_green",
+    "material_elements_decorative:steel_lantern_light_blue",
+    "material_elements_decorative:steel_lantern_light_gray",
+    "material_elements_decorative:steel_lantern_lime",
+    "material_elements_decorative:steel_lantern_magenta",
+    "material_elements_decorative:steel_lantern_orange",
+    "material_elements_decorative:steel_lantern_pink",
+    "material_elements_decorative:steel_lantern_purple",
+    "material_elements_decorative:steel_lantern_red",
+    "material_elements_decorative:steel_lantern_white",
+    "material_elements_decorative:steel_lantern_yellow",
+    "material_elements_decorative:steel_soul_lantern",
+    "material_elements_decorative:warped_framed_hopper"
+  ]
+}

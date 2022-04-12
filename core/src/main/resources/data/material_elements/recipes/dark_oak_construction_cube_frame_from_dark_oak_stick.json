@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["---", "| |", "---"],
+  "key": {
+    "-": {
+      "item": "material_elements:dark_oak_stick"
+    },
+    "|": {
+      "item": "material_elements:dark_oak_stick"
+    }
+  },
+  "result": {
+    "item": "material_elements:dark_oak_construction_cube_frame",
+    "count": 1
+  }
+}

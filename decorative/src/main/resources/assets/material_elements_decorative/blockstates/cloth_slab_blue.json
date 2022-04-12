@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=double": {
+      "model": "material_elements_decorative:block/cloth/cloth_block"
+    },
+    "type=bottom": {
+      "model": "material_elements_decorative:block/cloth/cloth_slab"
+    },
+    "type=top": {
+      "model": "material_elements_decorative:block/cloth/cloth_slab_top"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "material_elements:crimson_stick"
+  },
+  "result": "material_elements:crimson_stick_half_size",
+  "count": 2
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements_decorative:oak_panel",
+    "material_elements_decorative:spruce_panel",
+    "material_elements_decorative:acacia_panel",
+    "material_elements_decorative:dark_oak_panel",
+    "material_elements_decorative:crimson_panel",
+    "material_elements_decorative:warped_panel"
+  ]
+}

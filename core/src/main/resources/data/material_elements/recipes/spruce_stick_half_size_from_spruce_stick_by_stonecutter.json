@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "material_elements:spruce_stick"
+  },
+  "result": "material_elements:spruce_stick_half_size",
+  "count": 2
+}

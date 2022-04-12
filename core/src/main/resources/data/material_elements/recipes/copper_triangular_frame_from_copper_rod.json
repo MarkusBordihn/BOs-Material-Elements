@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["-  ", "-- ", "---"],
+  "key": {
+    "-": {
+      "item": "material_elements:copper_rod"
+    }
+  },
+  "result": {
+    "item": "material_elements:copper_triangular_frame",
+    "count": 1
+  }
+}

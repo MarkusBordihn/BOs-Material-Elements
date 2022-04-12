@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["-  ", "-- ", "---"],
+  "key": {
+    "-": {
+      "item": "material_elements:spruce_stick"
+    }
+  },
+  "result": {
+    "item": "material_elements:spruce_construction_triangular_frame",
+    "count": 1
+  }
+}

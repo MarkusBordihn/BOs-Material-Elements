@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["XXX", "$#$", "XXX"],
+  "key": {
+    "#": {
+      "item": "minecraft:torch"
+    },
+    "$": {
+      "item": "minecraft:magenta_stained_glass_pane"
+    },
+    "X": {
+      "tag": "forge:nuggets/steel"
+    }
+  },
+  "result": {
+    "item": "material_elements_decorative:steel_lantern_magenta"
+  }
+}

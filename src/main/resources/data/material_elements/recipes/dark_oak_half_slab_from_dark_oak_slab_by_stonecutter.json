@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:dark_oak_slab"
-  },
-  "result": "material_elements:dark_oak_half_slab",
-  "count": 2
-}

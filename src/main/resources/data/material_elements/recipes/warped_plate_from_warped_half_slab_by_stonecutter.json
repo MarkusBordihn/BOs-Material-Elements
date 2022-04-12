@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "material_elements:warped_half_slab"
-  },
-  "result": "material_elements:warped_plate",
-  "count": 2
-}

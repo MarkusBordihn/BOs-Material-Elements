@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "material_elements:construction_slab_frames"
+    },
+    {
+      "item": "material_elements:cloth_blue"
+    },
+    {
+      "item": "material_elements:cloth_blue"
+    },
+    {
+      "item": "material_elements:cloth_blue"
+    },
+    {
+      "item": "material_elements:cloth_blue"
+    }
+  ],
+  "result": {
+    "item": "material_elements_decorative:cloth_slab_blue",
+    "count": 1
+  }
+}

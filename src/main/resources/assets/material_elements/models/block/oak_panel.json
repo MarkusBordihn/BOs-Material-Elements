@@ -1,7 +1,0 @@
-{
-  "parent": "material_elements:block/template/panel",
-  "textures": {
-    "texture": "minecraft:block/oak_planks",
-    "particle": "minecraft:block/oak_planks"
-  }
-}

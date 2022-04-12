@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements_decorative:oak_framed_hopper",
+    "material_elements_decorative:spruce_framed_hopper",
+    "material_elements_decorative:birch_framed_hopper",
+    "material_elements_decorative:jungle_framed_hopper",
+    "material_elements_decorative:acacia_framed_hopper",
+    "material_elements_decorative:dark_oak_framed_hopper",
+    "material_elements_decorative:crimson_framed_hopper",
+    "material_elements_decorative:warped_framed_hopper"
+  ]
+}

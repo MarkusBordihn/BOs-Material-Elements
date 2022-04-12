@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:white_wool"
-  },
-  "result": "material_elements:wool_slab_white",
-  "count": 2
-}

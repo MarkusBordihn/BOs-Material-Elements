@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "material_elements:block/frames/copper_cube_frame" }
+  }
+}

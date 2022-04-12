@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/templates/cube_frame",
+  "textures": {
+    "texture": "material_elements:block/iron_rod",
+    "particle": "material_elements:block/iron_rod"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements:acacia_construction_cube_frame",
+    "material_elements:acacia_construction_slab_frame",
+    "material_elements:acacia_construction_triangular_frame",
+    "material_elements:birch_construction_cube_frame",
+    "material_elements:birch_construction_slab_frame",
+    "material_elements:birch_construction_triangular_frame",
+    "material_elements:crimson_construction_cube_frame",
+    "material_elements:crimson_construction_slab_frame",
+    "material_elements:crimson_construction_triangular_frame",
+    "material_elements:dark_oak_construction_cube_frame",
+    "material_elements:dark_oak_construction_slab_frame",
+    "material_elements:dark_oak_construction_triangular_frame",
+    "material_elements:jungle_construction_cube_frame",
+    "material_elements:jungle_construction_slab_frame",
+    "material_elements:jungle_construction_triangular_frame",
+    "material_elements:oak_construction_cube_frame",
+    "material_elements:oak_construction_slab_frame",
+    "material_elements:oak_construction_triangular_frame",
+    "material_elements:spruce_construction_cube_frame",
+    "material_elements:spruce_construction_slab_frame",
+    "material_elements:spruce_construction_triangular_frame",
+    "material_elements:warped_construction_cube_frame",
+    "material_elements:warped_construction_slab_frame",
+    "material_elements:warped_construction_triangular_frame"
+  ]
+}

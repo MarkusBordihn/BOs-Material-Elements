@@ -1,0 +1,45 @@
+{
+  "author": "Markus Bordihn",
+  "bedrock": {
+    "behaviorPack": {
+      "description": "Behavior Pack for New cool items"
+    },
+    "resourcePack": {
+      "description": "Resource Pack for New cool items"
+    },
+    "skinPack": {
+      "description": "Skin Pack for New cool skins"
+    },
+    "folderName": "New_cool_items"
+  },
+  "component": "project",
+  "configVersion": "0.0.1",
+  "forge": {
+    "assetsPath": "src\\main\\resources\\assets\\steel_armor_tools_weapons",
+    "className": "SteelArmorToolsWeapons",
+    "classPath": "src\\main\\java\\de\\markusbordihn\\steelarmortoolsweapons",
+    "dataPath": "src\\main\\resources\\data",
+    "description": "Bo's Steel Armor, Tools and Weapons.",
+    "namespace": "de.markusbordihn.steelarmortoolsweapons",
+    "templatePath": "node_modules\\minecraft-forge-utils\\third_party\\minecraft-forge-template-1.17.1",
+    "templatesPath": "node_modules\\minecraft-forge-utils\\third_party\\minecraft-forge-template-1.17.1\\templates",
+    "vendorName": "markusbordihn"
+  },
+  "gameType": "forge",
+  "id": "steel_armor_tools_weapons",
+  "license": "MIT",
+  "minEngineVersion": "1.17.1",
+  "misc": {},
+  "name": "Steel Armor, Tools Weapons",
+  "placeholder": {
+    "Author": "Markus Bordihn",
+    "ModId": "steel_armor_tools_weapons",
+    "ModName": "Steel Armor, Tools Weapons",
+    "assetsPath": "src\\main\\resources\\assets\\steel_armor_tools_weapons",
+    "classPath": "src\\main\\java\\de\\markusbordihn\\steelarmortoolsweapons",
+    "dataPath": "src\\main\\resources\\data",
+    "packageNamespace": "de.markusbordihn.steelarmortoolsweapons"
+  },
+  "type": "unknown",
+  "version": "0.0.0"
+}

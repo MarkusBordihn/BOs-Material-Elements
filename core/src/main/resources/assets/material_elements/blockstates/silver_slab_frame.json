@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=double": {
+      "model": "material_elements:block/frames/silver_cube_frame"
+    },
+    "type=bottom": {
+      "model": "material_elements:block/frames/silver_slab_frame"
+    },
+    "type=top": {
+      "model": "material_elements:block/frames/silver_slab_frame_top"
+    }
+  }
+}

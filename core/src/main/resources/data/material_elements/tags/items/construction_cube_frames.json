@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements:acacia_construction_cube_frame",
+    "material_elements:birch_construction_cube_frame",
+    "material_elements:crimson_construction_cube_frame",
+    "material_elements:dark_oak_construction_cube_frame",
+    "material_elements:jungle_construction_cube_frame",
+    "material_elements:oak_construction_cube_frame",
+    "material_elements:spruce_construction_cube_frame",
+    "material_elements:warped_construction_cube_frame"
+  ]
+}

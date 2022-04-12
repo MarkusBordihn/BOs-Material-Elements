@@ -1,0 +1,52 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": ["material_elements_decorative:steel_lantern_cyan"]
+  },
+  "criteria": {
+    "has_steel_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:nuggets/steel"
+          }
+        ]
+      }
+    },
+    "has_torch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:torch"]
+          }
+        ]
+      }
+    },
+    "has_stained_glass_pane": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:cyan_stained_glass_pane"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "material_elements_decorative:steel_lantern_cyan"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_steel_nugget",
+      "has_torch",
+      "has_stained_glass_pane",
+      "has_the_recipe"
+    ]
+  ]
+}

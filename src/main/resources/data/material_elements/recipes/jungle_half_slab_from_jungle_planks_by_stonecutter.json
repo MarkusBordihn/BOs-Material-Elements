@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:jungle_planks"
-  },
-  "result": "material_elements:jungle_half_slab",
-  "count": 4
-}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "material_elements_decorative:block/template/steel_lantern"
+    },
+    "hanging=true": {
+      "model": "material_elements_decorative:block/template/steel_lantern_hanging"
+    }
+  }
+}

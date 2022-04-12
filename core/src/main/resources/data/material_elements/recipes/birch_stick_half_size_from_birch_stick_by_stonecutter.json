@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "material_elements:birch_stick"
+  },
+  "result": "material_elements:birch_stick_half_size",
+  "count": 2
+}

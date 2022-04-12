@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/templates/cube_frame",
+  "textures": {
+    "texture": "minecraft:block/jungle_planks",
+    "particle": "minecraft:block/jungle_planks"
+  }
+}

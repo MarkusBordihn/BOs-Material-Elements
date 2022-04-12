@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements:block/templates/triangular_frame",
+  "textures": {
+    "texture": "minecraft:block/spruce_planks",
+    "particle": "minecraft:block/spruce_planks"
+  }
+}
