@@ -49,8 +49,7 @@ public class MaterialElementsDecorative {
     log.info("{} Items ...", Constants.LOG_REGISTER_PREFIX);
     ModItems.ITEMS.register(modEventBus);
 
-    DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
-      modEventBus.addListener(ClientRenderer::registerRenderLayers);
-    });
+    DistExecutor.unsafeRunWhenOn(Dist.CLIENT,
+        () -> () -> modEventBus.addListener(ClientRenderer::registerRenderLayers));
   }
 }

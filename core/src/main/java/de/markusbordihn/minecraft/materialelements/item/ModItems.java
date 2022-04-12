@@ -45,7 +45,6 @@ import de.markusbordihn.minecraft.materialelements.item.testtube.TestTubeCustomF
 import de.markusbordihn.minecraft.materialelements.item.testtube.TestTubeCustomItem;
 import de.markusbordihn.minecraft.materialelements.item.testtube.TestTubeFilledItem;
 import de.markusbordihn.minecraft.materialelements.item.testtube.TestTubeItem;
-import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
 
 public class ModItems {
 
@@ -158,85 +157,52 @@ public class ModItems {
 
   // Test Tube Color (DyeColor)
   private static final String TEST_TUBE_PREFIX = "test_tube_color_";
-  public static final RegistryObject<Item> TEST_TUBE_COLOR_WHITE =
-      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.WHITE.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.WHITE));
-  public static final RegistryObject<Item> TEST_TUBE_COLOR_ORANGE =
-      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.ORANGE.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.ORANGE));
-  public static final RegistryObject<Item> TEST_TUBE_COLOR_MAGENTA =
-      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.MAGENTA.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.MAGENTA));
+  public static final RegistryObject<Item> TEST_TUBE_COLOR_WHITE = ITEMS.register(
+      TEST_TUBE_PREFIX + DyeColor.WHITE.getName(), () -> new TestTubeColorItem(DyeColor.WHITE));
+  public static final RegistryObject<Item> TEST_TUBE_COLOR_ORANGE = ITEMS.register(
+      TEST_TUBE_PREFIX + DyeColor.ORANGE.getName(), () -> new TestTubeColorItem(DyeColor.ORANGE));
+  public static final RegistryObject<Item> TEST_TUBE_COLOR_MAGENTA = ITEMS.register(
+      TEST_TUBE_PREFIX + DyeColor.MAGENTA.getName(), () -> new TestTubeColorItem(DyeColor.MAGENTA));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_LIGHT_BLUE =
       ITEMS.register(TEST_TUBE_PREFIX + DyeColor.LIGHT_BLUE.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.LIGHT_BLUE));
-  public static final RegistryObject<Item> TEST_TUBE_COLOR_YELLOW =
-      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.YELLOW.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.YELLOW));
-  public static final RegistryObject<Item> TEST_TUBE_COLOR_LIME =
-      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.LIME.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.LIME));
-  public static final RegistryObject<Item> TEST_TUBE_COLOR_PINK =
-      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.PINK.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.PINK));
-  public static final RegistryObject<Item> TEST_TUBE_COLOR_GRAY =
-      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.GRAY.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.GRAY));
+          () -> new TestTubeColorItem(DyeColor.LIGHT_BLUE));
+  public static final RegistryObject<Item> TEST_TUBE_COLOR_YELLOW = ITEMS.register(
+      TEST_TUBE_PREFIX + DyeColor.YELLOW.getName(), () -> new TestTubeColorItem(DyeColor.YELLOW));
+  public static final RegistryObject<Item> TEST_TUBE_COLOR_LIME = ITEMS.register(
+      TEST_TUBE_PREFIX + DyeColor.LIME.getName(), () -> new TestTubeColorItem(DyeColor.LIME));
+  public static final RegistryObject<Item> TEST_TUBE_COLOR_PINK = ITEMS.register(
+      TEST_TUBE_PREFIX + DyeColor.PINK.getName(), () -> new TestTubeColorItem(DyeColor.PINK));
+  public static final RegistryObject<Item> TEST_TUBE_COLOR_GRAY = ITEMS.register(
+      TEST_TUBE_PREFIX + DyeColor.GRAY.getName(), () -> new TestTubeColorItem(DyeColor.GRAY));
   public static final RegistryObject<Item> TEST_TUBE_COLOR_LIGHT_GRAY =
       ITEMS.register(TEST_TUBE_PREFIX + DyeColor.LIGHT_GRAY.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.LIGHT_GRAY));
-  public static final RegistryObject<Item> TEST_TUBE_COLOR_CYAN =
-      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.CYAN.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.CYAN));
-  public static final RegistryObject<Item> TEST_TUBE_COLOR_PURPLE =
-      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.PURPLE.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.PURPLE));
-  public static final RegistryObject<Item> TEST_TUBE_COLOR_BLUE =
-      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.BLUE.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.BLUE));
-  public static final RegistryObject<Item> TEST_TUBE_COLOR_BROWN =
-      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.BROWN.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.BROWN));
-  public static final RegistryObject<Item> TEST_TUBE_COLOR_GREEN =
-      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.GREEN.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.GREEN));
-  public static final RegistryObject<Item> TEST_TUBE_COLOR_RED =
-      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.RED.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.RED));
-  public static final RegistryObject<Item> TEST_TUBE_COLOR_BLACK =
-      ITEMS.register(TEST_TUBE_PREFIX + DyeColor.BLACK.getName(),
-          () -> new TestTubeColorItem(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES),
-              DyeColor.BLACK));
+          () -> new TestTubeColorItem(DyeColor.LIGHT_GRAY));
+  public static final RegistryObject<Item> TEST_TUBE_COLOR_CYAN = ITEMS.register(
+      TEST_TUBE_PREFIX + DyeColor.CYAN.getName(), () -> new TestTubeColorItem(DyeColor.CYAN));
+  public static final RegistryObject<Item> TEST_TUBE_COLOR_PURPLE = ITEMS.register(
+      TEST_TUBE_PREFIX + DyeColor.PURPLE.getName(), () -> new TestTubeColorItem(DyeColor.PURPLE));
+  public static final RegistryObject<Item> TEST_TUBE_COLOR_BLUE = ITEMS.register(
+      TEST_TUBE_PREFIX + DyeColor.BLUE.getName(), () -> new TestTubeColorItem(DyeColor.BLUE));
+  public static final RegistryObject<Item> TEST_TUBE_COLOR_BROWN = ITEMS.register(
+      TEST_TUBE_PREFIX + DyeColor.BROWN.getName(), () -> new TestTubeColorItem(DyeColor.BROWN));
+  public static final RegistryObject<Item> TEST_TUBE_COLOR_GREEN = ITEMS.register(
+      TEST_TUBE_PREFIX + DyeColor.GREEN.getName(), () -> new TestTubeColorItem(DyeColor.GREEN));
+  public static final RegistryObject<Item> TEST_TUBE_COLOR_RED = ITEMS.register(
+      TEST_TUBE_PREFIX + DyeColor.RED.getName(), () -> new TestTubeColorItem(DyeColor.RED));
+  public static final RegistryObject<Item> TEST_TUBE_COLOR_BLACK = ITEMS.register(
+      TEST_TUBE_PREFIX + DyeColor.BLACK.getName(), () -> new TestTubeColorItem(DyeColor.BLACK));
 
   // Test Tube (custom)
   public static final RegistryObject<Item> TEST_TUBE_WATER =
-      ITEMS.register("test_tube_water", () -> new TestTubeCustomItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES)));
+      ITEMS.register("test_tube_water", TestTubeCustomItem::new);
   public static final RegistryObject<Item> TEST_TUBE_GLOW =
-      ITEMS.register("test_tube_glow", () -> new TestTubeCustomFoilItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES), DyeColor.CYAN));
+      ITEMS.register("test_tube_glow", () -> new TestTubeCustomFoilItem(DyeColor.CYAN));
 
   // Test Tube
-  public static final RegistryObject<Item> TEST_TUBE = ITEMS.register("test_tube",
-      () -> new TestTubeItem((new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES)));
+  public static final RegistryObject<Item> TEST_TUBE =
+      ITEMS.register("test_tube", () -> new TestTubeItem());
   public static final RegistryObject<Item> TEST_TUBE_FILLED =
-      ITEMS.register("test_tube_filled", () -> new TestTubeFilledItem(
-          (new Item.Properties()).tab(MaterialElementsTab.TAB_TEST_TUBES)));
+      ITEMS.register("test_tube_filled", TestTubeFilledItem::new);
 
   // Other
   public static final RegistryObject<Item> COKE = ITEMS.register("coke",
@@ -443,165 +409,116 @@ public class ModItems {
           ModBlocks.WARPED_CONSTRUCTION_TRIANGULAR_FRAME.get()));
 
   // Rods (tee elbow)
-  public static final RegistryObject<Item> LIGHT_ROD_TEE_ELBOW =
-      ITEMS.register("light_rod_tee_elbow", () -> new BlockItem(ModBlocks.LIGHT_ROD_TEE_ELBOW.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
-  public static final RegistryObject<Item> COPPER_ROD_TEE_ELBOW = ITEMS
-      .register("copper_rod_tee_elbow", () -> new BlockItem(ModBlocks.COPPER_ROD_TEE_ELBOW.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
-  public static final RegistryObject<Item> GOLD_ROD_TEE_ELBOW =
-      ITEMS.register("gold_rod_tee_elbow", () -> new BlockItem(ModBlocks.GOLD_ROD_TEE_ELBOW.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
-  public static final RegistryObject<Item> SILVER_ROD_TEE_ELBOW = ITEMS
-      .register("silver_rod_tee_elbow", () -> new BlockItem(ModBlocks.SILVER_ROD_TEE_ELBOW.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
-  public static final RegistryObject<Item> IRON_ROD_TEE_ELBOW =
-      ITEMS.register("iron_rod_tee_elbow", () -> new BlockItem(ModBlocks.IRON_ROD_TEE_ELBOW.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
-  public static final RegistryObject<Item> STEEL_ROD_TEE_ELBOW =
-      ITEMS.register("steel_rod_tee_elbow", () -> new BlockItem(ModBlocks.STEEL_ROD_TEE_ELBOW.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> LIGHT_ROD_TEE_ELBOW = ITEMS
+      .register("light_rod_tee_elbow", () -> new RodBlockItem(ModBlocks.LIGHT_ROD_TEE_ELBOW.get()));
+  public static final RegistryObject<Item> COPPER_ROD_TEE_ELBOW = ITEMS.register(
+      "copper_rod_tee_elbow", () -> new RodBlockItem(ModBlocks.COPPER_ROD_TEE_ELBOW.get()));
+  public static final RegistryObject<Item> GOLD_ROD_TEE_ELBOW = ITEMS.register("gold_rod_tee_elbow",
+      () -> new RodBlockItem(ModBlocks.GOLD_ROD_TEE_ELBOW.get()));
+  public static final RegistryObject<Item> SILVER_ROD_TEE_ELBOW = ITEMS.register(
+      "silver_rod_tee_elbow", () -> new RodBlockItem(ModBlocks.SILVER_ROD_TEE_ELBOW.get()));
+  public static final RegistryObject<Item> IRON_ROD_TEE_ELBOW = ITEMS.register("iron_rod_tee_elbow",
+      () -> new RodBlockItem(ModBlocks.IRON_ROD_TEE_ELBOW.get()));
+  public static final RegistryObject<Item> STEEL_ROD_TEE_ELBOW = ITEMS
+      .register("steel_rod_tee_elbow", () -> new RodBlockItem(ModBlocks.STEEL_ROD_TEE_ELBOW.get()));
   public static final RegistryObject<Item> NETHERITE_ROD_TEE_ELBOW = ITEMS.register(
-      "netherite_rod_tee_elbow", () -> new BlockItem(ModBlocks.NETHERITE_ROD_TEE_ELBOW.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      "netherite_rod_tee_elbow", () -> new RodBlockItem(ModBlocks.NETHERITE_ROD_TEE_ELBOW.get()));
 
   // Rods (elbow)
   public static final RegistryObject<Item> LIGHT_ROD_ELBOW =
-      ITEMS.register("light_rod_elbow", () -> new BlockItem(ModBlocks.LIGHT_ROD_ELBOW.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("light_rod_elbow", () -> new RodBlockItem(ModBlocks.LIGHT_ROD_ELBOW.get()));
   public static final RegistryObject<Item> COPPER_ROD_ELBOW =
-      ITEMS.register("copper_rod_elbow", () -> new BlockItem(ModBlocks.COPPER_ROD_ELBOW.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("copper_rod_elbow", () -> new RodBlockItem(ModBlocks.COPPER_ROD_ELBOW.get()));
   public static final RegistryObject<Item> GOLD_ROD_ELBOW =
-      ITEMS.register("gold_rod_elbow", () -> new BlockItem(ModBlocks.GOLD_ROD_ELBOW.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("gold_rod_elbow", () -> new RodBlockItem(ModBlocks.GOLD_ROD_ELBOW.get()));
   public static final RegistryObject<Item> SILVER_ROD_ELBOW =
-      ITEMS.register("silver_rod_elbow", () -> new BlockItem(ModBlocks.SILVER_ROD_ELBOW.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("silver_rod_elbow", () -> new RodBlockItem(ModBlocks.SILVER_ROD_ELBOW.get()));
   public static final RegistryObject<Item> IRON_ROD_ELBOW =
-      ITEMS.register("iron_rod_elbow", () -> new BlockItem(ModBlocks.IRON_ROD_ELBOW.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("iron_rod_elbow", () -> new RodBlockItem(ModBlocks.IRON_ROD_ELBOW.get()));
   public static final RegistryObject<Item> STEEL_ROD_ELBOW =
-      ITEMS.register("steel_rod_elbow", () -> new BlockItem(ModBlocks.STEEL_ROD_ELBOW.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
-  public static final RegistryObject<Item> NETHERITE_ROD_ELBOW =
-      ITEMS.register("netherite_rod_elbow", () -> new BlockItem(ModBlocks.NETHERITE_ROD_ELBOW.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("steel_rod_elbow", () -> new RodBlockItem(ModBlocks.STEEL_ROD_ELBOW.get()));
+  public static final RegistryObject<Item> NETHERITE_ROD_ELBOW = ITEMS
+      .register("netherite_rod_elbow", () -> new RodBlockItem(ModBlocks.NETHERITE_ROD_ELBOW.get()));
 
   // Rods (tee)
   public static final RegistryObject<Item> LIGHT_ROD_TEE =
-      ITEMS.register("light_rod_tee", () -> new BlockItem(ModBlocks.LIGHT_ROD_TEE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("light_rod_tee", () -> new RodBlockItem(ModBlocks.LIGHT_ROD_TEE.get()));
   public static final RegistryObject<Item> COPPER_ROD_TEE =
-      ITEMS.register("copper_rod_tee", () -> new BlockItem(ModBlocks.COPPER_ROD_TEE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("copper_rod_tee", () -> new RodBlockItem(ModBlocks.COPPER_ROD_TEE.get()));
   public static final RegistryObject<Item> GOLD_ROD_TEE =
-      ITEMS.register("gold_rod_tee", () -> new BlockItem(ModBlocks.GOLD_ROD_TEE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("gold_rod_tee", () -> new RodBlockItem(ModBlocks.GOLD_ROD_TEE.get()));
   public static final RegistryObject<Item> SILVER_ROD_TEE =
-      ITEMS.register("silver_rod_tee", () -> new BlockItem(ModBlocks.SILVER_ROD_TEE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("silver_rod_tee", () -> new RodBlockItem(ModBlocks.SILVER_ROD_TEE.get()));
   public static final RegistryObject<Item> IRON_ROD_TEE =
-      ITEMS.register("iron_rod_tee", () -> new BlockItem(ModBlocks.IRON_ROD_TEE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("iron_rod_tee", () -> new RodBlockItem(ModBlocks.IRON_ROD_TEE.get()));
   public static final RegistryObject<Item> STEEL_ROD_TEE =
-      ITEMS.register("steel_rod_tee", () -> new BlockItem(ModBlocks.STEEL_ROD_TEE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
-  public static final RegistryObject<Item> NETHERITE_ROD_TEE =
-      ITEMS.register("netherite_rod_tee", () -> new BlockItem(ModBlocks.NETHERITE_ROD_TEE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("steel_rod_tee", () -> new RodBlockItem(ModBlocks.STEEL_ROD_TEE.get()));
+  public static final RegistryObject<Item> NETHERITE_ROD_TEE = ITEMS.register("netherite_rod_tee",
+      () -> new RodBlockItem(ModBlocks.NETHERITE_ROD_TEE.get()));
 
   // Rods (star)
   public static final RegistryObject<Item> LIGHT_ROD_STAR =
-      ITEMS.register("light_rod_star", () -> new BlockItem(ModBlocks.LIGHT_ROD_STAR.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("light_rod_star", () -> new RodBlockItem(ModBlocks.LIGHT_ROD_STAR.get()));
   public static final RegistryObject<Item> COPPER_ROD_STAR =
-      ITEMS.register("copper_rod_star", () -> new BlockItem(ModBlocks.COPPER_ROD_STAR.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("copper_rod_star", () -> new RodBlockItem(ModBlocks.COPPER_ROD_STAR.get()));
   public static final RegistryObject<Item> GOLD_ROD_STAR =
-      ITEMS.register("gold_rod_star", () -> new BlockItem(ModBlocks.GOLD_ROD_STAR.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("gold_rod_star", () -> new RodBlockItem(ModBlocks.GOLD_ROD_STAR.get()));
   public static final RegistryObject<Item> SILVER_ROD_STAR =
-      ITEMS.register("silver_rod_star", () -> new BlockItem(ModBlocks.SILVER_ROD_STAR.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("silver_rod_star", () -> new RodBlockItem(ModBlocks.SILVER_ROD_STAR.get()));
   public static final RegistryObject<Item> IRON_ROD_STAR =
-      ITEMS.register("iron_rod_star", () -> new BlockItem(ModBlocks.IRON_ROD_STAR.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("iron_rod_star", () -> new RodBlockItem(ModBlocks.IRON_ROD_STAR.get()));
   public static final RegistryObject<Item> STEEL_ROD_STAR =
-      ITEMS.register("steel_rod_star", () -> new BlockItem(ModBlocks.STEEL_ROD_STAR.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
-  public static final RegistryObject<Item> NETHERIRE_ROD_STAR =
-      ITEMS.register("netherite_rod_star", () -> new BlockItem(ModBlocks.NETHERITE_ROD_STAR.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("steel_rod_star", () -> new RodBlockItem(ModBlocks.STEEL_ROD_STAR.get()));
+  public static final RegistryObject<Item> NETHERIRE_ROD_STAR = ITEMS.register("netherite_rod_star",
+      () -> new RodBlockItem(ModBlocks.NETHERITE_ROD_STAR.get()));
 
   // Rods (cross)
   public static final RegistryObject<Item> LIGHT_ROD_CROSS =
-      ITEMS.register("light_rod_cross", () -> new BlockItem(ModBlocks.LIGHT_ROD_CROSS.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("light_rod_cross", () -> new RodBlockItem(ModBlocks.LIGHT_ROD_CROSS.get()));
   public static final RegistryObject<Item> COPPER_ROD_CROSS =
-      ITEMS.register("copper_rod_cross", () -> new BlockItem(ModBlocks.COPPER_ROD_CROSS.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("copper_rod_cross", () -> new RodBlockItem(ModBlocks.COPPER_ROD_CROSS.get()));
   public static final RegistryObject<Item> GOLD_ROD_CROSS =
-      ITEMS.register("gold_rod_cross", () -> new BlockItem(ModBlocks.GOLD_ROD_CROSS.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("gold_rod_cross", () -> new RodBlockItem(ModBlocks.GOLD_ROD_CROSS.get()));
   public static final RegistryObject<Item> SILVER_ROD_CROSS =
-      ITEMS.register("silver_rod_cross", () -> new BlockItem(ModBlocks.SILVER_ROD_CROSS.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("silver_rod_cross", () -> new RodBlockItem(ModBlocks.SILVER_ROD_CROSS.get()));
   public static final RegistryObject<Item> IRON_ROD_CROSS =
-      ITEMS.register("iron_rod_cross", () -> new BlockItem(ModBlocks.IRON_ROD_CROSS.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("iron_rod_cross", () -> new RodBlockItem(ModBlocks.IRON_ROD_CROSS.get()));
   public static final RegistryObject<Item> STEEL_ROD_CROSS =
-      ITEMS.register("steel_rod_cross", () -> new BlockItem(ModBlocks.STEEL_ROD_CROSS.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
-  public static final RegistryObject<Item> NETHERITE_ROD_CROSS =
-      ITEMS.register("netherite_rod_cross", () -> new BlockItem(ModBlocks.NETHERITE_ROD_CROSS.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("steel_rod_cross", () -> new RodBlockItem(ModBlocks.STEEL_ROD_CROSS.get()));
+  public static final RegistryObject<Item> NETHERITE_ROD_CROSS = ITEMS
+      .register("netherite_rod_cross", () -> new RodBlockItem(ModBlocks.NETHERITE_ROD_CROSS.get()));
 
   // Rods (half size)
-  public static final RegistryObject<Item> LIGHT_ROD_HALF_SIZE =
-      ITEMS.register("light_rod_half_size", () -> new BlockItem(ModBlocks.LIGHT_ROD_HALF_SIZE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
-  public static final RegistryObject<Item> COPPER_ROD_HALF_SIZE = ITEMS
-      .register("copper_rod_half_size", () -> new BlockItem(ModBlocks.COPPER_ROD_HALF_SIZE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
-  public static final RegistryObject<Item> GOLD_ROD_HALF_SIZE =
-      ITEMS.register("gold_rod_half_size", () -> new BlockItem(ModBlocks.GOLD_ROD_HALF_SIZE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
-  public static final RegistryObject<Item> SILVER_ROD_HALF_SIZE = ITEMS
-      .register("silver_rod_half_size", () -> new BlockItem(ModBlocks.SILVER_ROD_HALF_SIZE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
-  public static final RegistryObject<Item> IRON_ROD_HALF_SIZE =
-      ITEMS.register("iron_rod_half_size", () -> new BlockItem(ModBlocks.IRON_ROD_HALF_SIZE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
-  public static final RegistryObject<Item> STEEL_ROD_HALF_SIZE =
-      ITEMS.register("steel_rod_half_size", () -> new BlockItem(ModBlocks.STEEL_ROD_HALF_SIZE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+  public static final RegistryObject<Item> LIGHT_ROD_HALF_SIZE = ITEMS
+      .register("light_rod_half_size", () -> new RodBlockItem(ModBlocks.LIGHT_ROD_HALF_SIZE.get()));
+  public static final RegistryObject<Item> COPPER_ROD_HALF_SIZE = ITEMS.register(
+      "copper_rod_half_size", () -> new RodBlockItem(ModBlocks.COPPER_ROD_HALF_SIZE.get()));
+  public static final RegistryObject<Item> GOLD_ROD_HALF_SIZE = ITEMS.register("gold_rod_half_size",
+      () -> new RodBlockItem(ModBlocks.GOLD_ROD_HALF_SIZE.get()));
+  public static final RegistryObject<Item> SILVER_ROD_HALF_SIZE = ITEMS.register(
+      "silver_rod_half_size", () -> new RodBlockItem(ModBlocks.SILVER_ROD_HALF_SIZE.get()));
+  public static final RegistryObject<Item> IRON_ROD_HALF_SIZE = ITEMS.register("iron_rod_half_size",
+      () -> new RodBlockItem(ModBlocks.IRON_ROD_HALF_SIZE.get()));
+  public static final RegistryObject<Item> STEEL_ROD_HALF_SIZE = ITEMS
+      .register("steel_rod_half_size", () -> new RodBlockItem(ModBlocks.STEEL_ROD_HALF_SIZE.get()));
   public static final RegistryObject<Item> NETHERITE_ROD_HALF_SIZE = ITEMS.register(
-      "netherite_rod_half_size", () -> new BlockItem(ModBlocks.NETHERITE_ROD_HALF_SIZE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      "netherite_rod_half_size", () -> new RodBlockItem(ModBlocks.NETHERITE_ROD_HALF_SIZE.get()));
 
   // Rods (full-size)
   public static final RegistryObject<Item> LIGHT_ROD =
-      ITEMS.register("light_rod", () -> new BlockItem(ModBlocks.LIGHT_ROD.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("light_rod", () -> new RodBlockItem(ModBlocks.LIGHT_ROD.get()));
   public static final RegistryObject<Item> COPPER_ROD =
-      ITEMS.register("copper_rod", () -> new BlockItem(ModBlocks.COPPER_ROD.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("copper_rod", () -> new RodBlockItem(ModBlocks.COPPER_ROD.get()));
   public static final RegistryObject<Item> GOLD_ROD =
-      ITEMS.register("gold_rod", () -> new BlockItem(ModBlocks.GOLD_ROD.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("gold_rod", () -> new RodBlockItem(ModBlocks.GOLD_ROD.get()));
   public static final RegistryObject<Item> SILVER_ROD =
-      ITEMS.register("silver_rod", () -> new BlockItem(ModBlocks.SILVER_ROD.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("silver_rod", () -> new RodBlockItem(ModBlocks.SILVER_ROD.get()));
   public static final RegistryObject<Item> IRON_ROD =
-      ITEMS.register("iron_rod", () -> new BlockItem(ModBlocks.IRON_ROD.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("iron_rod", () -> new RodBlockItem(ModBlocks.IRON_ROD.get()));
   public static final RegistryObject<Item> STEEL_ROD =
-      ITEMS.register("steel_rod", () -> new BlockItem(ModBlocks.STEEL_ROD.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("steel_rod", () -> new RodBlockItem(ModBlocks.STEEL_ROD.get()));
   public static final RegistryObject<Item> NETHERITE_ROD =
-      ITEMS.register("netherite_rod", () -> new BlockItem(ModBlocks.NETHERITE_ROD.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RODS)));
+      ITEMS.register("netherite_rod", () -> new RodBlockItem(ModBlocks.NETHERITE_ROD.get()));
 
   // Blocks
   public static final RegistryObject<Item> SILVER_BLOCK =

@@ -1,5 +1,5 @@
 {
-  "parent": "material_elements:block/construction_frames/construction_cube_frame",
+  "parent": "material_elements:block/templates/cube_frame",
   "textures": {
     "texture": "minecraft:block/crimson_planks",
     "particle": "minecraft:block/crimson_planks"

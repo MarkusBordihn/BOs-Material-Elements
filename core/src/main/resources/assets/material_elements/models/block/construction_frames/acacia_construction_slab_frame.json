@@ -1,5 +1,5 @@
 {
-  "parent": "material_elements:block/construction_frames/construction_slab_frame",
+  "parent": "material_elements:block/templates/slab_frame",
   "textures": {
     "texture": "minecraft:block/acacia_planks",
     "particle": "minecraft:block/acacia_planks"

@@ -56,49 +56,26 @@ public class ModItemColors {
       return color > 0 ? -1 : PotionUtils.getColor(itemStack);
     }, ModItems.TEST_TUBE_FILLED.get());
 
-    // Use dye color for the cloth
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_WHITE.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_ORANGE.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_MAGENTA.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_LIGHT_BLUE.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_YELLOW.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_LIME.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_PINK.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_GRAY.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_LIGHT_GRAY.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_CYAN.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_PURPLE.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_BLUE.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_BROWN.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_GREEN.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_RED.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH_BLACK.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.TEST_TUBE_WATER.get());
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.TEST_TUBE_GLOW.get());
+    // Use dye color for the colored items.
+    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH.get(),
+        ModItems.CLOTH_WHITE.get(), ModItems.CLOTH_ORANGE.get(), ModItems.CLOTH_MAGENTA.get(),
+        ModItems.CLOTH_LIGHT_BLUE.get(), ModItems.CLOTH_YELLOW.get(), ModItems.CLOTH_LIME.get(),
+        ModItems.CLOTH_PINK.get(), ModItems.CLOTH_GRAY.get(), ModItems.CLOTH_LIGHT_GRAY.get(),
+        ModItems.CLOTH_CYAN.get(), ModItems.CLOTH_PURPLE.get(), ModItems.CLOTH_BLUE.get(),
+        ModItems.CLOTH_BROWN.get(), ModItems.CLOTH_GREEN.get(), ModItems.CLOTH_RED.get(),
+        ModItems.CLOTH_BLACK.get(), ModItems.TEST_TUBE_WATER.get(), ModItems.TEST_TUBE_GLOW.get());
 
     // Use dye color for the colored test tubes.
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_WHITE.get());
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_ORANGE.get());
-    itemColors.register(ModItemColors::getColorFromTestTube,
-        ModItems.TEST_TUBE_COLOR_MAGENTA.get());
-    itemColors.register(ModItemColors::getColorFromTestTube,
-        ModItems.TEST_TUBE_COLOR_LIGHT_BLUE.get());
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_YELLOW.get());
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_LIME.get());
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_PINK.get());
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_GRAY.get());
-    itemColors.register(ModItemColors::getColorFromTestTube,
-        ModItems.TEST_TUBE_COLOR_LIGHT_GRAY.get());
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_CYAN.get());
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_PURPLE.get());
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_BLUE.get());
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_BROWN.get());
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_GREEN.get());
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_RED.get());
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_BLACK.get());
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_WATER.get());
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_GLOW.get());
+    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_WHITE.get(),
+        ModItems.TEST_TUBE_COLOR_ORANGE.get(), ModItems.TEST_TUBE_COLOR_MAGENTA.get(),
+        ModItems.TEST_TUBE_COLOR_LIGHT_BLUE.get(), ModItems.TEST_TUBE_COLOR_YELLOW.get(),
+        ModItems.TEST_TUBE_COLOR_LIME.get(), ModItems.TEST_TUBE_COLOR_PINK.get(),
+        ModItems.TEST_TUBE_COLOR_GRAY.get(), ModItems.TEST_TUBE_COLOR_LIGHT_GRAY.get(),
+        ModItems.TEST_TUBE_COLOR_CYAN.get(), ModItems.TEST_TUBE_COLOR_PURPLE.get(),
+        ModItems.TEST_TUBE_COLOR_BLUE.get(), ModItems.TEST_TUBE_COLOR_BROWN.get(),
+        ModItems.TEST_TUBE_COLOR_GREEN.get(), ModItems.TEST_TUBE_COLOR_RED.get(),
+        ModItems.TEST_TUBE_COLOR_BLACK.get(), ModItems.TEST_TUBE_WATER.get(),
+        ModItems.TEST_TUBE_GLOW.get());
   }
 
   public static int getColorFromColoredItem(ItemStack itemStack, int color) {

@@ -25,16 +25,18 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
+import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
+
 public class TestTubeCustomItem extends TestTubeFilledItem {
 
-  public DyeColor color = DyeColor.BLUE;
+  private DyeColor color = DyeColor.BLUE;
 
-  public TestTubeCustomItem(Item.Properties properties) {
-    super(properties);
+  public TestTubeCustomItem() {
+    super(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES));
   }
 
-  public TestTubeCustomItem(Item.Properties properties, DyeColor dyeColor) {
-    super(properties);
+  public TestTubeCustomItem(DyeColor dyeColor) {
+    super(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES));
     this.color = dyeColor;
   }
 

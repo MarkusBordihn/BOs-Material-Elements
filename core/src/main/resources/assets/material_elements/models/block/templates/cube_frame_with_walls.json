@@ -4,7 +4,7 @@
 	"textures": {
 		"particle": "material_elements:block/copper_rod",
 		"texture": "material_elements:block/copper_rod",
-		"glass": "block/glass"
+		"wall": "minecraft:block/glass"
 	},
 	"elements": [
 		{
@@ -153,63 +153,63 @@
 			}
 		},
 		{
-			"name": "glass",
+			"name": "wall",
 			"from": [0, 1, 1],
 			"to": [1, 15, 15],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
-				"east": {"uv": [16, 0, 0, 16], "texture": "#glass"},
-				"west": {"uv": [0, 0, 16, 16], "texture": "#glass"}
+				"east": {"uv": [16, 0, 0, 16], "texture": "#wall"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#wall"}
 			}
 		},
 		{
-			"name": "glass",
+			"name": "wall",
 			"from": [1, 1, 0],
 			"to": [15, 15, 1],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#glass"},
-				"south": {"uv": [16, 0, 0, 16], "texture": "#glass"}
+				"north": {"uv": [0, 0, 16, 16], "texture": "#wall"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#wall"}
 			}
 		},
 		{
-			"name": "glass",
+			"name": "wall",
 			"from": [15, 1, 1],
 			"to": [16, 15, 15],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
-				"east": {"uv": [0, 0, 16, 16], "texture": "#glass"},
-				"west": {"uv": [16, 0, 0, 16], "texture": "#glass"}
+				"east": {"uv": [0, 0, 16, 16], "texture": "#wall"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#wall"}
 			}
 		},
 		{
-			"name": "glass",
+			"name": "wall",
 			"from": [1, 1, 15],
 			"to": [15, 15, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
-				"north": {"uv": [16, 0, 0, 16], "texture": "#glass"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#glass"}
+				"north": {"uv": [16, 0, 0, 16], "texture": "#wall"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#wall"}
 			}
 		},
 		{
-			"name": "glass",
+			"name": "wall",
 			"from": [1, 0, 1],
 			"to": [15, 1, 15],
 			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
 			"faces": {
-				"up": {"uv": [16, 0, 0, 16], "rotation": 180, "texture": "#glass"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#glass"}
+				"up": {"uv": [16, 0, 0, 16], "rotation": 180, "texture": "#wall"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#wall"}
 			}
 		},
 		{
-			"name": "glass",
+			"name": "wall",
 			"from": [1, 15, 1],
 			"to": [15, 16, 15],
 			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
 			"faces": {
-				"up": {"uv": [0, 0, 16, 16], "texture": "#glass"},
-				"down": {"uv": [16, 0, 0, 16], "rotation": 180, "texture": "#glass"}
+				"up": {"uv": [0, 0, 16, 16], "texture": "#wall"},
+				"down": {"uv": [16, 0, 0, 16], "rotation": 180, "texture": "#wall"}
 			}
 		}
 	],
@@ -242,19 +242,5 @@
 			"translation": [0, 0, -4],
 			"scale": [1, 1, 0.5]
 		}
-	},
-	"groups": [
-		{
-			"name": "edge",
-			"origin": [0, 0, 0],
-			"color": 0,
-			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-		},
-		{
-			"name": "wall",
-			"origin": [8, 8, 8],
-			"color": 0,
-			"children": [12, 13, 14, 15, 16, 17]
-		}
-	]
+	}
 }

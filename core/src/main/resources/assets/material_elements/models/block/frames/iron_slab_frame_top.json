@@ -1,5 +1,5 @@
 {
-  "parent": "material_elements:block/frames/slab_frame_top",
+  "parent": "material_elements:block/templates/slab_frame_top",
   "textures": {
     "texture": "material_elements:block/iron_rod",
     "particle": "material_elements:block/iron_rod"

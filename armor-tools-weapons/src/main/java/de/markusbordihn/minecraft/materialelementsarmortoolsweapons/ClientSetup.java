@@ -42,44 +42,36 @@ public class ClientSetup {
       // Steel Crossbow (pull, pulling, charged and firework)
       ItemProperties.register(ModItems.STEEL_CROSSBOW.get(),
           new ResourceLocation(Constants.MOD_ID, "pull"),
-          (itemStack, clientLevel, livingEntity, id) -> {
-            if (livingEntity == null) {
-              return 0.0F;
-            } else {
-              return CrossbowItem.isCharged(itemStack) ? 0.0F
+          (itemStack, clientLevel, livingEntity,
+              id) -> livingEntity == null || CrossbowItem.isCharged(itemStack) ? 0.0F
                   : (float) (itemStack.getUseDuration() - livingEntity.getUseItemRemainingTicks())
-                      / (float) CrossbowItem.getChargeDuration(itemStack);
-            }
-          });
+                      / (float) CrossbowItem.getChargeDuration(itemStack)
+
+      );
       ItemProperties.register(ModItems.STEEL_CROSSBOW.get(),
           new ResourceLocation(Constants.MOD_ID, "pulling"),
-          (itemStack, clientLevel, livingEntity, id) -> {
-            return livingEntity != null && livingEntity.isUsingItem()
-                && livingEntity.getUseItem() == itemStack && !CrossbowItem.isCharged(itemStack)
-                    ? 1.0F
-                    : 0.0F;
-          });
+          (itemStack, clientLevel, livingEntity,
+              id) -> livingEntity != null && livingEntity.isUsingItem()
+                  && livingEntity.getUseItem() == itemStack && !CrossbowItem.isCharged(itemStack)
+                      ? 1.0F
+                      : 0.0F);
       ItemProperties.register(ModItems.STEEL_CROSSBOW.get(),
-          new ResourceLocation(Constants.MOD_ID, "charged"),
-          (itemStack, clientLevel, livingEntity, id) -> {
-            return livingEntity != null && CrossbowItem.isCharged(itemStack) ? 1.0F : 0.0F;
-          });
+          new ResourceLocation(Constants.MOD_ID, "charged"), (itemStack, clientLevel, livingEntity,
+              id) -> livingEntity != null && CrossbowItem.isCharged(itemStack) ? 1.0F : 0.0F);
       ItemProperties.register(ModItems.STEEL_CROSSBOW.get(),
           new ResourceLocation(Constants.MOD_ID, "firework"),
-          (itemStack, clientLevel, livingEntity, id) -> {
-            return livingEntity != null && CrossbowItem.isCharged(itemStack)
-                && CrossbowItem.containsChargedProjectile(itemStack, Items.FIREWORK_ROCKET) ? 1.0F
-                    : 0.0F;
-          });
+          (itemStack, clientLevel, livingEntity,
+              id) -> livingEntity != null && CrossbowItem.isCharged(itemStack)
+                  && CrossbowItem.containsChargedProjectile(itemStack, Items.FIREWORK_ROCKET) ? 1.0F
+                      : 0.0F);
 
       // Steel Lighter (open)
       ItemProperties.register(ModItems.STEEL_LIGHTER.get(),
           new ResourceLocation(Constants.MOD_ID, "open"),
-          (itemStack, clientLevel, livingEntity, id) -> {
-            return (livingEntity == null || !itemStack.is(ModItems.STEEL_LIGHTER.get())
-                || livingEntity.getMainHandItem().isEmpty()
-                || itemStack != livingEntity.getMainHandItem()) ? 0.0F : 1.0F;
-          });
+          (itemStack, clientLevel, livingEntity,
+              id) -> (livingEntity == null || !itemStack.is(ModItems.STEEL_LIGHTER.get())
+                  || livingEntity.getMainHandItem().isEmpty()
+                  || itemStack != livingEntity.getMainHandItem()) ? 0.0F : 1.0F);
 
     });
   }

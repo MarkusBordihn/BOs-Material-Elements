@@ -34,10 +34,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import de.markusbordihn.minecraft.materialelementsdecorative.Constants;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.ModBlocks;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothColoredBlock;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothSlabBlock;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.FabricClothBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.lantern.SteelLanternBlock;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -64,15 +61,15 @@ public class ModBlockColors {
         ModBlocks.FABRIC_CLOTH_RED.get(), ModBlocks.FABRIC_CLOTH_BLACK.get());
 
     // Cloth block
-    blockColors.register(ModBlockColors::getColorFromClothColoredBlock, ModBlocks.CLOTH_BLOCK_WHITE.get(),
-        ModBlocks.CLOTH_BLOCK_ORANGE.get(), ModBlocks.CLOTH_BLOCK_MAGENTA.get(),
-        ModBlocks.CLOTH_BLOCK_LIGHT_BLUE.get(), ModBlocks.CLOTH_BLOCK_YELLOW.get(),
-        ModBlocks.CLOTH_BLOCK_LIME.get(), ModBlocks.CLOTH_BLOCK_PINK.get(),
-        ModBlocks.CLOTH_BLOCK_GRAY.get(), ModBlocks.CLOTH_BLOCK_LIGHT_GRAY.get(),
-        ModBlocks.CLOTH_BLOCK_CYAN.get(), ModBlocks.CLOTH_BLOCK_PURPLE.get(),
-        ModBlocks.CLOTH_BLOCK_BLUE.get(), ModBlocks.CLOTH_BLOCK_BROWN.get(),
-        ModBlocks.CLOTH_BLOCK_GREEN.get(), ModBlocks.CLOTH_BLOCK_RED.get(),
-        ModBlocks.CLOTH_BLOCK_BLACK.get());
+    blockColors.register(ModBlockColors::getColorFromClothColoredBlock,
+        ModBlocks.CLOTH_BLOCK_WHITE.get(), ModBlocks.CLOTH_BLOCK_ORANGE.get(),
+        ModBlocks.CLOTH_BLOCK_MAGENTA.get(), ModBlocks.CLOTH_BLOCK_LIGHT_BLUE.get(),
+        ModBlocks.CLOTH_BLOCK_YELLOW.get(), ModBlocks.CLOTH_BLOCK_LIME.get(),
+        ModBlocks.CLOTH_BLOCK_PINK.get(), ModBlocks.CLOTH_BLOCK_GRAY.get(),
+        ModBlocks.CLOTH_BLOCK_LIGHT_GRAY.get(), ModBlocks.CLOTH_BLOCK_CYAN.get(),
+        ModBlocks.CLOTH_BLOCK_PURPLE.get(), ModBlocks.CLOTH_BLOCK_BLUE.get(),
+        ModBlocks.CLOTH_BLOCK_BROWN.get(), ModBlocks.CLOTH_BLOCK_GREEN.get(),
+        ModBlocks.CLOTH_BLOCK_RED.get(), ModBlocks.CLOTH_BLOCK_BLACK.get());
 
     // Cloth slab
     blockColors.register(ModBlockColors::getColorFromClothColoredBlock,

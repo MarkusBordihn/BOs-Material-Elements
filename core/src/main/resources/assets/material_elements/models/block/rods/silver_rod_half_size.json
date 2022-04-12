@@ -1,5 +1,5 @@
 {
-  "parent": "material_elements:block/rods/rod_half_size",
+  "parent": "material_elements:block/templates/rod_half_size",
   "textures": {
     "texture": "material_elements:block/silver_rod",
     "particle": "material_elements:block/silver_rod"

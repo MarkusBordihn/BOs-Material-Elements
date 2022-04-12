@@ -20,18 +20,12 @@
 package de.markusbordihn.minecraft.materialelements.item.testtube;
 
 import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 public class TestTubeCustomFoilItem extends TestTubeCustomItem {
 
-  public TestTubeCustomFoilItem(Item.Properties properties) {
-    super(properties);
-  }
-
-  public TestTubeCustomFoilItem(Item.Properties properties, DyeColor dyeColor) {
-    super(properties);
-    this.color = dyeColor;
+  public TestTubeCustomFoilItem(DyeColor dyeColor) {
+    super(dyeColor);
   }
 
   @Override

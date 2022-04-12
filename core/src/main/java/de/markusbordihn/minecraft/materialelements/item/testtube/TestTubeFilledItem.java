@@ -38,11 +38,16 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.gameevent.GameEvent;
 
 import de.markusbordihn.minecraft.materialelements.item.ModItems;
+import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
 
 public class TestTubeFilledItem extends PotionItem {
 
   public TestTubeFilledItem(Item.Properties properties) {
     super(properties);
+  }
+
+  public TestTubeFilledItem() {
+    super(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES));
   }
 
   @Override

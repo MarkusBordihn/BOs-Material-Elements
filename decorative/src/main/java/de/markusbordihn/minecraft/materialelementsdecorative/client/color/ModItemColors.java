@@ -33,10 +33,7 @@ import net.minecraftforge.fml.common.Mod;
 import de.markusbordihn.minecraft.materialelementsdecorative.Constants;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.ColoredItem;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.ModItems;
-import de.markusbordihn.minecraft.materialelementsdecorative.item.cloth.ClothBlockItem;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.cloth.ClothColoredItem;
-import de.markusbordihn.minecraft.materialelementsdecorative.item.cloth.ClothSlabItem;
-import de.markusbordihn.minecraft.materialelementsdecorative.item.cloth.FabricClothItem;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.lantern.SteelLanternItem;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

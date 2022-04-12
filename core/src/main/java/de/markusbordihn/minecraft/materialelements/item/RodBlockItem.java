@@ -1,5 +1,5 @@
 /**
- * Copyright 2021 Markus Bordihn
+ * Copyright 2022 Markus Bordihn
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -17,40 +17,18 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package de.markusbordihn.minecraft.materialelements.item.testtube;
+package de.markusbordihn.minecraft.materialelements.item;
 
-import net.minecraft.core.NonNullList;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
 
 import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
 
-public class TestTubeColorItem extends TestTubeFilledItem {
+public class RodBlockItem extends BlockItem {
 
-  private DyeColor color;
-
-  public TestTubeColorItem(DyeColor dyeColor) {
-    super(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES));
-    this.color = dyeColor;
+  public RodBlockItem(Block block) {
+    super(block, new Item.Properties().tab(MaterialElementsTab.TAB_RODS));
   }
 
-  public DyeColor getColor() {
-    return this.color;
-  }
-
-  @Override
-  public Component getDescription() {
-    return new TranslatableComponent(this.getDescriptionId());
-  }
-
-  @Override
-  public void fillItemCategory(CreativeModeTab tab, NonNullList<ItemStack> itemStack) {
-    if (this.allowdedIn(tab)) {
-      itemStack.add(new ItemStack(this));
-    }
-  }
 }
