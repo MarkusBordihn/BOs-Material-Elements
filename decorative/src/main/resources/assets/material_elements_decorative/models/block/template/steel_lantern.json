@@ -113,13 +113,5 @@
 			"translation": [0, 3.75, -0.75],
 			"scale": [1.5, 1.5, 1.5]
 		}
-	},
-	"groups": [
-		{
-			"name": "Lantern",
-			"origin": [8, 8, 8],
-			"color": 0,
-			"children": [0, 1, 2, 3, 4, 5]
-		}
-	]
+	}
 }

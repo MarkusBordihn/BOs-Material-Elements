@@ -30,7 +30,7 @@ license="MIT"
 [[dependencies.material_elements_decorative]]
   modId="forge"
   mandatory=true
-  versionRange="[39,)"
+  versionRange="[40,)"
   ordering="NONE"
   side="BOTH"
 

@@ -30,7 +30,7 @@ license="MIT"
 [[dependencies.material_elements]]
   modId="forge"
   mandatory=true
-  versionRange="[39,)"
+  versionRange="[40,)"
   ordering="NONE"
   side="BOTH"
 

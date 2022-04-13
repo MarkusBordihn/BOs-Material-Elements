@@ -95,15 +95,5 @@
 			"translation": [0, 0, -4],
 			"scale": [1, 1, 0.5]
 		}
-	},
-	"groups": [
-		{
-			"name": "edge",
-			"origin": [0, 0, 0],
-			"color": 0,
-			"nbt": "{}",
-			"armAnimationEnabled": false,
-			"children": [0, 1, 2, 3, 4]
-		}
-	]
+	}
 }
