@@ -59,7 +59,7 @@ public class CrossbowRenderer {
     ItemStack itemStack = event.getItemStack();
     Minecraft minecraft = Minecraft.getInstance();
     // Early return for all items which are not a steel crossbow item.
-    if (!itemStack.is(ModItems.STEEL_CROSSBOW.get()) || minecraft == null) {
+    if (!isValidItemStack(itemStack) || minecraft == null) {
       return;
     }
 
@@ -91,7 +91,7 @@ public class CrossbowRenderer {
     Player player = event.getPlayer();
     ItemStack itemStack = player.getMainHandItem();
     // Show correct 3rd person arm pose for charged crossbow.
-    if (itemStack.is(ModItems.STEEL_CROSSBOW.get()) && !player.swinging
+    if (isValidItemStack(itemStack) && !player.swinging
         && CrossbowItem.isCharged(itemStack)) {
       PlayerRendererHelper.setArmPose(event.getRenderer(), HumanoidModel.ArmPose.CROSSBOW_HOLD);
     }
@@ -139,6 +139,11 @@ public class CrossbowRenderer {
         isRightArm ? ItemTransforms.TransformType.FIRST_PERSON_RIGHT_HAND
             : ItemTransforms.TransformType.FIRST_PERSON_LEFT_HAND,
         !isRightArm, poseStack, buffers, lightValue);
+  }
+
+  private static boolean isValidItemStack(ItemStack itemStack) {
+    return itemStack != null && (itemStack.is(ModItems.STEEL_CROSSBOW.get())
+        || itemStack.is(ModItems.COPPER_CROSSBOW.get()));
   }
 
 }

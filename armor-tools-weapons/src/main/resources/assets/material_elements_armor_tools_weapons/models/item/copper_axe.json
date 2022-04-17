@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "material_elements_armor_tools_weapons:item/copper_axe"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "used": 0.25
+      },
+      "model": "material_elements_armor_tools_weapons:item/copper_axe_exposed"
+    },
+    {
+      "predicate": {
+        "used": 0.5
+      },
+      "model": "material_elements_armor_tools_weapons:item/copper_axe_weathered"
+    },
+    {
+      "predicate": {
+        "used": 0.75
+      },
+      "model": "material_elements_armor_tools_weapons:item/copper_axe_oxidized"
+    }
+  ]
+}

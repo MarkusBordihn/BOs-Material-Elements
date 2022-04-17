@@ -17,17 +17,22 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package de.markusbordihn.minecraft.materialelements.item;
+package de.markusbordihn.minecraft.materialelements.item.material;
 
 import java.util.function.Supplier;
 
 import net.minecraft.util.LazyLoadedValue;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import de.markusbordihn.minecraft.materialelements.Constants;
+import de.markusbordihn.minecraft.materialelements.item.ModItems;
 
 public enum ModTiers implements Tier {
+
+  COPPER(1, 200, 5.0F, 1.5F, 15, () -> Ingredient.of(Items.COPPER_INGOT)),
+
   STEEL(2, 500, 7.0F, 2.5F, 14, () -> Ingredient.of(ModItems.STEEL_INGOT.get()));
 
   private final int level;

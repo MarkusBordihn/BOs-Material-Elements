@@ -1,6 +1,19 @@
 {
-
   "block.placeholder.text": "Template placeholder do not remove!",
+
+  "item.material_elements_armor_tools_weapons.copper_axe": "Copper Axe",
+  "item.material_elements_armor_tools_weapons.copper_boots": "Copper Boots",
+  "item.material_elements_armor_tools_weapons.copper_chestplate": "Copper Chestplate",
+  "item.material_elements_armor_tools_weapons.copper_crossbow": "Copper Crossbow",
+  "item.material_elements_armor_tools_weapons.copper_helmet": "Copper Helmet",
+  "item.material_elements_armor_tools_weapons.copper_hoe": "Copper Hoe",
+  "item.material_elements_armor_tools_weapons.copper_leggings": "Copper Leggings",
+  "item.material_elements_armor_tools_weapons.copper_lighter": "Copper Lighter",
+  "item.material_elements_armor_tools_weapons.copper_pickaxe": "Copper Pickaxe",
+  "item.material_elements_armor_tools_weapons.copper_shears": "Copper Shears",
+  "item.material_elements_armor_tools_weapons.copper_shield": "Copper Shield",
+  "item.material_elements_armor_tools_weapons.copper_shovel": "Copper Shovel",
+  "item.material_elements_armor_tools_weapons.copper_sword": "Copper Sword",
 
   "item.material_elements_armor_tools_weapons.steel_axe": "Steel Axe",
   "item.material_elements_armor_tools_weapons.steel_boots": "Steel Boots",

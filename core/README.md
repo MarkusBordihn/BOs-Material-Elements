@@ -132,6 +132,27 @@ This mods adds a lot of additional crafting recipes to allow the crafting of the
 
 ## Materials
 
+### Copper
+
+Copper is not a new element, but there is no official classification.
+This mod adds a tier and armor classification for copper between gold and iron.
+
+|                       | Gold   | Copper   | Iron   |
+| --------------------- | ------ | -------- | ------ |
+| Attack Damage Bonus   | 0.0F   | **1.5F** | 2.0F   |
+| Speed                 | 4.0F   | **5.0F** | 6.0F   |
+| Uses                  | 32     | **200**  | 250    |
+| Destroy Time          | _4.0F_ | **4.5F** | _5.0F_ |
+| Explosion Resistance  | _6.0F_ | **6.0F** | _6.0F_ |
+| Durability Multiplier | _7_    | **10**   | _15_   |
+| Enchantment Value     | _22_   | **15**   | _9_    |
+| Toughness             | _0.0F_ | **0.0F** | _0.0F_ |
+| Knockback Resistance  | _0.0F_ | **0.0F** | _0.0F_ |
+| Protection - Slot 0   | _1_    | **2**    | _2_    |
+| Protection - Slot 1   | _3_    | **4**    | _5_    |
+| Protection - Slot 2   | _5_    | **5**    | _6_    |
+| Protection - Slot 3   | _2_    | **2**    | _2_    |
+
 ### Silver
 
 Silver is a new elements and can not be crafted.
@@ -140,23 +161,23 @@ It is classified between Gold and Iron.
 ### Steel
 
 Steel is a new element and can be crafted with coke and raw iron ore in a blast furnace.
-It is classified between Iron and Diamond with the following stats.
+It is classified between Iron and diamond with the following stats.
 
-|                       | Iron   | Steel | Diamond |
-| --------------------- | ------ | ----- | ------- |
-| Attack Damage Bonus   | 2.0F   | 2.5F  | 3.0F    |
-| Speed                 | 6.0F   | 7.0F  | 8.0F    |
-| Uses                  | 250    | 500   | 1561    |
-| Destroy Time          | _5.0F_ | 5.0F  | _5.0F_  |
-| Explosion Resistance  | _6.0F_ | 6.0F  | _6.0F_  |
-| Durability Multiplier | _15_   | 20    | _33_    |
-| Enchantment Value     | _9_    | 9     | _10_    |
-| Toughness             | _0.0F_ | 1.0F  | _2.0F_  |
-| Knockback Resistance  | _0.0F_ | 0.0F  | _0.0F_  |
-| Protection - Slot 0   | _2_    | 2     | _3_     |
-| Protection - Slot 1   | _5_    | 5     | _6_     |
-| Protection - Slot 2   | _6_    | 7     | _8_     |
-| Protection - Slot 3   | _2_    | 2     | _3_     |
+|                       | Iron   | Steel    | Diamond |
+| --------------------- | ------ | -------- | ------- |
+| Attack Damage Bonus   | 2.0F   | **2.5F** | 3.0F    |
+| Speed                 | 6.0F   | **7.0F** | 8.0F    |
+| Uses                  | 250    | **500**  | 1561    |
+| Destroy Time          | _5.0F_ | **5.0F** | _5.0F_  |
+| Explosion Resistance  | _6.0F_ | **6.0F** | _6.0F_  |
+| Durability Multiplier | _15_   | **20**   | _33_    |
+| Enchantment Value     | _9_    | **9**    | _10_    |
+| Toughness             | _0.0F_ | **1.0F** | _2.0F_  |
+| Knockback Resistance  | _0.0F_ | **0.0F** | _0.0F_  |
+| Protection - Slot 0   | _2_    | **2**    | _3_     |
+| Protection - Slot 1   | _5_    | **5**    | _6_     |
+| Protection - Slot 2   | _6_    | **7**    | _8_     |
+| Protection - Slot 3   | _2_    | **2**    | _3_     |
 
 ## Version Status Overview 🛠️
 

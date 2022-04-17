@@ -22,9 +22,12 @@ package de.markusbordihn.minecraft.materialelementsarmortoolsweapons;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.CrossbowItem;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -38,6 +41,54 @@ public class ClientSetup {
   public ClientSetup(final FMLClientSetupEvent event) {
     log.info("{} Client setup ...", Constants.LOG_REGISTER_PREFIX);
     event.enqueueWork(() -> {
+
+      // Copper Items
+      ItemProperties.register(ModItems.COPPER_AXE.get(), new ResourceLocation("used"),
+          ClientSetup::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_BOOTS.get(), new ResourceLocation("used"),
+          ClientSetup::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_CHESTPLATE.get(), new ResourceLocation("used"),
+          ClientSetup::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_HELMET.get(), new ResourceLocation("used"),
+          ClientSetup::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_HOE.get(), new ResourceLocation("used"),
+          ClientSetup::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_LEGGINGS.get(), new ResourceLocation("used"),
+          ClientSetup::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_PICKAXE.get(), new ResourceLocation("used"),
+          ClientSetup::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_SHEARS.get(), new ResourceLocation("used"),
+          ClientSetup::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_SHOVEL.get(), new ResourceLocation("used"),
+          ClientSetup::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_SWORD.get(), new ResourceLocation("used"),
+          ClientSetup::getWeatheringCopperState);
+
+      // Copper Crossbow (pull, pulling, charged and firework)
+      ItemProperties.register(ModItems.COPPER_CROSSBOW.get(),
+          new ResourceLocation(Constants.MOD_ID, "pull"),
+          (itemStack, clientLevel, livingEntity,
+              id) -> livingEntity == null || CrossbowItem.isCharged(itemStack) ? 0.0F
+                  : (float) (itemStack.getUseDuration() - livingEntity.getUseItemRemainingTicks())
+                      / (float) CrossbowItem.getChargeDuration(itemStack)
+
+      );
+      ItemProperties.register(ModItems.COPPER_CROSSBOW.get(),
+          new ResourceLocation(Constants.MOD_ID, "pulling"),
+          (itemStack, clientLevel, livingEntity,
+              id) -> livingEntity != null && livingEntity.isUsingItem()
+                  && livingEntity.getUseItem() == itemStack && !CrossbowItem.isCharged(itemStack)
+                      ? 1.0F
+                      : 0.0F);
+      ItemProperties.register(ModItems.COPPER_CROSSBOW.get(),
+          new ResourceLocation(Constants.MOD_ID, "charged"), (itemStack, clientLevel, livingEntity,
+              id) -> livingEntity != null && CrossbowItem.isCharged(itemStack) ? 1.0F : 0.0F);
+      ItemProperties.register(ModItems.COPPER_CROSSBOW.get(),
+          new ResourceLocation(Constants.MOD_ID, "firework"),
+          (itemStack, clientLevel, livingEntity,
+              id) -> livingEntity != null && CrossbowItem.isCharged(itemStack)
+                  && CrossbowItem.containsChargedProjectile(itemStack, Items.FIREWORK_ROCKET) ? 1.0F
+                      : 0.0F);
 
       // Steel Crossbow (pull, pulling, charged and firework)
       ItemProperties.register(ModItems.STEEL_CROSSBOW.get(),
@@ -75,4 +126,18 @@ public class ClientSetup {
 
     });
   }
+
+  public static final float getWeatheringCopperState(ItemStack itemStack, ClientLevel clientLevel,
+      LivingEntity livingEntity, int id) {
+    int damageValue = itemStack.getDamageValue();
+    if (damageValue > 150) {
+      return 0.75F;
+    } else if (damageValue > 100) {
+      return 0.5F;
+    } else if (damageValue > 50) {
+      return 0.25F;
+    }
+    return 0.0F;
+  }
+
 }
