@@ -6,19 +6,19 @@
   "overrides": [
     {
       "predicate": {
-        "used": 0.25
+        "material_elements_armor_tools_weapons:damaged": 0.25
       },
       "model": "material_elements_armor_tools_weapons:item/copper_hoe_exposed"
     },
     {
       "predicate": {
-        "used": 0.5
+        "material_elements_armor_tools_weapons:damaged": 0.5
       },
       "model": "material_elements_armor_tools_weapons:item/copper_hoe_weathered"
     },
     {
       "predicate": {
-        "used": 0.75
+        "material_elements_armor_tools_weapons:damaged": 0.75
       },
       "model": "material_elements_armor_tools_weapons:item/copper_hoe_oxidized"
     }

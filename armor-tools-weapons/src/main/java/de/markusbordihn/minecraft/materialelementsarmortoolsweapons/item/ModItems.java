@@ -81,20 +81,16 @@ public class ModItems {
 
   // Copper Armor
   public static final RegistryObject<Item> COPPER_BOOTS =
-      ITEMS.register("copper_boots", () -> new ArmorItem(ModArmorMaterials.COPPER, EquipmentSlot.FEET,
-          (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
+      ITEMS.register("copper_boots", () -> new CopperArmorItem(EquipmentSlot.FEET));
 
   public static final RegistryObject<Item> COPPER_HELMET =
-      ITEMS.register("copper_helmet", () -> new ArmorItem(ModArmorMaterials.COPPER,
-          EquipmentSlot.HEAD, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
+      ITEMS.register("copper_helmet", () -> new CopperArmorItem(EquipmentSlot.HEAD));
 
   public static final RegistryObject<Item> COPPER_LEGGINGS =
-      ITEMS.register("copper_leggings", () -> new ArmorItem(ModArmorMaterials.COPPER,
-          EquipmentSlot.LEGS, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
+      ITEMS.register("copper_leggings", () -> new CopperArmorItem(EquipmentSlot.LEGS));
 
   public static final RegistryObject<Item> COPPER_CHESTPLATE =
-      ITEMS.register("copper_chestplate", () -> new ArmorItem(ModArmorMaterials.COPPER,
-          EquipmentSlot.CHEST, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
+      ITEMS.register("copper_chestplate", () -> new CopperArmorItem(EquipmentSlot.CHEST));
 
 
   // Steel Weapons

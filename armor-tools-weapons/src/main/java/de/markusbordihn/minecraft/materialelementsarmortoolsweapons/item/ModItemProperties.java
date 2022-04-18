@@ -17,7 +17,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package de.markusbordihn.minecraft.materialelementsarmortoolsweapons;
+package de.markusbordihn.minecraft.materialelementsarmortoolsweapons.item;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -32,37 +32,42 @@ import net.minecraft.world.item.Items;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
-import de.markusbordihn.minecraft.materialelementsarmortoolsweapons.item.ModItems;
+import de.markusbordihn.minecraft.materialelementsarmortoolsweapons.Constants;
 
-public class ClientSetup {
+public class ModItemProperties {
 
   public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
-  public ClientSetup(final FMLClientSetupEvent event) {
-    log.info("{} Client setup ...", Constants.LOG_REGISTER_PREFIX);
+  private static final ResourceLocation DAMAGED_PROPERTY =
+      new ResourceLocation(Constants.MOD_ID, "damaged");
+
+  protected ModItemProperties() {}
+
+  public static void registerItemProperties(final FMLClientSetupEvent event) {
+    log.info("{} item properties ...", Constants.LOG_REGISTER_PREFIX);
     event.enqueueWork(() -> {
 
       // Copper Items
-      ItemProperties.register(ModItems.COPPER_AXE.get(), new ResourceLocation("used"),
-          ClientSetup::getWeatheringCopperState);
-      ItemProperties.register(ModItems.COPPER_BOOTS.get(), new ResourceLocation("used"),
-          ClientSetup::getWeatheringCopperState);
-      ItemProperties.register(ModItems.COPPER_CHESTPLATE.get(), new ResourceLocation("used"),
-          ClientSetup::getWeatheringCopperState);
-      ItemProperties.register(ModItems.COPPER_HELMET.get(), new ResourceLocation("used"),
-          ClientSetup::getWeatheringCopperState);
-      ItemProperties.register(ModItems.COPPER_HOE.get(), new ResourceLocation("used"),
-          ClientSetup::getWeatheringCopperState);
-      ItemProperties.register(ModItems.COPPER_LEGGINGS.get(), new ResourceLocation("used"),
-          ClientSetup::getWeatheringCopperState);
-      ItemProperties.register(ModItems.COPPER_PICKAXE.get(), new ResourceLocation("used"),
-          ClientSetup::getWeatheringCopperState);
-      ItemProperties.register(ModItems.COPPER_SHEARS.get(), new ResourceLocation("used"),
-          ClientSetup::getWeatheringCopperState);
-      ItemProperties.register(ModItems.COPPER_SHOVEL.get(), new ResourceLocation("used"),
-          ClientSetup::getWeatheringCopperState);
-      ItemProperties.register(ModItems.COPPER_SWORD.get(), new ResourceLocation("used"),
-          ClientSetup::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_AXE.get(), DAMAGED_PROPERTY,
+          ModItemProperties::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_BOOTS.get(), DAMAGED_PROPERTY,
+          ModItemProperties::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_CHESTPLATE.get(), DAMAGED_PROPERTY,
+          ModItemProperties::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_HELMET.get(), DAMAGED_PROPERTY,
+          ModItemProperties::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_HOE.get(), DAMAGED_PROPERTY,
+          ModItemProperties::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_LEGGINGS.get(), DAMAGED_PROPERTY,
+          ModItemProperties::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_PICKAXE.get(), DAMAGED_PROPERTY,
+          ModItemProperties::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_SHEARS.get(), DAMAGED_PROPERTY,
+          ModItemProperties::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_SHOVEL.get(), DAMAGED_PROPERTY,
+          ModItemProperties::getWeatheringCopperState);
+      ItemProperties.register(ModItems.COPPER_SWORD.get(), DAMAGED_PROPERTY,
+          ModItemProperties::getWeatheringCopperState);
 
       // Copper Crossbow (pull, pulling, charged and firework)
       ItemProperties.register(ModItems.COPPER_CROSSBOW.get(),
@@ -130,11 +135,11 @@ public class ClientSetup {
   public static final float getWeatheringCopperState(ItemStack itemStack, ClientLevel clientLevel,
       LivingEntity livingEntity, int id) {
     int damageValue = itemStack.getDamageValue();
-    if (damageValue > 150) {
+    if (damageValue >= 150) {
       return 0.75F;
-    } else if (damageValue > 100) {
+    } else if (damageValue >= 100) {
       return 0.5F;
-    } else if (damageValue > 50) {
+    } else if (damageValue >= 50) {
       return 0.25F;
     }
     return 0.0F;

@@ -2,5 +2,25 @@
   "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "material_elements_armor_tools_weapons:item/copper_leggings"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "material_elements_armor_tools_weapons:damaged": 0.25
+      },
+      "model": "material_elements_armor_tools_weapons:item/copper_leggings_exposed"
+    },
+    {
+      "predicate": {
+        "material_elements_armor_tools_weapons:damaged": 0.5
+      },
+      "model": "material_elements_armor_tools_weapons:item/copper_leggings_weathered"
+    },
+    {
+      "predicate": {
+        "material_elements_armor_tools_weapons:damaged": 0.75
+      },
+      "model": "material_elements_armor_tools_weapons:item/copper_leggings_oxidized"
+    }
+  ]
 }

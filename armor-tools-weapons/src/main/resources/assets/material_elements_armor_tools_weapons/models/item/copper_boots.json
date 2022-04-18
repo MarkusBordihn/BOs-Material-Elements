@@ -2,5 +2,25 @@
   "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "material_elements_armor_tools_weapons:item/copper_boots"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "material_elements_armor_tools_weapons:damaged": 0.25
+      },
+      "model": "material_elements_armor_tools_weapons:item/copper_boots_exposed"
+    },
+    {
+      "predicate": {
+        "material_elements_armor_tools_weapons:damaged": 0.5
+      },
+      "model": "material_elements_armor_tools_weapons:item/copper_boots_weathered"
+    },
+    {
+      "predicate": {
+        "material_elements_armor_tools_weapons:damaged": 0.75
+      },
+      "model": "material_elements_armor_tools_weapons:item/copper_boots_oxidized"
+    }
+  ]
 }

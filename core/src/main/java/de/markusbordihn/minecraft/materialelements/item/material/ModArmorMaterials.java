@@ -38,6 +38,15 @@ public enum ModArmorMaterials implements ArmorMaterial {
   COPPER(new ResourceLocation(Constants.MOD_ID, "copper").toString(), 10, new int[] {2, 4, 5, 2}, 15,
       SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(Items.COPPER_INGOT)),
 
+  COPPER_EXPOSED(new ResourceLocation(Constants.MOD_ID, "copper_exposed").toString(), 10, new int[] {2, 4, 5, 2},
+      15, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(Items.COPPER_INGOT)),
+
+  COPPER_OXIDIZED(new ResourceLocation(Constants.MOD_ID, "copper_oxidized").toString(), 10, new int[] {2, 4, 5, 2},
+      15, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(Items.COPPER_INGOT)),
+
+  COPPER_WEATHERED(new ResourceLocation(Constants.MOD_ID, "copper_weathered").toString(), 10, new int[] {2, 4, 5, 2},
+      15, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(Items.COPPER_INGOT)),
+
   STEEL(new ResourceLocation(Constants.MOD_ID, "steel").toString(), 20, new int[] {2, 5, 7, 2}, 9,
       SoundEvents.ARMOR_EQUIP_IRON, 1.0F, 0.5F, () -> Ingredient.of(ModItems.STEEL_INGOT.get()));
 

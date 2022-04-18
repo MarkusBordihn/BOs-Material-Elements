@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "material_elements_armor_tools_weapons:item/copper_leggings_exposed"
+  }
+}
