@@ -23,9 +23,13 @@ import javax.annotation.Nullable;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.stats.Stats;
+import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -71,8 +75,17 @@ public class FramedHopperBlock extends HopperBlock {
   }
 
   @Override
-  public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos,
-      Player player, InteractionHand hand, BlockHitResult hitResult) {
+  public void setPlacedBy(Level level, BlockPos blockPos, BlockState blockState,
+      LivingEntity livingEntity, ItemStack itemStack) {
+    if (itemStack.hasCustomHoverName() && level
+        .getBlockEntity(blockPos) instanceof FramedHopperBlockEntity framedHopperBlockEntity) {
+      framedHopperBlockEntity.setCustomName(itemStack.getHoverName());
+    }
+  }
+
+  @Override
+  public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player,
+      InteractionHand hand, BlockHitResult hitResult) {
     if (level.isClientSide) {
       return InteractionResult.SUCCESS;
     } else {
@@ -82,6 +95,27 @@ public class FramedHopperBlock extends HopperBlock {
         player.awardStat(Stats.INSPECT_HOPPER);
       }
       return InteractionResult.CONSUME;
+    }
+  }
+
+  @Override
+  public void entityInside(BlockState blockState, Level level, BlockPos blockPos, Entity entity) {
+    if (level.getBlockEntity(blockPos) instanceof FramedHopperBlockEntity framedHopperBlockEntity) {
+      FramedHopperBlockEntity.entityInside(level, blockPos, blockState, entity,
+          framedHopperBlockEntity);
+    }
+  }
+
+  @Override
+  public void onRemove(BlockState blockState, Level level, BlockPos blockPos,
+      BlockState targetBlockState, boolean isMoving) {
+    if (!blockState.is(targetBlockState.getBlock())) {
+      if (level
+          .getBlockEntity(blockPos) instanceof FramedHopperBlockEntity framedHopperBlockEntity) {
+        Containers.dropContents(level, blockPos, framedHopperBlockEntity);
+        level.updateNeighbourForOutputSignal(blockPos, this);
+      }
+      super.onRemove(blockState, level, blockPos, targetBlockState, isMoving);
     }
   }
 

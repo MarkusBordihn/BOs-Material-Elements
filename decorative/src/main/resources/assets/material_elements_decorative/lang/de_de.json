@@ -54,6 +54,23 @@
   "block.material_elements_decorative.wool_slab_red": "Wollplatte (rot)",
   "block.material_elements_decorative.wool_slab_black": "Wollplatte (schwarz)",
 
+  "block.material_elements_decorative.cloth_triangular_black": "Dreieckiger Wollblock (black)",
+  "block.material_elements_decorative.cloth_triangular_blue": "Dreieckiger Wollblock (blue)",
+  "block.material_elements_decorative.cloth_triangular_brown": "Dreieckiger Wollblock (brown)",
+  "block.material_elements_decorative.cloth_triangular_cyan": "Dreieckiger Wollblock (cyan)",
+  "block.material_elements_decorative.cloth_triangular_gray": "Dreieckiger Wollblock (gray)",
+  "block.material_elements_decorative.cloth_triangular_green": "Dreieckiger Wollblock (green)",
+  "block.material_elements_decorative.cloth_triangular_light_blue": "Dreieckiger Wollblock (light blue)",
+  "block.material_elements_decorative.cloth_triangular_light_gray": "Dreieckiger Wollblock (light gray)",
+  "block.material_elements_decorative.cloth_triangular_lime": "Dreieckiger Wollblock (lime)",
+  "block.material_elements_decorative.cloth_triangular_magenta": "Dreieckiger Wollblock (magenta)",
+  "block.material_elements_decorative.cloth_triangular_orange": "Dreieckiger Wollblock (orange)",
+  "block.material_elements_decorative.cloth_triangular_pink": "Dreieckiger Wollblock (pink)",
+  "block.material_elements_decorative.cloth_triangular_purple": "Dreieckiger Wollblock (purple)",
+  "block.material_elements_decorative.cloth_triangular_red": "Dreieckiger Wollblock (red)",
+  "block.material_elements_decorative.cloth_triangular_white": "Dreieckiger Wollblock (white)",
+  "block.material_elements_decorative.cloth_triangular_yellow": "Dreieckiger Wollblock (yellow)",
+
   "block.placeholder.text": "Template placeholder do not remove!",
 
   "item.placeholder.text": "Template placeholder do not remove!",
