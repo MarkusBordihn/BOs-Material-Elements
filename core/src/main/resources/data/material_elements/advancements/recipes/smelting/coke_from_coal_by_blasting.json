@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "rewards": {
-    "recipes": ["material_elements:coke_from_coal_by_smelting"]
+    "recipes": ["material_elements:coke_from_coal_by_blasting"]
   },
   "criteria": {
     "has_coal": {
@@ -17,7 +17,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "material_elements:coke_from_coal_by_smelting"
+        "recipe": "material_elements:coke_from_coal_by_blasting"
       }
     }
   },

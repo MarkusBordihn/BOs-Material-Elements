@@ -1,6 +1,5 @@
 {
   "type": "minecraft:smelting",
-  "group": "silver_ingot",
   "ingredient": {
     "item": "material_elements:raw_silver"
   },

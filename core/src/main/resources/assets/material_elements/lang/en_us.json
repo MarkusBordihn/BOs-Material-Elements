@@ -30,7 +30,7 @@
   "advancements.material_elements.crafting.fill_water_in_test_tube.description": "Water in the test tube, whats next?",
   "advancements.material_elements.crafting.fill_water_in_test_tube.title": "Just add water for the start.",
   "advancements.material_elements.crafting.obtain_coke.description": "The industrial production of coke from coal is called coking.",
-  "advancements.material_elements.crafting.obtain_coke.title": "What happen's if you burn coal?",
+  "advancements.material_elements.crafting.obtain_coke.title": "What happen's if you blast coal?",
   "advancements.material_elements.crafting.smelt_steel.description": "Get some steel ingot's for new armor, tools and weapons.",
   "advancements.material_elements.crafting.smelt_steel.title": "Next level of Iron",
 
@@ -148,12 +148,12 @@
   "block.material_elements.silver_block": "Silver Block",
   "block.material_elements.silver_ore": "Silver Ore",
   "block.material_elements.deepslate_silver_ore": "Deepslate Silver Ore",
-  "block.material_elements.raw_silver_block": "Raw Silver Block",
+  "block.material_elements.raw_silver_block": "Block of Raw Silver",
 
   "block.material_elements.steel_block": "Steel Block",
   "block.material_elements.steel_ore": "Steel Ore",
   "block.material_elements.deepslate_steel_ore": "Deepslate Steel Ore",
-  "block.material_elements.raw_steel_block": "Raw Steel Block",
+  "block.material_elements.raw_steel_block": "Block of Raw Steel",
 
   "block.material_elements.charcoal_block": "Charcoal Block",
   "block.material_elements.coke_block": "Coke Block",
