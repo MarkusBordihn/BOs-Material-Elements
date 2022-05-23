@@ -11,6 +11,7 @@
     "material_elements:copper_rod_tee",
     "material_elements:copper_rod_tee_elbow",
     "material_elements:copper_slab_frame",
+    "material_elements:copper_skeleton_frame",
     "material_elements:copper_triangular_frame"
   ]
 }

@@ -36,6 +36,7 @@ import de.markusbordihn.minecraft.materialelements.item.constructionframes.Const
 import de.markusbordihn.minecraft.materialelements.item.constructionframes.ConstructionTriangularFrameItem;
 import de.markusbordihn.minecraft.materialelements.item.frames.CubeFrameItem;
 import de.markusbordihn.minecraft.materialelements.item.frames.CubeGlassFrameItem;
+import de.markusbordihn.minecraft.materialelements.item.frames.SkeletonFrameItem;
 import de.markusbordihn.minecraft.materialelements.item.frames.SlabFrameItem;
 import de.markusbordihn.minecraft.materialelements.item.frames.TriangularFrameItem;
 import de.markusbordihn.minecraft.materialelements.item.leather.LeatherSheetItem;
@@ -200,7 +201,7 @@ public class ModItems {
 
   // Test Tube
   public static final RegistryObject<Item> TEST_TUBE =
-      ITEMS.register("test_tube", () -> new TestTubeItem());
+      ITEMS.register("test_tube", TestTubeItem::new);
   public static final RegistryObject<Item> TEST_TUBE_FILLED =
       ITEMS.register("test_tube_filled", TestTubeFilledItem::new);
 
@@ -306,6 +307,23 @@ public class ModItems {
       ITEMS.register("steel_slab_frame", () -> new SlabFrameItem(ModBlocks.STEEL_SLAB_FRAME.get()));
   public static final RegistryObject<Item> NETHERITE_SLAB_FRAME = ITEMS.register(
       "netherite_slab_frame", () -> new SlabFrameItem(ModBlocks.NETHERITE_SLAB_FRAME.get()));
+
+  // Skeleton Frames
+  public static final RegistryObject<Item> LIGHT_SKELETON_FRAME = ITEMS.register(
+      "light_skeleton_frame", () -> new SkeletonFrameItem(ModBlocks.LIGHT_SKELETON_FRAME.get()));
+  public static final RegistryObject<Item> COPPER_SKELETON_FRAME = ITEMS.register(
+      "copper_skeleton_frame", () -> new SkeletonFrameItem(ModBlocks.COPPER_SKELETON_FRAME.get()));
+  public static final RegistryObject<Item> GOLD_SKELETON_FRAME = ITEMS.register(
+      "gold_skeleton_frame", () -> new SkeletonFrameItem(ModBlocks.GOLD_SKELETON_FRAME.get()));
+  public static final RegistryObject<Item> SILVER_SKELETON_FRAME = ITEMS.register(
+      "silver_skeleton_frame", () -> new SkeletonFrameItem(ModBlocks.SILVER_SKELETON_FRAME.get()));
+  public static final RegistryObject<Item> IRON_SKELETON_FRAME = ITEMS.register(
+      "iron_skeleton_frame", () -> new SkeletonFrameItem(ModBlocks.IRON_SKELETON_FRAME.get()));
+  public static final RegistryObject<Item> STEEL_SKELETON_FRAME = ITEMS.register(
+      "steel_skeleton_frame", () -> new SkeletonFrameItem(ModBlocks.STEEL_SKELETON_FRAME.get()));
+  public static final RegistryObject<Item> NETHERITE_SKELETON_FRAME =
+      ITEMS.register("netherite_skeleton_frame",
+          () -> new SkeletonFrameItem(ModBlocks.NETHERITE_SKELETON_FRAME.get()));
 
   // Triangular Frames
   public static final RegistryObject<Item> LIGHT_TRIANGULAR_FRAME =

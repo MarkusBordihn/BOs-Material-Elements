@@ -34,6 +34,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import de.markusbordihn.minecraft.materialelements.Constants;
 import de.markusbordihn.minecraft.materialelements.Annotations.TemplateEntryPoint;
+import de.markusbordihn.minecraft.materialelements.block.frame.SkeletonFrame;
 import de.markusbordihn.minecraft.materialelements.block.multiplace.TriangularBlock;
 import de.markusbordihn.minecraft.materialelements.block.rod.Rod;
 import de.markusbordihn.minecraft.materialelements.block.rod.RodCross;
@@ -104,6 +105,22 @@ public class ModBlocks {
       BLOCKS.register("steel_slab_frame", () -> new SlabBlock(BlockType.STEEL));
   public static final RegistryObject<Block> NETHERITE_SLAB_FRAME =
       BLOCKS.register("netherite_slab_frame", () -> new SlabBlock(BlockType.NETHERITE));
+
+  // Skeleton Frames
+  public static final RegistryObject<Block> LIGHT_SKELETON_FRAME =
+      BLOCKS.register("light_skeleton_frame", () -> new SkeletonFrame(BlockType.LIGHT));
+  public static final RegistryObject<Block> COPPER_SKELETON_FRAME =
+      BLOCKS.register("copper_skeleton_frame", () -> new SkeletonFrame(BlockType.COPPER));
+  public static final RegistryObject<Block> GOLD_SKELETON_FRAME =
+      BLOCKS.register("gold_skeleton_frame", () -> new SkeletonFrame(BlockType.GOLD));
+  public static final RegistryObject<Block> SILVER_SKELETON_FRAME =
+      BLOCKS.register("silver_skeleton_frame", () -> new SkeletonFrame(BlockType.SILVER));
+  public static final RegistryObject<Block> IRON_SKELETON_FRAME =
+      BLOCKS.register("iron_skeleton_frame", () -> new SkeletonFrame(BlockType.IRON));
+  public static final RegistryObject<Block> STEEL_SKELETON_FRAME =
+      BLOCKS.register("steel_skeleton_frame", () -> new SkeletonFrame(BlockType.STEEL));
+  public static final RegistryObject<Block> NETHERITE_SKELETON_FRAME =
+      BLOCKS.register("netherite_skeleton_frame", () -> new SkeletonFrame(BlockType.NETHERITE));
 
   // Triangular Frames
   public static final RegistryObject<Block> LIGHT_TRIANGULAR_FRAME =

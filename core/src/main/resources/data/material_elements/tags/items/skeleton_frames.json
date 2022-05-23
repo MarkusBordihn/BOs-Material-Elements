@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements:light_skeleton_frame",
+    "material_elements:copper_skeleton_frame",
+    "material_elements:gold_skeleton_frame",
+    "material_elements:iron_skeleton_frame",
+    "material_elements:netherite_skeleton_frame",
+    "material_elements:silver_skeleton_frame",
+    "material_elements:steel_skeleton_frame"
+  ]
+}

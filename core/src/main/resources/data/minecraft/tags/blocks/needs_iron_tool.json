@@ -11,6 +11,7 @@
     "material_elements:gold_rod_star",
     "material_elements:gold_rod_tee",
     "material_elements:gold_rod_tee_elbow",
+    "material_elements:gold_skeleton_frame",
     "material_elements:gold_slab_frame",
     "material_elements:gold_triangular_frame",
     "material_elements:iron_cube_frame",
@@ -22,6 +23,7 @@
     "material_elements:iron_rod_star",
     "material_elements:iron_rod_tee",
     "material_elements:iron_rod_tee_elbow",
+    "material_elements:iron_skeleton_frame",
     "material_elements:iron_slab_frame",
     "material_elements:iron_triangular_frame",
     "material_elements:light_cube_frame",
@@ -32,6 +34,7 @@
     "material_elements:light_rod_half_size",
     "material_elements:light_rod_star",
     "material_elements:light_rod_tee",
+    "material_elements:light_skeleton_frame",
     "material_elements:light_slab_frame",
     "material_elements:light_triangular_frame",
     "material_elements:silver_cube_frame",
@@ -44,6 +47,7 @@
     "material_elements:silver_rod_star",
     "material_elements:silver_rod_tee",
     "material_elements:silver_rod_tee_elbow",
+    "material_elements:silver_skeleton_frame",
     "material_elements:silver_slab_frame",
     "material_elements:silver_triangular_frame"
   ]

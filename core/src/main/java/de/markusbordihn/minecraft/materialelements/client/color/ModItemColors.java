@@ -52,9 +52,8 @@ public class ModItemColors {
     log.info("{} Item Colors ...", Constants.LOG_REGISTER_PREFIX);
 
     // Use the existing potion color system for the filled test tubes.
-    itemColors.register((itemStack, color) -> {
-      return color > 0 ? -1 : PotionUtils.getColor(itemStack);
-    }, ModItems.TEST_TUBE_FILLED.get());
+    itemColors.register((itemStack, color) -> color > 0 ? -1 : PotionUtils.getColor(itemStack),
+        ModItems.TEST_TUBE_FILLED.get());
 
     // Use dye color for the colored items.
     itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH.get(),
