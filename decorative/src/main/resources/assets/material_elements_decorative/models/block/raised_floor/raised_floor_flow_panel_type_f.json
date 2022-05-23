@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements_decorative:block/raised_floor/raised_floor_flow_panel",
+  "textures": {
+    "particle": "material_elements_decorative:block/raised_floor_flow_panel_type_f",
+    "floor": "material_elements_decorative:block/raised_floor_flow_panel_type_f"
+  }
+}

@@ -63,6 +63,8 @@ import de.markusbordihn.minecraft.materialelementsdecorative.block.panel.PanelBl
 import de.markusbordihn.minecraft.materialelementsdecorative.block.panel.WoodPanelBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.plate.PlateBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.plate.WoodPlateBlock;
+import de.markusbordihn.minecraft.materialelementsdecorative.block.raisedfloor.RaisedFloorBlock;
+import de.markusbordihn.minecraft.materialelementsdecorative.block.raisedfloor.RaisedFloorLightBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.slab.WoolSlabBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.Constants;
 import de.markusbordihn.minecraft.materialelementsdecorative.Annotations.TemplateEntryPoint;
@@ -216,6 +218,24 @@ public class ModBlocks {
       BLOCKS.register("cloth_triangular_red", () -> new ClothTriangularBlock(ClothColor.RED));
   public static final RegistryObject<Block> CLOTH_TRIANGULAR_BLACK =
       BLOCKS.register("cloth_triangular_black", () -> new ClothTriangularBlock(ClothColor.BLACK));
+
+  // Raised Floor
+  public static final RegistryObject<Block> RAISED_FLOOR_BASIC =
+      BLOCKS.register("raised_floor_basic", () -> new RaisedFloorBlock());
+  public static final RegistryObject<Block> RAISED_FLOOR_FLOW_PANEL_TYPE_A =
+      BLOCKS.register("raised_floor_flow_panel_type_a", () -> new RaisedFloorBlock());
+  public static final RegistryObject<Block> RAISED_FLOOR_FLOW_PANEL_TYPE_B =
+      BLOCKS.register("raised_floor_flow_panel_type_b", () -> new RaisedFloorBlock());
+  public static final RegistryObject<Block> RAISED_FLOOR_FLOW_PANEL_TYPE_C =
+      BLOCKS.register("raised_floor_flow_panel_type_c", () -> new RaisedFloorBlock());
+  public static final RegistryObject<Block> RAISED_FLOOR_FLOW_PANEL_TYPE_D =
+      BLOCKS.register("raised_floor_flow_panel_type_d", () -> new RaisedFloorBlock());
+  public static final RegistryObject<Block> RAISED_FLOOR_FLOW_PANEL_TYPE_E =
+      BLOCKS.register("raised_floor_flow_panel_type_e", () -> new RaisedFloorBlock());
+  public static final RegistryObject<Block> RAISED_FLOOR_FLOW_PANEL_TYPE_F =
+      BLOCKS.register("raised_floor_flow_panel_type_f", () -> new RaisedFloorBlock());
+  public static final RegistryObject<Block> RAISED_FLOOR_LIGHT_SIDE =
+      BLOCKS.register("raised_floor_light_side", () -> new RaisedFloorLightBlock());
 
   // Quartz
   public static final RegistryObject<Block> QUARTZ_PANEL =

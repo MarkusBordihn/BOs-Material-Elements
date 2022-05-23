@@ -64,34 +64,36 @@ public class ModItems {
   // Fabric Cloth
   public static final RegistryObject<Item> FABRIC_CLOTH_WHITE = ITEMS.register("fabric_cloth_white",
       () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_WHITE.get()));
-  public static final RegistryObject<Item> FABRIC_CLOTH_ORANGE = ITEMS.register("fabric_cloth_orange",
-      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_ORANGE.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_ORANGE = ITEMS.register(
+      "fabric_cloth_orange", () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_ORANGE.get()));
   public static final RegistryObject<Item> FABRIC_CLOTH_MAGENTA = ITEMS.register(
       "fabric_cloth_magenta", () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_MAGENTA.get()));
-  public static final RegistryObject<Item> FABRIC_CLOTH_LIGHT_BLUE = ITEMS.register(
-      "fabric_cloth_light_blue", () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_LIGHT_BLUE.get()));
-  public static final RegistryObject<Item> FABRIC_CLOTH_YELLOW = ITEMS.register("fabric_cloth_yellow",
-      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_YELLOW.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_LIGHT_BLUE =
+      ITEMS.register("fabric_cloth_light_blue",
+          () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_LIGHT_BLUE.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_YELLOW = ITEMS.register(
+      "fabric_cloth_yellow", () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_YELLOW.get()));
   public static final RegistryObject<Item> FABRIC_CLOTH_LIME = ITEMS.register("fabric_cloth_lime",
       () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_LIME.get()));
   public static final RegistryObject<Item> FABRIC_CLOTH_PINK = ITEMS.register("fabric_cloth_pink",
       () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_PINK.get()));
   public static final RegistryObject<Item> FABRIC_CLOTH_GRAY = ITEMS.register("fabric_cloth_gray",
       () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_GRAY.get()));
-  public static final RegistryObject<Item> FABRIC_CLOTH_LIGHT_GRAY = ITEMS.register(
-      "fabric_cloth_light_gray", () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_LIGHT_GRAY.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_LIGHT_GRAY =
+      ITEMS.register("fabric_cloth_light_gray",
+          () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_LIGHT_GRAY.get()));
   public static final RegistryObject<Item> FABRIC_CLOTH_CYAN = ITEMS.register("fabric_cloth_cyan",
       () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_CYAN.get()));
-  public static final RegistryObject<Item> FABRIC_CLOTH_PURPLE = ITEMS.register("fabric_cloth_purple",
-      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_PURPLE.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_PURPLE = ITEMS.register(
+      "fabric_cloth_purple", () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_PURPLE.get()));
   public static final RegistryObject<Item> FABRIC_CLOTH_BROWN = ITEMS.register("fabric_cloth_brown",
       () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_BROWN.get()));
   public static final RegistryObject<Item> FABRIC_CLOTH_BLUE = ITEMS.register("fabric_cloth_blue",
       () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_BLUE.get()));
   public static final RegistryObject<Item> FABRIC_CLOTH_GREEN = ITEMS.register("fabric_cloth_green",
       () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_GREEN.get()));
-  public static final RegistryObject<Item> FABRIC_CLOTH_RED =
-      ITEMS.register("fabric_cloth_red", () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_RED.get()));
+  public static final RegistryObject<Item> FABRIC_CLOTH_RED = ITEMS.register("fabric_cloth_red",
+      () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_RED.get()));
   public static final RegistryObject<Item> FABRIC_CLOTH_BLACK = ITEMS.register("fabric_cloth_black",
       () -> new FabricClothItem(ModBlocks.FABRIC_CLOTH_BLACK.get()));
 
@@ -166,37 +168,85 @@ public class ModItems {
 
   // Cloth Triangular
   public static final RegistryObject<Item> CLOTH_TRIANGULAR_WHITE =
-      ITEMS.register("cloth_triangular_white", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_WHITE.get()));
-  public static final RegistryObject<Item> CLOTH_TRIANGULAR_ORANGE = ITEMS.register("cloth_triangular_orange",
-      () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_ORANGE.get()));
-  public static final RegistryObject<Item> CLOTH_TRIANGULAR_MAGENTA = ITEMS.register("cloth_triangular_magenta",
-      () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_MAGENTA.get()));
-  public static final RegistryObject<Item> CLOTH_TRIANGULAR_LIGHT_BLUE = ITEMS.register(
-      "cloth_triangular_light_blue", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_LIGHT_BLUE.get()));
-  public static final RegistryObject<Item> CLOTH_TRIANGULAR_YELLOW = ITEMS.register("cloth_triangular_yellow",
-      () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_YELLOW.get()));
+      ITEMS.register("cloth_triangular_white",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_WHITE.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_ORANGE =
+      ITEMS.register("cloth_triangular_orange",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_ORANGE.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_MAGENTA =
+      ITEMS.register("cloth_triangular_magenta",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_MAGENTA.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_LIGHT_BLUE =
+      ITEMS.register("cloth_triangular_light_blue",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_LIGHT_BLUE.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_YELLOW =
+      ITEMS.register("cloth_triangular_yellow",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_YELLOW.get()));
   public static final RegistryObject<Item> CLOTH_TRIANGULAR_LIME =
-      ITEMS.register("cloth_triangular_lime", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_LIME.get()));
+      ITEMS.register("cloth_triangular_lime",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_LIME.get()));
   public static final RegistryObject<Item> CLOTH_TRIANGULAR_PINK =
-      ITEMS.register("cloth_triangular_pink", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_PINK.get()));
+      ITEMS.register("cloth_triangular_pink",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_PINK.get()));
   public static final RegistryObject<Item> CLOTH_TRIANGULAR_GRAY =
-      ITEMS.register("cloth_triangular_gray", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_GRAY.get()));
-  public static final RegistryObject<Item> CLOTH_TRIANGULAR_LIGHT_GRAY = ITEMS.register(
-      "cloth_triangular_light_gray", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_LIGHT_GRAY.get()));
+      ITEMS.register("cloth_triangular_gray",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_GRAY.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_LIGHT_GRAY =
+      ITEMS.register("cloth_triangular_light_gray",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_LIGHT_GRAY.get()));
   public static final RegistryObject<Item> CLOTH_TRIANGULAR_CYAN =
-      ITEMS.register("cloth_triangular_cyan", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_CYAN.get()));
-  public static final RegistryObject<Item> CLOTH_TRIANGULAR_PURPLE = ITEMS.register("cloth_triangular_purple",
-      () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_PURPLE.get()));
+      ITEMS.register("cloth_triangular_cyan",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_CYAN.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_PURPLE =
+      ITEMS.register("cloth_triangular_purple",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_PURPLE.get()));
   public static final RegistryObject<Item> CLOTH_TRIANGULAR_BROWN =
-      ITEMS.register("cloth_triangular_brown", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_BROWN.get()));
+      ITEMS.register("cloth_triangular_brown",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_BROWN.get()));
   public static final RegistryObject<Item> CLOTH_TRIANGULAR_BLUE =
-      ITEMS.register("cloth_triangular_blue", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_BLUE.get()));
+      ITEMS.register("cloth_triangular_blue",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_BLUE.get()));
   public static final RegistryObject<Item> CLOTH_TRIANGULAR_GREEN =
-      ITEMS.register("cloth_triangular_green", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_GREEN.get()));
-  public static final RegistryObject<Item> CLOTH_TRIANGULAR_RED =
-      ITEMS.register("cloth_triangular_red", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_RED.get()));
+      ITEMS.register("cloth_triangular_green",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_GREEN.get()));
+  public static final RegistryObject<Item> CLOTH_TRIANGULAR_RED = ITEMS.register(
+      "cloth_triangular_red", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_RED.get()));
   public static final RegistryObject<Item> CLOTH_TRIANGULAR_BLACK =
-      ITEMS.register("cloth_triangular_black", () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_BLACK.get()));
+      ITEMS.register("cloth_triangular_black",
+          () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_BLACK.get()));
+
+  // Raised Floor
+  public static final RegistryObject<Item> RAISED_FLOOR_BASIC =
+      ITEMS.register("raised_floor_basic", () -> new BlockItem(ModBlocks.RAISED_FLOOR_BASIC.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_A =
+      ITEMS.register("raised_floor_flow_panel_type_a",
+          () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_A.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_B =
+      ITEMS.register("raised_floor_flow_panel_type_b",
+          () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_B.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_C =
+      ITEMS.register("raised_floor_flow_panel_type_c",
+          () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_C.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_D =
+      ITEMS.register("raised_floor_flow_panel_type_d",
+          () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_D.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_E =
+      ITEMS.register("raised_floor_flow_panel_type_e",
+          () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_E.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_F =
+      ITEMS.register("raised_floor_flow_panel_type_f",
+          () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_F.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+
+  public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_SIDE = ITEMS.register(
+      "raised_floor_light_side", () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_SIDE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
 
   // Quartz
   public static final RegistryObject<Item> QUARTZ_PANEL =

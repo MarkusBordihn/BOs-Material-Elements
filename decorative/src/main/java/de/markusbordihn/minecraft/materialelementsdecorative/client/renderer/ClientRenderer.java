@@ -117,6 +117,24 @@ public class ClientRenderer {
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.STEEL_LANTERN_BLACK.get(),
           RenderType.translucent());
 
+      // Raised Floor
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_BASIC.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_A.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_B.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_C.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_D.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_E.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_F.get(),
+          RenderType.cutoutMipped());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_LIGHT_SIDE.get(),
+          RenderType.translucent());
+
       // Wooden framed hopper
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.OAK_FRAMED_HOPPER.get(),
           RenderType.cutoutMipped());

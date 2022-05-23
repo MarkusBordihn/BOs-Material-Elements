@@ -46,4 +46,10 @@ public class MaterialElementsTab {
     }
   };
 
+  public static final CreativeModeTab TAB_RAISED_FLOOR = new CreativeModeTab("raised_floor") {
+    public ItemStack makeIcon() {
+      return new ItemStack(ModItems.RAISED_FLOOR_BASIC.get());
+    }
+  };
+
 }
