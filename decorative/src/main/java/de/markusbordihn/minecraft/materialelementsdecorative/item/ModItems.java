@@ -216,6 +216,9 @@ public class ModItems {
           () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_BLACK.get()));
 
   // Raised Floor
+  public static final RegistryObject<Item> RAISED_FLOOR_BASE =
+      ITEMS.register("raised_floor_base", () -> new BlockItem(ModBlocks.RAISED_FLOOR_BASE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
   public static final RegistryObject<Item> RAISED_FLOOR_BASIC =
       ITEMS.register("raised_floor_basic", () -> new BlockItem(ModBlocks.RAISED_FLOOR_BASIC.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
@@ -244,9 +247,35 @@ public class ModItems {
           () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_F.get(),
               new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
 
-  public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_SIDE = ITEMS.register(
-      "raised_floor_light_side", () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_SIDE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  // Raised Floor Light
+  public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_CORNER_LIGHT_BLUE =
+      ITEMS.register("raised_floor_light_corner_light_blue",
+          () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_CORNER_LIGHT_BLUE.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_LIGHT_BLUE =
+      ITEMS.register("raised_floor_light_light_blue",
+          () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_LIGHT_BLUE.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_MIDDLE_HALF_LIGHT_BLUE =
+      ITEMS.register("raised_floor_light_middle_half_light_blue",
+          () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_MIDDLE_HALF_LIGHT_BLUE.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_MIDDLE_LIGHT_BLUE =
+      ITEMS.register("raised_floor_light_middle_light_blue",
+          () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_MIDDLE_LIGHT_BLUE.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_SIDE_HALF_LIGHT_BLUE =
+      ITEMS.register("raised_floor_light_side_half_light_blue",
+          () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_SIDE_HALF_LIGHT_BLUE.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_SIDE_HALF_FLIPPED_LIGHT_BLUE =
+      ITEMS.register("raised_floor_light_side_half_flipped_light_blue",
+          () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_SIDE_HALF_FLIPPED_LIGHT_BLUE.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_SIDE_LIGHT_BLUE =
+      ITEMS.register("raised_floor_light_side_light_blue",
+          () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_SIDE_LIGHT_BLUE.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
 
   // Quartz
   public static final RegistryObject<Item> QUARTZ_PANEL =

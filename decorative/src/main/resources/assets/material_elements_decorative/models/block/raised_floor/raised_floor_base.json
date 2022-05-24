@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements_decorative:block/raised_floor/raised_floor",
+  "textures": {
+    "particle": "material_elements_decorative:block/raised_floor_base",
+    "floor": "material_elements_decorative:block/blank"
+  }
+}

@@ -118,6 +118,8 @@ public class ClientRenderer {
           RenderType.translucent());
 
       // Raised Floor
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_BASE.get(),
+          RenderType.cutoutMipped());
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_BASIC.get(),
           RenderType.cutoutMipped());
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_A.get(),
@@ -132,7 +134,22 @@ public class ClientRenderer {
           RenderType.cutoutMipped());
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_F.get(),
           RenderType.cutoutMipped());
-      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_LIGHT_SIDE.get(),
+
+      // Raised Floor Light
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_LIGHT_CORNER_LIGHT_BLUE.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_LIGHT_LIGHT_BLUE.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_LIGHT_MIDDLE_HALF_LIGHT_BLUE.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_LIGHT_MIDDLE_LIGHT_BLUE.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_LIGHT_SIDE_HALF_LIGHT_BLUE.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(
+          ModBlocks.RAISED_FLOOR_LIGHT_SIDE_HALF_FLIPPED_LIGHT_BLUE.get(),
+          RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_LIGHT_SIDE_LIGHT_BLUE.get(),
           RenderType.translucent());
 
       // Wooden framed hopper

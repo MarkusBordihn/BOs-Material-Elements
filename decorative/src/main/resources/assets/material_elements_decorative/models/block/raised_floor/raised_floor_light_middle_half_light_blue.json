@@ -1,0 +1,6 @@
+{
+  "parent": "material_elements_decorative:block/raised_floor/raised_floor_light_middle_half",
+  "textures": {
+    "light": "material_elements_decorative:block/light/light_blue"
+  }
+}

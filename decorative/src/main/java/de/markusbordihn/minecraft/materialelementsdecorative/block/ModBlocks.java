@@ -220,22 +220,38 @@ public class ModBlocks {
       BLOCKS.register("cloth_triangular_black", () -> new ClothTriangularBlock(ClothColor.BLACK));
 
   // Raised Floor
+  public static final RegistryObject<Block> RAISED_FLOOR_BASE =
+      BLOCKS.register("raised_floor_base", RaisedFloorBlock::new);
   public static final RegistryObject<Block> RAISED_FLOOR_BASIC =
-      BLOCKS.register("raised_floor_basic", () -> new RaisedFloorBlock());
+      BLOCKS.register("raised_floor_basic", RaisedFloorBlock::new);
   public static final RegistryObject<Block> RAISED_FLOOR_FLOW_PANEL_TYPE_A =
-      BLOCKS.register("raised_floor_flow_panel_type_a", () -> new RaisedFloorBlock());
+      BLOCKS.register("raised_floor_flow_panel_type_a", RaisedFloorBlock::new);
   public static final RegistryObject<Block> RAISED_FLOOR_FLOW_PANEL_TYPE_B =
-      BLOCKS.register("raised_floor_flow_panel_type_b", () -> new RaisedFloorBlock());
+      BLOCKS.register("raised_floor_flow_panel_type_b", RaisedFloorBlock::new);
   public static final RegistryObject<Block> RAISED_FLOOR_FLOW_PANEL_TYPE_C =
-      BLOCKS.register("raised_floor_flow_panel_type_c", () -> new RaisedFloorBlock());
+      BLOCKS.register("raised_floor_flow_panel_type_c", RaisedFloorBlock::new);
   public static final RegistryObject<Block> RAISED_FLOOR_FLOW_PANEL_TYPE_D =
-      BLOCKS.register("raised_floor_flow_panel_type_d", () -> new RaisedFloorBlock());
+      BLOCKS.register("raised_floor_flow_panel_type_d", RaisedFloorBlock::new);
   public static final RegistryObject<Block> RAISED_FLOOR_FLOW_PANEL_TYPE_E =
-      BLOCKS.register("raised_floor_flow_panel_type_e", () -> new RaisedFloorBlock());
+      BLOCKS.register("raised_floor_flow_panel_type_e", RaisedFloorBlock::new);
   public static final RegistryObject<Block> RAISED_FLOOR_FLOW_PANEL_TYPE_F =
-      BLOCKS.register("raised_floor_flow_panel_type_f", () -> new RaisedFloorBlock());
-  public static final RegistryObject<Block> RAISED_FLOOR_LIGHT_SIDE =
-      BLOCKS.register("raised_floor_light_side", () -> new RaisedFloorLightBlock());
+      BLOCKS.register("raised_floor_flow_panel_type_f", RaisedFloorBlock::new);
+
+  // Raised Floor Light
+  public static final RegistryObject<Block> RAISED_FLOOR_LIGHT_CORNER_LIGHT_BLUE =
+      BLOCKS.register("raised_floor_light_corner_light_blue", RaisedFloorLightBlock::new);
+  public static final RegistryObject<Block> RAISED_FLOOR_LIGHT_LIGHT_BLUE =
+      BLOCKS.register("raised_floor_light_light_blue", RaisedFloorLightBlock::new);
+  public static final RegistryObject<Block> RAISED_FLOOR_LIGHT_MIDDLE_HALF_LIGHT_BLUE =
+      BLOCKS.register("raised_floor_light_middle_half_light_blue", RaisedFloorLightBlock::new);
+  public static final RegistryObject<Block> RAISED_FLOOR_LIGHT_MIDDLE_LIGHT_BLUE =
+      BLOCKS.register("raised_floor_light_middle_light_blue", RaisedFloorLightBlock::new);
+  public static final RegistryObject<Block> RAISED_FLOOR_LIGHT_SIDE_HALF_LIGHT_BLUE =
+      BLOCKS.register("raised_floor_light_side_half_light_blue", RaisedFloorLightBlock::new);
+  public static final RegistryObject<Block> RAISED_FLOOR_LIGHT_SIDE_HALF_FLIPPED_LIGHT_BLUE = BLOCKS
+      .register("raised_floor_light_side_half_flipped_light_blue", RaisedFloorLightBlock::new);
+  public static final RegistryObject<Block> RAISED_FLOOR_LIGHT_SIDE_LIGHT_BLUE =
+      BLOCKS.register("raised_floor_light_side_light_blue", RaisedFloorLightBlock::new);
 
   // Quartz
   public static final RegistryObject<Block> QUARTZ_PANEL =
