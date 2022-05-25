@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "material_elements_decorative:raised_floor_base"
+    },
+    {
+      "item": "material_elements_decorative:quartz_plate"
+    }
+  ],
+  "result": {
+    "item": "material_elements_decorative:raised_floor_basic",
+    "count": 1
+  }
+}

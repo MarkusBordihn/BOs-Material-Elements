@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["TXX", "X# ", "X  "],
+  "key": {
+    "#": {
+      "item": "material_elements_decorative:raised_floor_basic"
+    },
+    "X": {
+      "item": "minecraft:light_blue_stained_glass_pane"
+    },
+    "T": {
+      "item": "minecraft:torch"
+    }
+  },
+  "result": {
+    "item": "material_elements_decorative:raised_floor_light_corner_light_blue",
+    "count": 1
+  }
+}

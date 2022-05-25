@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "material_elements_decorative:raised_floor_basic"
+  },
+  "result": "material_elements_decorative:raised_floor_flow_panel_type_d",
+  "count": 1
+}

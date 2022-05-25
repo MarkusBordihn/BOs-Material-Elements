@@ -1,16 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["###", "#B#", "# #"],
+  "pattern": ["###", "#Q#", "#B#"],
   "key": {
     "#": {
       "tag": "material_elements:skeleton_frames"
+    },
+    "Q": {
+      "item": "minecraft:quartz_block"
     },
     "B": {
       "item": "minecraft:black_dye"
     }
   },
   "result": {
-    "item": "material_elements_decorative:raised_floor_base",
+    "item": "material_elements_decorative:raised_floor_basic",
     "count": 7
   }
 }

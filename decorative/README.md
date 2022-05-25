@@ -77,6 +77,17 @@ Wool Slabs are used for decorative and could be placed vertical or horizontal.
 
 This mods adds a lot of additional crafting recipes to allow the crafting of the added elements or to simplify crafting of existing items like wood cutting.
 
+## Slab, Half-Size Slab, Plate and Panel
+
+One part of the additional decorative materials are half-size slabs, plates and panels.
+
+In general the have the following conversions over the stone-cutter:
+
+- 1 x Block -> 2 x Slabs
+- 1 x Slab -> 2 x half-size Slabs
+- 1 x Half-size Slab -> 2 x Plates
+- 1 x Plates -> 2 x Panels
+
 ## Version Status Overview 🛠️
 
 | Version        | Status                |
