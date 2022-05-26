@@ -7,8 +7,22 @@
     "material_elements_decorative:dark_oak_framed_hopper",
     "material_elements_decorative:jungle_framed_hopper",
     "material_elements_decorative:oak_framed_hopper",
+    "material_elements_decorative:raised_floor_base",
+    "material_elements_decorative:raised_floor_basic",
+    "material_elements_decorative:raised_floor_flow_panel_type_a",
+    "material_elements_decorative:raised_floor_flow_panel_type_b",
+    "material_elements_decorative:raised_floor_flow_panel_type_c",
+    "material_elements_decorative:raised_floor_flow_panel_type_d",
+    "material_elements_decorative:raised_floor_flow_panel_type_e",
+    "material_elements_decorative:raised_floor_flow_panel_type_f",
+    "material_elements_decorative:raised_floor_light_corner_light_blue",
+    "material_elements_decorative:raised_floor_light_light_blue",
+    "material_elements_decorative:raised_floor_light_middle_half_light_blue",
+    "material_elements_decorative:raised_floor_light_middle_light_blue",
+    "material_elements_decorative:raised_floor_light_side_half_flipped_light_blue",
+    "material_elements_decorative:raised_floor_light_side_half_light_blue",
+    "material_elements_decorative:raised_floor_light_side_light_blue",
     "material_elements_decorative:spruce_framed_hopper",
-    "material_elements_decorative:warped_framed_hopper",
     "material_elements_decorative:steel_lantern",
     "material_elements_decorative:steel_lantern_black",
     "material_elements_decorative:steel_lantern_blue",
@@ -26,6 +40,7 @@
     "material_elements_decorative:steel_lantern_red",
     "material_elements_decorative:steel_lantern_white",
     "material_elements_decorative:steel_lantern_yellow",
-    "material_elements_decorative:steel_soul_lantern"
+    "material_elements_decorative:steel_soul_lantern",
+    "material_elements_decorative:warped_framed_hopper"
   ]
 }

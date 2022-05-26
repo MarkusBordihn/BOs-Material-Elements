@@ -13,24 +13,18 @@ The version 3.x and higher is separated by use-cases to allow any easier integra
 
 **Before you upgrade from version 2.x please make sure to create a backup and install the additional mods like [Material Elements Steel Armor, Tools and Weapons][material-elements-armor-tools-and-weapons] before re-loading the world.**
 
+### Raised Floors
+
+![Raised Floor top][raised_floor_top]
+
+The raised floor could be used for more tech. relevant rooms and offers different kind of styles.
+It's allow the creation of a complete raised floor and bottom raised ceiling with an walkable area in between with just two blocks height in total.
+
+![Raised Floor bottom][raised_floor_bottom]
+
 ### 💡 Steel Lantern in different colors
 
-- White
-- Orange
-- Magenta
-- Light Blue
-- Yellow
-- Lime
-- Pink
-- Gray
-- Light Gray
-- Cyan
-- Purple
-- Blue
-- Brown
-- Green
-- Red
-- Black
+![Steel Lantern][steel_lantern]
 
 ### ⛓️ Decorations
 
@@ -38,34 +32,18 @@ The version 3.x and higher is separated by use-cases to allow any easier integra
 
 ### 🖾 Wooden Framed Hoppers
 
-![Framed Hoppers][framed_hopper] ![Framed Hoppers Side][framed_hopper_side]
+These are basic hoppers, but framed with wood for a better lock and integration.
+The additionally compatible with other storage systems like **Storage Drawers**.
 
-These are basic hoppers, but framed with wood for a better lock.
-
-- Oak wooden framed hoppers
-- Spruce wooden framed hoppers
-- Birch wooden framed hoppers
-- Jungle wooden framed hoppers
-- Acacia wooden framed hoppers
-- Dark Oak wooden framed hoppers
-- Crimson wooden framed hoppers
-- Warped wooden framed hoppers
+![Framed Hoppers][framed_hoppers]
 
 ### 🪵 Wood Panels, Plates and half-size Slabs
-
-![Panel][panel] ![Plate][plate] ![Half Slab][half-slab]
 
 Wood panels are used to hide specific stuff like cables or pipes.
 Plates and half-size slabs are used for other stuff.
 
-- Oak Panel / Plate
-- Spruce Panel / Plate
-- Birch Panel / Plate
-- Jungle Panel / Plate
-- Acacia Panel / Plate
-- Dark Oak Panel / Plate
-- Crimson Panel / Plate
-- Warped Panel / Plate
+![Panel Plates Slap 01][panel_plates_slap_01]
+![Panel Plates Slap 02][panel_plates_slap_02]
 
 ### Wool Slabs
 
@@ -100,9 +78,11 @@ In general the have the following conversions over the stone-cutter:
 
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
 [material-elements-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons
-[framed_hopper]: examples/block/small/framed_hopper.png
-[framed_hopper_side]: examples/block/small/framed_hopper_side.png
-[half-slab]: examples/block/small/half_slab.png
-[panel]: examples/block/small/panel.png
-[plate]: examples/block/small/plate.png
+
+[framed_hoppers]: examples/screenshots/framed_hoppers.png
+[panel_plates_slap_01]: examples/screenshots/panel_plates_slaps.png
+[panel_plates_slap_02]: examples/screenshots/panel_plates_slaps_02.png
+[raised_floor_bottom]: examples/screenshots/raised_floor_bottom.png
+[raised_floor_top]: examples/screenshots/raised_floor_top.png
+[steel_lantern]: examples/screenshots/steel_lantern.png
 [wool_slab]: examples/screenshots/wool_slab.png
