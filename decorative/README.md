@@ -19,6 +19,7 @@ The version 3.x and higher is separated by use-cases to allow any easier integra
 
 The raised floor could be used for more tech. relevant rooms and offers different kind of styles.
 It's allow the creation of a complete raised floor and bottom raised ceiling with an walkable area in between with just two blocks height in total.
+The blocks are not allowing any natural mob spawning which make them the perfect block for your base or more expensive equipment.
 
 ![Raised Floor bottom][raised_floor_bottom]
 

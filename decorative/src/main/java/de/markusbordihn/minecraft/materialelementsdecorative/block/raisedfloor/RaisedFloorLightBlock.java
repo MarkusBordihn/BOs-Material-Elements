@@ -33,7 +33,7 @@ public class RaisedFloorLightBlock extends RaisedFloorBlock {
   public RaisedFloorLightBlock() {
     super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.STONE)
         .requiresCorrectToolForDrops().strength(3.0F, 4.8F).sound(SoundType.METAL)
-        .lightLevel(blockState -> 15).noOcclusion());
+        .lightLevel(blockState -> 15).noOcclusion().isValidSpawn(RaisedFloorBlock::isValidSpawn));
   }
 
 }

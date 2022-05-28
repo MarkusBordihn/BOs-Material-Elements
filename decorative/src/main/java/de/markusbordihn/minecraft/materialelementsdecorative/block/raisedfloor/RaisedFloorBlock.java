@@ -20,8 +20,10 @@
 package de.markusbordihn.minecraft.materialelementsdecorative.block.raisedfloor;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -57,7 +59,14 @@ public class RaisedFloorBlock extends MultiPlaceBlock {
 
   public RaisedFloorBlock() {
     super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.STONE)
-        .requiresCorrectToolForDrops().strength(3.0F, 4.8F).sound(SoundType.METAL).noOcclusion());
+        .requiresCorrectToolForDrops().strength(3.0F, 4.8F).sound(SoundType.METAL).noOcclusion()
+        .isValidSpawn(RaisedFloorBlock::isValidSpawn));
+  }
+
+
+  public static boolean isValidSpawn(BlockState blockState, BlockGetter blockGetter,
+      BlockPos blockPos, EntityType<?> entityType) {
+    return false;
   }
 
   @Override
