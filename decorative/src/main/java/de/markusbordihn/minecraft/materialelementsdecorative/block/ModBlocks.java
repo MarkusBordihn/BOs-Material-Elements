@@ -240,6 +240,8 @@ public class ModBlocks {
   // Raised Floor Light
   public static final RegistryObject<Block> RAISED_FLOOR_LIGHT_CORNER_LIGHT_BLUE =
       BLOCKS.register("raised_floor_light_corner_light_blue", RaisedFloorLightBlock::new);
+  public static final RegistryObject<Block> RAISED_FLOOR_LIGHT_CORNER_FLIPPED_LIGHT_BLUE =
+      BLOCKS.register("raised_floor_light_corner_flipped_light_blue", RaisedFloorLightBlock::new);
   public static final RegistryObject<Block> RAISED_FLOOR_LIGHT_LIGHT_BLUE =
       BLOCKS.register("raised_floor_light_light_blue", RaisedFloorLightBlock::new);
   public static final RegistryObject<Block> RAISED_FLOOR_LIGHT_MIDDLE_HALF_LIGHT_BLUE =

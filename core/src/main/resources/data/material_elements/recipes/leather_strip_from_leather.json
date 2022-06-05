@@ -5,7 +5,7 @@
       "item": "minecraft:leather"
     },
     {
-      "item": "minecraft:shears"
+      "tag": "material_elements:leather_cutters"
     }
   ],
   "result": {

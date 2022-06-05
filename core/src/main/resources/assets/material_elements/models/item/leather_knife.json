@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "material_elements:item/leather/leather_knife"
+  }
+}

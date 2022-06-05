@@ -79,6 +79,11 @@ public class ModItems {
   public static final RegistryObject<Item> COPPER_SHEARS = ITEMS.register("copper_shears",
       () -> new ShearsItem((new Item.Properties()).durability(330).tab(CreativeModeTab.TAB_TOOLS)));
 
+  // Copper Lighter
+  public static final RegistryObject<Item> COPPER_LIGHTER =
+      ITEMS.register("copper_lighter", () -> new FlintAndSteelItem(
+          (new Item.Properties()).durability(84).tab(CreativeModeTab.TAB_TOOLS)));
+
   // Copper Armor
   public static final RegistryObject<Item> COPPER_BOOTS =
       ITEMS.register("copper_boots", () -> new CopperArmorItem(EquipmentSlot.FEET));

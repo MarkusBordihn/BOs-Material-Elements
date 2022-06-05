@@ -39,6 +39,8 @@ import de.markusbordihn.minecraft.materialelements.item.frames.CubeGlassFrameIte
 import de.markusbordihn.minecraft.materialelements.item.frames.SkeletonFrameItem;
 import de.markusbordihn.minecraft.materialelements.item.frames.SlabFrameItem;
 import de.markusbordihn.minecraft.materialelements.item.frames.TriangularFrameItem;
+import de.markusbordihn.minecraft.materialelements.item.leather.LeatherKnife;
+import de.markusbordihn.minecraft.materialelements.item.leather.LeatherShears;
 import de.markusbordihn.minecraft.materialelements.item.leather.LeatherSheetItem;
 import de.markusbordihn.minecraft.materialelements.item.leather.LeatherStripItem;
 import de.markusbordihn.minecraft.materialelements.item.testtube.TestTubeColorItem;
@@ -133,6 +135,12 @@ public class ModItems {
       ITEMS.register("leather_strip_red", LeatherStripItem::new);
   public static final RegistryObject<Item> LEATHER_STRIP_BLACK =
       ITEMS.register("leather_strip_black", LeatherStripItem::new);
+
+  // Leather Tools
+  public static final RegistryObject<Item> LEATHER_KNIFE =
+      ITEMS.register("leather_knife", LeatherKnife::new);
+  public static final RegistryObject<Item> LEATHER_SHEARS =
+      ITEMS.register("leather_shears", LeatherShears::new);
 
   // Nugget
   public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",

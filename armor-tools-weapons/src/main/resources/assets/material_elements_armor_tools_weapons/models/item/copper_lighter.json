@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "material_elements_armor_tools_weapons:item/copper_lighter"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "material_elements_armor_tools_weapons:open": 1
+      },
+      "model": "material_elements_armor_tools_weapons:item/copper_lighter_open"
+    }
+  ]
+}

@@ -11,7 +11,7 @@
       "item": "minecraft:string"
     },
     {
-      "item": "minecraft:shears"
+      "tag": "material_elements:leather_cutters"
     }
   ],
   "result": {

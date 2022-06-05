@@ -65,6 +65,11 @@ Rods could be connected for bigger structures or working also on their own.
 
 ## Item Overview 👁️
 
+### ✂️ Leather Tools
+
+- Leather Shears
+- Leather Knife
+
 ### 🪨 Nuggets
 
 - Copper Nugget
@@ -86,22 +91,6 @@ Test Tubes are an addition to support crafting of special items like [glow stick
 - Water
 - Glow
 - Colored
-  - White
-  - Orange
-  - Magenta
-  - Light Blue
-  - Yellow
-  - Lime
-  - Pink
-  - Gray
-  - Light Gray
-  - Cyan
-  - Purple
-  - Blue
-  - Brown
-  - Green
-  - Red
-  - Black
 
 ### ✂️ Leather
 

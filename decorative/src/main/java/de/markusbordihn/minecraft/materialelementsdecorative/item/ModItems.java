@@ -252,6 +252,10 @@ public class ModItems {
       ITEMS.register("raised_floor_light_corner_light_blue",
           () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_CORNER_LIGHT_BLUE.get(),
               new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_CORNER_FLIPPED_LIGHT_BLUE =
+      ITEMS.register("raised_floor_light_corner_flipped_light_blue",
+          () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_CORNER_FLIPPED_LIGHT_BLUE.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
   public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_LIGHT_BLUE =
       ITEMS.register("raised_floor_light_light_blue",
           () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_LIGHT_BLUE.get(),

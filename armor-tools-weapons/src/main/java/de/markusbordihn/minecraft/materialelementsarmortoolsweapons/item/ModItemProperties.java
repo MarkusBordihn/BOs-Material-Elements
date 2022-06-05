@@ -95,6 +95,14 @@ public class ModItemProperties {
                   && CrossbowItem.containsChargedProjectile(itemStack, Items.FIREWORK_ROCKET) ? 1.0F
                       : 0.0F);
 
+      // Copper Lighter (open)
+      ItemProperties.register(ModItems.COPPER_LIGHTER.get(),
+          new ResourceLocation(Constants.MOD_ID, "open"),
+          (itemStack, clientLevel, livingEntity,
+              id) -> (livingEntity == null || !itemStack.is(ModItems.COPPER_LIGHTER.get())
+                  || livingEntity.getMainHandItem().isEmpty()
+                  || itemStack != livingEntity.getMainHandItem()) ? 0.0F : 1.0F);
+
       // Steel Crossbow (pull, pulling, charged and firework)
       ItemProperties.register(ModItems.STEEL_CROSSBOW.get(),
           new ResourceLocation(Constants.MOD_ID, "pull"),

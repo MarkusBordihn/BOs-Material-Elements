@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "material_elements_decorative:raised_floor_light_corner_light_blue"
+    }
+  ],
+  "result": {
+    "item": "material_elements_decorative:raised_floor_light_corner_flipped_light_blue",
+    "count": 1
+  }
+}

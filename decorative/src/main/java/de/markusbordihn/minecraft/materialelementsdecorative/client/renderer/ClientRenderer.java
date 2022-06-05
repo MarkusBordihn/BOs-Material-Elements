@@ -138,6 +138,8 @@ public class ClientRenderer {
       // Raised Floor Light
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_LIGHT_CORNER_LIGHT_BLUE.get(),
           RenderType.translucent());
+      ItemBlockRenderTypes.setRenderLayer(
+          ModBlocks.RAISED_FLOOR_LIGHT_CORNER_FLIPPED_LIGHT_BLUE.get(), RenderType.translucent());
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_LIGHT_LIGHT_BLUE.get(),
           RenderType.translucent());
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_LIGHT_MIDDLE_HALF_LIGHT_BLUE.get(),

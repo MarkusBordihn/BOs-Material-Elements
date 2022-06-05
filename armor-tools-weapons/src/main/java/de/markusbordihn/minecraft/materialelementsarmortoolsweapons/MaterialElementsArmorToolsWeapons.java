@@ -42,6 +42,5 @@ public class MaterialElementsArmorToolsWeapons {
     log.info("{} Items ...", Constants.LOG_REGISTER_PREFIX);
     ModItems.ITEMS.register(modEventBus);
 
-
   }
 }
