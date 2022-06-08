@@ -86,13 +86,13 @@ public class TestTubeFilledItem extends PotionItem {
       }
     }
 
-    level.gameEvent(livingEntity, GameEvent.DRINKING_FINISH, livingEntity.eyeBlockPosition());
+    livingEntity.gameEvent(GameEvent.DRINK);
     return itemStack;
   }
 
   @Override
   public void fillItemCategory(CreativeModeTab tab, NonNullList<ItemStack> itemStack) {
-    if (this.allowdedIn(tab)) {
+    if (this.allowedIn(tab)) {
       for (Potion potion : ForgeRegistries.POTIONS) {
         // Filter out water potion, because we want to have this as separate item.
         if (potion != Potions.EMPTY && potion != Potions.WATER) {

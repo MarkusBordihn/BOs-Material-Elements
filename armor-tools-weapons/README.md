@@ -9,12 +9,6 @@ Material Elements Armor, Tools and Weapons is a Minecraft Forge Mod which adds a
 It use the material and elements from [Bo's Material Elements][material-elements] for crafting, but supports
 other material and elements from other mods as well.
 
-## Version 3.x notes
-
-The version 3.x and higher is separated by use-cases to allow any easier integration.
-
-**Before you upgrade from version 2.x please make sure to create a backup and install the additional mods like [Material Elements: Decorative][material-elements-decorative] before re-loading the world.**
-
 ## Item Overview 👁️‍🗨️
 
 ### 🛡️ Armor
@@ -61,7 +55,8 @@ The version 3.x and higher is separated by use-cases to allow any easier integra
 | Forge 1.16.5   | ❌ Not planned        |
 | Forge 1.17.1   | ⚠️ Maintenance only   |
 | Forge 1.18.1   | ⚠️ Maintenance only   |
-| Forge 1.18.2   | ✔️ Active development |
+| Forge 1.18.2   | ⚠️ Maintenance only   |
+| Forge 1.19     | ✔️ Active development |
 
 [logo]: examples/material_elements_armor_tools_weapons.gif
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements

@@ -1,5 +1,5 @@
 /**
- * Copyright 2022 Markus Bordihn
+ * Copyright 2021 Markus Bordihn
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -17,28 +17,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package de.markusbordihn.minecraft.materialelements.item.leather;
+package de.markusbordihn.minecraft.materialelements.block;
 
-import java.util.List;
-import javax.annotation.Nullable;
+import net.minecraft.world.level.block.DropExperienceBlock;
 
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.Level;
+public class OreBlock extends DropExperienceBlock {
 
-import de.markusbordihn.minecraft.materialelements.Constants;
-
-public class LeatherStripItem extends LeatherItem {
-
-  public LeatherStripItem() {
-    super();
-  }
-
-  @Override
-  public void appendHoverText(ItemStack itemStack, @Nullable Level level,
-      List<Component> tooltipList, TooltipFlag tooltipFlag) {
-    tooltipList.add(Component.translatable(Constants.TEXT_PREFIX + "leather_strip"));
+  public OreBlock(Properties properties) {
+    super(properties);
   }
 
 }

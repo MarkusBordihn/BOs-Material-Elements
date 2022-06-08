@@ -46,7 +46,7 @@ public class TestTubeCustomItem extends TestTubeFilledItem {
 
   @Override
   public void fillItemCategory(CreativeModeTab tab, NonNullList<ItemStack> itemStack) {
-    if (this.allowdedIn(tab)) {
+    if (this.allowedIn(tab)) {
       itemStack.add(new ItemStack(this));
     }
   }

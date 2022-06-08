@@ -7,12 +7,6 @@ Material Elements Decorative adds new decorative blocks and items for your world
 
 This mod requires [Bo's Material Elements][material-elements] as basis.
 
-## Version 3.x notes
-
-The version 3.x and higher is separated by use-cases to allow any easier integration.
-
-**Before you upgrade from version 2.x please make sure to create a backup and install the additional mods like [Material Elements Steel Armor, Tools and Weapons][material-elements-armor-tools-and-weapons] before re-loading the world.**
-
 ### Raised Floors
 
 ![Raised Floor top][raised_floor_top]
@@ -75,7 +69,8 @@ In general the have the following conversions over the stone-cutter:
 | Forge 1.16.5   | ❌ Not planned        |
 | Forge 1.17.1   | ❌ Not planned        |
 | Forge 1.18.1   | ⚠️ Maintenance only   |
-| Forge 1.18.2   | ✔️ Active development |
+| Forge 1.18.2   | ⚠️ Maintenance only   |
+| Forge 1.19     | ✔️ Active development |
 
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
 [material-elements-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons

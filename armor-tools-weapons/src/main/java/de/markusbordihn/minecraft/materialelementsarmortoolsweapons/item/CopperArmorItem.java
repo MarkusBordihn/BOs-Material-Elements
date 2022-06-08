@@ -38,7 +38,7 @@ public class CopperArmorItem extends ArmorItem {
 
   public static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
 
-  private static int MATERIAL_CHECK_TICK = 35;
+  private static final int MATERIAL_CHECK_TICK = 35;
 
   private int ticker = 0;
   private ArmorMaterial armorMaterial = ModArmorMaterials.COPPER;

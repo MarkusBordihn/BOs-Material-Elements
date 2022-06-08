@@ -21,7 +21,6 @@ package de.markusbordihn.minecraft.materialelements.item.testtube;
 
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
@@ -44,12 +43,12 @@ public class TestTubeColorItem extends TestTubeFilledItem {
 
   @Override
   public Component getDescription() {
-    return new TranslatableComponent(this.getDescriptionId());
+    return Component.translatable(this.getDescriptionId());
   }
 
   @Override
   public void fillItemCategory(CreativeModeTab tab, NonNullList<ItemStack> itemStack) {
-    if (this.allowdedIn(tab)) {
+    if (this.allowedIn(tab)) {
       itemStack.add(new ItemStack(this));
     }
   }

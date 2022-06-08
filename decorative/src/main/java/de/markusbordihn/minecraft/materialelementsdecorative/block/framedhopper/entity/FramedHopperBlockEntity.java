@@ -33,7 +33,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.Container;
 import net.minecraft.world.ContainerHelper;
 import net.minecraft.world.WorldlyContainer;
@@ -161,8 +160,15 @@ public class FramedHopperBlockEntity extends RandomizableContainerBlockEntity im
     }
   }
 
+  private static IntStream getSlots(Container container, Direction direction) {
+    if (container instanceof WorldlyContainer worldlyContainer) {
+      return IntStream.of(worldlyContainer.getSlotsForFace(direction));
+    }
+    return IntStream.range(0, container.getContainerSize());
+  }
+
   protected Component getDefaultName() {
-    return new TranslatableComponent("container.hopper");
+    return Component.translatable("container.hopper");
   }
 
   public double getLevelX() {
@@ -182,13 +188,6 @@ public class FramedHopperBlockEntity extends RandomizableContainerBlockEntity im
       BlockState blockState) {
     Direction direction = blockState.getValue(HopperBlock.FACING);
     return HopperBlockEntity.getContainerAt(level, blockPos.relative(direction));
-  }
-
-  private static IntStream getSlots(Container container, Direction direction) {
-    if (container instanceof WorldlyContainer worldlyContainer) {
-      return IntStream.of(worldlyContainer.getSlotsForFace(direction));
-    }
-    return IntStream.range(0, container.getContainerSize());
   }
 
   public void setCooldown(int coolDown) {
