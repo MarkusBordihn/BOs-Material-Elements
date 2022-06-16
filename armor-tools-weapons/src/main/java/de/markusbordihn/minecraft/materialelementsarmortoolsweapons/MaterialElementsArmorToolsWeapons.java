@@ -28,6 +28,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 import de.markusbordihn.minecraft.materialelementsarmortoolsweapons.item.ModItemProperties;
 import de.markusbordihn.minecraft.materialelementsarmortoolsweapons.item.ModItems;
+import de.markusbordihn.minecraft.materialelementsarmortoolsweapons.utils.StopModReposts;
 
 @Mod(Constants.MOD_ID)
 public class MaterialElementsArmorToolsWeapons {
@@ -37,10 +38,11 @@ public class MaterialElementsArmorToolsWeapons {
   public MaterialElementsArmorToolsWeapons() {
     final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+    StopModReposts.checkStopModReposts();
+
     modEventBus.addListener(ModItemProperties::registerItemProperties);
 
     log.info("{} Items ...", Constants.LOG_REGISTER_PREFIX);
     ModItems.ITEMS.register(modEventBus);
-
   }
 }

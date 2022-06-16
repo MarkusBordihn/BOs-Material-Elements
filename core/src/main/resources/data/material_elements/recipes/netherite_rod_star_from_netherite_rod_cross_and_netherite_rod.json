@@ -6,7 +6,7 @@
   ],
   "key": {
     "I": {
-      "item": "material_elements:netherite_rod"
+      "tag": "forge:rods/netherite"
     },
     "+": {
       "item": "material_elements:netherite_rod_cross"

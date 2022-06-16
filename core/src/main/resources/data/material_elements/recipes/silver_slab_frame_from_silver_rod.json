@@ -3,7 +3,7 @@
   "pattern": ["---", "| |", "---"],
   "key": {
     "-": {
-      "item": "material_elements:silver_rod"
+      "tag": "forge:rods/silver"
     },
     "|": {
       "item": "material_elements:silver_rod_half_size"

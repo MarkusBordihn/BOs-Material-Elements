@@ -32,6 +32,7 @@ import de.markusbordihn.minecraft.materialelements.block.ModBlocks;
 import de.markusbordihn.minecraft.materialelements.client.renderer.ClientRenderer;
 import de.markusbordihn.minecraft.materialelements.item.ModItems;
 import de.markusbordihn.minecraft.materialelements.item.ModPotions;
+import de.markusbordihn.minecraft.materialelements.utils.StopModReposts;
 
 @Mod(Constants.MOD_ID)
 public class MaterialElements {
@@ -40,6 +41,8 @@ public class MaterialElements {
 
   public MaterialElements() {
     final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+    StopModReposts.checkStopModReposts();
 
     log.info("{} Potions ...", Constants.LOG_REGISTER_PREFIX);
     ModPotions.POTIONS.register(modEventBus);

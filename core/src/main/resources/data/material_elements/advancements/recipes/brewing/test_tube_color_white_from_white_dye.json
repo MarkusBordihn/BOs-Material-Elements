@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "rewards": {
-    "recipes": ["material_elements:test_tube_color_white_from_white_dye"]
+    "recipes": ["material_elements:test_tube/test_tube_color_white_from_white_dye"]
   },
   "criteria": {
     "has_dye": {

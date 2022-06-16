@@ -6,7 +6,7 @@
   ],
   "key": {
     "I": {
-      "item": "material_elements:copper_rod"
+      "tag": "forge:rods/copper"
     },
     "+": {
       "item": "material_elements:copper_rod_cross"

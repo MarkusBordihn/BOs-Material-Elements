@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:green_dye"
+    },
+    {
+      "item": "material_elements:leather_sheet"
+    }
+  ],
+  "result": {
+    "item": "material_elements:leather_sheet_green",
+    "count": 1
+  }
+}

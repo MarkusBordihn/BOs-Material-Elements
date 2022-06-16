@@ -31,6 +31,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.ModBlocks;
 import de.markusbordihn.minecraft.materialelementsdecorative.client.renderer.ClientRenderer;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.ModItems;
+import de.markusbordihn.minecraft.materialelementsdecorative.utils.StopModReposts;
 
 @Mod(Constants.MOD_ID)
 public class MaterialElementsDecorative {
@@ -39,6 +40,8 @@ public class MaterialElementsDecorative {
 
   public MaterialElementsDecorative() {
     final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+    StopModReposts.checkStopModReposts();
 
     log.info("{} Blocks ...", Constants.LOG_REGISTER_PREFIX);
     ModBlocks.BLOCKS.register(modEventBus);

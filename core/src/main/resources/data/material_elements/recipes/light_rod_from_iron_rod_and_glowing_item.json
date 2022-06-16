@@ -6,7 +6,7 @@
       "tag": "material_elements:glowing_item"
     },
     "|": {
-      "item": "material_elements:iron_rod"
+      "tag": "forge:rods/iron"
     }
   },
   "result": {

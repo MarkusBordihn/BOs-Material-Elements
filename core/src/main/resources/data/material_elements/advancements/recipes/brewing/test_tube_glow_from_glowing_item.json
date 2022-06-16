@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "rewards": {
-    "recipes": ["material_elements:test_tube_glow_from_glowing_item"]
+    "recipes": ["material_elements:test_tube/test_tube_glow_from_glowing_item"]
   },
   "criteria": {
     "has_test_tube_water": {

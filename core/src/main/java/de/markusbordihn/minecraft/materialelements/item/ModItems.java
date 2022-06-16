@@ -99,6 +99,38 @@ public class ModItems {
   // Leather
   public static final RegistryObject<Item> LEATHER_SHEET =
       ITEMS.register("leather_sheet", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_WHITE =
+      ITEMS.register("leather_sheet_white", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_ORANGE =
+      ITEMS.register("leather_sheet_orange", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_MAGENTA =
+      ITEMS.register("leather_sheet_magenta", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_LIGHT_BLUE =
+      ITEMS.register("leather_sheet_light_blue", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_LIGHT_GRAY =
+      ITEMS.register("leather_sheet_light_gray", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_YELLOW =
+      ITEMS.register("leather_sheet_yellow", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_LIME =
+      ITEMS.register("leather_sheet_lime", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_PINK =
+      ITEMS.register("leather_sheet_pink", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_GRAY =
+      ITEMS.register("leather_sheet_gray", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_CYAN =
+      ITEMS.register("leather_sheet_cyan", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_PURPLE =
+      ITEMS.register("leather_sheet_purple", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_BLUE =
+      ITEMS.register("leather_sheet_blue", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_BROWN =
+      ITEMS.register("leather_sheet_brown", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_GREEN =
+      ITEMS.register("leather_sheet_green", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_RED =
+      ITEMS.register("leather_sheet_red", LeatherSheetItem::new);
+  public static final RegistryObject<Item> LEATHER_SHEET_BLACK =
+      ITEMS.register("leather_sheet_black", LeatherSheetItem::new);
 
   // Leather Strips
   public static final RegistryObject<Item> LEATHER_STRIP =

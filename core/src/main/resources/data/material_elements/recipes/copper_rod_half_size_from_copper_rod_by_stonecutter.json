@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "material_elements:copper_rod"
+    "tag": "forge:rods/copper"
   },
   "result": "material_elements:copper_rod_half_size",
   "count": 2

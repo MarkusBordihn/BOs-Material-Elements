@@ -3,7 +3,7 @@
   "pattern": ["---", "| |", "---"],
   "key": {
     "-": {
-      "item": "material_elements:copper_rod"
+      "tag": "forge:rods/copper"
     },
     "|": {
       "item": "material_elements:copper_rod_half_size"

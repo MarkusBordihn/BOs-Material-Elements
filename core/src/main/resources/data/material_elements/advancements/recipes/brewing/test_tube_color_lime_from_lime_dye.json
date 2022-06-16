@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "rewards": {
-    "recipes": ["material_elements:test_tube_color_lime_from_lime_dye"]
+    "recipes": ["material_elements:test_tube/test_tube_color_lime_from_lime_dye"]
   },
   "criteria": {
     "has_dye": {

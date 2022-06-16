@@ -34,6 +34,9 @@
   "advancements.material_elements.crafting.smelt_steel.description": "Get some steel ingot's for new armor, tools and weapons.",
   "advancements.material_elements.crafting.smelt_steel.title": "Next level of Iron",
 
+  "advancements.material_elements.stone_cutter.obtain_stone_cutter.description": "Try to cut wood with the stone cutter.",
+  "advancements.material_elements.stone_cutter.obtain_stone_cutter.title": "Mhhh will it cut wood?",
+
   "block.material_elements.light_cube_frame": "Light Cube Frame",
   "block.material_elements.light_cube_glass_frame": "Light Cube Glass Frame",
   "block.material_elements.light_rod": "Light Rod",
@@ -264,6 +267,23 @@
   "item.material_elements.leather_shears": "Leather Shears",
 
   "item.material_elements.leather_sheet": "Leather Sheet",
+  "item.material_elements.leather_sheet_black": "Leather Sheet (black)",
+  "item.material_elements.leather_sheet_blue": "Leather Sheet (blue)",
+  "item.material_elements.leather_sheet_brown": "Leather Sheet (brown)",
+  "item.material_elements.leather_sheet_cyan": "Leather Sheet (cyan)",
+  "item.material_elements.leather_sheet_gray": "Leather Sheet (gray)",
+  "item.material_elements.leather_sheet_green": "Leather Sheet (green)",
+  "item.material_elements.leather_sheet_light_blue": "Leather Sheet (light blue)",
+  "item.material_elements.leather_sheet_light_gray": "Leather Sheet (light gray)",
+  "item.material_elements.leather_sheet_lime": "Leather Sheet (lime)",
+  "item.material_elements.leather_sheet_magenta": "Leather Sheet (magenta)",
+  "item.material_elements.leather_sheet_orange": "Leather Sheet (orange)",
+  "item.material_elements.leather_sheet_pink": "Leather Sheet (pink)",
+  "item.material_elements.leather_sheet_purple": "Leather Sheet (purple)",
+  "item.material_elements.leather_sheet_red": "Leather Sheet (red)",
+  "item.material_elements.leather_sheet_white": "Leather Sheet (white)",
+  "item.material_elements.leather_sheet_yellow": "Leather Sheet (yellow)",
+
   "item.material_elements.leather_strip": "Leather Strip",
   "item.material_elements.leather_strip_black": "Leather Strip (black)",
   "item.material_elements.leather_strip_blue": "Leather Strip (blue)",

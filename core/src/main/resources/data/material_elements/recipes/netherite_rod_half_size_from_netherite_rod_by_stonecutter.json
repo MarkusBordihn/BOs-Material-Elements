@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "material_elements:netherite_rod"
+    "tag": "forge:rods/netherite"
   },
   "result": "material_elements:netherite_rod_half_size",
   "count": 2
