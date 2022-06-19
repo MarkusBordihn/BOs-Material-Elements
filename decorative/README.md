@@ -1,7 +1,9 @@
-[![Material and Elements Decorative Downloads](http://cf.way2muchnoise.eu/full_material-elements-decorative_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
-[![Material and Elements Decorative Versions](http://cf.way2muchnoise.eu/versions/Minecraft_material-elements-decorative_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
-
 # Material Elements: Decorative
+
+[![Material and Elements Decorative Downloads](http://cf.way2muchnoise.eu/full_591838_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
+[![Material and Elements Decorative Versions](http://cf.way2muchnoise.eu/versions/Minecraft_591838_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
+
+![Material and Elements Decorative][logo]
 
 Material Elements Decorative adds new decorative blocks and items for your world based on Material Elements.
 
@@ -71,6 +73,8 @@ In general the have the following conversions over the stone-cutter:
 | Forge 1.18.1   | ⚠️ Maintenance only   |
 | Forge 1.18.2   | ⚠️ Maintenance only   |
 | Forge 1.19     | ✔️ Active development |
+
+[logo]: examples/material_elements_decorative.gif
 
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
 [material-elements-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons

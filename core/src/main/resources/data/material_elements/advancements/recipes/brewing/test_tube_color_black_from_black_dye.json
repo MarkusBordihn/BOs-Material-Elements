@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "rewards": {
-    "recipes": ["material_elements:test_tube_color_black_from_black_dye"]
+    "recipes": ["material_elements:test_tube/test_tube_color_black_from_black_dye"]
   },
   "criteria": {
     "has_dye": {
@@ -27,7 +27,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "material_elements:test_tube_color_black_from_black_dye"
+        "recipe": "material_elements:test_tube/test_tube_color_black_from_black_dye"
       }
     }
   },

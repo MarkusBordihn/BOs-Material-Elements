@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "rewards": {
-    "recipes": ["material_elements:test_tube_from_glass"]
+    "recipes": ["material_elements:test_tube/test_tube_from_glass"]
   },
   "criteria": {
     "has_glass": {

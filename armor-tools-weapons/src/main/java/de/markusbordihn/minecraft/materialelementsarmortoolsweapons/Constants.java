@@ -29,5 +29,6 @@ public final class Constants {
   public static final String LOG_REGISTER_PREFIX = "⛏️ Register Material Elements Armor, Tools and Weapons";
   public static final String MOD_ID = "material_elements_armor_tools_weapons";
   public static final String MOD_NAME = "Material Elements Armor, Tools and Weapons";
-
+  public static final String MOD_URL =
+      "https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons";
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["-  ", "-- ", "---"],
+  "key": {
+    "-": {
+      "tag": "forge:rods/steel"
+    }
+  },
+  "result": {
+    "item": "material_elements:steel_triangular_frame",
+    "count": 1
+  }
+}

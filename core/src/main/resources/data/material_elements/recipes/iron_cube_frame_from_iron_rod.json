@@ -3,10 +3,10 @@
   "pattern": ["---", "| |", "---"],
   "key": {
     "-": {
-      "item": "material_elements:iron_rod"
+      "tag": "forge:rods/iron"
     },
     "|": {
-      "item": "material_elements:iron_rod"
+      "tag": "forge:rods/iron"
     }
   },
   "result": {

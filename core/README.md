@@ -1,7 +1,7 @@
-[![Material and Elements Downloads](http://cf.way2muchnoise.eu/full_material-elements_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements)
-[![Material and Elements Versions](http://cf.way2muchnoise.eu/versions/Minecraft_material-elements_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements)
-
 # Material and Elements
+
+[![Material and Elements Downloads](http://cf.way2muchnoise.eu/full_541620_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements)
+[![Material and Elements Versions](http://cf.way2muchnoise.eu/versions/Minecraft_541620_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements)
 
 ![Material Elements][logo]
 
@@ -16,12 +16,6 @@ Example use cases of Material Elements:
 - [Easy Mob Farm][easy-mob-farm]
 - [Glow Sticks][glow-sticks]
 - [Token Coins][token-coins]
-
-## Version 3.x notes
-
-The version 3.x and higher is separated by use-cases to allow any easier integration.
-
-**Before you upgrade from version 2.x please make sure to create a backup and install the additional mods like [Material Elements: Decorative][material-elements-decorative] and [Material Elements: Armor, Tools and Weapons][material-elements-armor-tools-and-weapons] before re-loading the world.**
 
 ## Block Overview 👁️
 

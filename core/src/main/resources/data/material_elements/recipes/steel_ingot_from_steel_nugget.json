@@ -2,11 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "ooo",
-    "ooo",
+    "oxo",
     "ooo"
   ],
   "key": {
     "o": {
+      "tag": "forge:nuggets/steel"
+    },
+    "x": {
       "item": "material_elements:steel_nugget"
     }
   },

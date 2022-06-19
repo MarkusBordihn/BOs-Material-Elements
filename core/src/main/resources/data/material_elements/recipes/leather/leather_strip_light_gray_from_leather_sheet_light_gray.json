@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "material_elements:leather_sheet_light_gray"
+    },
+    {
+      "tag": "material_elements:leather_cutters"
+    }
+  ],
+  "result": {
+    "item": "material_elements:leather_strip_light_gray",
+    "count": 4
+  }
+}

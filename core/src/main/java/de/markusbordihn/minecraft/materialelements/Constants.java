@@ -33,6 +33,8 @@ public final class Constants {
   public static final String LOG_REGISTER_PREFIX = "🪨 Register Material Elements";
   public static final String MOD_ID = "material_elements";
   public static final String MOD_NAME = "Material Elements";
+  public static final String MOD_URL =
+      "https://www.curseforge.com/minecraft/mc-mods/material-elements";
 
   // Prefixes
   public static final String TEXT_PREFIX = "text.material_elements.";

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "material_elements:gold_rod"
+    "tag": "forge:rods/gold"
   },
   "result": "material_elements:gold_rod_half_size",
   "count": 2

@@ -3,10 +3,10 @@
   "pattern": ["---", "|#|", "---"],
   "key": {
     "-": {
-      "item": "material_elements:gold_rod"
+      "tag": "forge:rods/gold"
     },
     "|": {
-      "item": "material_elements:gold_rod"
+      "tag": "forge:rods/gold"
     },
     "#": {
       "item": "minecraft:glass"

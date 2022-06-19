@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "rewards": {
-    "recipes": ["material_elements:leather_strip_from_leather"]
+    "recipes": ["material_elements:leather/leather_strip_from_leather"]
   },
   "criteria": {
     "has_leather": {
@@ -27,7 +27,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "material_elements:leather_strip_from_leather"
+        "recipe": "material_elements:leather/leather_strip_from_leather"
       }
     }
   },

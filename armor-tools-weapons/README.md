@@ -1,9 +1,9 @@
+# Material Elements: Armor, Tools and Weapons
+
 [![Material and Elements Downloads](http://cf.way2muchnoise.eu/full_547170_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons)
 [![Material and Elements Versions](http://cf.way2muchnoise.eu/versions/Minecraft_547170_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons)
 
-# Material Elements: Armor, Tools and Weapons
-
-![logo][logo]
+![Material Elements: Armor, Tools and Weapons][logo]
 
 Material Elements Armor, Tools and Weapons is a Minecraft Forge Mod which adds additional copper and steel armor, tools and weapons to the game.
 It use the material and elements from [Bo's Material Elements][material-elements] for crafting, but supports
