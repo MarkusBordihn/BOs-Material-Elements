@@ -22,11 +22,10 @@ package de.markusbordihn.minecraft.materialelementsdecorative.client.color;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.world.item.ItemStack;
 
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.ColorHandlerEvent;
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -44,13 +43,11 @@ public class ModItemColors {
   protected ModItemColors() {}
 
   @SubscribeEvent
-  public static void registerItemColors(ColorHandlerEvent.Item event) {
-    ItemColors itemColors = event.getItemColors();
-
+  public static void registerItemColors(RegisterColorHandlersEvent.Item event) {
     log.info("{} Item Colors ...", Constants.LOG_REGISTER_PREFIX);
 
     // Fabric cloth
-    itemColors.register(ModItemColors::getColorFromClothColoredItem,
+    event.register(ModItemColors::getColorFromClothColoredItem,
         ModItems.FABRIC_CLOTH_WHITE.get(), ModItems.FABRIC_CLOTH_ORANGE.get(),
         ModItems.FABRIC_CLOTH_MAGENTA.get(), ModItems.FABRIC_CLOTH_LIGHT_BLUE.get(),
         ModItems.FABRIC_CLOTH_YELLOW.get(), ModItems.FABRIC_CLOTH_LIME.get(),
@@ -61,7 +58,7 @@ public class ModItemColors {
         ModItems.FABRIC_CLOTH_RED.get(), ModItems.FABRIC_CLOTH_BLACK.get());
 
     // Cloth block
-    itemColors.register(ModItemColors::getColorFromClothColoredItem, ModItems.CLOTH_BLOCK_WHITE.get(),
+    event.register(ModItemColors::getColorFromClothColoredItem, ModItems.CLOTH_BLOCK_WHITE.get(),
         ModItems.CLOTH_BLOCK_ORANGE.get(), ModItems.CLOTH_BLOCK_MAGENTA.get(),
         ModItems.CLOTH_BLOCK_LIGHT_BLUE.get(), ModItems.CLOTH_BLOCK_YELLOW.get(),
         ModItems.CLOTH_BLOCK_LIME.get(), ModItems.CLOTH_BLOCK_PINK.get(),
@@ -72,7 +69,7 @@ public class ModItemColors {
         ModItems.CLOTH_BLOCK_BLACK.get());
 
     // Cloth slab
-    itemColors.register(ModItemColors::getColorFromClothColoredItem, ModItems.CLOTH_SLAB_WHITE.get(),
+    event.register(ModItemColors::getColorFromClothColoredItem, ModItems.CLOTH_SLAB_WHITE.get(),
         ModItems.CLOTH_SLAB_ORANGE.get(), ModItems.CLOTH_SLAB_MAGENTA.get(),
         ModItems.CLOTH_SLAB_LIGHT_BLUE.get(), ModItems.CLOTH_SLAB_YELLOW.get(),
         ModItems.CLOTH_SLAB_LIME.get(), ModItems.CLOTH_SLAB_PINK.get(),
@@ -83,7 +80,7 @@ public class ModItemColors {
         ModItems.CLOTH_SLAB_BLACK.get());
 
     // Cloth triangular
-    itemColors.register(ModItemColors::getColorFromClothColoredItem,
+    event.register(ModItemColors::getColorFromClothColoredItem,
         ModItems.CLOTH_TRIANGULAR_WHITE.get(), ModItems.CLOTH_TRIANGULAR_ORANGE.get(),
         ModItems.CLOTH_TRIANGULAR_MAGENTA.get(), ModItems.CLOTH_TRIANGULAR_LIGHT_BLUE.get(),
         ModItems.CLOTH_TRIANGULAR_YELLOW.get(), ModItems.CLOTH_TRIANGULAR_LIME.get(),
@@ -94,7 +91,7 @@ public class ModItemColors {
         ModItems.CLOTH_TRIANGULAR_RED.get(), ModItems.CLOTH_TRIANGULAR_BLACK.get());
 
     // Colored lanterns
-    itemColors.register(ModItemColors::getColorFromSteelLantern, ModItems.STEEL_LANTERN.get(),
+    event.register(ModItemColors::getColorFromSteelLantern, ModItems.STEEL_LANTERN.get(),
         ModItems.STEEL_SOUL_LANTERN.get(), ModItems.STEEL_LANTERN_WHITE.get(),
         ModItems.STEEL_LANTERN_ORANGE.get(), ModItems.STEEL_LANTERN_MAGENTA.get(),
         ModItems.STEEL_LANTERN_LIGHT_BLUE.get(), ModItems.STEEL_LANTERN_YELLOW.get(),

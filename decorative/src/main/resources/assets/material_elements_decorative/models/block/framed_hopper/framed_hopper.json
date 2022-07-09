@@ -1,5 +1,6 @@
 {
   "credit": "Made with Blockbench by Markus Bordihn",
+  "render_type": "cutout_mipped",
   "textures": {
     "top": "minecraft:block/hopper_top",
     "side": "minecraft:block/hopper_outside",

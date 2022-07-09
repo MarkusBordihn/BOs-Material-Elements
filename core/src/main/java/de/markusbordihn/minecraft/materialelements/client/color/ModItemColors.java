@@ -22,12 +22,11 @@ package de.markusbordihn.minecraft.materialelements.client.color;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.alchemy.PotionUtils;
 
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.ColorHandlerEvent;
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -45,18 +44,15 @@ public class ModItemColors {
   protected ModItemColors() {}
 
   @SubscribeEvent
-  public static void registerItemColors(ColorHandlerEvent.Item event) {
-
-    ItemColors itemColors = event.getItemColors();
-
+  public static void registerItemColors(RegisterColorHandlersEvent.Item event) {
     log.info("{} Item Colors ...", Constants.LOG_REGISTER_PREFIX);
 
     // Use the existing potion color system for the filled test tubes.
-    itemColors.register((itemStack, color) -> color > 0 ? -1 : PotionUtils.getColor(itemStack),
+    event.register((itemStack, color) -> color > 0 ? -1 : PotionUtils.getColor(itemStack),
         ModItems.TEST_TUBE_FILLED.get());
 
     // Use dye color for the colored items.
-    itemColors.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH.get(),
+    event.register(ModItemColors::getColorFromColoredItem, ModItems.CLOTH.get(),
         ModItems.CLOTH_WHITE.get(), ModItems.CLOTH_ORANGE.get(), ModItems.CLOTH_MAGENTA.get(),
         ModItems.CLOTH_LIGHT_BLUE.get(), ModItems.CLOTH_YELLOW.get(), ModItems.CLOTH_LIME.get(),
         ModItems.CLOTH_PINK.get(), ModItems.CLOTH_GRAY.get(), ModItems.CLOTH_LIGHT_GRAY.get(),
@@ -65,7 +61,7 @@ public class ModItemColors {
         ModItems.CLOTH_BLACK.get(), ModItems.TEST_TUBE_WATER.get(), ModItems.TEST_TUBE_GLOW.get());
 
     // Use dye color for the colored test tubes.
-    itemColors.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_WHITE.get(),
+    event.register(ModItemColors::getColorFromTestTube, ModItems.TEST_TUBE_COLOR_WHITE.get(),
         ModItems.TEST_TUBE_COLOR_ORANGE.get(), ModItems.TEST_TUBE_COLOR_MAGENTA.get(),
         ModItems.TEST_TUBE_COLOR_LIGHT_BLUE.get(), ModItems.TEST_TUBE_COLOR_YELLOW.get(),
         ModItems.TEST_TUBE_COLOR_LIME.get(), ModItems.TEST_TUBE_COLOR_PINK.get(),

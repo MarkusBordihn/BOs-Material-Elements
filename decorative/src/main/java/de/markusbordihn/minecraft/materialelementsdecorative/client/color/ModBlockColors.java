@@ -22,13 +22,12 @@ package de.markusbordihn.minecraft.materialelementsdecorative.client.color;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.level.block.state.BlockState;
 
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.ColorHandlerEvent;
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -44,13 +43,11 @@ public class ModBlockColors {
   protected ModBlockColors() {}
 
   @SubscribeEvent
-  public static void registerBlockColors(ColorHandlerEvent.Block event) {
-    BlockColors blockColors = event.getBlockColors();
-
+  public static void registerBlockColors(RegisterColorHandlersEvent.Block event) {
     log.info("{} Block Colors ...", Constants.LOG_REGISTER_PREFIX);
 
     // Fabric cloth
-    blockColors.register(ModBlockColors::getColorFromClothColoredBlock,
+    event.register(ModBlockColors::getColorFromClothColoredBlock,
         ModBlocks.FABRIC_CLOTH_WHITE.get(), ModBlocks.FABRIC_CLOTH_ORANGE.get(),
         ModBlocks.FABRIC_CLOTH_MAGENTA.get(), ModBlocks.FABRIC_CLOTH_LIGHT_BLUE.get(),
         ModBlocks.FABRIC_CLOTH_YELLOW.get(), ModBlocks.FABRIC_CLOTH_LIME.get(),
@@ -61,29 +58,29 @@ public class ModBlockColors {
         ModBlocks.FABRIC_CLOTH_RED.get(), ModBlocks.FABRIC_CLOTH_BLACK.get());
 
     // Cloth block
-    blockColors.register(ModBlockColors::getColorFromClothColoredBlock,
-        ModBlocks.CLOTH_BLOCK_WHITE.get(), ModBlocks.CLOTH_BLOCK_ORANGE.get(),
-        ModBlocks.CLOTH_BLOCK_MAGENTA.get(), ModBlocks.CLOTH_BLOCK_LIGHT_BLUE.get(),
-        ModBlocks.CLOTH_BLOCK_YELLOW.get(), ModBlocks.CLOTH_BLOCK_LIME.get(),
-        ModBlocks.CLOTH_BLOCK_PINK.get(), ModBlocks.CLOTH_BLOCK_GRAY.get(),
-        ModBlocks.CLOTH_BLOCK_LIGHT_GRAY.get(), ModBlocks.CLOTH_BLOCK_CYAN.get(),
-        ModBlocks.CLOTH_BLOCK_PURPLE.get(), ModBlocks.CLOTH_BLOCK_BLUE.get(),
-        ModBlocks.CLOTH_BLOCK_BROWN.get(), ModBlocks.CLOTH_BLOCK_GREEN.get(),
-        ModBlocks.CLOTH_BLOCK_RED.get(), ModBlocks.CLOTH_BLOCK_BLACK.get());
+    event.register(ModBlockColors::getColorFromClothColoredBlock, ModBlocks.CLOTH_BLOCK_WHITE.get(),
+        ModBlocks.CLOTH_BLOCK_ORANGE.get(), ModBlocks.CLOTH_BLOCK_MAGENTA.get(),
+        ModBlocks.CLOTH_BLOCK_LIGHT_BLUE.get(), ModBlocks.CLOTH_BLOCK_YELLOW.get(),
+        ModBlocks.CLOTH_BLOCK_LIME.get(), ModBlocks.CLOTH_BLOCK_PINK.get(),
+        ModBlocks.CLOTH_BLOCK_GRAY.get(), ModBlocks.CLOTH_BLOCK_LIGHT_GRAY.get(),
+        ModBlocks.CLOTH_BLOCK_CYAN.get(), ModBlocks.CLOTH_BLOCK_PURPLE.get(),
+        ModBlocks.CLOTH_BLOCK_BLUE.get(), ModBlocks.CLOTH_BLOCK_BROWN.get(),
+        ModBlocks.CLOTH_BLOCK_GREEN.get(), ModBlocks.CLOTH_BLOCK_RED.get(),
+        ModBlocks.CLOTH_BLOCK_BLACK.get());
 
     // Cloth slab
-    blockColors.register(ModBlockColors::getColorFromClothColoredBlock,
-        ModBlocks.CLOTH_SLAB_WHITE.get(), ModBlocks.CLOTH_SLAB_ORANGE.get(),
-        ModBlocks.CLOTH_SLAB_MAGENTA.get(), ModBlocks.CLOTH_SLAB_LIGHT_BLUE.get(),
-        ModBlocks.CLOTH_SLAB_YELLOW.get(), ModBlocks.CLOTH_SLAB_LIME.get(),
-        ModBlocks.CLOTH_SLAB_PINK.get(), ModBlocks.CLOTH_SLAB_GRAY.get(),
-        ModBlocks.CLOTH_SLAB_LIGHT_GRAY.get(), ModBlocks.CLOTH_SLAB_CYAN.get(),
-        ModBlocks.CLOTH_SLAB_PURPLE.get(), ModBlocks.CLOTH_SLAB_BLUE.get(),
-        ModBlocks.CLOTH_SLAB_BROWN.get(), ModBlocks.CLOTH_SLAB_GREEN.get(),
-        ModBlocks.CLOTH_SLAB_RED.get(), ModBlocks.CLOTH_SLAB_BLACK.get());
+    event.register(ModBlockColors::getColorFromClothColoredBlock, ModBlocks.CLOTH_SLAB_WHITE.get(),
+        ModBlocks.CLOTH_SLAB_ORANGE.get(), ModBlocks.CLOTH_SLAB_MAGENTA.get(),
+        ModBlocks.CLOTH_SLAB_LIGHT_BLUE.get(), ModBlocks.CLOTH_SLAB_YELLOW.get(),
+        ModBlocks.CLOTH_SLAB_LIME.get(), ModBlocks.CLOTH_SLAB_PINK.get(),
+        ModBlocks.CLOTH_SLAB_GRAY.get(), ModBlocks.CLOTH_SLAB_LIGHT_GRAY.get(),
+        ModBlocks.CLOTH_SLAB_CYAN.get(), ModBlocks.CLOTH_SLAB_PURPLE.get(),
+        ModBlocks.CLOTH_SLAB_BLUE.get(), ModBlocks.CLOTH_SLAB_BROWN.get(),
+        ModBlocks.CLOTH_SLAB_GREEN.get(), ModBlocks.CLOTH_SLAB_RED.get(),
+        ModBlocks.CLOTH_SLAB_BLACK.get());
 
     // Cloth triangular
-    blockColors.register(ModBlockColors::getColorFromClothColoredBlock,
+    event.register(ModBlockColors::getColorFromClothColoredBlock,
         ModBlocks.CLOTH_TRIANGULAR_WHITE.get(), ModBlocks.CLOTH_TRIANGULAR_ORANGE.get(),
         ModBlocks.CLOTH_TRIANGULAR_MAGENTA.get(), ModBlocks.CLOTH_TRIANGULAR_LIGHT_BLUE.get(),
         ModBlocks.CLOTH_TRIANGULAR_YELLOW.get(), ModBlocks.CLOTH_TRIANGULAR_LIME.get(),
@@ -94,7 +91,7 @@ public class ModBlockColors {
         ModBlocks.CLOTH_TRIANGULAR_RED.get(), ModBlocks.CLOTH_TRIANGULAR_BLACK.get());
 
     // Colored lanterns
-    blockColors.register(ModBlockColors::getColorFromSteelLantern, ModBlocks.STEEL_LANTERN.get(),
+    event.register(ModBlockColors::getColorFromSteelLantern, ModBlocks.STEEL_LANTERN.get(),
         ModBlocks.STEEL_SOUL_LANTERN.get(), ModBlocks.STEEL_LANTERN_WHITE.get(),
         ModBlocks.STEEL_LANTERN_ORANGE.get(), ModBlocks.STEEL_LANTERN_MAGENTA.get(),
         ModBlocks.STEEL_LANTERN_LIGHT_BLUE.get(), ModBlocks.STEEL_LANTERN_YELLOW.get(),

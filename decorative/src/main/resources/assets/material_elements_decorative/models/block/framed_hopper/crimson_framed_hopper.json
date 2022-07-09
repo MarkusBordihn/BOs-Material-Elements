@@ -1,5 +1,5 @@
 {
-  "parent": "material_elements_decorative:block/template/framed_hopper_side",
+  "parent": "material_elements_decorative:block/framed_hopper/framed_hopper",
   "textures": {
     "texture": "minecraft:block/crimson_planks",
     "particle": "minecraft:block/crimson_planks"

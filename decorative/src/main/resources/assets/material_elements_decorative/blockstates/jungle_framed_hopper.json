@@ -1,21 +1,21 @@
 {
   "variants": {
     "facing=down": {
-      "model": "material_elements_decorative:block/jungle_framed_hopper"
+      "model": "material_elements_decorative:block/framed_hopper/jungle_framed_hopper"
     },
     "facing=east": {
-      "model": "material_elements_decorative:block/jungle_framed_hopper_side",
+      "model": "material_elements_decorative:block/framed_hopper/jungle_framed_hopper_side",
       "y": 90
     },
     "facing=north": {
-      "model": "material_elements_decorative:block/jungle_framed_hopper_side"
+      "model": "material_elements_decorative:block/framed_hopper/jungle_framed_hopper_side"
     },
     "facing=south": {
-      "model": "material_elements_decorative:block/jungle_framed_hopper_side",
+      "model": "material_elements_decorative:block/framed_hopper/jungle_framed_hopper_side",
       "y": 180
     },
     "facing=west": {
-      "model": "material_elements_decorative:block/jungle_framed_hopper_side",
+      "model": "material_elements_decorative:block/framed_hopper/jungle_framed_hopper_side",
       "y": 270
     }
   }

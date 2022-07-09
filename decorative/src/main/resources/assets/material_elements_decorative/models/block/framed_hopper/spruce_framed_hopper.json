@@ -1,5 +1,5 @@
 {
-  "parent": "material_elements_decorative:block/template/framed_hopper",
+  "parent": "material_elements_decorative:block/framed_hopper/framed_hopper",
   "textures": {
     "texture": "minecraft:block/spruce_planks",
     "particle": "minecraft:block/spruce_planks"
