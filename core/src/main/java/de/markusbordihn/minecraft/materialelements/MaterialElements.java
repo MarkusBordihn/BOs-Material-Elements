@@ -47,9 +47,6 @@ public class MaterialElements {
     log.info("{} Blocks ...", Constants.LOG_REGISTER_PREFIX);
     ModBlocks.BLOCKS.register(modEventBus);
 
-    log.info("{} Block Entities ...", Constants.LOG_REGISTER_PREFIX);
-    ModBlocks.ENTITIES.register(modEventBus);
-
     log.info("{} Items ...", Constants.LOG_REGISTER_PREFIX);
     ModItems.ITEMS.register(modEventBus);
   }

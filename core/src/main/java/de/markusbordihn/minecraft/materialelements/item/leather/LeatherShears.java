@@ -35,7 +35,7 @@ public class LeatherShears extends Item {
   }
 
   @Override
-  public ItemStack getContainerItem(ItemStack itemStack) {
+  public ItemStack getCraftingRemainingItem(ItemStack itemStack) {
     if (itemStack.getDamageValue() + 1 <= itemStack.getMaxDamage()) {
       ItemStack newItemSack = itemStack.copy();
       newItemSack.setDamageValue(itemStack.getDamageValue() + 1);
@@ -45,7 +45,7 @@ public class LeatherShears extends Item {
   }
 
   @Override
-  public boolean hasContainerItem(ItemStack stack) {
+  public boolean hasCraftingRemainingItem(ItemStack stack) {
     return true;
   }
 

@@ -52,9 +52,6 @@ public class ModBlocks {
   public static final DeferredRegister<Block> BLOCKS =
       DeferredRegister.create(ForgeRegistries.BLOCKS, Constants.MOD_ID);
 
-  public static final DeferredRegister<BlockEntityType<?>> ENTITIES =
-      DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, Constants.MOD_ID);
-
   @TemplateEntryPoint("Register Blocks")
 
   // Cube Frames
