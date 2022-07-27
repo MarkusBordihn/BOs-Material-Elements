@@ -1,5 +1,5 @@
 {
-  "parent": "material_elements_decorative:crafting/obtain_stonecutter",
+  "parent": "material_elements_decorative:crafting/cut_wood_with_the_stone_cutter",
   "display": {
     "icon": {
       "item": "material_elements_decorative:oak_half_slab"

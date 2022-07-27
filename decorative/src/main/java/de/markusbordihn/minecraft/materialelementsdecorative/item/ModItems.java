@@ -284,13 +284,13 @@ public class ModItems {
   // Quartz
   public static final RegistryObject<Item> QUARTZ_PANEL =
       ITEMS.register("quartz_panel", () -> new BlockItem(ModBlocks.QUARTZ_PANEL.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
   public static final RegistryObject<Item> QUARTZ_PLATE =
       ITEMS.register("quartz_plate", () -> new BlockItem(ModBlocks.QUARTZ_PLATE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
   public static final RegistryObject<Item> QUARTZ_HALF_SLAP =
       ITEMS.register("quartz_half_slab", () -> new BlockItem(ModBlocks.QUARTZ_HALF_SLAP.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
 
   // Steel Chain
   public static final RegistryObject<Item> STEEL_CHAIN =
@@ -339,6 +339,11 @@ public class ModItems {
       () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_RED.get()));
   public static final RegistryObject<Item> STEEL_LANTERN_BLACK = ITEMS.register(
       "steel_lantern_black", () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_BLACK.get()));
+
+  // Misc
+  public static final RegistryObject<Item> GLASS_SLAB =
+      ITEMS.register("glass_slab", () -> new BlockItem(ModBlocks.GLASS_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
 
   // Wool Slaps
   public static final RegistryObject<Item> WOOL_SLAB_WHITE =

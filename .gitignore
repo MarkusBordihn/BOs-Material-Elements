@@ -40,5 +40,8 @@ generated
 *.stackdump
 *.log
 *.bak
+*.patch
+*.patch.txt
+*.rej
 decorative/.vscode/launch.json
 core/.vscode/launch.json

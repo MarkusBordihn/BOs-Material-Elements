@@ -65,6 +65,7 @@ import de.markusbordihn.minecraft.materialelementsdecorative.block.plate.PlateBl
 import de.markusbordihn.minecraft.materialelementsdecorative.block.plate.WoodPlateBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.raisedfloor.RaisedFloorBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.raisedfloor.RaisedFloorLightBlock;
+import de.markusbordihn.minecraft.materialelementsdecorative.block.slab.SlabBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.slab.WoolSlabBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.Constants;
 import de.markusbordihn.minecraft.materialelementsdecorative.Annotations.TemplateEntryPoint;
@@ -312,6 +313,10 @@ public class ModBlocks {
       BLOCKS.register("steel_lantern_red", () -> new SteelLanternBlock(DyeColor.RED));
   public static final RegistryObject<Block> STEEL_LANTERN_BLACK =
       BLOCKS.register("steel_lantern_black", () -> new SteelLanternBlock(DyeColor.BLACK));
+
+  // Misc
+  public static final RegistryObject<Block> GLASS_SLAB =
+      BLOCKS.register("glass_slab", () -> new SlabBlock(Blocks.GLASS));
 
   // Wool Slaps
   public static final RegistryObject<Block> WOOL_SLAB_WHITE =

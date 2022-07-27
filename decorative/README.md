@@ -1,4 +1,4 @@
-# Material Elements: Decorative
+# Material Elements: Decorative (1.18.2)
 
 [![Material and Elements Decorative Downloads](http://cf.way2muchnoise.eu/full_591838_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
 [![Material and Elements Decorative Versions](http://cf.way2muchnoise.eu/versions/Minecraft_591838_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
@@ -26,6 +26,18 @@ The blocks are not allowing any natural mob spawning which make them the perfect
 ### ⛓️ Decorations
 
 - Steel Chain
+
+### Glass Slabs
+
+Glass Slabs are used for decorative and could be placed vertical or horizontal.
+
+![Glass Slab][glass_slab]
+
+### Cloth Blocks
+
+Cloth blocks are used for decorative and exists in different forms like block, slab, triangular which could be placed vertical or horizontal.
+
+![Cloth Blocks][cloth_blocks]
 
 ### 🖾 Wooden Framed Hoppers
 
@@ -75,10 +87,8 @@ In general the have the following conversions over the stone-cutter:
 | Forge 1.19     | ✔️ Active development |
 
 [logo]: examples/material_elements_decorative.gif
-
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
 [material-elements-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons
-
 [framed_hoppers]: examples/screenshots/framed_hoppers.png
 [panel_plates_slap_01]: examples/screenshots/panel_plates_slaps.png
 [panel_plates_slap_02]: examples/screenshots/panel_plates_slaps_02.png

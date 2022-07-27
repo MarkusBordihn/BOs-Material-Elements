@@ -1,11 +1,13 @@
 {
   "replace": false,
   "values": [
+    "material_elements_decorative:acacia_half_slab",
+    "material_elements_decorative:birch_half_slab",
+    "material_elements_decorative:crimson_half_slab",
+    "material_elements_decorative:dark_oak_half_slab",
+    "material_elements_decorative:jungle_half_slab",
     "material_elements_decorative:oak_half_slab",
     "material_elements_decorative:spruce_half_slab",
-    "material_elements_decorative:acacia_half_slab",
-    "material_elements_decorative:dark_oak_half_slab",
-    "material_elements_decorative:crimson_half_slab",
     "material_elements_decorative:warped_half_slab"
   ]
 }

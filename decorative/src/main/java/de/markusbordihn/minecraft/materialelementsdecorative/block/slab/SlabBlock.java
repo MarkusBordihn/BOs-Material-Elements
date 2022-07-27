@@ -19,19 +19,33 @@
 
 package de.markusbordihn.minecraft.materialelementsdecorative.block.slab;
 
+import javax.annotation.Nullable;
+
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.AttachFace;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import de.markusbordihn.minecraft.materialelements.block.multiplace.AdvancedMultiPlaceBlock;
 import de.markusbordihn.minecraft.materialelements.block.multiplace.MultiPlaceBlock;
 
 public class SlabBlock extends AdvancedMultiPlaceBlock {
+
+  // Block stats
+  public static final BooleanProperty STACKED = BooleanProperty.create("stacked");
+  public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
   // We need a VoxelShape for each side to cover all faces and possibilities
   protected static final VoxelShape FLOOR_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 8.0, 16.0);
@@ -49,11 +63,33 @@ public class SlabBlock extends AdvancedMultiPlaceBlock {
     super(properties);
   }
 
+  /** @deprecated */
+  @Deprecated
+  @Override
+  public boolean useShapeForLightOcclusion(BlockState blockState) {
+    return !blockState.getValue(STACKED);
+  }
+
+  @Override
+  protected void createBlockStateDefinition(
+      StateDefinition.Builder<Block, BlockState> stateDefinition) {
+    super.createBlockStateDefinition(stateDefinition);
+    stateDefinition.add(STACKED, WATERLOGGED);
+  }
+
+  /** @deprecated */
+  @Deprecated
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {
+
+    // Early return for full blocks.
+    if (Boolean.TRUE.equals(blockState.getValue(STACKED))) {
+      return Shapes.block();
+    }
+
+    // Handle simple face like ceiling and floor
     AttachFace attachFace = blockState.getValue(MultiPlaceBlock.ATTACH_FACE);
-    // Early return for simple face like ceiling and floor
     if (attachFace == AttachFace.CEILING) {
       return CEILING_AABB;
     } else if (attachFace == AttachFace.FLOOR) {
@@ -73,6 +109,31 @@ public class SlabBlock extends AdvancedMultiPlaceBlock {
       default:
         return FLOOR_AABB;
     }
+  }
+
+  @Override
+  @Nullable
+  public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
+    BlockPos blockPos = blockPlaceContext.getClickedPos();
+    BlockState blockStateAtPosition = blockPlaceContext.getLevel().getBlockState(blockPos);
+    if (blockStateAtPosition.is(this)) {
+      return blockStateAtPosition.setValue(STACKED, true).setValue(WATERLOGGED,
+          Boolean.valueOf(false));
+    } else {
+      FluidState fluidState = blockPlaceContext.getLevel().getFluidState(blockPos);
+      BlockState blockState = super.getStateForPlacement(blockPlaceContext);
+      return blockState.setValue(STACKED, false).setValue(WATERLOGGED,
+          Boolean.valueOf(fluidState.getType() == Fluids.WATER));
+    }
+  }
+
+  /** @deprecated */
+  @Deprecated
+  @Override
+  public boolean canBeReplaced(BlockState blockState, BlockPlaceContext blockPlaceContext) {
+    ItemStack itemStack = blockPlaceContext.getItemInHand();
+    return !blockPlaceContext.getPlayer().isCrouching() && !blockState.getValue(STACKED)
+        && itemStack.is(this.asItem()) && blockPlaceContext.replacingClickedOnBlock();
   }
 
 }

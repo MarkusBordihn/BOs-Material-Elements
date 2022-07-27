@@ -60,6 +60,8 @@ public class FabricClothBlock extends MultiPlaceBlock implements ClothColoredBlo
     return this.blockColor;
   }
 
+  /** @deprecated */
+  @Deprecated
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {
