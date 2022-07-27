@@ -49,6 +49,8 @@ public class PlateBlock extends AdvancedMultiPlaceBlock {
     super(properties);
   }
 
+  /** @deprecated */
+  @Deprecated
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {

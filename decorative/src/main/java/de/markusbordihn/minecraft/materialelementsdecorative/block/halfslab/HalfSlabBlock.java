@@ -52,6 +52,8 @@ public class HalfSlabBlock extends Block {
     this.registerDefaultState(this.stateDefinition.any().setValue(ATTACH_FACE, AttachFace.FLOOR).setValue(FACING, Direction.NORTH));
   }
 
+  /** @deprecated */
+  @Deprecated
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {
@@ -93,6 +95,8 @@ public class HalfSlabBlock extends Block {
     blockState.add(ATTACH_FACE, FACING);
   }
 
+  /** @deprecated */
+  @Deprecated
   @Override
   public PushReaction getPistonPushReaction(BlockState blockState) {
     return PushReaction.DESTROY;

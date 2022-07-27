@@ -1,13 +1,35 @@
 {
   "variants": {
-    "type=double": {
+    "stacked=true": {
       "model": "material_elements_decorative:block/cloth/cloth_block"
     },
-    "type=bottom": {
-      "model": "material_elements_decorative:block/cloth/cloth_slab"
+    "stacked=false,face=floor": {
+      "model": "material_elements_decorative:block/cloth/cloth_slab",
+      "y": 180
     },
-    "type=top": {
-      "model": "material_elements_decorative:block/cloth/cloth_slab_top"
+    "stacked=false,face=wall,facing=north": {
+      "model": "material_elements_decorative:block/cloth/cloth_slab",
+      "x": 90
+    },
+    "stacked=false,face=wall,facing=east": {
+      "model": "material_elements_decorative:block/cloth/cloth_slab",
+      "x": 90,
+      "y": 90
+    },
+    "stacked=false,face=wall,facing=south": {
+      "model": "material_elements_decorative:block/cloth/cloth_slab",
+      "x": 90,
+      "y": 180
+    },
+    "stacked=false,face=wall,facing=west": {
+      "model": "material_elements_decorative:block/cloth/cloth_slab",
+      "x": 90,
+      "y": 270
+    },
+    "stacked=false,face=ceiling": {
+      "model": "material_elements_decorative:block/cloth/cloth_slab",
+      "x": 180,
+      "y": 180
     }
   }
 }

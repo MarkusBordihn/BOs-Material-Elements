@@ -1,14 +1,16 @@
 {
   "advancements.material_elements_decorative.crafting.cover_a_hopper_with_wood.description": "Cover a hopper with plates that it look more elegant.",
   "advancements.material_elements_decorative.crafting.cover_a_hopper_with_wood.title": "Hoppers looking ugly, aren't there?",
+  "advancements.material_elements_decorative.crafting.cut_glass_with_the_stone_cutter.description": "Try to cut glass with the stone cutter.",
+  "advancements.material_elements_decorative.crafting.cut_glass_with_the_stone_cutter.title": "Mhhh will it cut glass?",
   "advancements.material_elements_decorative.crafting.cut_half_slab.description": "Cutting wood is fun.",
   "advancements.material_elements_decorative.crafting.cut_half_slab.title": "We need more wood!",
   "advancements.material_elements_decorative.crafting.cut_panel.description": "Could be use for decorative of walls, floors and ceilings.",
   "advancements.material_elements_decorative.crafting.cut_panel.title": "Last cut, isn't it?",
   "advancements.material_elements_decorative.crafting.cut_plate.description": "Looks like a useful addition.",
   "advancements.material_elements_decorative.crafting.cut_plate.title": "Cut me one more time ...",
-  "advancements.material_elements_decorative.crafting.obtain_stone_cutter.description": "Try to cut wood with the stone cutter.",
-  "advancements.material_elements_decorative.crafting.obtain_stone_cutter.title": "Mhhh will it cut wood?",
+  "advancements.material_elements_decorative.crafting.cut_wood_with_the_stone_cutter.description": "Try to cut wood with the stone cutter.",
+  "advancements.material_elements_decorative.crafting.cut_wood_with_the_stone_cutter.title": "Mhhh will it cut wood?",
   "advancements.material_elements_decorative.crafting.root.description": "Explore the additional materials and elements.",
   "advancements.material_elements_decorative.crafting.root.title": "Material Elements: Decorative",
 
@@ -153,6 +155,8 @@
   "block.material_elements_decorative.raised_floor_light_side_half_flipped_light_blue": "Raised Floor with Light side half (light blue)",
   "block.material_elements_decorative.raised_floor_light_side_half_light_blue": "Raised Floor with Light side half flipped (light blue)",
   "block.material_elements_decorative.raised_floor_light_side_light_blue": "Raised Floor with Light side (light blue)",
+
+  "block.material_elements_decorative.glass_slab": "Glass Slab",
 
   "block.material_elements_decorative.wool_slab_white": "Wool Slab (white)",
   "block.material_elements_decorative.wool_slab_orange": "Wool Slab (orange)",

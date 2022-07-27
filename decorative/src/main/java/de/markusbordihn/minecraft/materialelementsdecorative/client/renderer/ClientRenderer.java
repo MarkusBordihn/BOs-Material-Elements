@@ -154,6 +154,9 @@ public class ClientRenderer {
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_LIGHT_SIDE_LIGHT_BLUE.get(),
           RenderType.translucent());
 
+      // Misc
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_SLAB.get(), RenderType.translucent());
+
       // Wooden framed hopper
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.OAK_FRAMED_HOPPER.get(),
           RenderType.cutoutMipped());

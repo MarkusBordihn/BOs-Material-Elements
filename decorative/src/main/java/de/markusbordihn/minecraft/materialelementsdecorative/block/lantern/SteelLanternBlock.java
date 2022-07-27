@@ -29,9 +29,7 @@ public class SteelLanternBlock extends LanternBlock {
 
   private static final BlockBehaviour.Properties DEFAULT_BLOCK_PROPERTIES =
       BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(4.0F)
-          .sound(SoundType.LANTERN).lightLevel(blockState -> {
-            return 15;
-          }).noOcclusion();
+          .sound(SoundType.LANTERN).lightLevel(blockState -> 15).noOcclusion();
   private DyeColor color = DyeColor.YELLOW;
   private int materialColor = DyeColor.YELLOW.getMaterialColor().col;
 

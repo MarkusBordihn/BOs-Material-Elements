@@ -1,29 +1,32 @@
 {
   "variants": {
-    "face=floor": {
+    "stacked=true": {
+      "model": "minecraft:block/gray_wool"
+    },
+    "stacked=false,face=floor": {
       "model": "material_elements_decorative:block/wool_slab_gray",
       "y": 180
     },
-    "face=wall,facing=north": {
+    "stacked=false,face=wall,facing=north": {
       "model": "material_elements_decorative:block/wool_slab_gray",
       "x": 90
     },
-    "face=wall,facing=east": {
+    "stacked=false,face=wall,facing=east": {
       "model": "material_elements_decorative:block/wool_slab_gray",
       "x": 90,
       "y": 90
     },
-    "face=wall,facing=south": {
+    "stacked=false,face=wall,facing=south": {
       "model": "material_elements_decorative:block/wool_slab_gray",
       "x": 90,
       "y": 180
     },
-    "face=wall,facing=west": {
+    "stacked=false,face=wall,facing=west": {
       "model": "material_elements_decorative:block/wool_slab_gray",
       "x": 90,
       "y": 270
     },
-    "face=ceiling": {
+    "stacked=false,face=ceiling": {
       "model": "material_elements_decorative:block/wool_slab_gray",
       "x": 180,
       "y": 180

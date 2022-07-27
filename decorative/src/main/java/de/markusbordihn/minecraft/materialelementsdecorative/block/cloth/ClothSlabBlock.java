@@ -19,12 +19,11 @@
 
 package de.markusbordihn.minecraft.materialelementsdecorative.block.cloth;
 
-import net.minecraft.world.level.block.SlabBlock;
-
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import de.markusbordihn.minecraft.materialelements.color.ClothColor;
+import de.markusbordihn.minecraft.materialelementsdecorative.block.slab.SlabBlock;
 
 public class ClothSlabBlock extends SlabBlock implements ClothColoredBlock {
 
