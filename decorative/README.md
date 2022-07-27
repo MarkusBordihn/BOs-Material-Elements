@@ -95,4 +95,6 @@ In general the have the following conversions over the stone-cutter:
 [raised_floor_bottom]: examples/screenshots/raised_floor_bottom.png
 [raised_floor_top]: examples/screenshots/raised_floor_top.png
 [steel_lantern]: examples/screenshots/steel_lantern.png
+[glass_slab]: examples/screenshots/glass_slab.png
+[cloth_blocks]: examples/screenshots/cloth_blocks.png
 [wool_slab]: examples/screenshots/wool_slab.png
