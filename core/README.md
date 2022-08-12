@@ -168,15 +168,21 @@ It is classified between Iron and diamond with the following stats.
 | -------------- | --------------------- |
 | Fabric Version | ❌ Not planned        |
 | Forge 1.16.5   | ⚠️ Maintenance only   |
-| Forge 1.17.1   | ⚠️ Maintenance only   |
-| Forge 1.18.1   | ⚠️ Maintenance only   |
+| Forge 1.17.1   | ⚠️ Deprecated         |
+| Forge 1.18.1   | ⚠️ Deprecated         |
 | Forge 1.18.2   | ⚠️ Maintenance only   |
-| Forge 1.19     | ✔️ Active development |
+| Forge 1.19     | ⚠️ Deprecated         |
+| Forge 1.19.1   | ⚠️ Deprecated         |
+| Forge 1.19.2   | ✔️ Active development |
 
 ## Mod Integration 🚀
 
 If you want to use the mod blocks and items for your own mod just add it as dependency and all elements are automatically available for your mod.
 Please check [Developer Wiki][dev-wiki] for the details steps.
+
+## License
+
+The MIT [LICENSE.md](../LICENSE.md) applies only to the code in this repository. Images, models and other assets are explicitly excluded.
 
 [acacia_stick]: examples/item/small/acacia_stick.png
 [birch_stick]: examples/item/small/birch_stick.png

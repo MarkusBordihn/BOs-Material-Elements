@@ -33,7 +33,13 @@ See [decorative/README.md](decorative/README.md) for additional details.
 | -------------- | --------------------- |
 | Fabric Version | ❌ Not planned        |
 | Forge 1.16.5   | ⚠️ Maintenance only   |
-| Forge 1.17.1   | ⚠️ Maintenance only   |
-| Forge 1.18.1   | ⚠️ Maintenance only   |
+| Forge 1.17.1   | ⚠️ Deprecated         |
+| Forge 1.18.1   | ⚠️ Deprecated         |
 | Forge 1.18.2   | ⚠️ Maintenance only   |
-| Forge 1.19     | ✔️ Active development |
+| Forge 1.19     | ⚠️ Deprecated         |
+| Forge 1.19.1   | ⚠️ Deprecated         |
+| Forge 1.19.2   | ✔️ Active development |
+
+## License
+
+The MIT [LICENSE.md](LICENSE.md) applies only to the code in this repository. Images, models and other assets are explicitly excluded.

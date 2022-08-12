@@ -46,6 +46,6 @@ license="MIT"
 [[dependencies.material_elements_armor_tools_weapons]]
   modId="material_elements"
   mandatory=true
-  versionRange="[5.0.0,6.0.0)"
+  versionRange="[5.1.0,6.0.0)"
   ordering="NONE"
   side="BOTH"

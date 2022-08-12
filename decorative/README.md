@@ -1,4 +1,4 @@
-# Material Elements: Decorative (1.19)
+# Material Elements: Decorative (1.19.1)
 
 [![Material and Elements Decorative Downloads](http://cf.way2muchnoise.eu/full_591838_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
 [![Material and Elements Decorative Versions](http://cf.way2muchnoise.eu/versions/Minecraft_591838_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
@@ -9,7 +9,7 @@ Material Elements Decorative adds new decorative blocks and items for your world
 
 This mod requires [Bo's Material Elements][material-elements] as basis.
 
-### Raised Floors
+## Raised Floors
 
 ![Raised Floor top][raised_floor_top]
 
@@ -19,34 +19,34 @@ The blocks are not allowing any natural mob spawning which make them the perfect
 
 ![Raised Floor bottom][raised_floor_bottom]
 
-### 💡 Steel Lantern in different colors
+## 💡 Steel Lantern in different colors
 
 ![Steel Lantern][steel_lantern]
 
-### ⛓️ Decorations
+## ⛓️ Decorations
 
 - Steel Chain
 
-### Glass Slabs
+## Glass Slabs
 
 Glass Slabs are used for decorative and could be placed vertical or horizontal.
 
 ![Glass Slab][glass_slab]
 
-### Cloth Blocks
+## Cloth Blocks
 
 Cloth blocks are used for decorative and exists in different forms like block, slab, triangular which could be placed vertical or horizontal.
 
 ![Cloth Blocks][cloth_blocks]
 
-### 🖾 Wooden Framed Hoppers
+## 🖾 Wooden Framed Hoppers
 
 These are basic hoppers, but framed with wood for a better lock and integration.
 The additionally compatible with other storage systems like **Storage Drawers**.
 
 ![Framed Hoppers][framed_hoppers]
 
-### 🪵 Wood Panels, Plates and half-size Slabs
+## 🪵 Wood Panels, Plates and half-size Slabs
 
 Wood panels are used to hide specific stuff like cables or pipes.
 Plates and half-size slabs are used for other stuff.
@@ -54,7 +54,7 @@ Plates and half-size slabs are used for other stuff.
 ![Panel Plates Slap 01][panel_plates_slap_01]
 ![Panel Plates Slap 02][panel_plates_slap_02]
 
-### Wool Slabs
+## Wool Slabs
 
 Wool Slabs are used for decorative and could be placed vertical or horizontal.
 
@@ -82,9 +82,15 @@ In general the have the following conversions over the stone-cutter:
 | Fabric Version | ❌ Not planned        |
 | Forge 1.16.5   | ❌ Not planned        |
 | Forge 1.17.1   | ❌ Not planned        |
-| Forge 1.18.1   | ⚠️ Maintenance only   |
+| Forge 1.18.1   | ⚠️ Deprecated         |
 | Forge 1.18.2   | ⚠️ Maintenance only   |
-| Forge 1.19     | ✔️ Active development |
+| Forge 1.19     | ⚠️ Deprecated         |
+| Forge 1.19.1   | ⚠️ Deprecated         |
+| Forge 1.19.2   | ✔️ Active development |
+
+## License
+
+The MIT [LICENSE.md](../LICENSE.md) applies only to the code in this repository. Images, models and other assets are explicitly excluded.
 
 [logo]: examples/material_elements_decorative.gif
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
