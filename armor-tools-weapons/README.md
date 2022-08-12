@@ -1,4 +1,4 @@
-# Material Elements: Armor, Tools and Weapons
+# Material Elements: Armor, Tools and Weapons (1.19.2)
 
 [![Material and Elements Downloads](http://cf.way2muchnoise.eu/full_547170_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons)
 [![Material and Elements Versions](http://cf.way2muchnoise.eu/versions/Minecraft_547170_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons)

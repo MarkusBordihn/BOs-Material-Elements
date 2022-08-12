@@ -1,4 +1,4 @@
-# Material and Elements
+# Material and Elements (1.19.2)
 
 Material and Elements is a Minecraft Forge mod collection to add different kind of new aspects to the game.
 

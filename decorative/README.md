@@ -1,4 +1,4 @@
-# Material Elements: Decorative (1.19.1)
+# Material Elements: Decorative (1.19.2)
 
 [![Material and Elements Decorative Downloads](http://cf.way2muchnoise.eu/full_591838_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
 [![Material and Elements Decorative Versions](http://cf.way2muchnoise.eu/versions/Minecraft_591838_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative)
