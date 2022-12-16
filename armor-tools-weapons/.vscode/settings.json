@@ -5,53 +5,31 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  "cSpell.words": [
-    "advancementstracker",
-    "amphithere",
-    "autosave",
-    "Behaviour",
-    "bordihn",
-    "bufferbuilder",
-    "chestplate",
-    "Configurator",
-    "Critera",
-    "curseforge",
-    "DISPLAYTEST",
-    "firstperson",
-    "Framebuffer",
-    "gradlew",
-    "grandle",
-    "IGNORESERVERONLY",
-    "Ingame",
-    "lefthand",
-    "markus",
-    "markusbordihn",
-    "materialelementsarmortoolsweapons",
-    "minecraft",
-    "minecraftforge",
-    "MOJANG",
-    "myfirstmod",
-    "Reposts",
-    "righthand",
-    "server",
-    "serverworld",
-    "smallships",
-    "steelarmortoolsweapons",
-    "STRG",
-    "Tessellator",
-    "thirdperson",
-    "untrack"
-  ],
-  "cSpell.ignorePaths" : [
-    "*.yml",
-    ".gradle",
-    ".vscode",
-    "build",
-    "run"
-  ],
+  "cSpell.words": [],
+  "cSpell.ignorePaths": ["*.yml", ".gradle", ".vscode", "build", "run"],
+  "cSpell.customDictionaries": {
+    "workspaceWords": {
+      "name": "workspaceWords",
+      "path": "${workspaceRoot}/../.vscode/cspell.txt",
+      "scope": "workspace",
+      "addWords": true
+    },
+    "custom": true
+  },
   "java.configuration.updateBuildConfiguration": "automatic",
   "java.format.settings.url": "./../java-google-style.xml",
   "java.format.settings.profile": "GoogleStyle",
   "java.dependency.showMembers": true,
-  "java.dependency.packagePresentation": "flat"
+  "java.dependency.packagePresentation": "flat",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.compile.nullAnalysis.nullable": [
+    "org.springframework.lang.Nullable",
+    "javax.annotation.Nullable",
+    "org.eclipse.jdt.annotation.Nullable"
+  ],
+  "java.compile.nullAnalysis.nonnull": [
+    "org.springframework.lang.NonNull",
+    "javax.annotation.Nonnull",
+    "org.eclipse.jdt.annotation.NonNull"
+  ]
 }

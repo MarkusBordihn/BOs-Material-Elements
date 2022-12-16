@@ -84,11 +84,11 @@ In general the have the following conversions over the stone-cutter:
 | Version        | Status                |
 | -------------- | --------------------- |
 | Fabric Version | ❌ Not planned        |
-| Forge 1.16.5   | ❌ Not planned        |
-| Forge 1.17.1   | ❌ Not planned        |
-| Forge 1.18.1   | ⚠️ Maintenance only   |
+| Forge 1.16.5   | ⚠️ Maintenance only   |
+| Forge 1.17.1   | ⛔️ Deprecated        |
+| Forge 1.18.1   | ⛔️ Deprecated        |
 | Forge 1.18.2   | ⚠️ Maintenance only   |
-| Forge 1.19     | ✔️ Active development |
+| Forge 1.19.2   | ✔️ Active development |
 
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
 [material-elements-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons

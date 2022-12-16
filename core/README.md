@@ -174,9 +174,10 @@ It is classified between Iron and diamond with the following stats.
 | -------------- | --------------------- |
 | Fabric Version | ❌ Not planned        |
 | Forge 1.16.5   | ⚠️ Maintenance only   |
-| Forge 1.17.1   | ⚠️ Maintenance only   |
-| Forge 1.18.1   | ⚠️ Maintenance only   |
-| Forge 1.18.2   | ✔️ Active development |
+| Forge 1.17.1   | ⛔️ Deprecated        |
+| Forge 1.18.1   | ⛔️ Deprecated        |
+| Forge 1.18.2   | ⚠️ Maintenance only   |
+| Forge 1.19.2   | ✔️ Active development |
 
 ## Mod Integration 🚀
 
@@ -209,4 +210,3 @@ Please check [Developer Wiki][dev-wiki] for the details steps.
 [token-coins]: https://www.curseforge.com/minecraft/mc-mods/token-coins
 [material-elements-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons
 [material-elements-decorative]: https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative
-[material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
