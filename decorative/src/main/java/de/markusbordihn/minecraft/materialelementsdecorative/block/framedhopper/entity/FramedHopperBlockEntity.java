@@ -125,10 +125,12 @@ public class FramedHopperBlockEntity extends RandomizableContainerBlockEntity im
             for (int i = 0; i < blockEntity.getContainerSize(); ++i) {
               if (!blockEntity.getItem(i).isEmpty()) {
                 ItemStack itemStack = blockEntity.getItem(i).copy();
-                ItemStack itemStackTarget =
-                    itemHandler.insertItem(slot, blockEntity.removeItem(i, 1), false);
-                if (itemStackTarget.isEmpty()) {
-                  return true;
+                ItemStack removedItem = blockEntity.removeItem(i, 1);
+                if (removedItem != null) {
+                  ItemStack itemStackTarget = itemHandler.insertItem(slot, removedItem, false);
+                  if (itemStackTarget.isEmpty()) {
+                    return true;
+                  }
                 }
                 blockEntity.setItem(i, itemStack);
               }

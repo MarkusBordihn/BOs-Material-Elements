@@ -22,6 +22,7 @@ package de.markusbordihn.minecraft.materialelementsdecorative.block.slab;
 import javax.annotation.Nullable;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -132,7 +133,8 @@ public class SlabBlock extends AdvancedMultiPlaceBlock {
   @Override
   public boolean canBeReplaced(BlockState blockState, BlockPlaceContext blockPlaceContext) {
     ItemStack itemStack = blockPlaceContext.getItemInHand();
-    return !blockPlaceContext.getPlayer().isCrouching() && !blockState.getValue(STACKED)
+    Player player = blockPlaceContext.getPlayer();
+    return (player != null && !player.isCrouching()) && !blockState.getValue(STACKED)
         && itemStack.is(this.asItem()) && blockPlaceContext.replacingClickedOnBlock();
   }
 

@@ -42,6 +42,6 @@ generated
 *.bak
 *.patch
 *.patch.txt
-*.rej
+armor-tools-weapons/.vscode/launch.json
 decorative/.vscode/launch.json
 core/.vscode/launch.json

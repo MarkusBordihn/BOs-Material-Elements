@@ -53,11 +53,11 @@ other material and elements from other mods as well.
 | -------------- | --------------------- |
 | Fabric Version | ❌ Not planned        |
 | Forge 1.16.5   | ❌ Not planned        |
-| Forge 1.17.1   | ⚠️ Deprecated         |
-| Forge 1.18.1   | ⚠️ Deprecated         |
+| Forge 1.17.1   | ⛔️ Deprecated        |
+| Forge 1.18.1   | ⛔️ Deprecated        |
 | Forge 1.18.2   | ⚠️ Maintenance only   |
-| Forge 1.19     | ⚠️ Deprecated         |
-| Forge 1.19.1   | ⚠️ Deprecated         |
+| Forge 1.19     | ⛔️ Deprecated        |
+| Forge 1.19.1   | ⛔️ Deprecated        |
 | Forge 1.19.2   | ✔️ Active development |
 
 ## License
@@ -66,5 +66,3 @@ The MIT [LICENSE.md](../LICENSE.md) applies only to the code in this repository.
 
 [logo]: examples/material_elements_armor_tools_weapons.gif
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
-[material-elements-decorative]: https://www.curseforge.com/minecraft/mc-mods/material-elements-decorative
-[material-elements-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons

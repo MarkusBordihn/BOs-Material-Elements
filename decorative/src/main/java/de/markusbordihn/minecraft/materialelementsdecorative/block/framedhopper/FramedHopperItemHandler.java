@@ -22,7 +22,7 @@ package de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.annotation.Nonnull;
+import org.jetbrains.annotations.NotNull;
 
 import net.minecraft.world.item.ItemStack;
 
@@ -43,18 +43,18 @@ public class FramedHopperItemHandler extends InvWrapper {
   }
 
   @Override
-  @Nonnull
-  public ItemStack insertItem(int slot, @Nonnull ItemStack stack, boolean simulate) {
+  @NotNull
+  public ItemStack insertItem(int slot, @NotNull ItemStack itemStack, boolean simulate) {
     if (simulate) {
-      return super.insertItem(slot, stack, simulate);
+      return super.insertItem(slot, itemStack, simulate);
     } else {
       boolean wasEmpty = getInv().isEmpty();
-      int originalStackSize = stack.getCount();
-      stack = super.insertItem(slot, stack, simulate);
-      if (wasEmpty && originalStackSize > stack.getCount() && !hopper.isOnCustomCooldown()) {
+      int originalStackSize = itemStack.getCount();
+      itemStack = super.insertItem(slot, itemStack, simulate);
+      if (wasEmpty && originalStackSize > itemStack.getCount() && !hopper.isOnCustomCooldown()) {
         hopper.setCooldown(8);
       }
-      return stack;
+      return itemStack;
     }
   }
 

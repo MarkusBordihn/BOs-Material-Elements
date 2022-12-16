@@ -82,10 +82,10 @@ In general the have the following conversions over the stone-cutter:
 | Fabric Version | ❌ Not planned        |
 | Forge 1.16.5   | ❌ Not planned        |
 | Forge 1.17.1   | ❌ Not planned        |
-| Forge 1.18.1   | ⚠️ Deprecated         |
+| Forge 1.18.1   | ⛔️ Deprecated        |
 | Forge 1.18.2   | ⚠️ Maintenance only   |
-| Forge 1.19     | ⚠️ Deprecated         |
-| Forge 1.19.1   | ⚠️ Deprecated         |
+| Forge 1.19     | ⛔️ Deprecated        |
+| Forge 1.19.1   | ⛔️ Deprecated        |
 | Forge 1.19.2   | ✔️ Active development |
 
 ## License
@@ -94,7 +94,6 @@ The MIT [LICENSE.md](../LICENSE.md) applies only to the code in this repository.
 
 [logo]: examples/material_elements_decorative.gif
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
-[material-elements-armor-tools-and-weapons]: https://www.curseforge.com/minecraft/mc-mods/material-elements-armor-tools-and-weapons
 [framed_hoppers]: examples/screenshots/framed_hoppers.png
 [panel_plates_slap_01]: examples/screenshots/panel_plates_slaps.png
 [panel_plates_slap_02]: examples/screenshots/panel_plates_slaps_02.png

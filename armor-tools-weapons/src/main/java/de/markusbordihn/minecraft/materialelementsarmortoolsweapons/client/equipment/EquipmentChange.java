@@ -23,8 +23,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.item.ItemStack;
 
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent;
@@ -44,15 +44,18 @@ public class EquipmentChange {
   @SubscribeEvent
   public static void handleLivingEquipmentChangeEvent(LivingEquipmentChangeEvent event) {
     Minecraft minecraft = Minecraft.getInstance();
-    if (minecraft == null || minecraft.player == null) {
+    if (minecraft == null) {
       return;
     }
-    ItemStack itemStackTo = event.getTo();
+    LocalPlayer player = minecraft.player;
+    if (player == null) {
+      return;
+    }
 
     // Plays sound for select the steel lighter
-    if (itemStackTo.is(ModItems.STEEL_LIGHTER.get())) {
-      minecraft.player.playSound(SoundEvents.METAL_HIT, 0.5f, 0.5f);
-      minecraft.player.playSound(SoundEvents.FIRE_AMBIENT, 1.0f, 1.0f);
+    if (event.getTo().is(ModItems.STEEL_LIGHTER.get())) {
+      player.playSound(SoundEvents.METAL_HIT, 0.5f, 0.5f);
+      player.playSound(SoundEvents.FIRE_AMBIENT, 1.0f, 1.0f);
     }
   }
 }
