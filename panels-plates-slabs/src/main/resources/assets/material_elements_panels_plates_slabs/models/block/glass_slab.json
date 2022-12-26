@@ -1,0 +1,8 @@
+{
+  "parent": "material_elements_panels_plates_slabs:block/template/slab",
+  "render_type": "translucent",
+  "textures": {
+    "texture": "minecraft:block/glass",
+    "particle": "minecraft:block/glass"
+  }
+}

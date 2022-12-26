@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "stacked=true": {
+      "model": "material_elements_panels_plates_slabs:block/glass_block"
+    },
+    "stacked=false,face=floor": {
+      "model": "material_elements_panels_plates_slabs:block/glass_slab",
+      "y": 180
+    },
+    "stacked=false,face=wall,facing=north": {
+      "model": "material_elements_panels_plates_slabs:block/glass_slab",
+      "x": 90
+    },
+    "stacked=false,face=wall,facing=east": {
+      "model": "material_elements_panels_plates_slabs:block/glass_slab",
+      "x": 90,
+      "y": 90
+    },
+    "stacked=false,face=wall,facing=south": {
+      "model": "material_elements_panels_plates_slabs:block/glass_slab",
+      "x": 90,
+      "y": 180
+    },
+    "stacked=false,face=wall,facing=west": {
+      "model": "material_elements_panels_plates_slabs:block/glass_slab",
+      "x": 90,
+      "y": 270
+    },
+    "stacked=false,face=ceiling": {
+      "model": "material_elements_panels_plates_slabs:block/glass_slab",
+      "x": 180,
+      "y": 180
+    }
+  }
+}

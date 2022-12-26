@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements_panels_plates_slabs:wool_slab_black",
+    "material_elements_panels_plates_slabs:wool_slab_blue",
+    "material_elements_panels_plates_slabs:wool_slab_brown",
+    "material_elements_panels_plates_slabs:wool_slab_cyan",
+    "material_elements_panels_plates_slabs:wool_slab_gray",
+    "material_elements_panels_plates_slabs:wool_slab_green",
+    "material_elements_panels_plates_slabs:wool_slab_light_blue",
+    "material_elements_panels_plates_slabs:wool_slab_light_gray",
+    "material_elements_panels_plates_slabs:wool_slab_lime",
+    "material_elements_panels_plates_slabs:wool_slab_magenta",
+    "material_elements_panels_plates_slabs:wool_slab_orange",
+    "material_elements_panels_plates_slabs:wool_slab_pink",
+    "material_elements_panels_plates_slabs:wool_slab_purple",
+    "material_elements_panels_plates_slabs:wool_slab_red",
+    "material_elements_panels_plates_slabs:wool_slab_white",
+    "material_elements_panels_plates_slabs:wool_slab_yellow"
+  ]
+}

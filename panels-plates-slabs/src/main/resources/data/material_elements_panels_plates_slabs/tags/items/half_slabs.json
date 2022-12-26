@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements_panels_plates_slabs:acacia_half_slab",
+    "material_elements_panels_plates_slabs:birch_half_slab",
+    "material_elements_panels_plates_slabs:crimson_half_slab",
+    "material_elements_panels_plates_slabs:dark_oak_half_slab",
+    "material_elements_panels_plates_slabs:jungle_half_slab",
+    "material_elements_panels_plates_slabs:oak_half_slab",
+    "material_elements_panels_plates_slabs:spruce_half_slab",
+    "material_elements_panels_plates_slabs:warped_half_slab"
+  ]
+}

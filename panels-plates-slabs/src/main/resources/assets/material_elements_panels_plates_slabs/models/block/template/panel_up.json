@@ -1,0 +1,43 @@
+{
+  "credit": "Made with Blockbench by Markus Bordihn",
+  "textures": {
+    "particle": "block/oak_planks",
+    "texture": "block/oak_planks"
+  },
+  "elements": [
+    {
+      "name": "panel_up",
+      "from": [0, 15, 0],
+      "to": [16, 16, 16],
+      "rotation": { "angle": 0, "axis": "y", "origin": [8, 0.5, 8] },
+      "faces": {
+        "north": {
+          "uv": [0.016, 0.016, 15.984, 0.984],
+          "texture": "#texture",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [0.016, 0.016, 15.984, 0.984],
+          "texture": "#texture",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [0.016, 0.016, 15.984, 0.984],
+          "texture": "#texture",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0.016, 0.016, 15.984, 0.984],
+          "texture": "#texture",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [0.016, 0.016, 15.984, 15.984],
+          "texture": "#texture",
+          "cullface": "up"
+        },
+        "down": { "uv": [15.984, 0.016, 0.016, 15.984], "texture": "#texture" }
+      }
+    }
+  ]
+}

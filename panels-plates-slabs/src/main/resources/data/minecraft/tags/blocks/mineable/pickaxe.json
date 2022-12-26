@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements_panels_plates_slabs:quartz_half_slab",
+    "material_elements_panels_plates_slabs:quartz_panel",
+    "material_elements_panels_plates_slabs:quartz_plate"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements_panels_plates_slabs:block/template/half_slab",
+  "textures": {
+    "texture": "minecraft:block/crimson_planks",
+    "particle": "minecraft:block/crimson_planks"
+  }
+}

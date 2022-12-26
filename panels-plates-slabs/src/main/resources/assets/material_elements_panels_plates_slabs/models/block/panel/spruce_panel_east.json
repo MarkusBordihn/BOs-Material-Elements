@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements_panels_plates_slabs:block/template/panel_east",
+  "textures": {
+    "texture": "minecraft:block/spruce_planks",
+    "particle": "minecraft:block/spruce_planks"
+  }
+}

@@ -27,6 +27,12 @@ Adds new decorative blocks and items for your world based on Material Elements.
 
 See [decorative/README.md](decorative/README.md) for additional details.
 
+### Panels, Plates and Slabs
+
+Adds new panels, plates and slabs blocks to your world based on Material Elements.
+
+See [decorative/README.md](panels-plates-slabs/README.md) for additional details.
+
 ## Version Status Overview 🛠️
 
 | Version        | Status                |
