@@ -1,13 +1,13 @@
 {
   "variants": {
     "face=floor": {
-      "model": "material_elements_panels_plates_slabs:block/crimson_half_slab"
+      "model": "material_elements_panels_plates_slabs:block/half_slab/crimson_half_slab"
     },
     "face=wall": {
-      "model": "material_elements_panels_plates_slabs:block/crimson_half_slab"
+      "model": "material_elements_panels_plates_slabs:block/half_slab/crimson_half_slab"
     },
     "face=ceiling": {
-      "model": "material_elements_panels_plates_slabs:block/crimson_half_slab",
+      "model": "material_elements_panels_plates_slabs:block/half_slab/crimson_half_slab",
       "x": 180,
       "y": 180
     }

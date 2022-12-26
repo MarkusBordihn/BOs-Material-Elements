@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "material_elements_panels_plates_slabs:oak_framed_hopper"
+      "item": "material_elements_panels_plates_slabs:oak_panel"
     },
     "title": {
       "translate": "advancements.material_elements_panels_plates_slabs.crafting.root.title"

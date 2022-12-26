@@ -4,30 +4,30 @@
       "model": "minecraft:block/pink_wool"
     },
     "stacked=false,face=floor": {
-      "model": "material_elements_panels_plates_slabs:block/wool_slab_pink",
+      "model": "material_elements_panels_plates_slabs:block/slab/wool_slab_pink",
       "y": 180
     },
     "stacked=false,face=wall,facing=north": {
-      "model": "material_elements_panels_plates_slabs:block/wool_slab_pink",
+      "model": "material_elements_panels_plates_slabs:block/slab/wool_slab_pink",
       "x": 90
     },
     "stacked=false,face=wall,facing=east": {
-      "model": "material_elements_panels_plates_slabs:block/wool_slab_pink",
+      "model": "material_elements_panels_plates_slabs:block/slab/wool_slab_pink",
       "x": 90,
       "y": 90
     },
     "stacked=false,face=wall,facing=south": {
-      "model": "material_elements_panels_plates_slabs:block/wool_slab_pink",
+      "model": "material_elements_panels_plates_slabs:block/slab/wool_slab_pink",
       "x": 90,
       "y": 180
     },
     "stacked=false,face=wall,facing=west": {
-      "model": "material_elements_panels_plates_slabs:block/wool_slab_pink",
+      "model": "material_elements_panels_plates_slabs:block/slab/wool_slab_pink",
       "x": 90,
       "y": 270
     },
     "stacked=false,face=ceiling": {
-      "model": "material_elements_panels_plates_slabs:block/wool_slab_pink",
+      "model": "material_elements_panels_plates_slabs:block/slab/wool_slab_pink",
       "x": 180,
       "y": 180
     }

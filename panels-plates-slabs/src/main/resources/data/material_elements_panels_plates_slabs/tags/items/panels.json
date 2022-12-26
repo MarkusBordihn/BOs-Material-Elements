@@ -8,6 +8,8 @@
     "material_elements_panels_plates_slabs:jungle_panel",
     "material_elements_panels_plates_slabs:oak_panel",
     "material_elements_panels_plates_slabs:spruce_panel",
-    "material_elements_panels_plates_slabs:warped_panel"
+    "material_elements_panels_plates_slabs:warped_panel",
+    "material_elements_panels_plates_slabs:quartz_panel",
+    "material_elements_panels_plates_slabs:smooth_quartz_panel"
   ]
 }

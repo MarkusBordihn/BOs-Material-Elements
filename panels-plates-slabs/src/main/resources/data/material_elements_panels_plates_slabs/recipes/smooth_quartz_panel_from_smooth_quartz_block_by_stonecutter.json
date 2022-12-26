@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:smooth_quartz"
+  },
+  "result": "material_elements_panels_plates_slabs:smooth_quartz_panel",
+  "count": 8
+}

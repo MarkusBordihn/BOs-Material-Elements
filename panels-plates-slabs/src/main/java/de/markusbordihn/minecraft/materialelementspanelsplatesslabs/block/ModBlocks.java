@@ -51,13 +51,19 @@ public class ModBlocks {
 
   @TemplateEntryPoint("Register Blocks")
 
-  // Quartz
+  // Quartz (normal and smooth)
   public static final RegistryObject<Block> QUARTZ_PANEL =
       BLOCKS.register("quartz_panel", () -> new PanelBlock(Blocks.QUARTZ_BLOCK));
   public static final RegistryObject<Block> QUARTZ_PLATE =
       BLOCKS.register("quartz_plate", () -> new PlateBlock(Blocks.QUARTZ_BLOCK));
   public static final RegistryObject<Block> QUARTZ_HALF_SLAP =
       BLOCKS.register("quartz_half_slab", () -> new HalfSlabBlock(Blocks.QUARTZ_BLOCK));
+  public static final RegistryObject<Block> SMOOTH_QUARTZ_PANEL =
+      BLOCKS.register("smooth_quartz_panel", () -> new PanelBlock(Blocks.SMOOTH_QUARTZ));
+  public static final RegistryObject<Block> SMOOTH_QUARTZ_PLATE =
+      BLOCKS.register("smooth_quartz_plate", () -> new PlateBlock(Blocks.SMOOTH_QUARTZ));
+  public static final RegistryObject<Block> SMOOTH_QUARTZ_HALF_SLAP =
+      BLOCKS.register("smooth_quartz_half_slab", () -> new HalfSlabBlock(Blocks.SMOOTH_QUARTZ));
 
   // Glass
   public static final RegistryObject<Block> GLASS_SLAB =

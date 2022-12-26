@@ -40,13 +40,9 @@ public class ModItems {
   public static final DeferredRegister<Item> ITEMS =
       DeferredRegister.create(ForgeRegistries.ITEMS, Constants.MOD_ID);
 
-  @TemplateEntryPoint("Register Items")
-
-  String test = "Test";
-
   @TemplateEntryPoint("Register Block Items")
 
-  // Quartz
+  // Quartz (normal and smooth)
   public static final RegistryObject<Item> QUARTZ_PANEL =
       ITEMS.register("quartz_panel", () -> new BlockItem(ModBlocks.QUARTZ_PANEL.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
@@ -55,6 +51,15 @@ public class ModItems {
           new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
   public static final RegistryObject<Item> QUARTZ_HALF_SLAP =
       ITEMS.register("quartz_half_slab", () -> new BlockItem(ModBlocks.QUARTZ_HALF_SLAP.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> SMOOTH_QUARTZ_PANEL =
+      ITEMS.register("smooth_quartz_panel", () -> new BlockItem(ModBlocks.SMOOTH_QUARTZ_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> SMOOTH_QUARTZ_PLATE =
+      ITEMS.register("smooth_quartz_plate", () -> new BlockItem(ModBlocks.SMOOTH_QUARTZ_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> SMOOTH_QUARTZ_HALF_SLAP = ITEMS.register(
+      "smooth_quartz_half_slab", () -> new BlockItem(ModBlocks.SMOOTH_QUARTZ_HALF_SLAP.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
 
   // Glass

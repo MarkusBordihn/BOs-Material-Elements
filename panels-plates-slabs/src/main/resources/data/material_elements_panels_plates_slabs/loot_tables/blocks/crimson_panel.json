@@ -7,13 +7,82 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "material_elements_panels_plates_slabs:crimson_panel",
           "functions": [
             {
-              "function": "minecraft:copy_name",
-              "source": "block_entity"
+              "function": "minecraft:set_count",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "material_elements_panels_plates_slabs:crimson_panel",
+                  "properties": {
+                    "faces": "1"
+                  }
+                }
+              ],
+              "count": 1.0,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_count",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "material_elements_panels_plates_slabs:crimson_panel",
+                  "properties": {
+                    "faces": "2"
+                  }
+                }
+              ],
+              "count": 2.0,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_count",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "material_elements_panels_plates_slabs:crimson_panel",
+                  "properties": {
+                    "faces": "3"
+                  }
+                }
+              ],
+              "count": 3.0,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_count",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "material_elements_panels_plates_slabs:crimson_panel",
+                  "properties": {
+                    "faces": "4"
+                  }
+                }
+              ],
+              "count": 4.0,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_count",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "material_elements_panels_plates_slabs:crimson_panel",
+                  "properties": {
+                    "faces": "5"
+                  }
+                }
+              ],
+              "count": 5.0,
+              "add": false
+            },
+            {
+              "function": "minecraft:explosion_decay"
             }
-          ],
-          "name": "material_elements_panels_plates_slabs:crimson_panel"
+          ]
         }
       ],
       "conditions": [

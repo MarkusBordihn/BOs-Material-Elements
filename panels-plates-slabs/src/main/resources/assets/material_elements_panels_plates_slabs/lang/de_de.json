@@ -1,12 +1,16 @@
 {
-  "advancements.material_elements_panels_plates_slabs.crafting.root.title": "Material Elements: Paneele, Halbe-Platten und Platten",
-  "advancements.material_elements_panels_plates_slabs.crafting.root.description": "Entdecken Sie die zusätzlichen Materialien und Elemente.",
+  "advancements.material_elements_panels_plates_slabs.crafting.cut_glass_with_the_stone_cutter.description": "Versuchen wir, Glas mit dem Steinschneider zu schneiden.",
+  "advancements.material_elements_panels_plates_slabs.crafting.cut_glass_with_the_stone_cutter.title": "Mhhh, wird er Glas schneiden?",
   "advancements.material_elements_panels_plates_slabs.crafting.cut_half_slab.description": "Holz schneiden macht Spaß.",
   "advancements.material_elements_panels_plates_slabs.crafting.cut_half_slab.title": "Wir brauchen mehr Holz!",
   "advancements.material_elements_panels_plates_slabs.crafting.cut_panel.description": "Könnte zur Dekoration von Wänden, Böden und Decken verwendet werden.",
   "advancements.material_elements_panels_plates_slabs.crafting.cut_panel.title": "Letzter Schnitt, nicht wahr?",
   "advancements.material_elements_panels_plates_slabs.crafting.cut_plate.description": "Sieht nach einer nützlichen Ergänzung aus.",
   "advancements.material_elements_panels_plates_slabs.crafting.cut_plate.title": "Schneide mich noch einmal ...",
+  "advancements.material_elements_panels_plates_slabs.crafting.cut_wood_with_the_stone_cutter.description": "Versuche, Holz mit dem Steinschneider zu schneiden.",
+  "advancements.material_elements_panels_plates_slabs.crafting.cut_wood_with_the_stone_cutter.title": "Mhhh, wird es Holz schneiden?",
+  "advancements.material_elements_panels_plates_slabs.crafting.root.description": "Entdecken Sie die zusätzlichen Materialien und Elemente.",
+  "advancements.material_elements_panels_plates_slabs.crafting.root.title": "Material Elements: Paneele, Halbe-Platten und Platten",
 
   "block.material_elements_panels_plates_slabs.oak_panel": "Eichenpaneel",
   "block.material_elements_panels_plates_slabs.spruce_panel": "Fichtenpaneel",
@@ -35,6 +39,8 @@
   "block.material_elements_panels_plates_slabs.crimson_half_slab": "Crimson halbgroße Platte",
   "block.material_elements_panels_plates_slabs.warped_half_slab": "Verzogene halbgroße Platte",
 
+  "block.material_elements_panels_plates_slabs.glass_slab": "Glassplatte",
+
   "block.material_elements_panels_plates_slabs.wool_slab_white": "Wollplatte (weiß)",
   "block.material_elements_panels_plates_slabs.wool_slab_orange": "Wollplatte (orange)",
   "block.material_elements_panels_plates_slabs.wool_slab_magenta": "Wollplatte (magenta)",
@@ -52,7 +58,12 @@
   "block.material_elements_panels_plates_slabs.wool_slab_red": "Wollplatte (rot)",
   "block.material_elements_panels_plates_slabs.wool_slab_black": "Wollplatte (schwarz)",
 
-  "block.material_elements_panels_plates_slabs.glass_slab": "Glassplatte",
+  "block.material_elements_panels_plates_slabs.smooth_quartz_half_slab": "Glatte Quarz halbgroße Platte",
+  "block.material_elements_panels_plates_slabs.smooth_quartz_plate": "Glatte Quarzplatte",
+  "block.material_elements_panels_plates_slabs.smooth_quartz_panel": "Glattes Quarzpaneel",
+  "block.material_elements_panels_plates_slabs.quartz_half_slab": "Quarz halbgroße Platte",
+  "block.material_elements_panels_plates_slabs.quartz_plate": "Quarzplatte",
+  "block.material_elements_panels_plates_slabs.quartz_panel": "Quarzpaneel",
 
   "itemGroup.panel_plates": "Material & Elemente: Paneele & Halbe-Platten",
   "itemGroup.slabs": "Material & Elemente: Platten"
