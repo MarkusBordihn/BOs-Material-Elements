@@ -58,6 +58,9 @@
   "block.material_elements_panels_plates_slabs.wool_slab_red": "Wool Slab (red)",
   "block.material_elements_panels_plates_slabs.wool_slab_black": "Wool Slab (black)",
 
+  "block.material_elements_panels_plates_slabs.smooth_quartz_half_slab": "Smooth Quartz half-size Slab",
+  "block.material_elements_panels_plates_slabs.smooth_quartz_plate": "Smooth Quartz Plate",
+  "block.material_elements_panels_plates_slabs.smooth_quartz_panel": "Smooth Quartz Panel",
   "block.material_elements_panels_plates_slabs.quartz_half_slab": "Quartz half-size Slab",
   "block.material_elements_panels_plates_slabs.quartz_plate": "Quartz Plate",
   "block.material_elements_panels_plates_slabs.quartz_panel": "Quartz Panel",

@@ -35,6 +35,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
 import de.markusbordihn.minecraft.materialelements.Constants;
 
@@ -49,6 +50,7 @@ public class MultiFaceBlock extends Block {
   public static final BooleanProperty EAST = BlockStateProperties.EAST;
   public static final BooleanProperty SOUTH = BlockStateProperties.SOUTH;
   public static final BooleanProperty WEST = BlockStateProperties.WEST;
+  public static final IntegerProperty FACES = IntegerProperty.create("faces", 0, 6);
 
   public MultiFaceBlock(Block block) {
     this(BlockBehaviour.Properties.copy(block));
@@ -56,14 +58,15 @@ public class MultiFaceBlock extends Block {
 
   public MultiFaceBlock(Properties properties) {
     super(properties);
-    this.registerDefaultState(this.stateDefinition.any().setValue(UP, false).setValue(DOWN, false)
-        .setValue(NORTH, false).setValue(EAST, false).setValue(SOUTH, false).setValue(WEST, false));
+    this.registerDefaultState(
+        this.stateDefinition.any().setValue(UP, false).setValue(DOWN, false).setValue(NORTH, false)
+            .setValue(EAST, false).setValue(SOUTH, false).setValue(WEST, false).setValue(FACES, 0));
   }
 
   @Override
   protected void createBlockStateDefinition(
       StateDefinition.Builder<Block, BlockState> stateDefinition) {
-    stateDefinition.add(UP, DOWN, NORTH, EAST, SOUTH, WEST);
+    stateDefinition.add(UP, DOWN, NORTH, EAST, SOUTH, WEST, FACES);
   }
 
   public int getNumberOfFaces(BlockState blockState) {
@@ -158,9 +161,11 @@ public class MultiFaceBlock extends Block {
       }
     }
 
+    int numOfFaces = (faceUp ? 1 : 0) + (faceDown ? 1 : 0) + (faceNorth ? 1 : 0)
+        + (faceEast ? 1 : 0) + (faceSouth ? 1 : 0) + (faceWest ? 1 : 0);
     return this.defaultBlockState().setValue(UP, faceUp).setValue(DOWN, faceDown)
         .setValue(NORTH, faceNorth).setValue(SOUTH, faceSouth).setValue(EAST, faceEast)
-        .setValue(WEST, faceWest);
+        .setValue(WEST, faceWest).setValue(FACES, numOfFaces);
   }
 
   /** @deprecated */

@@ -1,0 +1,52 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "up": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/smooth_quartz_panel_up"
+      }
+    },
+    {
+      "when": {
+        "down": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/smooth_quartz_panel"
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/smooth_quartz_panel_north"
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/smooth_quartz_panel_east"
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/smooth_quartz_panel_south"
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/smooth_quartz_panel_west"
+      }
+    }
+  ]
+}

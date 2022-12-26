@@ -1,21 +1,21 @@
 {
 	"credit": "Made with Blockbench by Markus Bordihn",
 	"textures": {
-    "texture": "material_elements_panels_plates_slabs:block/plate",
-    "particle": "material_elements_panels_plates_slabs:block/plate"
-  },
+		"particle": "block/oak_planks",
+		"texture": "block/oak_planks"
+	},
 	"elements": [
 		{
 			"from": [0, 0, 0],
 			"to": [16, 2, 16],
-			"rotation": {"angle": 0, "axis": "x", "origin": [8, 0.5, 8]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
 			"faces": {
 				"north": {"uv": [0, 14, 16, 16], "texture": "#texture", "cullface": "north"},
-				"east": {"uv": [0, 0, 2, 16], "rotation": 270, "texture": "#texture", "cullface": "east"},
-				"south": {"uv": [0, 0, 16, 2], "rotation": 180, "texture": "#texture", "cullface": "south"},
-				"west": {"uv": [14, 0, 16, 16], "rotation": 90, "texture": "#texture", "cullface": "west"},
-				"up": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#texture"},
-				"down": {"uv": [16, 0, 0, 16], "texture": "#texture", "cullface": "down"}
+				"east": {"uv": [0, 14, 16, 16], "texture": "#texture", "cullface": "east"},
+				"south": {"uv": [0, 14, 16, 16], "texture": "#texture", "cullface": "south"},
+				"west": {"uv": [0, 14, 16, 16], "texture": "#texture", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "down"}
 			}
 		}
 	],
@@ -43,8 +43,8 @@
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"gui": {
-			"rotation": [29, 45, 0],
-			"translation": [0, 1, 0],
+			"rotation": [29, -135, 0],
+			"translation": [0, 0.5, 0],
 			"scale": [0.65, 0.65, 0.65]
 		},
 		"head": {

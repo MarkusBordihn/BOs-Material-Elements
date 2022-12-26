@@ -3,6 +3,9 @@
   "values": [
     "material_elements_panels_plates_slabs:quartz_half_slab",
     "material_elements_panels_plates_slabs:quartz_panel",
-    "material_elements_panels_plates_slabs:quartz_plate"
+    "material_elements_panels_plates_slabs:quartz_plate",
+    "material_elements_panels_plates_slabs:smooth_quartz_half_slab",
+    "material_elements_panels_plates_slabs:smooth_quartz_panel",
+    "material_elements_panels_plates_slabs:smooth_quartz_plate"
   ]
 }

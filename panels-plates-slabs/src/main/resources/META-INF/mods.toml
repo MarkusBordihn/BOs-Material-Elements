@@ -44,6 +44,6 @@ license="MIT"
 [[dependencies.material_elements_panels_plates_slabs]]
   modId="material_elements"
   mandatory=true
-  versionRange="[3.8.0,4.0.0)"
+  versionRange="[3.8.1,4.0.0)"
   ordering="NONE"
   side="BOTH"

@@ -1,32 +1,30 @@
 {
   "variants": {
     "face=floor": {
-      "model": "material_elements_panels_plates_slabs:block/birch_plate",
-      "y": 180
+      "model": "material_elements_panels_plates_slabs:block/plate/birch_plate"
     },
     "face=wall,facing=north": {
-      "model": "material_elements_panels_plates_slabs:block/birch_plate",
-      "x": 90
+      "model": "material_elements_panels_plates_slabs:block/plate/birch_plate",
+      "x": 270,
+      "y": 180
     },
     "face=wall,facing=east": {
-      "model": "material_elements_panels_plates_slabs:block/birch_plate",
-      "x": 90,
-      "y": 90
-    },
-    "face=wall,facing=south": {
-      "model": "material_elements_panels_plates_slabs:block/birch_plate",
-      "x": 90,
-      "y": 180
-    },
-    "face=wall,facing=west": {
-      "model": "material_elements_panels_plates_slabs:block/birch_plate",
-      "x": 90,
+      "model": "material_elements_panels_plates_slabs:block/plate/birch_plate",
+      "x": 270,
       "y": 270
     },
+    "face=wall,facing=south": {
+      "model": "material_elements_panels_plates_slabs:block/plate/birch_plate",
+      "x": 270
+    },
+    "face=wall,facing=west": {
+      "model": "material_elements_panels_plates_slabs:block/plate/birch_plate",
+      "x": 270,
+      "y": 90
+    },
     "face=ceiling": {
-      "model": "material_elements_panels_plates_slabs:block/birch_plate",
-      "x": 180,
-      "y": 180
+      "model": "material_elements_panels_plates_slabs:block/plate/birch_plate",
+      "x": 180
     }
   }
 }

@@ -27,7 +27,6 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -124,14 +123,6 @@ public class PanelBlock extends MultiFaceBlock {
 
   public PanelBlock(Properties properties) {
     super(properties);
-    this.registerDefaultState(this.stateDefinition.any().setValue(UP, false).setValue(DOWN, false)
-        .setValue(NORTH, false).setValue(EAST, false).setValue(SOUTH, false).setValue(WEST, false));
-  }
-
-  @Override
-  protected void createBlockStateDefinition(
-      StateDefinition.Builder<Block, BlockState> stateDefinition) {
-    stateDefinition.add(UP, DOWN, NORTH, EAST, SOUTH, WEST);
   }
 
   /** @deprecated */
@@ -145,6 +136,9 @@ public class PanelBlock extends MultiFaceBlock {
     boolean faceEast = blockState.getValue(EAST);
     boolean faceSouth = blockState.getValue(SOUTH);
     boolean faceWest = blockState.getValue(WEST);
+
+    // Get number of faces based on current stats and not from stored block state to avoid
+    // missing updates block state updates which leads to side effects.
     int numOfFaces = (faceUp ? 1 : 0) + (faceDown ? 1 : 0) + (faceNorth ? 1 : 0)
         + (faceEast ? 1 : 0) + (faceSouth ? 1 : 0) + (faceWest ? 1 : 0);
 
