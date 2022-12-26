@@ -1,4 +1,4 @@
-# Material Elements: Panels, Plates and Slabs (1.18.2)
+# Material Elements: Panels, Plates and Slabs (1.19.2)
 
 [![Material and Elements Panels, Plates and Slabs Downloads](http://cf.way2muchnoise.eu/full_775901_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-panels-plates-and-slabs)
 [![Material and Elements Panels, Plates and Slabs Versions](http://cf.way2muchnoise.eu/versions/Minecraft_775901_all.svg)](https://www.curseforge.com/minecraft/mc-mods/material-elements-panels-plates-and-slabs)
