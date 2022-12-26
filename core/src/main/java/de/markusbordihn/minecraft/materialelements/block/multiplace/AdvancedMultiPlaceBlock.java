@@ -48,22 +48,15 @@ public class AdvancedMultiPlaceBlock extends MultiPlaceBlock {
       Double relativeClickLocation = context.getClickLocation().y % 1;
 
       // Use calculation for a negative or positive number.
-      if (relativeClickLocation > 0) {
-        if (relativeClickLocation < 0.3) {
-          attachFace = AttachFace.FLOOR;
-        } else if (relativeClickLocation > 0.7) {
-          attachFace = AttachFace.CEILING;
-        } else {
-          attachFace = AttachFace.WALL;
-        }
+      boolean isPositivePosition = relativeClickLocation >= 0;
+      if ((isPositivePosition && relativeClickLocation < 0.3)
+          || (!isPositivePosition && relativeClickLocation < -0.7)) {
+        attachFace = AttachFace.FLOOR;
+      } else if ((isPositivePosition && relativeClickLocation > 0.7)
+          || (!isPositivePosition && relativeClickLocation > -0.3)) {
+        attachFace = AttachFace.CEILING;
       } else {
-        if (relativeClickLocation < -0.7) {
-          attachFace = AttachFace.FLOOR;
-        } else if (relativeClickLocation > -0.3) {
-          attachFace = AttachFace.CEILING;
-        } else {
-          attachFace = AttachFace.WALL;
-        }
+        attachFace = AttachFace.WALL;
       }
     }
 

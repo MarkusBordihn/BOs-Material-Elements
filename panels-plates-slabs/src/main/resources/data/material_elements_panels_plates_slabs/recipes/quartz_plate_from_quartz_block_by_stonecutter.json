@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:quartz_block"
+  },
+  "result": "material_elements_panels_plates_slabs:quartz_plate",
+  "count": 8
+}

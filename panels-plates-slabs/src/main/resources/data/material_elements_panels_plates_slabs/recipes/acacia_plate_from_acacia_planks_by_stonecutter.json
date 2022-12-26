@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:acacia_planks"
+  },
+  "result": "material_elements_panels_plates_slabs:acacia_plate",
+  "count": 4
+}

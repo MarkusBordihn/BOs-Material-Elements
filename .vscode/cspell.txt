@@ -34,9 +34,12 @@ markusbordihn
 materialelements
 materialelementsarmortoolsweapons
 materialelementsdecorative
+materialelementspanelsplatesslabs
 minecraft
 minecraftforge
 MOJANG
+multiface
+multiplace
 myfirstmod
 NETHERIRE
 NETHERITE

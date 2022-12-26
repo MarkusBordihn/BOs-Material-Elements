@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "material_elements_panels_plates_slabs:acacia_half_slab",
+    "material_elements_panels_plates_slabs:acacia_panel",
+    "material_elements_panels_plates_slabs:acacia_plate",
+    "material_elements_panels_plates_slabs:birch_half_slab",
+    "material_elements_panels_plates_slabs:birch_panel",
+    "material_elements_panels_plates_slabs:birch_plate",
+    "material_elements_panels_plates_slabs:crimson_half_slab",
+    "material_elements_panels_plates_slabs:crimson_panel",
+    "material_elements_panels_plates_slabs:crimson_plate",
+    "material_elements_panels_plates_slabs:dark_oak_half_slab",
+    "material_elements_panels_plates_slabs:dark_oak_panel",
+    "material_elements_panels_plates_slabs:dark_oak_plate",
+    "material_elements_panels_plates_slabs:jungle_half_slab",
+    "material_elements_panels_plates_slabs:jungle_panel",
+    "material_elements_panels_plates_slabs:jungle_plate",
+    "material_elements_panels_plates_slabs:oak_framed_hopper",
+    "material_elements_panels_plates_slabs:oak_half_slab",
+    "material_elements_panels_plates_slabs:oak_panel",
+    "material_elements_panels_plates_slabs:oak_plate",
+    "material_elements_panels_plates_slabs:spruce_half_slab",
+    "material_elements_panels_plates_slabs:spruce_panel",
+    "material_elements_panels_plates_slabs:spruce_plate",
+    "material_elements_panels_plates_slabs:warped_half_slab",
+    "material_elements_panels_plates_slabs:warped_panel",
+    "material_elements_panels_plates_slabs:warped_plate"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements_panels_plates_slabs:block/template/panel_up",
+  "textures": {
+    "texture": "minecraft:block/dark_oak_planks",
+    "particle": "minecraft:block/dark_oak_planks"
+  }
+}

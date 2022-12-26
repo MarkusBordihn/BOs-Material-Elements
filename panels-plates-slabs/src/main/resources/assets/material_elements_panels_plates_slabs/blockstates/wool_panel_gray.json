@@ -1,0 +1,52 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "up": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/wool_panel_gray_up"
+      }
+    },
+    {
+      "when": {
+        "down": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/wool_panel_gray"
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/wool_panel_gray_north"
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/wool_panel_gray_east"
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/wool_panel_gray_south"
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/wool_panel_gray_west"
+      }
+    }
+  ]
+}
