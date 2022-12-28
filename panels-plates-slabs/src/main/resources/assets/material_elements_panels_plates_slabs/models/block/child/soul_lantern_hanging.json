@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:block/soul_lantern_hanging",
+  "render_type": "cutout_mipped"
+}

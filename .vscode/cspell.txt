@@ -27,6 +27,7 @@ grandle
 halfslab
 IGNORESERVERONLY
 Ingame
+instabuild
 Knockback
 lefthand
 markus
@@ -37,12 +38,15 @@ materialelementsdecorative
 materialelementspanelsplatesslabs
 minecraft
 minecraftforge
+mipped
 MOJANG
 multiface
 multiplace
 myfirstmod
 NETHERIRE
 NETHERITE
+Pathfindable
+PODZOL
 Randomizable
 Reposts
 righthand

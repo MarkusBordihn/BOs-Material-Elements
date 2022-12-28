@@ -7,7 +7,7 @@
 
 Material Elements Decorative adds new decorative blocks and items for your world based on Material Elements.
 
-This mod requires [Bo's Material Elements][material-elements] as basis.
+This mod requires [Material Elements][material-elements] and [Material Elements: Panels, Plates and Slabs][material-elements-panels-plates-slabs] as basis.
 
 ## Raised Floors
 
@@ -27,12 +27,6 @@ The blocks are not allowing any natural mob spawning which make them the perfect
 
 - Steel Chain
 
-## Glass Slabs
-
-Glass Slabs are used for decorative and could be placed vertical or horizontal.
-
-![Glass Slab][glass_slab]
-
 ## Cloth Blocks
 
 Cloth blocks are used for decorative and exists in different forms like block, slab, triangular which could be placed vertical or horizontal.
@@ -46,34 +40,9 @@ The additionally compatible with other storage systems like **Storage Drawers**.
 
 ![Framed Hoppers][framed_hoppers]
 
-## 🪵 Wood Panels, Plates and half-size Slabs
-
-Wood panels are used to hide specific stuff like cables or pipes.
-Plates and half-size slabs are used for other stuff.
-
-![Panel Plates Slap 01][panel_plates_slap_01]
-![Panel Plates Slap 02][panel_plates_slap_02]
-
-## Wool Slabs
-
-Wool Slabs are used for decorative and could be placed vertical or horizontal.
-
-![Wool Slab][wool_slab]
-
 ## Recipe Overview 👁️
 
 This mods adds a lot of additional crafting recipes to allow the crafting of the added elements or to simplify crafting of existing items like wood cutting.
-
-## Slab, Half-Size Slab, Plate and Panel
-
-One part of the additional decorative materials are half-size slabs, plates and panels.
-
-In general the have the following conversions over the stone-cutter:
-
-- 1 x Block -> 2 x Slabs
-- 1 x Slab -> 2 x half-size Slabs
-- 1 x Half-size Slab -> 2 x Plates
-- 1 x Plates -> 2 x Panels
 
 ## Version Status Overview 🛠️
 
@@ -94,12 +63,9 @@ The MIT [LICENSE.md](../LICENSE.md) applies only to the code in this repository.
 
 [logo]: examples/material_elements_decorative.gif
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
+[material-elements-panels-plates-slabs]: https://www.curseforge.com/minecraft/mc-mods/material-elements-panels-plates-slabs
 [framed_hoppers]: examples/screenshots/framed_hoppers.png
-[panel_plates_slap_01]: examples/screenshots/panel_plates_slaps.png
-[panel_plates_slap_02]: examples/screenshots/panel_plates_slaps_02.png
 [raised_floor_bottom]: examples/screenshots/raised_floor_bottom.png
 [raised_floor_top]: examples/screenshots/raised_floor_top.png
 [steel_lantern]: examples/screenshots/steel_lantern.png
-[glass_slab]: examples/screenshots/glass_slab.png
 [cloth_blocks]: examples/screenshots/cloth_blocks.png
-[wool_slab]: examples/screenshots/wool_slab.png

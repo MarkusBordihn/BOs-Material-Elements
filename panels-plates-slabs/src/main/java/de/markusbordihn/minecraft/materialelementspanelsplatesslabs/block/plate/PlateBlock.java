@@ -28,10 +28,10 @@ import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-import de.markusbordihn.minecraft.materialelements.block.multiplace.AdvancedMultiPlaceBlock;
+import de.markusbordihn.minecraft.materialelements.block.multiplace.AdvancedMultiPlaceWaterloggedBlock;
 import de.markusbordihn.minecraft.materialelements.block.multiplace.MultiPlaceBlock;
 
-public class PlateBlock extends AdvancedMultiPlaceBlock {
+public class PlateBlock extends AdvancedMultiPlaceWaterloggedBlock {
 
   // We need a VoxelShape for each side to cover all faces and possibilities
   protected static final VoxelShape FLOOR_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 2.0, 16.0);
@@ -42,7 +42,7 @@ public class PlateBlock extends AdvancedMultiPlaceBlock {
   protected static final VoxelShape FACING_WEST_AABB = Block.box(14.0, 0.0, 0.0, 16.0, 16.0, 16.0);
 
   public PlateBlock(Block block) {
-    super(BlockBehaviour.Properties.copy(block));
+    this(BlockBehaviour.Properties.copy(block));
   }
 
   public PlateBlock(Properties properties) {

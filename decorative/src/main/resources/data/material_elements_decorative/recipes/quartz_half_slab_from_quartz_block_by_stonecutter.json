@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:quartz_block"
-  },
-  "result": "material_elements_decorative:quartz_half_slab",
-  "count": 4
-}

@@ -23,20 +23,33 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos.MutableBlockPos;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import de.markusbordihn.minecraft.materialelements.Constants;
-import de.markusbordihn.minecraft.materialelements.block.multiface.MultiFaceBlock;
+import de.markusbordihn.minecraft.materialelements.block.multiface.MultiFaceWaterloggedBlock;
 
-public class PanelBlock extends MultiFaceBlock {
+public class PanelBlock extends MultiFaceWaterloggedBlock {
 
   protected static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
+
+  // Additional Block Stats
+  public static final EnumProperty<ChildPanelBlock> CHILD =
+      EnumProperty.create("child", ChildPanelBlock.class);
 
   // Basic VoxelShape for single placements.
   protected static final VoxelShape UP_AABB = Block.box(0.0, 15.0, 0.0, 16.0, 16.0, 16.0);
@@ -123,6 +136,68 @@ public class PanelBlock extends MultiFaceBlock {
 
   public PanelBlock(Properties properties) {
     super(properties);
+    this.registerDefaultState(this.defaultBlockState().setValue(CHILD, ChildPanelBlock.NONE));
+  }
+
+  public static ChildPanelBlock getChildPanelBlock(ItemStack itemStack, Direction direction) {
+    ChildPanelBlock childPanelBlock = ChildPanelBlock.NONE;
+    if (itemStack.is(Items.LANTERN)) {
+      // Handle Lantern variants
+      if (direction == Direction.UP) {
+        childPanelBlock = ChildPanelBlock.LANTERN_HANGING;
+      } else if (direction == Direction.DOWN) {
+        childPanelBlock = ChildPanelBlock.LANTERN;
+      }
+    } else if (itemStack.is(Items.SOUL_LANTERN)) {
+      // Handle Soul Lantern variants
+      if (direction == Direction.UP) {
+        childPanelBlock = ChildPanelBlock.SOUL_LANTERN_HANGING;
+      } else if (direction == Direction.DOWN) {
+        childPanelBlock = ChildPanelBlock.SOUL_LANTERN;
+      }
+    } else if (itemStack.is(Items.TORCH)) {
+      // Torch
+      if (direction == Direction.DOWN) {
+        childPanelBlock = ChildPanelBlock.TORCH;
+      } else if (direction == Direction.NORTH) {
+        childPanelBlock = ChildPanelBlock.TORCH_NORTH;
+      } else if (direction == Direction.EAST) {
+        childPanelBlock = ChildPanelBlock.TORCH_EAST;
+      } else if (direction == Direction.SOUTH) {
+        childPanelBlock = ChildPanelBlock.TORCH_SOUTH;
+      } else if (direction == Direction.WEST) {
+        childPanelBlock = ChildPanelBlock.TORCH_WEST;
+      }
+    } else if (itemStack.is(Items.SOUL_TORCH) && direction != Direction.UP) {
+      // Soul Torch
+      if (direction == Direction.DOWN) {
+        childPanelBlock = ChildPanelBlock.SOUL_TORCH;
+      } else if (direction == Direction.NORTH) {
+        childPanelBlock = ChildPanelBlock.SOUL_TORCH_NORTH;
+      } else if (direction == Direction.EAST) {
+        childPanelBlock = ChildPanelBlock.SOUL_TORCH_EAST;
+      } else if (direction == Direction.SOUTH) {
+        childPanelBlock = ChildPanelBlock.SOUL_TORCH_SOUTH;
+      } else if (direction == Direction.WEST) {
+        childPanelBlock = ChildPanelBlock.SOUL_TORCH_WEST;
+      }
+    }
+    return childPanelBlock;
+  }
+
+  @Override
+  public int getLightEmission(BlockState blockState, BlockGetter level, BlockPos blockPos) {
+    if (blockState.getValue(CHILD) != ChildPanelBlock.NONE) {
+      return 15;
+    }
+    return 0;
+  }
+
+  @Override
+  protected void createBlockStateDefinition(
+      StateDefinition.Builder<Block, BlockState> stateDefinition) {
+    super.createBlockStateDefinition(stateDefinition);
+    stateDefinition.add(CHILD);
   }
 
   /** @deprecated */
@@ -287,6 +362,46 @@ public class PanelBlock extends MultiFaceBlock {
     }
 
     return super.getShape(blockState, blockGetter, blockPos, collisionContext);
+  }
+
+  /** @deprecated */
+  @Deprecated
+  @Override
+  public boolean canBeReplaced(BlockState blockState, BlockPlaceContext blockPlaceContext) {
+    ItemStack itemStack = blockPlaceContext.getItemInHand();
+    Player player = blockPlaceContext.getPlayer();
+    if (player == null || player.isCrouching()) {
+      return false;
+    }
+
+    // Support combination of specific items and faces
+    if (!itemStack.is(this.asItem())) {
+      BlockPos blockPos = blockPlaceContext.getClickedPos();
+      Level level = blockPlaceContext.getLevel();
+      ChildPanelBlock child = blockState.getValue(CHILD);
+      Direction direction = blockPlaceContext.getClickedFace();
+
+      // Child block support for items like lanterns, torches, ....
+      // We only adding a child when there are not already any and if the block position mutable.
+      if (child == ChildPanelBlock.NONE && blockPos instanceof MutableBlockPos) {
+        ChildPanelBlock childPanelBlock = getChildPanelBlock(itemStack, direction.getOpposite());
+        if (childPanelBlock != ChildPanelBlock.NONE) {
+          if (!player.getAbilities().instabuild) {
+            itemStack.shrink(1);
+          }
+          level.setBlockAndUpdate(blockPos, blockState.setValue(CHILD, childPanelBlock));
+        }
+      }
+      return false;
+    }
+
+    // Currently supporting only up to 5 faces.
+    if (getNumberOfFaces(blockState) > 5) {
+      return false;
+    }
+
+    Direction placingDirection = blockPlaceContext.getClickedFace().getOpposite();
+    return !hasPlacedDirection(placingDirection, blockState);
   }
 
 }

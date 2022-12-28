@@ -1,7 +1,0 @@
-{
-  "parent": "material_elements_decorative:block/template/half_slab",
-  "textures": {
-    "texture": "minecraft:block/spruce_planks",
-    "particle": "minecraft:block/spruce_planks"
-  }
-}

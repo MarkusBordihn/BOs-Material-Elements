@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:warped_planks"
-  },
-  "result": "material_elements_decorative:warped_panel",
-  "count": 8
-}

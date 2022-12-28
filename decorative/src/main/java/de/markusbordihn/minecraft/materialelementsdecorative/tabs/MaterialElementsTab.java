@@ -28,18 +28,6 @@ public class MaterialElementsTab {
 
   protected MaterialElementsTab() {}
 
-  public static final CreativeModeTab TAB_PANEL_PLATES = new CreativeModeTab("panel_plates") {
-    public ItemStack makeIcon() {
-      return new ItemStack(ModItems.OAK_PLATE.get());
-    }
-  };
-
-  public static final CreativeModeTab TAB_SLABS = new CreativeModeTab("slabs") {
-    public ItemStack makeIcon() {
-      return new ItemStack(ModItems.WOOL_SLAB_RED.get());
-    }
-  };
-
   public static final CreativeModeTab TAB_FRAMED_HOPPERS = new CreativeModeTab("framed_hoppers") {
     public ItemStack makeIcon() {
       return new ItemStack(ModItems.OAK_FRAMED_HOPPER.get());

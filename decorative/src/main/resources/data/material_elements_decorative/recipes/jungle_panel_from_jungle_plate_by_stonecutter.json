@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "material_elements_decorative:jungle_plate"
-  },
-  "result": "material_elements_decorative:jungle_panel",
-  "count": 2
-}

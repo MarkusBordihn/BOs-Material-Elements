@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:spruce_slab"
-  },
-  "result": "material_elements_decorative:spruce_panel",
-  "count": 4
-}
