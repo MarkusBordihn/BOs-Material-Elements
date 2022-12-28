@@ -31,7 +31,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.AttachFace;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
@@ -39,25 +38,24 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-import de.markusbordihn.minecraft.materialelements.block.multiplace.AdvancedMultiPlaceBlock;
+import de.markusbordihn.minecraft.materialelements.block.multiplace.AdvancedMultiPlaceWaterloggedBlock;
 import de.markusbordihn.minecraft.materialelements.block.multiplace.MultiPlaceBlock;
 
-public class SlabBlock extends AdvancedMultiPlaceBlock {
+public class SlabBlock extends AdvancedMultiPlaceWaterloggedBlock {
 
   // Block stats
   public static final BooleanProperty STACKED = BooleanProperty.create("stacked");
-  public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
   // We need a VoxelShape for each side to cover all faces and possibilities
   protected static final VoxelShape FLOOR_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 8.0, 16.0);
   protected static final VoxelShape CEILING_AABB = Block.box(0.0, 8.0, 0.0, 16.0, 16.0, 16.0);
+  protected static final VoxelShape FACING_NORTH_AABB = Block.box(0.0, 0.0, 8.0, 16.0, 16.0, 16.0);
   protected static final VoxelShape FACING_EAST_AABB = Block.box(0.0, 0.0, 0.0, 8.0, 16.0, 16.0);
   protected static final VoxelShape FACING_SOUTH_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 8.0);
-  protected static final VoxelShape FACING_NORTH_AABB = Block.box(0.0, 0.0, 8.0, 16.0, 16.0, 16.0);
   protected static final VoxelShape FACING_WEST_AABB = Block.box(8.0, 0.0, 0.0, 16.0, 16.0, 16.0);
 
   public SlabBlock(Block block) {
-    super(BlockBehaviour.Properties.copy(block));
+    this(BlockBehaviour.Properties.copy(block));
   }
 
   public SlabBlock(Properties properties) {
@@ -75,7 +73,7 @@ public class SlabBlock extends AdvancedMultiPlaceBlock {
   protected void createBlockStateDefinition(
       StateDefinition.Builder<Block, BlockState> stateDefinition) {
     super.createBlockStateDefinition(stateDefinition);
-    stateDefinition.add(STACKED, WATERLOGGED);
+    stateDefinition.add(STACKED);
   }
 
   /** @deprecated */
@@ -97,7 +95,7 @@ public class SlabBlock extends AdvancedMultiPlaceBlock {
       return FLOOR_AABB;
     }
 
-    // Handle the Wall faces for each direction
+    // Handle the wall faces for each direction
     switch (blockState.getValue(MultiPlaceBlock.FACING)) {
       case NORTH:
         return FACING_NORTH_AABB;
@@ -123,8 +121,8 @@ public class SlabBlock extends AdvancedMultiPlaceBlock {
     } else {
       FluidState fluidState = blockPlaceContext.getLevel().getFluidState(blockPos);
       BlockState blockState = super.getStateForPlacement(blockPlaceContext);
-      return blockState.setValue(STACKED, false).setValue(WATERLOGGED,
-          Boolean.valueOf(fluidState.getType() == Fluids.WATER));
+      return blockState != null ? blockState.setValue(STACKED, false).setValue(WATERLOGGED,
+          Boolean.valueOf(fluidState.getType() == Fluids.WATER)) : blockState;
     }
   }
 

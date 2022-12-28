@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:dark_oak_planks"
-  },
-  "result": "material_elements_decorative:dark_oak_plate",
-  "count": 4
-}

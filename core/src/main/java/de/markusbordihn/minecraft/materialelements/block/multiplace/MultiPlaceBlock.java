@@ -61,6 +61,8 @@ public class MultiPlaceBlock extends Block {
         .setValue(FACING, Direction.NORTH));
   }
 
+  /** @deprecated */
+  @Deprecated
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {

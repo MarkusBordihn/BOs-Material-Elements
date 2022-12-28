@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:birch_planks"
-  },
-  "result": "material_elements_decorative:birch_panel",
-  "count": 8
-}

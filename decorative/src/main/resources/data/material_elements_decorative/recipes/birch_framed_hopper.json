@@ -6,7 +6,7 @@
       "item": "minecraft:hopper"
     },
     "#": {
-      "item": "material_elements_decorative:birch_panel"
+      "item": "material_elements_panels_plates_slabs:birch_panel"
     }
   },
   "result": {

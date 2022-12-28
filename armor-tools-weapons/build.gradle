@@ -131,8 +131,8 @@ dependencies {
   minecraft 'net.minecraftforge:forge:1.18.2-40.1.92'
 
   // Required: Bo's Material Elements (dev dependency)
-  compileOnly fg.deobf("de.markusbordihn.minecraft.materialelements:core:3.7.0")
-  runtimeOnly fg.deobf("de.markusbordihn.minecraft.materialelements:core:3.7.0")
+  compileOnly fg.deobf("de.markusbordihn.minecraft.materialelements:core:3.9.0")
+  runtimeOnly fg.deobf("de.markusbordihn.minecraft.materialelements:core:3.9.0")
 
   // Additional helpful Mods for development (runtime depenedency)
   runtimeOnly fg.deobf("curse.maven:item-zoom-261725:3749454")

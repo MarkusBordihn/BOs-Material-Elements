@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:crimson_slab"
-  },
-  "result": "material_elements_decorative:crimson_half_slab",
-  "count": 2
-}

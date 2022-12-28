@@ -1,0 +1,6 @@
+{
+  "parent": "material_elements_panels_plates_slabs:block/child/lantern_template",
+  "textures": {
+    "lantern": "minecraft:block/lantern"
+  }
+}

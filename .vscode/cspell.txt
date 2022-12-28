@@ -27,6 +27,7 @@ grandle
 halfslab
 IGNORESERVERONLY
 Ingame
+instabuild
 Knockback
 lefthand
 markus
@@ -43,6 +44,8 @@ multiplace
 myfirstmod
 NETHERIRE
 NETHERITE
+Pathfindable
+PODZOL
 Randomizable
 Reposts
 righthand

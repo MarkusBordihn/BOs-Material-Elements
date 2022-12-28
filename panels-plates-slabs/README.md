@@ -7,13 +7,24 @@ Material Elements Panels, Plates and Slabs adds new decorative blocks and items 
 
 **This mod requires [Bo's Material Elements][material-elements] as basis.**
 
+## Multi-face Panels
+
+Multi-face panels allows to places several panels in a single block.
+This allows an easily way to cover / hide specific parts of machines or just for decoration.
+
+![Panel][panel]
+
+Additional the panels allows the combination with lanterns and torches in the same single block spot.
+
+![Panel Light][panel_light]
+
 ## Glass Slabs
 
 Glass Slabs are used for decorative and could be placed vertical or horizontal.
 
 ![Glass Slab][glass_slab]
 
-### 🪵 Wood Panels, Plates and half-size Slabs
+### 🪵 Wood Plates and half-size Slabs
 
 Wood panels are used to hide specific stuff like cables or pipes.
 Plates and half-size slabs are used for other stuff.
@@ -51,6 +62,8 @@ In general the have the following conversions over the stone-cutter:
 | Forge 1.19.2   | ✔️ Active development |
 
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
+[panel]: examples/screenshots/panel.png
+[panel_light]: examples/screenshots/panel_light.png
 [panel_plates_slap_01]: examples/screenshots/panel_plates_slaps.png
 [panel_plates_slap_02]: examples/screenshots/panel_plates_slaps_02.png
 [glass_slab]: examples/screenshots/glass_slab.png

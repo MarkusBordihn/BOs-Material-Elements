@@ -40,6 +40,8 @@ public class ClientRenderer {
 
     event.enqueueWork(() -> {
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_SLAB.get(), RenderType.translucent());
+
+      ItemBlockRenderTypes.setRenderLayer(ModBlocks.OAK_PANEL.get(), RenderType.cutoutMipped());
     });
   }
 }

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:purple_wool"
-  },
-  "result": "material_elements_decorative:wool_slab_purple",
-  "count": 2
-}
