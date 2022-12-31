@@ -24,7 +24,6 @@ import org.apache.logging.log4j.Logger;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos.MutableBlockPos;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -129,6 +128,9 @@ public class PanelBlock extends MultiFaceWaterloggedBlock {
       Shapes.or(DOWN_EAST_AABB, SOUTH_WEST_AABB);
   protected static final VoxelShape NORTH_EAST_SOUTH_WEST_AABB =
       Shapes.or(NORTH_EAST_AABB, SOUTH_WEST_AABB);
+
+  // Duplication protection
+  private BlockPlaceContext lastBlockPlaceContext = null;
 
   public PanelBlock(Block block) {
     this(BlockBehaviour.Properties.copy(block));
@@ -382,14 +384,17 @@ public class PanelBlock extends MultiFaceWaterloggedBlock {
       Direction direction = blockPlaceContext.getClickedFace();
 
       // Child block support for items like lanterns, torches, ....
-      // We only adding a child when there are not already any and if the block position mutable.
-      if (child == ChildPanelBlock.NONE && blockPos instanceof MutableBlockPos) {
+      // We only adding a child when there are not already any.
+      // Furthermore we double check the block place context to avoid any kind of duplication.
+      if (child == ChildPanelBlock.NONE && !blockPlaceContext.equals(lastBlockPlaceContext)) {
         ChildPanelBlock childPanelBlock = getChildPanelBlock(itemStack, direction.getOpposite());
         if (childPanelBlock != ChildPanelBlock.NONE) {
+          log.debug("Adding child block {} at {} for {}", childPanelBlock, blockState, blockPos);
           if (!player.getAbilities().instabuild) {
             itemStack.shrink(1);
           }
           level.setBlockAndUpdate(blockPos, blockState.setValue(CHILD, childPanelBlock));
+          this.lastBlockPlaceContext = blockPlaceContext;
         }
       }
       return false;
