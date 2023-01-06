@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:stone_bricks"
+  },
+  "result": "material_elements_panels_plates_slabs:stone_brick_panel",
+  "count": 16
+}

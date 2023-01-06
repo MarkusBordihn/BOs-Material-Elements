@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "face=floor": {
+      "model": "material_elements_panels_plates_slabs:block/half_slab/brick_half_slab"
+    },
+    "face=wall,facing=north": {
+      "model": "material_elements_panels_plates_slabs:block/half_slab/brick_half_slab",
+      "x": 270,
+      "y": 180
+    },
+    "face=wall,facing=east": {
+      "model": "material_elements_panels_plates_slabs:block/half_slab/brick_half_slab",
+      "x": 270,
+      "y": 270
+    },
+    "face=wall,facing=south": {
+      "model": "material_elements_panels_plates_slabs:block/half_slab/brick_half_slab",
+      "x": 270
+    },
+    "face=wall,facing=west": {
+      "model": "material_elements_panels_plates_slabs:block/half_slab/brick_half_slab",
+      "x": 270,
+      "y": 90
+    },
+    "face=ceiling": {
+      "model": "material_elements_panels_plates_slabs:block/half_slab/brick_half_slab",
+      "x": 180
+    }
+  }
+}

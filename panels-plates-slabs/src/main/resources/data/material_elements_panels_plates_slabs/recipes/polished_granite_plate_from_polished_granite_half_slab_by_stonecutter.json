@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "material_elements_panels_plates_slabs:polished_granite_half_slab"
+  },
+  "result": "material_elements_panels_plates_slabs:polished_granite_plate",
+  "count": 2
+}

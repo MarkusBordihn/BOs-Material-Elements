@@ -42,24 +42,181 @@ public class ModItems {
 
   @TemplateEntryPoint("Register Block Items")
 
-  // Quartz (normal and smooth)
+  // Acacia
+  public static final RegistryObject<Item> ACACIA_PANEL =
+      ITEMS.register("acacia_panel", () -> new BlockItem(ModBlocks.ACACIA_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> ACACIA_PLATE =
+      ITEMS.register("acacia_plate", () -> new BlockItem(ModBlocks.ACACIA_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> ACACIA_HALF_SLAB =
+      ITEMS.register("acacia_half_slab", () -> new BlockItem(ModBlocks.ACACIA_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Andesite
+  public static final RegistryObject<Item> ANDESITE_PANEL =
+      ITEMS.register("andesite_panel", () -> new BlockItem(ModBlocks.ANDESITE_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> ANDESITE_PLATE =
+      ITEMS.register("andesite_plate", () -> new BlockItem(ModBlocks.ANDESITE_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> ANDESITE_HALF_SLAB =
+      ITEMS.register("andesite_half_slab", () -> new BlockItem(ModBlocks.ANDESITE_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Polished Andesite
+  public static final RegistryObject<Item> POLISHED_ANDESITE_PANEL = ITEMS.register(
+      "polished_andesite_panel", () -> new BlockItem(ModBlocks.POLISHED_ANDESITE_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> POLISHED_ANDESITE_PLATE = ITEMS.register(
+      "polished_andesite_plate", () -> new BlockItem(ModBlocks.POLISHED_ANDESITE_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> POLISHED_ANDESITE_HALF_SLAB =
+      ITEMS.register("polished_andesite_half_slab",
+          () -> new BlockItem(ModBlocks.POLISHED_ANDESITE_HALF_SLAB.get(),
+              new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+           // Birch
+  public static final RegistryObject<Item> BIRCH_PANEL =
+      ITEMS.register("birch_panel", () -> new BlockItem(ModBlocks.BIRCH_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> BIRCH_PLATE =
+      ITEMS.register("birch_plate", () -> new BlockItem(ModBlocks.BIRCH_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> BIRCH_HALF_SLAB =
+      ITEMS.register("birch_half_slab", () -> new BlockItem(ModBlocks.BIRCH_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+            // Brick
+  public static final RegistryObject<Item> BRICK_PANEL =
+      ITEMS.register("brick_panel", () -> new BlockItem(ModBlocks.BRICK_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> BRICKS_PLATE =
+      ITEMS.register("brick_plate", () -> new BlockItem(ModBlocks.BRICKS_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> BRICKS_HALF_SLAB =
+      ITEMS.register("brick_half_slab", () -> new BlockItem(ModBlocks.BRICKS_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Crimson
+  public static final RegistryObject<Item> CRIMSON_PANEL =
+      ITEMS.register("crimson_panel", () -> new BlockItem(ModBlocks.CRIMSON_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> CRIMSON_PLATE =
+      ITEMS.register("crimson_plate", () -> new BlockItem(ModBlocks.CRIMSON_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> CRIMSON_HALF_SLAB =
+      ITEMS.register("crimson_half_slab", () -> new BlockItem(ModBlocks.CRIMSON_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Granite
+  public static final RegistryObject<Item> GRANITE_PANEL =
+      ITEMS.register("granite_panel", () -> new BlockItem(ModBlocks.GRANITE_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> GRANITE_PLATE =
+      ITEMS.register("granite_plate", () -> new BlockItem(ModBlocks.GRANITE_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> GRANITE_HALF_SLAB =
+      ITEMS.register("granite_half_slab", () -> new BlockItem(ModBlocks.GRANITE_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Polished Granite
+  public static final RegistryObject<Item> POLISHED_GRANITE_PANEL = ITEMS.register(
+      "polished_granite_panel", () -> new BlockItem(ModBlocks.POLISHED_GRANITE_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> POLISHED_GRANITE_PLATE = ITEMS.register(
+      "polished_granite_plate", () -> new BlockItem(ModBlocks.POLISHED_GRANITE_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> POLISHED_GRANITE_HALF_SLAB = ITEMS.register(
+      "polished_granite_half_slab", () -> new BlockItem(ModBlocks.POLISHED_GRANITE_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Jungle
+  public static final RegistryObject<Item> JUNGLE_HALF_SLAB =
+      ITEMS.register("jungle_half_slab", () -> new BlockItem(ModBlocks.JUNGLE_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> JUNGLE_PLATE =
+      ITEMS.register("jungle_plate", () -> new BlockItem(ModBlocks.JUNGLE_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> JUNGLE_PANEL =
+      ITEMS.register("jungle_panel", () -> new BlockItem(ModBlocks.JUNGLE_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Oak
+  public static final RegistryObject<Item> OAK_PANEL =
+      ITEMS.register("oak_panel", () -> new BlockItem(ModBlocks.OAK_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> OAK_PLATE =
+      ITEMS.register("oak_plate", () -> new BlockItem(ModBlocks.OAK_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> OAK_HALF_SLAB =
+      ITEMS.register("oak_half_slab", () -> new BlockItem(ModBlocks.OAK_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Dark Oak
+  public static final RegistryObject<Item> DARK_OAK_PANEL =
+      ITEMS.register("dark_oak_panel", () -> new BlockItem(ModBlocks.DARK_OAK_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> DARK_OAK_PLATE =
+      ITEMS.register("dark_oak_plate", () -> new BlockItem(ModBlocks.DARK_OAK_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> DARK_OAK_HALF_SLAB =
+      ITEMS.register("dark_oak_half_slab", () -> new BlockItem(ModBlocks.DARK_OAK_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Spruce
+  public static final RegistryObject<Item> SPRUCE_PANEL =
+      ITEMS.register("spruce_panel", () -> new BlockItem(ModBlocks.SPRUCE_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> SPRUCE_PLATE =
+      ITEMS.register("spruce_plate", () -> new BlockItem(ModBlocks.SPRUCE_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> SPRUCE_HALF_SLAB =
+      ITEMS.register("spruce_half_slab", () -> new BlockItem(ModBlocks.SPRUCE_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Stone Bricks
+  public static final RegistryObject<Item> STONE_BRICK_PANEL =
+      ITEMS.register("stone_brick_panel", () -> new BlockItem(ModBlocks.STONE_BRICK_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> STONE_BRICKS_PLATE =
+      ITEMS.register("stone_brick_plate", () -> new BlockItem(ModBlocks.STONE_BRICKS_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> STONE_BRICKS_HALF_SLAB = ITEMS
+      .register("stone_brick_half_slab", () -> new BlockItem(ModBlocks.STONE_BRICKS_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Warped
+  public static final RegistryObject<Item> WARPED_PANEL =
+      ITEMS.register("warped_panel", () -> new BlockItem(ModBlocks.WARPED_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> WARPED_PLATE =
+      ITEMS.register("warped_plate", () -> new BlockItem(ModBlocks.WARPED_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+  public static final RegistryObject<Item> WARPED_HALF_SLAB =
+      ITEMS.register("warped_half_slab", () -> new BlockItem(ModBlocks.WARPED_HALF_SLAB.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Quartz
   public static final RegistryObject<Item> QUARTZ_PANEL =
       ITEMS.register("quartz_panel", () -> new BlockItem(ModBlocks.QUARTZ_PANEL.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
   public static final RegistryObject<Item> QUARTZ_PLATE =
       ITEMS.register("quartz_plate", () -> new BlockItem(ModBlocks.QUARTZ_PLATE.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> QUARTZ_HALF_SLAP =
-      ITEMS.register("quartz_half_slab", () -> new BlockItem(ModBlocks.QUARTZ_HALF_SLAP.get(),
+  public static final RegistryObject<Item> QUARTZ_HALF_SLAB =
+      ITEMS.register("quartz_half_slab", () -> new BlockItem(ModBlocks.QUARTZ_HALF_SLAB.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
+  // Quartz Smooth
   public static final RegistryObject<Item> SMOOTH_QUARTZ_PANEL =
       ITEMS.register("smooth_quartz_panel", () -> new BlockItem(ModBlocks.SMOOTH_QUARTZ_PANEL.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
   public static final RegistryObject<Item> SMOOTH_QUARTZ_PLATE =
       ITEMS.register("smooth_quartz_plate", () -> new BlockItem(ModBlocks.SMOOTH_QUARTZ_PLATE.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> SMOOTH_QUARTZ_HALF_SLAP = ITEMS.register(
-      "smooth_quartz_half_slab", () -> new BlockItem(ModBlocks.SMOOTH_QUARTZ_HALF_SLAP.get(),
+  public static final RegistryObject<Item> SMOOTH_QUARTZ_HALF_SLAB = ITEMS.register(
+      "smooth_quartz_half_slab", () -> new BlockItem(ModBlocks.SMOOTH_QUARTZ_HALF_SLAB.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
 
   // Glass
@@ -67,7 +224,7 @@ public class ModItems {
       ITEMS.register("glass_slab", () -> new BlockItem(ModBlocks.GLASS_SLAB.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
 
-  // Wool Slaps
+  // Wool Slabs
   public static final RegistryObject<Item> WOOL_SLAB_WHITE =
       ITEMS.register("wool_slab_white", () -> new BlockItem(ModBlocks.WOOL_SLAB_WHITE.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
@@ -116,82 +273,4 @@ public class ModItems {
   public static final RegistryObject<Item> WOOL_SLAB_BLACK =
       ITEMS.register("wool_slab_black", () -> new BlockItem(ModBlocks.WOOL_SLAB_BLACK.get(),
           new Item.Properties().tab(MaterialElementsTab.TAB_SLABS)));
-
-  // Wooden Panels
-  public static final RegistryObject<Item> OAK_PANEL =
-      ITEMS.register("oak_panel", () -> new BlockItem(ModBlocks.OAK_PANEL.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> SPRUCE_PANEL =
-      ITEMS.register("spruce_panel", () -> new BlockItem(ModBlocks.SPRUCE_PANEL.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> BIRCH_PANEL =
-      ITEMS.register("birch_panel", () -> new BlockItem(ModBlocks.BIRCH_PANEL.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> JUNGLE_PANEL =
-      ITEMS.register("jungle_panel", () -> new BlockItem(ModBlocks.JUNGLE_PANEL.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> ACACIA_PANEL =
-      ITEMS.register("acacia_panel", () -> new BlockItem(ModBlocks.ACACIA_PANEL.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> DARK_OAK_PANEL =
-      ITEMS.register("dark_oak_panel", () -> new BlockItem(ModBlocks.DARK_OAK_PANEL.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> CRIMSON_PANEL =
-      ITEMS.register("crimson_panel", () -> new BlockItem(ModBlocks.CRIMSON_PANEL.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> WARPED_PANEL =
-      ITEMS.register("warped_panel", () -> new BlockItem(ModBlocks.WARPED_PANEL.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-
-  // Wooden Plates
-  public static final RegistryObject<Item> OAK_PLATE =
-      ITEMS.register("oak_plate", () -> new BlockItem(ModBlocks.OAK_PLATE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> SPRUCE_PLATE =
-      ITEMS.register("spruce_plate", () -> new BlockItem(ModBlocks.SPRUCE_PLATE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> BIRCH_PLATE =
-      ITEMS.register("birch_plate", () -> new BlockItem(ModBlocks.BIRCH_PLATE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> JUNGLE_PLATE =
-      ITEMS.register("jungle_plate", () -> new BlockItem(ModBlocks.JUNGLE_PLATE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> ACACIA_PLATE =
-      ITEMS.register("acacia_plate", () -> new BlockItem(ModBlocks.ACACIA_PLATE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> DARK_OAK_PLATE =
-      ITEMS.register("dark_oak_plate", () -> new BlockItem(ModBlocks.DARK_OAK_PLATE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> CRIMSON_PLATE =
-      ITEMS.register("crimson_plate", () -> new BlockItem(ModBlocks.CRIMSON_PLATE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> WARPED_PLATE =
-      ITEMS.register("warped_plate", () -> new BlockItem(ModBlocks.WARPED_PLATE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-
-  // Wooden Half-Slab
-  public static final RegistryObject<Item> OAK_HALF_SLAB =
-      ITEMS.register("oak_half_slab", () -> new BlockItem(ModBlocks.OAK_HALF_SLAB.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> SPRUCE_HALF_SLAB =
-      ITEMS.register("spruce_half_slab", () -> new BlockItem(ModBlocks.SPRUCE_HALF_SLAB.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> BIRCH_HALF_SLAB =
-      ITEMS.register("birch_half_slab", () -> new BlockItem(ModBlocks.BIRCH_HALF_SLAB.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> JUNGLE_HALF_SLAB =
-      ITEMS.register("jungle_half_slab", () -> new BlockItem(ModBlocks.JUNGLE_HALF_SLAB.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> ACACIA_HALF_SLAB =
-      ITEMS.register("acacia_half_slab", () -> new BlockItem(ModBlocks.ACACIA_HALF_SLAB.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> DARK_OAK_HALF_SLAB =
-      ITEMS.register("dark_oak_half_slab", () -> new BlockItem(ModBlocks.DARK_OAK_HALF_SLAB.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> CRIMSON_HALF_SLAB =
-      ITEMS.register("crimson_half_slab", () -> new BlockItem(ModBlocks.CRIMSON_HALF_SLAB.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
-  public static final RegistryObject<Item> WARPED_HALF_SLAB =
-      ITEMS.register("warped_half_slab", () -> new BlockItem(ModBlocks.WARPED_HALF_SLAB.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
 }

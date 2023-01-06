@@ -9,7 +9,7 @@ Material Elements Panels, Plates and Slabs adds new decorative blocks and items 
 
 ## Multi-face Panels
 
-Multi-face panels allows to places several panels in a single block.
+Multi-face panels allows to places several panels (in each direction) in a single block.
 This allows an easily way to cover / hide specific parts of machines or just for decoration.
 
 ![Panel][panel]
@@ -18,19 +18,42 @@ Additional the panels allows the combination with lanterns and torches in the sa
 
 ![Panel Light][panel_light]
 
+Supported variants:
+
+- Acacia
+- Andesite (normal and polished) *
+- Birch
+- Bricks *
+- Crimson
+- Dark Oak
+- Granite (normal and polished) *
+- Jungle
+- Oak
+- Quartz (normal and polished)
+- Spruce
+- Stone Bricks *
+- Warped
+
+### Examples
+
+![Panel 01][panel_01]
+![Panel 02][panel_02]
+![Panel 03][panel_03]
+![Panel 04][panel_04]
+![Panel 05][panel_05]
+
+## 🪵 Plates and half-size Slabs
+
+Plates and half-size slabs are used for more decorative stuff and could be placed vertical or horizontal.
+
+![Panel Plates Slab 01][panel_plates_slab_01]
+![Panel Plates Slab 02][panel_plates_slab_02]
+
 ## Glass Slabs
 
 Glass Slabs are used for decorative and could be placed vertical or horizontal.
 
 ![Glass Slab][glass_slab]
-
-### 🪵 Wood Plates and half-size Slabs
-
-Wood panels are used to hide specific stuff like cables or pipes.
-Plates and half-size slabs are used for other stuff.
-
-![Panel Plates Slap 01][panel_plates_slap_01]
-![Panel Plates Slap 02][panel_plates_slap_02]
 
 ### Wool Slabs
 
@@ -61,10 +84,15 @@ In general the have the following conversions over the stone-cutter:
 | Forge 1.18.2   | ⚠️ Maintenance only   |
 | Forge 1.19.2   | ✔️ Active development |
 
+[glass_slab]: examples/screenshots/glass_slab.png
 [material-elements]: https://www.curseforge.com/minecraft/mc-mods/material-elements
 [panel]: examples/screenshots/panel.png
+[panel_01]: examples/screenshots/panel_example_01.png
+[panel_02]: examples/screenshots/panel_example_02.png
+[panel_03]: examples/screenshots/panel_example_03.png
+[panel_04]: examples/screenshots/panel_example_04.png
+[panel_05]: examples/screenshots/panel_example_05.png
 [panel_light]: examples/screenshots/panel_light.png
-[panel_plates_slap_01]: examples/screenshots/panel_plates_slaps.png
-[panel_plates_slap_02]: examples/screenshots/panel_plates_slaps_02.png
-[glass_slab]: examples/screenshots/glass_slab.png
+[panel_plates_slab_01]: examples/screenshots/panel_plates_slabs.png
+[panel_plates_slab_02]: examples/screenshots/panel_plates_slabs_02.png
 [wool_slab]: examples/screenshots/wool_slab.png

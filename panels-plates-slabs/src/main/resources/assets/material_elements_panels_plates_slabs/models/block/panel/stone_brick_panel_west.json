@@ -1,0 +1,7 @@
+{
+  "parent": "material_elements_panels_plates_slabs:block/template/panel_west",
+  "textures": {
+    "texture": "minecraft:block/stone_bricks",
+    "particle": "minecraft:block/stone_bricks"
+  }
+}
