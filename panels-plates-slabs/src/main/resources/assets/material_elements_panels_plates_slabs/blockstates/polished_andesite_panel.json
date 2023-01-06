@@ -1,0 +1,170 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "up": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/polished_andesite_panel_up"
+      }
+    },
+    {
+      "when": {
+        "down": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/polished_andesite_panel"
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/polished_andesite_panel_north"
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/polished_andesite_panel_east"
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/polished_andesite_panel_south"
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/panel/polished_andesite_panel_west"
+      }
+    },
+    {
+      "when": {
+        "child": "lantern"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/child/lantern"
+      }
+    },
+    {
+      "when": {
+        "child": "lantern_hanging"
+      },
+      "apply": {
+        "model": "minecraft:block/lantern_hanging"
+      }
+    },
+    {
+      "when": {
+        "child": "soul_lantern"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/child/soul_lantern"
+      }
+    },
+    {
+      "when": {
+        "child": "soul_lantern_hanging"
+      },
+      "apply": {
+        "model": "minecraft:block/soul_lantern_hanging"
+      }
+    },
+    {
+      "when": {
+        "child": "torch"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/child/torch"
+      }
+    },
+    {
+      "when": {
+        "child": "torch_north"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/child/torch_wall",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "child": "torch_east"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/child/torch_wall",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "child": "torch_south"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/child/torch_wall",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "child": "torch_west"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/child/torch_wall"
+      }
+    },
+    {
+      "when": {
+        "child": "soul_torch"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/child/soul_torch"
+      }
+    },
+    {
+      "when": {
+        "child": "soul_torch_north"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/child/soul_torch_wall",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "child": "soul_torch_east"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/child/soul_torch_wall",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "child": "soul_torch_south"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/child/soul_torch_wall",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "child": "soul_torch_west"
+      },
+      "apply": {
+        "model": "material_elements_panels_plates_slabs:block/child/soul_torch_wall"
+      }
+    }
+  ]
+}

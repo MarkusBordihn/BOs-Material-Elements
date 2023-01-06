@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:polished_andesite_slab"
+  },
+  "result": "material_elements_panels_plates_slabs:polished_andesite_half_slab",
+  "count": 2
+}

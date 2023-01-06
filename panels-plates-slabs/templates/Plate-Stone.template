@@ -1,0 +1,144 @@
++++ block/ModBlocks.java
+@@@ after:@TemplateEntryPoint("Register Blocks") @@@
+
+  // [[ --BlockName-- ]]
+  public static final RegistryObject<Block> [[ --BLOCK_NAME-- ]]_PLATE =
+      BLOCKS.register("[[ --block_name-- ]]_plate", () -> new PlateBlock(Blocks.[[ --BLOCK_NAME-- ]]));
+
++++ item/ModItems.java
+@@@ after:@TemplateEntryPoint("Register Block Items") @@@
+
+  // [[ --BlockName-- ]]
+  public static final RegistryObject<Item> [[ --BLOCK_NAME-- ]]_PLATE =
+      ITEMS.register("[[ --block_name-- ]]_plate", () -> new BlockItem(ModBlocks.[[ --BLOCK_NAME-- ]]_PLATE.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
++++ blockstates/[[ --block_name-- ]]_plate.json
+@@@ create @@@
+{
+  "variants": {
+    "face=floor": {
+      "model": "[[ --ModId-- ]]:block/plate/[[ --block_name-- ]]_plate"
+    },
+    "face=wall,facing=north": {
+      "model": "[[ --ModId-- ]]:block/plate/[[ --block_name-- ]]_plate",
+      "x": 270,
+      "y": 180
+    },
+    "face=wall,facing=east": {
+      "model": "[[ --ModId-- ]]:block/plate/[[ --block_name-- ]]_plate",
+      "x": 270,
+      "y": 270
+    },
+    "face=wall,facing=south": {
+      "model": "[[ --ModId-- ]]:block/plate/[[ --block_name-- ]]_plate",
+      "x": 270
+    },
+    "face=wall,facing=west": {
+      "model": "[[ --ModId-- ]]:block/plate/[[ --block_name-- ]]_plate",
+      "x": 270,
+      "y": 90
+    },
+    "face=ceiling": {
+      "model": "[[ --ModId-- ]]:block/plate/[[ --block_name-- ]]_plate",
+      "x": 180
+    }
+  }
+}
+
++++ lang/de_de.json
+@@@ after:"Verzogene Platte", @@@
+
+  "block.[[ --ModId-- ]].[[ --block_name-- ]]_plate": "[[ --BlockName-- ]] Platte",
+
++++ lang/en_us.json
+@@@ after:"Warped Plate", @@@
+
+  "block.[[ --ModId-- ]].[[ --block_name-- ]]_plate": "[[ --BlockName-- ]] Plate",
+
++++ models/block/plate/[[ --block_name-- ]]_plate.json
+@@@ create @@@
+{
+  "parent": "material_elements_panels_plates_slabs:block/template/plate",
+  "textures": {
+    "texture": "minecraft:block/[[ --block_name-- ]]",
+    "particle": "minecraft:block/[[ --block_name-- ]]"
+  }
+}
+
++++ models/item/[[ --block_name-- ]]_plate.json
+@@@ create @@@
+{
+  "parent": "[[ --ModId-- ]]:block/plate/[[ --block_name-- ]]_plate"
+}
+
++++ loot_tables/blocks/[[ --block_name-- ]]_plate.json
+@@@ create @@@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:copy_name",
+              "source": "block_entity"
+            }
+          ],
+          "name": "[[ --ModId-- ]]:[[ --block_name-- ]]_plate"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}
+
++++ recipes/[[ --block_name-- ]]_plate_from_[[ --block_name-- ]]_by_stonecutter.json
+@@@ create @@@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:[[ --block_name-- ]]"
+  },
+  "result": "[[ --ModId-- ]]:[[ --block_name-- ]]_plate",
+  "count": 8
+}
+
+
++++ recipes/[[ --block_name-- ]]_plate_from_[[ --block_name-- ]]_slab_by_stonecutter.json
+@@@ create @@@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:[[ --block_name-- ]]_slab"
+  },
+  "result": "[[ --ModId-- ]]:[[ --block_name-- ]]_plate",
+  "count": 4
+}
+
++++ recipes/[[ --block_name-- ]]_plate_from_[[ --block_name-- ]]_half_slab_by_stonecutter.json
+@@@ create @@@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "[[ --ModId-- ]]:[[ --block_name-- ]]_half_slab"
+  },
+  "result": "[[ --ModId-- ]]:[[ --block_name-- ]]_plate",
+  "count": 2
+}
+
++++ tags/items/plates.json
+@@@ after:"values": [ @@@
+    "[[ --ModId-- ]]:[[ --block_name-- ]]_plate",
+
++++ minecraft/tags/blocks/mineable/pickaxe.json
+@@@ after:"values": [ @@@
+    "[[ --ModId-- ]]:[[ --block_name-- ]]_plate",

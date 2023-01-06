@@ -1,0 +1,414 @@
++++ block/ModBlocks.java
+@@@ after:@TemplateEntryPoint("Register Blocks") @@@
+
+  // [[ --BlockName-- ]]
+  public static final RegistryObject<Block> [[ --BLOCK_NAME-- ]]_PANEL =
+      BLOCKS.register("[[ --block_name-- ]]_panel", () -> new PanelBlock(Blocks.[[ --BLOCK_NAME-- ]]));
+
++++ item/ModItems.java
+@@@ after:@TemplateEntryPoint("Register Block Items") @@@
+
+  // [[ --BlockName-- ]]
+  public static final RegistryObject<Item> [[ --BLOCK_NAME-- ]]_PANEL =
+      ITEMS.register("[[ --block_name-- ]]_panel", () -> new BlockItem(ModBlocks.[[ --BLOCK_NAME-- ]]_PANEL.get(),
+          new Item.Properties().tab(MaterialElementsTab.TAB_PANEL_PLATES)));
+
++++ blockstates/[[ --block_name-- ]]_panel.json
+@@@ create @@@
+{
+  "multipart": [
+    {
+      "when": {
+        "up": "true"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/panel/[[ --block_name-- ]]_panel_up"
+      }
+    },
+    {
+      "when": {
+        "down": "true"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/panel/[[ --block_name-- ]]_panel"
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/panel/[[ --block_name-- ]]_panel_north"
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/panel/[[ --block_name-- ]]_panel_east"
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/panel/[[ --block_name-- ]]_panel_south"
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/panel/[[ --block_name-- ]]_panel_west"
+      }
+    },
+    {
+      "when": {
+        "child": "lantern"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/child/lantern"
+      }
+    },
+    {
+      "when": {
+        "child": "lantern_hanging"
+      },
+      "apply": {
+        "model": "minecraft:block/lantern_hanging"
+      }
+    },
+    {
+      "when": {
+        "child": "soul_lantern"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/child/soul_lantern"
+      }
+    },
+    {
+      "when": {
+        "child": "soul_lantern_hanging"
+      },
+      "apply": {
+        "model": "minecraft:block/soul_lantern_hanging"
+      }
+    },
+    {
+      "when": {
+        "child": "torch"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/child/torch"
+      }
+    },
+    {
+      "when": {
+        "child": "torch_north"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/child/torch_wall",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "child": "torch_east"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/child/torch_wall",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "child": "torch_south"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/child/torch_wall",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "child": "torch_west"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/child/torch_wall"
+      }
+    },
+    {
+      "when": {
+        "child": "soul_torch"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/child/soul_torch"
+      }
+    },
+    {
+      "when": {
+        "child": "soul_torch_north"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/child/soul_torch_wall",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "child": "soul_torch_east"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/child/soul_torch_wall",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "child": "soul_torch_south"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/child/soul_torch_wall",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "child": "soul_torch_west"
+      },
+      "apply": {
+        "model": "[[ --ModId-- ]]:block/child/soul_torch_wall"
+      }
+    }
+  ]
+}
+
+
++++ lang/de_de.json
+@@@ after:"Verzogenes Paneel", @@@
+
+  "block.[[ --ModId-- ]].[[ --block_name-- ]]_panel": "[[ --BlockName-- ]]paneel",
+
++++ lang/en_us.json
+@@@ after:"Warped Panel", @@@
+
+  "block.[[ --ModId-- ]].[[ --block_name-- ]]_panel": "[[ --BlockName-- ]] Panel",
+
++++ models/block/panel/[[ --block_name-- ]]_panel.json
+@@@ create @@@
+{
+  "parent": "[[ --ModId-- ]]:block/template/panel",
+  "textures": {
+    "texture": "minecraft:block/[[ --block_name-- ]]",
+    "particle": "minecraft:block/[[ --block_name-- ]]"
+  }
+}
+
++++ models/block/panel/[[ --block_name-- ]]_panel_up.json
+@@@ create @@@
+{
+  "parent": "[[ --ModId-- ]]:block/template/panel_up",
+  "textures": {
+    "texture": "minecraft:block/[[ --block_name-- ]]",
+    "particle": "minecraft:block/[[ --block_name-- ]]"
+  }
+}
+
++++ models/block/panel/[[ --block_name-- ]]_panel_north.json
+@@@ create @@@
+{
+  "parent": "[[ --ModId-- ]]:block/template/panel_north",
+  "textures": {
+    "texture": "minecraft:block/[[ --block_name-- ]]",
+    "particle": "minecraft:block/[[ --block_name-- ]]"
+  }
+}
+
++++ models/block/panel/[[ --block_name-- ]]_panel_east.json
+@@@ create @@@
+{
+  "parent": "[[ --ModId-- ]]:block/template/panel_east",
+  "textures": {
+    "texture": "minecraft:block/[[ --block_name-- ]]",
+    "particle": "minecraft:block/[[ --block_name-- ]]"
+  }
+}
+
++++ models/block/panel/[[ --block_name-- ]]_panel_south.json
+@@@ create @@@
+{
+  "parent": "[[ --ModId-- ]]:block/template/panel_south",
+  "textures": {
+    "texture": "minecraft:block/[[ --block_name-- ]]",
+    "particle": "minecraft:block/[[ --block_name-- ]]"
+  }
+}
+
++++ models/block/panel/[[ --block_name-- ]]_panel_west.json
+@@@ create @@@
+{
+  "parent": "[[ --ModId-- ]]:block/template/panel_west",
+  "textures": {
+    "texture": "minecraft:block/[[ --block_name-- ]]",
+    "particle": "minecraft:block/[[ --block_name-- ]]"
+  }
+}
+
++++ models/item/[[ --block_name-- ]]_panel.json
+@@@ create @@@
+{
+  "parent": "[[ --ModId-- ]]:block/panel/[[ --block_name-- ]]_panel"
+}
+
++++ loot_tables/blocks/[[ --block_name-- ]]_panel.json
+@@@ create @@@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "[[ --ModId-- ]]:[[ --block_name-- ]]_panel",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "[[ --ModId-- ]]:[[ --block_name-- ]]_panel",
+                  "properties": {
+                    "faces": "1"
+                  }
+                }
+              ],
+              "count": 1.0,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_count",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "[[ --ModId-- ]]:[[ --block_name-- ]]_panel",
+                  "properties": {
+                    "faces": "2"
+                  }
+                }
+              ],
+              "count": 2.0,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_count",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "[[ --ModId-- ]]:[[ --block_name-- ]]_panel",
+                  "properties": {
+                    "faces": "3"
+                  }
+                }
+              ],
+              "count": 3.0,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_count",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "[[ --ModId-- ]]:[[ --block_name-- ]]_panel",
+                  "properties": {
+                    "faces": "4"
+                  }
+                }
+              ],
+              "count": 4.0,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_count",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "[[ --ModId-- ]]:[[ --block_name-- ]]_panel",
+                  "properties": {
+                    "faces": "5"
+                  }
+                }
+              ],
+              "count": 5.0,
+              "add": false
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}
+
++++ recipes/[[ --block_name-- ]]_panel_from_[[ --block_name-- ]]_by_stonecutter.json
+@@@ create @@@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:[[ --block_name-- ]]"
+  },
+  "result": "[[ --ModId-- ]]:[[ --block_name-- ]]_panel",
+  "count": 16
+}
+
++++ recipes/[[ --block_name-- ]]_panel_from_[[ --block_name-- ]]_slab_by_stonecutter.json
+@@@ create @@@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:[[ --block_name-- ]]_slab"
+  },
+  "result": "[[ --ModId-- ]]:[[ --block_name-- ]]_panel",
+  "count": 8
+}
+
++++ recipes/[[ --block_name-- ]]_panel_from_[[ --block_name-- ]]_half_slab_by_stonecutter.json
+@@@ create @@@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "[[ --ModId-- ]]:[[ --block_name-- ]]_half_slab"
+  },
+  "result": "[[ --ModId-- ]]:[[ --block_name-- ]]_panel",
+  "count": 4
+}
+
++++ recipes/[[ --block_name-- ]]_panel_from_[[ --block_name-- ]]_plate_by_stonecutter.json
+@@@ create @@@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "[[ --ModId-- ]]:[[ --block_name-- ]]_plate"
+  },
+  "result": "[[ --ModId-- ]]:[[ --block_name-- ]]_panel",
+  "count": 2
+}
+
++++ tags/items/panels.json
+@@@ after:"values": [ @@@
+    "[[ --ModId-- ]]:[[ --block_name-- ]]_panel",
+
++++ minecraft/tags/blocks/mineable/pickaxe.json
+@@@ after:"values": [ @@@
+    "[[ --ModId-- ]]:[[ --block_name-- ]]_panel",

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:andesite_slab"
+  },
+  "result": "material_elements_panels_plates_slabs:andesite_panel",
+  "count": 16
+}

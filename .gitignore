@@ -42,3 +42,13 @@ generated
 *.bak
 decorative/.vscode/launch.json
 core/.vscode/launch.json
+panels-plates-slabs/.minecraft-forge-utils/block_materialelementspanelsplatesslabs__andersite.mbu
+panels-plates-slabs/.minecraft-forge-utils/block_materialelementspanelsplatesslabs__andesit.mbu
+panels-plates-slabs/.minecraft-forge-utils/block_materialelementspanelsplatesslabs__andesite.mbu
+panels-plates-slabs/.minecraft-forge-utils/block_materialelementspanelsplatesslabs__brick.mbu
+panels-plates-slabs/.minecraft-forge-utils/block_materialelementspanelsplatesslabs__bricks.mbu
+panels-plates-slabs/.minecraft-forge-utils/block_materialelementspanelsplatesslabs__granite.mbu
+panels-plates-slabs/.minecraft-forge-utils/block_materialelementspanelsplatesslabs__polished_andesite.mbu
+panels-plates-slabs/.minecraft-forge-utils/block_materialelementspanelsplatesslabs__polished_granite.mbu
+panels-plates-slabs/.minecraft-forge-utils/block_materialelementspanelsplatesslabs__stone_brick.mbu
+panels-plates-slabs/.minecraft-forge-utils/block_materialelementspanelsplatesslabs__stone_bricks.mbu

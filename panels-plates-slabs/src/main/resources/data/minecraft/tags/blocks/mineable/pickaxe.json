@@ -1,11 +1,29 @@
 {
   "replace": false,
   "values": [
+    "material_elements_panels_plates_slabs:andesite_half_slab",
+    "material_elements_panels_plates_slabs:andesite_panel",
+    "material_elements_panels_plates_slabs:andesite_plate",
+    "material_elements_panels_plates_slabs:brick_half_slab",
+    "material_elements_panels_plates_slabs:brick_panel",
+    "material_elements_panels_plates_slabs:brick_plate",
+    "material_elements_panels_plates_slabs:granite_half_slab",
+    "material_elements_panels_plates_slabs:granite_panel",
+    "material_elements_panels_plates_slabs:granite_plate",
+    "material_elements_panels_plates_slabs:polished_andesite_half_slab",
+    "material_elements_panels_plates_slabs:polished_andesite_panel",
+    "material_elements_panels_plates_slabs:polished_andesite_plate",
+    "material_elements_panels_plates_slabs:polished_granite_half_slab",
+    "material_elements_panels_plates_slabs:polished_granite_panel",
+    "material_elements_panels_plates_slabs:polished_granite_plate",
     "material_elements_panels_plates_slabs:quartz_half_slab",
     "material_elements_panels_plates_slabs:quartz_panel",
     "material_elements_panels_plates_slabs:quartz_plate",
     "material_elements_panels_plates_slabs:smooth_quartz_half_slab",
     "material_elements_panels_plates_slabs:smooth_quartz_panel",
-    "material_elements_panels_plates_slabs:smooth_quartz_plate"
+    "material_elements_panels_plates_slabs:smooth_quartz_plate",
+    "material_elements_panels_plates_slabs:stone_brick_half_slab",
+    "material_elements_panels_plates_slabs:stone_brick_panel",
+    "material_elements_panels_plates_slabs:stone_brick_plate"
   ]
 }

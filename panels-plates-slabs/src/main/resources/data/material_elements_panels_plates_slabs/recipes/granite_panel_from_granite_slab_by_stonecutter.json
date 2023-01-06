@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:granite_slab"
+  },
+  "result": "material_elements_panels_plates_slabs:granite_panel",
+  "count": 8
+}

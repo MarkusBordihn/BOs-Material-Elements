@@ -55,18 +55,70 @@ public class ModBlocks {
 
   @TemplateEntryPoint("Register Blocks")
 
+  // Stone Bricks
+  public static final RegistryObject<Block> STONE_BRICK_PANEL =
+      BLOCKS.register("stone_brick_panel", () -> new PanelBlock(Blocks.STONE_BRICKS));
+
+  // Polished Granite
+  public static final RegistryObject<Block> POLISHED_GRANITE_PANEL =
+      BLOCKS.register("polished_granite_panel", () -> new PanelBlock(Blocks.POLISHED_GRANITE));
+
+  // Granite
+  public static final RegistryObject<Block> GRANITE_PANEL =
+      BLOCKS.register("granite_panel", () -> new PanelBlock(Blocks.GRANITE));
+
+  // Bricks
+  public static final RegistryObject<Block> BRICK_PANEL =
+      BLOCKS.register("brick_panel", () -> new PanelBlock(Blocks.BRICKS));
+
+  // Polished Andesite
+  public static final RegistryObject<Block> POLISHED_ANDESITE_PANEL =
+      BLOCKS.register("polished_andesite_panel", () -> new PanelBlock(Blocks.POLISHED_ANDESITE));
+
+  // Andesite
+  public static final RegistryObject<Block> ANDESITE_PANEL =
+      BLOCKS.register("andesite_panel", () -> new PanelBlock(Blocks.ANDESITE));
+
+  // Stone Plate
+  public static final RegistryObject<Block> ANDESITE_PLATE =
+      BLOCKS.register("andesite_plate", () -> new PlateBlock(Blocks.ANDESITE));
+  public static final RegistryObject<Block> BRICKS_PLATE =
+      BLOCKS.register("brick_plate", () -> new PlateBlock(Blocks.BRICKS));
+  public static final RegistryObject<Block> GRANITE_PLATE =
+      BLOCKS.register("granite_plate", () -> new PlateBlock(Blocks.GRANITE));
+  public static final RegistryObject<Block> POLISHED_ANDESITE_PLATE =
+      BLOCKS.register("polished_andesite_plate", () -> new PlateBlock(Blocks.POLISHED_ANDESITE));
+  public static final RegistryObject<Block> POLISHED_GRANITE_PLATE =
+      BLOCKS.register("polished_granite_plate", () -> new PlateBlock(Blocks.POLISHED_GRANITE));
+  public static final RegistryObject<Block> STONE_BRICKS_PLATE =
+      BLOCKS.register("stone_brick_plate", () -> new PlateBlock(Blocks.STONE_BRICKS));
+
+  // Stone Half-Slab
+  public static final RegistryObject<Block> STONE_BRICKS_HALF_SLAB =
+      BLOCKS.register("stone_brick_half_slab", () -> new HalfSlabBlock(Blocks.STONE_BRICKS));
+  public static final RegistryObject<Block> POLISHED_GRANITE_HALF_SLAB = BLOCKS
+      .register("polished_granite_half_slab", () -> new HalfSlabBlock(Blocks.POLISHED_GRANITE));
+  public static final RegistryObject<Block> GRANITE_HALF_SLAB =
+      BLOCKS.register("granite_half_slab", () -> new HalfSlabBlock(Blocks.GRANITE));
+  public static final RegistryObject<Block> BRICKS_HALF_SLAB =
+      BLOCKS.register("brick_half_slab", () -> new HalfSlabBlock(Blocks.BRICKS));
+  public static final RegistryObject<Block> POLISHED_ANDESITE_HALF_SLAB = BLOCKS
+      .register("polished_andesite_half_slab", () -> new HalfSlabBlock(Blocks.POLISHED_ANDESITE));
+  public static final RegistryObject<Block> ANDESITE_HALF_SLAB =
+      BLOCKS.register("andesite_half_slab", () -> new HalfSlabBlock(Blocks.ANDESITE));
+
   // Quartz (normal and smooth)
   public static final RegistryObject<Block> QUARTZ_PANEL =
       BLOCKS.register("quartz_panel", () -> new PanelBlock(Blocks.QUARTZ_BLOCK));
   public static final RegistryObject<Block> QUARTZ_PLATE =
       BLOCKS.register("quartz_plate", () -> new PlateBlock(Blocks.QUARTZ_BLOCK));
-  public static final RegistryObject<Block> QUARTZ_HALF_SLAP =
+  public static final RegistryObject<Block> QUARTZ_HALF_SLAB =
       BLOCKS.register("quartz_half_slab", () -> new HalfSlabBlock(Blocks.QUARTZ_BLOCK));
   public static final RegistryObject<Block> SMOOTH_QUARTZ_PANEL =
       BLOCKS.register("smooth_quartz_panel", () -> new PanelBlock(Blocks.SMOOTH_QUARTZ));
   public static final RegistryObject<Block> SMOOTH_QUARTZ_PLATE =
       BLOCKS.register("smooth_quartz_plate", () -> new PlateBlock(Blocks.SMOOTH_QUARTZ));
-  public static final RegistryObject<Block> SMOOTH_QUARTZ_HALF_SLAP =
+  public static final RegistryObject<Block> SMOOTH_QUARTZ_HALF_SLAB =
       BLOCKS.register("smooth_quartz_half_slab", () -> new HalfSlabBlock(Blocks.SMOOTH_QUARTZ));
 
   // Glass
