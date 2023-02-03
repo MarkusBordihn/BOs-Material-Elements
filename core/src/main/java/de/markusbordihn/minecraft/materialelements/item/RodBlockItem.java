@@ -23,12 +23,10 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
-import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
-
 public class RodBlockItem extends BlockItem {
 
   public RodBlockItem(Block block) {
-    super(block, new Item.Properties().tab(MaterialElementsTab.TAB_RODS));
+    super(block, new Item.Properties());
   }
 
 }

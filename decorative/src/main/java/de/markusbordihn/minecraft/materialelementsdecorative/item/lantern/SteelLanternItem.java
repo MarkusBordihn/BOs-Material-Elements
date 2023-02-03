@@ -20,7 +20,6 @@
 package de.markusbordihn.minecraft.materialelementsdecorative.item.lantern;
 
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -37,7 +36,7 @@ public class SteelLanternItem extends BlockItem {
   }
 
   public SteelLanternItem(Block block) {
-    super(block, new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS));
+    super(block, new Item.Properties());
     if (block instanceof SteelLanternBlock steelLanternBlock) {
       this.color = steelLanternBlock.getColor();
       this.materialColor = steelLanternBlock.getMaterialColor();
@@ -45,7 +44,7 @@ public class SteelLanternItem extends BlockItem {
   }
 
   public SteelLanternItem(Block block, DyeColor dyeColor) {
-    super(block, new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS));
+    super(block, new Item.Properties());
     this.color = dyeColor;
     this.materialColor = dyeColor.getMaterialColor().col;
   }

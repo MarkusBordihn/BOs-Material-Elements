@@ -21,8 +21,6 @@ package de.markusbordihn.minecraft.materialelements.item.leather;
 
 import net.minecraft.world.item.Item;
 
-import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
-
 public class LeatherItem extends Item {
 
   public LeatherItem(Properties properties) {
@@ -30,7 +28,7 @@ public class LeatherItem extends Item {
   }
 
   public LeatherItem() {
-    super(new Item.Properties().tab(MaterialElementsTab.TAB_LEATHER));
+    super(new Item.Properties());
   }
 
 }

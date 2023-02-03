@@ -22,12 +22,15 @@ package de.markusbordihn.minecraft.materialelementsarmortoolsweapons;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 import de.markusbordihn.minecraft.materialelementsarmortoolsweapons.item.ModItemProperties;
 import de.markusbordihn.minecraft.materialelementsarmortoolsweapons.item.ModItems;
+import de.markusbordihn.minecraft.materialelementsarmortoolsweapons.tabs.MaterialElementsArmorToolsWeaponsTab;
 import de.markusbordihn.minecraft.materialelementsarmortoolsweapons.utils.StopModReposts;
 
 @Mod(Constants.MOD_ID)
@@ -44,6 +47,10 @@ public class MaterialElementsArmorToolsWeapons {
 
     log.info("{} Items ...", Constants.LOG_REGISTER_PREFIX);
     ModItems.ITEMS.register(modEventBus);
+
+    DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
+      modEventBus.addListener(MaterialElementsArmorToolsWeaponsTab::handleCreativeModeTab);
+    });
 
   }
 }

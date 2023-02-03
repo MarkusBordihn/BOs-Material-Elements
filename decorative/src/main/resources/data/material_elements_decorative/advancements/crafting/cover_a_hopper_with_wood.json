@@ -1,5 +1,5 @@
 {
-  "parent": "material_elements_decorative:crafting/cut_panel",
+  "parent": "material_elements_decorative:root",
   "display": {
     "icon": {
       "item": "material_elements_decorative:oak_framed_hopper"

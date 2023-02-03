@@ -19,36 +19,24 @@
 
 package de.markusbordihn.minecraft.materialelements.item.testtube;
 
-import net.minecraft.core.NonNullList;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-
-import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
 
 public class TestTubeCustomItem extends TestTubeFilledItem {
 
   private DyeColor color = DyeColor.BLUE;
 
   public TestTubeCustomItem() {
-    super(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES));
+    super(new Item.Properties());
   }
 
   public TestTubeCustomItem(DyeColor dyeColor) {
-    super(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES));
+    super(new Item.Properties());
     this.color = dyeColor;
   }
 
   public DyeColor getColor() {
     return this.color;
-  }
-
-  @Override
-  public void fillItemCategory(CreativeModeTab tab, NonNullList<ItemStack> itemStack) {
-    if (this.allowedIn(tab)) {
-      itemStack.add(new ItemStack(this));
-    }
   }
 
 }

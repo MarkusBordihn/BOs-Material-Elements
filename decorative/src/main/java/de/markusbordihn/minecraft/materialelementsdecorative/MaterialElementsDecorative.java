@@ -22,12 +22,15 @@ package de.markusbordihn.minecraft.materialelementsdecorative;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 import de.markusbordihn.minecraft.materialelementsdecorative.block.ModBlocks;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.ModItems;
+import de.markusbordihn.minecraft.materialelementsdecorative.tabs.MaterialElementsDecorativeTab;
 
 @Mod(Constants.MOD_ID)
 public class MaterialElementsDecorative {
@@ -45,5 +48,10 @@ public class MaterialElementsDecorative {
 
     log.info("{} Items ...", Constants.LOG_REGISTER_PREFIX);
     ModItems.ITEMS.register(modEventBus);
+
+    DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
+      modEventBus.addListener(MaterialElementsDecorativeTab::handleCreativeModeTab);
+      modEventBus.addListener(MaterialElementsDecorativeTab::handleCreativeModeTabRegister);
+    });
   }
 }

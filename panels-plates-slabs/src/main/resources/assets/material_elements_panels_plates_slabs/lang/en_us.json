@@ -83,6 +83,6 @@
   "block.material_elements_panels_plates_slabs.quartz_plate": "Quartz Plate",
   "block.material_elements_panels_plates_slabs.quartz_panel": "Quartz Panel",
 
-  "itemGroup.panel_plates": "Material & Elements: Panel and Plates",
-  "itemGroup.slabs": "Material & Elements: Slabs"
+  "itemGroup.material_elements_panels_plates_slabs.panel_plates": "Material & Elements: Panel and Plates",
+  "itemGroup.material_elements_panels_plates_slabs.slabs": "Material & Elements: Slabs"
 }

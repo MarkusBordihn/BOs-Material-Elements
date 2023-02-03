@@ -19,7 +19,6 @@
 
 package de.markusbordihn.minecraft.materialelementsarmortoolsweapons.item;
 
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CrossbowItem;
 import net.minecraft.world.item.FlintAndSteelItem;
 import net.minecraft.world.item.Item;
@@ -51,38 +50,31 @@ public class ModItems {
   @TemplateEntryPoint("Register Items")
 
   // Copper Weapons
-  public static final RegistryObject<Item> COPPER_SWORD =
-      ITEMS.register("copper_sword", () -> new SwordItem(ModTiers.COPPER, 3, -2.4F,
-          (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
+  public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword",
+      () -> new SwordItem(ModTiers.COPPER, 3, -2.4F, (new Item.Properties())));
 
-  public static final RegistryObject<Item> COPPER_CROSSBOW =
-      ITEMS.register("copper_crossbow", () -> new CrossbowItem(
-          (new Item.Properties()).stacksTo(1).tab(CreativeModeTab.TAB_COMBAT).durability(375)));
+  public static final RegistryObject<Item> COPPER_CROSSBOW = ITEMS.register("copper_crossbow",
+      () -> new CrossbowItem((new Item.Properties()).stacksTo(1).durability(375)));
 
   // Copper Tools
-  public static final RegistryObject<Item> COPPER_SHOVEL =
-      ITEMS.register("copper_shovel", () -> new ShovelItem(ModTiers.COPPER, 1.5F, -3.0F,
-          (new Item.Properties()).tab(CreativeModeTab.TAB_TOOLS)));
+  public static final RegistryObject<Item> COPPER_SHOVEL = ITEMS.register("copper_shovel",
+      () -> new ShovelItem(ModTiers.COPPER, 1.5F, -3.0F, (new Item.Properties())));
 
-  public static final RegistryObject<Item> COPPER_PICKAXE =
-      ITEMS.register("copper_pickaxe", () -> new PickaxeItem(ModTiers.COPPER, 1, -2.8F,
-          (new Item.Properties()).tab(CreativeModeTab.TAB_TOOLS)));
+  public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
+      () -> new PickaxeItem(ModTiers.COPPER, 1, -2.8F, (new Item.Properties())));
 
-  public static final RegistryObject<Item> COPPER_AXE =
-      ITEMS.register("copper_axe", () -> new AxeItem(ModTiers.COPPER, 6.0F, -3.1F,
-          (new Item.Properties()).tab(CreativeModeTab.TAB_TOOLS)));
+  public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe",
+      () -> new AxeItem(ModTiers.COPPER, 6.0F, -3.1F, (new Item.Properties())));
 
-  public static final RegistryObject<Item> COPPER_HOE =
-      ITEMS.register("copper_hoe", () -> new HoeItem(ModTiers.COPPER, -2, -1.0F,
-          (new Item.Properties()).tab(CreativeModeTab.TAB_TOOLS)));
+  public static final RegistryObject<Item> COPPER_HOE = ITEMS.register("copper_hoe",
+      () -> new HoeItem(ModTiers.COPPER, -2, -1.0F, (new Item.Properties())));
 
   public static final RegistryObject<Item> COPPER_SHEARS = ITEMS.register("copper_shears",
-      () -> new ShearsItem((new Item.Properties()).durability(330).tab(CreativeModeTab.TAB_TOOLS)));
+      () -> new ShearsItem((new Item.Properties()).durability(330)));
 
   // Copper Lighter
-  public static final RegistryObject<Item> COPPER_LIGHTER =
-      ITEMS.register("copper_lighter", () -> new FlintAndSteelItem(
-          (new Item.Properties()).durability(84).tab(CreativeModeTab.TAB_TOOLS)));
+  public static final RegistryObject<Item> COPPER_LIGHTER = ITEMS.register("copper_lighter",
+      () -> new FlintAndSteelItem((new Item.Properties()).durability(84)));
 
   // Copper Armor
   public static final RegistryObject<Item> COPPER_BOOTS =
@@ -99,54 +91,43 @@ public class ModItems {
 
 
   // Steel Weapons
-  public static final RegistryObject<Item> STEEL_SWORD =
-      ITEMS.register("steel_sword", () -> new SwordItem(ModTiers.STEEL, 3, -2.4F,
-          (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
+  public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword",
+      () -> new SwordItem(ModTiers.STEEL, 3, -2.4F, (new Item.Properties())));
 
-  public static final RegistryObject<Item> STEEL_CROSSBOW =
-      ITEMS.register("steel_crossbow", () -> new CrossbowItem(
-          (new Item.Properties()).stacksTo(1).tab(CreativeModeTab.TAB_COMBAT).durability(435)));
+  public static final RegistryObject<Item> STEEL_CROSSBOW = ITEMS.register("steel_crossbow",
+      () -> new CrossbowItem((new Item.Properties()).stacksTo(1).durability(435)));
 
   // Steel Tools
-  public static final RegistryObject<Item> STEEL_SHOVEL =
-      ITEMS.register("steel_shovel", () -> new ShovelItem(ModTiers.STEEL, 1.5F, -3.0F,
-          (new Item.Properties()).tab(CreativeModeTab.TAB_TOOLS)));
+  public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel",
+      () -> new ShovelItem(ModTiers.STEEL, 1.5F, -3.0F, (new Item.Properties())));
 
-  public static final RegistryObject<Item> STEEL_PICKAXE =
-      ITEMS.register("steel_pickaxe", () -> new PickaxeItem(ModTiers.STEEL, 1, -2.8F,
-          (new Item.Properties()).tab(CreativeModeTab.TAB_TOOLS)));
+  public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
+      () -> new PickaxeItem(ModTiers.STEEL, 1, -2.8F, (new Item.Properties())));
 
-  public static final RegistryObject<Item> STEEL_AXE =
-      ITEMS.register("steel_axe", () -> new AxeItem(ModTiers.STEEL, 6.0F, -3.1F,
-          (new Item.Properties()).tab(CreativeModeTab.TAB_TOOLS)));
+  public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe",
+      () -> new AxeItem(ModTiers.STEEL, 6.0F, -3.1F, (new Item.Properties())));
 
-  public static final RegistryObject<Item> STEEL_HOE =
-      ITEMS.register("steel_hoe", () -> new HoeItem(ModTiers.STEEL, -2, -1.0F,
-          (new Item.Properties()).tab(CreativeModeTab.TAB_TOOLS)));
+  public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe",
+      () -> new HoeItem(ModTiers.STEEL, -2, -1.0F, (new Item.Properties())));
 
-  public static final RegistryObject<Item> STEEL_SHEARS = ITEMS.register("steel_shears",
-      () -> new ShearsItem((new Item.Properties()).durability(330).tab(CreativeModeTab.TAB_TOOLS)));
+  public static final RegistryObject<Item> STEEL_SHEARS =
+      ITEMS.register("steel_shears", () -> new ShearsItem((new Item.Properties()).durability(330)));
 
   // Steel Lighter
-  public static final RegistryObject<Item> STEEL_LIGHTER =
-      ITEMS.register("steel_lighter", () -> new FlintAndSteelItem(
-          (new Item.Properties()).durability(84).tab(CreativeModeTab.TAB_TOOLS)));
+  public static final RegistryObject<Item> STEEL_LIGHTER = ITEMS.register("steel_lighter",
+      () -> new FlintAndSteelItem((new Item.Properties()).durability(84)));
 
   // Steel Armor
-  public static final RegistryObject<Item> STEEL_BOOTS =
-      ITEMS.register("steel_boots", () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.FEET,
-          (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
+  public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots",
+      () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.FEET, (new Item.Properties())));
 
-  public static final RegistryObject<Item> STEEL_HELMET =
-      ITEMS.register("steel_helmet", () -> new ArmorItem(ModArmorMaterials.STEEL,
-          EquipmentSlot.HEAD, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
+  public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
+      () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.HEAD, (new Item.Properties())));
 
-  public static final RegistryObject<Item> STEEL_LEGGINGS =
-      ITEMS.register("steel_leggings", () -> new ArmorItem(ModArmorMaterials.STEEL,
-          EquipmentSlot.LEGS, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
+  public static final RegistryObject<Item> STEEL_LEGGINGS = ITEMS.register("steel_leggings",
+      () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.LEGS, (new Item.Properties())));
 
-  public static final RegistryObject<Item> STEEL_CHESTPLATE =
-      ITEMS.register("steel_chestplate", () -> new ArmorItem(ModArmorMaterials.STEEL,
-          EquipmentSlot.CHEST, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
+  public static final RegistryObject<Item> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate",
+      () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.CHEST, (new Item.Properties())));
 
 }

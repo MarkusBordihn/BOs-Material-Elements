@@ -138,6 +138,6 @@
 
   "item.placeholder.text": "Template placeholder do not remove!",
 
-  "itemGroup.framed_hoppers": "Material & Elements: Framed Hoppers",
-  "itemGroup.slabs": "Material & Elemente: Platten"
+  "itemGroup.material_elements_decorative.framed_hoppers": "Material & Elements: Eingerahmte Trichter",
+  "itemGroup.material_elements_decorative.raised_floor": "Material & Elemente: Erhöhter Boden"
 }

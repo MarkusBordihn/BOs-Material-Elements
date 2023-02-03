@@ -20,7 +20,6 @@
 package de.markusbordihn.minecraft.materialelementsdecorative.item;
 
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 
@@ -43,7 +42,6 @@ import de.markusbordihn.minecraft.materialelementsdecorative.item.cloth.ClothSla
 import de.markusbordihn.minecraft.materialelementsdecorative.item.cloth.ClothTriangularItem;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.cloth.FabricClothItem;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.lantern.SteelLanternItem;
-import de.markusbordihn.minecraft.materialelementsdecorative.tabs.MaterialElementsTab;
 import de.markusbordihn.minecraft.materialelementsdecorative.Annotations.TemplateEntryPoint;
 
 public class ModItems {
@@ -216,75 +214,65 @@ public class ModItems {
           () -> new ClothTriangularItem(ModBlocks.CLOTH_TRIANGULAR_BLACK.get()));
 
   // Raised Floor
-  public static final RegistryObject<Item> RAISED_FLOOR_BASE =
-      ITEMS.register("raised_floor_base", () -> new BlockItem(ModBlocks.RAISED_FLOOR_BASE.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
-  public static final RegistryObject<Item> RAISED_FLOOR_BASIC =
-      ITEMS.register("raised_floor_basic", () -> new BlockItem(ModBlocks.RAISED_FLOOR_BASIC.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
-  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_A =
-      ITEMS.register("raised_floor_flow_panel_type_a",
-          () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_A.get(),
-              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
-  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_B =
-      ITEMS.register("raised_floor_flow_panel_type_b",
-          () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_B.get(),
-              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
-  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_C =
-      ITEMS.register("raised_floor_flow_panel_type_c",
-          () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_C.get(),
-              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
-  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_D =
-      ITEMS.register("raised_floor_flow_panel_type_d",
-          () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_D.get(),
-              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
-  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_E =
-      ITEMS.register("raised_floor_flow_panel_type_e",
-          () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_E.get(),
-              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
-  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_F =
-      ITEMS.register("raised_floor_flow_panel_type_f",
-          () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_F.get(),
-              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+  public static final RegistryObject<Item> RAISED_FLOOR_BASE = ITEMS.register("raised_floor_base",
+      () -> new BlockItem(ModBlocks.RAISED_FLOOR_BASE.get(), new Item.Properties()));
+  public static final RegistryObject<Item> RAISED_FLOOR_BASIC = ITEMS.register("raised_floor_basic",
+      () -> new BlockItem(ModBlocks.RAISED_FLOOR_BASIC.get(), new Item.Properties()));
+  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_A = ITEMS.register(
+      "raised_floor_flow_panel_type_a",
+      () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_A.get(), new Item.Properties()));
+  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_B = ITEMS.register(
+      "raised_floor_flow_panel_type_b",
+      () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_B.get(), new Item.Properties()));
+  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_C = ITEMS.register(
+      "raised_floor_flow_panel_type_c",
+      () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_C.get(), new Item.Properties()));
+  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_D = ITEMS.register(
+      "raised_floor_flow_panel_type_d",
+      () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_D.get(), new Item.Properties()));
+  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_E = ITEMS.register(
+      "raised_floor_flow_panel_type_e",
+      () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_E.get(), new Item.Properties()));
+  public static final RegistryObject<Item> RAISED_FLOOR_FLOW_PANEL_TYPE_F = ITEMS.register(
+      "raised_floor_flow_panel_type_f",
+      () -> new BlockItem(ModBlocks.RAISED_FLOOR_FLOW_PANEL_TYPE_F.get(), new Item.Properties()));
 
   // Raised Floor Light
   public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_CORNER_LIGHT_BLUE =
       ITEMS.register("raised_floor_light_corner_light_blue",
           () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_CORNER_LIGHT_BLUE.get(),
-              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+              new Item.Properties()));
   public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_CORNER_FLIPPED_LIGHT_BLUE =
       ITEMS.register("raised_floor_light_corner_flipped_light_blue",
           () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_CORNER_FLIPPED_LIGHT_BLUE.get(),
-              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
-  public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_LIGHT_BLUE =
-      ITEMS.register("raised_floor_light_light_blue",
-          () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_LIGHT_BLUE.get(),
-              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+              new Item.Properties()));
+  public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_LIGHT_BLUE = ITEMS.register(
+      "raised_floor_light_light_blue",
+      () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_LIGHT_BLUE.get(), new Item.Properties()));
   public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_MIDDLE_HALF_LIGHT_BLUE =
       ITEMS.register("raised_floor_light_middle_half_light_blue",
           () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_MIDDLE_HALF_LIGHT_BLUE.get(),
-              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+              new Item.Properties()));
   public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_MIDDLE_LIGHT_BLUE =
       ITEMS.register("raised_floor_light_middle_light_blue",
           () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_MIDDLE_LIGHT_BLUE.get(),
-              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+              new Item.Properties()));
   public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_SIDE_HALF_LIGHT_BLUE =
       ITEMS.register("raised_floor_light_side_half_light_blue",
           () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_SIDE_HALF_LIGHT_BLUE.get(),
-              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+              new Item.Properties()));
   public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_SIDE_HALF_FLIPPED_LIGHT_BLUE =
       ITEMS.register("raised_floor_light_side_half_flipped_light_blue",
           () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_SIDE_HALF_FLIPPED_LIGHT_BLUE.get(),
-              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+              new Item.Properties()));
   public static final RegistryObject<Item> RAISED_FLOOR_LIGHT_SIDE_LIGHT_BLUE =
       ITEMS.register("raised_floor_light_side_light_blue",
           () -> new BlockItem(ModBlocks.RAISED_FLOOR_LIGHT_SIDE_LIGHT_BLUE.get(),
-              new Item.Properties().tab(MaterialElementsTab.TAB_RAISED_FLOOR)));
+              new Item.Properties()));
 
   // Steel Chain
-  public static final RegistryObject<Item> STEEL_CHAIN =
-      ITEMS.register("steel_chain", () -> new BlockItem(ModBlocks.STEEL_CHAIN.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+  public static final RegistryObject<Item> STEEL_CHAIN = ITEMS.register("steel_chain",
+      () -> new BlockItem(ModBlocks.STEEL_CHAIN.get(), new Item.Properties()));
 
   // Steel Lantern
   public static final RegistryObject<Item> STEEL_LANTERN =
@@ -330,28 +318,27 @@ public class ModItems {
       "steel_lantern_black", () -> new SteelLanternItem(ModBlocks.STEEL_LANTERN_BLACK.get()));
 
   // Wooden framed Hoppers
-  public static final RegistryObject<Item> OAK_FRAMED_HOPPER =
-      ITEMS.register(OakFramedHopper.NAME, () -> new BlockItem(ModBlocks.OAK_FRAMED_HOPPER.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_FRAMED_HOPPERS)));
-  public static final RegistryObject<Item> SPRUCE_FRAMED_HOPPER = ITEMS
-      .register(SpruceFramedHopper.NAME, () -> new BlockItem(ModBlocks.SPRUCE_FRAMED_HOPPER.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_FRAMED_HOPPERS)));
-  public static final RegistryObject<Item> BIRCH_FRAMED_HOPPER = ITEMS
-      .register(BirchFramedHopper.NAME, () -> new BlockItem(ModBlocks.BIRCH_FRAMED_HOPPER.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_FRAMED_HOPPERS)));
-  public static final RegistryObject<Item> JUNGLE_FRAMED_HOPPER = ITEMS
-      .register(JungleFramedHopper.NAME, () -> new BlockItem(ModBlocks.JUNGLE_FRAMED_HOPPER.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_FRAMED_HOPPERS)));
-  public static final RegistryObject<Item> ACACIA_FRAMED_HOPPER = ITEMS
-      .register(AcaciaFramedHopper.NAME, () -> new BlockItem(ModBlocks.ACACIA_FRAMED_HOPPER.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_FRAMED_HOPPERS)));
-  public static final RegistryObject<Item> DARK_OAK_FRAMED_HOPPER = ITEMS.register(
-      DarkOakFramedHopper.NAME, () -> new BlockItem(ModBlocks.DARK_OAK_FRAMED_HOPPER.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_FRAMED_HOPPERS)));
-  public static final RegistryObject<Item> CRIMSON_FRAMED_HOPPER = ITEMS
-      .register(CrimsonFramedHopper.NAME, () -> new BlockItem(ModBlocks.CRIMSON_FRAMED_HOPPER.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_FRAMED_HOPPERS)));
-  public static final RegistryObject<Item> WARPED_FRAMED_HOPPER = ITEMS
-      .register(WarpedFramedHopper.NAME, () -> new BlockItem(ModBlocks.WARPED_FRAMED_HOPPER.get(),
-          new Item.Properties().tab(MaterialElementsTab.TAB_FRAMED_HOPPERS)));
+  public static final RegistryObject<Item> OAK_FRAMED_HOPPER = ITEMS.register(OakFramedHopper.NAME,
+      () -> new BlockItem(ModBlocks.OAK_FRAMED_HOPPER.get(), new Item.Properties()));
+  public static final RegistryObject<Item> SPRUCE_FRAMED_HOPPER =
+      ITEMS.register(SpruceFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.SPRUCE_FRAMED_HOPPER.get(), new Item.Properties()));
+  public static final RegistryObject<Item> BIRCH_FRAMED_HOPPER =
+      ITEMS.register(BirchFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.BIRCH_FRAMED_HOPPER.get(), new Item.Properties()));
+  public static final RegistryObject<Item> JUNGLE_FRAMED_HOPPER =
+      ITEMS.register(JungleFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.JUNGLE_FRAMED_HOPPER.get(), new Item.Properties()));
+  public static final RegistryObject<Item> ACACIA_FRAMED_HOPPER =
+      ITEMS.register(AcaciaFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.ACACIA_FRAMED_HOPPER.get(), new Item.Properties()));
+  public static final RegistryObject<Item> DARK_OAK_FRAMED_HOPPER =
+      ITEMS.register(DarkOakFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.DARK_OAK_FRAMED_HOPPER.get(), new Item.Properties()));
+  public static final RegistryObject<Item> CRIMSON_FRAMED_HOPPER =
+      ITEMS.register(CrimsonFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.CRIMSON_FRAMED_HOPPER.get(), new Item.Properties()));
+  public static final RegistryObject<Item> WARPED_FRAMED_HOPPER =
+      ITEMS.register(WarpedFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.WARPED_FRAMED_HOPPER.get(), new Item.Properties()));
 }

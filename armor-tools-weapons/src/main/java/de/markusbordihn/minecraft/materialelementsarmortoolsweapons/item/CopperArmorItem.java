@@ -26,7 +26,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -44,8 +43,7 @@ public class CopperArmorItem extends ArmorItem {
   private ArmorMaterial armorMaterial = ModArmorMaterials.COPPER;
 
   public CopperArmorItem(EquipmentSlot equipmentSlot) {
-    super(ModArmorMaterials.COPPER, equipmentSlot,
-        (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT));
+    super(ModArmorMaterials.COPPER, equipmentSlot, (new Item.Properties()));
   }
 
   @Override

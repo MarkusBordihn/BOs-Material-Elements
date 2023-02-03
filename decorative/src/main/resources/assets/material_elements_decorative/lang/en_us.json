@@ -142,7 +142,6 @@
 
   "item.placeholder.text": "Template placeholder do not remove!",
 
-  "itemGroup.framed_hoppers": "Material & Elements: Framed Hoppers",
-  "itemGroup.panel_plates": "Material & Elements: Panel & Plates",
-  "itemGroup.slabs": "Material & Elements: Slabs"
+  "itemGroup.material_elements_decorative.framed_hoppers": "Material & Elements: Framed Hoppers",
+  "itemGroup.material_elements_decorative.raised_floor": "Material & Elements: Raised Floor"
 }

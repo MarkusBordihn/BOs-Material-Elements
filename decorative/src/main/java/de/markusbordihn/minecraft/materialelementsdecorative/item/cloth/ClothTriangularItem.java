@@ -24,7 +24,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 import de.markusbordihn.minecraft.materialelements.color.ClothColor;
-import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
 
 import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothTriangularBlock;
 
@@ -37,7 +36,7 @@ public class ClothTriangularItem extends BlockItem implements ClothColoredItem {
   }
 
   public ClothTriangularItem(Block block) {
-    super(block, new Item.Properties().tab(MaterialElementsTab.TAB_CLOTH));
+    super(block, new Item.Properties());
     if (block instanceof ClothTriangularBlock clothTriangularBlock) {
       this.blockColor = clothTriangularBlock.getBlockColor();
     }

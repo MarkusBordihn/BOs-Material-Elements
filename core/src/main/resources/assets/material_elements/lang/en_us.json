@@ -316,10 +316,10 @@
   "text.material_elements.slab_frame": "A slab frame which is used for advanced crafting or as ingredient for technical crafting recipes.",
   "text.material_elements.triangular_frame": "A triangular frame which is used for advanced crafting or as ingredient for technical crafting recipes.",
 
-  "itemGroup.cloth": "Material & Elements: Cloth",
-  "itemGroup.construction_frames": "Material & Elements: Construction Frames",
-  "itemGroup.frames": "Material & Elements: Frames",
-  "itemGroup.leather": "Material & Elements: Leather",
-  "itemGroup.rods": "Material & Elements: Rods",
-  "itemGroup.test_tubes": "Material & Elements: Test Tubes"
+  "itemGroup.material_elements.cloth": "Material & Elements: Cloth",
+  "itemGroup.material_elements.construction_frames": "Material & Elements: Construction Frames",
+  "itemGroup.material_elements.frames": "Material & Elements: Frames",
+  "itemGroup.material_elements.leather": "Material & Elements: Leather",
+  "itemGroup.material_elements.rods": "Material & Elements: Rods",
+  "itemGroup.material_elements.test_tubes": "Material & Elements: Test Tubes"
 }

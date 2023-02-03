@@ -22,8 +22,6 @@ package de.markusbordihn.minecraft.materialelements.item.leather;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
-import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
-
 public class LeatherKnife extends Item {
 
   public LeatherKnife(Properties properties) {
@@ -31,7 +29,7 @@ public class LeatherKnife extends Item {
   }
 
   public LeatherKnife() {
-    super(new Item.Properties().durability(238).tab(MaterialElementsTab.TAB_LEATHER));
+    super(new Item.Properties().durability(238));
   }
 
   @Override

@@ -83,6 +83,6 @@
   "block.material_elements_panels_plates_slabs.quartz_plate": "Quarzplatte",
   "block.material_elements_panels_plates_slabs.quartz_panel": "Quarzpaneel",
 
-  "itemGroup.panel_plates": "Material & Elemente: Paneele & Halbe-Platten",
-  "itemGroup.slabs": "Material & Elemente: Platten"
+  "itemGroup.material_elements_panels_plates_slabs.panel_plates": "Material & Elemente: Paneele & Halbe-Platten",
+  "itemGroup.material_elements_panels_plates_slabs.slabs": "Material & Elemente: Platten"
 }

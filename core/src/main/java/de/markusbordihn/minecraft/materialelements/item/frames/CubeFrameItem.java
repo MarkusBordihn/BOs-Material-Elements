@@ -31,7 +31,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 
 import de.markusbordihn.minecraft.materialelements.Constants;
-import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
 
 public class CubeFrameItem extends BlockItem {
 
@@ -40,7 +39,7 @@ public class CubeFrameItem extends BlockItem {
   }
 
   public CubeFrameItem(Block block) {
-    super(block, new Item.Properties().tab(MaterialElementsTab.TAB_FRAMES));
+    super(block, new Item.Properties());
   }
 
   @Override

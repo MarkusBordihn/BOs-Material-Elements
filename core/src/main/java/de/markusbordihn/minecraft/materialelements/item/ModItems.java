@@ -20,7 +20,6 @@
 package de.markusbordihn.minecraft.materialelements.item;
 
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 
@@ -175,26 +174,26 @@ public class ModItems {
       ITEMS.register("leather_shears", LeatherShears::new);
 
   // Nugget
-  public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-  public static final RegistryObject<Item> SILVER_NUGGET = ITEMS.register("silver_nugget",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-  public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-  public static final RegistryObject<Item> NETHERITE_NUGGET = ITEMS.register("netherite_nugget",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> COPPER_NUGGET =
+      ITEMS.register("copper_nugget", () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> SILVER_NUGGET =
+      ITEMS.register("silver_nugget", () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> STEEL_NUGGET =
+      ITEMS.register("steel_nugget", () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> NETHERITE_NUGGET =
+      ITEMS.register("netherite_nugget", () -> new Item(new Item.Properties()));
 
   // Ingot
-  public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-  public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> SILVER_INGOT =
+      ITEMS.register("silver_ingot", () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> STEEL_INGOT =
+      ITEMS.register("steel_ingot", () -> new Item(new Item.Properties()));
 
   // Raw Material
-  public static final RegistryObject<Item> RAW_SILVER = ITEMS.register("raw_silver",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-  public static final RegistryObject<Item> RAW_STEEL = ITEMS.register("raw_steel",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> RAW_SILVER =
+      ITEMS.register("raw_silver", () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> RAW_STEEL =
+      ITEMS.register("raw_steel", () -> new Item(new Item.Properties()));
 
   // Test Tube Color (DyeColor)
   private static final String TEST_TUBE_PREFIX = "test_tube_color_";
@@ -246,52 +245,44 @@ public class ModItems {
       ITEMS.register("test_tube_filled", TestTubeFilledItem::new);
 
   // Other
-  public static final RegistryObject<Item> COKE = ITEMS.register("coke",
-      () -> new CokeItem(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> COKE =
+      ITEMS.register("coke", () -> new CokeItem(new Item.Properties()));
 
   // Wooden Sticks
-  public static final RegistryObject<Item> OAK_STICK = ITEMS.register("oak_stick",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-  public static final RegistryObject<Item> SPRUCE_STICK = ITEMS.register("spruce_stick",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-  public static final RegistryObject<Item> BIRCH_STICK = ITEMS.register("birch_stick",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-  public static final RegistryObject<Item> JUNGLE_STICK = ITEMS.register("jungle_stick",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-  public static final RegistryObject<Item> ACACIA_STICK = ITEMS.register("acacia_stick",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-  public static final RegistryObject<Item> DARK_OAK_STICK = ITEMS.register("dark_oak_stick",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-  public static final RegistryObject<Item> CRIMSON_STICK = ITEMS.register("crimson_stick",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-  public static final RegistryObject<Item> WARPED_STICK = ITEMS.register("warped_stick",
-      () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+  public static final RegistryObject<Item> OAK_STICK =
+      ITEMS.register("oak_stick", () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> SPRUCE_STICK =
+      ITEMS.register("spruce_stick", () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> BIRCH_STICK =
+      ITEMS.register("birch_stick", () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> JUNGLE_STICK =
+      ITEMS.register("jungle_stick", () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> ACACIA_STICK =
+      ITEMS.register("acacia_stick", () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> DARK_OAK_STICK =
+      ITEMS.register("dark_oak_stick", () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> CRIMSON_STICK =
+      ITEMS.register("crimson_stick", () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> WARPED_STICK =
+      ITEMS.register("warped_stick", () -> new Item(new Item.Properties()));
 
   // Wooden Sticks (half-size)
   public static final RegistryObject<Item> OAK_STICK_HALF_SIZE =
-      ITEMS.register("oak_stick_half_size",
-          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+      ITEMS.register("oak_stick_half_size", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> SPRUCE_STICK_HALF_SIZE =
-      ITEMS.register("spruce_stick_half_size",
-          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+      ITEMS.register("spruce_stick_half_size", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> BIRCH_STICK_HALF_SIZE =
-      ITEMS.register("birch_stick_half_size",
-          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+      ITEMS.register("birch_stick_half_size", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> JUNGLE_STICK_HALF_SIZE =
-      ITEMS.register("jungle_stick_half_size",
-          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+      ITEMS.register("jungle_stick_half_size", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> ACACIA_STICK_HALF_SIZE =
-      ITEMS.register("acacia_stick_half_size",
-          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+      ITEMS.register("acacia_stick_half_size", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> DARK_OAK_STICK_HALF_SIZE =
-      ITEMS.register("dark_oak_stick_half_size",
-          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+      ITEMS.register("dark_oak_stick_half_size", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> CRIMSON_STICK_HALF_SIZE =
-      ITEMS.register("crimson_stick_half_size",
-          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+      ITEMS.register("crimson_stick_half_size", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> WARPED_STICK_HALF_SIZE =
-      ITEMS.register("warped_stick_half_size",
-          () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+      ITEMS.register("warped_stick_half_size", () -> new Item(new Item.Properties()));
 
   @TemplateEntryPoint("Register Block Items")
 
@@ -579,41 +570,33 @@ public class ModItems {
       ITEMS.register("netherite_rod", () -> new RodBlockItem(ModBlocks.NETHERITE_ROD.get()));
 
   // Blocks
-  public static final RegistryObject<Item> SILVER_BLOCK =
-      ITEMS.register("silver_block", () -> new BlockItem(ModBlocks.SILVER_BLOCK.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
-  public static final RegistryObject<Item> STEEL_BLOCK =
-      ITEMS.register("steel_block", () -> new BlockItem(ModBlocks.STEEL_BLOCK.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> SILVER_BLOCK = ITEMS.register("silver_block",
+      () -> new BlockItem(ModBlocks.SILVER_BLOCK.get(), new Item.Properties()));
+  public static final RegistryObject<Item> STEEL_BLOCK = ITEMS.register("steel_block",
+      () -> new BlockItem(ModBlocks.STEEL_BLOCK.get(), new Item.Properties()));
 
   // Raw Blocks
-  public static final RegistryObject<Item> RAW_SILVER_BLOCK =
-      ITEMS.register("raw_silver_block", () -> new BlockItem(ModBlocks.RAW_SILVER_BLOCK.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
-  public static final RegistryObject<Item> RAW_STEEL_BLOCK =
-      ITEMS.register("raw_steel_block", () -> new BlockItem(ModBlocks.RAW_STEEL_BLOCK.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> RAW_SILVER_BLOCK = ITEMS.register("raw_silver_block",
+      () -> new BlockItem(ModBlocks.RAW_SILVER_BLOCK.get(), new Item.Properties()));
+  public static final RegistryObject<Item> RAW_STEEL_BLOCK = ITEMS.register("raw_steel_block",
+      () -> new BlockItem(ModBlocks.RAW_STEEL_BLOCK.get(), new Item.Properties()));
 
   // Cokes and Charcoal Block
-  public static final RegistryObject<Item> CHARCOAL_BLOCK =
-      ITEMS.register("charcoal_block", () -> new CharcoalBlockItem(ModBlocks.CHARCOAL_BLOCK.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
-  public static final RegistryObject<Item> COKE_BLOCK =
-      ITEMS.register("coke_block", () -> new CokeBlockItem(ModBlocks.COKE_BLOCK.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> CHARCOAL_BLOCK = ITEMS.register("charcoal_block",
+      () -> new CharcoalBlockItem(ModBlocks.CHARCOAL_BLOCK.get(), new Item.Properties()));
+  public static final RegistryObject<Item> COKE_BLOCK = ITEMS.register("coke_block",
+      () -> new CokeBlockItem(ModBlocks.COKE_BLOCK.get(), new Item.Properties()));
 
   // Ores
-  public static final RegistryObject<Item> SILVER_ORE =
-      ITEMS.register("silver_ore", () -> new BlockItem(ModBlocks.SILVER_ORE.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
-  public static final RegistryObject<Item> DEEPSLATE_SILVER_ORE = ITEMS
-      .register("deepslate_silver_ore", () -> new BlockItem(ModBlocks.DEEPSLATE_SILVER_ORE.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
-  public static final RegistryObject<Item> STEEL_ORE =
-      ITEMS.register("steel_ore", () -> new BlockItem(ModBlocks.STEEL_ORE.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+  public static final RegistryObject<Item> SILVER_ORE = ITEMS.register("silver_ore",
+      () -> new BlockItem(ModBlocks.SILVER_ORE.get(), new Item.Properties()));
+  public static final RegistryObject<Item> DEEPSLATE_SILVER_ORE =
+      ITEMS.register("deepslate_silver_ore",
+          () -> new BlockItem(ModBlocks.DEEPSLATE_SILVER_ORE.get(), new Item.Properties()));
+  public static final RegistryObject<Item> STEEL_ORE = ITEMS.register("steel_ore",
+      () -> new BlockItem(ModBlocks.STEEL_ORE.get(), new Item.Properties()));
   public static final RegistryObject<Item> DEEPSLATE_STEEL_ORE =
-      ITEMS.register("deepslate_steel_ore", () -> new BlockItem(ModBlocks.DEEPSLATE_STEEL_ORE.get(),
-          new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+      ITEMS.register("deepslate_steel_ore",
+          () -> new BlockItem(ModBlocks.DEEPSLATE_STEEL_ORE.get(), new Item.Properties()));
 
 }

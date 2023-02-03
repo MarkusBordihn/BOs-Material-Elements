@@ -24,7 +24,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 import de.markusbordihn.minecraft.materialelements.color.ClothColor;
-import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
 
 import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothSlabBlock;
 
@@ -37,7 +36,7 @@ public class ClothSlabItem extends BlockItem implements ClothColoredItem {
   }
 
   public ClothSlabItem(Block block) {
-    super(block, new Item.Properties().tab(MaterialElementsTab.TAB_CLOTH));
+    super(block, new Item.Properties());
     if (block instanceof ClothSlabBlock clothSlabBlock) {
       this.blockColor = clothSlabBlock.getBlockColor();
     }

@@ -30,14 +30,13 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 
 import de.markusbordihn.minecraft.materialelements.Constants;
-import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
 
 public class ClothItem extends ColoredItem {
 
   protected DyeColor color = DyeColor.WHITE;
 
   public ClothItem(DyeColor dyeColor) {
-    super(dyeColor, new Item.Properties().tab(MaterialElementsTab.TAB_CLOTH));
+    super(dyeColor, new Item.Properties());
   }
 
   @Override

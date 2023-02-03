@@ -43,12 +43,11 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 
 import de.markusbordihn.minecraft.materialelements.item.ModItems;
-import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
 
 public class TestTubeItem extends BottleItem {
 
   public TestTubeItem() {
-    super(new Item.Properties().tab(MaterialElementsTab.TAB_TEST_TUBES));
+    super(new Item.Properties());
   }
 
   public TestTubeItem(Item.Properties properties) {

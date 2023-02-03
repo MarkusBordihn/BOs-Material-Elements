@@ -212,8 +212,11 @@
   "text.material_elements.leather_sheet": "Ein großes Rohleder, das für fortgeschrittenere Lederherstellung verwendet wird.",
   "text.material_elements.leather_strip": "Ein roher Lederstreifen, der zur Lederherstellung oder als Zutat für Herstellungsrezepte verwendet wird.",
 
-  "itemGroup.cube_frames": "Material & Elements: Würfelrahmen",
-  "itemGroup.leather": "Material & Elements: Leder",
-  "itemGroup.rods": "Material & Elemente: Stangen",
-  "itemGroup.test_tubes": "Material & Elemente: Reagenzgläser"
+  "itemGroup.material_elements.cloth": "Material & Elements: Cloth",
+  "itemGroup.material_elements.construction_frames": "Material & Elements: Construction Frames",
+  "itemGroup.material_elements.frames": "Material & Elements: Frames",
+  "itemGroup.material_elements.leather": "Material & Elements: Leder",
+  "itemGroup.material_elements.rods": "Material & Elemente: Stangen",
+  "itemGroup.material_elements.test_tubes": "Material & Elemente: Reagenzgläser"
+
 }
