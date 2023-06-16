@@ -22,7 +22,6 @@ package de.markusbordihn.minecraft.materialelementsarmortoolsweapons.item;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
@@ -42,8 +41,8 @@ public class CopperArmorItem extends ArmorItem {
   private int ticker = 0;
   private ArmorMaterial armorMaterial = ModArmorMaterials.COPPER;
 
-  public CopperArmorItem(EquipmentSlot equipmentSlot) {
-    super(ModArmorMaterials.COPPER, equipmentSlot, (new Item.Properties()));
+  public CopperArmorItem(ArmorItem.Type armorItemType) {
+    super(ModArmorMaterials.COPPER, armorItemType, (new Item.Properties()));
   }
 
   @Override

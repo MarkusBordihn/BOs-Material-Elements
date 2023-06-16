@@ -52,7 +52,7 @@ public class MaterialElementsDecorativeTab {
     TAB_FRAMED_HOPPERS = event.registerCreativeModeTab(
         new ResourceLocation(Constants.MOD_ID, "framed_hoppers"), builder -> {
           builder.icon(() -> new ItemStack(ModItems.OAK_FRAMED_HOPPER.get()))
-              .displayItems(MaterialElementsDecorativeTab::addFramedHoppersTabItems)
+              .displayItems(new FramedHopperItems())
               .title(
                   Component.translatable("itemGroup.material_elements_decorative.framed_hoppers"))
               .build();
@@ -61,7 +61,7 @@ public class MaterialElementsDecorativeTab {
     TAB_RAISED_FLOOR = event.registerCreativeModeTab(
         new ResourceLocation(Constants.MOD_ID, "raised_floor"), builder -> {
           builder.icon(() -> new ItemStack(ModItems.RAISED_FLOOR_BASIC.get()))
-              .displayItems(MaterialElementsDecorativeTab::addRaisedFloorTabItems)
+              .displayItems(new RaisedFloorItems())
               .title(Component.translatable("itemGroup.material_elements_decorative.raised_floor"))
               .build();
         });
@@ -167,42 +167,6 @@ public class MaterialElementsDecorativeTab {
       event.accept(ModItems.CLOTH_TRIANGULAR_RED.get());
       event.accept(ModItems.CLOTH_TRIANGULAR_BLACK.get());
     }
-  }
-
-  private static void addFramedHoppersTabItems(FeatureFlagSet featureFlagSet, Output outputTab,
-      boolean hasPermissions) {
-    // Wooden framed Hoppers
-    outputTab.accept(ModItems.OAK_FRAMED_HOPPER.get());
-    outputTab.accept(ModItems.SPRUCE_FRAMED_HOPPER.get());
-    outputTab.accept(ModItems.BIRCH_FRAMED_HOPPER.get());
-    outputTab.accept(ModItems.JUNGLE_FRAMED_HOPPER.get());
-    outputTab.accept(ModItems.ACACIA_FRAMED_HOPPER.get());
-    outputTab.accept(ModItems.DARK_OAK_FRAMED_HOPPER.get());
-    outputTab.accept(ModItems.CRIMSON_FRAMED_HOPPER.get());
-    outputTab.accept(ModItems.WARPED_FRAMED_HOPPER.get());
-  }
-
-  private static void addRaisedFloorTabItems(FeatureFlagSet featureFlagSet, Output outputTab,
-      boolean hasPermissions) {
-    // Raised Floor
-    outputTab.accept(ModItems.RAISED_FLOOR_BASE.get());
-    outputTab.accept(ModItems.RAISED_FLOOR_BASIC.get());
-    outputTab.accept(ModItems.RAISED_FLOOR_FLOW_PANEL_TYPE_A.get());
-    outputTab.accept(ModItems.RAISED_FLOOR_FLOW_PANEL_TYPE_B.get());
-    outputTab.accept(ModItems.RAISED_FLOOR_FLOW_PANEL_TYPE_C.get());
-    outputTab.accept(ModItems.RAISED_FLOOR_FLOW_PANEL_TYPE_D.get());
-    outputTab.accept(ModItems.RAISED_FLOOR_FLOW_PANEL_TYPE_E.get());
-    outputTab.accept(ModItems.RAISED_FLOOR_FLOW_PANEL_TYPE_F.get());
-
-    // Raised Floor Light
-    outputTab.accept(ModItems.RAISED_FLOOR_LIGHT_CORNER_LIGHT_BLUE.get());
-    outputTab.accept(ModItems.RAISED_FLOOR_LIGHT_CORNER_FLIPPED_LIGHT_BLUE.get());
-    outputTab.accept(ModItems.RAISED_FLOOR_LIGHT_LIGHT_BLUE.get());
-    outputTab.accept(ModItems.RAISED_FLOOR_LIGHT_MIDDLE_HALF_LIGHT_BLUE.get());
-    outputTab.accept(ModItems.RAISED_FLOOR_LIGHT_MIDDLE_LIGHT_BLUE.get());
-    outputTab.accept(ModItems.RAISED_FLOOR_LIGHT_SIDE_HALF_LIGHT_BLUE.get());
-    outputTab.accept(ModItems.RAISED_FLOOR_LIGHT_SIDE_HALF_FLIPPED_LIGHT_BLUE.get());
-    outputTab.accept(ModItems.RAISED_FLOOR_LIGHT_SIDE_LIGHT_BLUE.get());
   }
 
 }

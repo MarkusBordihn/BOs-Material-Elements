@@ -29,7 +29,6 @@ import net.minecraft.world.item.ShearsItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
-import net.minecraft.world.entity.EquipmentSlot;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -78,16 +77,16 @@ public class ModItems {
 
   // Copper Armor
   public static final RegistryObject<Item> COPPER_BOOTS =
-      ITEMS.register("copper_boots", () -> new CopperArmorItem(EquipmentSlot.FEET));
+      ITEMS.register("copper_boots", () -> new CopperArmorItem(ArmorItem.Type.BOOTS));
 
   public static final RegistryObject<Item> COPPER_HELMET =
-      ITEMS.register("copper_helmet", () -> new CopperArmorItem(EquipmentSlot.HEAD));
+      ITEMS.register("copper_helmet", () -> new CopperArmorItem(ArmorItem.Type.HELMET));
 
   public static final RegistryObject<Item> COPPER_LEGGINGS =
-      ITEMS.register("copper_leggings", () -> new CopperArmorItem(EquipmentSlot.LEGS));
+      ITEMS.register("copper_leggings", () -> new CopperArmorItem(ArmorItem.Type.LEGGINGS));
 
   public static final RegistryObject<Item> COPPER_CHESTPLATE =
-      ITEMS.register("copper_chestplate", () -> new CopperArmorItem(EquipmentSlot.CHEST));
+      ITEMS.register("copper_chestplate", () -> new CopperArmorItem(ArmorItem.Type.CHESTPLATE));
 
 
   // Steel Weapons
@@ -119,15 +118,17 @@ public class ModItems {
 
   // Steel Armor
   public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots",
-      () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.FEET, (new Item.Properties())));
+      () -> new ArmorItem(ModArmorMaterials.STEEL, ArmorItem.Type.BOOTS, (new Item.Properties())));
 
   public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
-      () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.HEAD, (new Item.Properties())));
+      () -> new ArmorItem(ModArmorMaterials.STEEL, ArmorItem.Type.HELMET, (new Item.Properties())));
 
-  public static final RegistryObject<Item> STEEL_LEGGINGS = ITEMS.register("steel_leggings",
-      () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.LEGS, (new Item.Properties())));
+  public static final RegistryObject<Item> STEEL_LEGGINGS =
+      ITEMS.register("steel_leggings", () -> new ArmorItem(ModArmorMaterials.STEEL,
+          ArmorItem.Type.LEGGINGS, (new Item.Properties())));
 
-  public static final RegistryObject<Item> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate",
-      () -> new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.CHEST, (new Item.Properties())));
+  public static final RegistryObject<Item> STEEL_CHESTPLATE =
+      ITEMS.register("steel_chestplate", () -> new ArmorItem(ModArmorMaterials.STEEL,
+          ArmorItem.Type.CHESTPLATE, (new Item.Properties())));
 
 }
