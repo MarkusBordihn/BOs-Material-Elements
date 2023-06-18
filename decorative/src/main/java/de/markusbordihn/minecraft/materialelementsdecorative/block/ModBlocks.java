@@ -25,8 +25,7 @@ import net.minecraft.world.level.block.ChainBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.material.MapColor;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -246,10 +245,12 @@ public class ModBlocks {
       BLOCKS.register("raised_floor_light_side_light_blue", RaisedFloorLightBlock::new);
 
   // Steel Chain
-  public static final RegistryObject<Block> STEEL_CHAIN = BLOCKS.register("steel_chain",
-      () -> new ChainBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE)
-          .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.CHAIN)
-          .noOcclusion()));
+  public static final RegistryObject<Block> STEEL_CHAIN =
+      BLOCKS
+          .register("steel_chain",
+              () -> new ChainBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL)
+                  .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.CHAIN)
+                  .noOcclusion()));
 
   // Steel Lantern
   public static final RegistryObject<Block> STEEL_LANTERN =
@@ -257,8 +258,8 @@ public class ModBlocks {
   public static final RegistryObject<Block> STEEL_SOUL_LANTERN = BLOCKS.register(
       "steel_soul_lantern",
       () -> new SteelLanternBlock(
-          BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(3.5F)
-              .sound(SoundType.LANTERN).lightLevel(blockState -> 10).noOcclusion(),
+          BlockBehaviour.Properties.of().mapColor(MapColor.METAL).requiresCorrectToolForDrops()
+              .strength(3.5F).sound(SoundType.LANTERN).lightLevel(blockState -> 10).noOcclusion(),
           DyeColor.LIGHT_BLUE));
 
   // Steel Lantern (colored)

@@ -75,16 +75,16 @@ public class ModItemColors {
 
   public static int getColorFromColoredItem(ItemStack itemStack, int color) {
     if (color <= 0 && itemStack.getItem() instanceof ColoredItem coloredItem) {
-      return coloredItem.getMaterialColor();
+      return coloredItem.getMapColor();
     }
     return -1;
   }
 
   public static int getColorFromTestTube(ItemStack itemStack, int color) {
     if (color <= 0 && itemStack.getItem() instanceof TestTubeColorItem testTubeColorItem) {
-      return testTubeColorItem.getColor().getMaterialColor().col;
+      return testTubeColorItem.getColor().getMapColor().col;
     } else if (color <= 0 && itemStack.getItem() instanceof TestTubeCustomItem testTubeCustomItem) {
-      return testTubeCustomItem.getColor().getMaterialColor().col;
+      return testTubeCustomItem.getColor().getMapColor().col;
     }
     return -1;
   }

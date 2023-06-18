@@ -51,7 +51,7 @@ public class MaterialElementsDecorative {
 
     DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
       modEventBus.addListener(MaterialElementsDecorativeTab::handleCreativeModeTab);
-      modEventBus.addListener(MaterialElementsDecorativeTab::handleCreativeModeTabRegister);
+      MaterialElementsDecorativeTab.CREATIVE_TABS.register(modEventBus);
     });
   }
 }

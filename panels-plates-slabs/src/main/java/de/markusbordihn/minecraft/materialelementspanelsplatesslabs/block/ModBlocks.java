@@ -21,7 +21,7 @@ package de.markusbordihn.minecraft.materialelementspanelsplatesslabs.block;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.material.MapColor;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -177,35 +177,35 @@ public class ModBlocks {
 
   // Wool
   public static final RegistryObject<Block> WOOL_SLAB_WHITE =
-      BLOCKS.register("wool_slab_white", () -> new WoolSlabBlock(MaterialColor.SNOW));
+      BLOCKS.register("wool_slab_white", () -> new WoolSlabBlock(MapColor.SNOW));
   public static final RegistryObject<Block> WOOL_SLAB_ORANGE =
-      BLOCKS.register("wool_slab_orange", () -> new WoolSlabBlock(MaterialColor.COLOR_ORANGE));
+      BLOCKS.register("wool_slab_orange", () -> new WoolSlabBlock(MapColor.COLOR_ORANGE));
   public static final RegistryObject<Block> WOOL_SLAB_MAGENTA =
-      BLOCKS.register("wool_slab_magenta", () -> new WoolSlabBlock(MaterialColor.COLOR_MAGENTA));
+      BLOCKS.register("wool_slab_magenta", () -> new WoolSlabBlock(MapColor.COLOR_MAGENTA));
   public static final RegistryObject<Block> WOOL_SLAB_LIGHT_BLUE = BLOCKS
-      .register("wool_slab_light_blue", () -> new WoolSlabBlock(MaterialColor.COLOR_LIGHT_BLUE));
+      .register("wool_slab_light_blue", () -> new WoolSlabBlock(MapColor.COLOR_LIGHT_BLUE));
   public static final RegistryObject<Block> WOOL_SLAB_YELLOW =
-      BLOCKS.register("wool_slab_yellow", () -> new WoolSlabBlock(MaterialColor.COLOR_YELLOW));
+      BLOCKS.register("wool_slab_yellow", () -> new WoolSlabBlock(MapColor.COLOR_YELLOW));
   public static final RegistryObject<Block> WOOL_SLAB_LIME =
-      BLOCKS.register("wool_slab_lime", () -> new WoolSlabBlock(MaterialColor.COLOR_LIGHT_GREEN));
+      BLOCKS.register("wool_slab_lime", () -> new WoolSlabBlock(MapColor.COLOR_LIGHT_GREEN));
   public static final RegistryObject<Block> WOOL_SLAB_PINK =
-      BLOCKS.register("wool_slab_pink", () -> new WoolSlabBlock(MaterialColor.COLOR_PINK));
+      BLOCKS.register("wool_slab_pink", () -> new WoolSlabBlock(MapColor.COLOR_PINK));
   public static final RegistryObject<Block> WOOL_SLAB_GRAY =
-      BLOCKS.register("wool_slab_gray", () -> new WoolSlabBlock(MaterialColor.COLOR_GRAY));
+      BLOCKS.register("wool_slab_gray", () -> new WoolSlabBlock(MapColor.COLOR_GRAY));
   public static final RegistryObject<Block> WOOL_SLAB_LIGHT_GRAY = BLOCKS
-      .register("wool_slab_light_gray", () -> new WoolSlabBlock(MaterialColor.COLOR_LIGHT_GRAY));
+      .register("wool_slab_light_gray", () -> new WoolSlabBlock(MapColor.COLOR_LIGHT_GRAY));
   public static final RegistryObject<Block> WOOL_SLAB_CYAN =
-      BLOCKS.register("wool_slab_cyan", () -> new WoolSlabBlock(MaterialColor.COLOR_CYAN));
+      BLOCKS.register("wool_slab_cyan", () -> new WoolSlabBlock(MapColor.COLOR_CYAN));
   public static final RegistryObject<Block> WOOL_SLAB_PURPLE =
-      BLOCKS.register("wool_slab_purple", () -> new WoolSlabBlock(MaterialColor.COLOR_PURPLE));
+      BLOCKS.register("wool_slab_purple", () -> new WoolSlabBlock(MapColor.COLOR_PURPLE));
   public static final RegistryObject<Block> WOOL_SLAB_BLUE =
-      BLOCKS.register("wool_slab_blue", () -> new WoolSlabBlock(MaterialColor.COLOR_BLUE));
+      BLOCKS.register("wool_slab_blue", () -> new WoolSlabBlock(MapColor.COLOR_BLUE));
   public static final RegistryObject<Block> WOOL_SLAB_BROWN =
-      BLOCKS.register("wool_slab_brown", () -> new WoolSlabBlock(MaterialColor.COLOR_BROWN));
+      BLOCKS.register("wool_slab_brown", () -> new WoolSlabBlock(MapColor.COLOR_BROWN));
   public static final RegistryObject<Block> WOOL_SLAB_GREEN =
-      BLOCKS.register("wool_slab_green", () -> new WoolSlabBlock(MaterialColor.COLOR_GREEN));
+      BLOCKS.register("wool_slab_green", () -> new WoolSlabBlock(MapColor.COLOR_GREEN));
   public static final RegistryObject<Block> WOOL_SLAB_RED =
-      BLOCKS.register("wool_slab_red", () -> new WoolSlabBlock(MaterialColor.COLOR_RED));
+      BLOCKS.register("wool_slab_red", () -> new WoolSlabBlock(MapColor.COLOR_RED));
   public static final RegistryObject<Block> WOOL_SLAB_BLACK =
-      BLOCKS.register("wool_slab_black", () -> new WoolSlabBlock(MaterialColor.COLOR_BLACK));
+      BLOCKS.register("wool_slab_black", () -> new WoolSlabBlock(MapColor.COLOR_BLACK));
 }

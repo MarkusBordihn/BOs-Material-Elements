@@ -22,15 +22,15 @@ package de.markusbordihn.minecraft.materialelementsdecorative.tabs;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.CreativeModeTab.Output;
 
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
+
 import de.markusbordihn.minecraft.materialelements.tabs.MaterialElementsTab;
 import de.markusbordihn.minecraft.materialelementsdecorative.Constants;
 import de.markusbordihn.minecraft.materialelementsdecorative.item.ModItems;
@@ -41,34 +41,27 @@ public class MaterialElementsDecorativeTab {
 
   protected MaterialElementsDecorativeTab() {}
 
-  protected static CreativeModeTab TAB_FRAMED_HOPPERS;
+  public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS =
+      DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Constants.MOD_ID);
 
-  protected static CreativeModeTab TAB_RAISED_FLOOR;
+  public static final RegistryObject<CreativeModeTab> TAB_FRAMED_HOPPERS = CREATIVE_TABS.register(
+      "framed_hoppers",
+      () -> CreativeModeTab.builder()
+          .icon(() -> ModItems.OAK_FRAMED_HOPPER.get().getDefaultInstance())
+          .displayItems(new FramedHopperItems())
+          .title(Component.translatable("itemGroup.material_elements_decorative.framed_hoppers"))
+          .build());
 
-  public static void handleCreativeModeTabRegister(CreativeModeTabEvent.Register event) {
-
-    log.info("{} creative mod tabs ...", Constants.LOG_REGISTER_PREFIX);
-
-    TAB_FRAMED_HOPPERS = event.registerCreativeModeTab(
-        new ResourceLocation(Constants.MOD_ID, "framed_hoppers"), builder -> {
-          builder.icon(() -> new ItemStack(ModItems.OAK_FRAMED_HOPPER.get()))
-              .displayItems(new FramedHopperItems())
-              .title(
-                  Component.translatable("itemGroup.material_elements_decorative.framed_hoppers"))
-              .build();
-        });
-
-    TAB_RAISED_FLOOR = event.registerCreativeModeTab(
-        new ResourceLocation(Constants.MOD_ID, "raised_floor"), builder -> {
-          builder.icon(() -> new ItemStack(ModItems.RAISED_FLOOR_BASIC.get()))
+  public static final RegistryObject<CreativeModeTab> TAB_RAISED_FLOOR =
+      CREATIVE_TABS.register("raised_floor",
+          () -> CreativeModeTab.builder()
+              .icon(() -> ModItems.RAISED_FLOOR_BASIC.get().getDefaultInstance())
               .displayItems(new RaisedFloorItems())
               .title(Component.translatable("itemGroup.material_elements_decorative.raised_floor"))
-              .build();
-        });
-  }
+              .build());
 
-  public static void handleCreativeModeTab(CreativeModeTabEvent.BuildContents event) {
-    if (event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
+  public static void handleCreativeModeTab(BuildCreativeModeTabContentsEvent event) {
+    if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
       // Steel Chain
       event.accept(ModItems.STEEL_CHAIN.get());
 
@@ -93,7 +86,7 @@ public class MaterialElementsDecorativeTab {
       event.accept(ModItems.STEEL_LANTERN_GREEN.get());
       event.accept(ModItems.STEEL_LANTERN_RED.get());
       event.accept(ModItems.STEEL_LANTERN_BLACK.get());
-    } else if (event.getTab() == MaterialElementsTab.TAB_CLOTH) {
+    } else if (event.getTab() == MaterialElementsTab.TAB_CLOTH.get()) {
       // Fabric Cloth
       event.accept(ModItems.FABRIC_CLOTH_WHITE.get());
       event.accept(ModItems.FABRIC_CLOTH_ORANGE.get());

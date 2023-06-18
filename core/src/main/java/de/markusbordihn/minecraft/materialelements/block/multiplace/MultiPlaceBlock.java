@@ -33,7 +33,6 @@ import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
@@ -113,11 +112,6 @@ public class MultiPlaceBlock extends Block {
   @Override
   protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> blockState) {
     blockState.add(ATTACH_FACE, FACING);
-  }
-
-  @Override
-  public PushReaction getPistonPushReaction(BlockState blockState) {
-    return PushReaction.DESTROY;
   }
 
 }

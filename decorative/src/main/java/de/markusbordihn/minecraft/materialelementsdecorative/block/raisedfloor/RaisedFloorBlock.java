@@ -27,8 +27,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.AttachFace;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -57,7 +56,7 @@ public class RaisedFloorBlock extends MultiPlaceBlock {
   }
 
   public RaisedFloorBlock() {
-    super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.STONE)
+    super(BlockBehaviour.Properties.of().mapColor(MapColor.METAL)
         .requiresCorrectToolForDrops().strength(3.0F, 4.8F).sound(SoundType.METAL).noOcclusion()
         .isValidSpawn(RaisedFloorBlock::isValidSpawn));
   }

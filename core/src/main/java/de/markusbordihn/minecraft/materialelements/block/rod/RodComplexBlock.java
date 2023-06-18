@@ -32,7 +32,6 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
@@ -89,8 +88,5 @@ public class RodComplexBlock extends RodBlock {
     blockState.add(RodComplexBlock.ATTACH_FACE, RodComplexBlock.FACING, RodComplexBlock.CONNECTED);
   }
 
-  @Override
-  public PushReaction getPistonPushReaction(BlockState blockState) {
-    return PushReaction.DESTROY;
-  }
+
 }

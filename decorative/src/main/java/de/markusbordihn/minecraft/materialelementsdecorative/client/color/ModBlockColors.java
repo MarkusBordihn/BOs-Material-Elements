@@ -114,7 +114,7 @@ public class ModBlockColors {
   public static int getColorFromSteelLantern(BlockState blockState,
       BlockAndTintGetter blockAndTintGetter, BlockPos blockPos, int color) {
     if (color <= 0 && blockState.getBlock() instanceof SteelLanternBlock steelLanternBlock) {
-      return steelLanternBlock.getMaterialColor();
+      return steelLanternBlock.getMapColor();
     }
     return -1;
   }

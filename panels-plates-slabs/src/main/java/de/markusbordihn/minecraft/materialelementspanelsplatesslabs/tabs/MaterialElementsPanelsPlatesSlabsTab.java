@@ -22,12 +22,12 @@ package de.markusbordihn.minecraft.materialelementspanelsplatesslabs.tabs;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
 
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
 
 import de.markusbordihn.minecraft.materialelementspanelsplatesslabs.Constants;
 import de.markusbordihn.minecraft.materialelementspanelsplatesslabs.item.ModItems;
@@ -38,31 +38,22 @@ public class MaterialElementsPanelsPlatesSlabsTab {
 
   protected MaterialElementsPanelsPlatesSlabsTab() {}
 
-  protected static CreativeModeTab TAB_PANEL_PLATES;
+  public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS =
+      DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Constants.MOD_ID);
 
-  protected static CreativeModeTab TAB_SLABS;
-
-  public static void handleCreativeModeTabRegister(CreativeModeTabEvent.Register event) {
-
-    log.info("{} creative mod tabs ...", Constants.LOG_REGISTER_PREFIX);
-
-    TAB_PANEL_PLATES = event.registerCreativeModeTab(
-        new ResourceLocation(Constants.MOD_ID, "panel_plates"), builder -> {
-          builder.icon(() -> new ItemStack(ModItems.OAK_PLATE.get()))
+  public static final RegistryObject<CreativeModeTab> TAB_PANEL_PLATES =
+      CREATIVE_TABS.register("panel_plates",
+          () -> CreativeModeTab.builder().icon(() -> ModItems.OAK_PLATE.get().getDefaultInstance())
               .displayItems(new PanelPlatesItems())
               .title(Component
                   .translatable("itemGroup.material_elements_panels_plates_slabs.panel_plates"))
-              .build();
-        });
+              .build());
 
-    TAB_SLABS =
-        event.registerCreativeModeTab(new ResourceLocation(Constants.MOD_ID, "slabs"), builder -> {
-          builder.icon(() -> new ItemStack(ModItems.WOOL_SLAB_RED.get()))
-              .displayItems(new SlabsItems())
-              .title(
-                  Component.translatable("itemGroup.material_elements_panels_plates_slabs.slabs"))
-              .build();
-        });
-  }
+  public static final RegistryObject<CreativeModeTab> TAB_SLABS = CREATIVE_TABS.register("slabs",
+      () -> CreativeModeTab.builder().icon(() -> ModItems.WOOL_SLAB_RED.get().getDefaultInstance())
+          .displayItems(new SlabsItems())
+          .title(Component.translatable("itemGroup.material_elements_panels_plates_slabs.slabs"))
+          .build());
+
 
 }

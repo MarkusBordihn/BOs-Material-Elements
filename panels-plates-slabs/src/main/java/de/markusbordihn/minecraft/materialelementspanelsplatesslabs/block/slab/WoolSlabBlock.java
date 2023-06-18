@@ -25,13 +25,12 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.material.MapColor;
 
 public class WoolSlabBlock extends SlabBlock {
 
-  public WoolSlabBlock(MaterialColor materialColor) {
-    super(BlockBehaviour.Properties.of(Material.WOOL, materialColor).strength(0.8F)
+  public WoolSlabBlock(MapColor mapColor) {
+    super(BlockBehaviour.Properties.of().mapColor(mapColor).strength(0.8F)
         .sound(SoundType.WOOL));
   }
 

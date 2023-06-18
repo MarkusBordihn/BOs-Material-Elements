@@ -22,28 +22,27 @@ package de.markusbordihn.minecraft.materialelementsdecorative.block;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
 
 public class ColoredBlock extends Block {
 
   private DyeColor color = DyeColor.RED;
-  private int materialColor = DyeColor.RED.getMaterialColor().col;
+  private int materialColor = DyeColor.RED.getMapColor().col;
 
   public ColoredBlock(DyeColor color) {
-    this(color, BlockBehaviour.Properties.of(Material.STONE, color));
+    this(color, BlockBehaviour.Properties.of().mapColor(color));
   }
 
   public ColoredBlock(DyeColor color, Properties properties) {
     super(properties);
     this.color = color;
-    this.materialColor = color.getMaterialColor().col;
+    this.materialColor = color.getMapColor().col;
   }
 
   public DyeColor getColor() {
     return this.color;
   }
 
-  public int getMaterialColor() {
+  public int getMapColor() {
     return this.materialColor;
   }
 

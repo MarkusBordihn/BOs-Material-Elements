@@ -20,35 +20,35 @@
 package de.markusbordihn.minecraft.materialelements.color;
 
 import net.minecraft.util.StringRepresentable;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.material.MapColor;
 
 public enum ClothColor implements StringRepresentable {
-  WHITE(0, "white", 16383998, MaterialColor.SNOW),
-  ORANGE(1, "orange", 15230983, MaterialColor.COLOR_ORANGE),
-  MAGENTA(2, "magenta", 14049488, MaterialColor.COLOR_MAGENTA),
-  LIGHT_BLUE(3, "light_blue", 5228520, MaterialColor.COLOR_LIGHT_BLUE),
-  YELLOW(4, "yellow", 16767296, MaterialColor.COLOR_YELLOW),
-  LIME(5, "lime", 8439583, MaterialColor.COLOR_LIGHT_GREEN),
-  PINK(6, "pink", 16101575, MaterialColor.COLOR_PINK),
-  GRAY(7, "gray", 4673362, MaterialColor.COLOR_GRAY),
-  LIGHT_GRAY(8, "light_gray", 10395288, MaterialColor.COLOR_LIGHT_GRAY),
-  CYAN(9, "cyan", 1481884, MaterialColor.COLOR_CYAN),
-  PURPLE(10, "purple", 8991416, MaterialColor.COLOR_PURPLE),
-  BLUE(11, "blue", 3949738, MaterialColor.COLOR_BLUE),
-  BROWN(12, "brown", 8606770, MaterialColor.COLOR_BROWN),
-  GREEN(13, "green", 6192150, MaterialColor.COLOR_GREEN),
-  RED(14, "red", 11546150, MaterialColor.COLOR_RED),
-  BLACK(15, "black", 1908001, MaterialColor.COLOR_BLACK);
+  WHITE(0, "white", 16383998, MapColor.SNOW),
+  ORANGE(1, "orange", 15230983, MapColor.COLOR_ORANGE),
+  MAGENTA(2, "magenta", 14049488, MapColor.COLOR_MAGENTA),
+  LIGHT_BLUE(3, "light_blue", 5228520, MapColor.COLOR_LIGHT_BLUE),
+  YELLOW(4, "yellow", 16767296, MapColor.COLOR_YELLOW),
+  LIME(5, "lime", 8439583, MapColor.COLOR_LIGHT_GREEN),
+  PINK(6, "pink", 16101575, MapColor.COLOR_PINK),
+  GRAY(7, "gray", 4673362, MapColor.COLOR_GRAY),
+  LIGHT_GRAY(8, "light_gray", 10395288, MapColor.COLOR_LIGHT_GRAY),
+  CYAN(9, "cyan", 1481884, MapColor.COLOR_CYAN),
+  PURPLE(10, "purple", 8991416, MapColor.COLOR_PURPLE),
+  BLUE(11, "blue", 3949738, MapColor.COLOR_BLUE),
+  BROWN(12, "brown", 8606770, MapColor.COLOR_BROWN),
+  GREEN(13, "green", 6192150, MapColor.COLOR_GREEN),
+  RED(14, "red", 11546150, MapColor.COLOR_RED),
+  BLACK(15, "black", 1908001, MapColor.COLOR_BLACK);
 
   private final int id;
   private final String name;
-  private final MaterialColor color;
+  private final MapColor color;
   private final int blockColor;
 
-  private ClothColor(int id, String name, int color, MaterialColor materialColor) {
+  private ClothColor(int id, String name, int color, MapColor mapColor) {
     this.id = id;
     this.name = name;
-    this.color = materialColor;
+    this.color = mapColor;
     this.blockColor = color;
   }
 
@@ -64,7 +64,7 @@ public enum ClothColor implements StringRepresentable {
     return this.blockColor;
   }
 
-  public MaterialColor getMaterialColor() {
+  public MapColor getMapColor() {
     return this.color;
   }
 

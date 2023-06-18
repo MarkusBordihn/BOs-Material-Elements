@@ -23,15 +23,15 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.LanternBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MapColor;
 
 public class SteelLanternBlock extends LanternBlock {
 
   private static final BlockBehaviour.Properties DEFAULT_BLOCK_PROPERTIES =
-      BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(4.0F)
-          .sound(SoundType.LANTERN).lightLevel(blockState -> 15).noOcclusion();
+      BlockBehaviour.Properties.of().mapColor(MapColor.METAL).requiresCorrectToolForDrops()
+          .strength(4.0F).sound(SoundType.LANTERN).lightLevel(blockState -> 15).noOcclusion();
   private DyeColor color = DyeColor.YELLOW;
-  private int materialColor = DyeColor.YELLOW.getMaterialColor().col;
+  private int materialColor = DyeColor.YELLOW.getMapColor().col;
 
   public SteelLanternBlock(BlockBehaviour.Properties properties) {
     super(properties);
@@ -40,20 +40,20 @@ public class SteelLanternBlock extends LanternBlock {
   public SteelLanternBlock(BlockBehaviour.Properties properties, DyeColor dyeColor) {
     super(properties);
     this.color = dyeColor;
-    this.materialColor = dyeColor.getMaterialColor().col;
+    this.materialColor = dyeColor.getMapColor().col;
   }
 
   public SteelLanternBlock(DyeColor dyeColor) {
     super(DEFAULT_BLOCK_PROPERTIES);
     this.color = dyeColor;
-    this.materialColor = dyeColor.getMaterialColor().col;
+    this.materialColor = dyeColor.getMapColor().col;
   }
 
   public DyeColor getColor() {
     return this.color;
   }
 
-  public int getMaterialColor() {
+  public int getMapColor() {
     return this.materialColor;
   }
 

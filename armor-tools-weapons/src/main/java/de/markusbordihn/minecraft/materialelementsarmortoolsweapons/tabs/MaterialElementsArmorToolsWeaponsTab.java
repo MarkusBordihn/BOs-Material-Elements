@@ -21,8 +21,7 @@
 package de.markusbordihn.minecraft.materialelementsarmortoolsweapons.tabs;
 
 import net.minecraft.world.item.CreativeModeTabs;
-
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 import de.markusbordihn.minecraft.materialelementsarmortoolsweapons.item.ModItems;
 
@@ -30,8 +29,8 @@ public class MaterialElementsArmorToolsWeaponsTab {
 
   protected MaterialElementsArmorToolsWeaponsTab() {}
 
-  public static void handleCreativeModeTab(CreativeModeTabEvent.BuildContents event) {
-    if (event.getTab() == CreativeModeTabs.COMBAT) {
+  public static void handleCreativeModeTab(BuildCreativeModeTabContentsEvent event) {
+    if (event.getTabKey() == CreativeModeTabs.COMBAT) {
       // Copper Weapons
       event.accept(ModItems.COPPER_SWORD.get());
       event.accept(ModItems.COPPER_CROSSBOW.get());
@@ -51,7 +50,7 @@ public class MaterialElementsArmorToolsWeaponsTab {
       event.accept(ModItems.STEEL_HELMET.get());
       event.accept(ModItems.STEEL_LEGGINGS.get());
       event.accept(ModItems.STEEL_CHESTPLATE.get());
-    } else if (event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+    } else if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
       // Copper Tools
       event.accept(ModItems.COPPER_AXE.get());
       event.accept(ModItems.COPPER_HOE.get());

@@ -285,15 +285,8 @@ public class FramedHopperBlockEntity extends RandomizableContainerBlockEntity im
   }
 
   private static boolean canMergeItems(ItemStack itemStack1, ItemStack itemStack2) {
-    if (!itemStack1.is(itemStack2.getItem())) {
-      return false;
-    } else if (itemStack1.getDamageValue() != itemStack2.getDamageValue()) {
-      return false;
-    } else if (itemStack1.getCount() > itemStack1.getMaxStackSize()) {
-      return false;
-    } else {
-      return ItemStack.tagMatches(itemStack1, itemStack2);
-    }
+    return itemStack1.getCount() <= itemStack1.getMaxStackSize()
+        && ItemStack.isSameItemSameTags(itemStack1, itemStack2);
   }
 
   private static ItemStack tryMoveInItem(@Nullable Container framedHopperContainer,

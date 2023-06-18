@@ -105,7 +105,7 @@ public class ModItemColors {
 
   public static int getColorFromColoredItem(ItemStack itemStack, int color) {
     if (color <= 0 && itemStack.getItem() instanceof ColoredItem coloredItem) {
-      return coloredItem.getMaterialColor();
+      return coloredItem.getMapColor();
     }
     return -1;
   }
@@ -119,7 +119,7 @@ public class ModItemColors {
 
   public static int getColorFromSteelLantern(ItemStack itemStack, int color) {
     if (color <= 0 && itemStack.getItem() instanceof SteelLanternItem steelLanternItem) {
-      return steelLanternItem.getMaterialColor();
+      return steelLanternItem.getMapColor();
     }
     return -1;
   }

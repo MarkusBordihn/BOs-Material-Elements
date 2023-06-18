@@ -32,7 +32,6 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
@@ -83,11 +82,6 @@ public class AttachFacePlaceBlock extends Block {
   @Override
   protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> blockState) {
     blockState.add(ATTACH_FACE);
-  }
-
-  @Override
-  public PushReaction getPistonPushReaction(BlockState blockState) {
-    return PushReaction.DESTROY;
   }
 
 }

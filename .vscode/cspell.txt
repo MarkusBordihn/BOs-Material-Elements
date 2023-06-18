@@ -50,6 +50,7 @@ NETHERIRE
 NETHERITE
 Pathfindable
 PODZOL
+raisedfloor
 Randomizable
 Reposts
 righthand

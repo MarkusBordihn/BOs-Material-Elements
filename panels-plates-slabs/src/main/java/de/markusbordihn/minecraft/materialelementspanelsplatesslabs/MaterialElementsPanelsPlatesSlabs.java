@@ -46,7 +46,7 @@ public class MaterialElementsPanelsPlatesSlabs {
     ModItems.ITEMS.register(modEventBus);
 
     DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
-      modEventBus.addListener(MaterialElementsPanelsPlatesSlabsTab::handleCreativeModeTabRegister);
+      MaterialElementsPanelsPlatesSlabsTab.CREATIVE_TABS.register(modEventBus);
     });
   }
 }

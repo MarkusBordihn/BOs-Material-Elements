@@ -21,8 +21,7 @@ package de.markusbordihn.minecraft.materialelementsdecorative.block.raisedfloor;
 
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.material.MapColor;
 
 public class RaisedFloorLightBlock extends RaisedFloorBlock {
 
@@ -31,7 +30,7 @@ public class RaisedFloorLightBlock extends RaisedFloorBlock {
   }
 
   public RaisedFloorLightBlock() {
-    super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.STONE)
+    super(BlockBehaviour.Properties.of().mapColor(MapColor.METAL)
         .requiresCorrectToolForDrops().strength(3.0F, 4.8F).sound(SoundType.METAL)
         .lightLevel(blockState -> 15).noOcclusion().isValidSpawn(RaisedFloorBlock::isValidSpawn));
   }

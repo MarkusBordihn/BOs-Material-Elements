@@ -29,7 +29,7 @@ import de.markusbordihn.minecraft.materialelementsdecorative.block.lantern.Steel
 public class SteelLanternItem extends BlockItem {
 
   private DyeColor color = DyeColor.YELLOW;
-  private int materialColor = DyeColor.YELLOW.getMaterialColor().col;
+  private int MapColor = DyeColor.YELLOW.getMapColor().col;
 
   public SteelLanternItem(Block block, Item.Properties properties) {
     super(block, properties);
@@ -39,21 +39,21 @@ public class SteelLanternItem extends BlockItem {
     super(block, new Item.Properties());
     if (block instanceof SteelLanternBlock steelLanternBlock) {
       this.color = steelLanternBlock.getColor();
-      this.materialColor = steelLanternBlock.getMaterialColor();
+      this.MapColor = steelLanternBlock.getMapColor();
     }
   }
 
   public SteelLanternItem(Block block, DyeColor dyeColor) {
     super(block, new Item.Properties());
     this.color = dyeColor;
-    this.materialColor = dyeColor.getMaterialColor().col;
+    this.MapColor = dyeColor.getMapColor().col;
   }
 
   public DyeColor getColor() {
     return this.color;
   }
 
-  public int getMaterialColor() {
-    return this.materialColor;
+  public int getMapColor() {
+    return this.MapColor;
   }
 }

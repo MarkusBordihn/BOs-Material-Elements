@@ -40,8 +40,7 @@ import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -59,7 +58,7 @@ public class FramedHopperBlock extends HopperBlock {
   }
 
   public FramedHopperBlock() {
-    super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.STONE)
+    super(BlockBehaviour.Properties.of().mapColor(MapColor.METAL)
         .requiresCorrectToolForDrops().strength(3.0F, 4.8F).sound(SoundType.METAL).noOcclusion());
   }
 
