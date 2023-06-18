@@ -123,7 +123,7 @@ dependencies {
 
   // Additional helpful Mods for development (dev depenedency)
   //runtimeOnly fg.deobf("curse.maven:jade-324717:4573063")
-  runtimeOnly fg.deobf("curse.maven:jei-238222:4581323")
+  runtimeOnly fg.deobf("curse.maven:jei-238222:4593536")
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
