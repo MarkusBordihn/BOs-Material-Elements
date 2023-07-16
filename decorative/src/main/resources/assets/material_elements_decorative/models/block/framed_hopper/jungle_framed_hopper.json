@@ -1,7 +1,0 @@
-{
-  "parent": "material_elements_decorative:block/framed_hopper/framed_hopper",
-  "textures": {
-    "texture": "minecraft:block/jungle_planks",
-    "particle": "minecraft:block/jungle_planks"
-  }
-}
