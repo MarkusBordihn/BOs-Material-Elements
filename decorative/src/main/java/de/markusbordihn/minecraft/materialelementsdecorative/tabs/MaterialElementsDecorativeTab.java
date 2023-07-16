@@ -41,22 +41,11 @@ public class MaterialElementsDecorativeTab {
 
   protected MaterialElementsDecorativeTab() {}
 
-  protected static CreativeModeTab TAB_FRAMED_HOPPERS;
-
   protected static CreativeModeTab TAB_RAISED_FLOOR;
 
   public static void handleCreativeModeTabRegister(CreativeModeTabEvent.Register event) {
 
     log.info("{} creative mod tabs ...", Constants.LOG_REGISTER_PREFIX);
-
-    TAB_FRAMED_HOPPERS = event.registerCreativeModeTab(
-        new ResourceLocation(Constants.MOD_ID, "framed_hoppers"), builder -> {
-          builder.icon(() -> new ItemStack(ModItems.OAK_FRAMED_HOPPER.get()))
-              .displayItems(MaterialElementsDecorativeTab::addFramedHoppersTabItems)
-              .title(
-                  Component.translatable("itemGroup.material_elements_decorative.framed_hoppers"))
-              .build();
-        });
 
     TAB_RAISED_FLOOR = event.registerCreativeModeTab(
         new ResourceLocation(Constants.MOD_ID, "raised_floor"), builder -> {
@@ -167,19 +156,6 @@ public class MaterialElementsDecorativeTab {
       event.accept(ModItems.CLOTH_TRIANGULAR_RED.get());
       event.accept(ModItems.CLOTH_TRIANGULAR_BLACK.get());
     }
-  }
-
-  private static void addFramedHoppersTabItems(FeatureFlagSet featureFlagSet, Output outputTab,
-      boolean hasPermissions) {
-    // Wooden framed Hoppers
-    outputTab.accept(ModItems.OAK_FRAMED_HOPPER.get());
-    outputTab.accept(ModItems.SPRUCE_FRAMED_HOPPER.get());
-    outputTab.accept(ModItems.BIRCH_FRAMED_HOPPER.get());
-    outputTab.accept(ModItems.JUNGLE_FRAMED_HOPPER.get());
-    outputTab.accept(ModItems.ACACIA_FRAMED_HOPPER.get());
-    outputTab.accept(ModItems.DARK_OAK_FRAMED_HOPPER.get());
-    outputTab.accept(ModItems.CRIMSON_FRAMED_HOPPER.get());
-    outputTab.accept(ModItems.WARPED_FRAMED_HOPPER.get());
   }
 
   private static void addRaisedFloorTabItems(FeatureFlagSet featureFlagSet, Output outputTab,
