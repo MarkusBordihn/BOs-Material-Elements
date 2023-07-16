@@ -10,15 +10,6 @@
   "advancements.material_elements_decorative.crafting.cut_plate.description": "Sieht nach einer nützlichen Ergänzung aus.",
   "advancements.material_elements_decorative.crafting.cut_plate.title": "Schneide mich noch einmal ...",
 
-  "block.material_elements_decorative.oak_framed_hopper": "Trichter mit Eichenrahmen",
-  "block.material_elements_decorative.spruce_framed_hopper": "Trichter mit Fichtenrahmen",
-  "block.material_elements_decorative.birch_framed_hopper": "Trichter mit Birkenrahmen",
-  "block.material_elements_decorative.jungle_framed_hopper": "Hopper mit Dschungelrahmen",
-  "block.material_elements_decorative.acacia_framed_hopper": "Hopper mit Akazienrahmen",
-  "block.material_elements_decorative.dark_oak_framed_hopper": "Trichter mit Rahmen aus dunkler Eiche",
-  "block.material_elements_decorative.crimson_framed_hopper": "Crimson gerahmter Trichter",
-  "block.material_elements_decorative.warped_framed_hopper": "Hopper mit verzerrtem Rahmen",
-
   "block.material_elements_decorative.cloth_block_black": "Stoffblock (schwarz)",
   "block.material_elements_decorative.cloth_block_blue": "Stoffblock (blau)",
   "block.material_elements_decorative.cloth_block_brown": "Stoffblock (braun)",
@@ -125,19 +116,5 @@
   "block.material_elements_decorative.raised_floor_light_side_half_light_blue": "Erhöhter Boden mit halb umgedrehter heller Seite (hellblau)",
   "block.material_elements_decorative.raised_floor_light_side_light_blue": "Doppelboden mit heller Seite (hellblau)",
 
-  "block.placeholder.text": "Template placeholder do not remove!",
-
-  "item.material_elements_decorative.oak_framed_hopper": "Trichter mit Eichenrahmen",
-  "item.material_elements_decorative.spruce_framed_hopper": "Trichter mit Fichtenrahmen",
-  "item.material_elements_decorative.birch_framed_hopper": "Trichter mit Birkenrahmen",
-  "item.material_elements_decorative.jungle_framed_hopper": "Hopper mit Dschungelrahmen",
-  "item.material_elements_decorative.acacia_framed_hopper": "Hopper mit Akazienrahmen",
-  "item.material_elements_decorative.dark_oak_framed_hopper": "Trichter mit Rahmen aus dunkler Eiche",
-  "item.material_elements_decorative.crimson_framed_hopper": "Crimson gerahmter Trichter",
-  "item.material_elements_decorative.warped_framed_hopper": "Hopper mit verzerrtem Rahmen",
-
-  "item.placeholder.text": "Template placeholder do not remove!",
-
-  "itemGroup.framed_hoppers": "Material & Elements: Framed Hoppers",
   "itemGroup.slabs": "Material & Elemente: Platten"
 }

@@ -14,15 +14,6 @@
   "advancements.material_elements_decorative.crafting.root.description": "Explore the additional materials and elements.",
   "advancements.material_elements_decorative.crafting.root.title": "Material Elements: Decorative",
 
-  "block.material_elements_decorative.oak_framed_hopper": "Oak framed Hopper",
-  "block.material_elements_decorative.spruce_framed_hopper": "Spruce framed Hopper",
-  "block.material_elements_decorative.birch_framed_hopper": "Birch framed Hopper",
-  "block.material_elements_decorative.jungle_framed_hopper": "Jungle framed Hopper",
-  "block.material_elements_decorative.acacia_framed_hopper": "Acacia framed Hopper",
-  "block.material_elements_decorative.dark_oak_framed_hopper": "Dark Oak framed Hopper",
-  "block.material_elements_decorative.crimson_framed_hopper": "Crimson framed Hopper",
-  "block.material_elements_decorative.warped_framed_hopper": "Warped framed Hopper",
-
   "block.material_elements_decorative.cloth_block_black": "Cloth Block (black)",
   "block.material_elements_decorative.cloth_block_blue": "Cloth Block (blue)",
   "block.material_elements_decorative.cloth_block_brown": "Cloth Block (brown)",
@@ -129,20 +120,6 @@
   "block.material_elements_decorative.raised_floor_light_side_half_light_blue": "Raised Floor with Light side half flipped (light blue)",
   "block.material_elements_decorative.raised_floor_light_side_light_blue": "Raised Floor with Light side (light blue)",
 
-  "block.placeholder.text": "Template placeholder do not remove!",
-
-  "item.material_elements_decorative.oak_framed_hopper": "Oak framed Hopper",
-  "item.material_elements_decorative.spruce_framed_hopper": "Spruce framed Hopper",
-  "item.material_elements_decorative.birch_framed_hopper": "Birch framed Hopper",
-  "item.material_elements_decorative.jungle_framed_hopper": "Jungle framed Hopper",
-  "item.material_elements_decorative.acacia_framed_hopper": "Acacia framed Hopper",
-  "item.material_elements_decorative.dark_oak_framed_hopper": "Dark Oak framed Hopper",
-  "item.material_elements_decorative.crimson_framed_hopper": "Crimson framed Hopper",
-  "item.material_elements_decorative.warped_framed_hopper": "Warped framed Hopper",
-
-  "item.placeholder.text": "Template placeholder do not remove!",
-
-  "itemGroup.framed_hoppers": "Material & Elements: Framed Hoppers",
   "itemGroup.panel_plates": "Material & Elements: Panel & Plates",
   "itemGroup.slabs": "Material & Elements: Slabs"
 }

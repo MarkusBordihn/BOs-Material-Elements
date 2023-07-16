@@ -153,24 +153,6 @@ public class ClientRenderer {
           RenderType.translucent());
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAISED_FLOOR_LIGHT_SIDE_LIGHT_BLUE.get(),
           RenderType.translucent());
-
-      // Wooden framed hopper
-      ItemBlockRenderTypes.setRenderLayer(ModBlocks.OAK_FRAMED_HOPPER.get(),
-          RenderType.cutoutMipped());
-      ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPRUCE_FRAMED_HOPPER.get(),
-          RenderType.cutoutMipped());
-      ItemBlockRenderTypes.setRenderLayer(ModBlocks.BIRCH_FRAMED_HOPPER.get(),
-          RenderType.cutoutMipped());
-      ItemBlockRenderTypes.setRenderLayer(ModBlocks.JUNGLE_FRAMED_HOPPER.get(),
-          RenderType.cutoutMipped());
-      ItemBlockRenderTypes.setRenderLayer(ModBlocks.ACACIA_FRAMED_HOPPER.get(),
-          RenderType.cutoutMipped());
-      ItemBlockRenderTypes.setRenderLayer(ModBlocks.DARK_OAK_FRAMED_HOPPER.get(),
-          RenderType.cutoutMipped());
-      ItemBlockRenderTypes.setRenderLayer(ModBlocks.CRIMSON_FRAMED_HOPPER.get(),
-          RenderType.cutoutMipped());
-      ItemBlockRenderTypes.setRenderLayer(ModBlocks.WARPED_FRAMED_HOPPER.get(),
-          RenderType.cutoutMipped());
     });
   }
 }

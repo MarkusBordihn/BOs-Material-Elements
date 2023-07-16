@@ -28,12 +28,6 @@ public class MaterialElementsTab {
 
   protected MaterialElementsTab() {}
 
-  public static final CreativeModeTab TAB_FRAMED_HOPPERS = new CreativeModeTab("framed_hoppers") {
-    public ItemStack makeIcon() {
-      return new ItemStack(ModItems.OAK_FRAMED_HOPPER.get());
-    }
-  };
-
   public static final CreativeModeTab TAB_RAISED_FLOOR = new CreativeModeTab("raised_floor") {
     public ItemStack makeIcon() {
       return new ItemStack(ModItems.RAISED_FLOOR_BASIC.get());
