@@ -40,6 +40,8 @@ The additionally compatible with other storage systems like **Storage Drawers**.
 
 ![Framed Hoppers][framed_hoppers]
 
+Note: Framed Hoppers were moved with version 8.x and higher to a separate mod called [Framed Hopper](https://www.curseforge.com/minecraft/mc-mods/framed-hopper).
+
 ## Recipe Overview 👁️
 
 This mods adds a lot of additional crafting recipes to allow the crafting of the added elements or to simplify crafting of existing items like wood cutting.
