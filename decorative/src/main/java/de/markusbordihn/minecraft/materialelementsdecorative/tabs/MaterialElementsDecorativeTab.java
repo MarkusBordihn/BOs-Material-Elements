@@ -44,14 +44,6 @@ public class MaterialElementsDecorativeTab {
   public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS =
       DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Constants.MOD_ID);
 
-  public static final RegistryObject<CreativeModeTab> TAB_FRAMED_HOPPERS = CREATIVE_TABS.register(
-      "framed_hoppers",
-      () -> CreativeModeTab.builder()
-          .icon(() -> ModItems.OAK_FRAMED_HOPPER.get().getDefaultInstance())
-          .displayItems(new FramedHopperItems())
-          .title(Component.translatable("itemGroup.material_elements_decorative.framed_hoppers"))
-          .build());
-
   public static final RegistryObject<CreativeModeTab> TAB_RAISED_FLOOR =
       CREATIVE_TABS.register("raised_floor",
           () -> CreativeModeTab.builder()

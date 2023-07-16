@@ -38,22 +38,6 @@ import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothBl
 import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothSlabBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.ClothTriangularBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.cloth.FabricClothBlock;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.AcaciaFramedHopper;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.BirchFramedHopper;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.CrimsonFramedHopper;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.DarkOakFramedHopper;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.JungleFramedHopper;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.OakFramedHopper;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.SpruceFramedHopper;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.WarpedFramedHopper;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.entity.AcaciaFramedHopperEntity;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.entity.BirchFramedHopperEntity;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.entity.CrimsonFramedHopperEntity;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.entity.DarkOakFramedHopperEntity;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.entity.JungleFramedHopperEntity;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.entity.OakFramedHopperEntity;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.entity.SpruceFramedHopperEntity;
-import de.markusbordihn.minecraft.materialelementsdecorative.block.framedhopper.entity.WarpedFramedHopperEntity;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.lantern.SteelLanternBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.raisedfloor.RaisedFloorBlock;
 import de.markusbordihn.minecraft.materialelementsdecorative.block.raisedfloor.RaisedFloorLightBlock;
@@ -295,51 +279,4 @@ public class ModBlocks {
       BLOCKS.register("steel_lantern_red", () -> new SteelLanternBlock(DyeColor.RED));
   public static final RegistryObject<Block> STEEL_LANTERN_BLACK =
       BLOCKS.register("steel_lantern_black", () -> new SteelLanternBlock(DyeColor.BLACK));
-
-  // Wooden framed Hoppers
-  public static final RegistryObject<Block> OAK_FRAMED_HOPPER =
-      BLOCKS.register(OakFramedHopper.NAME, OakFramedHopper::new);
-  public static final RegistryObject<Block> SPRUCE_FRAMED_HOPPER =
-      BLOCKS.register(SpruceFramedHopper.NAME, SpruceFramedHopper::new);
-  public static final RegistryObject<Block> BIRCH_FRAMED_HOPPER =
-      BLOCKS.register(BirchFramedHopper.NAME, BirchFramedHopper::new);
-  public static final RegistryObject<Block> JUNGLE_FRAMED_HOPPER =
-      BLOCKS.register(JungleFramedHopper.NAME, JungleFramedHopper::new);
-  public static final RegistryObject<Block> ACACIA_FRAMED_HOPPER =
-      BLOCKS.register(AcaciaFramedHopper.NAME, AcaciaFramedHopper::new);
-  public static final RegistryObject<Block> DARK_OAK_FRAMED_HOPPER =
-      BLOCKS.register(DarkOakFramedHopper.NAME, DarkOakFramedHopper::new);
-  public static final RegistryObject<Block> CRIMSON_FRAMED_HOPPER =
-      BLOCKS.register(CrimsonFramedHopper.NAME, CrimsonFramedHopper::new);
-  public static final RegistryObject<Block> WARPED_FRAMED_HOPPER =
-      BLOCKS.register(WarpedFramedHopper.NAME, WarpedFramedHopper::new);
-
-  @TemplateEntryPoint("Register Entity")
-
-  // Wooden framed Hoppers
-  public static final RegistryObject<BlockEntityType<OakFramedHopperEntity>> OAK_HOPPER_ENTITY =
-      BLOCK_ENTITY_TYPES.register(OakFramedHopper.NAME, () -> BlockEntityType.Builder
-          .of(OakFramedHopperEntity::new, OAK_FRAMED_HOPPER.get()).build(null));
-  public static final RegistryObject<BlockEntityType<SpruceFramedHopperEntity>> SPRUCE_HOPPER_ENTITY =
-      BLOCK_ENTITY_TYPES.register(SpruceFramedHopper.NAME, () -> BlockEntityType.Builder
-          .of(SpruceFramedHopperEntity::new, SPRUCE_FRAMED_HOPPER.get()).build(null));
-  public static final RegistryObject<BlockEntityType<BirchFramedHopperEntity>> BIRCH_HOPPER_ENTITY =
-      BLOCK_ENTITY_TYPES.register(BirchFramedHopper.NAME, () -> BlockEntityType.Builder
-          .of(BirchFramedHopperEntity::new, BIRCH_FRAMED_HOPPER.get()).build(null));
-  public static final RegistryObject<BlockEntityType<JungleFramedHopperEntity>> JUNGLE_HOPPER_ENTITY =
-      BLOCK_ENTITY_TYPES.register(JungleFramedHopper.NAME, () -> BlockEntityType.Builder
-          .of(JungleFramedHopperEntity::new, JUNGLE_FRAMED_HOPPER.get()).build(null));
-  public static final RegistryObject<BlockEntityType<AcaciaFramedHopperEntity>> ACACIA_HOPPER_ENTITY =
-      BLOCK_ENTITY_TYPES.register(AcaciaFramedHopper.NAME, () -> BlockEntityType.Builder
-          .of(AcaciaFramedHopperEntity::new, ACACIA_FRAMED_HOPPER.get()).build(null));
-  public static final RegistryObject<BlockEntityType<DarkOakFramedHopperEntity>> DARK_OAK_HOPPER_ENTITY =
-      BLOCK_ENTITY_TYPES.register(DarkOakFramedHopper.NAME, () -> BlockEntityType.Builder
-          .of(DarkOakFramedHopperEntity::new, DARK_OAK_FRAMED_HOPPER.get()).build(null));
-  public static final RegistryObject<BlockEntityType<CrimsonFramedHopperEntity>> CRIMSON_HOPPER_ENTITY =
-      BLOCK_ENTITY_TYPES.register(CrimsonFramedHopper.NAME, () -> BlockEntityType.Builder
-          .of(CrimsonFramedHopperEntity::new, CRIMSON_FRAMED_HOPPER.get()).build(null));
-  public static final RegistryObject<BlockEntityType<WarpedFramedHopperEntity>> WARPED_HOPPER_ENTITY =
-      BLOCK_ENTITY_TYPES.register(WarpedFramedHopper.NAME, () -> BlockEntityType.Builder
-          .of(WarpedFramedHopperEntity::new, WARPED_FRAMED_HOPPER.get()).build(null));
-
 }
